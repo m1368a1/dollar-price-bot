@@ -448,6 +448,7 @@ def fmt(n):
 
 
 def send_telegram(text):
+    """Send message and return message_id for tracking."""
     try:
         resp = requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
@@ -456,6 +457,9 @@ def send_telegram(text):
         )
         result = resp.json()
         if result.get("ok"):
+            msg_id = result["result"]["message_id"]
+            # Track message ID for daily cleanup
+            _track_message(msg_id)
             return True
         else:
             print(f"Telegram error: {result}", file=sys.stderr)
@@ -465,12 +469,64 @@ def send_telegram(text):
         return False
 
 
+def _track_message(msg_id):
+    """Save message ID to daily tracking file."""
+    try:
+        today = datetime.now().strftime("%Y-%m-%d")
+        track_file = os.path.join(os.path.expanduser("~"), f"tg-msgids-{today}.txt")
+        with open(track_file, "a", encoding="utf-8") as f:
+            f.write(f"{msg_id}\n")
+    except Exception:
+        pass
+
+
+def cleanup_yesterday_messages():
+    """Delete all messages from yesterday."""
+    try:
+        from datetime import timedelta
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+        track_file = os.path.join(os.path.expanduser("~"), f"tg-msgids-{yesterday}.txt")
+        if not os.path.exists(track_file):
+            return
+
+        with open(track_file, "r", encoding="utf-8") as f:
+            msg_ids = [int(line.strip()) for line in f if line.strip()]
+
+        if not msg_ids:
+            os.remove(track_file)
+            return
+
+        deleted = 0
+        failed = 0
+        for mid in msg_ids:
+            try:
+                resp = requests.post(
+                    f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/deleteMessage",
+                    json={"chat_id": TELEGRAM_CHANNEL, "message_id": mid},
+                    timeout=10,
+                )
+                if resp.json().get("ok"):
+                    deleted += 1
+                else:
+                    failed += 1
+            except Exception:
+                failed += 1
+
+        print(f"  Cleanup: deleted {deleted}/{len(msg_ids)} messages from {yesterday}")
+        os.remove(track_file)
+    except Exception as e:
+        print(f"  Cleanup error: {e}", file=sys.stderr)
+
+
 # ============================================================
 #  MAIN
 # ============================================================
 def main():
     now = datetime.now()
     date_str = now.strftime("%Y-%m-%d %H:%M")
+
+    # Cleanup yesterday's messages at start of each run
+    cleanup_yesterday_messages()
 
     print(f"[{date_str}] Fetching all data...")
 
