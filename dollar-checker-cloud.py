@@ -368,7 +368,7 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
     if whale_wallets:
         ww = whale_wallets
         msg += "\U0001f3e6 \u06a9\u06cc\u0641\u200c\u067e\u0648\u0644\u200c\u0647\u0627\u06cc \u0634\u0646\u0627\u062e\u062a\u0647\u200c\u0634\u062f\u0647:\n"
-        msg += f"   \U0001f4b0 \u06a9\u0644 \u0628\u0631\u0648\u0632\u0631\u062f\u0647\u0627: {fmt(ww['total_btc'])} BTC\n"
+        msg += f"   \U0001f4b0 \u0645\u0648\u062c\u0648\u062f\u06cc \u06a9\u0644: {fmt(ww['total_btc'])} BTC\n"
 
         for w in ww["wallets"][:4]:
             msg += f"   {w['label']}:\n"
@@ -378,7 +378,7 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
     # === Part 3: Network Health ===
     if network_health:
         nh = network_health
-        msg += "\n\U0001f310 \u0633\u0644\u0627\u0645\u062a \u0634\u0628\u0647 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646:\n"
+        msg += "\n\U0001f310 \u0633\u0644\u0627\u0645\u062a \u0634\u0628\u06a9\u0647 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646:\n"
 
         if "hash_rate" in nh:
             hr = nh["hash_rate"]
@@ -388,7 +388,7 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
         if "mempool" in nh:
             mp = nh["mempool"]
             status = "\u26a0\ufe0f \u0628\u0633\u06cc\u0627\u0631" if mp["current_mb"] > mp["avg_7d_mb"] * 1.5 else "\u2705 \u0639\u0627\u062f\u06cc"
-            msg += f"   \U0001f4e6 \u0645\u06cc\u0645\u0646\u0648\u0644: {mp['current_mb']} MB {status}\n"
+            msg += f"   \U0001f4e6 \u0645\u06cc\u0645\u067e\u0648\u0644: {mp['current_mb']} MB {status}\n"
 
         if "tx_volume" in nh:
             tv = nh["tx_volume"]
@@ -421,7 +421,7 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
         alerts.append(f"\u26a0\ufe0f \u062d\u062c\u0645 \u0628\u0632\u0631\u06af \u0646\u0647\u0646\u06af: {fmt(whale_unconfirmed['total_whale_btc'])} BTC - \u062a\u0648\u062c\u0647 \u0628\u0647 \u062a\u0644\u0627\u0637\u06cc!")
 
     if network_health and network_health.get("mempool", {}).get("current_mb", 0) > network_health.get("mempool", {}).get("avg_7d_mb", 0) * 2:
-        alerts.append("\U0001f6a8 \u0645\u06cc\u0645\u0646\u0648\u0644 \u0634\u0627\u062f\u06cc \u0627\u0632 \u062d\u0627\u0644 \u0639\u0627\u062f\u06cc \u0627\u0633\u062a - \u0627\u0632\u062f\u0648\u0627\u0645 \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0631\u0642\u06cc \u0628\u0627\u0634\u062f!")
+        alerts.append("\U0001f6a8 \u0645\u06cc\u0645\u067e\u0648\u0644 \u0634\u0627\u062f\u06cc \u0627\u0632 \u062d\u0627\u0644 \u0639\u0627\u062f\u06cc \u0627\u0633\u062a - \u0627\u0632\u062f\u0648\u0627\u0645 \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0631\u0642\u06cc \u0628\u0627\u0634\u062f!")
 
     if network_health and network_health.get("output_volume", {}).get("change_pct", 0) > 50:
         alerts.append(f"\U0001f40b \u062d\u062c\u0645 \u062e\u0631\u0648\u062c\u06cc +{network_health['output_volume']['change_pct']}% \u0627\u0632 \u0645\u06cc\u0627\u0646\u06af\u06cc\u0646 - \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af \u0628\u06cc\u0634\u062a\u0631 \u0627\u0633\u062a!")
