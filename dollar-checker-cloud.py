@@ -1335,6 +1335,287 @@ def main():
             print(f"  [ERR] Calendar: {e}", file=sys.stderr)
 
     # ============================================================
+    #  MESSAGE 13: Market Thermometer (combined 0-100)
+    # ============================================================
+    try:
+        thermo_score = 50  # neutral default
+        thermo_factors = []
+
+        # Factor 1: Fear & Greed (weight 30%)
+        if fear_greed:
+            fg_val = fear_greed['value']
+            thermo_score = thermo_score * 0.7 + fg_val * 0.3
+            thermo_factors.append(f"F&G:{fg_val}")
+
+        # Factor 2: BTC 7d change (weight 25%)
+        try:
+            s_cg = requests.Session()
+            s_cg.verify = False
+            r_cg = s_cg.get('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7', timeout=10)
+            cg_data = r_cg.json()
+            prices = cg_data.get('prices', [])
+            if prices and len(prices) > 1:
+                btc_7d_change = ((prices[-1][1] - prices[0][1]) / prices[0][1]) * 100
+                # Map -20% to +20% -> 0 to 100
+                btc_score = max(0, min(100, 50 + btc_7d_change * 2.5))
+                thermo_score = thermo_score * 0.75 + btc_score * 0.25
+                thermo_factors.append(f"BTC7d:{btc_7d_change:+.1f}%")
+        except Exception:
+            pass
+
+        # Factor 3: Whale activity (weight 20%)
+        if whale_unconfirmed:
+            whale_count = len(whale_unconfirmed.get('whales', []))
+            total_btc = whale_unconfirmed.get('total_whale_btc', 0)
+            if total_btc > 5000:
+                whale_score = 80  # heavy selling
+            elif total_btc > 1000:
+                whale_score = 65
+            elif whale_count > 3:
+                whale_score = 55
+            else:
+                whale_score = 50
+            thermo_score = thermo_score * 0.8 + whale_score * 0.2
+            thermo_factors.append(f"Whale:{whale_count}")
+
+        thermo_score = int(round(thermo_score))
+
+        # Status description
+        if thermo_score >= 80:
+            thermo_status = "\U0001f525 \u062f\u0627\u063a \u0634\u062f\u0647 - \u0637\u0645\u0639 \u0634\u062f\u06cc\u062f"
+        elif thermo_score >= 65:
+            thermo_status = "\U0001f525 \u06af\u0631\u0645 - \u0637\u0645\u0639\u06cc \u0627\u0632 \u062d\u062f"
+        elif thermo_score >= 45:
+            thermo_status = "\u27a1\ufe0f \u0646\u0631\u0645\u0627\u0644 - \u062a\u0639\u0627\u062f\u0644"
+        elif thermo_score >= 25:
+            thermo_status = "\U0001f4c9 \u0633\u0631\u062f - \u062a\u0631\u0633\u06cc \u0627\u0632 \u062d\u062f"
+        else:
+            thermo_status = "\u2744\ufe0f \u0633\u0631\u062f \u0634\u062f\u0647 - \u062a\u0631\u0633 \u0634\u062f\u06cc\u062f"
+
+        # Visual bar
+        bar_len = 12
+        filled = int(thermo_score / 100 * bar_len)
+        bar = "\u2588" * filled + "\u2591" * (bar_len - filled)
+
+        msg13 = f"\U0001f321\ufe0f \u062f\u0645\u0627\u0633\u0646\u062c \u0628\u0627\u0632\u0627\u0631\n\n"
+        msg13 += f"  [{bar}] {thermo_score}/100\n\n"
+        msg13 += f"  {thermo_status}\n\n"
+        msg13 += f"\U0001f4ca \u062a\u062c\u0632\u06cc\u0627\u062a:\n"
+        msg13 += f"   \u2022 {' | '.join(thermo_factors)}\n\n"
+        msg13 += f"\U0001f4a1 \u0637\u0645\u0639 \u0634\u062f\u06cc\u062f = \u0645\u0648\u0642\u0639 \u0641\u0631\u0648\u0634 \u0627\u062d\u062a\u0645\u0627\u0644\u06cc\n"
+        msg13 += f"\U0001f4a1 \u062a\u0631\u0633 \u0634\u062f\u06cc\u062f = \u0645\u0648\u0642\u0639 \u062e\u0631\u06cc\u062f \u0627\u062d\u062a\u0645\u0627\u0644\u06cc"
+
+        send_telegram(msg13)
+        print(f"  [SENT] Market thermometer")
+    except Exception as e:
+        print(f"  [ERR] Thermometer: {e}", file=sys.stderr)
+
+    # ============================================================
+    #  MESSAGE 14: Smart Buy/Sell Signal
+    # ============================================================
+    try:
+        signals = []
+        score = 0  # -100 to +100
+
+        # Signal 1: Fear & Greed
+        if fear_greed:
+            fg_val = fear_greed['value']
+            if fg_val <= 25:
+                signals.append(("\U0001f7e2 \u062e\u0631\u06cc\u062f", f"\u062a\u0631\u0633 \u0634\u062f\u06cc\u062f ({fg_val}/100)"))
+                score += 30
+            elif fg_val >= 75:
+                signals.append(("\U0001f534 \u0641\u0631\u0648\u0634", f"\u0637\u0645\u0639 \u0634\u062f\u06cc\u062f ({fg_val}/100)"))
+                score -= 30
+            else:
+                signals.append(("\U0001f7e1 \u0635\u0628\u0631", f"\u0648\u0636\u0639\u06cc\u062a: {fg_val}/100"))
+                score += 0
+
+        # Signal 2: BTC trend
+        try:
+            s_cg = requests.Session()
+            s_cg.verify = False
+            r_cg = s_cg.get('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7', timeout=10)
+            cg_data = r_cg.json()
+            prices = cg_data.get('prices', [])
+            if prices and len(prices) > 1:
+                btc_7d = ((prices[-1][1] - prices[0][1]) / prices[0][1]) * 100
+                if btc_7d > 10:
+                    signals.append(("\U0001f4c8 \u0631\u0648\u0646\u062f \u0642\u0648\u06cc", f"BTC +{btc_7d:.1f}% \u062f\u0631 7 \u0631\u0648\u0632"))
+                    score += 25
+                elif btc_7d < -10:
+                    signals.append(("\U0001f4c9 \u0631\u0648\u0646\u062f \u0636\u0639\u06cc\u0641", f"BTC {btc_7d:.1f}% \u062f\u0631 7 \u0631\u0648\u0632"))
+                    score -= 25
+                else:
+                    signals.append(("\u27a1\ufe0f \u0631\u0648\u0646\u062f \u062e\u0646\u062b\u06cc", f"BTC {btc_7d:+.1f}% \u062f\u0631 7 \u0631\u0648\u0632"))
+        except Exception:
+            pass
+
+        # Signal 3: Whale activity
+        if whale_unconfirmed:
+            total_btc = whale_unconfirmed.get('total_whale_btc', 0)
+            whale_count = len(whale_unconfirmed.get('whales', []))
+            if total_btc > 5000:
+                signals.append(("\U0001f4c9 \u0646\u0647\u0646\u06af\u0647\u0627 \u0641\u0631\u0648\u0634\u0646\u0646\u062f\u0647", f"{fmt(total_btc)} BTC \u062f\u0631 \u0631\u0627\u0647 \u0641\u0631\u0648\u0634"))
+                score -= 20
+            elif whale_count > 3:
+                signals.append(("\U0001f4c8 \u0646\u0647\u0646\u06af\u0647\u0627 \u062e\u0631\u06cc\u062f\u0627\u0631", f"{whale_count} \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0632\u0631\u06af"))
+                score += 15
+            else:
+                signals.append(("\u2705 \u0646\u0647\u0646\u06af\u0647\u0627 \u0622\u0631\u0627\u0645", f"{whale_count} \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0632\u0631\u06af"))
+
+        # Signal 4: Iran gold premium
+        iran_gold_oz = gold * 31.1
+        intl_gold_oz = ounce_usd * usd_sell
+        if intl_gold_oz > 0:
+            premium = ((iran_gold_oz - intl_gold_oz) / intl_gold_oz * 100)
+            if premium > 10:
+                signals.append(("\U0001f4a1 \u0637\u0644\u0627 \u06af\u0631\u0627\u0646", f"\u0627\u06cc\u0631\u0627\u0646 {premium:.0f}% \u06af\u0631\u0627\u0646\u062a\u0631"))
+                score -= 10
+            elif premium < -3:
+                signals.append(("\U0001f4a1 \u0637\u0644\u0627 \u0627\u0631\u0632\u0627\u0646", f"\u0627\u06cc\u0631\u0627\u0646 {abs(premium):.0f}% \u0627\u0631\u0632\u0627\u0646\u062a\u0631"))
+                score += 10
+
+        # Final signal
+        score = max(-100, min(100, score))
+        if score >= 30:
+            final = "\U0001f7e2 \u0633\u06cc\u06af\u0646\u0627\u0644 \u062e\u0631\u06cc\u062f"
+            final_emoji = "\U0001f7e2"
+        elif score <= -30:
+            final = "\U0001f534 \u0633\u06cc\u06af\u0646\u0627\u0644 \u0641\u0631\u0648\u0634"
+            final_emoji = "\U0001f534"
+        else:
+            final = "\U0001f7e1 \u0633\u06cc\u06af\u0646\u0627\u0644 \u0635\u0628\u0631"
+            final_emoji = "\U0001f7e1"
+
+        msg14 = f"\U0001f9ed \u0633\u06cc\u06af\u0646\u0627\u0644 \u062e\u0631\u06cc\u062f/\u0641\u0631\u0648\u0634\n\n"
+        msg14 += f"{final_emoji} {final}\n"
+        msg14 += f"\U0001f4ca \u0627\u0645\u062a\u064a\u0627\u0632: {score:+d}/100\n\n"
+        for emoji, desc in signals:
+            msg14 += f"   {emoji} {desc}\n"
+        msg14 += f"\n\u26a0\ufe0f \u0635\u0631\u0641\u0627 \u062e\u0648\u062f\u0633\u0627\u0646\u06cc \u0627\u0633\u062a"
+
+        send_telegram(msg14)
+        print(f"  [SENT] Buy/Sell signal")
+    except Exception as e:
+        print(f"  [ERR] Signal: {e}", file=sys.stderr)
+
+    # ============================================================
+    #  MESSAGE 15: DXY (US Dollar Index)
+    # ============================================================
+    try:
+        s_fx = requests.Session()
+        s_fx.verify = False
+        r_fx = s_fx.get('https://api.exchangerate-api.com/v4/latest/USD', timeout=10)
+        fx_data = r_fx.json()
+        rates = fx_data.get('rates', {})
+
+        eur = rates.get('EUR', 0)
+        jpy = rates.get('JPY', 0)
+        gbp = rates.get('GBP', 0)
+        cad = rates.get('CAD', 0)
+        sek = rates.get('SEK', 0)
+        chf = rates.get('CHF', 0)
+
+        # Simplified DXY calculation
+        if eur and jpy and gbp:
+            dxy = 50.14348112 * (1/eur) * (jpy ** 0.136) * (gbp ** 0.0856) * (cad ** 0.0913) * (sek ** 0.0421) * (chf ** 0.0367)
+            dxy = round(dxy, 2)
+
+            # Determine trend
+            if dxy > 105:
+                dxy_status = "\U0001f4c8 \u062f\u0644\u0627\u0631 \u0642\u0648\u06cc \u0627\u0633\u062a - \u0641\u0636\u0631 \u0628\u0631 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646"
+            elif dxy < 99:
+                dxy_status = "\U0001f4c9 \u062f\u0644\u0627\u0631 \u0636\u0639\u06cc\u0641 \u0627\u0633\u062a - \u062d\u0645\u0627\u06cc\u062a \u0628\u0631 \u0637\u0644\u0627 \u0648 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646"
+            else:
+                dxy_status = "\u27a1\ufe0f \u062f\u0644\u0627\u0631 \u0646\u0631\u0645\u0627\u0644 - \u062a\u0627\u062b\u06cc\u0631 \u0645\u062a\u0648\u0633\u0637"
+
+            # USD to IRR proxy (from bonbast)
+            msg15 = f"\U0001f310 \u0634\u0627\u062e\u0635 \u062f\u0644\u0627\u0631 (DXY)\n\n"
+            msg15 += f"   DXY: {dxy}\n"
+            msg15 += f"   {dxy_status}\n\n"
+            msg15 += f"\U0001f4b1 \u0646\u0631\u0633 \u0627\u0631\u0632:\n"
+            msg15 += f"   EUR: {eur} | GBP: {gbp}\n"
+            msg15 += f"   JPY: {jpy} | CHF: {chf}\n\n"
+            msg15 += f"\U0001f4a1 \u062f\u0644\u0627\u0631 \u0642\u0648\u06cc\u062a\u0631 = \u0637\u0644\u0627 \u0648 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0636\u0639\u06cc\u0641\u062a\u0631"
+            msg15 += f"\U0001f4a1 \u062f\u0644\u0627\u0631 \u0636\u0639\u06cc\u0641\u062a\u0631 = \u0637\u0644\u0627 \u0648 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0642\u0648\u06cc\u062a\u0631"
+
+            send_telegram(msg15)
+            print(f"  [SENT] DXY")
+        else:
+            print(f"  [SKIP] DXY: missing FX rates")
+    except Exception as e:
+        print(f"  [ERR] DXY: {e}", file=sys.stderr)
+
+    # ============================================================
+    #  MESSAGE 16: Exchange Inflow/Outflow (using CoinGecko)
+    # ============================================================
+    try:
+        s_ex = requests.Session()
+        s_ex.verify = False
+
+        # Get exchange data from CoinGecko
+        r_ex = s_ex.get('https://api.coingecko.com/api/v3/exchanges?per_page=5', timeout=10)
+        exchanges = r_ex.json()
+
+        if exchanges:
+            msg16 = f"\U0001f3e6 \u062a\u063a\u06cc\u06cc\u0631\u0627\u062a \u0635\u0631\u0627\u0641\u062e\u0627\u0646\u0647\u200c\u0647\u0627\n\n"
+
+            # Top exchanges by volume
+            for ex in exchanges[:5]:
+                name = ex.get('name', '?')
+                vol_24h = ex.get('trade_volume_24h_btc', 0)
+                rank = ex.get('trust_score_rank', '?')
+                msg16 += f"   #{rank} {name}: {fmt(round(vol_24h))} BTC\n"
+
+            # BTC supply on exchanges trend
+            msg16 += f"\n\U0001f4ca \u062a\u062c\u0632\u06cc\u0627\u062a:\n"
+            msg16 += f"   \u062d\u0638\u0645 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u062f\u0631 \u0635\u0631\u0627\u0641\u062e\u0627\u0646\u0647\u200c\u0647\u0627:\n"
+
+            total_btc = sum(ex.get('trade_volume_24h_btc', 0) for ex in exchanges)
+            msg16 += f"   \u06a9\u0644: ~{fmt(round(total_btc))} BTC\n"
+
+            # Estimate inflow/outflow from volume
+            avg_vol = total_btc / len(exchanges) if exchanges else 0
+            if total_btc > 2000000:
+                msg16 += f"   \U0001f4c9 \u062d\u062c\u0645 \u0648\u0631\u0648\u062f\u06cc \u0628\u0647 \u0635\u0631\u0627\u0641\u062e\u0627\u0646\u0647 \u0632\u06cc\u0627\u062f \u0627\u0633\u062a - \u0627\u062d\u062a\u0645\u0627\u0644 \u0641\u0631\u0648\u0634"
+            elif total_btc < 500000:
+                msg16 += f"   \U0001f4c8 \u062d\u062c\u0645 \u062e\u0631\u0648\u062c \u0627\u0632 \u0635\u0631\u0627\u0641\u062e\u0627\u0646\u0647 \u0645\u0646\u0627\u0633\u0628 \u0627\u0633\u062a - \u0627\u062d\u062a\u0645\u0627\u0644 \u0646\u06af\u0647\u062f\u0627\u0631\u06cc"
+            else:
+                msg16 += f"   \u27a1\ufe0f \u0639\u0627\u062f\u06cc"
+
+            send_telegram(msg16)
+            print(f"  [SENT] Exchange flow")
+    except Exception as e:
+        print(f"  [ERR] Exchange: {e}", file=sys.stderr)
+
+    # ============================================================
+    #  MESSAGE 17: BTC/Gold Ratio
+    # ============================================================
+    try:
+        if ounce_usd > 0 and btc_usd > 0:
+            btc_gold_ratio = btc_usd / ounce_usd
+            gold_per_btc_gram = btc_usd / (gold / usd_sell) if gold > 0 else 0
+
+            msg17 = f"\U0001f4b0 \u0646\u0633\u0628\u062a \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 / \u0637\u0644\u0627\n\n"
+            msg17 += f"   \u06cc\u06a9 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 = {btc_gold_ratio:.2f} \u0627\u0646\u0633 \u0637\u0644\u0627\n"
+            msg17 += f"   \u06cc\u06a9 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 = {fmt(round(gold_per_btc_gram))} \u06af\u0631\u0645 \u0637\u0644\u0627\n\n"
+            msg17 += f"\U0001f4ca \u062a\u0642\u0627\u06cc\u0633 \u0647\u0645\u0632\u0646\u06af\u06cc:\n"
+
+            if btc_gold_ratio > 40:
+                msg17 += f"   \U0001f4c8 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0646\u0633\u0628\u062a \u0628\u0647 \u0637\u0644\u0627 \u062f\u0631 \u0631\u0633\u06cc\u062f\u0646 \u0627\u0633\u062a\n"
+            elif btc_gold_ratio < 25:
+                msg17 += f"   \U0001f4c9 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0627\u0631\u0632\u0627\u0646\u062a\u0631 \u0627\u0632 \u0637\u0644\u0627 \u0627\u0633\u062a\n"
+            else:
+                msg17 += f"   \u27a1\ufe0f \u0646\u0633\u0628\u062a \u0646\u0631\u0645\u0627\u0644\u06cc\n"
+
+            msg17 += f"\n\U0001f4a1 \u0627\u06af\u0631 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0631\u0634\u062f \u0642\u0628\u0644\u062a\u0631 \u0627\u0632 \u0637\u0644\u0627 \u0628\u0631\u0627\u06cc\u062a\u0631 \u0628\u0638\u0631 \u0628\u0648\u062f - \u0628\u0647\u062a\u0631 \u0627\u0633\u062a"
+
+            send_telegram(msg17)
+            print(f"  [SENT] BTC/Gold ratio")
+    except Exception as e:
+        print(f"  [ERR] BTC/Gold: {e}", file=sys.stderr)
+
+    # ============================================================
     #  LOG
     # ============================================================
     log_file = os.path.join(os.path.expanduser("~"), "dollar-price-log.txt")
