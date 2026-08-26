@@ -951,9 +951,9 @@ def main():
         print(f"  [SENT] Enhanced Iran vs Global")
 
     # ============================================================
-    #  MESSAGE 12: Weekly Economic Calendar (every Sunday)
+    #  MESSAGE 12: Economic Calendar (every 4 hours)
     # ============================================================
-    if now.weekday() == 6:  # Sunday
+    if now.hour % 4 == 0:  # Every 4 hours
         # Static calendar for known recurring events (approximate)
         events = []
         month = now.month
