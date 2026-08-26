@@ -639,6 +639,185 @@ def main():
         print(f"  [SENT] Whale tracker")
 
     # ============================================================
+    #  MESSAGE 5: Morning Summary (only at 8 AM Iran time)
+    # ============================================================
+    iran_hour = (now.hour + 3) % 24  # Approximate Iran time (UTC+3:30)
+    if iran_hour == 8 and now.minute < 30:
+        yesterday_usd = usd_sell
+        yesterday_gold = gold
+        yesterday_btc = btc_usd
+        # Try to read last log entry for comparison
+        log_file = os.path.join(os.path.expanduser("~"), "dollar-price-log.txt")
+        try:
+            with open(log_file, "r", encoding="utf-8") as f:
+                lines = f.readlines()
+            if lines:
+                last = lines[-1]
+                import re as _re
+                m_usd = _re.search(r'USD:(\d[\d,]+)', last)
+                m_gold = _re.search(r'Gold:(\d[\d,]+)', last)
+                m_btc = _re.search(r'BTC:\$(\d[\d,.]+)', last)
+                if m_usd:
+                    yesterday_usd = int(m_usd.group(1).replace(',', ''))
+                if m_gold:
+                    yesterday_gold = int(m_gold.group(1).replace(',', ''))
+                if m_btc:
+                    yesterday_btc = float(m_btc.group(1).replace(',', ''))
+        except Exception:
+            pass
+
+        usd_change = ((usd_sell - yesterday_usd) / yesterday_usd * 100) if yesterday_usd > 0 else 0
+        gold_change = ((gold - yesterday_gold) / yesterday_gold * 100) if yesterday_gold > 0 else 0
+        btc_change = ((btc_usd - yesterday_btc) / yesterday_btc * 100) if yesterday_btc > 0 else 0
+
+        msg5 = f"\U0001f305 صبح بخیر | خلاصه صبحگاهی بازار\n\n"
+        msg5 += f"\U0001f550 {last_modified}\n\n"
+        msg5 += f"\U0001f4b5 دلار: {fmt(usd_sell)} تومان "
+        if usd_change > 0:
+            msg5 += f"\U0001f4c8 +{usd_change:.2f}%\n"
+        elif usd_change < 0:
+            msg5 += f"\U0001f4c9 {usd_change:.2f}%\n"
+        else:
+            msg5 += "\u27a1\ufe0f 0%\n"
+
+        msg5 += f"\U0001f947 طلا: {fmt(gold)} تومان/گرم "
+        if gold_change > 0:
+            msg5 += f"\U0001f4c8 +{gold_change:.2f}%\n"
+        elif gold_change < 0:
+            msg5 += f"\U0001f4c9 {gold_change:.2f}%\n"
+        else:
+            msg5 += "\u27a1\ufe0f 0%\n"
+
+        msg5 += f"\u20bf بیتکوین: ${fmt(btc_usd)} "
+        if btc_change > 0:
+            msg5 += f"\U0001f4c8 +{btc_change:.2f}%\n"
+        elif btc_change < 0:
+            msg5 += f"\U0001f4c9 {btc_change:.2f}%\n"
+        else:
+            msg5 += "\u27a1\ufe0f 0%\n"
+
+        if fear_greed:
+            msg5 += f"\n{fear_greed['emoji']} ترس و طمع: {fear_greed['value']}/100 ({fear_greed['classification']})\n"
+
+        if global_market:
+            msg5 += f"\U0001f30d ارزش کل بازار: {global_market['total_market_cap_t']} تریلیون دلار\n"
+
+        send_telegram(msg5)
+        print(f"  [SENT] Morning summary")
+
+    # ============================================================
+    #  MESSAGE 6: Daily Market Ranking
+    # ============================================================
+    # Calculate changes from log
+    log_file = os.path.join(os.path.expanduser("~"), "dollar-price-log.txt")
+    try:
+        with open(log_file, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+        if len(lines) >= 2:
+            last = lines[-1]
+            import re as _re
+            m_usd = _re.search(r'USD:(\d[\d,]+)', last)
+            m_gold = _re.search(r'Gold:(\d[\d,]+)', last)
+            m_btc = _re.search(r'BTC:\$(\d[\d,.]+)', last)
+            prev_usd = int(m_usd.group(1).replace(',', '')) if m_usd else 0
+            prev_gold = int(m_gold.group(1).replace(',', '')) if m_gold else 0
+            prev_btc = float(m_btc.group(1).replace(',', '')) if m_btc else 0
+
+            ranking = []
+            if prev_usd > 0:
+                usd_pct = ((usd_sell - prev_usd) / prev_usd * 100)
+                ranking.append(("دلار", usd_pct))
+            if prev_gold > 0:
+                gold_pct = ((gold - prev_gold) / prev_gold * 100)
+                ranking.append(("طلا", gold_pct))
+            if prev_btc > 0:
+                btc_pct = ((btc_usd - prev_btc) / prev_btc * 100)
+                ranking.append(("بیتکوین", btc_pct))
+            if global_market and global_market.get("market_cap_change_24h"):
+                ranking.append(("بازار کلی", global_market["market_cap_change_24h"]))
+
+            if ranking:
+                ranking.sort(key=lambda x: x[1], reverse=True)
+
+                msg6 = f"\U0001f3c6 رتبه‌بندی بازارها امروز\n\n"
+                medals = ["\U0001f947", "\U0001f948", "\U0001f949", "\U0001f94a"]
+                for i, (name, pct) in enumerate(ranking[:4]):
+                    medal = medals[i] if i < len(medals) else f"{i+1}."
+                    if pct > 0:
+                        msg6 += f"{medal} {name}: \U0001f4c8 +{pct:.2f}%\n"
+                    elif pct < 0:
+                        msg6 += f"{medal} {name}: \U0001f4c9 {pct:.2f}%\n"
+                    else:
+                        msg6 += f"{medal} {name}: \u27a1\ufe0f 0%\n"
+
+                winner = ranking[0]
+                loser = ranking[-1]
+                if winner[1] > 0:
+                    msg6 += f"\n\U0001f3c5 برنده امروز: {winner[0]} (+{winner[1]:.2f}%)\n"
+                if loser[1] < 0:
+                    msg6 += f"\U0001f534 بازنده امروز: {loser[0]} ({loser[1]:.2f}%)\n"
+
+                send_telegram(msg6)
+                print(f"  [SENT] Market ranking")
+    except Exception as e:
+        print(f"  [SKIP] Ranking: {e}", file=sys.stderr)
+
+    # ============================================================
+    #  MESSAGE 7: BTC Dominance
+    # ============================================================
+    if global_market:
+        dom = global_market["btc_dominance"]
+        if dom > 60:
+            dom_status = "\U0001f4c8 بیتکوین غالب‌تر شده — آلت‌کوین‌ها ضعیف‌تر"
+        elif dom < 45:
+            dom_status = "\U0001f4c9 آلت‌کوین‌ها قوی‌تر شده‌اند"
+        else:
+            dom_status = "\u27a1\ufe0f تعادل نسبی در بازار"
+
+        eth_dominance = round(100 - dom - 20, 1)  # Approximate
+        msg7 = f"\U0001f4ca درصد تسلط بازارها\n\n"
+        msg7 += f"\u20bf بیتکوین: {dom}%\n"
+        msg7 += f"\U0001f7e2 آلت‌کوین‌ها: ~{round(100 - dom, 1)}%\n\n"
+        msg7 += f"{dom_status}\n\n"
+        msg7 += f"\U0001f4b5 ارزش کل بازار: {global_market['total_market_cap_t']} تریلیون دلار\n"
+        msg7 += f"\U0001f4b0 حجم معاملات ۲۴ ساعته: {global_market['total_volume_t']} تریلیون دلار\n"
+
+        if global_market["market_cap_change_24h"] > 0:
+            msg7 += f"\n\U0001f4c8 بازار +{global_market['market_cap_change_24h']}٪ در ۲۴ ساعت — صعودی"
+        else:
+            msg7 += f"\n\U0001f4c9 بازار {global_market['market_cap_change_24h']}٪ در ۲۴ ساعت — نزولی"
+
+        send_telegram(msg7)
+        print(f"  [SENT] BTC dominance")
+
+    # ============================================================
+    #  MESSAGE 8: Daily Educational Tip
+    # ============================================================
+    tips = [
+        "\U0001f4a1 آربیتراژ یعنی خرید ارزان در یکجا و فروش گران‌تر در جای دیگر. مثلاً خرید بیتکوین از صرافی ایرانی و فروش در بایننس.",
+        "\U0001f4a1 حمایت (Support) سطحی است که قیمت به آن رسیده و برگشته. مقاومت (Resistance) سطحی است که قیمت نتوانسته از آن رد شود.",
+        "\U0001f4a1 RSI زیر ۳۰ یعنی فروش بیش از حد ( oportunidad خرید)، بالای ۷۰ یعنی خرید بیش از حد ( oportunidad فروش).",
+        "\U0001f4a1 هاوینگ بیتکوین هر ۴ سال رخ می‌دهد و پاداش ماینرها نصف می‌شود — تاریخاً قیمت پس از آن افزایش یافته.",
+        "\U0001f4a1 حجم معاملات بالا + قیمت صعودی = روند قوی. حجم پایین + قیمت صعودی = احتمال برگشت.",
+        "\U0001f4a1 میانگین متحرک ۲۰۰ روزه (MA200) مهم‌ترین خط حمایت/مقاومت بلندمدت بیتکوین است.",
+        "\U0001f4a1 وقتی میمپول شلوغ است، کارمزد تراکنش بالا می‌رود. بهتر است در ساعات کم‌ترافیک تراکنش بزنید.",
+        "\U0001f4a1 حداکثر تعداد بیتکوین ۲۱ میلیون است — کمیابی دلیل اصلی ارزش بیتکوین است.",
+        "\U0001f4a1 کیف‌پول سرد (Cold Wallet) آفلاین است و هک نمی‌شود. کیف‌پول گرم (Hot Wallet) آنلاین و راحت‌تر ولی کم‌امن‌تر است.",
+        "\U0001f4a1 فدرال رزرو (Fed) نرخ بهره را بالا ببرد = دلار قوی‌تر و بیتکوین ضعیف‌تر. پایین بیاورد = برعکس.",
+        "\U0001f4a1 شاخص ترس و طمع زیر ۲۰ = ترس شدید = بهترین زمان خرید بلندمدت. بالای ۸۰ = طمع شدید = زمان فروش.",
+        "\U0001f4a1 نهنگ (Whale) کسی است که بیش از ۱۰۰۰ بیتکوین دارد. حرکت آن‌ها می‌تواند بازار را تکان دهد.",
+        "\U0001f4a1 DCA یعنی خرید منظم و کم‌مقدار (مثلاً هر هفته) — بهترین استراتژی برای سرمایه‌گذاری بلندمدت.",
+        "\U0001f4a1 طلای ۱۸ عیار یعنی ۷۵٪ طلای خالص. ۲۴ عیار = ۹۹.۹٪ خالص. هرچه عیار بالاتر، گران‌تر.",
+        "\U0001f4a1 انس طلا (Ounce) واحد جهانی قیمت طلاست = ۳۱.۱ گرم. قیمت طلای ایران = انس × نرخ دلار ÷ ۳۱.۱",
+    ]
+    # Pick tip based on day of year for consistency
+    day_of_year = now.timetuple().tm_yday
+    tip_index = day_of_year % len(tips)
+    msg8 = f"\U0001f4d6 نکته آموزشی امروز\n\n{tips[tip_index]}"
+    send_telegram(msg8)
+    print(f"  [SENT] Daily tip")
+
+    # ============================================================
     #  LOG
     # ============================================================
     log_file = os.path.join(os.path.expanduser("~"), "dollar-price-log.txt")
