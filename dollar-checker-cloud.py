@@ -1004,17 +1004,19 @@ def main():
                 if not date_str_ev:
                     continue
 
-                # Parse the ISO date
+                # Parse the ISO date and convert to Tehran time (UTC+3:30)
                 try:
-                    from datetime import datetime as _dt, timedelta
-                    # Parse ISO format with timezone
-                    # Example: 2026-08-24T13:00:00-04:00
-                    dt_utc = _dt.fromisoformat(date_str_ev.replace("-04:00", "+00:00").replace("-05:00", "+00:00").replace("-03:00", "+00:00"))
-                    # If no timezone info, assume UTC
-                    if dt_utc.tzinfo is None:
-                        dt_utc = _dt.replace(dt_utc, tzinfo=None)
-                    # Convert to Tehran time (UTC+3:30)
-                    dt_teheran = dt_utc + timedelta(hours=3, minutes=30)
+                    from datetime import datetime as _dt, timedelta, timezone
+                    # Parse ISO format with timezone info preserved
+                    # Example: 2026-08-26T08:30:00-04:00 (EDT)
+                    dt_with_tz = _dt.fromisoformat(date_str_ev)
+                    if dt_with_tz.tzinfo is not None:
+                        # Convert to UTC first, then to Tehran (UTC+3:30)
+                        dt_utc = dt_with_tz.astimezone(timezone.utc)
+                        dt_teheran = dt_utc + timedelta(hours=3, minutes=30)
+                    else:
+                        # No timezone info: assume UTC and add 3:30
+                        dt_teheran = dt_with_tz + timedelta(hours=3, minutes=30)
                     date_formatted = dt_teheran.strftime("%Y/%m/%d %H:%M")
                     weekday_fa = ["دوشنبه", "سه‌شنبه", "چهارشنبه", "پنجشنبه", "جمعه", "شنبه", "یکشنبه"]
                     day_name = weekday_fa[dt_teheran.weekday()]
