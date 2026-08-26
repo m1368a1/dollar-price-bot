@@ -69,7 +69,14 @@ def fetch_fear_greed():
         data = r.json()["data"]
         current = data[0]
         value = int(current["value"])
-        classification = current["value_classification"]
+        classification_en = current["value_classification"]
+        classification_fa = {
+            "Extreme Fear": "ترس شدید",
+            "Fear": "ترس",
+            "Neutral": "خنثی",
+            "Greed": "طمع",
+            "Extreme Greed": "طمع شدید",
+        }.get(classification_en, classification_en)
 
         # Emoji based on value
         if value <= 20:
@@ -91,7 +98,7 @@ def fetch_fear_greed():
         return {
             "value": value,
             "emoji": emoji,
-            "classification": classification,
+            "classification": classification_fa,
             "avg_7d": avg_7d,
             "trend": trend,
             "history": values_7d,
@@ -300,10 +307,13 @@ def main():
         if global_market:
             gm = global_market
             msg2 += f"🌍 بازار جهانی:\n"
-            msg2 += f"   ارزش کل بازار: ${gm['total_market_cap_t']}T\n"
-            msg2 += f"   حجم معاملات ۲۴ ساعت: ${gm['total_volume_t']}T\n"
-            msg2 += f"   تسلط بیتکوین: {gm['btc_dominance']}%\n"
-            msg2 += f"   تغییرات ۲۴ ساعت: {gm['market_cap_change_24h']}%\n\n"
+            msg2 += f"   ارزش کل بازار: {gm['total_market_cap_t']} تریلیون دلار\n"
+            msg2 += f"   حجم معاملات ۲۴ ساعت: {gm['total_volume_t']} تریلیون دلار\n"
+            msg2 += f"   تسلط بیتکوین: {gm['btc_dominance']} درصد\n"
+            if gm['market_cap_change_24h'] > 0:
+                msg2 += f"   تغییرات ۲۴ ساعت: +{gm['market_cap_change_24h']} درصد 📈\n\n"
+            else:
+                msg2 += f"   تغییرات ۲۴ ساعت: {gm['market_cap_change_24h']} درصد 📉\n\n"
 
             # Trending
             if gm["trending"]:
@@ -349,8 +359,8 @@ def main():
             msg3 += f"   ✅ طلای ایران {abs(gold_premium):.1f}% ارزان‌تر\n"
 
         msg3 += f"\n₿ بیتکوین:\n"
-        msg3 += f"   ایران (دلار فروش): ${fmt(usd_sell)}\n"
-        msg3 += f"   جهانی: ${fmt(btc_usd)}\n"
+        msg3 += f"   قیمت دلار ایران: {fmt(usd_sell)} تومان\n"
+        msg3 += f"   قیمت جهانی بیتکوین: ${fmt(btc_usd)}\n"
 
         send_telegram(msg3)
         print(f"  [SENT] Iran vs Global")
