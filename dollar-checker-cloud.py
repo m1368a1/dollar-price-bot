@@ -1313,7 +1313,7 @@ def main():
 
             if high_events:
                 msg12 = f"\U0001f4c5 \u062a\u0642\u0648\u06cc\u0645 \u0627\u0642\u062a\u0635\u0627\u062f\u06cc \u062f\u0644\u0627\u0631\n\n"
-                msg12 += f"\u0628\u0627\u0628\u0631\u062a\u0631\u06cc\u0646 \u062a\u0623\u062b\u0631 \u0627\u0633\u062a:\n\n"
+                msg12 += f"\u0628\u0627\u0627\u0631\u0632\u0634\u062a\u0631\u06cc\u0646 \u0631\u0648\u06cc\u062f\u0627\u062f\u0647\u0627::\n\n"
 
                 for emoji, title, date_f, day_n, impact in high_events:
                     # Short format: day + time only
@@ -1400,7 +1400,7 @@ def main():
         msg13 = f"\U0001f321\ufe0f \u062f\u0645\u0627\u0633\u0646\u062c \u0628\u0627\u0632\u0627\u0631\n\n"
         msg13 += f"  [{bar}] {thermo_score}/100\n\n"
         msg13 += f"  {thermo_status}\n\n"
-        msg13 += f"\U0001f4ca \u062a\u062c\u0632\u06cc\u0627\u062a:\n"
+        msg13 += f"\U0001f4ca \u062c\u0632\u0626\u06cc\u0627\u062a:\n"
         msg13 += f"   \u2022 {' | '.join(thermo_factors)}\n\n"
         msg13 += f"\U0001f4a1 \u0637\u0645\u0639 \u0634\u062f\u06cc\u062f = \u0645\u0648\u0642\u0639 \u0641\u0631\u0648\u0634 \u0627\u062d\u062a\u0645\u0627\u0644\u06cc\n"
         msg13 += f"\U0001f4a1 \u062a\u0631\u0633 \u0634\u062f\u06cc\u062f = \u0645\u0648\u0642\u0639 \u062e\u0631\u06cc\u062f \u0627\u062d\u062a\u0645\u0627\u0644\u06cc"
@@ -1489,10 +1489,10 @@ def main():
 
         msg14 = f"\U0001f9ed \u0633\u06cc\u06af\u0646\u0627\u0644 \u062e\u0631\u06cc\u062f/\u0641\u0631\u0648\u0634\n\n"
         msg14 += f"{final_emoji} {final}\n"
-        msg14 += f"\U0001f4ca \u0627\u0645\u062a\u064a\u0627\u0632: {score:+d}/100\n\n"
+        msg14 += f"\U0001f4ca \u0627\u0645\u062a\u06cc\u0627\u0632: {score:+d}/100\n\n"
         for emoji, desc in signals:
             msg14 += f"   {emoji} {desc}\n"
-        msg14 += f"\n\u26a0\ufe0f \u0635\u0631\u0641\u0627 \u062e\u0648\u062f\u0633\u0627\u0646\u06cc \u0627\u0633\u062a"
+        msg14 += f"\n\u26a0\ufe0f \u0635\u0631\u0641\u0627\u064b \u062e\u0648\u062f\u062a\u0627\u0646 \u062a\u0635\u0645\u06cc\u0645 \u0628\u06af\u06cc\u0631\u06cc\u062f"
 
         send_telegram(msg14)
         print(f"  [SENT] Buy/Sell signal")
@@ -1533,7 +1533,7 @@ def main():
             msg15 = f"\U0001f310 \u0634\u0627\u062e\u0635 \u062f\u0644\u0627\u0631 (DXY)\n\n"
             msg15 += f"   DXY: {dxy}\n"
             msg15 += f"   {dxy_status}\n\n"
-            msg15 += f"\U0001f4b1 \u0646\u0631\u0633 \u0627\u0631\u0632:\n"
+            msg15 += f"\U0001f4b1 \u0646\u0631\u062e \u0627\u0631\u0632:\n"
             msg15 += f"   EUR: {eur} | GBP: {gbp}\n"
             msg15 += f"   JPY: {jpy} | CHF: {chf}\n\n"
             msg15 += f"\U0001f4a1 \u062f\u0644\u0627\u0631 \u0642\u0648\u06cc\u062a\u0631 = \u0637\u0644\u0627 \u0648 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0636\u0639\u06cc\u0641\u062a\u0631"
@@ -1558,7 +1558,7 @@ def main():
         exchanges = r_ex.json()
 
         if exchanges:
-            msg16 = f"\U0001f3e6 \u062a\u063a\u06cc\u06cc\u0631\u0627\u062a \u0635\u0631\u0627\u0641\u062e\u0627\u0646\u0647\u200c\u0647\u0627\n\n"
+            msg16 = f"\U0001f3e6 \u062a\u063a\u06cc\u06cc\u0631\u0627\u062a \u0635\u0631\u0627\u0641\u06cc\u200c\u0647\u0627\n\n"
 
             # Top exchanges by volume
             for ex in exchanges[:5]:
@@ -1568,8 +1568,8 @@ def main():
                 msg16 += f"   #{rank} {name}: {fmt(round(vol_24h))} BTC\n"
 
             # BTC supply on exchanges trend
-            msg16 += f"\n\U0001f4ca \u062a\u062c\u0632\u06cc\u0627\u062a:\n"
-            msg16 += f"   \u062d\u0638\u0645 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u062f\u0631 \u0635\u0631\u0627\u0641\u062e\u0627\u0646\u0647\u200c\u0647\u0627:\n"
+            msg16 += f"\n\U0001f4ca \u062c\u0632\u0626\u06cc\u0627\u062a:\n"
+            msg16 += f"   \u062d\u062c\u0645 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u062f\u0631 \u0635\u0631\u0627\u0641\u06cc\u200c\u0647\u0627:\n"
 
             total_btc = sum(ex.get('trade_volume_24h_btc', 0) for ex in exchanges)
             msg16 += f"   \u06a9\u0644: ~{fmt(round(total_btc))} BTC\n"
@@ -1577,9 +1577,9 @@ def main():
             # Estimate inflow/outflow from volume
             avg_vol = total_btc / len(exchanges) if exchanges else 0
             if total_btc > 2000000:
-                msg16 += f"   \U0001f4c9 \u062d\u062c\u0645 \u0648\u0631\u0648\u062f\u06cc \u0628\u0647 \u0635\u0631\u0627\u0641\u062e\u0627\u0646\u0647 \u0632\u06cc\u0627\u062f \u0627\u0633\u062a - \u0627\u062d\u062a\u0645\u0627\u0644 \u0641\u0631\u0648\u0634"
+                msg16 += f"   \U0001f4c9 \u062d\u062c\u0645 \u0648\u0631\u0648\u062f\u06cc \u0628\u0647 \u0635\u0631\u0627\u0641\u06cc \u0632\u06cc\u0627\u062f \u0627\u0633\u062a - \u0627\u062d\u062a\u0645\u0627\u0644 \u0641\u0631\u0648\u0634"
             elif total_btc < 500000:
-                msg16 += f"   \U0001f4c8 \u062d\u062c\u0645 \u062e\u0631\u0648\u062c \u0627\u0632 \u0635\u0631\u0627\u0641\u062e\u0627\u0646\u0647 \u0645\u0646\u0627\u0633\u0628 \u0627\u0633\u062a - \u0627\u062d\u062a\u0645\u0627\u0644 \u0646\u06af\u0647\u062f\u0627\u0631\u06cc"
+                msg16 += f"   \U0001f4c8 \u062d\u062c\u0645 \u062e\u0631\u0648\u062c \u0627\u0632 \u0635\u0631\u0627\u0641\u06cc \u0645\u0646\u0627\u0633\u0628 \u0627\u0633\u062a - \u0627\u062d\u062a\u0645\u0627\u0644 \u0646\u06af\u0647\u062f\u0627\u0631\u06cc"
             else:
                 msg16 += f"   \u27a1\ufe0f \u0639\u0627\u062f\u06cc"
 
@@ -1599,7 +1599,7 @@ def main():
             msg17 = f"\U0001f4b0 \u0646\u0633\u0628\u062a \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 / \u0637\u0644\u0627\n\n"
             msg17 += f"   \u06cc\u06a9 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 = {btc_gold_ratio:.2f} \u0627\u0646\u0633 \u0637\u0644\u0627\n"
             msg17 += f"   \u06cc\u06a9 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 = {fmt(round(gold_per_btc_gram))} \u06af\u0631\u0645 \u0637\u0644\u0627\n\n"
-            msg17 += f"\U0001f4ca \u062a\u0642\u0627\u06cc\u0633 \u0647\u0645\u0632\u0646\u06af\u06cc:\n"
+            msg17 += f"\U0001f4ca \u0645\u0642\u0627\u06cc\u0633\u0647 \u0647\u0645\u0628\u0633\u062a\u06af\u06cc:\n"
 
             if btc_gold_ratio > 40:
                 msg17 += f"   \U0001f4c8 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0646\u0633\u0628\u062a \u0628\u0647 \u0637\u0644\u0627 \u062f\u0631 \u0631\u0633\u06cc\u062f\u0646 \u0627\u0633\u062a\n"
@@ -1608,7 +1608,7 @@ def main():
             else:
                 msg17 += f"   \u27a1\ufe0f \u0646\u0633\u0628\u062a \u0646\u0631\u0645\u0627\u0644\u06cc\n"
 
-            msg17 += f"\n\U0001f4a1 \u0627\u06af\u0631 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0631\u0634\u062f \u0642\u0628\u0644\u062a\u0631 \u0627\u0632 \u0637\u0644\u0627 \u0628\u0631\u0627\u06cc\u062a\u0631 \u0628\u0638\u0631 \u0628\u0648\u062f - \u0628\u0647\u062a\u0631 \u0627\u0633\u062a"
+            msg17 += f"\n\U0001f4a1 \u0627\u06af\u0631 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0632\u0648\u062f \u0637\u0644\u0627 \u0631\u0634\u062f \u0628\u06a9\u0646\u062f - \u0628\u0647\u062a\u0631 \u0627\u0633\u062a"
 
             send_telegram(msg17)
             print(f"  [SENT] BTC/Gold ratio")
