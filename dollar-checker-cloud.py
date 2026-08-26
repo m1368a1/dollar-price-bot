@@ -389,6 +389,7 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
             mp = nh["mempool"]
             status = "\u26a0\ufe0f \u0628\u0633\u06cc\u0627\u0631" if mp["current_mb"] > mp["avg_7d_mb"] * 1.5 else "\u2705 \u0639\u0627\u062f\u06cc"
             msg += f"   \U0001f4e6 \u0645\u06cc\u0645\u067e\u0648\u0644: {mp['current_mb']} MB {status}\n"
+            msg += f"      (صف انتظار تراکنش‌ها)\n"
 
         if "tx_volume" in nh:
             tv = nh["tx_volume"]
