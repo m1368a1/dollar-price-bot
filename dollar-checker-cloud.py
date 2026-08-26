@@ -930,29 +930,77 @@ def main():
     #  MESSAGE 12: Economic Calendar (every 4 hours)
     # ============================================================
     if now.hour % 4 == 0:  # Every 4 hours
-        # Static calendar for known recurring events (approximate)
-        events = []
-        month = now.month
-        day = now.day
+        try:
+            s = requests.Session()
+            s.verify = False
+            s.headers.update({"User-Agent": "Mozilla/5.0"})
+            r = s.get("https://nfs.faireconomy.media/ff_calendar_thisweek.json", timeout=15)
+            all_events = r.json()
 
-        # FOMC meetings (roughly every 6 weeks)
-        events.append(("\U0001f3db\ufe0f", "جلسه فدرال رزرو (FOMC)", "هر ۶ هفته — نرخ بهره USD را تغییر می‌دهد"))
-        events.append(("\U0001f4ca", "اعلام CPI (تورم آمریکا)", "هر ماه — اگر تورم بالا باشد دلار قوی‌تر می‌شود"))
-        events.append(("\U0001f4c8", "NFP (اشتغال آمریکا)", "اولین جمعه هر ماه — اشتغال بالا = دلار قوی"))
-        events.append(("\U0001f3e1", "PMI تولیدی چین", "اول هر ماه — تقاضا برای طلا و کامودیتی"))
-        events.append(("\U0001f4b1", "نرخ تورم ایران", "هر ماه — مرکز آمار ایران اعلام می‌کند"))
-        events.append(("\U0001f4c9", "جلسه اوپک", "هر ماه — تأثیر بر قیمت نفت و اقتصاد ایران"))
+            # Filter USD events and high/medium impact
+            usd_events = []
+            for ev in all_events:
+                if ev.get("country") not in ("USD", "All"):
+                    continue
+                impact = ev.get("impact", "Low")
+                title = ev.get("title", "")
+                date_str_ev = ev.get("date", "")
+                if not date_str_ev:
+                    continue
 
-        msg12 = f"\U0001f4c5 \u062a\u0642\u0648\u06cc\u0645 \u0627\u0642تصاد\u06cc \u0647فتگ\u06cc\n\n"
-        msg12 += f"\u06f7 \u0631وزه \u0627\u0646دازه:\n\n"
-        for emoji, name, desc in events:
-            msg12 += f"{emoji} {name}\n"
-            msg12 += f"   {desc}\n\n"
+                # Parse the ISO date
+                try:
+                    from datetime import datetime as _dt, timedelta
+                    # Parse ISO format with timezone
+                    # Example: 2026-08-24T13:00:00-04:00
+                    dt_utc = _dt.fromisoformat(date_str_ev.replace("-04:00", "+00:00").replace("-05:00", "+00:00").replace("-03:00", "+00:00"))
+                    # If no timezone info, assume UTC
+                    if dt_utc.tzinfo is None:
+                        dt_utc = _dt.replace(dt_utc, tzinfo=None)
+                    # Convert to Tehran time (UTC+3:30)
+                    dt_teheran = dt_utc + timedelta(hours=3, minutes=30)
+                    date_formatted = dt_teheran.strftime("%Y/%m/%d %H:%M")
+                    weekday_fa = ["دوشنبه", "سه‌شنبه", "چهارشنبه", "پنجشنبه", "جمعه", "شنبه", "یکشنبه"]
+                    day_name = weekday_fa[dt_teheran.weekday()]
+                except Exception:
+                    date_formatted = date_str_ev
+                    day_name = ""
 
-        msg12 += f"\U0001f4a1 \u0646کت:\u0647 \u0627\u06ccن \u0631ویداده\u0627 \u0628\u0631 \u0642یمت \u062f\u0644\u0627\u0631 \u0648 \u0628\u06ccت\u06a9\u0648\u06cc\u0646 \u062a\u0623ث\u0631 \u0627\u0633ت."
+                # Impact emoji
+                if impact == "High":
+                    impact_emoji = "🔴"
+                elif impact == "Medium":
+                    impact_emoji = "🟡"
+                else:
+                    impact_emoji = "🟢"
 
-        send_telegram(msg12)
-        print(f"  [SENT] Economic calendar")
+                usd_events.append((impact_emoji, title, date_formatted, day_name, impact))
+
+            # Sort by date
+            usd_events.sort(key=lambda x: x[2])
+
+            if usd_events:
+                msg12 = f"\U0001f4c5 \u062a\u0642\u0648\u06cc\u0645 \u0627\u0642\u062a\u0635\u0627\u062f\u06cc \u062f\u0644\u0627\u0631\n\n"
+                msg12 += f"\u0627\u0646\u062f\u0627\u0632\u0647 \u0628\u0647 \u0648\u0642\u062a \u062a\u0647\u0631\u0627\u0646:\n\n"
+
+                for emoji, title, date_f, day_n, impact in usd_events[:10]:
+                    if day_n:
+                        msg12 += f"{emoji} {title}\n"
+                        msg12 += f"   \U0001f552 {day_n} {date_f}\n\n"
+                    else:
+                        msg12 += f"{emoji} {title}\n"
+                        msg12 += f"   \U0001f552 {date_f}\n\n"
+
+                msg12 += f"\U0001f4a1 \u0631\u0636\u0648\u0639 \u0631\u0628\u0631 \u062a\u0623\u062b\u0631 \u0627\u0633\u062a: \u0627\u0639\u0644\u0627\u0645 \u0647\u0634\u062f\u0627\u0631\u06cc"
+                msg12 += f"\n\U0001f4a1 \u0636\u0639\u06cc\u0641 \u0631\u0628\u0631 \u062a\u0623\u062b\u0631 \u0627\u0633\u062a: \u0627\u0639\u0644\u0627\u0645 \u0645\u0639\u062a\u0645\u062f"
+                msg12 += f"\n\U0001f7e1 \u0636\u0639\u06cc\u0641 \u0631\u0628\u0631 \u062a\u0623\u062b\u0631 \u0627\u0633\u062a: \u062a\u0623\u062b\u06cc\u0631 \u0645\u0639\u062a\u062f"
+
+                send_telegram(msg12)
+                print(f"  [SENT] Economic calendar")
+            else:
+                print(f"  [SKIP] No USD events found")
+        except Exception as e:
+            print(f"  [ERR] Calendar: {e}", file=sys.stderr)
 
     # ============================================================
     #  LOG
