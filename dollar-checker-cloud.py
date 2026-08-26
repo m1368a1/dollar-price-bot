@@ -607,30 +607,6 @@ def main():
         print(f"  [SENT] Global analysis")
 
     # ============================================================
-    #  MESSAGE 3: Iran vs Global Comparison
-    # ============================================================
-    if global_market:
-        iran_gold_per_oz = gold * 31.1
-        intl_gold_per_oz_toman = ounce_usd * usd_sell
-        gold_premium = ((iran_gold_per_oz - intl_gold_per_oz_toman) / intl_gold_per_oz_toman * 100) if intl_gold_per_oz_toman > 0 else 0
-
-        msg3 = "\U0001f4ca \u0645\u0642\u0627\u06cc\u0633\u0647 \u0627\u06cc\u0631\u0627\u0646 \u0648 \u062c\u0647\u0627\u0646\n"
-        msg3 += "\U0001f947 \u0637\u0644\u0627:\n"
-        msg3 += f"   \u0627\u06cc\u0631\u0627\u0646: {fmt(gold)} \u062a\u0648\u0645\u0627\u0646/\u06af\u0631\u0645\n"
-        msg3 += f"   \u062c\u0647\u0627\u0646\u06cc: {fmt(round(ounce_usd * usd_sell / 31.1))} \u062a\u0648\u0645\u0627\u0646/\u06af\u0631\u0645\n"
-        if gold_premium > 0:
-            msg3 += f"   \u26a0\ufe0f \u0637\u0644\u0627\u06cc \u0627\u06cc\u0631\u0627\u0646 {gold_premium:.1f}% \u06af\u0631\u0627\u0646\u062a\u0631\n"
-        else:
-            msg3 += f"   \u2705 \u0637\u0644\u0627\u06cc \u0627\u06cc\u0631\u0627\u0646 {abs(gold_premium):.1f}% \u0627\u0631\u0632\u0627\u0646\u062a\u0631\n"
-
-        msg3 += f"\n\u20bf \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646:\n"
-        msg3 += f"   \u0642\u06cc\u0645\u062a \u062f\u0644\u0627\u0631 \u0627\u06cc\u0631\u0627\u0646: {fmt(usd_sell)} \u062a\u0648\u0645\u0627\u0646\n"
-        msg3 += f"   \u0642\u06cc\u0645\u062a \u062c\u0647\u0627\u0646\u06cc \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646: ${fmt(btc_usd)}\n"
-
-        send_telegram(msg3)
-        print(f"  [SENT] Iran vs Global")
-
-    # ============================================================
     #  MESSAGE 4: Enhanced Whale Tracker
     # ============================================================
     if whale_unconfirmed or whale_wallets or network_health:
