@@ -979,26 +979,29 @@ def main():
             # Sort by date
             usd_events.sort(key=lambda x: x[2])
 
-            if usd_events:
-                msg12 = f"\U0001f4c5 \u062a\u0642\u0648\u06cc\u0645 \u0627\u0642\u062a\u0635\u0627\u062f\u06cc \u062f\u0644\u0627\u0631\n\n"
-                msg12 += f"\u0627\u0646\u062f\u0627\u0632\u0647 \u0628\u0647 \u0648\u0642\u062a \u062a\u0647\u0631\u0627\u0646:\n\n"
+            # Filter only high impact (🔴)
+            high_events = [e for e in usd_events if e[4] == "High"]
 
-                for emoji, title, date_f, day_n, impact in usd_events[:10]:
+            if high_events:
+                msg12 = f"\U0001f4c5 \u062a\u0642\u0648\u06cc\u0645 \u0627\u0642\u062a\u0635\u0627\u062f\u06cc \u062f\u0644\u0627\u0631\n\n"
+                msg12 += f"\u0628\u0627\u0628\u0631\u062a\u0631\u06cc\u0646 \u062a\u0623\u062b\u0631 \u0627\u0633\u062a:\n\n"
+
+                for emoji, title, date_f, day_n, impact in high_events:
+                    # Short format: day + time only
+                    # date_f is like "2026/08/29 12:30"
+                    parts = date_f.split(" ")
+                    time_part = parts[1] if len(parts) > 1 else date_f
                     if day_n:
                         msg12 += f"{emoji} {title}\n"
-                        msg12 += f"   \U0001f552 {day_n} {date_f}\n\n"
+                        msg12 += f"   \U0001f552 {day_n} {time_part}\n\n"
                     else:
                         msg12 += f"{emoji} {title}\n"
                         msg12 += f"   \U0001f552 {date_f}\n\n"
 
-                msg12 += f"\U0001f4a1 \u0631\u0636\u0648\u0639 \u0631\u0628\u0631 \u062a\u0623\u062b\u0631 \u0627\u0633\u062a: \u0627\u0639\u0644\u0627\u0645 \u0647\u0634\u062f\u0627\u0631\u06cc"
-                msg12 += f"\n\U0001f4a1 \u0636\u0639\u06cc\u0641 \u0631\u0628\u0631 \u062a\u0623\u062b\u0631 \u0627\u0633\u062a: \u0627\u0639\u0644\u0627\u0645 \u0645\u0639\u062a\u0645\u062f"
-                msg12 += f"\n\U0001f7e1 \u0636\u0639\u06cc\u0641 \u0631\u0628\u0631 \u062a\u0623\u062b\u0631 \u0627\u0633\u062a: \u062a\u0623\u062b\u06cc\u0631 \u0645\u0639\u062a\u062f"
-
                 send_telegram(msg12)
                 print(f"  [SENT] Economic calendar")
             else:
-                print(f"  [SKIP] No USD events found")
+                print(f"  [SKIP] No high impact USD events")
         except Exception as e:
             print(f"  [ERR] Calendar: {e}", file=sys.stderr)
 
