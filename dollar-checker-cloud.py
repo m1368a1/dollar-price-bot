@@ -340,7 +340,6 @@ def fetch_network_health():
 def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_usd):
     """Build comprehensive whale tracker message."""
     msg = "\U0001f40b \u062a\u062d\u0644\u06cc\u0644 \u0646\u0647\u0646\u06af\u200c\u0647\u0627\n"
-    msg += "\u2500" * 28 + "\n\n"
 
     # === Part 1: Unconfirmed Transactions ===
     if whale_unconfirmed:
@@ -361,8 +360,7 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
             for i, w in enumerate(wu["whales"][:5], 1):
                 tier = "\u26a1" if w["btc"] >= 1000 else "\U0001f4b0" if w["btc"] >= 500 else "\U0001f4b5"
                 msg += f"   {i}. {tier} {fmt(w['btc'])} BTC (${fmt(round(w['btc'] * btc_usd))})\n"
-                msg += f"      \u06a9\u0648\u0631\u0648\u06cc: {w['inputs']} \u0648\u0631\u0648\u062f\u06cc \u2192 {w['outputs']} \u062e\u0631\u0648\u062c\n"
-                msg += f"      \u06a9\u0627\u0631\u0645\u0632: {w['hash']}\n"
+                msg += f"      \u062e\u0631\u0648\u062c: {w['outputs']} | \u06a9\u0627\u0631\u0645\u0632\u062f: {w['hash']}\n"
 
         msg += "\n"
 
@@ -370,19 +368,17 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
     if whale_wallets:
         ww = whale_wallets
         msg += "\U0001f3e6 \u06a9\u06cc\u0641\u200c\u067e\u0648\u0644\u200c\u0647\u0627\u06cc \u0634\u0646\u0627\u062e\u062a\u0647\u200c\u0634\u062f\u0647:\n"
-        msg += f"   \U0001f4b0 \u06a9\u0644 \u0628\u0631\u0648\u0632\u0631\u062f\u0647\u0627\u0646: {fmt(ww['total_btc'])} BTC (${fmt(ww['total_usd'])})\n\n"
+        msg += f"   \U0001f4b0 \u06a9\u0644 \u0628\u0631\u0648\u0632\u0631\u062f\u0647\u0627: {fmt(ww['total_btc'])} BTC\n"
 
         for w in ww["wallets"][:4]:
             msg += f"   {w['label']}:\n"
-            msg += f"      \u0628\u0631\u0648\u0632\u0631\u062f: {fmt(w['balance'])} BTC\n"
-            msg += f"      \u062a\u0639\u062f\u0627\u062f \u062a\u0631\u0627\u06a9\u0646\u0634: {w['n_tx']:,}\n"
+            msg += f"      {fmt(w['balance'])} BTC | {w['n_tx']:,} \u062a\u0631\u0627\u06a9\u0646\u0634\n"
 
-        msg += "\n"
 
     # === Part 3: Network Health ===
     if network_health:
         nh = network_health
-        msg += "\U0001f310 \u0633\u0644\u0627\u0645\u062a \u0634\u0628\u0647 Bitcoin:\n"
+        msg += "\n\U0001f310 \u0633\u0644\u0627\u0645\u062a \u0634\u0628\u0647 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646:\n"
 
         if "hash_rate" in nh:
             hr = nh["hash_rate"]
@@ -392,12 +388,12 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
         if "mempool" in nh:
             mp = nh["mempool"]
             status = "\u26a0\ufe0f \u0628\u0633\u06cc\u0627\u0631" if mp["current_mb"] > mp["avg_7d_mb"] * 1.5 else "\u2705 \u0639\u0627\u062f\u06cc"
-            msg += f"   \U0001f4e6 \u0645\u06cc\u0645\u0648\u0627\u0631\u062f: {mp['current_mb']} MB {status}\n"
+            msg += f"   \U0001f4e6 \u0645\u06cc\u0645\u0646\u0648\u0644: {mp['current_mb']} MB {status}\n"
 
         if "tx_volume" in nh:
             tv = nh["tx_volume"]
             trend = "\U0001f4c8" if tv["change_pct"] > 0 else "\U0001f4c9"
-            msg += f"   \U0001f4b5 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a 24\u0633\u0627\u0639\u062a\u0647: ${tv['current_b']}B {trend} {tv['change_pct']:+.1f}%\n"
+            msg += f"   \U0001f4b5 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647: ${tv['current_b']}B {trend} {tv['change_pct']:+.1f}%\n"
 
         if "miners_revenue" in nh:
             mr = nh["miners_revenue"]
@@ -411,7 +407,7 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
         if "output_volume" in nh:
             ov = nh["output_volume"]
             trend = "\U0001f4c8" if ov["change_pct"] > 0 else "\U0001f4c9"
-            msg += f"   \U0001f4b5 \u062d\u062c\u0645 \u062e\u0631\u0648\u062c: {fmt(ov['current'])} BTC {trend} {ov['change_pct']:+.1f}%\n"
+            msg += f"   \U0001f4b5 \u062d\u062c\u0645 \u062e\u0631\u0648\u062c\u06cc: {fmt(ov['current'])} BTC {trend} {ov['change_pct']:+.1f}%\n"
 
         msg += "\n"
 
@@ -422,13 +418,13 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
         alerts.append(f"\u26a1 {whale_unconfirmed['mega_whales']} \u0645\u06cc\u06af\u0627 \u0646\u0647\u0646\u06af \u062f\u0631 \u0631\u0627\u0647 \u0627\u0633\u062a! \u0627\u0645\u06a9\u0627\u0646 \u062a\u0644\u0627\u0637\u06cc \u0628\u0627\u0632\u0627\u0631 \u0645\u0634\u062d\u0648\u0635 \u0628\u0627\u0634\u062f.")
 
     if whale_unconfirmed and whale_unconfirmed["total_whale_btc"] > 1000:
-        alerts.append(f"\u26a0\ufe0f \u062d\u062c\u0645 \u0628\u0632\u0631\u06af \u0646\u0647\u0646\u06af\u200c\u0647\u0627: {fmt(whale_unconfirmed['total_whale_btc'])} BTC - \u062a\u0648\u062c\u0647 \u0628\u0647 \u062a\u0644\u0627\u0637\u06cc!")
+        alerts.append(f"\u26a0\ufe0f \u062d\u062c\u0645 \u0628\u0632\u0631\u06af \u0646\u0647\u0646\u06af: {fmt(whale_unconfirmed['total_whale_btc'])} BTC - \u062a\u0648\u062c\u0647 \u0628\u0647 \u062a\u0644\u0627\u0637\u06cc!")
 
     if network_health and network_health.get("mempool", {}).get("current_mb", 0) > network_health.get("mempool", {}).get("avg_7d_mb", 0) * 2:
-        alerts.append("\U0001f6a8 \u0645\u06cc\u0645\u0648\u0627\u0631\u062f \u0634\u0627\u062f\u06cc \u0627\u0632 \u062d\u0627\u0644 \u0639\u0627\u062f\u06cc \u0627\u0633\u062a - \u0627\u0632\u062f\u0648\u0627\u0645 \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0631\u0642\u06cc \u0628\u0627\u0634\u062f!")
+        alerts.append("\U0001f6a8 \u0645\u06cc\u0645\u0646\u0648\u0644 \u0634\u0627\u062f\u06cc \u0627\u0632 \u062d\u0627\u0644 \u0639\u0627\u062f\u06cc \u0627\u0633\u062a - \u0627\u0632\u062f\u0648\u0627\u0645 \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0631\u0642\u06cc \u0628\u0627\u0634\u062f!")
 
     if network_health and network_health.get("output_volume", {}).get("change_pct", 0) > 50:
-        alerts.append(f"\U0001f40b \u062d\u062c\u0645 \u062e\u0631\u0648\u062c +{network_health['output_volume']['change_pct']}% \u0627\u0632 \u0645\u06cc\u0627\u0646\u06af\u06cc\u0646 - \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af\u200c\u0647\u0627 \u0628\u06cc\u0634تر است!")
+        alerts.append(f"\U0001f40b \u062d\u062c\u0645 \u062e\u0631\u0648\u062c\u06cc +{network_health['output_volume']['change_pct']}% \u0627\u0632 \u0645\u06cc\u0627\u0646\u06af\u06cc\u0646 - \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af \u0628\u06cc\u0634\u062a\u0631 \u0627\u0633\u062a!")
 
     if network_health and network_health.get("tx_volume", {}).get("change_pct", 0) > 30:
         alerts.append(f"\U0001f4c8 \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a +{network_health['tx_volume']['change_pct']}% \u0627\u0632 \u0645\u06cc\u0627\u0646\u06af\u06cc\u0646 - \u0627\u0641\u0632\u0627\u06cc\u0634 \u0641\u0639\u0627\u0644\u06cc\u062a!")
@@ -549,22 +545,20 @@ def main():
     # ============================================================
     #  MESSAGE 1: Iran Market Prices
     # ============================================================
-    msg1 = "\U0001f4ca \u0642\u06cc\u0645\u062a \u0644\u062d\u0638\u0647\u200c\u0627\u06cc \u0628\u0627\u0632\u0627\u0631 \u0622\u0632\u0627\u062f\n\n"
-    msg1 += f"\U0001f550 \u0628\u0631\u0648\u0632\u0631\u0633\u0627\u0646\u06cc: {last_modified}\n\n"
-    msg1 += f"\U0001f4b5 \u062f\u0644\u0627\u0631:\n"
+    msg1 = f"\U0001f4ca \u0642\u06cc\u0645\u062a \u0644\u062d\u0638\u0647\u200c\u0627\u06cc \u0628\u0627\u0632\u0627\u0631 \u0622\u0632\u0627\u062f\n"
+    msg1 += f"\U0001f550 \u0628\u0631\u0648\u0632\u0631\u0633\u0627\u0646\u06cc: {last_modified}\n"
+    msg1 += f"\n\U0001f4b5 \u062f\u0644\u0627\u0631:\n"
     msg1 += f"   \u0641\u0631\u0648\u0634: {fmt(usd_sell)} \u062a\u0648\u0645\u0627\u0646\n"
-    msg1 += f"   \u062e\u0631\u06cc\u062f: {fmt(usd_buy)} \u062a\u0648\u0645\u0627\u0646\n\n"
-    msg1 += f"\U0001f947 \u0637\u0644\u0627 (18 \u0639\u06cc\u0627\u0631): {fmt(gold)} \u062a\u0648\u0645\u0627\u0646/\u06af\u0631\u0645\n"
-    msg1 += f"\U0001f947 \u0627\u0646\u0633 \u0637\u0644\u0627: ${fmt(ounce_usd)}\n"
-    msg1 += f"   = {fmt(ounce_toman)} \u062a\u0648\u0645\u0627\u0646\n\n"
-    msg1 += f"\U0001fa99 \u0633\u06a9\u0647:\n"
+    msg1 += f"   \u062e\u0631\u06cc\u062f: {fmt(usd_buy)} \u062a\u0648\u0645\u0627\u0646\n"
+    msg1 += f"\n\U0001f947 \u0637\u0644\u0627 (18 \u0639\u06cc\u0627\u0631): {fmt(gold)} \u062a\u0648\u0645\u0627\u0646/\u06af\u0631\u0645\n"
+    msg1 += f"   \u0627\u0646\u0633: ${fmt(ounce_usd)} = {fmt(ounce_toman)} \u062a\u0648\u0645\u0627\u0646\n"
+    msg1 += f"\n\U0001fa99 \u0633\u06a9\u0647:\n"
     msg1 += f"   \u0622\u0632\u0627\u062f\u06cc: {fmt(azadi)} \u062a\u0648\u0645\u0627\u0646\n"
     msg1 += f"   \u0646\u06cc\u0645: {fmt(nim)} \u062a\u0648\u0645\u0627\u0646\n"
-    msg1 += f"   \u0627\u0645\u0627\u0645\u06cc: {fmt(emami)} \u062a\u0648\u0645\u0627\u0646\n\n"
-    msg1 += f"\u20bf \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646: ${fmt(btc_usd)}\n"
-    msg1 += f"   = {fmt(btc_toman)} \u062a\u0648\u0645\u0627\u0646\n\n"
-    msg1 += f"\U0001f4b0 \u062a\u062a\u0631 (USDT): {fmt(usd_sell)} \u062a\u0648\u0645\u0627\u0646\n\n"
-    msg1 += f"\U0001f4c8 \u0634\u0627\u062e\u0635 \u0628\u0648\u0631\u0633: {fmt(bourse)}"
+    msg1 += f"   \u0627\u0645\u0627\u0645\u06cc: {fmt(emami)} \u062a\u0648\u0645\u0627\u0646\n"
+    msg1 += f"\n\u20bf \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646: ${fmt(btc_usd)} = {fmt(btc_toman)} \u062a\u0648\u0645\u0627\u0646\n"
+    msg1 += f"\n\U0001f4b0 \u062a\u062a\u0631 (USDT): {fmt(usd_sell)} \u062a\u0648\u0645\u0627\u0646\n"
+    msg1 += f"\n\U0001f4c8 \u0634\u0627\u062e\u0635 \u0628\u0648\u0631\u0633: {fmt(bourse)}"
 
     send_telegram(msg1)
     print(f"  [SENT] Iran prices")
@@ -573,14 +567,14 @@ def main():
     #  MESSAGE 2: Fear & Greed + Global Market
     # ============================================================
     if fear_greed or global_market:
-        msg2 = "\U0001f9e0 \u0622\u0646\u0627\u0644\u06cc\u0632 \u0628\u0627\u0632\u0627\u0631 \u062c\u0647\u0627\u0646\u06cc\n\n"
+        msg2 = "\U0001f9e0 \u0622\u0646\u0627\u0644\u06cc\u0632 \u0628\u0627\u0632\u0627\u0631 \u062c\u0647\u0627\u0646\u06cc\n"
 
         if fear_greed:
             fg = fear_greed
             msg2 += f"{fg['emoji']} \u0634\u0627\u062e\u0635 \u062a\u0631\u0633 \u0648 \u0637\u0645\u0639: {fg['value']}/100\n"
             msg2 += f"   \u0648\u0636\u0639\u06cc\u062a: {fg['classification']}\n"
             msg2 += f"   \u0645\u06cc\u0627\u0646\u06af\u06cc\u0646 7 \u0631\u0648\u0632\u0647: {fg['avg_7d']}\n"
-            msg2 += f"   \u0631\u0648\u0646\u062f: {fg['trend']}\n\n"
+            msg2 += f"   \u0631\u0648\u0646\u062f: {fg['trend']}\n"
 
         if global_market:
             gm = global_market
@@ -589,9 +583,9 @@ def main():
             msg2 += f"   \u062d\u062c\u0645 \u0645\u0639\u0627\u0645\u0644\u0627\u062a 24 \u0633\u0627\u0639\u062a\u0647: {gm['total_volume_t']} \u062a\u0631\u06cc\u0644\u06cc\u0648\u0646 \u062f\u0644\u0627\u0631\n"
             msg2 += f"   \u062a\u0633\u0644\u0637 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646: {gm['btc_dominance']} \u062f\u0631\u0635\u062f\n"
             if gm['market_cap_change_24h'] > 0:
-                msg2 += f"   \u062a\u063a\u06cc\u06cc\u0631\u0627\u062a 24 \u0633\u0627\u0639\u062a\u0647: +{gm['market_cap_change_24h']} \u062f\u0631\u0635\u062f \U0001f4c8\n\n"
+                msg2 += f"   \u062a\u063a\u06cc\u06cc\u0631\u0627\u062a 24 \u0633\u0627\u0639\u062a\u0647: +{gm['market_cap_change_24h']} \u062f\u0631\u0635\u062f \U0001f4c8\n"
             else:
-                msg2 += f"   \u062a\u063a\u06cc\u06cc\u0631\u0627\u062a 24 \u0633\u0627\u0639\u062a\u0647: {gm['market_cap_change_24h']} \u062f\u0631\u0635\u062f \U0001f4c9\n\n"
+                msg2 += f"   \u062a\u063a\u06cc\u06cc\u0631\u0627\u062a 24 \u0633\u0627\u0639\u062a\u0647: {gm['market_cap_change_24h']} \u062f\u0631\u0635\u062f \U0001f4c9\n"
 
             if gm["trending"]:
                 msg2 += "\U0001f525 \u062a\u0631\u0646\u062f \u0627\u0645\u0631\u0648\u0632:\n"
@@ -599,12 +593,12 @@ def main():
                     msg2 += f"   {name} (#{rank})\n"
 
             if gm["top_gainers"]:
-                msg2 += f"\n\U0001f4c8 \u0628\u06cc\u0634\u062a\u0631\u06cc\u0646 \u0631\u0634\u062f 24 \u0633\u0627\u0639\u062a\u0647:\n"
+                msg2 += f"\U0001f4c8 \u0628\u06cc\u0634\u062a\u0631\u06cc\u0646 \u0631\u0634\u062f 24 \u0633\u0627\u0639\u062a\u0647:\n"
                 for name, symbol, change in gm["top_gainers"]:
                     msg2 += f"   {symbol}: +{change:.1f}%\n"
 
             if gm["top_losers"]:
-                msg2 += f"\n\U0001f4c9 \u0628\u06cc\u0634\u062a\u0631\u06cc\u0646 \u0627\u0641\u062a 24 \u0633\u0627\u0639\u062a\u0647:\n"
+                msg2 += f"\U0001f4c9 \u0628\u06cc\u0634\u062a\u0631\u06cc\u0646 \u0627\u0641\u062a 24 \u0633\u0627\u0639\u062a\u0647:\n"
                 for name, symbol, change in gm["top_losers"]:
                     msg2 += f"   {symbol}: {change:.1f}%\n"
 
@@ -619,7 +613,7 @@ def main():
         intl_gold_per_oz_toman = ounce_usd * usd_sell
         gold_premium = ((iran_gold_per_oz - intl_gold_per_oz_toman) / intl_gold_per_oz_toman * 100) if intl_gold_per_oz_toman > 0 else 0
 
-        msg3 = "\U0001f4ca \u0645\u0642\u0627\u06cc\u0633\u0647 \u0627\u06cc\u0631\u0627\u0646 \u0648 \u062c\u0647\u0627\u0646\n\n"
+        msg3 = "\U0001f4ca \u0645\u0642\u0627\u06cc\u0633\u0647 \u0627\u06cc\u0631\u0627\u0646 \u0648 \u062c\u0647\u0627\u0646\n"
         msg3 += "\U0001f947 \u0637\u0644\u0627:\n"
         msg3 += f"   \u0627\u06cc\u0631\u0627\u0646: {fmt(gold)} \u062a\u0648\u0645\u0627\u0646/\u06af\u0631\u0645\n"
         msg3 += f"   \u062c\u0647\u0627\u0646\u06cc: {fmt(round(ounce_usd * usd_sell / 31.1))} \u062a\u0648\u0645\u0627\u0646/\u06af\u0631\u0645\n"
