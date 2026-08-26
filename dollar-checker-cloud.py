@@ -818,6 +818,167 @@ def main():
     print(f"  [SENT] Daily tip")
 
     # ============================================================
+    #  MESSAGE 9: Whale Alert (only if > 500 BTC found)
+    # ============================================================
+    if whale_unconfirmed and whale_unconfirmed["whales"]:
+        big_whales = [w for w in whale_unconfirmed["whales"] if w["btc"] >= 500]
+        if big_whales:
+            msg9 = f"\u26a1 \u0647\u0634\u062f\u0627\u0631 \u0646\u0647\u0646\u06af!\n\n"
+            msg9 += f"{len(big_whales)} \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0632\u0631\u06af \u062a\u0623\u06cc\u06cc\u062f \u0634\u062f:\n\n"
+            for i, w in enumerate(big_whales[:5], 1):
+                usd_val = round(w["btc"] * btc_usd)
+                if w["btc"] >= 1000:
+                    tier = "\u26a1\ufe0f \u0645\u06cc\u06af\u0627"
+                else:
+                    tier = "\U0001f4b0 \u0628\u0632\u0631\u06af"
+                msg9 += f"{i}. {tier} {fmt(w['btc'])} BTC\n"
+                msg9 += f"   = ${fmt(usd_val)}\n"
+                msg9 += f"   \u06a9\u0648\u0631\u0648\u06cc: {w['hash']}\n\n"
+
+            if len(big_whales) >= 3:
+                msg9 += f"\u26a0\ufe0f {len(big_whales)} \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0632\u0631\u06af \u062f\u0631 \u0631\u0627\u0647 \u0627\u0633\u062a! \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af \u0628\u0631\u0642\u06cc \u0627\u0633\u062a."
+            else:
+                msg9 += f"\U0001f4b5 \u062d\u062c\u0645 \u06a9\u0644: {fmt(whale_unconfirmed['total_whale_btc'])} BTC\n"
+                msg9 += f"\U0001f4ca \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af \u0645\u0639\u0645\u0648\u0644\u06cc \u0627\u0633\u062a."
+
+            send_telegram(msg9)
+            print(f"  [SENT] Whale alert")
+
+    # ============================================================
+    #  MESSAGE 10: Weekly Fear & Greed Analysis (every Sunday)
+    # ============================================================
+    if fear_greed and now.weekday() == 6:  # Sunday
+        fg = fear_greed
+        values_7d = fg["history"]
+        max_val = max(values_7d)
+        min_val = min(values_7d)
+        range_val = max_val - min_val
+
+        msg10 = f"\U0001f9e0 \u062a\u062d\u0644\u06cc\u0644 \u0647\u0641\u062a\u06af\u06cc \u062a\u0631\u0633 \u0648 \u0637\u0645\u0639\n\n"
+        msg10 += f"\U0001f4c5 \u06af\u0632\u0627\u0631\u0634 \u06f7 \u0631\u0648\u0632\u0647:\n\n"
+
+        # Visual bar
+        bar_len = 20
+        filled = int(fg["value"] / 100 * bar_len)
+        bar = "\u2588" * filled + "\u2591" * (bar_len - filled)
+        msg10 += f"\u062a\u0631\u0633: [{bar}] {fg['value']}/100\n\n"
+
+        # Daily breakdown
+        days_name = ["\u0634\u0646\u0628\u0647", "\u062c\u0645\u0639\u0647", "\u062f\u0634\u0646\u0628\u0647", "\u0633\u0647\u200c\u0634\u0646\u0628\u0647", "\u0686\u0647\u0627\u0631\u0634\u0646\u0628\u0647", "\u067e\u0646\u062c\u0634\u0646\u0628\u0647", "\u0627\u0645\u0631\u0648\u0632"]
+        for i, val in enumerate(values_7d):
+            if val <= 25:
+                emoji = "\U0001f631"
+            elif val <= 50:
+                emoji = "\U0001f610"
+            else:
+                emoji = "\U0001f60f"
+            msg10 += f"   {days_name[i]}: {val} {emoji}\n"
+
+        msg10 += f"\n\u0645\u06cc\u0627\u0646\u06af\u06cc\u0646: {fg['avg_7d']}\n"
+        msg10 += f"\u0628\u06cc\u0634\u062a\u0631\u06cc\u0646: {max_val}\n"
+        msg10 += f"\u06a9\u0645\u062a\u0631\u06cc\u0646: {min_val}\n"
+        msg10 += f"\u0646\u0648\u0633\u0627\u0646: {range_val} واحد\n\n"
+
+        if fg["value"] > fg["avg_7d"]:
+            msg10 += f"\U0001f4c8 \u0628\u0627\u0632\u0627\u0631 \u0628\u0631\u0648\u0632 \u0637\u0645\u0639\u06cc\u062a\u0631 \u0634\u062f\u0647 \u0627\u0633\u062a.\n"
+        elif fg["value"] < fg["avg_7d"]:
+            msg10 += f"\U0001f4c9 \u0628\u0627\u0632\u0627\u0631 \u062a\u0631\u0633\u06cc \u0628\u06cc\u0634\u062a\u0631 \u0634\u062f\u0647 \u0627\u0633\u062a.\n"
+        else:
+            msg10 += f"\u27a1\ufe0f \u0628\u0627\u0632\u0627\u0631 \u062a\u063a\u06cc\u06cc\u0631 \u0646\u06a9\u0631\u062f\u0647 \u0627\u0633\u062a.\n"
+
+        if fg["value"] <= 25:
+            msg10 += f"\n\U0001f4a1 \u062a\u0631\u0633 \u0634\u062f\u06ccد = \u0645\u0648\u0642\u0639 \u062e\u0631\u06cc\u062f \u0628\u0631\u0627ی \u0627\u0646د\u0627\u0632\u0647 \u0628\u0644ند\u0645د."
+        elif fg["value"] >= 75:
+            msg10 += f"\n\U0001f4a1 \u0637\u0645\u0639 \u0634\u062f\u06cc\u062f = \u0645\u0648\u0642\u0639 \u0641\u0631\u0648\u0634 \u0628\u0631\u0627\u06cc \u0627\u0646دا\u0632\u0647 \u0628\u0644ند\u0645د."
+
+        send_telegram(msg10)
+        print(f"  [SENT] Weekly F&G analysis")
+
+    # ============================================================
+    #  MESSAGE 11: Enhanced Iran vs Global Comparison
+    # ============================================================
+    # This is an improved version of msg3 with more details
+    if global_market:
+        iran_gold_per_oz = gold * 31.1
+        intl_gold_per_oz_toman = ounce_usd * usd_sell
+        gold_premium = ((iran_gold_per_oz - intl_gold_per_oz_toman) / intl_gold_per_oz_toman * 100) if intl_gold_per_oz_toman > 0 else 0
+
+        # BTC comparison
+        btc_iran_toman = usd_sell * btc_usd
+        btc_premium = 0  # Usually same price
+
+        # Tether = dollar in practice
+        tether_premium = ((usd_sell - usd_buy) / usd_buy * 100) if usd_buy > 0 else 0
+
+        msg11 = f"\U0001f4ca \u0645\u0642\u0627\u06cc\u0633\u0647 \u0627\u06cc\u0631\u0627\u0646 \u0648 \u062c\u0647\u0627\u0646\n\n"
+
+        # Gold comparison
+        intl_gold_per_gram = round(ounce_usd * usd_sell / 31.1)
+        msg11 += f"\U0001f947 \u0637\u0644\u0627:\n"
+        msg11 += f"   \u0627\u06cc\u0631\u0627\u0646: {fmt(gold)} \u062a\u0648\u0645\u0627\u0646/\u06af\u0631\u0645\n"
+        msg11 += f"   \u062c\u0647\u0627\u0646\u06cc: {fmt(intl_gold_per_gram)} \u062a\u0648\u0645\u0627\u0646/\u06af\u0631\u0645\n"
+        if gold_premium > 10:
+            msg11 += f"   \u26a0\ufe0f \u0637\u0644\u0627\u06cc \u0627\u06cc\u0631\u0627\u0646 {gold_premium:.1f}% \u06af\u0631\u0627\u0646\u062a\u0631 \u0627\u0632 \u062c\u0647\u0627\u0646\u06cc\n"
+            msg11 += f"   \U0001f4a1 \u0627\u0645کان \u0622ربیتراژ \u0628\u0627شد\n"
+        elif gold_premium < -5:
+            msg11 += f"   \U0001f4a1 \u0637\u0644\u0627\u06cc \u0627\u06cc\u0631\u0627\u0646 {abs(gold_premium):.1f}% \u0627\u0631\u0632\u0627\u0646\u062a\u0631 \u0627\u0632 \u062c\u0647\u0627\u0646\u06cc\n"
+        else:
+            msg11 += f"   \u2705 \u0642\u06cc\u0645\u062a \u0645\u0639\u062a\u062f\u0644 \u0627\u0633\u062a\n"
+
+        # BTC comparison
+        msg11 += f"\n\u20bf \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646:\n"
+        msg11 += f"   \u0642\u06cc\u0645\u062a \u062c\u0647\u0627\u0646\u06cc: ${fmt(btc_usd)}\n"
+        msg11 += f"   \u0642\u06cc\u0645\u062a \u0628\u0627 \u062f\u0644\u0627\u0631 \u0627\u06cc\u0631\u0627\u0646: {fmt(btc_iran_toman)} \u062a\u0648\u0645\u0627\u0646\n"
+
+        # ETH price
+        try:
+            s = requests.Session()
+            s.verify = False
+            r = s.get("https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd", timeout=10)
+            eth_data = r.json()
+            eth_usd = eth_data["ethereum"]["usd"]
+            eth_toman = round(eth_usd * usd_sell)
+            msg11 += f"\n\u26a1 \u0627تر\u06cc\u0648\u0645:\n"
+            msg11 += f"   \u0642\u06cc\u0645\u062a \u062c\u0647\u0627\u0646\u06cc: ${fmt(eth_usd)}\n"
+            msg11 += f"   \u0642\u06cc\u0645\u062a \u0628\u0627 \u062f\u0644\u0627\u0631 \u0627\u06cc\u0631\u0627\u0646: {fmt(eth_toman)} \u062a\u0648\u0645\u0627\u0646\n"
+        except Exception:
+            pass
+
+        # Tether note
+        msg11 += f"\n\U0001f4b0 \u062a\u062a\u0631 (USDT) = \u062f\u0644\u0627\u0631 \u062fیج\u06ccت\u0627\u0644\u06cc = {fmt(usd_sell)} \u062a\u0648\u0645\u0627\u0646\n"
+
+        send_telegram(msg11)
+        print(f"  [SENT] Enhanced Iran vs Global")
+
+    # ============================================================
+    #  MESSAGE 12: Weekly Economic Calendar (every Sunday)
+    # ============================================================
+    if now.weekday() == 6:  # Sunday
+        # Static calendar for known recurring events (approximate)
+        events = []
+        month = now.month
+        day = now.day
+
+        # FOMC meetings (roughly every 6 weeks)
+        events.append(("\U0001f3db\ufe0f", "جلسه فدرال رزرو (FOMC)", "هر ۶ هفته — نرخ بهره USD را تغییر می‌دهد"))
+        events.append(("\U0001f4ca", "اعلام CPI (تورم آمریکا)", "هر ماه — اگر تورم بالا باشد دلار قوی‌تر می‌شود"))
+        events.append(("\U0001f4c8", "NFP (اشتغال آمریکا)", "اولین جمعه هر ماه — اشتغال بالا = دلار قوی"))
+        events.append(("\U0001f3e1", "PMI تولیدی چین", "اول هر ماه — تقاضا برای طلا و کامودیتی"))
+        events.append(("\U0001f4b1", "نرخ تورم ایران", "هر ماه — مرکز آمار ایران اعلام می‌کند"))
+        events.append(("\U0001f4c9", "جلسه اوپک", "هر ماه — تأثیر بر قیمت نفت و اقتصاد ایران"))
+
+        msg12 = f"\U0001f4c5 \u062a\u0642\u0648\u06cc\u0645 \u0627\u0642تصاد\u06cc \u0647فتگ\u06cc\n\n"
+        msg12 += f"\u06f7 \u0631وزه \u0627\u0646دازه:\n\n"
+        for emoji, name, desc in events:
+            msg12 += f"{emoji} {name}\n"
+            msg12 += f"   {desc}\n\n"
+
+        msg12 += f"\U0001f4a1 \u0646کت:\u0647 \u0627\u06ccن \u0631ویداده\u0627 \u0628\u0631 \u0642یمت \u062f\u0644\u0627\u0631 \u0648 \u0628\u06ccت\u06a9\u0648\u06cc\u0646 \u062a\u0623ث\u0631 \u0627\u0633ت."
+
+        send_telegram(msg12)
+        print(f"  [SENT] Economic calendar")
+
+    # ============================================================
     #  LOG
     # ============================================================
     log_file = os.path.join(os.path.expanduser("~"), "dollar-price-log.txt")
