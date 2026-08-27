@@ -1516,9 +1516,13 @@ def main():
         sek = rates.get('SEK', 0)
         chf = rates.get('CHF', 0)
 
-        # Simplified DXY calculation
+        # Correct DXY calculation
+        # API returns USD/base (e.g. EUR=0.857 means 1 USD=0.857 EUR)
+        # DXY formula needs: EUR/USD, USD/JPY, GBP/USD, USD/CAD, USD/SEK, USD/CHF
         if eur and jpy and gbp:
-            dxy = 50.14348112 * (1/eur) * (jpy ** 0.136) * (gbp ** 0.0856) * (cad ** 0.0913) * (sek ** 0.0421) * (chf ** 0.0367)
+            eur_usd = 1.0 / eur   # e.g. 1/0.857 = 1.167
+            gbp_usd = 1.0 / gbp   # e.g. 1/0.733 = 1.364
+            dxy = 50.14348112 * (eur_usd ** -0.576) * (jpy ** 0.136) * (gbp_usd ** -0.119) * (cad ** 0.091) * (sek ** 0.042) * (chf ** 0.036)
             dxy = round(dxy, 2)
 
             # Determine trend
