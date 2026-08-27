@@ -419,8 +419,70 @@ def cleanup_yesterday_messages():
 
 
 # ============================================================
-#  MAIN
+#  Tehran Stock Exchange Index (from tsetmc - official)
 # ============================================================
+def fetch_tse_index():
+    try:
+        s = requests.Session()
+        s.headers.update({"User-Agent": "Mozilla/5.0"})
+        s.verify = False
+        r = s.get("https://cdn.tsetmc.com/api/MarketData/GetMarketOverview/1", timeout=10)
+        data = r.json()
+        overview = data.get("marketOverview", {})
+        return {
+            "index": overview.get("indexLastValue", 0),
+            "change": overview.get("indexChange", 0),
+            "equal_weighted": overview.get("indexEqualWeightedLastValue", 0),
+            "equal_weighted_change": overview.get("indexEqualWeightedChange", 0),
+        }
+    except Exception as e:
+        print(f"  TSE error: {e}", file=sys.stderr)
+        return None
+
+# ============================================================
+#  Whale Message Builder (concise)
+# ============================================================
+def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_usd):
+    """Build concise whale tracker message."""
+    msg = chr(0x1f40b) + " \u062a\u062d\u0644\u06cc\u0644 \u0646\u0647\u0646\u06af\u200c\u0647\u0627\n"
+
+    # Status
+    if whale_unconfirmed:
+        whale_count = len(whale_unconfirmed.get("whales", []))
+        total_btc = whale_unconfirmed.get("total_whale_btc", 0)
+        tx_count = whale_unconfirmed.get("total_unconfirmed", 0)
+        if whale_count > 3 or total_btc > 5000:
+            status = chr(0x26a1) + chr(0xfe0f) + " \u0641\u0639\u0627\u0644\u06cc\u062a \u0628\u0627\u0644\u0627"
+        else:
+            status = chr(0x2705) + " \u0622\u0631\u0627\u0645"
+        msg += f"{status} | \u062a\u0631\u0627\u06a9\u0646\u0634: {tx_count} | \u0646\u0647\u0646\u06af: {whale_count} | \u062d\u062c\u0645: {fmt(total_btc)} BTC\n"
+
+        if whale_unconfirmed.get("whales"):
+            msg += "\n" + chr(0x1f525) + " \u0628\u0632\u0631\u06af\u062a\u0631\u06cc\u0646:\n"
+            for i, w in enumerate(whale_unconfirmed["whales"][:3], 1):
+                usd_val = round(w["btc"] * btc_usd)
+                tier = chr(0x26a1) if w["btc"] >= 1000 else chr(0x1f4b0)
+                msg += f"   {i}. {tier} {fmt(w['btc'])} BTC (${fmt(usd_val)})\n"
+
+    if whale_wallets and whale_wallets.get("wallets"):
+        msg += "\n" + chr(0x1f3e6) + " \u0645\u0648\u062c\u0648\u062f\u06cc: " + fmt(whale_wallets.get('total_btc', 0)) + " BTC\n"
+        for w in whale_wallets["wallets"][:4]:
+            msg += f"   {w['label']}: {fmt(w['balance'])} BTC\n"
+
+    if network_health:
+        hr = network_health.get("hash_rate", {})
+        mp = network_health.get("mempool", {})
+        tx = network_health.get("tx_volume", {})
+        mr = network_health.get("miners_revenue", {})
+        hr_str = f"{hr.get('current', '?')} {hr.get('unit', 'EH/s')}" if hr else "?"
+        mp_str = f"{mp.get('current_mb', '?')} MB" if mp else "?"
+        tx_str = f"${tx.get('current_b', '?')}B" if tx else "?"
+        mr_str = f"${mr.get('current_m', '?')}M" if mr else "?"
+        msg += "\n" + chr(0x1f310) + " \u0634\u0628\u06a9\u0647: " + chr(0x1f4a8) + f" {mp_str} | {chr(0x1f4b0)} {tx_str} | {chr(0x2699)}{chr(0xfe0f)} {hr_str} | {chr(0x26cf)}{chr(0xfe0f)} {mr_str}\n"
+
+    return msg
+
+
 def main():
     now = datetime.now()
     date_str = now.strftime("%Y-%m-%d %H:%M")
