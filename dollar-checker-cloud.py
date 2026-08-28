@@ -21,6 +21,7 @@ import os
 import sys
 import time
 import warnings
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime
 
 warnings.filterwarnings("ignore", message="Unverified HTTPS request")
@@ -348,7 +349,7 @@ def fmt(n):
 
 
 def send_telegram(text):
-    """Send message and return message_id for tracking."""
+    """Send one Telegram message and return success."""
     try:
         resp = requests.post(
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
@@ -426,7 +427,7 @@ def fetch_tse_index():
         s = requests.Session()
         s.headers.update({"User-Agent": "Mozilla/5.0"})
         s.verify = False
-        r = s.get("https://cdn.tsetmc.com/api/MarketData/GetMarketOverview/1", timeout=10)
+        r = s.get("https://cdn.tsetmc.com/api/MarketData/GetMarketOverview/1", timeout=15)
         data = r.json()
         overview = data.get("marketOverview", {})
         return {
@@ -500,56 +501,67 @@ def main():
     network_health = None
     tse_index = None
 
+    # === PARALLEL DATA FETCHING ===
+
+    fetch_tasks = {
+
+        "bonbast": fetch_bonbast_prices,
+
+        "fear_greed": fetch_fear_greed,
+
+        "global_market": fetch_global_market,
+
+        "whale_unconfirmed": fetch_whale_unconfirmed,
+
+        "whale_wallets": fetch_whale_wallets,
+
+        "network_health": fetch_network_health,
+
+        "tse_index": fetch_tse_index,
+
+    }
+
+    results = {}
+
     errors = []
 
-    try:
-        bonbast = fetch_bonbast_prices()
-        print("  [OK] Bonbast prices")
-    except Exception as e:
-        errors.append(f"Bonbast: {e}")
-        print(f"  [ERR] Bonbast: {e}")
+    with ThreadPoolExecutor(max_workers=7) as executor:
 
-    try:
-        fear_greed = fetch_fear_greed()
-        print("  [OK] Fear & Greed")
-    except Exception as e:
-        errors.append(f"F&G: {e}")
-        print(f"  [ERR] Fear & Greed: {e}")
+        future_map = {executor.submit(fn): name for name, fn in fetch_tasks.items()}
 
-    try:
-        global_market = fetch_global_market()
-        print("  [OK] Global market")
-    except Exception as e:
-        errors.append(f"Global: {e}")
-        print(f"  [ERR] Global market: {e}")
+        for future in as_completed(future_map):
 
-    try:
-        whale_unconfirmed = fetch_whale_unconfirmed()
-        print("  [OK] Whale unconfirmed txs")
-    except Exception as e:
-        errors.append(f"Whale unconfirmed: {e}")
-        print(f"  [ERR] Whale unconfirmed: {e}")
+            name = future_map[future]
 
-    try:
-        whale_wallets = fetch_whale_wallets()
-        print("  [OK] Whale wallets")
-    except Exception as e:
-        errors.append(f"Whale wallets: {e}")
-        print(f"  [ERR] Whale wallets: {e}")
+            try:
 
-    try:
-        network_health = fetch_network_health()
-        print("  [OK] Network health")
-    except Exception as e:
-        errors.append(f"Network: {e}")
-        print(f"  [ERR] Network health: {e}")
+                results[name] = future.result()
 
-    try:
-        tse_index = fetch_tse_index()
-        print("  [OK] TSE index")
-    except Exception as e:
-        errors.append(f"TSE: {e}")
-        print(f"  [ERR] TSE index: {e}")
+                print(f"  [OK] {name}")
+
+            except Exception as e:
+
+                results[name] = None
+
+                errors.append(f"{name}: {e}")
+
+                print(f"  [ERR] {name}: {e}")
+
+
+
+    bonbast = results.get("bonbast")
+
+    fear_greed = results.get("fear_greed")
+
+    global_market = results.get("global_market")
+
+    whale_unconfirmed = results.get("whale_unconfirmed")
+
+    whale_wallets = results.get("whale_wallets")
+
+    network_health = results.get("network_health")
+
+    tse_index = results.get("tse_index")
 
     if not bonbast:
         print(f"[{date_str}] FATAL: No bonbast data. Aborting.")
@@ -602,6 +614,8 @@ def main():
         msg1 += f"   {sign}{fmt(round(bourse_change))}\n"
     msg1 += f"   \u0647\u0645 \u0648\u0632\u0646: {fmt(bourse_eq)}"
 
+    # Send the first message immediately; the remaining independent messages
+    # are dispatched in parallel below so a slow API does not delay Telegram.
     send_telegram(msg1)
     print(f"  [SENT] Iran prices")
 
