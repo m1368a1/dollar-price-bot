@@ -666,12 +666,15 @@ def main():
     msg1 += f"   \u0627\u0645\u0627\u0645\u06cc: {fmt(emami)} \u062a\u0648\u0645\u0627\u0646\n"
     msg1 += f"\n\u20bf \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646: ${fmt(btc_usd)} = {fmt(btc_toman)} \u062a\u0648\u0645\u0627\u0646\n"
     msg1 += f"\n\U0001f4b0 \u062a\u062a\u0631 (USDT): {fmt(usd_sell)} \u062a\u0648\u0645\u0627\u0646\n"
-    msg1 += f"\n\U0001f4c8 \u0634\u0627\u062e\u0635 \u0628\u0648\u0631\u0633:\n"
-    msg1 += f"   \u06a9\u0644: {fmt(bourse)}\n"
-    if bourse_change != 0:
-        sign = "+" if bourse_change > 0 else ""
-        msg1 += f"   {sign}{fmt(round(bourse_change))}\n"
-    msg1 += f"   \u0647\u0645 \u0648\u0632\u0646: {fmt(bourse_eq)}"
+    # Only show bourse if tse_index was fetched successfully (not bonbast fallback)
+    if tse_index and tse_index.get('index', 0) > 1_000_000:
+        msg1 += f"\n\U0001f4c8 \u0634\u0627\u062e\u0635 \u0628\u0648\u0631\u0633:\n"
+        msg1 += f"   \u06a9\u0644: {fmt(bourse)}\n"
+        if bourse_change != 0:
+            sign = "+" if bourse_change > 0 else ""
+            msg1 += f"   {sign}{fmt(round(bourse_change))}\n"
+        if bourse_eq > 0:
+            msg1 += f"   \u0647\u0645 \u0648\u0632\u0646: {fmt(bourse_eq)}"
 
     # Send the first message immediately; the remaining independent messages
     # are dispatched in parallel below so a slow API does not delay Telegram.
