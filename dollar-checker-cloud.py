@@ -426,19 +426,30 @@ def fetch_tse_index():
     try:
         s = requests.Session()
         s.headers.update({"User-Agent": "Mozilla/5.0"})
-        s.verify = False
-        r = s.get("https://cdn.tsetmc.com/api/MarketData/GetMarketOverview/1", timeout=15)
-        data = r.json()
-        overview = data.get("marketOverview", {})
-        return {
-            "index": overview.get("indexLastValue", 0),
-            "change": overview.get("indexChange", 0),
-            "equal_weighted": overview.get("indexEqualWeightedLastValue", 0),
-            "equal_weighted_change": overview.get("indexEqualWeightedChange", 0),
-        }
+        r = s.get("https://www.tgju.org/profile/bourse", timeout=15, verify=False)
+        text = r.text
+        spans = re.findall(r'<span[^>]*>([\d,.]+)</span>', text)
+        nums = []
+        for sv in spans:
+            try:
+                nums.append(float(sv.replace(',', '')))
+            except:
+                pass
+        # tgju.org spans: [1]=index, [7]=EW, [15]=change, [17]=EW change
+        index_val = int(nums[1]) if len(nums) > 1 and nums[1] > 1_000_000 else 0
+        eq_val = int(nums[7]) if len(nums) > 7 and nums[7] > 1_000_000 else 0
+        change_val = int(nums[15]) if len(nums) > 15 and nums[15] > 0 else 0
+        eq_change = int(nums[17]) if len(nums) > 17 and nums[17] > 0 else 0
+        if index_val > 0:
+            return {
+                "index": index_val,
+                "change": change_val,
+                "equal_weighted": eq_val,
+                "equal_weighted_change": eq_change,
+            }
     except Exception as e:
         print(f"  TSE error: {e}", file=sys.stderr)
-        return None
+    return None
 
 # ============================================================
 #  Whale Message Builder (concise)
