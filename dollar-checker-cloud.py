@@ -1121,10 +1121,7 @@ def build_news_message(news_list):
 
         return None
 
-
-
-    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0627\u0645\u0631\u0648\u0632\n"
-
+    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0627\u0645\u0631\u0648\u0632\n\n"
     for i, n in enumerate(new_news[:8], 1):
 
         translated = _translate_news_title(n["title"])
@@ -1133,7 +1130,7 @@ def build_news_message(news_list):
 
         msg += f"{i}. {chr(0x1f514)} {translated}\n"
 
-        msg += f"   {chr(0x1f552)} {n['date']} | {source}\n"
+        msg += f"   {chr(0x1f552)} {n['date']} | {source}\n\n"
 
         _save_seen_headline(n["title"])
 
