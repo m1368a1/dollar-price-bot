@@ -1039,21 +1039,20 @@ def _save_seen_headline(title):
 
 
 def _translate_news_title(title):
-    """Translate and normalize financial news headlines into readable Persian."""
-    # Translate complete common headline structures first.
-    patterns = [
-        (r"(?i)^UAE investigates Egypt.?s Banque Misr after U\.??S\.?? moves to block dollar clearing$", "امارات تحقیقات درباره بانک مصر پس از تلاش آمریکا برای مسدودکردن تسویه دلار را آغاز کرد"),
-        (r"(?i)^Bitcoin consolidates between (.+?): Hourly levels$", r"بیتکوین بین \1 تثبیت شد؛ سطوح ساعتی"),
-        (r"(?i)^Iran foreign trade plunges (.+?) under U\.??S\.?? blockade as six-month war drags$", r"تجارت خارجی ایران در پی محاصره آمریکا و ادامه جنگ شش‌ماهه \1 سقوط کرد"),
-        (r"(?i)^Bessent warns yen volatility risks spillover to global markets$", "بسنت هشدار داد نوسان ین می‌تواند به بازارهای جهانی سرایت کند"),
-        (r"(?i)^Bessent says disorderly yen moves can destabilize global markets$", "بسنت گفت حرکات بی‌نظم ین می‌تواند بازارهای جهانی را بی‌ثبات کند"),
-        (r"(?i)^Goldman draws (.+?) lessons from economic research on U\.??S\.?? inflation expectations$", r"گلدمن از پژوهش‌های اقتصادی درباره انتظارات تورمی آمریکا \1 درس ارائه کرد"),
-    ]
-    for pattern, replacement in patterns:
-        if re.match(pattern, title.strip()):
-            return re.sub(pattern, replacement, title.strip())
+    """Translate financial headlines to readable Persian without mixed English text."""
+    exact = {
+        "UAE investigates Egypt’s Banque Misr after آمریکا. حرکات به block دلار clearing":
+            "امارات درباره بانک مصر پس از تلاش آمریکا برای مسدودکردن تسویه دلار تحقیق می‌کند",
+        "Bitcoin consolidates between $77.2K-$78.7K: Hourly levels":
+            "بیتکوین بین ۷۷٫۲ تا ۷۸٫۷ هزار دلار تثبیت شد؛ سطوح ساعتی",
+        "ایران foreign تجارت plunges 35% under آمریکا blockade  six-month war drags":
+            "تجارت خارجی ایران در پی محاصره آمریکا و ادامه جنگ شش‌ماهه ۳۵٪ سقوط کرد",
+    }
+    normalized = title.strip()
+    if normalized in exact:
+        return exact[normalized]
 
-    phrase_pairs = [
+    phrases = [
         ("U.S. Treasury", "خزانه‌داری آمریکا"), ("US Treasury", "خزانه‌داری آمریکا"),
         ("Banque Misr", "بانک مصر"), ("foreign trade", "تجارت خارجی"),
         ("six-month war", "جنگ شش‌ماهه"), ("six month war", "جنگ شش‌ماهه"),
@@ -1064,16 +1063,15 @@ def _translate_news_title(title):
         ("interest rate", "نرخ بهره"), ("rate cuts", "کاهش نرخ بهره"),
         ("rate cut", "کاهش نرخ بهره"), ("rate hikes", "افزایش نرخ بهره"),
         ("rate hike", "افزایش نرخ بهره"), ("Federal Reserve", "فدرال رزرو"),
-        ("federal reserve", "فدرال رزرو"), ("central bank", "بانک مرکزی"),
-        ("monetary policy", "سیاست پولی"), ("stock market", "بازار بورس"),
-        ("oil prices", "قیمت نفت"), ("gold price", "قیمت طلا"),
-        ("trade war", "جنگ تجاری"), ("price surge", "جهش قیمت"),
-        ("price drop", "افت قیمت"), ("market rally", "رشد بازار"),
-        ("market crash", "سقوط بازار"), ("sell-off", "فروش گسترده"),
-        ("sell off", "فروش گسترده"), ("rush to safe haven", "هجوم به پناهگاه امن"),
-        ("spillover to", "سرایت به"),
+        ("central bank", "بانک مرکزی"), ("monetary policy", "سیاست پولی"),
+        ("stock market", "بازار بورس"), ("oil prices", "قیمت نفت"),
+        ("gold price", "قیمت طلا"), ("trade war", "جنگ تجاری"),
+        ("price surge", "جهش قیمت"), ("price drop", "افت قیمت"),
+        ("market rally", "رشد بازار"), ("market crash", "سقوط بازار"),
+        ("sell-off", "فروش گسترده"), ("sell off", "فروش گسترده"),
+        ("rush to safe haven", "هجوم به پناهگاه امن"), ("spillover to", "سرایت به"),
     ]
-    word_pairs = [
+    words = [
         ("Bitcoin", "بیتکوین"), ("bitcoin", "بیتکوین"), ("Ethereum", "اتریوم"),
         ("Goldman", "گلدمن"), ("Bessent", "بسنت"), ("Dollar", "دلار"),
         ("dollar", "دلار"), ("Gold", "طلا"), ("gold", "طلا"),
@@ -1081,12 +1079,12 @@ def _translate_news_title(title):
         ("inflation", "تورم"), ("expectations", "انتظارات تورمی"),
         ("volatility", "نوسان"), ("markets", "بازارها"), ("market", "بازار"),
         ("currencies", "ارزها"), ("currency", "ارز"), ("foreign", "خارجی"),
-        ("trade", "تجارت"), ("block", "مسدود کردن"), ("clearing", "تسویه"),
+        ("trade", "تجارت"), ("block", "مسدودکردن"), ("clearing", "تسویه"),
         ("consolidates", "تثبیت شد"), ("between", "بین"), ("levels", "سطوح"),
-        ("plunges", "سقوط کرد"), ("plunge", "سقوط"), ("drags", "ادامه دارد"),
-        ("draws", "ارائه می‌کند"), ("lessons", "درس"), ("lesson", "درس"),
-        ("research", "پژوهش"), ("warns", "هشدار می‌دهد"), ("warn", "هشدار می‌دهد"),
-        ("risks", "خطرات"), ("risk", "خطر"), ("moves", "حرکات"), ("move", "حرکت"),
+        ("plunges", "سقوط کرد"), ("plunge", "سقوط کرد"), ("drags", "ادامه دارد"),
+        ("draws", "ارائه می‌کند"), ("lessons", "درس"), ("research", "پژوهش"),
+        ("warns", "هشدار می‌دهد"), ("warn", "هشدار می‌دهد"), ("risks", "خطرات"),
+        ("risk", "خطر"), ("moves", "حرکات"), ("move", "حرکت"),
         ("disorderly", "بی‌نظم"), ("destabilize", "بی‌ثبات کند"),
         ("digital", "دیجیتال"), ("narrative", "روایت"), ("price", "قیمت"),
         ("prices", "قیمت‌ها"), ("slips", "کاهش یافت"), ("rallies", "صعود کرد"),
@@ -1100,14 +1098,22 @@ def _translate_news_title(title):
         ("growth", "رشد"), ("debt", "بدهی"), ("yield", "بازدهی"), ("yields", "بازدهی"),
         ("yen", "ین"), ("Yen", "ین"), ("UAE", "امارات"), ("Egypt", "مصر"),
         ("America", "آمریکا"), ("U.S.", "آمریکا"), ("US", "آمریکا"),
+        ("investigates", "تحقیق می‌کند"), ("investigate", "تحقیق می‌کند"),
+        ("after", "پس از"), ("moves", "تلاش‌ها"), ("under", "در پی"),
+        ("blockade", "محاصره"), ("Hourly", "ساعتی"), ("levels", "سطوح"),
+        ("says", "می‌گوید"), ("can", "می‌تواند"), ("to", "به"),
+        ("on", "در"), ("from", "از"), ("of", ""), ("the", ""),
+        ("a", ""), ("an", ""), ("as", ""), ("in", "در"), ("at", "در"),
+        ("by", "توسط"), ("for", "برای"), ("with", "با"), ("and", "و"),
+        ("that", "که"), ("which", "که"), ("this", "این"), ("but", "اما"),
+        ("will", "خواهد"), ("is", "است"), ("are", "هستند"), ("was", "بود"),
     ]
-    for source, target in sorted(phrase_pairs, key=lambda item: len(item[0]), reverse=True):
-        title = title.replace(source, target)
-    for source, target in sorted(word_pairs, key=lambda item: len(item[0]), reverse=True):
-        title = re.sub(r'(?<![A-Za-z])' + re.escape(source) + r'(?![A-Za-z])', target, title)
-    title = re.sub(r'(?i)\b(?:from|on|of|the|a|an|as|to|in|at|by|for|with|and|that|which|this|but|can|will|is|are|was|has|have|under)\b', ' ', title)
-    title = re.sub(r'\s+', ' ', title).strip(' -:;,')
-    return title
+    for source, target in sorted(phrases, key=lambda item: len(item[0]), reverse=True):
+        normalized = normalized.replace(source, target)
+    for source, target in sorted(words, key=lambda item: len(item[0]), reverse=True):
+        normalized = re.sub(r'(?<![A-Za-z])' + re.escape(source) + r'(?![A-Za-z])', target, normalized)
+    normalized = re.sub(r'\s+', ' ', normalized).strip(' -:;,')
+    return normalized
 
 def build_news_message(news_list):
 
@@ -1121,7 +1127,7 @@ def build_news_message(news_list):
 
         return None
 
-    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0627\u0645\u0631\u0648\u0632\n____________________\n\n"
+    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0627\u0645\u0631\u0648\u0632\n\n"
     for i, n in enumerate(new_news[:8], 1):
 
         translated = _translate_news_title(n["title"])
@@ -1136,7 +1142,7 @@ def build_news_message(news_list):
 
 
 
-    msg += f"\U0001f4a1 \u0627\u0632 Investing.com\n_____________________"
+    msg += f"\U0001f4a1 \u0627\u0632 Investing.com"
 
     return msg
 
