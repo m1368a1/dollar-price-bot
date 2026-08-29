@@ -518,21 +518,80 @@ def _save_seen_headline(title):
         pass
 
 
+def _translate_news_title(title):
+    """Translate common English financial terms to Persian in news titles.
+    Uses word boundaries to avoid translating inside other words."""
+    # (pattern, replacement) - longer phrases first
+    pairs = [
+        ("crude oil", "\u0646\u0641\u062a \u062e\u0627\u0645"),
+        ("trade war", "\u062c\u0646\u06af \u062a\u062c\u0627\u0631\u062a\u06cc"),
+        ("Trade War", "\u062c\u0646\u06af \u062a\u062c\u0627\u0631\u062a\u06cc"),
+        ("federal reserve", "\u0641\u062f\u0631\u0627\u0644 \u0631\u0632\u0631\u0648"),
+        ("interest rate", "\u0646\u0631\u062e \u0628\u0647\u0631\u0647"),
+        ("Interest Rate", "\u0646\u0631\u062e \u0628\u0647\u0631\u0647"),
+    ]
+    # Single words with word boundary (\b)
+    singles = [
+        ("\\bBitcoin\\b", "\u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646"),
+        ("\\bbitcoin\\b", "\u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646"),
+        ("\\bGold\\b", "\u0637\u0644\u0627"),
+        ("\\bgold\\b", "\u0637\u0644\u0627"),
+        ("\\bDollar\\b", "\u062f\u0644\u0627\u0631"),
+        ("\\bdollar\\b", "\u062f\u0644\u0627\u0631"),
+        ("\\bUSD\\b", "\u062f\u0644\u0627\u0631"),
+        ("\\bOil\\b", "\u0646\u0641\u062a"),
+        ("\\boil\\b", "\u0646\u0641\u062a"),
+        ("\\bcrude\\b", "\u0646\u0641\u062a \u062e\u0627\u0645"),
+        ("\\bFed\\b", "\u0641\u062f\u0631\u0627\u0644 \u0631\u0632\u0631\u0648"),
+        ("\\binflation\\b", "\u062a\u0648\u0631\u0645"),
+        ("\\bInflation\\b", "\u062a\u0648\u0631\u0645"),
+        ("\\bGDP\\b", "\u062a\u0648\u0644\u06cc\u062f \u062f\u0648\u0631 \u0627\u0635\u0644\u06cc"),
+        ("\\bEmployment\\b", "\u0627\u0634\u062a\u063a\u0627\u0644"),
+        ("\\bemployment\\b", "\u0627\u0634\u062a\u063a\u0627\u0644"),
+        ("\\bCPI\\b", "\u0634\u0627\u062e\u0635 \u062a\u0648\u0631\u0645"),
+        ("\\bTreasury\\b", "\u062e\u0632\u0627\u0646\u062f\u0627\u0631\u06cc"),
+        ("\\btreasury\\b", "\u062e\u0632\u0627\u0646\u062f\u0627\u0631\u06cc"),
+        ("\\bBond\\b", "\u0627\u0648\u0631\u0627\u0642"),
+        ("\\bbond\\b", "\u0627\u0648\u0631\u0627\u0642"),
+        ("\\bEthereum\\b", "\u0627\u062a\u0631\u06cc\u0648\u0645"),
+        ("\\bethereum\\b", "\u0627\u062a\u0631\u06cc\u0648\u0645"),
+        ("\\bcrypto\\b", "\u0627\u0631\u0632 \u062f\u06cc\u062c\u06cc\u062a\u0627\u0644"),
+        ("\\bCrypto\\b", "\u0627\u0631\u0632 \u062f\u06cc\u062c\u06cc\u062a\u0627\u0644"),
+        ("\\bmarket\\b", "\u0628\u0627\u0632\u0627\u0631"),
+        ("\\bMarket\\b", "\u0628\u0627\u0632\u0627\u0631"),
+        ("\\brecession\\b", "\u0628\u0647\u0648\u062f"),
+        ("\\bRecession\\b", "\u0628\u0647\u0648\u062f"),
+        ("\\bIran\\b", "\u0627\u06cc\u0631\u0627\u0646"),
+        ("\\biran\\b", "\u0627\u06cc\u0631\u0627\u0646"),
+        ("\\bsanctions\\b", "\u062a\u0637\u0647\u06cc\u0645\u0627\u062a"),
+        ("\\bSanctions\\b", "\u062a\u0637\u0647\u06cc\u0645\u0627\u062a"),
+    ]
+    # Replace multi-word phrases first (no word boundary needed)
+    for phrase, fa in pairs:
+        title = title.replace(phrase, fa)
+    # Then replace single words with word boundaries
+    for pattern, fa in singles:
+        title = re.sub(pattern, fa, title)
+    return title
+
+
 def build_news_message(news_list):
-    """Build a message for breaking news headlines."""
+    """Build a message for breaking news headlines with Persian style."""
     seen = _load_seen_headlines()
     new_news = [n for n in news_list if n["title"].strip() not in seen]
     if not new_news:
         return None
 
-    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u062c\u062f\u06cc\u062f\n"
-    msg += "\u2500" * 24 + "\n\n"
-    for n in new_news[:5]:
-        msg += f"\U0001f514 {n['title']}\n"
-        msg += f"   \U0001f552 {n['date']}\n\n"
+    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0627\u0645\u0631\u0648\u0632\n"
+    msg += "\u2500" * 24 + "\n"
+    for i, n in enumerate(new_news[:5], 1):
+        translated = _translate_news_title(n["title"])
+        msg += f"\n{i}. {chr(0x1f514)} {translated}\n"
+        msg += f"   {chr(0x1f552)} {n['date']}\n"
         _save_seen_headline(n["title"])
 
-    msg += "\U0001f4a1 \u0627\u0632 \u0635\u0641\u062d\u0647 Investing.com"
+    msg += "\u2500" * 24 + "\n"
+    msg += f"\U0001f4a1 \u0627\u0632 \u0635\u0641\u062d\u0647 Investing.com"
     return msg
 
 
@@ -586,14 +645,38 @@ def fetch_upcoming_events():
         return []
 
 
+def _translate_event_title(title):
+    """Translate common Forex Factory event names to Persian."""
+    t = {
+        "Non-Farm Employment Change": "\u062a\u063a\u06cc\u06cc\u0631 \u0627\u0634\u062a\u063a\u0627\u0644 \u062e\u0627\u0631\u062c \u0627\u0632 \u0628\u062e\u0631",
+        "Core PCE Price Index m/m": "\u0634\u0627\u062e\u0635 \u0642\u06cc\u0645\u062a \u0627\u0635\u0644\u06cc PCE",
+        "Advance GDP q/q": "\u062a\u0648\u0644\u06cc\u062f \u062f\u0648\u0631 \u0627\u0635\u0644\u06cc \u0627\u0645\u0631\u06cc\u06a9\u0627",
+        "Prelim GDP q/q": "\u062a\u0648\u0644\u06cc\u062f \u0627\u0648\u0644\u06cc\u0647 \u062f\u0648\u0631 \u0627\u0645\u0631\u06cc\u06a9\u0627",
+        "Fed Chairman": "\u0631\u0626\u06cc\u0633 \u0641\u062f\u0631\u0627\u0644 \u0631\u0632\u0631\u0648",
+        "FOMC Statement": "\u0628\u06cc\u0627\u0646\u06cc\u0647 \u0641\u062f\u0631\u0627\u0644 \u0631\u0632\u0631\u0648",
+        "Federal Funds Rate": "\u0646\u0631\u062e \u0628\u0647\u0631\u0647 \u0641\u062f\u0631\u0627\u0644",
+        "Unemployment Rate": "\u0646\u0631\u062e \u0628\u06cc\u06a9\u0627\u0631\u06cc",
+        "CPI m/m": "\u0634\u0627\u062e\u0635 \u062a\u0648\u0631\u0645",
+        "Core CPI m/m": "\u0634\u0627\u062e\u0635 \u0627\u0635\u0644\u06cc \u062a\u0648\u0631\u0645",
+        "Retail Sales m/m": "\u0641\u0631\u0648\u0634 \u062e\u0631\u062f\u0627\u062f \u062e\u0648\u0631\u062f\u0627\u0631\u06cc",
+        "ISM Manufacturing PMI": "\u0634\u0627\u062e\u0635 \u062a\u0648\u0644\u06cc\u062f PMI",
+        "JOLTS Job Openings": "\u062a\u0639\u062f\u0627\u062f \u0634\u063a\u0644\u0647\u0627\u06cc \u0634\u0628\u06a9\u0647",
+    }
+    for eng, fa in t.items():
+        if eng in title:
+            return fa
+    return title
+
+
 def build_upcoming_events_message(events):
     """Build alert message for upcoming economic events."""
     if not events:
         return None
 
     msg = chr(0x23f0) + " \u0647\u0634\u062f\u0627\u0631 \u0631\u0648\u06cc\u062f\u0627\u062f \u0627\u0642\u062a\u0635\u0627\u062f\u06cc\n"
-    msg += "\u2500" * 24 + "\n\n"
+    msg += "\u2500" * 24 + "\n"
     for ev in events:
+        fa_title = _translate_event_title(ev["title"])
         if ev["minutes_away"] <= 0:
             status = chr(0x1f534) + " \u0627\u0644\u0627\u0646 \u062c\u0627\u0631\u06cc \u0627\u0633\u062a!"
         elif ev["minutes_away"] <= 30:
@@ -601,12 +684,12 @@ def build_upcoming_events_message(events):
         else:
             status = chr(0x1f7e2) + f" {ev['minutes_away']} \u062f\u0642\u06cc\u0642\u0647 \u062f\u06cc\u06af\u0631"
 
-        msg += f"\U0001f4c5 {ev['title']}\n"
+        msg += f"\n{chr(0x1f4c5)} {fa_title}\n"
         msg += f"   {status} | \u0648\u0642\u062a {ev['tehran_time']}\n"
         if ev.get("forecast"):
             msg += f"   \U0001f4ca \u067e\u06cc\u0634\u0628\u06cc\u0646: {ev['previous']} | \u06a9\u0634\u0648\u0631: {ev['forecast']}\n"
-        msg += "\n"
 
+    msg += "\u2500" * 24 + "\n"
     msg += "\U0001f4a1 \u0627\u0639\u062a\u0628\u0627\u0631 \u062a\u0648\u0633\u0637 \u0627\u0632 \u0628\u0627\u0632\u0627\u0631 \u0647\u0633\u062a\u0646\u062f"
     return msg
 
