@@ -1134,7 +1134,7 @@ def build_news_message(news_list):
 
         source = n.get("source", "Investing")
 
-        msg += f"{i}. {chr(0x1f514)} {translated}\n"
+        msg += f"{i}. {translated}\n"
 
         msg += f"   {chr(0x1f552)} {n['date']} | {source}\n\n"
 
