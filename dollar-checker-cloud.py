@@ -576,36 +576,6 @@ def _translate_news_title(title):
 
 
 
-def fetch_fxstreet_news():
-    """Fetch forex/market news from FXStreet RSS feed."""
-    try:
-        s = requests.Session()
-        s.verify = False
-        s.headers.update({"User-Agent": "Mozilla/5.0"})
-        r = s.get("https://www.fxstreet.com/rss/news", timeout=15)
-        import xml.etree.ElementTree as ET
-        root = ET.fromstring(r.text)
-        items = root.findall(".//item")
-        news = []
-        keywords = ["usd", "dollar", "gold", "bitcoin", "btc", "oil", "fed", "inflation",
-                     "interest rate", "gdp", "employment", "cpi", "treasury", "bond",
-                     "crypto", "ethereum", "forex", "market", "recession", "trade war",
-                     "iran", "sanctions", "oil price", "crude", "gold price", "xau",
-                     "eur", "gbp", "jpy", "yuan", "rupee", "commodity", "central bank",
-                     "rate decision", "monetary policy", "fomc"]
-        for item in items[:30]:
-            title = item.findtext("title", "")
-            pub_date = item.findtext("pubDate", "")
-            title_lower = title.lower()
-            if any(kw in title_lower for kw in keywords):
-                news.append({"title": title, "date": pub_date[:16], "source": "FXStreet"})
-        return news[:5]
-    except Exception as e:
-        print(f"  FXStreet RSS error: {e}", file=sys.stderr)
-        return []
-
-
-
 def build_news_message(news_list):
     """Build a message for breaking news headlines with Persian style."""
     seen = _load_seen_headlines()
@@ -623,7 +593,7 @@ def build_news_message(news_list):
         _save_seen_headline(n["title"])
 
     msg += "\n\u2500" * 24 + "\n"
-    msg += f"\U0001f4a1 \u0627\u0632 Investing.com \u0648 FXStreet"
+    msg += f"\U0001f4a1 \u0627\u0632 Investing.com"
     return msg
 
 
@@ -1571,9 +1541,7 @@ def main():
     #  MESSAGE 18: Breaking News (Investing.com)
     # ============================================================
     try:
-        news_investing = fetch_investing_news()
-        news_fxstreet = fetch_fxstreet_news()
-        news_list = news_investing + news_fxstreet
+        news_list = fetch_investing_news()
         if news_list:
             news_msg = build_news_message(news_list)
             if news_msg:
