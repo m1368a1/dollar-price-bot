@@ -588,11 +588,11 @@ def build_news_message(news_list):
     for i, n in enumerate(new_news[:8], 1):
         translated = _translate_news_title(n["title"])
         source = n.get("source", "Investing")
-        msg += f"\n{i}. {chr(0x1f514)} {translated}\n"
+        msg += f"{i}. {chr(0x1f514)} {translated}\n"
         msg += f"   {chr(0x1f552)} {n['date']} | {source}\n"
         _save_seen_headline(n["title"])
 
-    msg += "\n\u2500" * 24 + "\n"
+    msg += "\u2500" * 24 + "\n"
     msg += f"\U0001f4a1 \u0627\u0632 Investing.com"
     return msg
 
