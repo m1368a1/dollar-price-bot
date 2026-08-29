@@ -1283,8 +1283,8 @@ def _translate_news_title(title):
         (r'\bamid\b', 'در میان'),
         (r'\bto\b', 'به'),
         (r'\bTo\b', 'به'),
-        (r'\bas\b', 'همان\u0627\u0646\u0647'),
-        (r'\bAs\b', 'همان\u0627\u0646\u0647'),
+        (r'\bas\b', ''),
+        (r'\bAs\b', ''),
         (r'\bof\b', ''),
         (r'\bOf\b', ''),
         (r'\bthe\b', ''),
@@ -1307,6 +1307,38 @@ def _translate_news_title(title):
         (r'\bwhere\b', 'کجا'),
         (r'\brise\b', 'افزایش'),
         (r'\bRise\b', 'افزایش'),
+
+        (r'\bfrom\b', ''),
+        (r'\bFrom\b', ''),
+        (r'\bon\b', ''),
+        (r'\bOn\b', ''),
+        (r'\bis\b', ''),
+        (r'\bare\b', ''),
+        (r'\bwas\b', ''),
+        (r'\bhas\b', ''),
+        (r'\bhave\b', ''),
+        (r'\bwill\b', ''),
+        (r'\bcould\b', ''),
+        (r'\bshould\b', ''),
+        (r'\bthat\b', ''),
+        (r'\bwhich\b', ''),
+        (r'\bthis\b', ''),
+        (r'\bthan\b', ''),
+        (r'\bbut\b', ''),
+        (r'\bso\b', ''),
+        (r'\bif\b', ''),
+        (r'\bit\b', ''),
+        (r'\bby\b', ''),
+        (r'\bat\b', ''),
+        (r'\bin\b', ''),
+        (r'\bup\b', ''),
+        (r'\bout\b', ''),
+        (r'\bnew\b', 'جدید'),
+        (r'\bNew\b', 'جدید'),
+        (r'\bdata\b', 'داده'),
+        (r'\bData\b', 'داده'),
+        (r'\brisk\b', 'ریسک'),
+        (r'\bRisk\b', 'ریسک'),
 
     ]
     singles.sort(key=lambda x: len(x[0]), reverse=True)
@@ -1331,8 +1363,6 @@ def build_news_message(news_list):
 
     msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0627\u0645\u0631\u0648\u0632\n"
 
-    msg += "\u2500" * 24 + "\n"
-
     for i, n in enumerate(new_news[:8], 1):
 
         translated = _translate_news_title(n["title"])
@@ -1346,8 +1376,6 @@ def build_news_message(news_list):
         _save_seen_headline(n["title"])
 
 
-
-    msg += "\u2500" * 24 + "\n"
 
     msg += f"\U0001f4a1 \u0627\u0632 Investing.com"
 
