@@ -1121,7 +1121,7 @@ def build_news_message(news_list):
 
         return None
 
-    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0627\u0645\u0631\u0648\u0632\n\n"
+    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u0641\u0648\u0631\u06cc \u0627\u0645\u0631\u0648\u0632\n____________________\n\n"
     for i, n in enumerate(new_news[:8], 1):
 
         translated = _translate_news_title(n["title"])
@@ -1136,7 +1136,7 @@ def build_news_message(news_list):
 
 
 
-    msg += f"\U0001f4a1 \u0627\u0632 Investing.com"
+    msg += f"\U0001f4a1 \u0627\u0632 Investing.com\n_____________________"
 
     return msg
 
