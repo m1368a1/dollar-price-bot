@@ -464,6 +464,152 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
     return msg
 
 
+# ============================================================
+#  SECTION: Breaking News from Investing.com RSS
+# ============================================================
+def fetch_investing_news():
+    """Fetch breaking news headlines from Investing.com RSS feed."""
+    try:
+        s = requests.Session()
+        s.verify = False
+        s.headers.update({"User-Agent": "Mozilla/5.0"})
+        r = s.get("https://www.investing.com/rss/news.rss", timeout=15)
+        import xml.etree.ElementTree as ET
+        root = ET.fromstring(r.text)
+        items = root.findall(".//item")
+        news = []
+        keywords = ["usd", "dollar", "gold", "bitcoin", "btc", "oil", "fed", "inflation",
+                     "interest rate", "gdp", "employment", "cpi", "treasury", "bond",
+                     "crypto", "ethereum", "forex", "market", "recession", "trade war",
+                     "iran", "sanctions", "oil price", "crude", "gold price"]
+        for item in items[:20]:
+            title = item.findtext("title", "")
+            pub_date = item.findtext("pubDate", "")
+            # Filter: only USD/gold/BTC/market related news
+            title_lower = title.lower()
+            if any(kw in title_lower for kw in keywords):
+                news.append({"title": title, "date": pub_date[:16]})
+        return news[:5]  # Top 5 relevant headlines
+    except Exception as e:
+        print(f"  Investing.com RSS error: {e}", file=sys.stderr)
+        return []
+
+
+def _get_seen_headlines_file():
+    today = datetime.now().strftime("%Y-%m-%d")
+    return os.path.join(os.path.expanduser("~"), f"news-seen-{today}.txt")
+
+
+def _load_seen_headlines():
+    """Load previously seen headline titles."""
+    f = _get_seen_headlines_file()
+    if os.path.exists(f):
+        with open(f, "r", encoding="utf-8") as fh:
+            return set(line.strip() for line in fh if line.strip())
+    return set()
+
+
+def _save_seen_headline(title):
+    """Append a headline to the seen file."""
+    try:
+        with open(_get_seen_headlines_file(), "a", encoding="utf-8") as fh:
+            fh.write(title.strip() + "\n")
+    except Exception:
+        pass
+
+
+def build_news_message(news_list):
+    """Build a message for breaking news headlines."""
+    seen = _load_seen_headlines()
+    new_news = [n for n in news_list if n["title"].strip() not in seen]
+    if not new_news:
+        return None
+
+    msg = chr(0x1f4e2) + " \u062e\u0628\u0631\u0647\u0627\u06cc \u062c\u062f\u06cc\u062f\n"
+    msg += "\u2500" * 24 + "\n\n"
+    for n in new_news[:5]:
+        msg += f"\U0001f514 {n['title']}\n"
+        msg += f"   \U0001f552 {n['date']}\n\n"
+        _save_seen_headline(n["title"])
+
+    msg += "\U0001f4a1 \u0627\u0632 \u0635\u0641\u062d\u0647 Investing.com"
+    return msg
+
+
+# ============================================================
+#  SECTION: Upcoming Economic Events Alert (Forex Factory)
+# ============================================================
+def fetch_upcoming_events():
+    """Fetch economic events happening in the next 1-2 hours."""
+    try:
+        from datetime import timedelta, timezone
+        s = requests.Session()
+        s.verify = False
+        r = s.get("https://nfs.faireconomy.media/ff_calendar_thisweek.json", timeout=15)
+        all_events = r.json()
+
+        now_utc = datetime.now(timezone.utc)
+        upcoming = []
+        for ev in all_events:
+            if ev.get("impact") != "High":
+                continue
+            if ev.get("country") not in ("USD", "EUR"):
+                continue
+            date_str = ev.get("date", "")
+            if not date_str:
+                continue
+            try:
+                # Parse ISO date
+                ev_time = datetime.fromisoformat(date_str)
+                if ev_time.tzinfo is None:
+                    ev_time = ev_time.replace(tzinfo=timezone.utc)
+                diff = (ev_time - now_utc).total_seconds() / 3600
+                # Events in the next 2 hours or just happened (< 30 min ago)
+                if -0.5 <= diff <= 2:
+                    # Convert to Tehran time
+                    tehran_tz = timezone(timedelta(hours=3, minutes=30))
+                    tehran_time = ev_time.astimezone(tehran_tz)
+                    upcoming.append({
+                        "title": ev.get("title", ""),
+                        "country": ev.get("country", ""),
+                        "impact": ev.get("impact", ""),
+                        "forecast": ev.get("forecast", ""),
+                        "previous": ev.get("previous", ""),
+                        "tehran_time": tehran_time.strftime("%H:%M"),
+                        "minutes_away": round(diff * 60),
+                    })
+            except Exception:
+                pass
+        return upcoming
+    except Exception as e:
+        print(f"  Forex Factory upcoming error: {e}", file=sys.stderr)
+        return []
+
+
+def build_upcoming_events_message(events):
+    """Build alert message for upcoming economic events."""
+    if not events:
+        return None
+
+    msg = chr(0x23f0) + " \u0647\u0634\u062f\u0627\u0631 \u0631\u0648\u06cc\u062f\u0627\u062f \u0627\u0642\u062a\u0635\u0627\u062f\u06cc\n"
+    msg += "\u2500" * 24 + "\n\n"
+    for ev in events:
+        if ev["minutes_away"] <= 0:
+            status = chr(0x1f534) + " \u0627\u0644\u0627\u0646 \u062c\u0627\u0631\u06cc \u0627\u0633\u062a!"
+        elif ev["minutes_away"] <= 30:
+            status = chr(0x1f7e0) + f" {ev['minutes_away']} \u062f\u0642\u06cc\u0642\u0647 \u062f\u06cc\u06af\u0631"
+        else:
+            status = chr(0x1f7e2) + f" {ev['minutes_away']} \u062f\u0642\u06cc\u0642\u0647 \u062f\u06cc\u06af\u0631"
+
+        msg += f"\U0001f4c5 {ev['title']}\n"
+        msg += f"   {status} | \u0648\u0642\u062a {ev['tehran_time']}\n"
+        if ev.get("forecast"):
+            msg += f"   \U0001f4ca \u067e\u06cc\u0634\u0628\u06cc\u0646: {ev['previous']} | \u06a9\u0634\u0648\u0631: {ev['forecast']}\n"
+        msg += "\n"
+
+    msg += "\U0001f4a1 \u0627\u0639\u062a\u0628\u0627\u0631 \u062a\u0648\u0633\u0637 \u0627\u0632 \u0628\u0627\u0632\u0627\u0631 \u0647\u0633\u062a\u0646\u062f"
+    return msg
+
 def main():
     now = datetime.now()
     date_str = now.strftime("%Y-%m-%d %H:%M")
@@ -1305,7 +1451,34 @@ def main():
     except Exception as e:
         print(f"  [ERR] BTC/Gold: {e}", file=sys.stderr)
 
+    
     # ============================================================
+    #  MESSAGE 18: Breaking News (Investing.com)
+    # ============================================================
+    try:
+        news_list = fetch_investing_news()
+        if news_list:
+            news_msg = build_news_message(news_list)
+            if news_msg:
+                send_telegram(news_msg)
+                print(f"  [SENT] Breaking news")
+    except Exception as e:
+        print(f"  [ERR] News: {e}", file=sys.stderr)
+
+    # ============================================================
+    #  MESSAGE 19: Upcoming Economic Events Alert
+    # ============================================================
+    try:
+        upcoming = fetch_upcoming_events()
+        if upcoming:
+            upcoming_msg = build_upcoming_events_message(upcoming)
+            if upcoming_msg:
+                send_telegram(upcoming_msg)
+                print(f"  [SENT] Upcoming events alert")
+    except Exception as e:
+        print(f"  [ERR] Upcoming events: {e}", file=sys.stderr)
+
+# ============================================================
     #  LOG
     # ============================================================
     log_file = os.path.join(os.path.expanduser("~"), "dollar-price-log.txt")
