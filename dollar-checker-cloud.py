@@ -56,7 +56,7 @@ warnings.filterwarnings("ignore", message="Unverified HTTPS request")
 
 # === CONFIG ===
 
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "7902915191:AAFi7N7WZB-dD5IXQo6IqoVBaEM8RBv7erE")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
 
 TELEGRAM_CHANNEL = os.environ.get("TELEGRAM_CHANNEL", "@robomohsen")
 
@@ -64,7 +64,7 @@ TELEGRAM_CHANNEL = os.environ.get("TELEGRAM_CHANNEL", "@robomohsen")
 
 # === CONFIG ===
 
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "7902915191:AAFi7N7WZB-dD5IXQo6IqoVBaEM8RBv7erE")
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
 
 TELEGRAM_CHANNEL = os.environ.get("TELEGRAM_CHANNEL", "@robomohsen")
 
@@ -563,7 +563,7 @@ def fmt(n):
 
 
 
-def send_telegram(text):
+def send_telegram(text, chat_id=None):
 
     """Send one Telegram message and return success."""
 
@@ -573,7 +573,7 @@ def send_telegram(text):
 
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
 
-            json={"chat_id": TELEGRAM_CHANNEL, "text": text},
+            json={"chat_id": chat_id or TELEGRAM_CHANNEL, "text": text},
 
             timeout=15,
 
@@ -1181,6 +1181,95 @@ def build_upcoming_events_message(events):
 
 
 
+
+def _build_command_response(command):
+    """Build a response for an interactive Telegram command."""
+    command = command.split("@", 1)[0].strip().lower()
+
+    if command in {"/start", "/help", "/راهنما"}:
+        return (
+            "🤖 ربات بازار\n\n"
+            "دستورات قابل استفاده:\n"
+            "/price یا /قیمت — قیمت‌های لحظه‌ای\n"
+            "/analysis یا /تحلیل — تحلیل ترس و طمع\n"
+            "/whales یا /نهنگ — تحلیل نهنگ‌ها\n"
+            "/bors یا /بورس — وضعیت بورس ایران\n"
+            "/help یا /راهنما — نمایش این راهنما"
+        )
+
+    if command in {"/price", "/قیمت"}:
+        data = fetch_bonbast_prices()
+        if not data:
+            return "⚠️ اطلاعات قیمت در دسترس نیست."
+        usd_sell = int(data.get("usd1", 0))
+        usd_buy = int(data.get("usd2", 0))
+        gold = int(data.get("gold18", 0))
+        btc_usd = float(data.get("bitcoin", 0))
+        return (
+            "💰 قیمت‌های لحظه‌ای\n\n"
+            f"دلار فروش: {fmt(usd_sell)} تومان\n"
+            f"دلار خرید: {fmt(usd_buy)} تومان\n"
+            f"طلای ۱۸ عیار: {fmt(gold)} تومان\n"
+            f"بیتکوین: ${fmt(btc_usd)}\n"
+            f"بیتکوین به تومان: {fmt(round(btc_usd * usd_sell))} تومان"
+        )
+
+    if command in {"/analysis", "/تحلیل"}:
+        fg = fetch_fear_greed()
+        if not fg:
+            return "⚠️ اطلاعات تحلیل در دسترس نیست."
+        value = fg.get("value", 0)
+        label = "طمع" if value > 50 else "ترس"
+        return (
+            "🧠 تحلیل بازار\n\n"
+            f"شاخص ترس و طمع: {value}/100\n"
+            f"وضعیت فعلی: {label}\n"
+            f"میانگین ۷ روزه: {fg.get('avg_7d', '—')}\n"
+            f"روند: {fg.get('trend', '—')}"
+        )
+
+    if command in {"/whales", "/نهنگ", "/نهنگها"}:
+        whales = fetch_whale_unconfirmed()
+        wallets = fetch_whale_wallets()
+        prices = fetch_bonbast_prices() or {}
+        btc_usd = float(prices.get("bitcoin", 0))
+        return build_whale_message(whales, wallets, btc_usd) or "⚠️ اطلاعات نهنگ‌ها در دسترس نیست."
+
+    if command in {"/bors", "/بورس", "/بورس_ایران"}:
+        return build_iran_stock_message(fetch_iran_stock_market())
+
+    return "❓ دستور ناشناخته است. برای دیدن فهرست دستورات /help را ارسال کنید."
+
+
+def poll_telegram_commands():
+    """Process recent private commands without interfering with scheduled channel posts."""
+    offset_file = os.environ.get("TELEGRAM_OFFSET_FILE", "telegram-command-offset.txt")
+    try:
+        with open(offset_file, "r", encoding="utf-8") as handle:
+            offset = int(handle.read().strip())
+    except (FileNotFoundError, ValueError):
+        offset = 0
+
+    try:
+        response = requests.get(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getUpdates",
+            params={"offset": offset, "timeout": 1, "allowed_updates": '["message"]'},
+            timeout=5,
+        )
+        updates = response.json().get("result", [])
+        for update in updates:
+            offset = max(offset, update["update_id"] + 1)
+            message = update.get("message", {})
+            text = (message.get("text") or "").strip()
+            chat_id = message.get("chat", {}).get("id")
+            if not chat_id or not text.startswith("/"):
+                continue
+            send_telegram(_build_command_response(text.split()[0]), chat_id=chat_id)
+        with open(offset_file, "w", encoding="utf-8") as handle:
+            handle.write(str(offset))
+    except Exception as exc:
+        print(f"  Telegram command polling skipped: {exc}", file=sys.stderr)
+
 def main():
 
     now = datetime.now()
@@ -1188,6 +1277,8 @@ def main():
     date_str = now.strftime("%Y-%m-%d %H:%M")
 
 
+
+    poll_telegram_commands()
 
     # Cleanup yesterday's messages at start of each run
 
