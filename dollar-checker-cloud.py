@@ -319,6 +319,83 @@ def fetch_fear_greed():
 
 # ============================================================
 
+
+def fetch_crypto_rsi_report():
+    """Fetch hourly and daily RSI for liquid cryptocurrencies from Binance klines."""
+    symbols = ["BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT", "ADAUSDT", "DOGEUSDT", "AVAXUSDT", "LINKUSDT", "DOTUSDT"]
+    names = {"BTCUSDT":"بیتکوین", "ETHUSDT":"اتریوم", "BNBUSDT":"BNB", "SOLUSDT":"سولانا", "XRPUSDT":"ریپل", "ADAUSDT":"کاردانو", "DOGEUSDT":"دوج‌کوین", "AVAXUSDT":"آوالانچ", "LINKUSDT":"چین‌لینک", "DOTUSDT":"پولکادات"}
+
+    def rsi(closes, period=14):
+        if len(closes) <= period:
+            return None
+        gains, losses = [], []
+        for a, b in zip(closes[-period-1:-1], closes[-period:]):
+            delta = b - a
+            gains.append(max(delta, 0))
+            losses.append(max(-delta, 0))
+        avg_gain = sum(gains) / period
+        avg_loss = sum(losses) / period
+        if avg_loss == 0:
+            return 100.0
+        return 100 - (100 / (1 + avg_gain / avg_loss))
+
+    report = {"low_hourly": [], "high_hourly": [], "low_daily": [], "high_daily": []}
+    try:
+        session = requests.Session()
+        session.headers.update({"User-Agent": "Mozilla/5.0"})
+        for symbol in symbols:
+            values = {}
+            for interval, key in (("1h", "hourly"), ("1d", "daily")):
+                response = session.get(
+                    "https://api.binance.com/api/v3/klines",
+                    params={"symbol": symbol, "interval": interval, "limit": 100},
+                    timeout=12,
+                )
+                response.raise_for_status()
+                closes = [float(row[4]) for row in response.json()]
+                value = rsi(closes)
+                if value is not None:
+                    values[key] = round(value, 1)
+            name = names[symbol]
+            if "hourly" in values:
+                item = (name, values["hourly"])
+                if values["hourly"] < 40:
+                    report["low_hourly"].append(item)
+                elif values["hourly"] > 60:
+                    report["high_hourly"].append(item)
+            if "daily" in values:
+                item = (name, values["daily"])
+                if values["daily"] < 40:
+                    report["low_daily"].append(item)
+                elif values["daily"] > 60:
+                    report["high_daily"].append(item)
+        return report
+    except Exception as exc:
+        print(f"  RSI report error: {exc}", file=sys.stderr)
+        return None
+
+
+def build_crypto_rsi_message(report):
+    """Build a concise Persian grouped RSI report."""
+    if not report:
+        return None
+    def group(title, entries):
+        if not entries:
+            return f"{title}: موردی پیدا نشد\n"
+        return title + ":\n" + "\n".join(f"   • {name}: {value}/100" for name, value in entries) + "\n"
+    return (
+        "📉📈 وضعیت RSI رمزارزها\n\n"
+        "RSI کمتر از ۴۰ = ناحیه ضعف\n"
+        "RSI بیشتر از ۶۰ = ناحیه قدرت\n\n"
+        "⏱ ساعتی\n" +
+        group("🔻 ضعیف (کمتر از ۴۰)", report["low_hourly"]) +
+        group("🔺 قوی (بیشتر از ۶۰)", report["high_hourly"]) +
+        "\n📅 روزانه\n" +
+        group("🔻 ضعیف (کمتر از ۴۰)", report["low_daily"]) +
+        group("🔺 قوی (بیشتر از ۶۰)", report["high_daily"]) +
+        "\n⚠️ RSI به‌تنهایی توصیه خرید یا فروش نیست."
+    )
+
 def fetch_global_market():
 
     """Fetch global crypto market data from CoinGecko."""
@@ -1329,6 +1406,7 @@ def main():
         "whale_wallets": fetch_whale_wallets,
 
         "iran_stock_market": fetch_iran_stock_market,
+        "crypto_rsi": fetch_crypto_rsi_report,
 
 
 
@@ -1344,7 +1422,7 @@ def main():
 
 
 
-    with ThreadPoolExecutor(max_workers=7) as executor:
+    with ThreadPoolExecutor(max_workers=8) as executor:
 
 
 
@@ -1411,6 +1489,7 @@ def main():
     whale_wallets = results.get("whale_wallets")
 
     iran_stock_market = results.get("iran_stock_market")
+    crypto_rsi = results.get("crypto_rsi")
 
 
 
@@ -1590,6 +1669,15 @@ def main():
         print(f"  [SENT] Global analysis")
 
 
+
+    # ============================================================
+
+    #  MESSAGE: Crypto RSI
+    # ============================================================
+    rsi_msg = build_crypto_rsi_message(crypto_rsi)
+    if rsi_msg:
+        send_telegram(rsi_msg)
+        print("  [SENT] Crypto RSI report")
 
     # ============================================================
 
