@@ -1039,19 +1039,25 @@ def _save_seen_headline(title):
 
 
 def _translate_news_title(title):
-    """Translate financial headlines to readable Persian without mixed English text."""
-    exact = {
-        "UAE investigates Egypt’s Banque Misr after آمریکا. حرکات به block دلار clearing":
-            "امارات درباره بانک مصر پس از تلاش آمریکا برای مسدودکردن تسویه دلار تحقیق می‌کند",
-        "Bitcoin consolidates between $77.2K-$78.7K: Hourly levels":
-            "بیتکوین بین ۷۷٫۲ تا ۷۸٫۷ هزار دلار تثبیت شد؛ سطوح ساعتی",
-        "ایران foreign تجارت plunges 35% under آمریکا blockade  six-month war drags":
-            "تجارت خارجی ایران در پی محاصره آمریکا و ادامه جنگ شش‌ماهه ۳۵٪ سقوط کرد",
-    }
-    normalized = title.strip()
-    if normalized in exact:
-        return exact[normalized]
+    """Translate financial headlines to Persian using MyMemory API with dictionary fallback."""
+    import urllib.parse
 
+    # Try MyMemory API first (free, reliable)
+    try:
+        s = requests.Session()
+        s.headers.update({"User-Agent": "Mozilla/5.0"})
+        url = f"https://api.mymemory.translated.net/get?q={urllib.parse.quote(title.strip())}&langpair=en|fa"
+        r = s.get(url, timeout=15)
+        if r.status_code == 200:
+            data = r.json()
+            translated = data.get("responseData", {}).get("translatedText", "")
+            if translated and len(translated) > 5 and translated != title.strip():
+                return translated
+    except Exception:
+        pass
+
+    # Fallback: dictionary-based translation
+    normalized = title.strip()
     phrases = [
         ("U.S. Treasury", "خزانه‌داری آمریکا"), ("US Treasury", "خزانه‌داری آمریکا"),
         ("Banque Misr", "بانک مصر"), ("foreign trade", "تجارت خارجی"),
@@ -1061,58 +1067,44 @@ def _translate_news_title(title):
         ("record high", "رکورد تاریخی"), ("record low", "کف تاریخی"),
         ("all-time high", "بالاترین رکورد تاریخی"), ("safe haven", "پناهگاه امن"),
         ("interest rate", "نرخ بهره"), ("rate cuts", "کاهش نرخ بهره"),
-        ("rate cut", "کاهش نرخ بهره"), ("rate hikes", "افزایش نرخ بهره"),
-        ("rate hike", "افزایش نرخ بهره"), ("Federal Reserve", "فدرال رزرو"),
-        ("central bank", "بانک مرکزی"), ("monetary policy", "سیاست پولی"),
-        ("stock market", "بازار بورس"), ("oil prices", "قیمت نفت"),
-        ("gold price", "قیمت طلا"), ("trade war", "جنگ تجاری"),
-        ("price surge", "جهش قیمت"), ("price drop", "افت قیمت"),
-        ("market rally", "رشد بازار"), ("market crash", "سقوط بازار"),
-        ("sell-off", "فروش گسترده"), ("sell off", "فروش گسترده"),
-        ("rush to safe haven", "هجوم به پناهگاه امن"), ("spillover to", "سرایت به"),
+        ("Federal Reserve", "فدرال رزرو"), ("central bank", "بانک مرکزی"),
+        ("monetary policy", "سیاست پولی"), ("stock market", "بازار بورس"),
+        ("oil prices", "قیمت نفت"), ("gold price", "قیمت طلا"),
+        ("trade war", "جنگ تجاری"), ("sell-off", "فروش گسترده"),
+        ("Strait Hormuz", "تنگه هرمز"), ("seventh month", "ماه هفتم"),
     ]
     words = [
-        ("Bitcoin", "بیتکوین"), ("bitcoin", "بیتکوین"), ("Ethereum", "اتریوم"),
-        ("Goldman", "گلدمن"), ("Bessent", "بسنت"), ("Dollar", "دلار"),
-        ("dollar", "دلار"), ("Gold", "طلا"), ("gold", "طلا"),
-        ("Oil", "نفت"), ("oil", "نفت"), ("Treasury", "خزانه‌داری"),
-        ("inflation", "تورم"), ("expectations", "انتظارات تورمی"),
-        ("volatility", "نوسان"), ("markets", "بازارها"), ("market", "بازار"),
-        ("currencies", "ارزها"), ("currency", "ارز"), ("foreign", "خارجی"),
-        ("trade", "تجارت"), ("block", "مسدودکردن"), ("clearing", "تسویه"),
-        ("consolidates", "تثبیت شد"), ("between", "بین"), ("levels", "سطوح"),
-        ("plunges", "سقوط کرد"), ("plunge", "سقوط کرد"), ("drags", "ادامه دارد"),
-        ("draws", "ارائه می‌کند"), ("lessons", "درس"), ("research", "پژوهش"),
-        ("warns", "هشدار می‌دهد"), ("warn", "هشدار می‌دهد"), ("risks", "خطرات"),
-        ("risk", "خطر"), ("moves", "حرکات"), ("move", "حرکت"),
-        ("disorderly", "بی‌نظم"), ("destabilize", "بی‌ثبات کند"),
-        ("digital", "دیجیتال"), ("narrative", "روایت"), ("price", "قیمت"),
-        ("prices", "قیمت‌ها"), ("slips", "کاهش یافت"), ("rallies", "صعود کرد"),
-        ("rally", "صعود"), ("soars", "به‌شدت صعود کرد"), ("hits", "رکورد زد"),
-        ("high", "بالا"), ("low", "پایین"), ("ahead", "پیش‌رو"),
-        ("amid", "در میان"), ("concerns", "نگرانی‌ها"), ("supply", "عرضه"),
-        ("officials", "مقامات"), ("investors", "سرمایه‌گذاران"), ("analysts", "تحلیلگران"),
-        ("signals", "سیگنال می‌دهد"), ("strengthens", "تقویت می‌شود"),
-        ("weakens", "تضعیف می‌شود"), ("surges", "جهش می‌کند"), ("jumps", "افزایش می‌یابد"),
-        ("drops", "کاهش می‌یابد"), ("falls", "افت می‌کند"), ("recession", "رکود"),
-        ("growth", "رشد"), ("debt", "بدهی"), ("yield", "بازدهی"), ("yields", "بازدهی"),
-        ("yen", "ین"), ("Yen", "ین"), ("UAE", "امارات"), ("Egypt", "مصر"),
-        ("America", "آمریکا"), ("U.S.", "آمریکا"), ("US", "آمریکا"),
-        ("investigates", "تحقیق می‌کند"), ("investigate", "تحقیق می‌کند"),
-        ("after", "پس از"), ("moves", "تلاش‌ها"), ("under", "در پی"),
-        ("blockade", "محاصره"), ("Hourly", "ساعتی"), ("levels", "سطوح"),
-        ("says", "می‌گوید"), ("can", "می‌تواند"), ("to", "به"),
-        ("on", "در"), ("from", "از"), ("of", ""), ("the", ""),
-        ("a", ""), ("an", ""), ("as", ""), ("in", "در"), ("at", "در"),
-        ("by", "توسط"), ("for", "برای"), ("with", "با"), ("and", "و"),
-        ("that", "که"), ("which", "که"), ("this", "این"), ("but", "اما"),
-        ("will", "خواهد"), ("is", "است"), ("are", "هستند"), ("was", "بود"),
+        ("Bitcoin", "بیتکوین"), ("Ethereum", "اتریوم"), ("Goldman", "گلدمن"),
+        ("Bessent", "بسنت"), ("Dollar", "دلار"), ("dollar", "دلار"),
+        ("Gold", "طلا"), ("gold", "طلا"), ("Oil", "نفت"), ("oil", "نفت"),
+        ("inflation", "تورم"), ("volatility", "نوسان"), ("markets", "بازارها"),
+        ("market", "بازار"), ("warns", "هشدار می‌دهد"), ("says", "می‌گوید"),
+        ("hits", "رکورد زد"), ("soars", "به‌شدت صعود کرد"),
+        ("plunges", "سقوط کرد"), ("rallies", "صعود کرد"),
+        ("amid", "در میان"), ("concerns", "نگرانی‌ها"),
+        ("investors", "سرمایه‌گذاران"), ("analysts", "تحلیلگران"),
+        ("officials", "مقامات"), ("supply", "عرضه"), ("recession", "رکود"),
+        ("growth", "رشد"), ("debt", "بدهی"), ("yield", "بازدهی"),
+        ("UAE", "امارات"), ("Egypt", "مصر"), ("America", "آمریکا"),
+        ("U.S.", "آمریکا"), ("US", "آمریکا"), ("Iran", "ایران"),
+        ("after", "پس از"), ("under", "در پی"), ("between", "بین"),
+        ("ahead", "پیش رو"), ("key", "کلیدی"), ("insists", "اصرار دارد"),
+        ("remains", "باقی مانده"), ("closed", "بسته شده"),
+        ("enters", "وارد شده"), ("month", "ماه"), ("live", "زندگی"),
+        ("levels", "سطوح"), ("research", "تحقیقات"), ("draws", "می‌کشد"),
+        ("lessons", "درس"), ("expectations", "انتظارات"),
+        ("risks", "خطرات"), ("spillover", "سرایت"), ("moves", "حرکات"),
+        ("block", "مسدودکردن"), ("clearing", "تسویه"),
+        ("consolidates", "تثبیت شد"), ("plunge", "سقوط"),
+        ("drops", "کاهش می‌یابد"), ("falls", "افت می‌کند"),
+        ("surges", "جهش می‌کند"), ("strengthens", "تقویت می‌شود"),
+        ("weakens", "تضعیف می‌شود"),
     ]
     for source, target in sorted(phrases, key=lambda item: len(item[0]), reverse=True):
         normalized = normalized.replace(source, target)
     for source, target in sorted(words, key=lambda item: len(item[0]), reverse=True):
         normalized = re.sub(r'(?<![A-Za-z])' + re.escape(source) + r'(?![A-Za-z])', target, normalized)
-    normalized = re.sub(r'\s+', ' ', normalized).strip(' -:;,')
+    normalized = re.sub(r'\s+', ' ', normalized).strip(' -:;,.')
     return normalized
 
 def build_news_message(news_list):
