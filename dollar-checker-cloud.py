@@ -321,71 +321,42 @@ def fetch_fear_greed():
 
 
 def fetch_crypto_rsi_report():
-    """Fetch hourly and daily RSI with CoinGecko fallback when Binance is blocked."""
-    coins = [
-        ("bitcoin", "بیتکوین"), ("ethereum", "اتریوم"), ("binancecoin", "BNB"),
-        ("solana", "سولانا"), ("ripple", "ریپل"), ("cardano", "کاردانو"),
-        ("dogecoin", "دوج‌کوین"), ("avalanche-2", "آوالانچ"),
-        ("chainlink", "چین‌لینک"), ("polkadot", "پولکادات"),
-    ]
-
+    """Fetch grouped hourly and daily RSI using Binance.US, with CoinGecko fallback."""
+    coins = [("BTCUSDT", "بیتکوین"), ("ETHUSDT", "اتریوم"), ("BNBUSDT", "BNB"), ("SOLUSDT", "سولانا"), ("XRPUSDT", "ریپل"), ("ADAUSDT", "کاردانو"), ("DOGEUSDT", "دوج‌کوین"), ("AVAXUSDT", "آوالانچ"), ("LINKUSDT", "چین‌لینک"), ("DOTUSDT", "پولکادات")]
+    coin_ids = {"BTCUSDT":"bitcoin", "ETHUSDT":"ethereum", "BNBUSDT":"binancecoin", "SOLUSDT":"solana", "XRPUSDT":"ripple", "ADAUSDT":"cardano", "DOGEUSDT":"dogecoin", "AVAXUSDT":"avalanche-2", "LINKUSDT":"chainlink", "DOTUSDT":"polkadot"}
+    report = {"low_hourly": [], "high_hourly": [], "low_daily": [], "high_daily": []}
     def calculate(closes, period=14):
         if len(closes) <= period:
             return None
         gains, losses = [], []
         for previous, current in zip(closes[-period-1:-1], closes[-period:]):
-            change = current - previous
-            gains.append(max(change, 0))
-            losses.append(max(-change, 0))
-        average_gain = sum(gains) / period
-        average_loss = sum(losses) / period
-        return 100.0 if average_loss == 0 else 100 - (100 / (1 + average_gain / average_loss))
-
-    def add(report, timeframe, name, value):
-        if value < 40:
-            report[f"low_{timeframe}"].append((name, round(value, 1)))
-        elif value > 60:
-            report[f"high_{timeframe}"].append((name, round(value, 1)))
-
-    report = {"low_hourly": [], "high_hourly": [], "low_daily": [], "high_daily": []}
-    session = requests.Session()
-    session.headers.update({"User-Agent": "Mozilla/5.0"})
-    for coin_id, name in coins:
-        try:
-            # CoinGecko market_chart provides hourly data for 2 days and daily data for 90 days.
-            response = None
-            for attempt in range(3):
-                response = session.get(
-                    f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart",
-                    params={"vs_currency": "usd", "days": "90", "interval": "daily"}, timeout=15,
-                )
-                if response.status_code != 429:
-                    break
-                time.sleep(2 ** attempt)
-            response.raise_for_status()
-            prices = response.json().get("prices", [])
-            daily = calculate([float(row[1]) for row in prices])
-            if daily is not None:
-                add(report, "daily", name, daily)
-
-            response = None
-            for attempt in range(3):
-                response = session.get(
-                    f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart",
-                    params={"vs_currency": "usd", "days": "2"}, timeout=15,
-                )
-                if response.status_code != 429:
-                    break
-                time.sleep(2 ** attempt)
-            response.raise_for_status()
-            prices = response.json().get("prices", [])
-            hourly = calculate([float(row[1]) for row in prices])
-            if hourly is not None:
-                add(report, "hourly", name, hourly)
-        except Exception as exc:
-            print(f"  RSI {coin_id} error: {exc}", file=sys.stderr)
+            delta = current - previous
+            gains.append(max(delta, 0)); losses.append(max(-delta, 0))
+        gain = sum(gains) / period; loss = sum(losses) / period
+        return 100.0 if loss == 0 else 100 - (100 / (1 + gain / loss))
+    def add(timeframe, name, value):
+        if value < 40: report[f"low_{timeframe}"].append((name, round(value, 1)))
+        elif value > 60: report[f"high_{timeframe}"].append((name, round(value, 1)))
+    session = requests.Session(); session.headers.update({"User-Agent": "Mozilla/5.0"})
+    for symbol, name in coins:
+        for interval, key in (("1h", "hourly"), ("1d", "daily")):
+            closes = None
+            try:
+                r = session.get("https://api.binance.us/api/v3/klines", params={"symbol": symbol, "interval": interval, "limit": 100}, timeout=12)
+                r.raise_for_status(); closes = [float(row[4]) for row in r.json()]
+            except Exception:
+                try:
+                    coin_id = coin_ids[symbol]
+                    days = "2" if key == "hourly" else "90"
+                    r = session.get(f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart", params={"vs_currency":"usd", "days":days}, timeout=12)
+                    if r.status_code == 429:
+                        raise RuntimeError("rate limited")
+                    r.raise_for_status(); closes = [float(row[1]) for row in r.json().get("prices", [])]
+                except Exception as exc:
+                    print(f"  RSI {symbol} {key} unavailable: {exc}", file=sys.stderr)
+            value = calculate(closes or [])
+            if value is not None: add(key, name, value)
     return report
-
 def build_crypto_rsi_message(report):
     """Build a concise Persian grouped RSI report."""
     if not report:
@@ -419,7 +390,10 @@ def fetch_global_market():
 
         r = s.get("https://api.coingecko.com/api/v3/global", timeout=15)
 
-        g = r.json()["data"]
+        payload = r.json()
+        g = payload.get("data", {})
+        if not g:
+            raise RuntimeError("CoinGecko global data unavailable")
 
 
 
@@ -1728,9 +1702,13 @@ def main():
 
         try:
 
-            with open(log_file, "r", encoding="utf-8") as f:
+            if not os.path.exists(log_file):
 
-                lines = f.readlines()
+                lines = []
+            else:
+                with open(log_file, "r", encoding="utf-8") as f:
+
+                    lines = f.readlines()
 
             if lines:
 
@@ -1852,9 +1830,13 @@ def main():
 
     try:
 
-        with open(log_file, "r", encoding="utf-8") as f:
+        if not os.path.exists(log_file):
 
-            lines = f.readlines()
+            lines = []
+        else:
+            with open(log_file, "r", encoding="utf-8") as f:
+
+                lines = f.readlines()
 
         if len(lines) >= 2:
 
