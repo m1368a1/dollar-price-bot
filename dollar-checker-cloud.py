@@ -660,7 +660,7 @@ def build_whale_message(whale_unconfirmed, whale_wallets, btc_usd):
 
             status = chr(0x2705) + " \u0622\u0631\u0627\u0645"
 
-        msg += f"{status} | \u062a\u0631\u0627\u06a9\u0646\u0634: {tx_count} | \u0646\u0647\u0646\u06af: {whale_count} | \u062d\u062c\u0645: {fmt(total_btc)} BTC\n"
+        msg += f"{status} | \u062a\u0631\u0627\u06a9\u0646\u0634: {tx_count} | \u0646\u0647\u0646\u06af: {whale_count} | \u062d\u062c\u0645: {fmt(total_btc)} بیتکوین\n"
 
 
 
@@ -674,17 +674,17 @@ def build_whale_message(whale_unconfirmed, whale_wallets, btc_usd):
 
                 tier = chr(0x26a1) if w["btc"] >= 1000 else chr(0x1f4b0)
 
-                msg += f"   {i}. {tier} {fmt(w['btc'])} BTC (${fmt(usd_val)})\n"
+                msg += f"   {i}. {tier} {fmt(w['btc'])} بیتکوین (${fmt(usd_val)})\n"
 
 
 
     if whale_wallets and whale_wallets.get("wallets"):
 
-        msg += "\n" + chr(0x1f3e6) + " \u0645\u0648\u062c\u0648\u062f\u06cc: " + fmt(whale_wallets.get('total_btc', 0)) + " BTC\n"
+        msg += "\n" + chr(0x1f3e6) + " \u0645\u0648\u062c\u0648\u062f\u06cc: " + fmt(whale_wallets.get('total_btc', 0)) + " بیتکوین\n"
 
         for w in whale_wallets["wallets"][:4]:
 
-            msg += f"   {w['label']}: {fmt(w['balance'])} BTC\n"
+            msg += f"   {w['label']}: {fmt(w['balance'])} بیتکوین\n"
 
 
 
