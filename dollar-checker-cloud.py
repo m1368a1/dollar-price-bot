@@ -2682,7 +2682,7 @@ def main():
 
                 else:
 
-                    signals.append(("\u27a1\ufe0f \u0631\u0648\u0646\u062f \u062e\u0646\u062b\u06cc", f"BTC {btc_7d:+.1f}% \u062f\u0631 7 \u0631\u0648\u0632"))
+                    signals.append(("\u27a1\ufe0f", f"\u0631\u0648\u0646\u062f \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646: \u062e\u0646\u062b\u06cc؛ {btc_7d:+.1f}% \u062f\u0631 ۷ \u0631\u0648\u0632"))
 
         except Exception:
 
@@ -2712,7 +2712,7 @@ def main():
 
             else:
 
-                signals.append(("\u2705 \u0646\u0647\u0646\u06af\u0647\u0627 \u0622\u0631\u0627\u0645", f"{whale_count} \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0632\u0631\u06af"))
+                signals.append(("\u2705", f"\u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af\u200c\u0647\u0627: \u0622\u0631\u0627\u0645؛ {whale_count} \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0632\u0631\u06af"))
 
 
 
@@ -2734,7 +2734,7 @@ def main():
 
             elif premium < -3:
 
-                signals.append(("\U0001f4a1 \u0637\u0644\u0627 \u0627\u0631\u0632\u0627\u0646", f"\u0627\u06cc\u0631\u0627\u0646 {abs(premium):.0f}% \u0627\u0631\u0632\u0627\u0646\u062a\u0631"))
+                signals.append(("\U0001f4a1", f"\u0645\u0642\u0627\u06cc\u0633\u0647 \u0637\u0644\u0627: \u0627\u06cc\u0631\u0627\u0646 {abs(premium):.0f}% \u0627\u0631\u0632\u0627\u0646\u200c\u062a\u0631؛ \u0646\u06cc\u0627\u0632\u0645\u0646\u062f \u0628\u0631\u0631\u0633\u06cc \u0628\u06cc\u0634\u062a\u0631"))
 
                 score += 10
 
@@ -2764,17 +2764,17 @@ def main():
 
 
 
-        msg14 = f"\U0001f9ed \u0633\u06cc\u06af\u0646\u0627\u0644 \u062e\u0631\u06cc\u062f/\u0641\u0631\u0648\u0634\n\n"
+        msg14 = f"\U0001f9ed \u062a\u062d\u0644\u06cc\u0644 \u0628\u0627\u0632\u0627\u0631: \u067e\u06cc\u0634\u0646\u0647\u0627\u062f \u0635\u0628\u0631\n\n"
 
-        msg14 += f"{final_emoji} {final}\n"
+        msg14 += f"{final_emoji} \u0648\u0636\u0639\u06cc\u062a \u06a9\u0644\u06cc: \u062e\u0646\u062b\u06cc\n" if -30 < score < 30 else f"{final_emoji} {final}\n"
 
-        msg14 += f"\U0001f4ca \u0627\u0645\u062a\u06cc\u0627\u0632: {score:+d}/100\n\n"
+        msg14 += f"\U0001f4ca \u0627\u0645\u062a\u06cc\u0627\u0632 \u06a9\u0644\u06cc: {score:+d} \u0627\u0632 100\n\n"
 
         for emoji, desc in signals:
 
-            msg14 += f"   {emoji} {desc}\n"
+            msg14 += f"• {desc}\n"
 
-        msg14 += f"\n\u26a0\ufe0f \u0635\u0631\u0641\u0627\u064b \u062e\u0648\u062f\u062a\u0627\u0646 \u062a\u0635\u0645\u06cc\u0645 \u0628\u06af\u06cc\u0631\u06cc\u062f"
+        msg14 += f"\n\u26a0\ufe0f \u0627\u06cc\u0646 \u067e\u06cc\u0627\u0645 \u062a\u0648\u0635\u06cc\u0647 \u0645\u0627\u0644\u06cc \u0646\u06cc\u0633\u062a؛ \u067e\u06cc\u0634 \u0627\u0632 \u0645\u0639\u0627\u0645\u0644\u0647 \u062f\u0627\u062f\u0647\u200c\u0647\u0627 \u0648 \u0645\u0646\u0627\u0628\u0639 \u0631\u0627 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646\u06cc\u062f."
 
 
 
