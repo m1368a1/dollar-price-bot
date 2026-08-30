@@ -147,7 +147,7 @@ def fetch_iran_stock_market():
     sources = [
         ("TSETMC", "https://cdn.tsetmc.com/api/Index/GetIndexB1LastAll/1"),
         ("TSETMC mirror", "https://old.tsetmc.com/tsev2/data/instinfofast.aspx?i=67130298631123219&c=30+"),
-        ("TGJU", "https://www.tgju.org/profile/ شاخص-کل"),
+        ("TGJU", "https://www.tgju.org/profile/شاخص-کل"),
     ]
 
     for source_name, url in sources:
@@ -353,20 +353,30 @@ def fetch_crypto_rsi_report():
     for coin_id, name in coins:
         try:
             # CoinGecko market_chart provides hourly data for 2 days and daily data for 90 days.
-            response = session.get(
-                f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart",
-                params={"vs_currency": "usd", "days": "90", "interval": "daily"}, timeout=15,
-            )
+            response = None
+            for attempt in range(3):
+                response = session.get(
+                    f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart",
+                    params={"vs_currency": "usd", "days": "90", "interval": "daily"}, timeout=15,
+                )
+                if response.status_code != 429:
+                    break
+                time.sleep(2 ** attempt)
             response.raise_for_status()
             prices = response.json().get("prices", [])
             daily = calculate([float(row[1]) for row in prices])
             if daily is not None:
                 add(report, "daily", name, daily)
 
-            response = session.get(
-                f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart",
-                params={"vs_currency": "usd", "days": "2"}, timeout=15,
-            )
+            response = None
+            for attempt in range(3):
+                response = session.get(
+                    f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart",
+                    params={"vs_currency": "usd", "days": "2"}, timeout=15,
+                )
+                if response.status_code != 429:
+                    break
+                time.sleep(2 ** attempt)
             response.raise_for_status()
             prices = response.json().get("prices", [])
             hourly = calculate([float(row[1]) for row in prices])
