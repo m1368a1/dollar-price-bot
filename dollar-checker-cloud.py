@@ -1362,8 +1362,6 @@ def main():
 
     whale_wallets = None
 
-    iran_stock_market = None
-
     # === PARALLEL DATA FETCHING ===
 
 
@@ -1390,7 +1388,6 @@ def main():
 
         "whale_wallets": fetch_whale_wallets,
 
-        "iran_stock_market": fetch_iran_stock_market,
         "crypto_rsi": fetch_crypto_rsi_report,
 
 
@@ -1473,7 +1470,6 @@ def main():
 
     whale_wallets = results.get("whale_wallets")
 
-    iran_stock_market = results.get("iran_stock_market")
     crypto_rsi = results.get("crypto_rsi")
 
 
@@ -1555,19 +1551,7 @@ def main():
     print(f"  [SENT] Iran prices")
 
 
-    # ============================================================
-
-    #  MESSAGE: Iran Stock Market
-
-    # ============================================================
-
-    bourse_msg = build_iran_stock_message(iran_stock_market)
-
-    if bourse_msg:
-
-        send_telegram(bourse_msg)
-
-        print(f"  [SENT] Iran stock market")
+    # Iran stock market skipped - TSETMC is not accessible from GitHub Actions
 
 
 
