@@ -321,59 +321,60 @@ def fetch_fear_greed():
 
 
 def fetch_crypto_rsi_report():
-    """Fetch hourly and daily RSI for liquid cryptocurrencies from Binance klines."""
-    symbols = ["BTCUSDT", "ETHUSDT", "BNBUSDT", "SOLUSDT", "XRPUSDT", "ADAUSDT", "DOGEUSDT", "AVAXUSDT", "LINKUSDT", "DOTUSDT"]
-    names = {"BTCUSDT":"بیتکوین", "ETHUSDT":"اتریوم", "BNBUSDT":"BNB", "SOLUSDT":"سولانا", "XRPUSDT":"ریپل", "ADAUSDT":"کاردانو", "DOGEUSDT":"دوج‌کوین", "AVAXUSDT":"آوالانچ", "LINKUSDT":"چین‌لینک", "DOTUSDT":"پولکادات"}
+    """Fetch hourly and daily RSI with CoinGecko fallback when Binance is blocked."""
+    coins = [
+        ("bitcoin", "بیتکوین"), ("ethereum", "اتریوم"), ("binancecoin", "BNB"),
+        ("solana", "سولانا"), ("ripple", "ریپل"), ("cardano", "کاردانو"),
+        ("dogecoin", "دوج‌کوین"), ("avalanche-2", "آوالانچ"),
+        ("chainlink", "چین‌لینک"), ("polkadot", "پولکادات"),
+    ]
 
-    def rsi(closes, period=14):
+    def calculate(closes, period=14):
         if len(closes) <= period:
             return None
         gains, losses = [], []
-        for a, b in zip(closes[-period-1:-1], closes[-period:]):
-            delta = b - a
-            gains.append(max(delta, 0))
-            losses.append(max(-delta, 0))
-        avg_gain = sum(gains) / period
-        avg_loss = sum(losses) / period
-        if avg_loss == 0:
-            return 100.0
-        return 100 - (100 / (1 + avg_gain / avg_loss))
+        for previous, current in zip(closes[-period-1:-1], closes[-period:]):
+            change = current - previous
+            gains.append(max(change, 0))
+            losses.append(max(-change, 0))
+        average_gain = sum(gains) / period
+        average_loss = sum(losses) / period
+        return 100.0 if average_loss == 0 else 100 - (100 / (1 + average_gain / average_loss))
+
+    def add(report, timeframe, name, value):
+        if value < 40:
+            report[f"low_{timeframe}"].append((name, round(value, 1)))
+        elif value > 60:
+            report[f"high_{timeframe}"].append((name, round(value, 1)))
 
     report = {"low_hourly": [], "high_hourly": [], "low_daily": [], "high_daily": []}
-    try:
-        session = requests.Session()
-        session.headers.update({"User-Agent": "Mozilla/5.0"})
-        for symbol in symbols:
-            values = {}
-            for interval, key in (("1h", "hourly"), ("1d", "daily")):
-                response = session.get(
-                    "https://api.binance.com/api/v3/klines",
-                    params={"symbol": symbol, "interval": interval, "limit": 100},
-                    timeout=12,
-                )
-                response.raise_for_status()
-                closes = [float(row[4]) for row in response.json()]
-                value = rsi(closes)
-                if value is not None:
-                    values[key] = round(value, 1)
-            name = names[symbol]
-            if "hourly" in values:
-                item = (name, values["hourly"])
-                if values["hourly"] < 40:
-                    report["low_hourly"].append(item)
-                elif values["hourly"] > 60:
-                    report["high_hourly"].append(item)
-            if "daily" in values:
-                item = (name, values["daily"])
-                if values["daily"] < 40:
-                    report["low_daily"].append(item)
-                elif values["daily"] > 60:
-                    report["high_daily"].append(item)
-        return report
-    except Exception as exc:
-        print(f"  RSI report error: {exc}", file=sys.stderr)
-        return None
+    session = requests.Session()
+    session.headers.update({"User-Agent": "Mozilla/5.0"})
+    for coin_id, name in coins:
+        try:
+            # CoinGecko market_chart provides hourly data for 2 days and daily data for 90 days.
+            response = session.get(
+                f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart",
+                params={"vs_currency": "usd", "days": "90", "interval": "daily"}, timeout=15,
+            )
+            response.raise_for_status()
+            prices = response.json().get("prices", [])
+            daily = calculate([float(row[1]) for row in prices])
+            if daily is not None:
+                add(report, "daily", name, daily)
 
+            response = session.get(
+                f"https://api.coingecko.com/api/v3/coins/{coin_id}/market_chart",
+                params={"vs_currency": "usd", "days": "2"}, timeout=15,
+            )
+            response.raise_for_status()
+            prices = response.json().get("prices", [])
+            hourly = calculate([float(row[1]) for row in prices])
+            if hourly is not None:
+                add(report, "hourly", name, hourly)
+        except Exception as exc:
+            print(f"  RSI {coin_id} error: {exc}", file=sys.stderr)
+    return report
 
 def build_crypto_rsi_message(report):
     """Build a concise Persian grouped RSI report."""
