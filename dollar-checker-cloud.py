@@ -1956,7 +1956,7 @@ def main():
 
         # Visual bar
 
-        bar_len = 20
+        bar_len = 12
 
         filled = int(fg["value"] / 100 * bar_len)
 
