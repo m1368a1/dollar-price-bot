@@ -138,7 +138,53 @@ def fetch_bonbast_prices():
 
 # ============================================================
 
-#  SECTION 2: Fear & Greed Index
+#  SECTION 2: Iran Stock Market (TSETMC)
+
+# ============================================================
+
+def fetch_iran_stock_market():
+    """Fetch Tehran Stock Exchange summary from TSETMC public API."""
+    try:
+        session = requests.Session()
+        session.headers.update({"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
+        url = "https://cdn.tsetmc.com/api/Index/GetIndexB1LastAll/1"
+        response = session.get(url, timeout=15)
+        response.raise_for_status()
+        payload = response.json()
+        rows = payload.get("index", payload) if isinstance(payload, dict) else payload
+        if not isinstance(rows, list) or not rows:
+            return None
+        row = next((item for item in rows if str(item.get("insCode", "")) in {"1", "IRX6X0000001"}), rows[0])
+        value = row.get("xValue") or row.get("indexValue") or row.get("value")
+        change = row.get("xChange") or row.get("change") or row.get("changeValue")
+        if value is None:
+            return None
+        return {"index": float(value), "change": float(change or 0)}
+    except Exception as exc:
+        print(f"  Iran stock market error: {exc}", file=sys.stderr)
+        return None
+
+
+def build_iran_stock_message(stock_market):
+    """Build a concise Persian Iran stock market message."""
+    if not stock_market:
+        return None
+    value = stock_market["index"]
+    change = stock_market["change"]
+    direction = "رشد" if change > 0 else "افت" if change < 0 else "بدون تغییر"
+    emoji = "📈" if change > 0 else "📉" if change < 0 else "➡️"
+    return (
+        "📊 بورس ایران\n\n"
+        f"شاخص کل: {value:,.0f}\n"
+        f"تغییر امروز: {change:+,.0f} واحد\n"
+        f"وضعیت بازار: {emoji} {direction}\n\n"
+        "منبع: TSETMC"
+    )
+
+
+# ============================================================
+
+#  SECTION 3: Fear & Greed Index
 
 # ============================================================
 
@@ -1130,6 +1176,8 @@ def main():
 
     whale_wallets = None
 
+    iran_stock_market = None
+
     # === PARALLEL DATA FETCHING ===
 
 
@@ -1155,6 +1203,8 @@ def main():
 
 
         "whale_wallets": fetch_whale_wallets,
+
+        "iran_stock_market": fetch_iran_stock_market,
 
 
 
@@ -1236,6 +1286,8 @@ def main():
 
     whale_wallets = results.get("whale_wallets")
 
+    iran_stock_market = results.get("iran_stock_market")
+
 
 
     if not bonbast:
@@ -1313,6 +1365,21 @@ def main():
     send_telegram(msg1)
 
     print(f"  [SENT] Iran prices")
+
+
+    # ============================================================
+
+    #  MESSAGE: Iran Stock Market
+
+    # ============================================================
+
+    bourse_msg = build_iran_stock_message(iran_stock_market)
+
+    if bourse_msg:
+
+        send_telegram(bourse_msg)
+
+        print(f"  [SENT] Iran stock market")
 
 
 
