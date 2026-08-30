@@ -472,220 +472,6 @@ def fetch_whale_wallets():
 
 
 
-def fetch_network_health():
-
-    """Fetch Bitcoin network health metrics."""
-
-    result = {}
-
-
-
-    # Hash rate
-
-    try:
-
-        s = requests.Session()
-
-        s.verify = False
-
-        headers = {"User-Agent": "Mozilla/5.0"}
-
-        r = s.get("https://api.blockchain.info/charts/hash-rate?timespan=7days&format=json", timeout=15, headers=headers)
-
-        data = r.json()["values"]
-
-        latest = data[-1]
-
-        week_ago = data[0]
-
-        change = ((latest["y"] - week_ago["y"]) / week_ago["y"]) * 100
-
-        result["hash_rate"] = {
-
-            "current": round(latest["y"], 2),
-
-            "change_7d": round(change, 1),
-
-            "unit": "EH/s",
-
-        }
-
-    except Exception as e:
-
-        print(f"  Hash rate error: {e}", file=sys.stderr)
-
-
-
-    # Mempool size
-
-    try:
-
-        s = requests.Session()
-
-        s.verify = False
-
-        headers = {"User-Agent": "Mozilla/5.0"}
-
-        r = s.get("https://api.blockchain.info/charts/mempool-size?timespan=7days&format=json", timeout=15, headers=headers)
-
-        data = r.json()["values"]
-
-        latest = data[-1]
-
-        avg_7d = sum(d["y"] for d in data) / len(data)
-
-        result["mempool"] = {
-
-            "current_mb": round(latest["y"] / 1e6, 2),
-
-            "avg_7d_mb": round(avg_7d / 1e6, 2),
-
-        }
-
-    except Exception as e:
-
-        print(f"  Mempool error: {e}", file=sys.stderr)
-
-
-
-    # Transaction volume
-
-    try:
-
-        s = requests.Session()
-
-        s.verify = False
-
-        headers = {"User-Agent": "Mozilla/5.0"}
-
-        r = s.get("https://api.blockchain.info/charts/estimated-transaction-volume-usd?timespan=7days&format=json", timeout=15, headers=headers)
-
-        data = r.json()["values"]
-
-        latest = data[-1]
-
-        avg_7d = sum(d["y"] for d in data) / len(data)
-
-        change = ((latest["y"] - avg_7d) / avg_7d) * 100 if avg_7d > 0 else 0
-
-        result["tx_volume"] = {
-
-            "current_b": round(latest["y"] / 1e9, 2),
-
-            "avg_7d_b": round(avg_7d / 1e9, 2),
-
-            "change_pct": round(change, 1),
-
-        }
-
-    except Exception as e:
-
-        print(f"  TX volume error: {e}", file=sys.stderr)
-
-
-
-    # Miners revenue
-
-    try:
-
-        s = requests.Session()
-
-        s.verify = False
-
-        headers = {"User-Agent": "Mozilla/5.0"}
-
-        r = s.get("https://api.blockchain.info/charts/miners-revenue?timespan=7days&format=json", timeout=15, headers=headers)
-
-        data = r.json()["values"]
-
-        latest = data[-1]
-
-        result["miners_revenue"] = {
-
-            "current_m": round(latest["y"] / 1e6, 2),
-
-        }
-
-    except Exception as e:
-
-        print(f"  Miners revenue error: {e}", file=sys.stderr)
-
-
-
-    # Output volume (total BTC moved)
-
-    try:
-
-        s = requests.Session()
-
-        s.verify = False
-
-        headers = {"User-Agent": "Mozilla/5.0"}
-
-        r = s.get("https://api.blockchain.info/charts/output-volume?timespan=7days&format=json", timeout=15, headers=headers)
-
-        data = r.json()["values"]
-
-        latest = data[-1]
-
-        avg_7d = sum(d["y"] for d in data) / len(data)
-
-        result["output_volume"] = {
-
-            "current": round(latest["y"], 2),
-
-            "avg_7d": round(avg_7d, 2),
-
-            "change_pct": round(((latest["y"] - avg_7d) / avg_7d) * 100, 1) if avg_7d > 0 else 0,
-
-        }
-
-    except Exception as e:
-
-        print(f"  Output volume error: {e}", file=sys.stderr)
-
-
-
-    # Number of transactions
-
-    try:
-
-        s = requests.Session()
-
-        s.verify = False
-
-        headers = {"User-Agent": "Mozilla/5.0"}
-
-        r = s.get("https://api.blockchain.info/charts/n-transactions?timespan=7days&format=json", timeout=15, headers=headers)
-
-        data = r.json()["values"]
-
-        latest = data[-1]
-
-        avg_7d = sum(d["y"] for d in data) / len(data)
-
-        result["tx_count"] = {
-
-            "current": int(latest["y"]),
-
-            "avg_7d": int(avg_7d),
-
-            "change_pct": round(((latest["y"] - avg_7d) / avg_7d) * 100, 1) if avg_7d > 0 else 0,
-
-        }
-
-    except Exception as e:
-
-        print(f"  TX count error: {e}", file=sys.stderr)
-
-
-
-    return result if result else None
-
-
-
-
-
 def fmt(n):
 
     if isinstance(n, float):
@@ -848,7 +634,7 @@ def cleanup_yesterday_messages():
 
 # ============================================================
 
-def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_usd):
+def build_whale_message(whale_unconfirmed, whale_wallets, btc_usd):
 
     """Build concise whale tracker message."""
 
@@ -899,28 +685,6 @@ def build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_us
         for w in whale_wallets["wallets"][:4]:
 
             msg += f"   {w['label']}: {fmt(w['balance'])} BTC\n"
-
-
-
-    if network_health:
-
-        hr = network_health.get("hash_rate", {})
-
-        mp = network_health.get("mempool", {})
-
-        tx = network_health.get("tx_volume", {})
-
-        mr = network_health.get("miners_revenue", {})
-
-        hr_str = f"{hr.get('current', '?')} {hr.get('unit', 'EH/s')}" if hr else "?"
-
-        mp_str = f"{mp.get('current_mb', '?')} MB" if mp else "?"
-
-        tx_str = f"${tx.get('current_b', '?')}B" if tx else "?"
-
-        mr_str = f"${mr.get('current_m', '?')}M" if mr else "?"
-
-        msg += "\n" + chr(0x1f310) + " \u0634\u0628\u06a9\u0647: " + chr(0x1f4a8) + f" {mp_str} | {chr(0x1f4b0)} {tx_str} | {chr(0x2699)}{chr(0xfe0f)} {hr_str} | {chr(0x26cf)}{chr(0xfe0f)} {mr_str}\n"
 
 
 
@@ -1366,8 +1130,6 @@ def main():
 
     whale_wallets = None
 
-    network_health = None
-
     # === PARALLEL DATA FETCHING ===
 
 
@@ -1393,12 +1155,6 @@ def main():
 
 
         "whale_wallets": fetch_whale_wallets,
-
-
-
-        "network_health": fetch_network_health,
-
-
 
 
 
@@ -1479,10 +1235,6 @@ def main():
 
 
     whale_wallets = results.get("whale_wallets")
-
-
-
-    network_health = results.get("network_health")
 
 
 
@@ -1654,9 +1406,9 @@ def main():
 
     # ============================================================
 
-    if whale_unconfirmed or whale_wallets or network_health:
+    if whale_unconfirmed or whale_wallets:
 
-        msg4 = build_whale_message(whale_unconfirmed, whale_wallets, network_health, btc_usd)
+        msg4 = build_whale_message(whale_unconfirmed, whale_wallets, btc_usd)
 
         send_telegram(msg4)
 
