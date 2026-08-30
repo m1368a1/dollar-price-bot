@@ -143,42 +143,75 @@ def fetch_bonbast_prices():
 # ============================================================
 
 def fetch_iran_stock_market():
-    """Fetch Tehran Stock Exchange summary from TSETMC public API."""
-    try:
-        session = requests.Session()
-        session.headers.update({"User-Agent": "Mozilla/5.0", "Accept": "application/json"})
-        url = "https://cdn.tsetmc.com/api/Index/GetIndexB1LastAll/1"
-        response = session.get(url, timeout=15)
-        response.raise_for_status()
-        payload = response.json()
-        rows = payload.get("index", payload) if isinstance(payload, dict) else payload
-        if not isinstance(rows, list) or not rows:
-            return None
-        row = next((item for item in rows if str(item.get("insCode", "")) in {"1", "IRX6X0000001"}), rows[0])
-        value = row.get("xValue") or row.get("indexValue") or row.get("value")
-        change = row.get("xChange") or row.get("change") or row.get("changeValue")
-        if value is None:
-            return None
-        return {"index": float(value), "change": float(change or 0)}
-    except Exception as exc:
-        print(f"  Iran stock market error: {exc}", file=sys.stderr)
-        return None
+    """Fetch the Tehran stock index from multiple sources and reject stale fallback values."""
+    sources = [
+        ("TSETMC", "https://cdn.tsetmc.com/api/Index/GetIndexB1LastAll/1"),
+        ("TSETMC mirror", "https://old.tsetmc.com/tsev2/data/instinfofast.aspx?i=67130298631123219&c=30+"),
+        ("TGJU", "https://www.tgju.org/profile/ شاخص-کل"),
+    ]
+
+    for source_name, url in sources:
+        try:
+            session = requests.Session()
+            session.headers.update({
+                "User-Agent": "Mozilla/5.0",
+                "Accept": "application/json,text/html;q=0.9,*/*;q=0.8",
+            })
+            response = session.get(url, timeout=12)
+            response.raise_for_status()
+
+            # TSETMC JSON endpoint
+            if source_name == "TSETMC":
+                payload = response.json()
+                rows = payload.get("index", payload) if isinstance(payload, dict) else payload
+                if isinstance(rows, list):
+                    row = next((item for item in rows if str(item.get("insCode", "")) in {"1", "IRX6X0000001"}), rows[0] if rows else {})
+                    value = row.get("xValue") or row.get("indexValue") or row.get("value")
+                    change = row.get("xChange") or row.get("change") or row.get("changeValue") or 0
+                    if value is not None:
+                        value = float(value)
+                        if 100000 < value < 10000000:
+                            return {"index": value, "change": float(change), "source": source_name}
+
+            # TSETMC legacy response: semicolon-separated values; index value is field 1.
+            elif source_name == "TSETMC mirror":
+                fields = response.text.strip().split(";")
+                if len(fields) >= 2:
+                    value = float(fields[1].replace(",", ""))
+                    change = float(fields[2].replace(",", "")) if len(fields) > 2 and fields[2] else 0
+                    if 100000 < value < 10000000:
+                        return {"index": value, "change": change, "source": source_name}
+
+            # TGJU HTML fallback: only accept a clearly labelled current value.
+            else:
+                match = re.search(r'شاخص کل.{0,500}?([0-9۰-۹][0-9۰-۹,٬.]*)', response.text, re.S)
+                if match:
+                    raw = match.group(1).translate(str.maketrans("۰۱۲۳۴۵۶۷۸۹٬", "0123456789,"))
+                    value = float(raw.replace(",", ""))
+                    if 100000 < value < 10000000:
+                        return {"index": value, "change": 0, "source": source_name}
+        except Exception as exc:
+            print(f"  {source_name} stock index error: {exc}", file=sys.stderr)
+
+    print("  Iran stock market unavailable: no validated live source", file=sys.stderr)
+    return None
 
 
 def build_iran_stock_message(stock_market):
     """Build a concise Persian Iran stock market message."""
     if not stock_market:
-        return None
+        return "📊 بورس ایران\n\n⚠️ اطلاعات لحظه‌ای بازار در دسترس نیست.\nعدد قدیمی یا تخمینی نمایش داده نمی‌شود."
     value = stock_market["index"]
     change = stock_market["change"]
     direction = "رشد" if change > 0 else "افت" if change < 0 else "بدون تغییر"
     emoji = "📈" if change > 0 else "📉" if change < 0 else "➡️"
+    source = stock_market.get("source", "منبع معتبر")
     return (
         "📊 بورس ایران\n\n"
         f"شاخص کل: {value:,.0f}\n"
         f"تغییر امروز: {change:+,.0f} واحد\n"
         f"وضعیت بازار: {emoji} {direction}\n\n"
-        "منبع: TSETMC"
+        f"منبع: {source}"
     )
 
 
