@@ -387,6 +387,28 @@ KNOWN_WHALE_WALLETS = [
 
 
 
+# Publicly labelled exchange addresses. A match is only a heuristic, not proof of a sale.
+KNOWN_EXCHANGE_ADDRESSES = {
+    address: label for label, address in KNOWN_WHALE_WALLETS
+    if label.lower().startswith("binance") or "bitfinex" in label.lower()
+}
+
+
+def _tx_addresses(tx, side):
+    if side == "in":
+        return {item.get("prev_out", {}).get("addr") for item in tx.get("inputs", [])}
+    return {item.get("addr") for item in tx.get("out", [])}
+
+
+def _whale_activity_score(data):
+    if not data:
+        return 0
+    volume_score = min(50, data.get("total_whale_btc", 0) / 100)
+    count_score = min(30, len(data.get("whales", [])) * 5)
+    mega_score = min(20, data.get("mega_whales", 0) * 10)
+    return int(round(min(100, volume_score + count_score + mega_score)))
+
+
 
 def fetch_whale_unconfirmed():
 
@@ -427,6 +449,9 @@ def fetch_whale_unconfirmed():
                     "outputs": len(t.get("out", [])),
 
                     "fee": round(t.get("fee", 0) / 1e8, 8),
+                    "exchange_in": sorted(_tx_addresses(t, "in") & set(KNOWN_EXCHANGE_ADDRESSES)),
+                    "exchange_out": sorted(_tx_addresses(t, "out") & set(KNOWN_EXCHANGE_ADDRESSES)),
+                    "tier": "بسیار بزرگ" if out_value >= 1000 else "بزرگ" if out_value >= 500 else "متوسط",
 
                 })
 
@@ -698,61 +723,43 @@ def cleanup_yesterday_messages():
 
 def build_whale_message(whale_unconfirmed, whale_wallets, btc_usd):
 
-    """Build concise whale tracker message."""
+    """Build a concise, evidence-based whale report."""
+    if not whale_unconfirmed and not whale_wallets:
+        return "⚠️ اطلاعات نهنگ‌ها در دسترس نیست."
 
-    msg = chr(0x1f40b) + " \u062a\u062d\u0644\u06cc\u0644 \u0646\u0647\u0646\u06af\u200c\u0647\u0627\n"
-
-
-
-    # Status
-
+    msg = "🐋 تحلیل نهنگ‌ها\n\n"
     if whale_unconfirmed:
-
-        whale_count = len(whale_unconfirmed.get("whales", []))
-
+        whales = whale_unconfirmed.get("whales", [])
+        count = len(whales)
         total_btc = whale_unconfirmed.get("total_whale_btc", 0)
+        score = _whale_activity_score(whale_unconfirmed)
+        level = "زیاد" if score >= 65 else "متوسط" if score >= 30 else "کم"
+        msg += f"📊 فعالیت فعلی: {level} ({score}/۱۰۰) | {count} تراکنش بزرگ | {fmt(total_btc)} بیتکوین\n"
+        msg += f"   بسیار بزرگ: {whale_unconfirmed.get('mega_whales', 0)} | بزرگ: {whale_unconfirmed.get('large_whales', 0)} | متوسط: {whale_unconfirmed.get('medium_whales', 0)}\n"
 
-        tx_count = whale_unconfirmed.get("total_unconfirmed", 0)
-
-        if whale_count > 3 or total_btc > 5000:
-
-            status = chr(0x26a1) + chr(0xfe0f) + " \u0641\u0639\u0627\u0644\u06cc\u062a \u0628\u0627\u0644\u0627"
-
+        exchange_to = sum(1 for w in whales if w.get("exchange_out"))
+        exchange_from = sum(1 for w in whales if w.get("exchange_in"))
+        if exchange_to or exchange_from:
+            msg += f"🏦 ورود احتمالی به صرافی: {exchange_to} | خروج احتمالی از صرافی: {exchange_from}\n"
+            msg += "   ⚠️ این دسته‌بندی احتمالی است و به‌تنهایی نشانه قطعی خرید یا فروش نیست.\n"
         else:
+            msg += "🏦 انتقال به/از صرافی در داده‌های فعلی شناسایی نشد.\n"
 
-            status = chr(0x2705) + " \u0622\u0631\u0627\u0645"
-
-        msg += f"{status} | \u062a\u0631\u0627\u06a9\u0646\u0634: {tx_count} | \u0646\u0647\u0646\u06af: {whale_count} | \u062d\u062c\u0645: {fmt(total_btc)} بیتکوین\n"
-
-
-
-        if whale_unconfirmed.get("whales"):
-
-            msg += "\n" + chr(0x1f525) + " \u0628\u0632\u0631\u06af\u062a\u0631\u06cc\u0646:\n"
-
-            for i, w in enumerate(whale_unconfirmed["whales"][:3], 1):
-
+        if whales:
+            msg += "\n🔥 بزرگ‌ترین تراکنش‌ها:\n"
+            for i, w in enumerate(whales[:3], 1):
                 usd_val = round(w["btc"] * btc_usd)
-
-                tier = chr(0x26a1) if w["btc"] >= 1000 else chr(0x1f4b0)
-
-                msg += f"   {i}. {tier} {fmt(w['btc'])} بیتکوین (${fmt(usd_val)})\n"
-
-
+                direction = "ورود احتمالی به صرافی" if w.get("exchange_out") else "خروج احتمالی از صرافی" if w.get("exchange_in") else "انتقال نامشخص"
+                msg += f"{i}. {fmt(w['btc'])} بیتکوین (${fmt(usd_val)}) | {w.get('tier', 'بزرگ')} | {direction}\n"
+                msg += f"   ورودی: {w.get('inputs', 0)} | خروجی: {w.get('outputs', 0)} | کارمزد: {fmt(w.get('fee', 0))} بیتکوین\n"
 
     if whale_wallets and whale_wallets.get("wallets"):
+        msg += f"\n🏦 کیف‌پول‌های رصدشده: {fmt(whale_wallets.get('total_btc', 0))} بیتکوین\n"
+        for wallet in whale_wallets["wallets"][:4]:
+            msg += f"   {wallet['label']}: {fmt(wallet['balance'])} بیتکوین\n"
 
-        msg += "\n" + chr(0x1f3e6) + " \u0645\u0648\u062c\u0648\u062f\u06cc: " + fmt(whale_wallets.get('total_btc', 0)) + " بیتکوین\n"
-
-        for w in whale_wallets["wallets"][:4]:
-
-            msg += f"   {w['label']}: {fmt(w['balance'])} بیتکوین\n"
-
-
-
+    msg += "\n💡 خرید یا فروش قطعی از روی یک تراکنش مشخص نمی‌شود؛ روند چند گزارش را با هم بررسی کنید."
     return msg
-
-
 
 
 
@@ -2836,6 +2843,16 @@ def main():
         r_ex = s_ex.get('https://api.coingecko.com/api/v3/exchanges?per_page=5', timeout=10)
 
         exchanges = r_ex.json()
+
+        # CoinGecko may return dict instead of list on free tier
+
+        if isinstance(exchanges, dict):
+
+            exchanges = exchanges.get('data', exchanges.get('exchanges', []))
+
+        if not isinstance(exchanges, list) or not exchanges:
+
+            raise Exception('No valid exchange list')
 
 
 
