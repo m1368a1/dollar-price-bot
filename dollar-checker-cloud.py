@@ -1467,18 +1467,41 @@ def main():
 
     crypto_rsi = results.get("crypto_rsi")
 
-
+    if not bonbast:
+        print(f"[{date_str}] WARN: No bonbast data. Retrying once...")
+        try:
+            bonbast = fetch_bonbast_prices()
+            print(f"  [RETRY] bonbast: {'OK' if bonbast else 'FAILED'}")
+        except Exception as e:
+            print(f"  [RETRY] bonbast failed: {e}", file=sys.stderr)
 
     if not bonbast:
-
-        print(f"[{date_str}] FATAL: No bonbast data. Aborting.")
-
+        print(f"[{date_str}] WARN: Bonbast unavailable, sending partial data...")
+        # Still send independent messages
+        rsi_msg = build_crypto_rsi_message(crypto_rsi)
+        if rsi_msg:
+            send_telegram(rsi_msg)
+            print("  [SENT] Crypto RSI report")
+        if whale_unconfirmed or whale_wallets:
+            msg4 = build_whale_message(whale_unconfirmed, whale_wallets, 0)
+            send_telegram(msg4)
+            print(f"  [SENT] Whale tracker")
+        if fear_greed:
+            msg2 = f"🧠 آنالیز بازار جهانی\n"
+            msg2 += f"{fear_greed['emoji']} شاخص ترس و طمع: {fear_greed['value']}/100\n"
+            msg2 += f"   وضعیت: {fear_greed['classification']}\n"
+            send_telegram(msg2)
+            print(f"  [SENT] Fear & Greed")
+        news = fetch_investing_news()
+        if news:
+            news_msg = build_news_message(news)
+            if news_msg:
+                send_telegram(news_msg)
+                print(f"  [SENT] Breaking news")
+        print(f"  [DONE] Partial run completed.")
         return
 
-
-
     # Extract Iran prices
-
     usd_sell = int(bonbast.get("usd1", 0))
 
     usd_buy = int(bonbast.get("usd2", 0))

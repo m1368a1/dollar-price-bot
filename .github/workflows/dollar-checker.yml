@@ -16,7 +16,7 @@ permissions:
 jobs:
   check-prices:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 12
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
@@ -37,7 +37,18 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run price checker
+      - name: Run price checker (attempt 1)
+        id: attempt1
+        continue-on-error: true
+        env:
+          TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
+          TELEGRAM_CHANNEL: ${{ secrets.TELEGRAM_CHANNEL }}
+          TELEGRAM_OFFSET_FILE: /tmp/telegram-command-offset.txt
+          WHALE_STATE_FILE: whale-history.json
+        run: python dollar-checker-cloud.py
+
+      - name: Run price checker (retry if failed)
+        if: steps.attempt1.outcome == 'failure'
         env:
           TELEGRAM_TOKEN: ${{ secrets.TELEGRAM_TOKEN }}
           TELEGRAM_CHANNEL: ${{ secrets.TELEGRAM_CHANNEL }}
