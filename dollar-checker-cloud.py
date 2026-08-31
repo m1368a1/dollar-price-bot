@@ -451,6 +451,7 @@ def fetch_whale_unconfirmed():
                     "fee": round(t.get("fee", 0) / 1e8, 8),
                     "exchange_in": sorted(_tx_addresses(t, "in") & set(KNOWN_EXCHANGE_ADDRESSES)),
                     "exchange_out": sorted(_tx_addresses(t, "out") & set(KNOWN_EXCHANGE_ADDRESSES)),
+                    "addresses": sorted((_tx_addresses(t, "in") | _tx_addresses(t, "out")) - {None}),
                     "tier": "بسیار بزرگ" if out_value >= 1000 else "بزرگ" if out_value >= 500 else "متوسط",
 
                 })
@@ -574,7 +575,8 @@ def fmt(n):
 def send_telegram(text, chat_id=None):
 
     """Send one Telegram message and return success."""
-
+    if not text:
+        return False
     try:
 
         resp = requests.post(
@@ -721,6 +723,69 @@ def cleanup_yesterday_messages():
 
 # ============================================================
 
+def _whale_state_file():
+    return os.environ.get("WHALE_STATE_FILE", os.path.join(os.path.expanduser("~"), "whale-history.json"))
+
+
+def _load_whale_state():
+    try:
+        with open(_whale_state_file(), "r", encoding="utf-8") as handle:
+            state = json.load(handle)
+            return state if isinstance(state, dict) else {"addresses": {}, "events": []}
+    except (FileNotFoundError, ValueError, TypeError, OSError):
+        return {"addresses": {}, "events": []}
+
+
+def _save_whale_state(state):
+    try:
+        path = _whale_state_file()
+        os.makedirs(os.path.dirname(os.path.abspath(path)), exist_ok=True)
+        with open(path, "w", encoding="utf-8") as handle:
+            json.dump(state, handle, ensure_ascii=False)
+    except OSError as exc:
+        print(f"  Whale history save skipped: {exc}", file=sys.stderr)
+
+
+def _update_whale_alerts(whales):
+    """Classify repeated exchange flows and returning addresses using local history."""
+    now = int(time.time())
+    state = _load_whale_state()
+    addresses = state.setdefault("addresses", {})
+    events = state.setdefault("events", [])
+    sleeping = 0
+    for whale in whales:
+        whale_addresses = [a for a in whale.get("addresses", []) if a]
+        whale["sleeping"] = any(
+            address in addresses and now - int(addresses[address]) >= 7 * 86400
+            for address in whale_addresses
+        )
+        sleeping += int(whale["sleeping"])
+        for address in whale_addresses:
+            addresses[address] = now
+        if whale.get("exchange_in") or whale.get("exchange_out"):
+            events.append({
+                "time": now,
+                "exchange_in": bool(whale.get("exchange_in")),
+                "exchange_out": bool(whale.get("exchange_out")),
+                "btc": whale.get("btc", 0),
+            })
+    cutoff = now - 24 * 3600
+    state["events"] = [event for event in events if int(event.get("time", 0)) >= cutoff][-200:]
+    recent = state["events"]
+    to_exchange = sum(1 for event in recent if event.get("exchange_out"))
+    from_exchange = sum(1 for event in recent if event.get("exchange_in"))
+    total_to = sum(float(event.get("btc", 0)) for event in recent if event.get("exchange_out"))
+    total_from = sum(float(event.get("btc", 0)) for event in recent if event.get("exchange_in"))
+    _save_whale_state(state)
+    return {
+        "sleeping": sleeping,
+        "accumulation": from_exchange >= 2 and total_from > total_to,
+        "heavy_selling": to_exchange >= 2 and total_to > total_from,
+        "from_exchange_count": from_exchange,
+        "to_exchange_count": to_exchange,
+    }
+
+
 def build_whale_message(whale_unconfirmed, whale_wallets, btc_usd):
 
     """Build a concise, evidence-based whale report."""
@@ -736,6 +801,16 @@ def build_whale_message(whale_unconfirmed, whale_wallets, btc_usd):
         level = "زیاد" if score >= 65 else "متوسط" if score >= 30 else "کم"
         msg += f"📊 فعالیت فعلی: {level} ({score}/۱۰۰) | {count} تراکنش بزرگ | {fmt(total_btc)} بیتکوین\n"
         msg += f"   بسیار بزرگ: {whale_unconfirmed.get('mega_whales', 0)} | بزرگ: {whale_unconfirmed.get('large_whales', 0)} | متوسط: {whale_unconfirmed.get('medium_whales', 0)}\n"
+
+        alerts = _update_whale_alerts(whales)
+        if alerts["sleeping"]:
+            msg += f"😴 نهنگ‌های بازگشته پس از خواب طولانی: {alerts['sleeping']} مورد\n"
+        if alerts["accumulation"]:
+            msg += "🟢 هشدار انباشت احتمالی: خروج چند انتقال بزرگ از صرافی در ۲۴ ساعت اخیر\n"
+        elif alerts["heavy_selling"]:
+            msg += "🔴 هشدار فروش سنگین احتمالی: ورود چند انتقال بزرگ به صرافی در ۲۴ ساعت اخیر\n"
+        else:
+            msg += "ℹ️ هشدار انباشت یا فروش سنگین در ۲۴ ساعت اخیر تأیید نشد.\n"
 
         exchange_to = sum(1 for w in whales if w.get("exchange_out"))
         exchange_from = sum(1 for w in whales if w.get("exchange_in"))
@@ -1177,14 +1252,7 @@ def _build_command_response(command):
     command = command.split("@", 1)[0].strip().lower()
 
     if command in {"/start", "/help", "/راهنما"}:
-        return (
-            "🤖 ربات بازار\n\n"
-            "دستورات قابل استفاده:\n"
-            "/price یا /قیمت — قیمت‌های لحظه‌ای\n"
-            "/analysis یا /تحلیل — تحلیل ترس و طمع\n"
-            "/whales یا /نهنگ — تحلیل نهنگ‌ها\n"
-            "/help یا /راهنما — نمایش این راهنما"
-        )
+        return None
 
     if command in {"/price", "/قیمت"}:
         data = fetch_bonbast_prices()
@@ -1251,7 +1319,9 @@ def poll_telegram_commands():
             chat_id = message.get("chat", {}).get("id")
             if not chat_id or not text.startswith("/"):
                 continue
-            send_telegram(_build_command_response(text.split()[0]), chat_id=chat_id)
+            response = _build_command_response(text.split()[0])
+            if response:
+                send_telegram(response, chat_id=chat_id)
         with open(offset_file, "w", encoding="utf-8") as handle:
             handle.write(str(offset))
     except Exception as exc:
