@@ -2840,19 +2840,32 @@ def main():
 
         # Get exchange data from CoinGecko
 
-        r_ex = s_ex.get('https://api.coingecko.com/api/v3/exchanges?per_page=5', timeout=10)
+        r_ex = s_ex.get('https://api.coingecko.com/api/v3/exchanges?per_page=5&page=1', timeout=10)
 
-        exchanges = r_ex.json()
+        # The free API can return an error object, rate-limit response, or an empty payload.
+        # Never treat that response as exchange data or fail the whole run.
+        exchanges = []
+        if r_ex.ok:
 
-        # CoinGecko may return dict instead of list on free tier
+            try:
 
-        if isinstance(exchanges, dict):
+                payload = r_ex.json()
 
-            exchanges = exchanges.get('data', exchanges.get('exchanges', []))
+                if isinstance(payload, list):
 
-        if not isinstance(exchanges, list) or not exchanges:
+                    exchanges = [item for item in payload if isinstance(item, dict)]
 
-            raise Exception('No valid exchange list')
+                elif isinstance(payload, dict):
+
+                    nested = payload.get('data', payload.get('exchanges', []))
+
+                    if isinstance(nested, list):
+
+                        exchanges = [item for item in nested if isinstance(item, dict)]
+
+            except (ValueError, TypeError):
+
+                exchanges = []
 
 
 
@@ -2912,9 +2925,13 @@ def main():
 
             print(f"  [SENT] Exchange flow")
 
+        else:
+
+            print("  [SKIP] Exchange flow: data unavailable")
+
     except Exception as e:
 
-        print(f"  [ERR] Exchange: {e}", file=sys.stderr)
+        print(f"  [WARN] Exchange flow skipped: {e}", file=sys.stderr)
 
 
 
