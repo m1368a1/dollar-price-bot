@@ -62,14 +62,6 @@ TELEGRAM_CHANNEL = os.environ.get("TELEGRAM_CHANNEL", "@robomohsen")
 
 
 
-# === CONFIG ===
-
-TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN", "")
-
-TELEGRAM_CHANNEL = os.environ.get("TELEGRAM_CHANNEL", "@robomohsen")
-
-
-
 
 
 # ============================================================
