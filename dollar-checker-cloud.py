@@ -1293,7 +1293,7 @@ def _build_command_response(command):
         return build_whale_message(whales, wallets, btc_usd) or "⚠️ اطلاعات نهنگ‌ها در دسترس نیست."
 
 
-    return "❓ دستور ناشناخته است. برای دیدن فهرست دستورات /help را ارسال کنید."
+    return None
 
 
 def poll_telegram_commands():
