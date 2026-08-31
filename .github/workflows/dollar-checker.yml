@@ -2,13 +2,21 @@ name: Dollar Price Checker
 
 on:
   schedule:
-    # Run every hour at minute 0
-    - cron: '0 * * * *'
+    # Run once per hour away from the top-of-hour queue
+    - cron: '17 * * * *'
   workflow_dispatch:  # Allow manual trigger
+
+concurrency:
+  group: dollar-price-checker
+  cancel-in-progress: false
+
+permissions:
+  contents: read
 
 jobs:
   check-prices:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v5
