@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 ربات بازار - داشبورد زنده</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #0a0e17; color: #e0e0e0; direction: rtl; min-width: 320px; }
+.header { background: linear-gradient(135deg, #1a1f35, #0d1117); padding: 16px 12px; text-align: center; border-bottom: 2px solid #30363d; position: sticky; top: 0; z-index: 10; }
+.header h1 { font-size: 20px; color: #58a6ff; }
+.header .subtitle { font-size: 12px; color: #8b949e; margin-top: 2px; }
+.header .status { margin-top: 6px; font-size: 11px; color: #3fb950; }
+.container { max-width: 900px; margin: 0 auto; padding: 10px; }
+.card { background: #161b22; border: 1px solid #30363d; border-radius: 10px; padding: 14px; margin-bottom: 10px; }
+.card-title { font-size: 15px; font-weight: bold; margin-bottom: 10px; }
+.price-row { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px solid #21262d; font-size: 13px; }
+.price-row:last-child { border-bottom: none; }
+.price-label { color: #8b949e; }
+.price-value { font-weight: bold; }
+.up { color: #3fb950; }
+.down { color: #f85149; }
+.neutral { color: #d29922; }
+.big { font-size: 26px; font-weight: bold; text-align: center; margin: 8px 0; }
+.gauge { width: 100%; height: 22px; background: #21262d; border-radius: 11px; overflow: hidden; margin: 8px 0; }
+.gauge-fill { height: 100%; border-radius: 11px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: bold; color: #fff; }
+.gauge-text { text-align: center; font-size: 12px; color: #8b949e; }
+.signal-box { text-align: center; padding: 14px; border-radius: 10px; margin: 6px 0; font-size: 16px; font-weight: bold; }
+.signal-buy { background: rgba(63,185,80,0.15); border: 1px solid #3fb950; color: #3fb950; }
+.signal-sell { background: rgba(248,81,73,0.15); border: 1px solid #f85149; color: #f85149; }
+.signal-wait { background: rgba(210,153,34,0.15); border: 1px solid #d29922; color: #d29922; }
+table { width: 100%; border-collapse: collapse; font-size: 12px; }
+th, td { padding: 6px; text-align: right; border-bottom: 1px solid #21262d; }
+th { color: #8b949e; font-weight: normal; }
+.footer { text-align: center; padding: 12px; color: #484f58; font-size: 11px; }
+.loading { text-align: center; padding: 15px; color: #8b949e; }
+.spinner { display: inline-block; width: 18px; height: 18px; border: 2px solid #30363d; border-top: 2px solid #58a6ff; border-radius: 50%; animation: spin 1s linear infinite; }
+@keyframes spin { 0% {transform:rotate(0)} 100% {transform:rotate(360deg)} }
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>🤖 ربات بازار</h1>
+  <div class="subtitle">داشبورد زنده اطلاعات بازار ارز و رمزارز</div>
+  <div class="status" id="ts">⏳ در حال بارگذاری...</div>
+</div>
+<div class="container">
+
+  <div class="card" id="c1"><div class="loading"><div class="spinner"></div> قیمت‌ها</div></div>
+  <div class="card" id="c2"><div class="loading"><div class="spinner"></div> طلا و سکه</div></div>
+  <div class="card" id="c3"><div class="loading"><div class="spinner"></div> بیتکوین</div></div>
+  <div class="card" id="c4"><div class="loading"><div class="spinner"></div> ترس و طمع</div></div>
+  <div class="card" id="c5"><div class="loading"><div class="spinner"></div> بازار جهانی</div></div>
+  <div class="card" id="c6"><div class="loading"><div class="spinner"></div> سیگنال</div></div>
+  <div class="card" id="c7"><div class="loading"><div class="spinner"></div> ۱۰ رمزارز برتر</div></div>
+
+</div>
+<div class="footer">🤖 ربات بازار | بروزرسانی خودکار هر ۶۰ ثانیه</div>
+
+<script>
+const API='https://api.coingecko.com/api/v3';
+const F=n=>n?Number(n).toLocaleString('en-US',{maximumFractionDigits:0}):'—';
+const F2=n=>n?Number(n).toLocaleString('en-US',{maximumFractionDigits:2}):'—';
+const U=n=>'$'+F2(n);
+const P=s=>s.replace(/\d/g,d=>'۰۱۲۳۴۵۶۷۸۹'[d]);
+
+async function j(url){const r=await fetch(url);return r.ok?await r.json():null}
+
+async function load(){
+  const [bonbast,fg,global,top10,btc]=await Promise.allSettled([
+    fetch('https://bonbast.com/api/json/1/all').then(r=>r.ok?r.json():null).catch(()=>null),
+    j(API+'/simple/price?ids=bitcoin&vs_currencies=usd'),
+    j(API+'/global'),
+    j(API+'/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&price_change_percentage=24h'),
+    j(API+'/coins/bitcoin?localization=false&tickers=false&community_data=false&developer_data=false'),
+    fetch('https://api.alternative.me/fng/?limit=1').then(r=>r.ok?r.json():null).catch(()=>null),
+  ]);
+
+  const b=bonbast.status==='fulfilled'?bonbast.value:null;
+  const g=global.status==='fulfilled'?global.value:null;
+  const t=top10.status==='fulfilled'?top10.value:null;
+  const bi=btc.status==='fulfilled'?btc.value:null;
+  const fgData=fg.status==='fulfilled'?fg.value:null;
+
+  // Iran prices
+  let c1='<div class="card-title">💰 قیمت لحظه‌ای بازار آزاد</div>';
+  if(b&&b.usd1){
+    c1+=`<div class="price-row"><span class="price-label">💵 دلار فروش</span><span class="price-value neutral">${P(b.usd1)} تومان</span></div>`;
+    c1+=`<div class="price-row"><span class="price-label">💵 دلار خرید</span><span class="price-value neutral">${P(b.usd2)} تومان</span></div>`;
+    c1+=`<div class="price-row"><span class="price-label">💰 تتر</span><span class="price-value neutral">${P(b.usdt)} تومان</span></div>`;
+  } else c1+='<div style="color:#f85149;text-align:center">خطا در دریافت</div>';
+  document.getElementById('c1').innerHTML=c1;
+
+  // Gold
+  let c2='<div class="card-title">🥇 طلا و سکه</div>';
+  if(b&&b.gol18){
+    c2+=`<div class="price-row"><span class="price-label">طلای ۱۸ عیار</span><span class="price-value">${P(b.gol18)} تومان/گرم</span></div>`;
+    c2+=`<div class="price-row"><span class="price-label">انس جهانی</span><span class="price-value">${b.ons?U(b.ons):'—'}</span></div>`;
+    c2+=`<div class="price-row"><span class="price-label">سکه آزادی</span><span class="price-value">${P(b.sekkeh)} تومان</span></div>`;
+    c2+=`<div class="price-row"><span class="price-label">نیم سکه</span><span class="price-value">${P(b.sekkeh_nim)} تومان</span></div>`;
+    c2+=`<div class="price-row"><span class="price-label">امامی</span><span class="price-value">${P(b.sekkeh_gerami)} تومان</span></div>`;
+  } else c2+='<div style="color:#f85149;text-align:center">خطا در دریافت</div>';
+  document.getElementById('c2').innerHTML=c2;
+
+  // BTC
+  let c3='<div class="card-title">₿ بیتکوین</div>';
+  if(bi&&bi.market_data){
+    const md=bi.market_data;
+    const p=md.current_price.usd;
+    const ch=md.price_change_percentage_24h||0;
+    const cc=ch>=0?'up':'down';
+    const sg=ch>=0?'+':'';
+    c3+=`<div class="big" style="color:#f7931a">$${F2(p)}</div>`;
+    c3+=`<div class="price-row"><span class="price-label">تغییر ۲۴ ساعته</span><span class="price-value ${cc}">${sg}${F2(ch)}%</span></div>`;
+    c3+=`<div class="price-row"><span class="price-label">بالاترین ۲۴س</span><span class="price-value">${U(md.high_24h.usd)}</span></div>`;
+    c3+=`<div class="price-row"><span class="price-label">پایین‌ترین ۲۴س</span><span class="price-value">${U(md.low_24h.usd)}</span></div>`;
+    c3+=`<div class="price-row"><span class="price-label">حجم معاملات</span><span class="price-value">$${F(md.total_volume.usd)}</span></div>`;
+  } else c3+='<div style="color:#f85149;text-align:center">خطا در دریافت</div>';
+  document.getElementById('c3').innerHTML=c3;
+
+  // Fear & Greed
+  let c4='<div class="card-title">🧠 شاخص ترس و طمع</div>';
+  if(fgData&&fgData.data){
+    const v=parseInt(fgData.data[0].value);
+    const clr=v>=75?'#3fb950':v>=55?'#58a6ff':v>=45?'#d29922':v>=25?'#f0883e':'#f85149';
+    const lbl=v>=75?'طمع شدید':v>=55?'طمع':v>=45?'خنثی':v>=25?'ترس':'ترس شدید';
+    const em=v>=75?'🤑':v>=55?'😏':v>=45?'😐':v>=25?'😰':'😱';
+    c4+=`<div class="big" style="color:${clr}">${em} ${v}/۱۰۰</div>`;
+    c4+=`<div class="gauge"><div class="gauge-fill" style="width:${v}%;background:${clr}">${lbl}</div></div>`;
+    c4+=`<div class="gauge-text">وضعیت: <strong style="color:${clr}">${lbl}</strong></div>`;
+  } else c4+='<div style="color:#f85149;text-align:center">خطا در دریافت</div>';
+  document.getElementById('c4').innerHTML=c4;
+
+  // Global
+  let c5='<div class="card-title">🌍 بازار جهانی</div>';
+  if(g){
+    const mc=g.total_market_cap?.usd||0;
+    const vol=g.total_volume?.usd||0;
+    const bd=g.market_cap_percentage?.btc||0;
+    const ch=g.market_cap_change_percentage_24h_usd||0;
+    const cc=ch>=0?'up':'down';
+    const sg=ch>=0?'+':'';
+    c5+=`<div class="price-row"><span class="price-label">ارزش کل بازار</span><span class="price-value">$${F2(mc/1e12)}T</span></div>`;
+    c5+=`<div class="price-row"><span class="price-label">تغییر ۲۴ ساعته</span><span class="price-value ${cc}">${sg}${F2(ch)}%</span></div>`;
+    c5+=`<div class="price-row"><span class="price-label">حجم معاملات</span><span class="price-value">$${F2(vol/1e9)}B</span></div>`;
+    c5+=`<div class="price-row"><span class="price-label">تسلط بیتکوین</span><span class="price-value">${F2(bd)}%</span></div>`;
+  } else c5+='<div style="color:#f85149;text-align:center">خطا در دریافت</div>';
+  document.getElementById('c5').innerHTML=c5;
+
+  // Signal
+  let c6='<div class="card-title">🧭 سیگنال خرید / فروش</div>';
+  if(fgData&&fgData.data){
+    const v=parseInt(fgData.data[0].value);
+    let sig,cls;
+    if(v<25){sig='🟢 سیگنال خرید قوی';cls='signal-buy';}
+    else if(v<40){sig='🟢 سیگنال خرید';cls='signal-buy';}
+    else if(v<60){sig='🟡 سیگنال صبر';cls='signal-wait';}
+    else if(v<75){sig='🔴 سیگنال فروش';cls='signal-sell';}
+    else{sig='🔴 سیگنال فروش قوی';cls='signal-sell';}
+    c6+=`<div class="signal-box ${cls}">${sig}<div style="font-size:13px;margin-top:4px">امتیاز: ${v}/۱۰۰</div></div>`;
+  } else c6+='<div style="color:#f85149;text-align:center">خطا در دریافت</div>';
+  document.getElementById('c6').innerHTML=c6;
+
+  // Top 10
+  let c7='<div class="card-title">📊 ۱۰ رمزارز برتر</div>';
+  if(t&&t.length){
+    c7+='<table><thead><tr><th>#</th><th>نماد</th><th>قیمت</th><th>تغییر ۲۴س</th><th>ارزش بازار</th></tr></thead><tbody>';
+    t.forEach((c,i)=>{
+      const ch=c.price_change_percentage_24h||0;
+      const cc=ch>=0?'up':'down';
+      const sg=ch>=0?'+':'';
+      c7+=`<tr><td>${i+1}</td><td><strong>${c.symbol.toUpperCase()}</strong></td><td>${U(c.current_price)}</td><td class="${cc}">${sg}${F2(ch)}%</td><td>$${F(c.market_cap/1e9)}B</td></tr>`;
+    });
+    c7+='</tbody></table>';
+  } else c7+='<div style="color:#f85149;text-align:center">خطا در دریافت</div>';
+  document.getElementById('c7').innerHTML=c7;
+
+  // Timestamp
+  const now=new Date();
+  const th=now.toLocaleString('fa-IR',{timeZone:'Asia/Tehran'});
+  document.getElementById('ts').textContent='🟢 بروزرسانی: '+th;
+}
+
+load();
+setInterval(load,60000);
+</script>
+</body>
+</html>
