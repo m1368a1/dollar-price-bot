@@ -565,18 +565,23 @@ def fmt(n):
 
 
 
-def send_telegram(text, chat_id=None):
+def send_telegram(text, chat_id=None, web_app_url=None):
 
     """Send one Telegram message and return success."""
     if not text:
         return False
     try:
 
+        payload = {"chat_id": chat_id or TELEGRAM_CHANNEL, "text": text}
+        if web_app_url:
+            payload["reply_markup"] = {
+                "inline_keyboard": [[{"text": "\U0001f310 \u0628\u0627\u0632\u062f\u06cc\u062f\u0646 \u062f\u0634\u0628\u0648\u0631\u062f", "web_app": {"url": web_app_url}}]]
+            }
         resp = requests.post(
 
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
 
-            json={"chat_id": chat_id or TELEGRAM_CHANNEL, "text": text},
+            json=payload,
 
             timeout=15,
 
@@ -607,6 +612,24 @@ def send_telegram(text, chat_id=None):
         return False
 
 
+
+def set_bot_menu_button():
+    """Set the bot menu button to open the web app dashboard."""
+    try:
+        dashboard_url = "https://m1368a1.github.io/dollar-price-bot/dashboard.html"
+        requests.post(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/setChatMenuButton",
+            json={
+                "menu_button": {
+                    "type": "web_app",
+                    "text": "\U0001f310 \u062f\u0634\u0628\u0648\u0631\u062f",
+                    "web_app": {"url": dashboard_url}
+                }
+            },
+            timeout=10,
+        )
+    except Exception:
+        pass
 
 
 
@@ -1324,6 +1347,9 @@ def main():
 
 
 
+    # Set bot menu button to web app (runs once, harmless if repeated)
+    set_bot_menu_button()
+
     poll_telegram_commands()
 
     # Cleanup yesterday's messages at start of each run
@@ -2038,7 +2064,7 @@ def main():
     # Dashboard link
     dashboard_url = "https://m1368a1.github.io/dollar-price-bot/dashboard.html"
     msg_dashboard = f"\U0001f310 داشبورد زنده بازار\n\n\U0001f449 {dashboard_url}\n\nقیمت‌های لحظه‌ای، تحلیل و نمودارها را به صورت زنده ببینید."
-    send_telegram(msg_dashboard)
+    send_telegram(msg_dashboard, web_app_url=dashboard_url)
     print(f"  [SENT] Dashboard link")
 
 
