@@ -3228,8 +3228,9 @@ def main():
             "market_change": global_market.get("market_cap_change_percentage_24h_usd", 0) if global_market else 0,
             "top10": []
         }
-        if top10:
-            for c in top10[:10]:
+        top10_data = globals().get("top10")
+        if top10_data:
+            for c in top10_data[:10]:
                 prices["top10"].append({
                     "symbol": c.get("symbol", ""),
                     "price": c.get("current_price", 0),
