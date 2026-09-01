@@ -47,6 +47,17 @@ jobs:
           WHALE_STATE_FILE: whale-history.json
         run: python dollar-checker-cloud.py
 
+      - name: Push prices.json to GitHub Pages
+        if: always()
+        run: |
+          if [ -f prices.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add prices.json
+            git commit -m "Update prices.json [skip ci]" || true
+            git push origin main
+          fi
+
       - name: Run price checker (retry if failed)
         if: steps.attempt1.outcome == 'failure'
         env:
@@ -55,3 +66,14 @@ jobs:
           TELEGRAM_OFFSET_FILE: /tmp/telegram-command-offset.txt
           WHALE_STATE_FILE: whale-history.json
         run: python dollar-checker-cloud.py
+
+      - name: Push prices.json to GitHub Pages
+        if: always()
+        run: |
+          if [ -f prices.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add prices.json
+            git commit -m "Update prices.json [skip ci]" || true
+            git push origin main
+          fi
