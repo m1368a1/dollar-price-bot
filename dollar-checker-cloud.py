@@ -2069,11 +2069,6 @@ def main():
 
     print(f"  [SENT] Daily tip")
 
-    # Dashboard link
-    dashboard_url = "https://m1368a1.github.io/dollar-price-bot/dashboard.html"
-    msg_dashboard = f"\U0001f310 داشبورد زنده بازار\n\n\U0001f449 {dashboard_url}\n\nقیمت‌های لحظه‌ای، تحلیل و نمودارها را به صورت زنده ببینید."
-    send_telegram(msg_dashboard, web_app_url=dashboard_url)
-    print(f"  [SENT] Dashboard link")
 
 
 
