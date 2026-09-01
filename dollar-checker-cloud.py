@@ -291,92 +291,6 @@ def build_crypto_rsi_message(report):
         "\n⚠️ RSI به‌تنهایی توصیه خرید یا فروش نیست."
     )
 
-def fetch_heatmap_data():
-    """Fetch top 30 coins for heatmap visualization."""
-    try:
-        s = requests.Session()
-        s.verify = False
-        r = s.get(
-            "https://api.coingecko.com/api/v3/coins/markets",
-            params={
-                "vs_currency": "usd",
-                "order": "market_cap_desc",
-                "per_page": 30,
-                "page": 1,
-                "sparkline": "false",
-                "price_change_percentage": "24h",
-            },
-            timeout=15,
-        )
-        r.raise_for_status()
-        data = r.json()
-        if not isinstance(data, list) or not data:
-            raise RuntimeError("Empty heatmap data")
-        return data
-    except Exception as e:
-        print(f"  Heatmap data error: {e}", file=sys.stderr)
-        return None
-
-
-def build_heatmap_message(coins):
-    """Build a text-based crypto heatmap for Telegram."""
-    if not coins:
-        return None
-
-    def block(pct, size):
-        if pct >= 10:
-            return "🟩" * size
-        elif pct >= 5:
-            return "🟩" * max(1, size - 1)
-        elif pct >= 2:
-            return "🟨" * size
-        elif pct >= 0:
-            return "🟨" * max(1, size - 1)
-        elif pct >= -2:
-            return "🟥" * max(1, size - 1)
-        elif pct >= -5:
-            return "🟥" * size
-        else:
-            return "🟥" * min(size + 1, 4)
-
-    msg = "🗺️ نقشه حرارتی بازار رمزارزها\n\n"
-    msg += "هر خانه = یک رمزارز | اندازه = ارزش بازار | رنگ = تغییرات ۲۴ ساعته\n\n"
-
-    # Top 10
-    msg += "🏆 ۱۰ برتر:\n"
-    for i, c in enumerate(coins[:10], 1):
-        sym = c.get("symbol", "?").upper()
-        pct = c.get("price_change_percentage_24h") or 0
-        size = max(1, min(3, 11 - i))
-        sign = "+" if pct > 0 else ""
-        msg += f"{block(pct, size)} {sym} {sign}{pct:.1f}%\n"
-
-    # Gainers
-    gainers = [(c.get("symbol", "?").upper(), c.get("price_change_percentage_24h") or 0) for c in coins if (c.get("price_change_percentage_24h") or 0) > 0]
-    gainers.sort(key=lambda x: x[1], reverse=True)
-
-    if gainers:
-        msg += "\n📈 بیشترین رشد:\n"
-        for sym, pct in gainers[:5]:
-            msg += f"🟩 {sym}: +{pct:.1f}%\n"
-
-    # Losers
-    losers = [(c.get("symbol", "?").upper(), c.get("price_change_percentage_24h") or 0) for c in coins if (c.get("price_change_percentage_24h") or 0) < 0]
-    losers.sort(key=lambda x: x[1])
-
-    if losers:
-        msg += "\n📉 بیشترین افت:\n"
-        for sym, pct in losers[:5]:
-            msg += f"🟥 {sym}: {pct:.1f}%\n"
-
-    # Stats
-    total_up = len(gainers)
-    total_down = len(losers)
-    total_flat = len(coins) - total_up - total_down
-    msg += f"\n📊 خلاصه: 🟩 {total_up} صعودی | 🟥 {total_down} نزولی | ⬜ {total_flat} بدون تغییر\n"
-    msg += "\n⚠️ نقشه حرارتی نشان‌دهنده روند کلی بازار است."
-    return msg
-
 
 def fetch_global_market():
 
@@ -1573,11 +1487,6 @@ def main():
             if news_msg:
                 send_telegram(news_msg)
                 print(f"  [SENT] Breaking news")
-        heatmap_coins = fetch_heatmap_data()
-        heatmap_msg = build_heatmap_message(heatmap_coins)
-        if heatmap_msg:
-            send_telegram(heatmap_msg)
-            print(f"  [SENT] Crypto heatmap")
         print(f"  [DONE] Partial run completed.")
         return
 
@@ -3125,35 +3034,6 @@ def main():
     except Exception as e:
 
         print(f"  [WARN] Exchange flow skipped: {e}", file=sys.stderr)
-
-
-
-    # ============================================================
-
-    #  MESSAGE: Crypto Heatmap
-
-    # ============================================================
-
-    try:
-
-        heatmap_coins = fetch_heatmap_data()
-
-        heatmap_msg = build_heatmap_message(heatmap_coins)
-
-        if heatmap_msg:
-
-            send_telegram(heatmap_msg)
-
-            print(f"  [SENT] Crypto heatmap")
-
-        else:
-
-            print(f"  [SKIP] Heatmap: no data")
-
-    except Exception as e:
-
-        print(f"  [ERR] Heatmap: {e}", file=sys.stderr)
-
 
 
     # ============================================================
