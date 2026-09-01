@@ -1287,8 +1287,6 @@ def build_upcoming_events_message(events):
 
     msg = chr(0x23f0) + " \u0647\u0634\u062f\u0627\u0631 \u0631\u0648\u06cc\u062f\u0627\u062f \u0627\u0642\u062a\u0635\u0627\u062f\u06cc\n"
 
-    msg += "\u2500" * 24 + "\n"
-
     for ev in events:
 
         fa_title = _translate_event_title(ev["title"])
@@ -1313,13 +1311,11 @@ def build_upcoming_events_message(events):
 
         if ev.get("forecast"):
 
-            msg += f"   \U0001f4ca \u067e\u06cc\u0634\u0628\u06cc\u0646: {ev['previous']} | \u06a9\u0634\u0648\u0631: {ev['forecast']}\n"
+            msg += f"   \U0001f4ca \u067e\u06cc\u0634\u200c\u0628\u06cc\u0646\u06cc: {ev['forecast']} | \u0642\u0628\u0644\u06cc: {ev['previous']}\n"
 
 
 
-    msg += "\u2500" * 24 + "\n"
-
-    msg += "\U0001f4a1 \u0627\u0639\u062a\u0628\u0627\u0631 \u062a\u0648\u0633\u0637 \u0627\u0632 \u0628\u0627\u0632\u0627\u0631 \u0647\u0633\u062a\u0646\u062f"
+    msg += "\n\U0001f4a1 \u0627\u0637\u0644\u0627\u0639\u0627\u062a \u0627\u0632 \u0628\u0627\u0632\u0627\u0631 \u0647\u0633\u062a\u0646\u062f."
 
     return msg
 
