@@ -1264,15 +1264,7 @@ def _build_command_response(command):
     command = command.split("@", 1)[0].strip().lower()
 
     if command in {"/start", "/help", "/راهنما"}:
-        dashboard_url = "https://m1368a1.github.io/dollar-price-bot/dashboard.html"
-        return (
-            "🤖 با ربات بازار خوش آمدید!\n\n"
-            "📊 قیمت‌های لحظهای بازار ارز و رمزارز\n"
-            "🧮 تحلیل ترس و طمع\n"
-            "🐋 تحلیل نهنگ‌ها\n"
-            "📢 خبرهای فوری\n\n"
-            "🌐 دشبورد زنده: " + dashboard_url
-        )
+        return None
 
     if command in {"/price", "/قیمت"}:
         data = fetch_bonbast_prices()
