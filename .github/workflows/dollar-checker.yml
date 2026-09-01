@@ -2,16 +2,15 @@ name: Dollar Price Checker
 
 on:
   schedule:
-    # Run once per hour away from the top-of-hour queue
     - cron: '17 * * * *'
-  workflow_dispatch:  # Allow manual trigger
+  workflow_dispatch:
 
 concurrency:
   group: dollar-price-checker
   cancel-in-progress: false
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   check-prices:
@@ -53,9 +52,19 @@ jobs:
           if [ -f prices.json ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
+            # Push to main
             git add prices.json
             git commit -m "Update prices.json [skip ci]" || true
             git push origin main
+            # Push to gh-pages for GitHub Pages
+            cp prices.json /tmp/prices.json
+            git fetch origin gh-pages
+            git checkout gh-pages
+            cp /tmp/prices.json prices.json
+            git add prices.json
+            git commit -m "Update prices.json [skip ci]" || true
+            git push origin gh-pages
+            git checkout main
           fi
 
       - name: Run price checker (retry if failed)
@@ -67,7 +76,7 @@ jobs:
           WHALE_STATE_FILE: whale-history.json
         run: python dollar-checker-cloud.py
 
-      - name: Push prices.json to GitHub Pages
+      - name: Push prices.json to GitHub Pages (retry)
         if: always()
         run: |
           if [ -f prices.json ]; then
@@ -76,4 +85,12 @@ jobs:
             git add prices.json
             git commit -m "Update prices.json [skip ci]" || true
             git push origin main
+            cp prices.json /tmp/prices.json
+            git fetch origin gh-pages
+            git checkout gh-pages
+            cp /tmp/prices.json prices.json
+            git add prices.json
+            git commit -m "Update prices.json [skip ci]" || true
+            git push origin gh-pages
+            git checkout main
           fi
