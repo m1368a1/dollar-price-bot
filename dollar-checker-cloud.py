@@ -2527,7 +2527,7 @@ def main():
 
                 from datetime import datetime as _dt_now
 
-                msg12 = "⏰ هشدار رویداد اقتصادی\n\n"
+                msg12 = "⏰ هشدار رویداد اقتصادی\n"
 
                 for emoji, title, date_f, day_n, impact in high_events:
 
@@ -2572,9 +2572,8 @@ def main():
 
                     msg12 += f"   {emoji} {time_info}\n"
 
-                    msg12 += "\n"
 
-                msg12 += "💡 رویدادهای با تأثیر بالا بر بازار نشان داده شده‌اند."
+                msg12 += "\n💡 اطلاعات از بازار هستند."
 
                 send_telegram(msg12)
 
