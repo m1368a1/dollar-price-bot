@@ -64,7 +64,10 @@ TELEGRAM_CHANNEL = os.environ.get("TELEGRAM_CHANNEL", "@robomohsen")
 
 
 
-# ============================================================
+# Module-level variable for top coins data (used by dashboard)
+_TOP10_COINS = []
+
+# ===============================================================
 
 #  SECTION 1: Iran Market Prices (bonbast.com)
 
@@ -340,6 +343,8 @@ def fetch_global_market():
             "top_losers": [(c["name"], c["symbol"], c.get("price_change_percentage_24h", 0) or 0) for c in top_coins if (c.get("price_change_percentage_24h", 0) or 0) < 0][:3],
 
         }
+        global _TOP10_COINS
+        _TOP10_COINS = top_coins
 
     except Exception as e:
 
@@ -3219,16 +3224,16 @@ def main():
             "timestamp": date_str,
             "usd_sell": usd_sell if 'usd_sell' in dir() else 0,
             "usd_buy": usd_buy if 'usd_buy' in dir() else 0,
-            "gold": gold if 'gold' in dir() else 0,
+            "gold_18k": gold if 'gold' in dir() else 0,
             "btc_usd": btc_usd if 'btc_usd' in dir() else 0,
             "fear_greed": fear_greed.get("value", 0) if fear_greed else 0,
-            "btc_dominance": global_market.get("market_cap_percentage", {}).get("btc", 0) if global_market else 0,
-            "market_cap": global_market.get("total_market_cap", {}).get("usd", 0) if global_market else 0,
-            "market_volume": global_market.get("total_volume", {}).get("usd", 0) if global_market else 0,
-            "market_change": global_market.get("market_cap_change_percentage_24h_usd", 0) if global_market else 0,
+            "btc_dominance": global_market.get("btc_dominance", 0) if global_market else 0,
+            "market_cap": global_market.get("total_market_cap_t", 0) * 1e12 if global_market else 0,
+            "market_volume": global_market.get("total_volume_t", 0) * 1e12 if global_market else 0,
+            "market_change": global_market.get("market_cap_change_24h", 0) if global_market else 0,
             "top10": []
         }
-        top10_data = globals().get("top10")
+        top10_data = _TOP10_COINS if '_TOP10_COINS' in dir() else []
         if top10_data:
             for c in top10_data[:10]:
                 prices["top10"].append({
