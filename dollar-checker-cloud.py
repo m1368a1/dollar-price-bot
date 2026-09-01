@@ -575,7 +575,7 @@ def send_telegram(text, chat_id=None, web_app_url=None):
         payload = {"chat_id": chat_id or TELEGRAM_CHANNEL, "text": text}
         if web_app_url:
             payload["reply_markup"] = {
-                "inline_keyboard": [[{"text": "\U0001f310 \u0628\u0627\u0632\u062f\u06cc\u062f\u0646 \u062f\u0634\u0628\u0648\u0631\u062f", "web_app": {"url": web_app_url}}]]
+                "inline_keyboard": [[{"text": "\U0001f310 \u0628\u0627\u0632\u062f\u06cc\u062f\u0646 \u062f\u0634\u0628\u0648\u0631\u062f", "url": web_app_url}]]
             }
         resp = requests.post(
 
