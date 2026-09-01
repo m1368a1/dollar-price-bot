@@ -3226,6 +3226,36 @@ def main():
 
 
 
+    # Save prices.json for dashboard
+    try:
+        prices = {
+            "timestamp": date_str,
+            "usd_sell": usd_sell if 'usd_sell' in dir() else 0,
+            "usd_buy": usd_buy if 'usd_buy' in dir() else 0,
+            "gold": gold if 'gold' in dir() else 0,
+            "btc_usd": btc_usd if 'btc_usd' in dir() else 0,
+            "fear_greed": fear_greed.get("value", 0) if fear_greed else 0,
+            "btc_dominance": global_market.get("market_cap_percentage", {}).get("btc", 0) if global_market else 0,
+            "market_cap": global_market.get("total_market_cap", {}).get("usd", 0) if global_market else 0,
+            "market_volume": global_market.get("total_volume", {}).get("usd", 0) if global_market else 0,
+            "market_change": global_market.get("market_cap_change_percentage_24h_usd", 0) if global_market else 0,
+            "top10": []
+        }
+        if top10:
+            for c in top10[:10]:
+                prices["top10"].append({
+                    "symbol": c.get("symbol", ""),
+                    "price": c.get("current_price", 0),
+                    "change_24h": c.get("price_change_percentage_24h", 0),
+                    "market_cap": c.get("market_cap", 0),
+                })
+        import json as _json
+        with open("prices.json", "w", encoding="utf-8") as f:
+            _json.dump(prices, f, ensure_ascii=False, indent=2)
+        print(f"[{date_str}] Saved prices.json")
+    except Exception as e:
+        print(f"[{date_str}] prices.json error: {e}", file=sys.stderr)
+
     print(f"[{date_str}] All done! ({len(errors)} errors)")
 
 
