@@ -2525,35 +2525,56 @@ def main():
 
             if high_events:
 
-                msg12 = f"\U0001f4c5 \u062a\u0642\u0648\u06cc\u0645 \u0627\u0642\u062a\u0635\u0627\u062f\u06cc \u062f\u0644\u0627\u0631\n\n"
+                from datetime import datetime as _dt_now
 
-                msg12 += f"\u0628\u0627\u0627\u0631\u0632\u0634\u062a\u0631\u06cc\u0646 \u0631\u0648\u06cc\u062f\u0627\u062f\u0647\u0627::\n\n"
-
-
+                msg12 = "⏰ هشدار رویداد اقتصادی\n\n"
 
                 for emoji, title, date_f, day_n, impact in high_events:
 
-                    # Short format: day + time only
+                    # Calculate time until event
+                    try:
 
-                    # date_f is like "2026/08/29 12:30"
+                        parts = date_f.split(" ")
 
-                    parts = date_f.split(" ")
+                        time_part = parts[1] if len(parts) > 1 else date_f
 
-                    time_part = parts[1] if len(parts) > 1 else date_f
+                        date_part = parts[0] if len(parts) > 0 else ""
 
-                    if day_n:
+                        # Parse event time
 
-                        msg12 += f"{emoji} {title}\n"
+                        event_dt = _dt_now.strptime(f"{date_part} {time_part}", "%Y/%m/%d %H:%M")
 
-                        msg12 += f"   \U0001f552 {day_n} {time_part}\n\n"
+                        now_dt = _dt_now.now()
 
-                    else:
+                        diff = event_dt - now_dt
 
-                        msg12 += f"{emoji} {title}\n"
+                        mins = int(diff.total_seconds() / 60)
 
-                        msg12 += f"   \U0001f552 {date_f}\n\n"
+                        if mins > 0:
 
+                            time_info = f"{mins} دقیقه دیگر | وقت {time_part}"
 
+                        elif mins > -60:
+
+                            time_info = f"{abs(mins)} دقیقه پیش | وقت {time_part}"
+
+                        else:
+
+                            time_info = f"وقت {time_part}"
+
+                    except Exception:
+
+                        time_info = f"وقت {date_f}"
+
+                    # Format message
+
+                    msg12 += f"📅 {title}\n"
+
+                    msg12 += f"   {emoji} {time_info}\n"
+
+                    msg12 += "\n"
+
+                msg12 += "💡 رویدادهای با تأثیر بالا بر بازار نشان داده شده‌اند."
 
                 send_telegram(msg12)
 
