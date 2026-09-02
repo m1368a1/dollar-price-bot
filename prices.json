@@ -1,74 +1,106 @@
 {
-  "timestamp": "2026-09-02 10:35",
-  "usd_sell": 220400,
-  "usd_buy": 220300,
-  "gold_18k": 22427166,
-  "btc_usd": 76466.7,
+  "timestamp": "2026-09-02 13:21",
+  "usd_sell": 221000,
+  "usd_buy": 220900,
+  "gold_18k": 22761900,
+  "btc_usd": 76793.0,
   "fear_greed": 63,
-  "btc_dominance": 59.1,
+  "btc_dominance": 59.0,
   "market_cap": 2600000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -3.38,
+  "market_change": -4.03,
   "top10": [
     {
       "symbol": "btc",
-      "price": 76516,
-      "change_24h": -2.04387,
-      "market_cap": 1536862378845
+      "price": 76786,
+      "change_24h": -1.28858,
+      "market_cap": 1541538645168
     },
     {
       "symbol": "eth",
-      "price": 2365.84,
-      "change_24h": -3.87968,
-      "market_cap": 285736656976
+      "price": 2384.59,
+      "change_24h": -2.27151,
+      "market_cap": 290895811026
     },
     {
       "symbol": "usdt",
-      "price": 0.999639,
-      "change_24h": -0.01519,
-      "market_cap": 183309013246
+      "price": 0.999554,
+      "change_24h": -0.02018,
+      "market_cap": 183297026495
     },
     {
       "symbol": "bnb",
-      "price": 682.54,
-      "change_24h": -0.76381,
-      "market_cap": 90916437938
+      "price": 684.0,
+      "change_24h": -0.23006,
+      "market_cap": 91086775331
     },
     {
       "symbol": "xrp",
       "price": 1.32,
-      "change_24h": -4.36142,
-      "market_cap": 82694445565
+      "change_24h": -3.02357,
+      "market_cap": 83040250053
     },
     {
       "symbol": "usdc",
-      "price": 0.999786,
-      "change_24h": -0.01209,
-      "market_cap": 73574121551
+      "price": 0.9997,
+      "change_24h": -0.01853,
+      "market_cap": 73706395705
     },
     {
       "symbol": "sol",
-      "price": 98.21,
-      "change_24h": -4.29354,
-      "market_cap": 57492302737
+      "price": 98.09,
+      "change_24h": -3.67034,
+      "market_cap": 57392875794
     },
     {
       "symbol": "trx",
-      "price": 0.322806,
-      "change_24h": -1.76781,
-      "market_cap": 30643203624
+      "price": 0.323554,
+      "change_24h": -0.90077,
+      "market_cap": 30711726058
     },
     {
       "symbol": "figr_heloc",
       "price": 1.034,
-      "change_24h": null,
-      "market_cap": 22767501067
+      "change_24h": 2.09497,
+      "market_cap": 22772728847
     },
     {
       "symbol": "hype",
-      "price": 81.16,
-      "change_24h": -2.83447,
-      "market_cap": 18066265888
+      "price": 81.22,
+      "change_24h": -2.74778,
+      "market_cap": 18068313980
+    }
+  ],
+  "news": [
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲ سپتامبر",
+      "date": "Tue, 01 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "هند ۱۲۷ میلیارد دلار سپرده ارزی از مهاجران خود جمع‌آوری کرد - خبرگزاری مهر اخبار ایران و جهان Mehr News Agency",
+      "date": "Wed, 02 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "استیون شورک می‌گوید، پر کردن ذخایر نفت استراتژیک آمریکا توسط نفت ونزوئلا یک «خیال‌پردازی محض» است",
+      "date": "Wed, 02 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام ثابت، اوراق قرضه افزایش یافت در حالی که نفت پیشرفت را متوقف کرد: خلاصه بازارها",
+      "date": "Tue, 01 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با رونق بازار عرضه اولیه سهام، شرکت هندی Zerodha مجوز بانکداری تجاری دریافت کرد",
+      "date": "Wed, 02 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "درگیری‌های ایران و آمریکا با افزایش قیمت نفت به سهام ضربه زد | گزارش بلومبرگ 09/02/2026",
+      "date": "Wed, 02 Sep 2026",
+      "source": "Bloomberg"
     }
   ]
 }
