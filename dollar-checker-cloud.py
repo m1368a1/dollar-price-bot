@@ -922,6 +922,106 @@ def fetch_investing_news():
 
 
 
+def detect_candlestick_pattern(klines):
+
+    """Detect strong candlestick patterns from 1h klines (Binance format).
+
+    Returns (direction, name) or None. direction is bullish/bearish/neutral."""
+
+    try:
+
+        candles = [{"o": float(k[1]), "h": float(k[2]), "l": float(k[3]), "c": float(k[4])} for k in klines]
+
+        n = len(candles)
+
+        if n < 5:
+
+            return None
+
+        last = candles[-1]
+
+        body = abs(last["c"] - last["o"])
+
+        rng = last["h"] - last["l"]
+
+        uppershadow = last["h"] - max(last["o"], last["c"])
+
+        lowershadow = min(last["o"], last["c"]) - last["l"]
+
+        # Hammer (bullish reversal)
+
+        if rng > 0 and lowershadow > body * 2 and lowershadow > rng * 0.5 and uppershadow < body:
+
+            return ("bullish", "\u0686\u06a9\u0634 (Hammer)")
+
+        # Shooting Star (bearish reversal)
+
+        if rng > 0 and uppershadow > body * 2 and uppershadow > rng * 0.5 and lowershadow < body:
+
+            return ("bearish", "\u0633\u062a\u0627\u0631\u0647 \u062b\u0627\u0642\u0628 (Shooting Star)")
+
+        # Bullish / Bearish Engulfing
+
+        if n >= 2:
+
+            p = candles[-2]
+
+            pb = p["c"] - p["o"]
+
+            cb = last["c"] - last["o"]
+
+            if pb < 0 and cb > 0 and last["o"] <= p["c"] and last["c"] >= p["o"]:
+
+                return ("bullish", "\u0627\u0646\u06af\u0648\u0644\u0641\u06cc\u0646\u06af \u0635\u0639\u0648\u062f\u06cc (Bullish Engulfing)")
+
+            if pb > 0 and cb < 0 and last["o"] >= p["c"] and last["c"] <= p["o"]:
+
+                return ("bearish", "\u0627\u0646\u06af\u0648\u0644\u0641\u06cc\u0646\u06af \u0646\u0632\u0648\u0644\u06cc (Bearish Engulfing)")
+
+        # Morning Star / Evening Star (3 candles)
+
+        if n >= 3:
+
+            a, b, cc = candles[-3], candles[-2], candles[-1]
+
+            if (a["c"] < a["o"]) and (abs(cc["c"] - cc["o"]) > abs(a["c"] - a["o"]) * 0.7) and (cc["c"] > cc["o"]) and (abs(b["c"] - b["o"]) < abs(a["c"] - a["o"]) * 0.4):
+
+                return ("bullish", "\u0633\u062a\u0627\u0631\u0647 \u0635\u0628\u062d\u06af\u0627\u0647\u06cc (Morning Star)")
+
+            if (a["c"] > a["o"]) and (abs(cc["c"] - cc["o"]) > abs(a["c"] - a["o"]) * 0.7) and (cc["c"] < cc["o"]) and (abs(b["c"] - b["o"]) < abs(a["c"] - a["o"]) * 0.4):
+
+                return ("bearish", "\u0633\u062a\u0627\u0631\u0647 \u063a\u0631\u0648\u0628 (Evening Star)")
+
+        # Three White Soldiers / Three Black Crows
+
+        if n >= 3:
+
+            a, b, cc = candles[-3], candles[-2], candles[-1]
+
+            if a["c"] > a["o"] and b["c"] > b["o"] and cc["c"] > cc["o"] and cc["c"] > b["c"] > a["c"]:
+
+                return ("bullish", "\u0633\u0647 \u0633\u0631\u0628\u0627\u0632 \u0633\u0641\u06cc\u062f (Three White Soldiers)")
+
+            if a["c"] < a["o"] and b["c"] < b["o"] and cc["c"] < cc["o"] and cc["c"] < b["c"] < a["c"]:
+
+                return ("bearish", "\u0633\u0647 \u06a9\u0644\u0627\u063a \u0633\u06cc\u0627\u0647 (Three Black Crows)")
+
+        # Doji (indecision)
+
+        if rng > 0 and body < rng * 0.1:
+
+            return ("neutral", "\u062f\u0648\u062c\u06cc (Doji)")
+
+    except Exception as e:
+
+        print(f"  Candlestick detect error: {e}", file=sys.stderr)
+
+    return None
+
+
+
+
+
 def fetch_bloomberg_news():
 
     """Fetch breaking market news headlines from Bloomberg RSS feed."""
@@ -2889,6 +2989,44 @@ def main():
 
 
 
+        # Signal 5: Candlestick patterns (1h timeframe)
+
+        try:
+
+            s_c = requests.Session()
+
+            s_c.verify = False
+
+            r_c = s_c.get("https://api.binance.us/api/v3/klines", params={"symbol": "BTCUSDT", "interval": "1h", "limit": 30}, timeout=10)
+
+            pattern = detect_candlestick_pattern(r_c.json())
+
+            if pattern:
+
+                direction, name = pattern
+
+                if direction == "bullish":
+
+                    signals.append(("\U0001f4c8 \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9", f"{name} \u2014 \u0646\u0634\u0627\u0646\u0647 \u0635\u0639\u0648\u062f"))
+
+                    score += 20
+
+                elif direction == "bearish":
+
+                    signals.append(("\U0001f4c9 \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9", f"{name} \u2014 \u0646\u0634\u0627\u0646\u0647 \u0646\u0632\u0648\u0644"))
+
+                    score -= 20
+
+                else:
+
+                    signals.append(("\u2705 \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9", f"{name} \u2014 \u062a\u0635\u0645\u06cc\u0645\u06cc"))
+
+        except Exception:
+
+            pass
+
+
+
         # Final signal
 
         score = max(-100, min(100, score))
@@ -2923,7 +3061,7 @@ def main():
 
             msg14 += f"• {desc}\n"
 
-        msg14 += "\n\U0001f9ED \u0645\u0628\u0646\u0627 \u0633\u06cc\u06af\u0646\u0627\u0644: \u062a\u0631\u0633 \u0648 \u0637\u0645\u0639 \u0648 \u0631\u0648\u0646\u062f 7 \u0631\u0648\u0632\u0647 \u0648 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 \u0648 \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af\u200c\u0647\u0627 (\u0645\u0631\u0628\u0648\u0637 \u0628\u0647 \u0628\u0627\u0632\u0627\u0631 \u0631\u0645\u0632\u0627\u0631\u0632)\n"
+        msg14 += "\n\U0001f9ED \u0645\u0628\u0646\u0627 \u0633\u06cc\u06af\u0646\u0627\u0644: \u062a\u0631\u0633 \u0648 \u0637\u0645\u0639\u060c \u0631\u0648\u0646\u062f 7 \u0631\u0648\u0632\u0647\u060c RSI\u060c \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af\u200c\u0647\u0627 \u0648 \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9 (\u0628\u0627\u0632\u0627\u0631 \u0631\u0645\u0632\u0627\u0631\u0632)\n"
 
         msg14 += f"\n\u26a0\ufe0f \u0627\u06cc\u0646 \u067e\u06cc\u0627\u0645 \u062a\u0648\u0635\u06cc\u0647 \u0645\u0627\u0644\u06cc \u0646\u06cc\u0633\u062a؛ \u067e\u06cc\u0634 \u0627\u0632 \u0645\u0639\u0627\u0645\u0644\u0647 \u062f\u0627\u062f\u0647\u200c\u0647\u0627 \u0648 \u0645\u0646\u0627\u0628\u0639 \u0631\u0627 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646\u06cc\u062f.\n"
 
