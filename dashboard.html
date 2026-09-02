@@ -54,7 +54,7 @@ th{color:#8b949e;font-weight:normal}
   <div class="card" id="c6"><div class="loading"><div class="spinner"></div> &#x0633;&#x06CC;&#x06AF;&#x0646;&#x0627;&#x0644;</div></div>
   <div class="card" id="c7"><div class="loading"><div class="spinner"></div> &#x0631;&#x0645;&#x0632;&#x0627;&#x0631;&#x0632;&#x0647;&#x0627;</div></div>
 </div>
-<div class="footer">&#x1F916; &#x0631;&#x0628;&#x0627;&#x062A; &#x0628;&#x0627;&#x0632;&#x0627;&#x0631; | &#x0628;&#x0631;&#x0648;&#x0632;&#x0631;&#x0633;&#x0627;&#x0646;&#x06CC; &#x062E;&#x0648;&#x062F;&#x06A9;&#x0627;&#x0631; &#x0647;&#x0631; 60 &#x062B;&#x0627;&#x0646;&#x06CC;&#x0647;</div>
+<div class="footer">&#x1F916; RoboMohsen Bot | &#x062F;&#x0627;&#x0634;&#x0628;&#x0648;&#x0631;&#x062F; &#x0632;&#x0646;&#x062F;&#x0647; | &#x0628;&#x0631;&#x0648;&#x0632;&#x0631;&#x0633;&#x0627;&#x0646;&#x06CC; &#x062E;&#x0648;&#x062F;&#x06A9;&#x0627;&#x0631; &#x0647;&#x0631; 30 &#x062B;&#x0627;&#x0646;&#x06CC;&#x0647;</div>
 <script>
 function F(n){return n?Number(n).toLocaleString('en-US',{maximumFractionDigits:0}):'\u2014'}
 function F2(n){return n?Number(n).toLocaleString('en-US',{maximumFractionDigits:2}):'\u2014'}
@@ -125,6 +125,7 @@ async function load(){
     else if(v2<75){sig='\uD83D\uDFE0 \u0641\u0631\u0648\u0634';cls='signal-sell';}
     else{sig='\uD83D\uDFE0 \u0641\u0631\u0648\u0634 \u0642\u0648\u06CC';cls='signal-sell';}
     c6+='<div class="signal-box '+cls+'">'+sig+'<div style="font-size:13px;margin-top:4px">\u0627\u0645\u062A\u06CC\u0627\u0632: '+v2+'/100</div></div>';
+    c6+='<div style="font-size:11px;color:#8b949e;text-align:center;margin-top:8px;line-height:1.8">\uD83E\uDDED \u0645\u0628\u0646\u0627 \u0633\u06CC\u06AF\u0646\u0627\u0644: \u062A\u0631\u0633 \u0648 \u0637\u0645\u0639\u060C \u0631\u0648\u0646\u062F 7 \u0631\u0648\u0632\u0647 \u0628\u06CC\u062A\u06A9\u0648\u06CC\u0646\u060C RSI \u0648 \u0641\u0639\u0627\u0644\u06CC\u062A \u0646\u0647\u0646\u06AF\u200C\u0647\u0627 (\u0628\u0627\u0632\u0627\u0631 \u0631\u0645\u0632\u0627\u0631\u0632)<br>\u26A0\uFE0F \u062A\u0648\u0635\u06CC\u0647 \u0645\u0627\u0644\u06CC \u0646\u06CC\u0633\u062A</div>';
   }else{c6+='<div style="color:#f85149;text-align:center">\u062E\u0637\u0627</div>';}
   document.getElementById('c6').innerHTML=c6;
 
