@@ -147,7 +147,7 @@ async function load(){
 
   // Card 8: Bloomberg News
   // Card 8: Investing.com News (separate)
-  var c8='<div class="card-title">\U0001f4f0 \u0627\u062e\u0628\u0627\u0631 \u0627\u06cc\u0646\u0648\u0633\u062a\u06cc\u0646\u06af</div>';
+  var c8='<div class="card-title">\uD83D\uDCF0 \u0627\u062e\u0628\u0627\u0631 \u0627\u06cc\u0646\u0648\u0633\u062a\u06cc\u0646\u06af</div>';
   if(d.news_investing&&d.news_investing.length){
     for(var i=0;i<d.news_investing.length;i++){
       var n=d.news_investing[i];
@@ -164,13 +164,13 @@ async function load(){
       }
     }
   }
-  if(c8==='<div class="card-title">\U0001f4f0 \u0627\u062e\u0628\u0627\u0631 \u0627\u06cc\u0646\u0648\u0633\u062a\u06cc\u0646\u06af</div>'){
+  if(c8==='<div class="card-title">\uD83D\uDCF0 \u0627\u062e\u0628\u0627\u0631 \u0627\u06cc\u0646\u0648\u0633\u062a\u06cc\u0646\u06af</div>'){
     c8+='<div style="color:#8b949e;text-align:center;padding:10px">\u062e\u0628\u0631\u06cc \u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a</div>';
   }
   document.getElementById('c8').innerHTML=c8;
 
   // Card 9: Bloomberg News (separate)
-  var c9='<div class="card-title">\U0001f4f0 \u0627\u062e\u0628\u0627\u0631 \u0628\u0644\u0648\u0645\u0628\u0631\u06af</div>';
+  var c9='<div class="card-title">\uD83D\uDCF0 \u0627\u062e\u0628\u0627\u0631 \u0628\u0644\u0648\u0645\u0628\u0631\u06af</div>';
   if(d.news_bloomberg&&d.news_bloomberg.length){
     for(var i=0;i<d.news_bloomberg.length;i++){
       var n=d.news_bloomberg[i];
@@ -187,7 +187,7 @@ async function load(){
       }
     }
   }
-  if(c9==='<div class="card-title">\U0001f4f0 \u0627\u062e\u0628\u0627\u0631 \u0628\u0644\u0648\u0645\u0628\u0631\u06af</div>'){
+  if(c9==='<div class="card-title">\uD83D\uDCF0 \u0627\u062e\u0628\u0627\u0631 \u0628\u0644\u0648\u0645\u0628\u0631\u06af</div>'){
     c9+='<div style="color:#8b949e;text-align:center;padding:10px">\u062e\u0628\u0631\u06cc \u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a</div>';
   }
   document.getElementById('c9').innerHTML=c9;
