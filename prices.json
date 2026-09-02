@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-09-01 23:20",
-  "usd_sell": 215900,
-  "usd_buy": 215800,
+  "timestamp": "2026-09-02 04:38",
+  "usd_sell": 215700,
+  "usd_buy": 215600,
   "gold_18k": 22173230,
-  "btc_usd": 77272.19,
-  "fear_greed": 69,
+  "btc_usd": 77436.1,
+  "fear_greed": 63,
   "btc_dominance": 59.1,
-  "market_cap": 2620000000000.0,
+  "market_cap": 2630000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -4.14,
+  "market_change": -3.96,
   "top10": []
 }
