@@ -922,6 +922,58 @@ def fetch_investing_news():
 
 
 
+def fetch_bloomberg_news():
+
+    """Fetch breaking market news headlines from Bloomberg RSS feed."""
+
+    try:
+
+        import xml.etree.ElementTree as ET
+
+        s = requests.Session()
+
+        s.verify = False
+
+        s.headers.update({"User-Agent": "Mozilla/5.0"})
+
+        r = s.get("https://feeds.bloomberg.com/markets/news.rss", timeout=15)
+
+        root = ET.fromstring(r.text)
+
+        items = root.findall(".//item")
+
+        news = []
+
+        keywords = ["usd", "dollar", "gold", "bitcoin", "btc", "oil", "fed", "inflation",
+
+                     "interest rate", "gdp", "employment", "cpi", "treasury", "bond",
+
+                     "crypto", "ethereum", "forex", "market", "recession", "trade war",
+
+                     "iran", "sanctions", "oil price", "crude", "gold price", "currency"]
+
+        for item in items[:25]:
+
+            title = item.findtext("title", "")
+
+            pub_date = item.findtext("pubDate", "")
+
+            title_lower = title.lower()
+
+            if any(kw in title_lower for kw in keywords):
+
+                news.append({"title": title, "date": pub_date[:16], "source": "Bloomberg"})
+
+        return news[:6]  # Top 6 relevant Bloomberg headlines
+
+    except Exception as e:
+
+        print(f"  Bloomberg RSS error: {e}", file=sys.stderr)
+
+        return []
+
+
+
 def _get_seen_headlines_file():
 
     today = datetime.now().strftime("%Y-%m-%d")
@@ -3275,6 +3327,17 @@ def main():
                     "change_24h": c.get("price_change_percentage_24h", 0),
                     "market_cap": c.get("market_cap", 0),
                 })
+        # Add Bloomberg news (translated) to prices dict
+        try:
+            bnews = fetch_bloomberg_news()
+            if bnews:
+                prices["news"] = [{"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Bloomberg"} for n in bnews[:6]]
+            else:
+                prices["news"] = []
+        except Exception as e:
+            print(f"  Bloomberg news save error: {e}", file=sys.stderr)
+            prices["news"] = []
+
         import json as _json
         with open("prices.json", "w", encoding="utf-8") as f:
             _json.dump(prices, f, ensure_ascii=False, indent=2)
