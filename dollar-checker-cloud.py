@@ -2785,27 +2785,55 @@ def main():
 
 
 
-        # Signal 4: Iran gold premium
-
-        iran_gold_oz = gold * 31.1
-
-        intl_gold_oz = ounce_usd * usd_sell
-
-        if intl_gold_oz > 0:
-
-            premium = ((iran_gold_oz - intl_gold_oz) / intl_gold_oz * 100)
-
-            if premium > 10:
-
-                signals.append(("\U0001f4a1 \u0637\u0644\u0627 \u06af\u0631\u0627\u0646", f"\u0627\u06cc\u0631\u0627\u0646 {premium:.0f}% \u06af\u0631\u0627\u0646\u062a\u0631"))
-
-                score -= 10
-
-            elif premium < -3:
-
-                signals.append(("\U0001f4a1", f"\u0645\u0642\u0627\u06cc\u0633\u0647 \u0637\u0644\u0627: \u0627\u06cc\u0631\u0627\u0646 {abs(premium):.0f}% \u0627\u0631\u0632\u0627\u0646\u200c\u062a\u0631؛ \u0646\u06cc\u0627\u0632\u0645\u0646\u062f \u0628\u0631\u0631\u0633\u06cc \u0628\u06cc\u0634\u062a\u0631"))
-
-                score += 10
+        # Signal 4: BTC daily RSI
+
+        try:
+
+            s_rsi = requests.Session()
+
+            s_rsi.verify = False
+
+            r_rsi = s_rsi.get("https://api.binance.us/api/v3/klines", params={"symbol": "BTCUSDT", "interval": "1d", "limit": 100}, timeout=10)
+
+            closes = [float(row[4]) for row in r_rsi.json()]
+
+            if len(closes) > 15:
+
+                gains, losses = [], []
+
+                for prev, cur in zip(closes[-15:-1], closes[-14:]):
+
+                    delta = cur - prev
+
+                    gains.append(max(delta, 0))
+
+                    losses.append(max(-delta, 0))
+
+                gain = sum(gains) / 14
+
+                loss = sum(losses) / 14
+
+                btc_rsi = 100.0 if loss == 0 else 100 - (100 / (1 + gain / loss))
+
+                if btc_rsi < 30:
+
+                    signals.append(("\U0001f4c8 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u0641\u0631\u0648\u0634 ({btc_rsi:.0f}) \u2014 \u0641\u0631\u0635\u062a \u062e\u0631\u06cc\u062f"))
+
+                    score += 15
+
+                elif btc_rsi > 70:
+
+                    signals.append(("\U0001f4c9 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u062e\u0631\u06cc\u062f ({btc_rsi:.0f}) \u2014 \u0627\u062d\u062a\u0645\u0627\u0644 \u0627\u0635\u0644\u0627\u062d"))
+
+                    score -= 15
+
+                else:
+
+                    signals.append(("\u2705 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0645\u0639\u062a\u062f\u0644: {btc_rsi:.0f}"))
+
+        except Exception:
+
+            pass
 
 
 
