@@ -1,13 +1,74 @@
 {
-  "timestamp": "2026-09-02 04:38",
-  "usd_sell": 215700,
-  "usd_buy": 215600,
-  "gold_18k": 22173230,
-  "btc_usd": 77436.1,
-  "fear_greed": 63,
-  "btc_dominance": 59.1,
-  "market_cap": 2630000000000.0,
-  "market_volume": 80000000000.0,
-  "market_change": -3.96,
-  "top10": []
+  "timestamp": "2026-09-02 12:57",
+  "usd_sell": 220500,
+  "usd_buy": 220400,
+  "gold_18k": 22461794,
+  "btc_usd": 76703.41,
+  "fear_greed": 0,
+  "btc_dominance": 0,
+  "market_cap": 0,
+  "market_volume": 0,
+  "market_change": 0,
+  "top10": [
+    {
+      "symbol": "btc",
+      "price": 76806,
+      "change_24h": -1.41905,
+      "market_cap": 1541979139566
+    },
+    {
+      "symbol": "eth",
+      "price": 2384.67,
+      "change_24h": -2.69814,
+      "market_cap": 287715434356
+    },
+    {
+      "symbol": "usdt",
+      "price": 0.999619,
+      "change_24h": -0.01609,
+      "market_cap": 183309955279
+    },
+    {
+      "symbol": "bnb",
+      "price": 685.28,
+      "change_24h": -0.10727,
+      "market_cap": 91233462261
+    },
+    {
+      "symbol": "xrp",
+      "price": 1.33,
+      "change_24h": -2.57411,
+      "market_cap": 83453107151
+    },
+    {
+      "symbol": "usdc",
+      "price": 0.999774,
+      "change_24h": -0.01197,
+      "market_cap": 73575077652
+    },
+    {
+      "symbol": "sol",
+      "price": 99.1,
+      "change_24h": -2.95948,
+      "market_cap": 57965650826
+    },
+    {
+      "symbol": "trx",
+      "price": 0.322954,
+      "change_24h": -2.17556,
+      "market_cap": 30654804942
+    },
+    {
+      "symbol": "figr_heloc",
+      "price": 1.034,
+      "change_24h": null,
+      "market_cap": 22767389722
+    },
+    {
+      "symbol": "hype",
+      "price": 81.38,
+      "change_24h": -2.46847,
+      "market_cap": 18090658028
+    }
+  ]
 }
