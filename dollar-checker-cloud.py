@@ -317,13 +317,15 @@ def fetch_global_market():
 
         r2 = s.get("https://api.coingecko.com/api/v3/search/trending", timeout=15)
 
-        trending = r2.json()["coins"][:5]
+        trending_data = r2.json()
+        trending = trending_data.get("coins", [])[:5] if isinstance(trending_data, dict) else []
 
 
 
         r3 = s.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&price_change_percentage=24h", timeout=15)
 
-        top_coins = r3.json()
+        top_data = r3.json()
+        top_coins = top_data if isinstance(top_data, list) else []
 
         _TOP10_COINS = top_coins
 
@@ -3232,7 +3234,7 @@ def main():
             "market_change": global_market.get("market_cap_change_24h", 0) if global_market else 0,
             "top10": []
         }
-        top10_data = _TOP10_COINS if '_TOP10_COINS' in dir() else []
+        top10_data = globals().get('_TOP10_COINS', [])
         if top10_data:
             for c in top10_data[:10]:
                 prices["top10"].append({
