@@ -3465,6 +3465,30 @@ def main():
                     "change_24h": c.get("price_change_percentage_24h", 0),
                     "market_cap": c.get("market_cap", 0),
                 })
+        # Save whale analysis to prices dict
+        try:
+            wh_data = {}
+            if whale_unconfirmed:
+                wh_score = _whale_activity_score(whale_unconfirmed)
+                wh_level = "زیاد" if wh_score >= 65 else "متوسط" if wh_score >= 30 else "کم"
+                whales = whale_unconfirmed.get("whales", [])
+                wh_data["unconfirmed"] = {
+                    "score": wh_score,
+                    "level": wh_level,
+                    "count": len(whales),
+                    "total_btc": whale_unconfirmed.get("total_whale_btc", 0),
+                    "mega_whales": whale_unconfirmed.get("mega_whales", 0),
+                    "large_whales": whale_unconfirmed.get("large_whales", 0),
+                    "medium_whales": whale_unconfirmed.get("medium_whales", 0),
+                    "top": [{"btc": w.get("btc", 0), "tier": w.get("tier", ""), "fee": w.get("fee", 0), "inputs": w.get("inputs", 0), "outputs": w.get("outputs", 0), "direction": "exchange_out" if w.get("exchange_out") else "exchange_in" if w.get("exchange_in") else "unknown"} for w in whales[:3]],
+                }
+            if whale_wallets and whale_wallets.get("wallets"):
+                wh_data["wallets"] = {"total_btc": whale_wallets.get("total_btc", 0), "wallets": [{"label": w.get("label", ""), "balance": w.get("balance", 0)} for w in whale_wallets["wallets"][:4]]}
+            prices["whales"] = wh_data
+        except Exception as e:
+            print(f"  Whale save error: {e}", file=sys.stderr)
+            prices["whales"] = {}
+
         # Save Investing.com + Bloomberg news (translated) as separate fields
         try:
             inews = fetch_investing_news()
