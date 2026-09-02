@@ -3465,15 +3465,18 @@ def main():
                     "change_24h": c.get("price_change_percentage_24h", 0),
                     "market_cap": c.get("market_cap", 0),
                 })
-        # Add Bloomberg news (translated) to prices dict
+        # Add Investing.com + Bloomberg news (translated) to prices dict
         try:
+            inews = fetch_investing_news()
             bnews = fetch_bloomberg_news()
-            if bnews:
-                prices["news"] = [{"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Bloomberg"} for n in bnews[:6]]
-            else:
-                prices["news"] = []
+            news_list = []
+            for n in inews[:5]:
+                news_list.append({"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Investing.com"})
+            for n in bnews[:6]:
+                news_list.append({"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Bloomberg"})
+            prices["news"] = news_list
         except Exception as e:
-            print(f"  Bloomberg news save error: {e}", file=sys.stderr)
+            print(f"  News save error: {e}", file=sys.stderr)
             prices["news"] = []
 
         import json as _json
