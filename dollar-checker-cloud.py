@@ -3465,19 +3465,18 @@ def main():
                     "change_24h": c.get("price_change_percentage_24h", 0),
                     "market_cap": c.get("market_cap", 0),
                 })
-        # Add Investing.com + Bloomberg news (translated) to prices dict
+        # Save Investing.com + Bloomberg news (translated) as separate fields
         try:
             inews = fetch_investing_news()
             bnews = fetch_bloomberg_news()
-            news_list = []
-            for n in inews[:5]:
-                news_list.append({"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Investing.com"})
-            for n in bnews[:6]:
-                news_list.append({"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Bloomberg"})
-            prices["news"] = news_list
+            prices["news_investing"] = [{"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Investing.com"} for n in inews[:5]]
+            prices["news_bloomberg"] = [{"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Bloomberg"} for n in bnews[:6]]
+            prices["news"] = prices["news_investing"] + prices["news_bloomberg"]
         except Exception as e:
             print(f"  News save error: {e}", file=sys.stderr)
             prices["news"] = []
+            prices["news_investing"] = []
+            prices["news_bloomberg"] = []
 
         import json as _json
         with open("prices.json", "w", encoding="utf-8") as f:
