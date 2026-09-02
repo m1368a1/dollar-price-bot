@@ -296,6 +296,7 @@ def build_crypto_rsi_message(report):
 
 
 def fetch_global_market():
+    global _TOP10_COINS
 
     """Fetch global crypto market data from CoinGecko."""
 
@@ -343,7 +344,6 @@ def fetch_global_market():
             "top_losers": [(c["name"], c["symbol"], c.get("price_change_percentage_24h", 0) or 0) for c in top_coins if (c.get("price_change_percentage_24h", 0) or 0) < 0][:3],
 
         }
-        global _TOP10_COINS
         _TOP10_COINS = top_coins
 
     except Exception as e:
