@@ -325,7 +325,7 @@ def fetch_global_market():
 
         top_coins = r3.json()
 
-
+        _TOP10_COINS = top_coins
 
         return {
 
@@ -344,7 +344,6 @@ def fetch_global_market():
             "top_losers": [(c["name"], c["symbol"], c.get("price_change_percentage_24h", 0) or 0) for c in top_coins if (c.get("price_change_percentage_24h", 0) or 0) < 0][:3],
 
         }
-        _TOP10_COINS = top_coins
 
     except Exception as e:
 
