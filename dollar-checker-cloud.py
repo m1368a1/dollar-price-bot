@@ -1496,10 +1496,9 @@ def _save_analyses_manifest(items):
 def collect_daily_analysis_photos():
     """Download photos sent to the bot and archive them as daily analyses.
 
-    A photo sent to the bot (private chat) becomes analyses/YYYY-MM-DD.jpg.
-    Sending a second photo the same day replaces that day's analysis.
-    A text caption (non-command message) updates the caption of today's
-    analysis instead of creating a new entry.
+    Every authorized photo is stored as a unique archive entry. A newer
+    photo becomes the latest dashboard image, while older photos remain
+    available in the analysis history.
     """
     offset_file = os.environ.get("TELEGRAM_OFFSET_FILE", "telegram-command-offset.txt")
     try:
@@ -1509,7 +1508,6 @@ def collect_daily_analysis_photos():
         offset = 0
 
     manifest = _load_analyses_manifest()
-    by_date = {item["date"]: item for item in manifest}
     processed_update_ids = {
         str(item.get("update_id")) for item in manifest if item.get("update_id") is not None
     }
@@ -1567,7 +1565,8 @@ def collect_daily_analysis_photos():
                     ext = os.path.splitext(file_path)[1].lower() or ".jpg"
                     if ext not in {".jpg", ".jpeg", ".png", ".webp"}:
                         ext = ".jpg"
-                    fname = today + ext
+                    base_name = today + "_" + str(update_id)
+                    fname = base_name + ext
                     with open(os.path.join(ANALYSES_DIR, fname), "wb") as handle:
                         handle.write(img.content)
                     entry = {
@@ -1577,9 +1576,9 @@ def collect_daily_analysis_photos():
                         "added": datetime.now().strftime("%Y-%m-%d %H:%M"),
                         "update_id": update_id,
                     }
-                    by_date[today] = entry
+                    manifest.append(entry)
                     processed_update_ids.add(str(update_id))
-                    manifest = sorted(by_date.values(), key=lambda x: x["date"])
+                    manifest = sorted(manifest, key=lambda x: (x.get("date", ""), x.get("added", ""), x.get("update_id", 0)))
                     found_any = True
                     print(f"  [OK] analysis photo saved: {fname}")
                     try:
@@ -1594,10 +1593,11 @@ def collect_daily_analysis_photos():
             elif caption and not text.startswith("/"):
                 # Caption-only text updates today's analysis caption
                 today = datetime.now(timezone(timedelta(hours=3, minutes=30))).date().isoformat()
-                if today in by_date:
-                    by_date[today]["caption"] = caption
-                    manifest = sorted(by_date.values(), key=lambda x: x["date"])
-                    found_any = True
+                for item in reversed(manifest):
+                    if item.get("date") == today:
+                        item["caption"] = caption
+                        found_any = True
+                        break
 
         # Do not persist this offset here. poll_telegram_commands() shares the
         # same update stream and persists it after processing commands.
