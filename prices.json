@@ -1,96 +1,115 @@
 {
-  "timestamp": "2026-09-03 16:27",
-  "usd_sell": 223400,
-  "usd_buy": 223300,
-  "gold_18k": 23442910,
-  "btc_usd": 80774.17,
+  "timestamp": "2026-09-03 16:58",
+  "usd_sell": 222100,
+  "usd_buy": 222000,
+  "gold_18k": 23396740,
+  "btc_usd": 80981.86,
   "fear_greed": 65,
   "btc_dominance": 59.3,
-  "market_cap": 2720000000000.0,
+  "market_cap": 2740000000000.0,
   "market_volume": 90000000000.0,
-  "market_change": 1.51,
+  "market_change": 1.64,
   "top10": [
     {
       "symbol": "btc",
-      "price": 80759,
-      "change_24h": 4.20162,
-      "market_cap": 1621738269555
+      "price": 80977,
+      "change_24h": 4.91206,
+      "market_cap": 1625862338840
     },
     {
       "symbol": "eth",
-      "price": 2493.32,
-      "change_24h": 3.84739,
-      "market_cap": 304253773657
+      "price": 2495.0,
+      "change_24h": 4.58759,
+      "market_cap": 304405164471
     },
     {
       "symbol": "usdt",
-      "price": 0.999977,
-      "change_24h": 0.03587,
-      "market_cap": 183379354365
+      "price": 0.999909,
+      "change_24h": 0.03138,
+      "market_cap": 183369118713
     },
     {
       "symbol": "bnb",
-      "price": 719.92,
-      "change_24h": 4.60458,
-      "market_cap": 95873696144
+      "price": 722.53,
+      "change_24h": 5.32982,
+      "market_cap": 96208986138
     },
     {
       "symbol": "xrp",
       "price": 1.46,
-      "change_24h": 8.95311,
-      "market_cap": 91664888265
+      "change_24h": 9.5784,
+      "market_cap": 91488493959
     },
     {
       "symbol": "usdc",
-      "price": 0.999954,
-      "change_24h": 0.01779,
-      "market_cap": 73607055515
+      "price": 0.999902,
+      "change_24h": 0.01733,
+      "market_cap": 73603880399
     },
     {
       "symbol": "sol",
-      "price": 104.12,
-      "change_24h": 4.45659,
-      "market_cap": 60947444669
+      "price": 104.71,
+      "change_24h": 5.87661,
+      "market_cap": 61275829448
     },
     {
       "symbol": "trx",
-      "price": 0.331843,
-      "change_24h": 2.46092,
-      "market_cap": 31503934990
+      "price": 0.331953,
+      "change_24h": 2.59773,
+      "market_cap": 31516243591
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.012,
-      "change_24h": -0.0249,
-      "market_cap": 22450646083
+      "price": 1.009,
+      "change_24h": -0.36573,
+      "market_cap": 22399930328
     },
     {
       "symbol": "hype",
-      "price": 83.84,
-      "change_24h": 2.3447,
-      "market_cap": 18652132675
+      "price": 84.12,
+      "change_24h": 3.31364,
+      "market_cap": 18708148802
     }
   ],
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 118.37,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 118.37,
+          "tier": "متوسط",
+          "fee": 9.36e-06,
+          "inputs": 2,
+          "outputs": 2,
+          "direction": "unknown"
+        }
+      ]
     }
   },
   "news_investing": [
     {
-      "title": "راند آفریقای جنوبی با تضعیف دلار و افزایش قیمت طلا افزایش یافت",
-      "date": "2026-09-03 16:11",
+      "title": "سهام اروپا با کاهش بازده اوراق قرضه از پایین‌ترین سطح یک ماهه خود بهبود یافتند",
+      "date": "2026-09-03 16:30",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
+    {
+      "title": "S&P 500 بهترین روز ماه را در پیش دارد، زیرا Fedspeak از صبر و شکیبایی نرخ بهره خبر می‌دهد.",
+      "date": "Thu, 03 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازارها پس از آنکه والر، رئیس فدرال رزرو، به کاهش تورم اشاره کرد، تقویت شدند",
+      "date": "Thu, 03 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۳ سپتامبر",
       "date": "Wed, 02 Sep 2026",
@@ -108,25 +127,25 @@
     },
     {
       "title": "شیکاگو کسری بودجه ۸۸۲ میلیون دلاری در بخش اوراق قرضه و هزینه‌های بازنشستگی پیش‌بینی می‌کند",
-      "date": "Thu, 03 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام اروپا با کاهش شرط‌بندی‌ها برای افزایش نرخ بهره فدرال رزرو، افزایش یافت؛ سهام Soitec جهش کرد",
-      "date": "Thu, 03 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ریسک‌های ناشی از افزایش غیرمعمول ارزش دلار در جهان، فروش گسترده سهام را تشدید می‌کند",
       "date": "Thu, 03 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "راند آفریقای جنوبی با تضعیف دلار و افزایش قیمت طلا افزایش یافت",
-      "date": "2026-09-03 16:11",
+      "title": "سهام اروپا با کاهش بازده اوراق قرضه از پایین‌ترین سطح یک ماهه خود بهبود یافتند",
+      "date": "2026-09-03 16:30",
       "source": "Investing.com"
+    },
+    {
+      "title": "S&P 500 بهترین روز ماه را در پیش دارد، زیرا Fedspeak از صبر و شکیبایی نرخ بهره خبر می‌دهد.",
+      "date": "Thu, 03 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازارها پس از آنکه والر، رئیس فدرال رزرو، به کاهش تورم اشاره کرد، تقویت شدند",
+      "date": "Thu, 03 Sep 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۳ سپتامبر",
@@ -145,16 +164,6 @@
     },
     {
       "title": "شیکاگو کسری بودجه ۸۸۲ میلیون دلاری در بخش اوراق قرضه و هزینه‌های بازنشستگی پیش‌بینی می‌کند",
-      "date": "Thu, 03 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام اروپا با کاهش شرط‌بندی‌ها برای افزایش نرخ بهره فدرال رزرو، افزایش یافت؛ سهام Soitec جهش کرد",
-      "date": "Thu, 03 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ریسک‌های ناشی از افزایش غیرمعمول ارزش دلار در جهان، فروش گسترده سهام را تشدید می‌کند",
       "date": "Thu, 03 Sep 2026",
       "source": "Bloomberg"
     }
