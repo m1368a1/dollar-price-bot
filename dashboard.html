@@ -6,59 +6,91 @@
 <meta http-equiv="Pragma" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>robot bazar - live dashboard</title>
+<meta name="theme-color" content="#070b14">
+<title>RoboMohsenBot — داشبورد زنده بازار</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Segoe UI',Tahoma,sans-serif;background:#0a0e17;color:#e0e0e0;direction:rtl;min-width:320px}
-.header{background:linear-gradient(135deg,#1a1f35,#0d1117);padding:16px 12px;text-align:center;border-bottom:2px solid #30363d;position:sticky;top:0;z-index:10}
-.header h1{font-size:24px;color:#58a6ff;font-weight:bold}
-.header .subtitle{font-size:12px;color:#8b949e;margin-top:2px}
-.header .status{margin-top:6px;font-size:11px;color:#3fb950}
-.container{max-width:900px;margin:0 auto;padding:10px}
-.card{background:#161b22;border:1px solid #30363d;border-radius:10px;padding:14px;margin-bottom:10px}
-.card-title{font-size:15px;font-weight:bold;margin-bottom:10px}
-.price-row{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid #21262d;font-size:13px}
+:root{
+  --bg:#070b14;--card:rgba(20,26,41,.82);--border:rgba(120,150,255,.14);
+  --text:#e8ebf5;--muted:#8a93a8;--accent:#5b8cff;--green:#2ee6a8;--red:#ff5d6c;--amber:#ffb547;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif;color:var(--text);direction:rtl;min-width:320px;min-height:100vh;
+  background:
+    radial-gradient(1100px 550px at 88% -8%,rgba(91,140,255,.16),transparent 60%),
+    radial-gradient(900px 500px at -8% 18%,rgba(46,230,168,.09),transparent 60%),
+    radial-gradient(800px 500px at 50% 110%,rgba(255,93,108,.06),transparent 60%),
+    linear-gradient(180deg,#070b14,#0a1020 55%,#070b14);
+  background-attachment:fixed}
+.header{background:rgba(9,13,26,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  padding:18px 14px 14px;text-align:center;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;
+  box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.header h1{font-size:26px;font-weight:900;letter-spacing:.3px;
+  background:linear-gradient(90deg,#5b8cff,#2ee6a8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.header .subtitle{font-size:12.5px;color:var(--muted);margin-top:4px;font-weight:600}
+.header .status{margin-top:9px;font-size:11.5px;color:var(--green);display:inline-flex;align-items:center;gap:6px;
+  background:rgba(46,230,168,.08);border:1px solid rgba(46,230,168,.28);padding:4px 14px;border-radius:99px}
+.container{max-width:980px;margin:0 auto;padding:16px 14px;display:grid;grid-template-columns:1fr;gap:13px}
+@media(min-width:720px){.container{grid-template-columns:1fr 1fr}#c1,#c6,#c7,#c8,#c9{grid-column:1/-1}}
+.card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  box-shadow:0 10px 28px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.04);
+  position:relative;overflow:hidden;animation:fadeUp .55s ease both;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-3px);border-color:rgba(91,140,255,.4);box-shadow:0 14px 34px rgba(0,0,0,.45),0 0 0 1px rgba(91,140,255,.08)}
+.card::before{content:'';position:absolute;inset:0 0 auto 0;height:2px;
+  background:linear-gradient(90deg,transparent 5%,rgba(91,140,255,.65) 50%,transparent 95%);opacity:.85}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.card-title{font-size:15px;font-weight:800;margin-bottom:12px;display:flex;align-items:center;gap:7px}
+.price-row{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:9px 2px;
+  border-bottom:1px dashed rgba(255,255,255,.07);font-size:13.5px}
 .price-row:last-child{border-bottom:none}
-.price-label{color:#8b949e}
-.price-value{font-weight:bold}
-.up{color:#3fb950}.down{color:#f85149}.neutral{color:#d29922}
-.big{font-size:26px;font-weight:bold;text-align:center;margin:8px 0}
-.gauge{width:100%;height:22px;background:#21262d;border-radius:11px;overflow:hidden;margin:8px 0}
-.gauge-fill{height:100%;border-radius:11px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:bold;color:#fff}
-.gauge-text{text-align:center;font-size:12px;color:#8b949e}
-.signal-box{text-align:center;padding:14px;border-radius:10px;margin:6px 0;font-size:16px;font-weight:bold}
-.signal-buy{background:rgba(63,185,80,0.15);border:1px solid #3fb950;color:#3fb950}
-.signal-sell{background:rgba(248,81,73,0.15);border:1px solid #f85149;color:#f85149}
-.signal-wait{background:rgba(210,153,34,0.15);border:1px solid #d29922;color:#d29922}
-table{width:100%;border-collapse:collapse;font-size:12px}
-th,td{padding:6px;text-align:right;border-bottom:1px solid #21262d}
-th{color:#8b949e;font-weight:normal}
-.footer{text-align:center;padding:12px;color:#484f58;font-size:11px}
-.loading{text-align:center;padding:15px;color:#8b949e}
-.spinner{display:inline-block;width:18px;height:18px;border:2px solid #30363d;border-top:2px solid #58a6ff;border-radius:50%;animation:spin 1s linear infinite}
-@keyframes spin{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
-.stale{opacity:0.5;border-color:#d29922}
+.price-label{color:var(--muted)}
+.price-value{font-weight:700;font-variant-numeric:tabular-nums}
+.up{color:var(--green)}.down{color:var(--red)}.neutral{color:var(--amber)}
+.big{font-size:30px;font-weight:800;text-align:center;margin:10px 0;letter-spacing:.4px;font-variant-numeric:tabular-nums}
+.gauge{width:100%;height:24px;background:rgba(255,255,255,.06);border-radius:12px;overflow:hidden;margin:10px 0;
+  box-shadow:inset 0 1px 4px rgba(0,0,0,.45)}
+.gauge-fill{height:100%;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:800;color:#fff;transition:width .9s ease}
+.gauge-text{text-align:center;font-size:12px;color:var(--muted)}
+.signal-box{text-align:center;padding:18px;border-radius:14px;margin:8px 0;font-size:17px;font-weight:800}
+.signal-buy{background:linear-gradient(135deg,rgba(46,230,168,.18),rgba(46,230,168,.05));border:1px solid rgba(46,230,168,.5);color:var(--green);box-shadow:0 0 26px rgba(46,230,168,.16)}
+.signal-sell{background:linear-gradient(135deg,rgba(255,93,108,.18),rgba(255,93,108,.05));border:1px solid rgba(255,93,108,.5);color:var(--red);box-shadow:0 0 26px rgba(255,93,108,.16)}
+.signal-wait{background:linear-gradient(135deg,rgba(255,181,71,.18),rgba(255,181,71,.05));border:1px solid rgba(255,181,71,.5);color:var(--amber);box-shadow:0 0 26px rgba(255,181,71,.16)}
+table{width:100%;border-collapse:collapse;font-size:12.5px}
+th,td{padding:8px 6px;text-align:right;border-bottom:1px solid rgba(255,255,255,.05)}
+th{color:var(--muted);font-weight:600;font-size:11.5px}
+tbody tr{transition:background .15s ease}
+tbody tr:hover{background:rgba(91,140,255,.07)}
+tbody tr:last-child td{border-bottom:none}
+.footer{text-align:center;padding:18px 12px 28px;color:var(--muted);font-size:11.5px}
+.loading{text-align:center;padding:18px;color:var(--muted)}
+.spinner{display:inline-block;width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-inline-end:6px}
+@keyframes spin{to{transform:rotate(360deg)}}
+.stale{opacity:.55;border-color:var(--amber)}
 </style>
 </head>
 <body>
 <div class="header">
-  <h1>&#x1F916; RoboMohsenBot</h1>
-  <div class="subtitle" style="font-weight:bold">&#x0631;&#x0628;&#x0627;&#x062A; &#x0628;&#x0627;&#x0632;&#x0627;&#x0631; &#x2014; &#x062F;&#x0627;&#x0634;&#x0628;&#x0648;&#x0631;&#x062F; &#x0632;&#x0646;&#x062F;&#x0647; &#x0627;&#x0637;&#x0644;&#x0627;&#x0639;&#x0627;&#x062A; &#x0628;&#x0627;&#x0632;&#x0627;&#x0631; &#x0627;&#x0631;&#x0632; &#x0648; &#x0631;&#x0645;&#x0632;&#x0627;&#x0631;&#x0632;</div>
-  
-  <div class="status" id="ts">&#x23F3; &#x062F;&#x0631; &#x062D;&#x0627;&#x0644; &#x0628;&#x0627;&#x0631;&#x06AF;&#x0630;&#x0627;&#x0631;&#x06CC;...</div>
+  <h1>🤖 RoboMohsenBot</h1>
+  <div class="subtitle" style="font-weight:bold">ربات بازار — داشبورد زنده اطلاعات بازار ارز و رمزارز</div>
+  <div class="status" id="ts">⏳ در حال بارگذاری...</div>
 </div>
 <div class="container">
-  <div class="card" id="c1"><div class="loading"><div class="spinner"></div> &#x0642;&#x06CC;&#x0645;&#x062A;&#x200C;&#x0647;&#x0627;</div></div>
-  <div class="card" id="c3"><div class="loading"><div class="spinner"></div> &#x0628;&#x06CC;&#x062A;&#x06A9;&#x0648;&#x06CC;&#x0646;</div></div>
-  <div class="card" id="c4"><div class="loading"><div class="spinner"></div> &#x062A;&#x0631;&#x0633; &#x0648; &#x0637;&#x0645;&#x0639;</div></div>
-  <div class="card" id="c5"><div class="loading"><div class="spinner"></div> &#x0628;&#x0627;&#x0632;&#x0627;&#x0631; &#x062C;&#x0647;&#x0627;&#x0646;&#x06CC;</div></div>
-  <div class="card" id="c6"><div class="loading"><div class="spinner"></div> &#x0633;&#x06CC;&#x06AF;&#x0646;&#x0627;&#x0644;</div></div>
-  <div class="card" id="cw"><div class="loading"><div class="spinner"></div> تحلیل نهنگ‌ها</div></div>
-  <div class="card" id="c7"><div class="loading"><div class="spinner"></div> &#x0631;&#x0645;&#x0632;&#x0627;&#x0631;&#x0632;&#x0647;&#x0627;</div></div>
-  <div class="card" id="c8"><div class="loading"><div class="spinner"></div> اخبار اینوستینگ</div></div>
-  <div class="card" id="c9"><div class="loading"><div class="spinner"></div> اخبار بلومبرگ</div></div>
+  <div class="card" id="c1"><div class="loading"><span class="spinner"></span> 💵 قیمت‌ها</div></div>
+  <div class="card" id="c6"><div class="loading"><span class="spinner"></span> 🧭 سیگنال خرید / فروش</div></div>
+  <div class="card" id="c3"><div class="loading"><span class="spinner"></span> ₿ بیتکوین</div></div>
+  <div class="card" id="c4"><div class="loading"><span class="spinner"></span> 🧠 ترس و طمع</div></div>
+  <div class="card" id="c5"><div class="loading"><span class="spinner"></span> 🌍 بازار جهانی</div></div>
+  <div class="card" id="cw"><div class="loading"><span class="spinner"></span> 🐋 تحلیل نهنگ‌ها</div></div>
+  <div class="card" id="c7"><div class="loading"><span class="spinner"></span> 📊 10 رمزارز برتر</div></div>
+  <div class="card" id="c8"><div class="loading"><span class="spinner"></span> 📰 اخبار اینوستینگ</div></div>
+  <div class="card" id="c9"><div class="loading"><span class="spinner"></span> 📰 اخبار بلومبرگ</div></div>
 </div>
-<div class="footer"><span style="font-size:22px;font-weight:bold;color:#58a6ff">&#x1F916; RoboMohsenBot</span><br>&#x062F;&#x0627;&#x0634;&#x0628;&#x0648;&#x0631;&#x062F; &#x0632;&#x0646;&#x062F;&#x0647; | &#x0628;&#x0631;&#x0648;&#x0632;&#x0631;&#x0633;&#x0627;&#x0646;&#x06CC; &#x062E;&#x0648;&#x062F;&#x06A9;&#x0627;&#x0631; &#x0647;&#x0631; 30 &#x062B;&#x0627;&#x0646;&#x06CC;&#x0647;</div>
+<div class="footer"><span style="font-size:22px;font-weight:800;color:#5b8cff">🤖 RoboMohsenBot</span><br>داشبورد زنده | بروزرسانی خودکار هر 30 ثانیه</div>
 <script>
 function F(n){return n?Number(n).toLocaleString('en-US',{maximumFractionDigits:0}):'\u2014'}
 function F2(n){return n?Number(n).toLocaleString('en-US',{maximumFractionDigits:2}):'\u2014'}
@@ -85,6 +117,20 @@ async function load(){
     if(d.btc_usd && d.usd_sell) c1+='<div class="price-row"><span class="price-label">\u20BF \u0628\u06CC\u062A\u06A9\u0648\u06CC\u0646 \u0628\u0647 \u062A\u0648\u0645\u0627\u0646</span><span class="price-value">'+P(Math.round(d.btc_usd*d.usd_sell))+' \u062A\u0648\u0645\u0627\u0646</span></div>';
   }else{c1+='<div style="color:#f85149;text-align:center">\u062E\u0637\u0627</div>';}
   document.getElementById('c1').innerHTML=c1;
+
+  // Card 6: Signal
+  var c6='<div class="card-title">\uD83E\uDDED \u0633\u06CC\u06AF\u0646\u0627\u0644 \u062E\u0631\u06CC\u062F / \u0641\u0631\u0648\u0634</div>';
+  if(d.fear_greed){
+    var v2=d.fear_greed;var sig,cls;
+    if(v2<25){sig='\uD83D\uDFE2 \u062E\u0631\u06CC\u062F \u0642\u0648\u06CC';cls='signal-buy';}
+    else if(v2<40){sig='\uD83D\uDFE2 \u062E\u0631\u06CC\u062F';cls='signal-buy';}
+    else if(v2<60){sig='\uD83D\uDFE1 \u0635\u0628\u0631';cls='signal-wait';}
+    else if(v2<75){sig='\uD83D\uDFE0 \u0641\u0631\u0648\u0634';cls='signal-sell';}
+    else{sig='\uD83D\uDFE0 \u0641\u0631\u0648\u0634 \u0642\u0648\u06CC';cls='signal-sell';}
+    c6+='<div class="signal-box '+cls+'">'+sig+'<div style="font-size:13px;margin-top:4px">\u0627\u0645\u062A\u06CC\u0627\u0632: '+v2+'/100</div></div>';
+    c6+='<div style="font-size:11px;color:#8b949e;text-align:center;margin-top:8px;line-height:1.8">\uD83E\uDDED \u0645\u0628\u0646\u0627\u06CC \u0633\u06CC\u06AF\u0646\u0627\u0644: \u062A\u0631\u0633 \u0648 \u0637\u0645\u0639\u060C \u0631\u0648\u0646\u062F 7 \u0631\u0648\u0632\u0647\u060C RSI\u060C \u0641\u0639\u0627\u0644\u06CC\u062A \u0646\u0647\u0646\u06AF\u200C\u0647\u0627 \u0648 \u0627\u0644\u06AF\u0648\u06CC \u06A9\u0646\u062F\u0644\u0627\u0633\u062A\u06CC\u06A9 (\u0628\u0627\u0632\u0627\u0631 \u0631\u0645\u0632\u0627\u0631\u0632)<br>\u26A0\uFE0F \u062A\u0648\u0635\u06CC\u0647 \u0645\u0627\u0644\u06CC \u0646\u06CC\u0633\u062A</div>';
+  }else{c6+='<div style="color:#f85149;text-align:center">\u062E\u0637\u0627</div>';}
+  document.getElementById('c6').innerHTML=c6;
 
   // Card 3: BTC
   var c3='<div class="card-title">\u20BF \u0628\u06CC\u062A\u06A9\u0648\u06CC\u0646</div>';
@@ -119,20 +165,6 @@ async function load(){
   }else{c5+='<div style="color:#f85149;text-align:center">\u062E\u0637\u0627</div>';}
   document.getElementById('c5').innerHTML=c5;
 
-  // Card 6: Signal
-  var c6='<div class="card-title">\uD83E\uDDED \u0633\u06CC\u06AF\u0646\u0627\u0644 \u062E\u0631\u06CC\u062F / \u0641\u0631\u0648\u0634</div>';
-  if(d.fear_greed){
-    var v2=d.fear_greed;var sig,cls;
-    if(v2<25){sig='\uD83D\uDFE2 \u062E\u0631\u06CC\u062F \u0642\u0648\u06CC';cls='signal-buy';}
-    else if(v2<40){sig='\uD83D\uDFE2 \u062E\u0631\u06CC\u062F';cls='signal-buy';}
-    else if(v2<60){sig='\uD83D\uDFE1 \u0635\u0628\u0631';cls='signal-wait';}
-    else if(v2<75){sig='\uD83D\uDFE0 \u0641\u0631\u0648\u0634';cls='signal-sell';}
-    else{sig='\uD83D\uDFE0 \u0641\u0631\u0648\u0634 \u0642\u0648\u06CC';cls='signal-sell';}
-    c6+='<div class="signal-box '+cls+'">'+sig+'<div style="font-size:13px;margin-top:4px">\u0627\u0645\u062A\u06CC\u0627\u0632: '+v2+'/100</div></div>';
-    c6+='<div style="font-size:11px;color:#8b949e;text-align:center;margin-top:8px;line-height:1.8">\uD83E\uDDED \u0645\u0628\u0646\u0627\u06CC \u0633\u06CC\u06AF\u0646\u0627\u0644: \u062A\u0631\u0633 \u0648 \u0637\u0645\u0639\u060C \u0631\u0648\u0646\u062F 7 \u0631\u0648\u0632\u0647\u060C RSI\u060C \u0641\u0639\u0627\u0644\u06CC\u062A \u0646\u0647\u0646\u06AF\u200C\u0647\u0627 \u0648 \u0627\u0644\u06AF\u0648\u06CC \u06A9\u0646\u062F\u0644\u0627\u0633\u062A\u06CC\u06A9 (\u0628\u0627\u0632\u0627\u0631 \u0631\u0645\u0632\u0627\u0631\u0632)<br>\u26A0\uFE0F \u062A\u0648\u0635\u06CC\u0647 \u0645\u0627\u0644\u06CC \u0646\u06CC\u0633\u062A</div>';
-  }else{c6+='<div style="color:#f85149;text-align:center">\u062E\u0637\u0627</div>';}
-  document.getElementById('c6').innerHTML=c6;
-
   // Card Whale: Whale Analysis
   var cw='<div class="card-title">\uD83D\uDC0B \u062a\u062D\u0644\u06CC\u0644 \u0646\u0647\u0646\u06AF\u200C\u0647\u0627</div>';
   if(d.whales&&d.whales.unconfirmed){
@@ -166,7 +198,6 @@ async function load(){
   }else{c7+='<div style="color:#f85149;text-align:center">\u062E\u0637\u0627</div>';}
   document.getElementById('c7').innerHTML=c7;
 
-  // Card 8: Bloomberg News
   // Card 8: Investing.com News (separate)
   var c8='<div class="card-title">\uD83D\uDCF0 \u0627\u062e\u0628\u0627\u0631 \u0627\u06cc\u0646\u0648\u0633\u062a\u06cc\u0646\u06af</div>';
   if(d.news_investing&&d.news_investing.length){
@@ -186,7 +217,7 @@ async function load(){
     }
   }
   if(c8==='<div class="card-title">\uD83D\uDCF0 \u0627\u062e\u0628\u0627\u0631 \u0627\u06cc\u0646\u0648\u0633\u062a\u06cc\u0646\u06af</div>'){
-    c8+='<div style="color:#8b949e;text-align:center;padding:10px">\u062e\u0628\u0631\u06cc \u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a</div>';
+    c8+='<div style="color:#8b949e;text-align:center;padding:10px">\u062e\u0628\u0631\u06cc \u0645\u0648\u062C\u0648\u062F \u0646\u06cc\u0633\u062A</div>';
   }
   document.getElementById('c8').innerHTML=c8;
 
@@ -209,7 +240,7 @@ async function load(){
     }
   }
   if(c9==='<div class="card-title">\uD83D\uDCF0 \u0627\u062e\u0628\u0627\u0631 \u0628\u0644\u0648\u0645\u0628\u0631\u06af</div>'){
-    c9+='<div style="color:#8b949e;text-align:center;padding:10px">\u062e\u0628\u0631\u06cc \u0645\u0648\u062c\u0648\u062f \u0646\u06cc\u0633\u062a</div>';
+    c9+='<div style="color:#8b949e;text-align:center;padding:10px">\u062e\u0628\u0631\u06cc \u0645\u0648\u062C\u0648\u062F \u0646\u06cc\u0633\u062A</div>';
   }
   document.getElementById('c9').innerHTML=c9;
 
