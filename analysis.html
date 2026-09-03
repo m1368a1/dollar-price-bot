@@ -100,7 +100,7 @@ async function load(){
     var month=it.date.slice(0,7);
     if(month!==lastMonth){
       lastMonth=month;
-      html+='<div class="month-title">📅 '+faDate(it.date+'-01').replace(/^\S+ه، /,'')+'</div><div class="grid">';
+      html+='<div class="month-title">📅 '+faDate(month+'-01').replace(/^\S+ه، /,'')+'</div><div class="grid">';
     }
     html+='<div class="thumb" onclick="openLb('+i+')">'+
       '<img src="'+it.file+'" loading="lazy" alt="'+it.date+'">'+
