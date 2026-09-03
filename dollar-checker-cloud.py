@@ -48,7 +48,7 @@ import warnings
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from datetime import datetime, date, timedelta
+from datetime import datetime, date, timedelta, timezone
 
 
 
@@ -1473,9 +1473,9 @@ ANALYSES_MANIFEST = os.path.join(ANALYSES_DIR, "manifest.json")
 ANALYSES_KEEP_DAYS = 365
 
 # Only these Telegram chat IDs may submit analysis photos (owner allowlist).
-# Extend by setting the ANALYSIS_ALLOWED_CHATS env var, e.g. "7902915191,123456789"
+# Extend by setting the ANALYSIS_ALLOWED_CHATS env var, e.g. "7902915191,426270134"
 ANALYSIS_ALLOWED_CHATS = {
-    int(x) for x in os.environ.get("ANALYSIS_ALLOWED_CHATS", "7902915191").replace(" ", "").split(",") if x
+    int(x) for x in os.environ.get("ANALYSIS_ALLOWED_CHATS", "7902915191,426270134").replace(" ", "").split(",") if x
 }
 
 
@@ -1510,6 +1510,9 @@ def collect_daily_analysis_photos():
 
     manifest = _load_analyses_manifest()
     by_date = {item["date"]: item for item in manifest}
+    processed_update_ids = {
+        str(item.get("update_id")) for item in manifest if item.get("update_id") is not None
+    }
     new_offset = offset
     found_any = False
 
@@ -1524,19 +1527,27 @@ def collect_daily_analysis_photos():
             new_offset = max(new_offset, update["update_id"] + 1)
             message = update.get("message", {})
             chat_id = message.get("chat", {}).get("id")
+            sender_id = message.get("from", {}).get("id", chat_id)
             if not chat_id:
                 continue
             caption = (message.get("caption") or "").strip()
             text = (message.get("text") or "").strip()
             photo = message.get("photo") or []
+            document = message.get("document") or {}
+            is_image_document = str(document.get("mime_type", "")).startswith("image/")
+            update_id = update.get("update_id")
 
-            if (photo or (caption and not text.startswith("/"))) and chat_id not in ANALYSIS_ALLOWED_CHATS:
-                # Silently ignore analysis submissions from non-owner chats
+            if (photo or is_image_document or (caption and not text.startswith("/"))) and sender_id not in ANALYSIS_ALLOWED_CHATS:
+                # Silently ignore analysis submissions from non-owner accounts.
+                print(f"  [SKIP] unauthorized analysis submission from {sender_id}")
                 continue
 
-            if photo:
-                # Largest resolution variant
-                file_id = photo[-1].get("file_id")
+            if str(update_id) in processed_update_ids:
+                continue
+
+            if photo or is_image_document:
+                # Use the largest Telegram photo variant or the original image document.
+                file_id = photo[-1].get("file_id") if photo else document.get("file_id")
                 try:
                     meta = requests.get(
                         f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getFile",
@@ -1551,9 +1562,11 @@ def collect_daily_analysis_photos():
                         timeout=30,
                     )
                     img.raise_for_status()
-                    today = date.today().isoformat()
+                    today = datetime.now(timezone(timedelta(hours=3, minutes=30))).date().isoformat()
                     os.makedirs(ANALYSES_DIR, exist_ok=True)
-                    ext = os.path.splitext(file_path)[1] or ".jpg"
+                    ext = os.path.splitext(file_path)[1].lower() or ".jpg"
+                    if ext not in {".jpg", ".jpeg", ".png", ".webp"}:
+                        ext = ".jpg"
                     fname = today + ext
                     with open(os.path.join(ANALYSES_DIR, fname), "wb") as handle:
                         handle.write(img.content)
@@ -1562,8 +1575,10 @@ def collect_daily_analysis_photos():
                         "file": "analyses/" + fname,
                         "caption": caption or "تحلیل روزانه",
                         "added": datetime.now().strftime("%Y-%m-%d %H:%M"),
+                        "update_id": update_id,
                     }
                     by_date[today] = entry
+                    processed_update_ids.add(str(update_id))
                     manifest = sorted(by_date.values(), key=lambda x: x["date"])
                     found_any = True
                     print(f"  [OK] analysis photo saved: {fname}")
@@ -1578,17 +1593,16 @@ def collect_daily_analysis_photos():
                     print(f"  Analysis photo download failed: {exc}", file=sys.stderr)
             elif caption and not text.startswith("/"):
                 # Caption-only text updates today's analysis caption
-                today = date.today().isoformat()
+                today = datetime.now(timezone(timedelta(hours=3, minutes=30))).date().isoformat()
                 if today in by_date:
                     by_date[today]["caption"] = caption
                     manifest = sorted(by_date.values(), key=lambda x: x["date"])
                     found_any = True
 
-        if new_offset != offset:
-            with open(offset_file, "w", encoding="utf-8") as handle:
-                handle.write(str(new_offset))
+        # Do not persist this offset here. poll_telegram_commands() shares the
+        # same update stream and persists it after processing commands.
         if found_any:
-            _prune_old_analyses(manifest)
+            manifest = _prune_old_analyses(manifest)
             _save_analyses_manifest(manifest)
     except Exception as exc:
         print(f"  Analysis photo polling skipped: {exc}", file=sys.stderr)
@@ -1596,7 +1610,7 @@ def collect_daily_analysis_photos():
 
 def _prune_old_analyses(manifest):
     """Keep the manifest bounded to the last ANALYSES_KEEP_DAYS days."""
-    cutoff = (date.today() - timedelta(days=ANALYSES_KEEP_DAYS)).isoformat()
+    cutoff = (datetime.now(timezone(timedelta(hours=3, minutes=30))).date() - timedelta(days=ANALYSES_KEEP_DAYS)).isoformat()
     kept = [item for item in manifest if item.get("date", "") >= cutoff]
     removed = [item for item in manifest if item.get("date", "") < cutoff]
     for item in removed:
@@ -2688,7 +2702,7 @@ def main():
 
                 try:
 
-                    from datetime import datetime, date, timedelta as _dt, timedelta, timezone
+                    from datetime import datetime as _dt, timedelta, timezone
 
                     # Parse ISO format with timezone info preserved
 
@@ -2758,7 +2772,7 @@ def main():
 
             if high_events:
 
-                from datetime import datetime, date, timedelta as _dt_now
+                from datetime import datetime as _dt_now
 
                 msg12 = "⏰ هشدار رویداد اقتصادی\n"
 
