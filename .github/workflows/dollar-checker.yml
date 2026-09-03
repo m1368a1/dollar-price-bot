@@ -67,6 +67,27 @@ jobs:
             git checkout main
           fi
 
+      - name: Push analyses to main and gh-pages
+        if: always()
+        run: |
+          if [ -d analyses ] && [ -n "$(ls -A analyses 2>/dev/null)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add analyses
+            git commit -m "Add daily analysis [skip ci]" || true
+            git push origin main || true
+            mkdir -p /tmp/analyses-bak
+            cp -r analyses/* /tmp/analyses-bak/
+            git fetch origin gh-pages
+            git checkout gh-pages
+            mkdir -p analyses
+            cp -r /tmp/analyses-bak/* analyses/
+            git add analyses
+            git commit -m "Add daily analysis [skip ci]" || true
+            git push origin gh-pages || true
+            git checkout main
+          fi
+
       - name: Run price checker (retry if failed)
         if: steps.attempt1.outcome == 'failure'
         env:
