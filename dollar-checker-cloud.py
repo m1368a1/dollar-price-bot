@@ -3014,7 +3014,7 @@ def main():
 
                 score += 30
 
-            elif fg_val >= 75:
+            elif fg_val >= 80:
 
                 signals.append(("\U0001f534 \u0641\u0631\u0648\u0634", f"\u0637\u0645\u0639 \u0634\u062f\u06cc\u062f ({fg_val}/100)"))
 
@@ -3061,6 +3061,22 @@ def main():
                 else:
 
                     signals.append(("\u27a1\ufe0f", f"\u0631\u0648\u0646\u062f \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646: \u062e\u0646\u062b\u06cc؛ {btc_7d:+.1f}% \u062f\u0631 ۷ \u0631\u0648\u0632"))
+                # Signal 2b: 24h momentum
+                try:
+                    now_ts = prices[-1][0]
+                    day_ago = [p for p in prices if p[0] <= now_ts - 86400000]
+                    if day_ago:
+                        btc_24h = (prices[-1][1] - day_ago[-1][1]) / day_ago[-1][1] * 100
+                        if btc_24h > 3:
+                            signals.append(("\U0001f4c8 \u0645\u0648\u0645\u0646\u062a\u0648\u0645 \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647", f"BTC {btc_24h:+.1f}% \u062f\u0631 \u06f2\u06f4 \u0633\u0627\u0639\u062a"))
+                            score += 15
+                        elif btc_24h < -3:
+                            signals.append(("\U0001f4c9 \u0645\u0648\u0645\u0646\u062a\u0648\u0645 \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647", f"BTC {btc_24h:+.1f}% \u062f\u0631 \u06f2\u06f4 \u0633\u0627\u0639\u062a"))
+                            score -= 15
+                        else:
+                            signals.append(("\u27a1\ufe0f \u0645\u0648\u0645\u0646\u062a\u0648\u0645 \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647", f"BTC {btc_24h:+.1f}% \u062f\u0631 \u06f2\u06f4 \u0633\u0627\u0639\u062a"))
+                except Exception:
+                    pass
 
         except Exception:
 
@@ -3068,23 +3084,25 @@ def main():
 
 
 
-        # Signal 3: Whale activity
+        # Signal 3: Whale activity (exchange-focused)
 
         if whale_unconfirmed:
 
-            total_btc = whale_unconfirmed.get('total_whale_btc', 0)
-
             whale_count = len(whale_unconfirmed.get('whales', []))
 
-            if total_btc > 5000:
+            to_ex = sum(1 for w in whale_unconfirmed.get('whales', []) if w.get('exchange_out'))
 
-                signals.append(("\U0001f4c9 \u0646\u0647\u0646\u06af\u0647\u0627 \u0641\u0631\u0648\u0634\u0646\u0646\u062f\u0647", f"{fmt(total_btc)} BTC \u062f\u0631 \u0631\u0627\u0647 \u0641\u0631\u0648\u0634"))
+            from_ex = sum(1 for w in whale_unconfirmed.get('whales', []) if w.get('exchange_in'))
+
+            if to_ex >= 3:
+
+                signals.append(("\U0001f4c9 \u0646\u0647\u0646\u06af\u0647\u0627 \u0641\u0631\u0648\u0634\u0646\u0646\u062f\u0647", f"{to_ex} \u0627\u0646\u062a\u0642\u0627\u0644 \u0628\u0632\u0631\u06af \u0628\u0647 \u0635\u0631\u0627\u0641\u06cc"))
 
                 score -= 20
 
-            elif whale_count > 3:
+            elif from_ex >= 3:
 
-                signals.append(("\U0001f4c8 \u0646\u0647\u0646\u06af\u0647\u0627 \u062e\u0631\u06cc\u062f\u0627\u0631", f"{whale_count} \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0632\u0631\u06af"))
+                signals.append(("\U0001f4c8 \u0646\u0647\u0646\u06af\u0647\u0627 \u062e\u0631\u06cc\u062f\u0627\u0631", f"{from_ex} \u0628\u0631\u062f\u0627\u0634\u062a \u0628\u0632\u0631\u06af \u0627\u0632 \u0635\u0631\u0627\u0641\u06cc"))
 
                 score += 15
 
@@ -3130,7 +3148,7 @@ def main():
 
                     score += 15
 
-                elif btc_rsi > 70:
+                elif btc_rsi > 75:
 
                     signals.append(("\U0001f4c9 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u062e\u0631\u06cc\u062f ({btc_rsi:.0f}) \u2014 \u0627\u062d\u062a\u0645\u0627\u0644 \u0627\u0635\u0644\u0627\u062d"))
 
@@ -3188,13 +3206,13 @@ def main():
 
         score = max(-100, min(100, score))
 
-        if score >= 30:
+        if score >= 25:
 
             final = "\U0001f7e2 \u0633\u06cc\u06af\u0646\u0627\u0644 \u062e\u0631\u06cc\u062f"
 
             final_emoji = "\U0001f7e2"
 
-        elif score <= -30:
+        elif score <= -25:
 
             final = "\U0001f534 \u0633\u06cc\u06af\u0646\u0627\u0644 \u0641\u0631\u0648\u0634"
 
@@ -3210,7 +3228,7 @@ def main():
 
         msg14 = f"\U0001f9ed \u062a\u062d\u0644\u06cc\u0644 \u0628\u0627\u0632\u0627\u0631: \u067e\u06cc\u0634\u0646\u0647\u0627\u062f \u0635\u0628\u0631\n\n"
 
-        msg14 += f"{final_emoji} \u0648\u0636\u0639\u06cc\u062a \u06a9\u0644\u06cc: \u062e\u0646\u062b\u06cc\n" if -30 < score < 30 else f"{final_emoji} {final}\n"
+        msg14 += f"{final_emoji} \u0648\u0636\u0639\u06cc\u062a \u06a9\u0644\u06cc: \u062e\u0646\u062b\u06cc\n" if -25 < score < 25 else f"{final_emoji} {final}\n"
 
         msg14 += f"\U0001f4ca \u0627\u0645\u062a\u06cc\u0627\u0632 \u06a9\u0644\u06cc: {score:+d} \u0627\u0632 100\n\n"
 
@@ -3218,7 +3236,7 @@ def main():
 
             msg14 += f"• {desc}\n"
 
-        msg14 += "\n\U0001f9ed \u0645\u0628\u0646\u0627\u06cc \u0633\u06cc\u06af\u0646\u0627\u0644:\n   \u25cf \u062a\u0631\u0633 \u0648 \u0637\u0645\u0639 (\u067e\u0633\u0627\u0646\u0633)\n   \u25cf \u0631\u0648\u0646\u062f 7 \u0631\u0648\u0632\u0647 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 (\u062a\u0631\u0646\u062f)\n   \u25cf RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 (\u0627\u0634\u0628\u0627\u0639 \u062e\u0631\u06cc\u062f/\u0641\u0631\u0648\u0634)\n   \u25cf \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af\u200c\u0647\u0627 (\u0648\u0631\u0648\u062f/\u062e\u0631\u0648\u062c \u0628\u062a\u06a9\u0648\u06cc\u0646)\n   \u25cf \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9 \u0633\u0627\u0639\u062a\u06cc (\u062d\u0645\u0644\u0647\u200c\u0647\u0627\u06cc \u0635\u0639\u0648\u062f/\u0646\u0632\u0648\u0644)\n"
+        msg14 += "\n\U0001f9ed \u0645\u0628\u0646\u0627\u06cc \u0633\u06cc\u06af\u0646\u0627\u0644:\n   \u25cf \u062a\u0631\u0633 \u0648 \u0637\u0645\u0639 (\u067e\u0633\u0627\u0646\u0633)\n   \u25cf \u0631\u0648\u0646\u062f 7 \u0631\u0648\u0632\u0647 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 (\u062a\u0631\u0646\u062f)\n   \u25cf \u0645\u0648\u0645\u0646\u062a\u0648\u0645 \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646\n   \u25cf RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 (\u0627\u0634\u0628\u0627\u0639 \u062e\u0631\u06cc\u062f/\u0641\u0631\u0648\u0634)\n   \u25cf \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af\u200c\u0647\u0627 (\u0648\u0631\u0648\u062f/\u062e\u0631\u0648\u062c \u0628\u062a\u06a9\u0648\u06cc\u0646)\n   \u25cf \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9 \u0633\u0627\u0639\u062a\u06cc (\u062d\u0645\u0644\u0647\u200c\u0647\u0627\u06cc \u0635\u0639\u0648\u062f/\u0646\u0632\u0648\u0644)\n"
 
         msg14 += f"\n\u26a0\ufe0f \u0627\u06cc\u0646 \u067e\u06cc\u0627\u0645 \u062a\u0648\u0635\u06cc\u0647 \u0645\u0627\u0644\u06cc \u0646\u06cc\u0633\u062a؛ \u067e\u06cc\u0634 \u0627\u0632 \u0645\u0639\u0627\u0645\u0644\u0647 \u062f\u0627\u062f\u0647\u200c\u0647\u0627 \u0648 \u0645\u0646\u0627\u0628\u0639 \u0631\u0627 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646\u06cc\u062f.\n"
 
