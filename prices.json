@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-03 19:32",
+  "timestamp": "2026-09-03 19:51",
   "usd_sell": 221400,
   "usd_buy": 221300,
   "gold_18k": 23345953,
-  "btc_usd": 81545.58,
+  "btc_usd": 81467.67,
   "fear_greed": 65,
   "btc_dominance": 59.4,
   "market_cap": 2750000000000.0,
   "market_volume": 100000000000.0,
-  "market_change": 2.17,
+  "market_change": 2.22,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81525,
-      "change_24h": 5.70304,
-      "market_cap": 1637236733036
+      "price": 81506,
+      "change_24h": 5.55399,
+      "market_cap": 1637145228419
     },
     {
       "symbol": "eth",
-      "price": 2513.72,
-      "change_24h": 5.39864,
-      "market_cap": 306788657318
+      "price": 2512.44,
+      "change_24h": 5.22025,
+      "market_cap": 306666096360
     },
     {
       "symbol": "usdt",
-      "price": 0.999953,
-      "change_24h": 0.02618,
-      "market_cap": 183380086631
+      "price": 0.999951,
+      "change_24h": 0.03776,
+      "market_cap": 183377305480
     },
     {
       "symbol": "bnb",
-      "price": 724.42,
-      "change_24h": 5.69184,
-      "market_cap": 96460085026
+      "price": 723.55,
+      "change_24h": 5.48263,
+      "market_cap": 96374767115
     },
     {
       "symbol": "xrp",
       "price": 1.47,
-      "change_24h": 9.6332,
-      "market_cap": 92286163293
+      "change_24h": 9.02907,
+      "market_cap": 91996707705
     },
     {
       "symbol": "usdc",
-      "price": 0.999896,
-      "change_24h": 0.00938,
-      "market_cap": 73605204492
+      "price": 0.999887,
+      "change_24h": 0.01254,
+      "market_cap": 73990995679
     },
     {
       "symbol": "sol",
-      "price": 105.43,
-      "change_24h": 6.35951,
-      "market_cap": 61718593654
+      "price": 105.24,
+      "change_24h": 5.99627,
+      "market_cap": 61620562085
     },
     {
       "symbol": "trx",
-      "price": 0.331383,
-      "change_24h": 2.10169,
-      "market_cap": 31460380441
+      "price": 0.331339,
+      "change_24h": 2.06363,
+      "market_cap": 31454394101
     },
     {
       "symbol": "figr_heloc",
       "price": 1.036,
-      "change_24h": 2.35348,
-      "market_cap": 22993683324
+      "change_24h": 2.28071,
+      "market_cap": 22985270429
     },
     {
       "symbol": "hype",
-      "price": 84.95,
-      "change_24h": 4.44206,
-      "market_cap": 18890953126
+      "price": 85.71,
+      "change_24h": 5.6774,
+      "market_cap": 19086165170
     }
   ],
   "whales": {
@@ -92,6 +92,16 @@
   ],
   "news_bloomberg": [
     {
+      "title": "افزایش قیمت طلا در پی ارزیابی ریسک مداخله ین توسط معامله‌گران، فِداسپیک",
+      "date": "Wed, 02 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۳ سپتامبر",
+      "date": "Wed, 02 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "افزایش اوراق خزانه‌داری پس از اظهارات والر از فدرال رزرو در مورد پیشرفت تورم",
       "date": "Thu, 03 Sep 2026",
       "source": "Bloomberg"
@@ -108,16 +118,6 @@
     },
     {
       "title": "بررو: والر نماینده هشت رأی‌دهنده فدرال رزرو است",
-      "date": "Thu, 03 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام و اوراق قرضه افزایش می‌یابند، زیرا شرط‌بندی‌های فدرال رزرو برای والر آسان‌تر می‌شود: بازارها بسته می‌شوند",
-      "date": "Wed, 02 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "اریک واسون: بازار اوراق قرضه در برنامه‌های هزینه‌ای نادیده گرفته می‌شود",
       "date": "Thu, 03 Sep 2026",
       "source": "Bloomberg"
     }
@@ -129,6 +129,16 @@
       "source": "Investing.com"
     },
     {
+      "title": "افزایش قیمت طلا در پی ارزیابی ریسک مداخله ین توسط معامله‌گران، فِداسپیک",
+      "date": "Wed, 02 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۳ سپتامبر",
+      "date": "Wed, 02 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "افزایش اوراق خزانه‌داری پس از اظهارات والر از فدرال رزرو در مورد پیشرفت تورم",
       "date": "Thu, 03 Sep 2026",
       "source": "Bloomberg"
@@ -145,16 +155,6 @@
     },
     {
       "title": "بررو: والر نماینده هشت رأی‌دهنده فدرال رزرو است",
-      "date": "Thu, 03 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام و اوراق قرضه افزایش می‌یابند، زیرا شرط‌بندی‌های فدرال رزرو برای والر آسان‌تر می‌شود: بازارها بسته می‌شوند",
-      "date": "Wed, 02 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "اریک واسون: بازار اوراق قرضه در برنامه‌های هزینه‌ای نادیده گرفته می‌شود",
       "date": "Thu, 03 Sep 2026",
       "source": "Bloomberg"
     }
