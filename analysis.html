@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#070b14">
+<title>RoboMohsenBot — آرشیو تحلیل‌های روزانه</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#070b14;--card:rgba(20,26,41,.82);--border:rgba(120,150,255,.14);
+  --text:#e8ebf5;--muted:#8a93a8;--accent:#5b8cff;--green:#2ee6a8;
+}
+body{font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif;color:var(--text);direction:rtl;min-width:320px;min-height:100vh;
+  background:
+    radial-gradient(1100px 550px at 88% -8%,rgba(91,140,255,.16),transparent 60%),
+    radial-gradient(900px 500px at -8% 18%,rgba(46,230,168,.09),transparent 60%),
+    linear-gradient(180deg,#070b14,#0a1020 55%,#070b14);
+  background-attachment:fixed}
+.header{background:rgba(9,13,26,.72);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
+  padding:18px 14px 14px;text-align:center;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;
+  box-shadow:0 6px 24px rgba(0,0,0,.35)}
+.header h1{font-size:24px;font-weight:900;letter-spacing:.3px;
+  background:linear-gradient(90deg,#5b8cff,#2ee6a8);-webkit-background-clip:text;background-clip:text;color:transparent}
+.header .subtitle{font-size:12.5px;color:var(--muted);margin-top:4px;font-weight:600}
+.header a.back{display:inline-block;margin-top:9px;font-size:12px;color:var(--accent);text-decoration:none;
+  background:rgba(91,140,255,.1);border:1px solid rgba(91,140,255,.3);padding:4px 14px;border-radius:99px}
+.container{max-width:980px;margin:0 auto;padding:16px 14px}
+.month-title{font-size:15px;font-weight:800;margin:18px 4px 10px;color:var(--accent)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:13px}
+.thumb{background:var(--card);border:1px solid var(--border);border-radius:14px;overflow:hidden;cursor:zoom-in;
+  transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;animation:fadeUp .5s ease both}
+.thumb:hover{transform:translateY(-3px);border-color:rgba(91,140,255,.45);box-shadow:0 12px 30px rgba(0,0,0,.45)}
+.thumb img{width:100%;height:150px;object-fit:cover;display:block;background:#0d1322}
+.thumb .t-caption{padding:9px 11px;font-size:12px;line-height:1.6;color:var(--text);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.thumb .t-date{padding:0 11px 10px;font-size:11px;color:var(--muted)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.empty{text-align:center;padding:40px 16px;color:var(--muted);font-size:13.5px;line-height:2}
+.footer{text-align:center;padding:18px 12px 28px;color:var(--muted);font-size:11.5px}
+/* Lightbox */
+.lightbox{position:fixed;inset:0;background:rgba(4,6,12,.92);backdrop-filter:blur(8px);z-index:100;
+  display:none;align-items:center;justify-content:center;flex-direction:column;padding:18px}
+.lightbox.open{display:flex}
+.lightbox img{max-width:96%;max-height:78vh;border-radius:12px;box-shadow:0 18px 60px rgba(0,0,0,.7)}
+.lightbox .lb-caption{margin-top:12px;font-size:14px;text-align:center;max-width:700px;line-height:1.9}
+.lightbox .lb-date{margin-top:4px;font-size:12px;color:var(--muted)}
+.lightbox .lb-close{position:absolute;top:14px;left:16px;font-size:15px;color:#fff;background:rgba(255,255,255,.08);
+  border:1px solid rgba(255,255,255,.18);border-radius:99px;padding:6px 16px;cursor:pointer}
+.lightbox .lb-nav{position:absolute;top:50%;transform:translateY(-50%);font-size:26px;color:#fff;
+  background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);border-radius:50%;
+  width:44px;height:44px;cursor:pointer;user-select:none}
+.lightbox .lb-prev{right:14px}
+.lightbox .lb-next{left:14px}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>📊 آرشیو تحلیل‌های روزانه</h1>
+  <div class="subtitle">RoboMohsenBot — مجموعه کامل تحلیل‌های ارسالی</div>
+  <a class="back" href="dashboard.html">← بازگشت به داشبورد</a>
+</div>
+<div class="container" id="gallery"><div class="empty">⏳ در حال بارگذاری...</div></div>
+<div class="footer">🤖 RoboMohsenBot | تحلیل‌های روزانه</div>
+<div class="lightbox" id="lb">
+  <button class="lb-close" onclick="closeLb()">✕ بستن</button>
+  <div class="lb-nav lb-prev" onclick="stepLb(1)">›</div>
+  <div class="lb-nav lb-next" onclick="stepLb(-1)">‹</div>
+  <img id="lb-img" src="" alt="">
+  <div class="lb-caption" id="lb-cap"></div>
+  <div class="lb-date" id="lb-date"></div>
+</div>
+<script>
+var ITEMS=[];
+function faDate(s){
+  try{return new Date(s+'T00:00:00').toLocaleDateString('fa-IR',{weekday:'long',year:'numeric',month:'long',day:'numeric'})}catch(e){return s}
+}
+async function load(){
+  var items=null;
+  try{
+    var r=await fetch('analyses/manifest.json?t='+Date.now());
+    if(r.ok) items=await r.json();
+  }catch(e){}
+  var g=document.getElementById('gallery');
+  if(!items||!items.length){
+    g.innerHTML='<div class="empty">📭 هنوز تحلیلی ثبت نشده است.<br>برای افزودن، عکس تحلیل خود را به ربات <strong>@robomohsenbot</strong> بفرستید — به‌صورت خودکار همین‌جا منتشر می‌شود.</div>';
+    return;
+  }
+  ITEMS=items.slice().reverse(); // newest first
+  var html='';
+  var lastMonth='';
+  for(var i=0;i<ITEMS.length;i++){
+    var it=ITEMS[i];
+    var month=it.date.slice(0,7);
+    if(month!==lastMonth){
+      lastMonth=month;
+      html+='<div class="month-title">📅 '+faDate(it.date+'-01').replace(/^\S+ه، /,'')+'</div><div class="grid">';
+    }
+    html+='<div class="thumb" onclick="openLb('+i+')">'+
+      '<img src="'+it.file+'" loading="lazy" alt="'+it.date+'">'+
+      '<div class="t-caption">'+(it.caption||'تحلیل روزانه')+'</div>'+
+      '<div class="t-date">'+faDate(it.date)+'</div></div>';
+  }
+  // close open grids (each month opened one)
+  html=html.replace(/<div class="grid">((?:(?!<div class="month-title").)*)$/,'<div class="grid">$1</div>');
+  g.innerHTML=html;
+}
+var cur=0;
+function openLb(i){cur=i;renderLb();document.getElementById('lb').classList.add('open')}
+function closeLb(){document.getElementById('lb').classList.remove('open')}
+function stepLb(dir){cur=(cur+dir+ITEMS.length)%ITEMS.length;renderLb()}
+function renderLb(){
+  var it=ITEMS[cur];
+  document.getElementById('lb-img').src=it.file;
+  document.getElementById('lb-cap').textContent=it.caption||'تحلیل روزانه';
+  document.getElementById('lb-date').textContent=faDate(it.date)+' — مورد '+(cur+1)+' از '+ITEMS.length;
+}
+document.getElementById('lb').addEventListener('click',function(e){if(e.target===this)closeLb()});
+document.addEventListener('keydown',function(e){
+  if(!document.getElementById('lb').classList.contains('open'))return;
+  if(e.key==='Escape')closeLb();
+  if(e.key==='ArrowLeft')stepLb(-1);
+  if(e.key==='ArrowRight')stepLb(1);
+});
+load();
+</script>
+</body>
+</html>
