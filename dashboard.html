@@ -173,7 +173,8 @@ async function load(){
     cw+='<div class="price-row"><span class="price-label">\u0641\u0639\u0627\u0644\u06CC\u062A \u06a9\u0644\u06cc</span><span class="price-value">'+wu.level+' ('+wu.score+'/100)</span></div>';
     cw+='<div class="price-row"><span class="price-label">\u062A\u0631\u0627\u06A9\u0646\u0634 \u0628\u0632\u0631\u06af</span><span class="price-value">'+wu.count+'</span></div>';
     cw+='<div class="price-row"><span class="price-label">\u062d\u062C\u0645 \u06a9\u0644</span><span class="price-value">'+Math.round(wu.total_btc)+' BTC</span></div>';
-    cw+='<div class="price-row"><span class="price-label">\u0628\u0633\u06CC\u0627\u0631 \u0628\u0632\u0631\u06af</span><span class="price-value">'+wu.mega_whales+' | \u0628\u0632\u0631\u06af: '+wu.large_whales+' | \u0645\u062A\u0648\u0633\u0637: '+wu.medium_whales+'</span></div>';
+    cw+='<div class="price-row"><span class="price-label">\u0641\u0639\u0627\u0644\u06CC\u062A \u0646\u0647\u0646\u06AF\u200C\u0647\u0627</span><span class="price-value">'+wu.count+'</span></div>';
+    cw+='<div style="font-size:11.5px;color:#8b949e;margin:2px 14px 6px">\u0628\u0633\u06CC\u0627\u0631 \u0628\u0632\u0631\u06AF: '+wu.mega_whales+' | \u0628\u0632\u0631\u06AF: '+wu.large_whales+' | \u0645\u062A\u0648\u0633\u0637: '+wu.medium_whales+'</div>';
     if(wu.top&&wu.top.length){
       cw+='<div style="font-size:12px;color:#8b949e;margin-top:8px">\u0628\u0632\u0631\u06AF\u062A\u0631\u06CC\u0646 \u062A\u0631\u0627\u06A9\u0646\u0634\u200C\u0647\u0627:</div>';
       for(var i=0;i<wu.top.length;i++){var w=wu.top[i];
