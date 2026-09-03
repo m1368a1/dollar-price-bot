@@ -71,6 +71,9 @@ tbody tr:last-child td{border-bottom:none}
 .spinner{display:inline-block;width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-inline-end:6px}
 @keyframes spin{to{transform:rotate(360deg)}}
 .stale{opacity:.55;border-color:var(--amber)}
+  /* Visit stats badge */
+  .visit-stats{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:6px 0 12px;font-size:12.5px;color:var(--muted);font-weight:600}
+  .visit-stats span{background:rgba(91,140,255,.08);border:1px solid rgba(91,140,255,.18);padding:4px 12px;border-radius:99px}
 </style>
 </head>
 <body>
@@ -78,6 +81,11 @@ tbody tr:last-child td{border-bottom:none}
   <h1>🤖 RoboMohsenBot</h1>
   <div class="subtitle" style="font-weight:bold">ربات بازار — داشبورد زنده اطلاعات بازار ارز و رمزارز</div>
   <div class="status" id="ts">⏳ در حال بارگذاری...</div>
+  <div class="visit-stats" id="visit-stats" style="display:none">
+    <span id="v-online">👥 ... آنلاین</span>
+    <span id="v-today">📅 ... بازدید امروز</span>
+    <span id="v-total">📊 ... بازدید کل</span>
+  </div>
 </div>
 <div class="container">
   <div class="card" id="c1"><div class="loading"><span class="spinner"></span> 💵 قیمت‌ها</div></div>
@@ -280,6 +288,47 @@ async function load(){
 }
 
 load();
+// ============ Visit & online stats (Abacus free counter) ============
+(async function(){
+  var NS='robomohsen', BASE='https://abacus.jasoncameron.dev';
+  var today=new Date().toISOString().slice(0,10);
+  var elO=document.getElementById('v-online'), elT=document.getElementById('v-today'), elA=document.getElementById('v-total');
+  function toFa(n){try{return Number(n).toLocaleString('fa-IR')}catch(e){return n}}
+  // Daily visit counter: unique per day
+  var dailyKey='visits-'+today, totalKey='visits-total';
+  // Count this visit (once per browser session per day for daily counter)
+  var countToday=true;
+  try{ if(sessionStorage.getItem('counted-'+dailyKey)){countToday=false} }catch(e){}
+  var pDaily=countToday?fetch(BASE+'/hit/'+NS+'/'+dailyKey).then(function(r){return r.json()}):fetch(BASE+'/get/'+NS+'/'+dailyKey).then(function(r){return r.json()});
+  var pTotal=countToday?fetch(BASE+'/hit/'+NS+'/'+totalKey).then(function(r){return r.json()}):fetch(BASE+'/get/'+NS+'/'+totalKey).then(function(r){return r.json()});
+  try{ if(countToday) sessionStorage.setItem('counted-'+dailyKey,'1'); }catch(e){}
+  pDaily.then(function(d){elT.textContent='📅 بازدید امروز: '+toFa(d.value||0)}).catch(function(){elT.textContent='📅 بازدید امروز: —'});
+  pTotal.then(function(d){elA.textContent='📊 بازدید کل: '+toFa(d.value||0)}).catch(function(){elA.textContent='📊 بازدید کل: —'});
+  // Online users: heartbeat every 25s, counts sessions active in last 90s via per-minute buckets
+  var sess=Math.random().toString(36).slice(2,10);
+  function beat(){
+    var now=new Date();
+    var bucket=now.toISOString().slice(0,16); // minute precision
+    fetch(BASE+'/hit/'+NS+'/online-'+bucket).then(function(r){return r.json()}).catch(function(){});
+  }
+  beat(); setInterval(beat, 25000);
+  function readOnline(){
+    var now=new Date(); var sum=0; var jobs=[];
+    for(var i=0;i<2;i++){
+      var d=new Date(now.getTime()-i*60000);
+      var bucket=d.toISOString().toISOString?d.toISOString():d.toISOString();
+      bucket=d.toISOString().slice(0,16);
+      jobs.push(fetch(BASE+'/get/'+NS+'/online-'+bucket).then(function(r){return r.json()}).then(function(d){sum+=(d.value||0)}).catch(function(){}));
+    }
+    Promise.all(jobs).then(function(){
+      elO.textContent='👥 '+toFa(Math.max(1,sum))+' آنلاین';
+      document.getElementById('visit-stats').style.display='flex';
+    });
+  }
+  readOnline(); setInterval(readOnline, 30000);
+  document.getElementById('visit-stats').style.display='flex';
+})();
+
 setInterval(load,30000);
 </script>
 </body>
