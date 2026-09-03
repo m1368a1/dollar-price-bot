@@ -30,6 +30,8 @@ Features:
 
 
 
+import base64
+
 import requests
 
 import json
@@ -46,7 +48,7 @@ import warnings
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from datetime import datetime
+from datetime import datetime, date, timedelta
 
 
 
@@ -1466,6 +1468,135 @@ def _build_command_response(command):
     return None
 
 
+ANALYSES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analyses")
+ANALYSES_MANIFEST = os.path.join(ANALYSES_DIR, "manifest.json")
+ANALYSES_KEEP_DAYS = 365
+
+
+def _load_analyses_manifest():
+    try:
+        with open(ANALYSES_MANIFEST, "r", encoding="utf-8") as handle:
+            return json.load(handle)
+    except (FileNotFoundError, ValueError):
+        return []
+
+
+def _save_analyses_manifest(items):
+    os.makedirs(ANALYSES_DIR, exist_ok=True)
+    with open(ANALYSES_MANIFEST, "w", encoding="utf-8") as handle:
+        json.dump(items, handle, ensure_ascii=False, indent=1)
+
+
+def collect_daily_analysis_photos():
+    """Download photos sent to the bot and archive them as daily analyses.
+
+    A photo sent to the bot (private chat) becomes analyses/YYYY-MM-DD.jpg.
+    Sending a second photo the same day replaces that day's analysis.
+    A text caption (non-command message) updates the caption of today's
+    analysis instead of creating a new entry.
+    """
+    offset_file = os.environ.get("TELEGRAM_OFFSET_FILE", "telegram-command-offset.txt")
+    try:
+        with open(offset_file, "r", encoding="utf-8") as handle:
+            offset = int(handle.read().strip())
+    except (FileNotFoundError, ValueError):
+        offset = 0
+
+    manifest = _load_analyses_manifest()
+    by_date = {item["date"]: item for item in manifest}
+    new_offset = offset
+    found_any = False
+
+    try:
+        response = requests.get(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getUpdates",
+            params={"offset": offset, "timeout": 1, "allowed_updates": '["message"]'},
+            timeout=8,
+        )
+        updates = response.json().get("result", [])
+        for update in updates:
+            new_offset = max(new_offset, update["update_id"] + 1)
+            message = update.get("message", {})
+            chat_id = message.get("chat", {}).get("id")
+            if not chat_id:
+                continue
+            caption = (message.get("caption") or "").strip()
+            text = (message.get("text") or "").strip()
+            photo = message.get("photo") or []
+
+            if photo:
+                # Largest resolution variant
+                file_id = photo[-1].get("file_id")
+                try:
+                    meta = requests.get(
+                        f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getFile",
+                        params={"file_id": file_id},
+                        timeout=15,
+                    ).json()
+                    file_path = meta.get("result", {}).get("file_path")
+                    if not file_path:
+                        continue
+                    img = requests.get(
+                        f"https://api.telegram.org/file/bot{TELEGRAM_TOKEN}/{file_path}",
+                        timeout=30,
+                    )
+                    img.raise_for_status()
+                    today = date.today().isoformat()
+                    os.makedirs(ANALYSES_DIR, exist_ok=True)
+                    ext = os.path.splitext(file_path)[1] or ".jpg"
+                    fname = today + ext
+                    with open(os.path.join(ANALYSES_DIR, fname), "wb") as handle:
+                        handle.write(img.content)
+                    entry = {
+                        "date": today,
+                        "file": "analyses/" + fname,
+                        "caption": caption or "تحلیل روزانه",
+                        "added": datetime.now().strftime("%Y-%m-%d %H:%M"),
+                    }
+                    by_date[today] = entry
+                    manifest = sorted(by_date.values(), key=lambda x: x["date"])
+                    found_any = True
+                    print(f"  [OK] analysis photo saved: {fname}")
+                    try:
+                        send_telegram(
+                            "✅ تحلیل امروز ذخیره شد و در داشبورد منتشر گردید.\n📅 " + today,
+                            chat_id=chat_id,
+                        )
+                    except Exception:
+                        pass
+                except Exception as exc:
+                    print(f"  Analysis photo download failed: {exc}", file=sys.stderr)
+            elif caption and not text.startswith("/"):
+                # Caption-only text updates today's analysis caption
+                today = date.today().isoformat()
+                if today in by_date:
+                    by_date[today]["caption"] = caption
+                    manifest = sorted(by_date.values(), key=lambda x: x["date"])
+                    found_any = True
+
+        if new_offset != offset:
+            with open(offset_file, "w", encoding="utf-8") as handle:
+                handle.write(str(new_offset))
+        if found_any:
+            _prune_old_analyses(manifest)
+            _save_analyses_manifest(manifest)
+    except Exception as exc:
+        print(f"  Analysis photo polling skipped: {exc}", file=sys.stderr)
+
+
+def _prune_old_analyses(manifest):
+    """Keep the manifest bounded to the last ANALYSES_KEEP_DAYS days."""
+    cutoff = (date.today() - timedelta(days=ANALYSES_KEEP_DAYS)).isoformat()
+    kept = [item for item in manifest if item.get("date", "") >= cutoff]
+    removed = [item for item in manifest if item.get("date", "") < cutoff]
+    for item in removed:
+        try:
+            os.remove(os.path.join(ANALYSES_DIR, os.path.basename(item.get("file", ""))))
+        except OSError:
+            pass
+    return kept
+
+
 def poll_telegram_commands():
     """Process recent private commands without interfering with scheduled channel posts."""
     offset_file = os.environ.get("TELEGRAM_OFFSET_FILE", "telegram-command-offset.txt")
@@ -1507,6 +1638,8 @@ def main():
 
     # Set bot menu button to web app (runs once, harmless if repeated)
     set_bot_menu_button()
+
+    collect_daily_analysis_photos()
 
     poll_telegram_commands()
 
@@ -2545,7 +2678,7 @@ def main():
 
                 try:
 
-                    from datetime import datetime as _dt, timedelta, timezone
+                    from datetime import datetime, date, timedelta as _dt, timedelta, timezone
 
                     # Parse ISO format with timezone info preserved
 
@@ -2615,7 +2748,7 @@ def main():
 
             if high_events:
 
-                from datetime import datetime as _dt_now
+                from datetime import datetime, date, timedelta as _dt_now
 
                 msg12 = "⏰ هشدار رویداد اقتصادی\n"
 
@@ -2937,54 +3070,54 @@ def main():
 
 
 
-        # Signal 4: BTC daily RSI
-
-        try:
-
-            s_rsi = requests.Session()
-
-            s_rsi.verify = False
-
-            r_rsi = s_rsi.get("https://api.binance.us/api/v3/klines", params={"symbol": "BTCUSDT", "interval": "1d", "limit": 100}, timeout=10)
-
-            closes = [float(row[4]) for row in r_rsi.json()]
-
-            if len(closes) > 15:
-
-                gains, losses = [], []
-
-                for prev, cur in zip(closes[-15:-1], closes[-14:]):
-
-                    delta = cur - prev
-
-                    gains.append(max(delta, 0))
-
-                    losses.append(max(-delta, 0))
-
-                gain = sum(gains) / 14
-
-                loss = sum(losses) / 14
-
-                btc_rsi = 100.0 if loss == 0 else 100 - (100 / (1 + gain / loss))
-
-                if btc_rsi < 30:
-
-                    signals.append(("\U0001f4c8 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u0641\u0631\u0648\u0634 ({btc_rsi:.0f}) \u2014 \u0641\u0631\u0635\u062a \u062e\u0631\u06cc\u062f"))
-
-                    score += 15
-
-                elif btc_rsi > 70:
-
-                    signals.append(("\U0001f4c9 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u062e\u0631\u06cc\u062f ({btc_rsi:.0f}) \u2014 \u0627\u062d\u062a\u0645\u0627\u0644 \u0627\u0635\u0644\u0627\u062d"))
-
-                    score -= 15
-
-                else:
-
-                    signals.append(("\u2705 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0645\u0639\u062a\u062f\u0644: {btc_rsi:.0f}"))
-
-        except Exception:
-
+        # Signal 4: BTC daily RSI
+
+        try:
+
+            s_rsi = requests.Session()
+
+            s_rsi.verify = False
+
+            r_rsi = s_rsi.get("https://api.binance.us/api/v3/klines", params={"symbol": "BTCUSDT", "interval": "1d", "limit": 100}, timeout=10)
+
+            closes = [float(row[4]) for row in r_rsi.json()]
+
+            if len(closes) > 15:
+
+                gains, losses = [], []
+
+                for prev, cur in zip(closes[-15:-1], closes[-14:]):
+
+                    delta = cur - prev
+
+                    gains.append(max(delta, 0))
+
+                    losses.append(max(-delta, 0))
+
+                gain = sum(gains) / 14
+
+                loss = sum(losses) / 14
+
+                btc_rsi = 100.0 if loss == 0 else 100 - (100 / (1 + gain / loss))
+
+                if btc_rsi < 30:
+
+                    signals.append(("\U0001f4c8 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u0641\u0631\u0648\u0634 ({btc_rsi:.0f}) \u2014 \u0641\u0631\u0635\u062a \u062e\u0631\u06cc\u062f"))
+
+                    score += 15
+
+                elif btc_rsi > 70:
+
+                    signals.append(("\U0001f4c9 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u062e\u0631\u06cc\u062f ({btc_rsi:.0f}) \u2014 \u0627\u062d\u062a\u0645\u0627\u0644 \u0627\u0635\u0644\u0627\u062d"))
+
+                    score -= 15
+
+                else:
+
+                    signals.append(("\u2705 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0645\u0639\u062a\u062f\u0644: {btc_rsi:.0f}"))
+
+        except Exception:
+
             pass
 
 
