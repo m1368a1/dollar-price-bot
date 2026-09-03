@@ -1472,6 +1472,12 @@ ANALYSES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analyse
 ANALYSES_MANIFEST = os.path.join(ANALYSES_DIR, "manifest.json")
 ANALYSES_KEEP_DAYS = 365
 
+# Only these Telegram chat IDs may submit analysis photos (owner allowlist).
+# Extend by setting the ANALYSIS_ALLOWED_CHATS env var, e.g. "7902915191,123456789"
+ANALYSIS_ALLOWED_CHATS = {
+    int(x) for x in os.environ.get("ANALYSIS_ALLOWED_CHATS", "7902915191").replace(" ", "").split(",") if x
+}
+
 
 def _load_analyses_manifest():
     try:
@@ -1523,6 +1529,10 @@ def collect_daily_analysis_photos():
             caption = (message.get("caption") or "").strip()
             text = (message.get("text") or "").strip()
             photo = message.get("photo") or []
+
+            if (photo or (caption and not text.startswith("/"))) and chat_id not in ANALYSIS_ALLOWED_CHATS:
+                # Silently ignore analysis submissions from non-owner chats
+                continue
 
             if photo:
                 # Largest resolution variant
