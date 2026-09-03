@@ -66,7 +66,7 @@ th{color:var(--muted);font-weight:600;font-size:11.5px}
 tbody tr{transition:background .15s ease}
 tbody tr:hover{background:rgba(91,140,255,.07)}
 tbody tr:last-child td{border-bottom:none}
-.footer{text-align:center;padding:18px 12px 28px;color:var(--muted);font-size:11.5px}
+.footer{text-align:center;padding:18px 12px 28px;color:var(--muted);font-size:11.5px}.footer .visit-stats{margin-bottom:12px}
 .loading{text-align:center;padding:18px;color:var(--muted)}
 .spinner{display:inline-block;width:18px;height:18px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin .8s linear infinite;vertical-align:middle;margin-inline-end:6px}
 @keyframes spin{to{transform:rotate(360deg)}}
@@ -81,11 +81,6 @@ tbody tr:last-child td{border-bottom:none}
   <h1>🤖 RoboMohsenBot</h1>
   <div class="subtitle" style="font-weight:bold">ربات بازار — داشبورد زنده اطلاعات بازار ارز و رمزارز</div>
   <div class="status" id="ts">⏳ در حال بارگذاری...</div>
-  <div class="visit-stats" id="visit-stats" style="display:none">
-    <span id="v-online">👥 ... آنلاین</span>
-    <span id="v-today">📅 ... بازدید امروز</span>
-    <span id="v-total">📊 ... بازدید کل</span>
-  </div>
 </div>
 <div class="container">
   <div class="card" id="c1"><div class="loading"><span class="spinner"></span> 💵 قیمت‌ها</div></div>
@@ -99,7 +94,14 @@ tbody tr:last-child td{border-bottom:none}
   <div class="card" id="c9"><div class="loading"><span class="spinner"></span> 📰 اخبار بلومبرگ</div></div>
   <div class="card" id="ca"><div class="loading"><span class="spinner"></span> 📊 تحلیل روزانه</div></div>
 </div>
-<div class="footer"><span style="font-size:22px;font-weight:800;color:#5b8cff">🤖 RoboMohsenBot</span><br>داشبورد زنده | بروزرسانی خودکار هر 30 ثانیه</div>
+<div class="footer">
+<div class="visit-stats" id="visit-stats" style="display:none">
+  <span id="v-online">👥 ... آنلاین</span>
+  <span id="v-today">📅 ... بازدید امروز</span>
+  <span id="v-total">📊 ... بازدید کل</span>
+</div>
+<span style="font-size:22px;font-weight:800;color:#5b8cff">🤖 RoboMohsenBot</span><br>داشبورد زنده | بروزرسانی خودکار هر 30 ثانیه
+</div>
 <script>
 function F(n){return n?Number(n).toLocaleString('en-US',{maximumFractionDigits:0}):'\u2014'}
 function F2(n){return n?Number(n).toLocaleString('en-US',{maximumFractionDigits:2}):'\u2014'}
