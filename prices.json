@@ -1,97 +1,109 @@
 {
-  "timestamp": "2026-09-04 05:24",
+  "timestamp": "2026-09-04 05:56",
   "usd_sell": 221400,
   "usd_buy": 221300,
-  "gold_18k": 23345953,
-  "btc_usd": 81042.39,
+  "gold_18k": 23246687,
+  "btc_usd": 80866.43,
   "fear_greed": 74,
   "btc_dominance": 59.3,
-  "market_cap": 2740000000000.0,
+  "market_cap": 2730000000000.0,
   "market_volume": 110000000000.0,
-  "market_change": 1.1,
+  "market_change": 0.93,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81043,
-      "change_24h": 4.80816,
-      "market_cap": 1627685464671
+      "price": 80886,
+      "change_24h": 4.17103,
+      "market_cap": 1624199775871
     },
     {
       "symbol": "eth",
-      "price": 2513.16,
-      "change_24h": 5.20903,
-      "market_cap": 306715056704
+      "price": 2505.52,
+      "change_24h": 4.33138,
+      "market_cap": 305749813367
     },
     {
       "symbol": "usdt",
-      "price": 0.999953,
-      "change_24h": 0.03402,
-      "market_cap": 183371583324
+      "price": 0.999941,
+      "change_24h": 0.03127,
+      "market_cap": 183369310824
     },
     {
       "symbol": "bnb",
-      "price": 725.04,
-      "change_24h": 4.84703,
-      "market_cap": 96572183590
+      "price": 723.13,
+      "change_24h": 4.13897,
+      "market_cap": 96301861323
     },
     {
       "symbol": "xrp",
-      "price": 1.45,
-      "change_24h": 6.76541,
-      "market_cap": 90970223433
+      "price": 1.44,
+      "change_24h": 5.52229,
+      "market_cap": 90519607732
     },
     {
       "symbol": "usdc",
-      "price": 0.999917,
-      "change_24h": 0.0104,
-      "market_cap": 74330602363
+      "price": 0.999894,
+      "change_24h": 0.00691,
+      "market_cap": 74306819739
     },
     {
       "symbol": "sol",
-      "price": 103.88,
-      "change_24h": 3.80796,
-      "market_cap": 60814088526
+      "price": 103.49,
+      "change_24h": 2.83753,
+      "market_cap": 60591019378
     },
     {
       "symbol": "trx",
-      "price": 0.328889,
-      "change_24h": 0.99488,
-      "market_cap": 31223215334
+      "price": 0.328715,
+      "change_24h": 0.76514,
+      "market_cap": 31205669792
     },
     {
       "symbol": "figr_heloc",
       "price": 1.032,
-      "change_24h": 1.91729,
-      "market_cap": 22911730661
+      "change_24h": 1.9201,
+      "market_cap": 22912065334
     },
     {
       "symbol": "hype",
-      "price": 86.54,
-      "change_24h": 5.79221,
-      "market_cap": 19261404911
+      "price": 85.73,
+      "change_24h": 4.4579,
+      "market_cap": 19062724748
     }
   ],
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 14,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 2,
+      "total_btc": 351.35,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 2,
+      "top": [
+        {
+          "btc": 207.62,
+          "tier": "متوسط",
+          "fee": 1.42e-05,
+          "inputs": 1,
+          "outputs": 2,
+          "direction": "unknown"
+        },
+        {
+          "btc": 143.73,
+          "tier": "متوسط",
+          "fee": 6.04e-06,
+          "inputs": 1,
+          "outputs": 7,
+          "direction": "unknown"
+        }
+      ]
     }
   },
   "news_investing": [
     {
-      "title": "سهام آسیایی پیش از انتشار داده‌های اشتغال ایالات متحده افزایش یافت، والر از فدرال رزرو، اوراق قرضه را آرام کرد",
-      "date": "2026-09-04 03:30",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام آسیا با کاهش افزایش نرخ بهره فدرال رزرو و افزایش سرمایه‌گذاری در بخش فناوری، افزایش یافت؛ در انتظار انتشار داده‌های اشتغال ایالات متحده",
-      "date": "2026-09-04 03:28",
+      "title": "طلا پس از افزایش قیمت، نزدیک به ۴۵۰۰ دلار باقی ماند، زیرا معامله‌گران منتظر داده‌های اشتغال ایالات متحده هستند",
+      "date": "2026-09-04 05:02",
       "source": "Investing.com"
     }
   ],
@@ -129,13 +141,8 @@
   ],
   "news": [
     {
-      "title": "سهام آسیایی پیش از انتشار داده‌های اشتغال ایالات متحده افزایش یافت، والر از فدرال رزرو، اوراق قرضه را آرام کرد",
-      "date": "2026-09-04 03:30",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام آسیا با کاهش افزایش نرخ بهره فدرال رزرو و افزایش سرمایه‌گذاری در بخش فناوری، افزایش یافت؛ در انتظار انتشار داده‌های اشتغال ایالات متحده",
-      "date": "2026-09-04 03:28",
+      "title": "طلا پس از افزایش قیمت، نزدیک به ۴۵۰۰ دلار باقی ماند، زیرا معامله‌گران منتظر داده‌های اشتغال ایالات متحده هستند",
+      "date": "2026-09-04 05:02",
       "source": "Investing.com"
     },
     {
