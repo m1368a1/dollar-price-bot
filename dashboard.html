@@ -406,7 +406,7 @@ load();
   var sess=Math.random().toString(36).slice(2,10);
   function beat(){
     var now=new Date();
-    var bucket=now.toISOString().slice(0,16); // minute precision
+    var bucket=now.toISOString().slice(0,16).replace(':','-'); // minute precision; safe counter key
     fetch(BASE+'/hit/'+NS+'/online-'+bucket).then(function(r){return r.json()}).catch(function(){});
   }
   beat(); setInterval(beat, 25000);
@@ -414,8 +414,7 @@ load();
     var now=new Date(); var sum=0; var jobs=[];
     for(var i=0;i<2;i++){
       var d=new Date(now.getTime()-i*60000);
-      var bucket=d.toISOString().toISOString?d.toISOString():d.toISOString();
-      bucket=d.toISOString().slice(0,16);
+      var bucket=d.toISOString().slice(0,16).replace(':','-');
       jobs.push(fetch(BASE+'/get/'+NS+'/online-'+bucket).then(function(r){return r.json()}).then(function(d){sum+=(d.value||0)}).catch(function(){}));
     }
     Promise.all(jobs).then(function(){
