@@ -72,7 +72,7 @@ body{font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif;color:var(--text);dire
   <button class="lb-close" onclick="closeLb()">✕ بستن</button>
   <div class="lb-nav lb-prev" onclick="stepLb(1)">›</div>
   <div class="lb-nav lb-next" onclick="stepLb(-1)">‹</div>
-  <img id="lb-img" src="" alt="">
+  <img id="lb-img" src="" alt="" draggable="false" oncontextmenu="return false">
   <div class="lb-caption" id="lb-cap"></div>
   <div class="lb-date" id="lb-date"></div>
 </div>
@@ -102,14 +102,32 @@ async function load(){
       lastMonth=month;
       html+='<div class="month-title">📅 '+faDate(month+'-01').replace(/^\S+ه، /,'')+'</div><div class="grid">';
     }
-    html+='<div class="thumb" onclick="openLb('+i+')">'+
-      '<img src="'+it.file+'" loading="lazy" alt="'+it.date+'">'+
+    html+='<div class="thumb" role="button" tabindex="0" onclick="openLb('+i+')" onkeydown="if(event.key===\'Enter\'||event.key===\' \'){event.preventDefault();openLb('+i+')}" aria-label="بزرگ‌نمایی تحلیل '+it.date+'">'+
+      '<img src="" loading="lazy" alt="تحلیل '+it.date+'" draggable="false" oncontextmenu="return false" data-image="'+it.file+'">'+
       '<div class="t-caption">'+(it.caption||'تحلیل روزانه')+'</div>'+
       '<div class="t-date">'+faDate(it.date)+'</div></div>';
   }
   // close open grids (each month opened one)
   html=html.replace(/<div class="grid">((?:(?!<div class="month-title").)*)$/,'<div class="grid">$1</div>');
   g.innerHTML=html;
+  var images=g.querySelectorAll('img[data-image]');
+  for(var j=0;j<images.length;j++){
+    loadProtectedImage(images[j],images[j].dataset.image);
+  }
+}
+var archiveObjectUrls=[];
+function loadProtectedImage(img,path){
+  if(!img||!path)return;
+  fetch(path+'?v='+Date.now(),{cache:'no-store'}).then(function(r){
+    if(!r.ok)throw new Error('image request failed');
+    return r.blob();
+  }).then(function(blob){
+    var objectUrl=URL.createObjectURL(blob);
+    archiveObjectUrls.push(objectUrl);
+    img.dataset.objectUrl=objectUrl;
+    img.removeAttribute('data-image');
+    img.src=objectUrl;
+  }).catch(function(){img.alt='تصویر تحلیل بارگذاری نشد';});
 }
 var cur=0;
 function openLb(i){cur=i;renderLb();document.getElementById('lb').classList.add('open')}
@@ -117,7 +135,12 @@ function closeLb(){document.getElementById('lb').classList.remove('open')}
 function stepLb(dir){cur=(cur+dir+ITEMS.length)%ITEMS.length;renderLb()}
 function renderLb(){
   var it=ITEMS[cur];
-  document.getElementById('lb-img').src=it.file;
+  var thumbs=document.querySelectorAll('.thumb');
+  var thumb=thumbs[cur] ? thumbs[cur].querySelector('img') : null;
+  var objectUrl=thumb && (thumb.dataset.objectUrl||thumb.src);
+  var lbImage=document.getElementById('lb-img');
+  lbImage.src=objectUrl||'';
+  if(!objectUrl) loadProtectedImage(lbImage,it.file);
   document.getElementById('lb-cap').textContent=it.caption||'تحلیل روزانه';
   document.getElementById('lb-date').textContent=faDate(it.date)+' — مورد '+(cur+1)+' از '+ITEMS.length;
 }
