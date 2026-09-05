@@ -1,92 +1,92 @@
 {
-  "timestamp": "2026-09-05 05:23",
+  "timestamp": "2026-09-05 05:46",
   "usd_sell": 222200,
   "usd_buy": 222100,
-  "gold_18k": 23142804,
-  "btc_usd": 79567.8,
+  "gold_18k": 23396740,
+  "btc_usd": 79536.57,
   "fear_greed": 73,
-  "btc_dominance": 59.2,
+  "btc_dominance": 59.1,
   "market_cap": 2700000000000.0,
   "market_volume": 90000000000.0,
-  "market_change": -4.05,
+  "market_change": -4.01,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79569,
-      "change_24h": -1.82122,
-      "market_cap": 1597666954090
+      "price": 79546,
+      "change_24h": -1.80442,
+      "market_cap": 1597552413416
     },
     {
       "symbol": "eth",
-      "price": 2450.09,
-      "change_24h": -2.48681,
-      "market_cap": 298947276812
+      "price": 2450.76,
+      "change_24h": -2.45023,
+      "market_cap": 299106232722
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": 0.02584,
-      "market_cap": 183421929740
+      "change_24h": 0.02328,
+      "market_cap": 183419410413
     },
     {
       "symbol": "bnb",
-      "price": 722.57,
-      "change_24h": -0.3173,
-      "market_cap": 96199299273
+      "price": 722.21,
+      "change_24h": -0.3287,
+      "market_cap": 96181666557
     },
     {
       "symbol": "xrp",
       "price": 1.4,
-      "change_24h": -3.53387,
-      "market_cap": 87705327149
+      "change_24h": -3.51207,
+      "market_cap": 87773831574
     },
     {
       "symbol": "usdc",
-      "price": 1.0,
-      "change_24h": 0.01233,
-      "market_cap": 74609634048
+      "price": 0.99997,
+      "change_24h": 0.00932,
+      "market_cap": 74605351889
     },
     {
       "symbol": "sol",
-      "price": 101.77,
-      "change_24h": -2.02244,
-      "market_cap": 59568535705
+      "price": 101.78,
+      "change_24h": -1.99431,
+      "market_cap": 59587863562
     },
     {
       "symbol": "trx",
-      "price": 0.331877,
-      "change_24h": 0.92506,
-      "market_cap": 31506763802
+      "price": 0.331912,
+      "change_24h": 0.99229,
+      "market_cap": 31512434385
     },
     {
       "symbol": "figr_heloc",
       "price": 1.038,
-      "change_24h": 0.52634,
-      "market_cap": 23096074273
+      "change_24h": 0.52895,
+      "market_cap": 23096382318
     },
     {
       "symbol": "hype",
-      "price": 83.91,
-      "change_24h": -2.98946,
-      "market_cap": 18663991820
+      "price": 84.1,
+      "change_24h": -2.36079,
+      "market_cap": 18709712416
     }
   ],
   "whales": {
     "unconfirmed": {
-      "score": 6,
+      "score": 8,
       "level": "کم",
       "count": 1,
-      "total_btc": 140.83,
+      "total_btc": 290.13,
       "mega_whales": 0,
       "large_whales": 0,
       "medium_whales": 1,
       "top": [
         {
-          "btc": 140.83,
+          "btc": 290.13,
           "tier": "متوسط",
-          "fee": 4.32e-06,
+          "fee": 2.088e-05,
           "inputs": 1,
-          "outputs": 9,
+          "outputs": 2,
           "direction": "unknown"
         }
       ]
@@ -96,11 +96,6 @@
     {
       "title": "با ادامه جریان نفت خام خلیج فارس توسط آمریکا، اهرم تحریم نفتی ایران تضعیف می‌شود",
       "date": "2026-09-05 04:40",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سفارت آمریکا در بحبوحه محاصره نفتی و تحریم‌ها، هشدار بهداشتی برای کوبا صادر کرد.",
-      "date": "2026-09-05 02:30",
       "source": "Investing.com"
     }
   ],
@@ -140,11 +135,6 @@
     {
       "title": "با ادامه جریان نفت خام خلیج فارس توسط آمریکا، اهرم تحریم نفتی ایران تضعیف می‌شود",
       "date": "2026-09-05 04:40",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سفارت آمریکا در بحبوحه محاصره نفتی و تحریم‌ها، هشدار بهداشتی برای کوبا صادر کرد.",
-      "date": "2026-09-05 02:30",
       "source": "Investing.com"
     },
     {
