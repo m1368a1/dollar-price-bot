@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-05 21:16",
+  "timestamp": "2026-09-05 22:59",
   "usd_sell": 226800,
   "usd_buy": 226700,
   "gold_18k": 23385197,
-  "btc_usd": 79784.49,
+  "btc_usd": 79775.59,
   "fear_greed": 73,
   "btc_dominance": 58.8,
   "market_cap": 2720000000000.0,
   "market_volume": 60000000000.0,
-  "market_change": -1.89,
+  "market_change": -1.76,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79782,
-      "change_24h": -0.02088,
-      "market_cap": 1601953246033
+      "price": 79783,
+      "change_24h": 0.15278,
+      "market_cap": 1602205769515
     },
     {
       "symbol": "eth",
-      "price": 2477.07,
-      "change_24h": 0.93786,
-      "market_cap": 302249846572
+      "price": 2480.82,
+      "change_24h": 1.19843,
+      "market_cap": 302735629148
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": -0.0162,
-      "market_cap": 183398110836
+      "change_24h": -0.02158,
+      "market_cap": 183401512500
     },
     {
       "symbol": "bnb",
-      "price": 771.08,
-      "change_24h": 7.21892,
-      "market_cap": 102676381765
+      "price": 771.14,
+      "change_24h": 7.2461,
+      "market_cap": 102694869409
     },
     {
       "symbol": "xrp",
-      "price": 1.42,
-      "change_24h": 1.26695,
-      "market_cap": 88912396398
+      "price": 1.41,
+      "change_24h": 1.33824,
+      "market_cap": 88751061234
     },
     {
       "symbol": "usdc",
-      "price": 0.999989,
-      "change_24h": -0.00161,
-      "market_cap": 74572508787
+      "price": 0.999999,
+      "change_24h": -0.00472,
+      "market_cap": 74571033823
     },
     {
       "symbol": "sol",
-      "price": 103.46,
-      "change_24h": 1.71446,
-      "market_cap": 60569205169
+      "price": 103.35,
+      "change_24h": 1.59884,
+      "market_cap": 60509476015
     },
     {
       "symbol": "trx",
-      "price": 0.334635,
-      "change_24h": 0.95146,
-      "market_cap": 31768764571
+      "price": 0.333872,
+      "change_24h": 0.67039,
+      "market_cap": 31696853558
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.004,
-      "change_24h": -2.71984,
-      "market_cap": 22384134850
+      "price": 1.055,
+      "change_24h": 1.65362,
+      "market_cap": 23516084575
     },
     {
       "symbol": "hype",
-      "price": 85.32,
-      "change_24h": 1.45148,
-      "market_cap": 18993228139
+      "price": 85.37,
+      "change_24h": 1.77031,
+      "market_cap": 18990339325
     }
   ],
   "signal": {
@@ -80,15 +80,15 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +2.1% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +2.0% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.1% در ۲۴ ساعت",
+        "text": "BTC +0.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
@@ -97,24 +97,33 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-05 21:16"
+    "updated": "2026-09-05 22:59"
   },
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 144.08,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 144.08,
+          "tier": "متوسط",
+          "fee": 5.23e-06,
+          "inputs": 1,
+          "outputs": 11,
+          "direction": "unknown"
+        }
+      ]
     }
   },
   "news_investing": [
     {
-      "title": "فرماندهی مرکزی آمریکا اعلام کرد که پس از حمله سپاه پاسداران به کشتی‌های نیروی دریایی آمریکا، سه نفتکش ایرانی هدف قرار گرفتند.",
-      "date": "2026-09-05 21:00",
+      "title": "نیروهای آمریکایی و ایرانی به سمت کشتی‌ها در آب‌های نزدیک ایران شلیک کردند",
+      "date": "2026-09-05 21:36",
       "source": "Investing.com"
     },
     {
@@ -157,8 +166,8 @@
   ],
   "news": [
     {
-      "title": "فرماندهی مرکزی آمریکا اعلام کرد که پس از حمله سپاه پاسداران به کشتی‌های نیروی دریایی آمریکا، سه نفتکش ایرانی هدف قرار گرفتند.",
-      "date": "2026-09-05 21:00",
+      "title": "نیروهای آمریکایی و ایرانی به سمت کشتی‌ها در آب‌های نزدیک ایران شلیک کردند",
+      "date": "2026-09-05 21:36",
       "source": "Investing.com"
     },
     {
