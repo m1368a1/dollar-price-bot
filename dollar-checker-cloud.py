@@ -2994,6 +2994,13 @@ def main():
 
     # ============================================================
 
+    signal_snapshot = {
+        "score": 0,
+        "label": "سیگنال صبر",
+        "factors": [],
+        "confidence": 50,
+    }
+
     try:
 
         signals = []
@@ -3243,6 +3250,24 @@ def main():
         msg14 += "\U0001f916 RoboMohsen Bot"
 
 
+
+        # Persist the exact factors used by the bot so the web app explains the same signal.
+        factor_items = []
+        for factor_emoji, factor_desc in signals:
+            if any(word in factor_desc for word in ("فروش", "نزول", "اصلاح")):
+                tone = "bearish"
+            elif any(word in factor_desc for word in ("خرید", "صعود", "برداشت", "مثبت")):
+                tone = "bullish"
+            else:
+                tone = "neutral"
+            factor_items.append({"text": factor_desc, "tone": tone})
+        signal_snapshot = {
+            "score": score,
+            "label": final,
+            "factors": factor_items,
+            "confidence": min(95, max(50, 50 + abs(score) // 2)),
+            "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        }
 
         send_telegram(msg14)
 
@@ -3629,7 +3654,8 @@ def main():
             "market_cap": global_market.get("total_market_cap_t", 0) * 1e12 if global_market else 0,
             "market_volume": global_market.get("total_volume_t", 0) * 1e12 if global_market else 0,
             "market_change": global_market.get("market_cap_change_24h", 0) if global_market else 0,
-            "top10": []
+            "top10": [],
+            "signal": signal_snapshot,
         }
         top10_data = globals().get('_TOP10_COINS', [])
         if top10_data:

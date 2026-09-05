@@ -87,6 +87,12 @@ tbody tr:last-child td{border-bottom:none}
   /* Visit stats badge */
   .visit-stats{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin:6px 0 12px;font-size:12.5px;color:var(--muted);font-weight:600}
   .visit-stats span{background:rgba(91,140,255,.08);border:1px solid rgba(91,140,255,.18);padding:4px 12px;border-radius:99px}
+  .signal-explanation{margin-top:12px;padding:12px;border-radius:12px;background:rgba(7,11,20,.34);border:1px solid rgba(120,150,255,.12)}
+  .signal-explanation-title{font-size:12.5px;font-weight:800;color:var(--text);margin-bottom:8px}
+  .signal-factor{display:flex;align-items:flex-start;gap:7px;padding:7px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:12px;line-height:1.7}
+  .signal-factor:last-child{border-bottom:0;padding-bottom:0}
+  .signal-factor.bullish{color:var(--green)}.signal-factor.bearish{color:var(--red)}.signal-factor.neutral{color:var(--muted)}
+  .signal-meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:11.5px;margin-top:9px}
 </style>
 </head>
 <body>
@@ -159,6 +165,48 @@ async function load(){
     c6+='<div style="font-size:11px;color:#8b949e;text-align:center;margin-top:8px;line-height:1.8">\uD83E\uDDED \u0645\u0628\u0646\u0627\u06CC \u0633\u06CC\u06AF\u0646\u0627\u0644: \u062A\u0631\u0633 \u0648 \u0637\u0645\u0639\u060C \u0631\u0648\u0646\u062F 7 \u0631\u0648\u0632\u0647\u060C \u0645\u0648\u0645\u0646\u062A\u0648\u0645 24 \u0633\u0627\u0639\u062A\u0647\u060C RSI\u060C \u0641\u0639\u0627\u0644\u06CC\u062A \u0646\u0647\u0646\u06AF\u200C\u0647\u0627 (\u0648\u0631\u0648\u062F \u0628\u0647 \u0635\u0631\u0627\u0641\u06CC) \u0648 \u0627\u0644\u06AF\u0648\u06CC \u06A9\u0646\u062F\u0644\u0627\u0633\u062A\u06CC\u06A9 (\u0628\u0627\u0632\u0627\u0631 \u0631\u0645\u0632\u0627\u0631\u0632)<br>\u26A0\uFE0F \u062A\u0648\u0635\u06CC\u0647 \u0645\u0627\u0644\u06CC \u0646\u06CC\u0633\u062A</div>';
   }else{c6+='<div style="color:#f85149;text-align:center">\u062E\u0637\u0627</div>';}
   document.getElementById('c6').innerHTML=c6;
+
+  // Replace the compact fallback with the bot's transparent signal explanation when available.
+  if(d.signal&&typeof d.signal.score==='number'){
+    var detail=d.signal;
+    var detailScore=Math.max(-100,Math.min(100,Number(detail.score)||0));
+    var detailClass=detailScore>=25?'signal-buy':detailScore<=-25?'signal-sell':'signal-wait';
+    var detailLabel=detail.label||'🟡 سیگنال صبر';
+    var detailConfidence=Number(detail.confidence)||Math.min(95,Math.max(50,50+Math.floor(Math.abs(detailScore)/2)));
+    var detailHtml='<div class="card-title">🧭 توضیح سیگنال خرید و فروش</div>';
+    detailHtml+='<div class="signal-box '+detailClass+'">'+detailLabel+'<div style="font-size:13px;margin-top:4px">امتیاز: '+(detailScore>=0?'+':'')+detailScore+' از 100</div></div>';
+    detailHtml+='<div class="signal-explanation"><div class="signal-explanation-title">چرا این نتیجه به‌دست آمد؟</div>';
+    var detailFactors=Array.isArray(detail.factors)?detail.factors:[];
+    if(detailFactors.length){
+      for(var di=0;di<detailFactors.length;di++){
+        var df=detailFactors[di]||{};var dt=df.tone==='bullish'?'bullish':df.tone==='bearish'?'bearish':'neutral';
+        var dicon=dt==='bullish'?'✅':dt==='bearish'?'⚠️':'➖';
+        var dtext=String(df.text||'').replace(/[&<>"']/g,function(ch){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]});
+        detailHtml+='<div class="signal-factor '+dt+'"><span>'+dicon+'</span><span>'+dtext+'</span></div>';
+      }
+    }else{
+      detailHtml+='<div class="signal-factor neutral"><span>➖</span><span>جزئیات عوامل در اجرای بعدی تکمیل می‌شود.</span></div>';
+    }
+    detailHtml+='<div class="signal-meta"><span>🎯 سطح اطمینان: <strong>'+detailConfidence+'٪</strong></span><span>⏱️ آخرین محاسبه: '+(detail.updated||d.timestamp||'—')+'</span></div></div>';
+    detailHtml+='<div style="font-size:11px;color:#8b949e;text-align:center;margin-top:9px;line-height:1.8">این امتیاز از ترس و طمع، روند ۷ روزه، مومنتوم ۲۴ ساعته، RSI، فعالیت نهنگ‌های صرافی‌محور و الگوهای کندل‌استیک یک‌ساعته ساخته می‌شود.<br>⚠️ توصیه مالی نیست.</div>';
+    document.getElementById('c6').innerHTML=detailHtml;
+  }
+
+  // If the bot has not published a full signal snapshot yet, keep the explanation useful
+  // instead of showing only a bare Buy/Wait/Sell label.
+  if(!d.signal&&d.fear_greed){
+    var fallbackScore=Number(d.fear_greed)>=80?-30:Number(d.fear_greed)<=25?30:0;
+    var fallbackTone=fallbackScore>0?'bullish':fallbackScore<0?'bearish':'neutral';
+    var fallbackLabel=fallbackScore>0?'🟢 خرید احتمالی':fallbackScore<0?'🔴 فروش احتمالی':'🟡 صبر';
+    var fallbackHtml='<div class="card-title">🧭 توضیح سیگنال خرید و فروش</div>';
+    fallbackHtml+='<div class="signal-box '+(fallbackTone==='bullish'?'signal-buy':fallbackTone==='bearish'?'signal-sell':'signal-wait')+'">'+fallbackLabel+'<div style="font-size:13px;margin-top:4px">امتیاز موقت: '+(fallbackScore>=0?'+':'')+fallbackScore+' از 100</div></div>';
+    fallbackHtml+='<div class="signal-explanation"><div class="signal-explanation-title">چرا این نتیجه به‌دست آمد؟</div>';
+    fallbackHtml+='<div class="signal-factor '+(Number(d.fear_greed)>=80?'bearish':Number(d.fear_greed)<=25?'bullish':'neutral')+'"><span>'+(Number(d.fear_greed)>=80?'⚠️':Number(d.fear_greed)<=25?'✅':'➖')+'</span><span>شاخص ترس و طمع: '+d.fear_greed+'/100</span></div>';
+    fallbackHtml+='<div class="signal-factor neutral"><span>➖</span><span>روند ۷ روزه، مومنتوم ۲۴ ساعته، RSI، نهنگ‌ها و کندل‌استیک در اجرای بعدی ربات به این توضیح اضافه می‌شوند.</span></div>';
+    fallbackHtml+='<div class="signal-meta"><span>🎯 سطح اطمینان: <strong>موقت</strong></span><span>⏱️ آخرین داده: '+(d.timestamp||'—')+'</span></div></div>';
+    fallbackHtml+='<div style="font-size:11px;color:#8b949e;text-align:center;margin-top:9px;line-height:1.8">⚠️ این نمایش موقت است و توصیه مالی نیست.</div>';
+    document.getElementById('c6').innerHTML=fallbackHtml;
+  }
 
   // Card 3: BTC
   var c3='<div class="card-title">\u20BF \u0628\u06CC\u062A\u06A9\u0648\u06CC\u0646</div>';
