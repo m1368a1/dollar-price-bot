@@ -1,89 +1,109 @@
 {
-  "timestamp": "2026-09-05 00:59",
+  "timestamp": "2026-09-05 05:23",
   "usd_sell": 222200,
   "usd_buy": 222100,
   "gold_18k": 23142804,
-  "btc_usd": 79621.69,
+  "btc_usd": 79567.8,
   "fear_greed": 73,
   "btc_dominance": 59.2,
   "market_cap": 2700000000000.0,
-  "market_volume": 100000000000.0,
-  "market_change": -4.25,
+  "market_volume": 90000000000.0,
+  "market_change": -4.05,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79619,
-      "change_24h": -1.67547,
-      "market_cap": 1598738013198
+      "price": 79569,
+      "change_24h": -1.82122,
+      "market_cap": 1597666954090
     },
     {
       "symbol": "eth",
-      "price": 2454.15,
-      "change_24h": -1.9383,
-      "market_cap": 299438939654
+      "price": 2450.09,
+      "change_24h": -2.48681,
+      "market_cap": 298947276812
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": 0.02128,
-      "market_cap": 183432818661
+      "change_24h": 0.02584,
+      "market_cap": 183421929740
     },
     {
       "symbol": "bnb",
-      "price": 719.87,
-      "change_24h": -0.46263,
-      "market_cap": 95856640440
+      "price": 722.57,
+      "change_24h": -0.3173,
+      "market_cap": 96199299273
     },
     {
       "symbol": "xrp",
       "price": 1.4,
-      "change_24h": -3.1683,
-      "market_cap": 87656720909
+      "change_24h": -3.53387,
+      "market_cap": 87705327149
     },
     {
       "symbol": "usdc",
       "price": 1.0,
-      "change_24h": 0.00949,
-      "market_cap": 74578605242
+      "change_24h": 0.01233,
+      "market_cap": 74609634048
     },
     {
       "symbol": "sol",
-      "price": 101.92,
-      "change_24h": -1.6347,
-      "market_cap": 59654080424
+      "price": 101.77,
+      "change_24h": -2.02244,
+      "market_cap": 59568535705
     },
     {
       "symbol": "trx",
-      "price": 0.331751,
-      "change_24h": 0.5047,
-      "market_cap": 31494648456
+      "price": 0.331877,
+      "change_24h": 0.92506,
+      "market_cap": 31506763802
     },
     {
       "symbol": "figr_heloc",
       "price": 1.038,
-      "change_24h": 0.53205,
-      "market_cap": 23094733649
+      "change_24h": 0.52634,
+      "market_cap": 23096074273
     },
     {
       "symbol": "hype",
-      "price": 84.44,
-      "change_24h": -2.42357,
-      "market_cap": 18782529771
+      "price": 83.91,
+      "change_24h": -2.98946,
+      "market_cap": 18663991820
     }
   ],
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 140.83,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 140.83,
+          "tier": "متوسط",
+          "fee": 4.32e-06,
+          "inputs": 1,
+          "outputs": 9,
+          "direction": "unknown"
+        }
+      ]
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "با ادامه جریان نفت خام خلیج فارس توسط آمریکا، اهرم تحریم نفتی ایران تضعیف می‌شود",
+      "date": "2026-09-05 04:40",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سفارت آمریکا در بحبوحه محاصره نفتی و تحریم‌ها، هشدار بهداشتی برای کوبا صادر کرد.",
+      "date": "2026-09-05 02:30",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
       "title": "شاخص S&P 500 هفته را بدون تغییر به پایان رساند، زیرا رشد قوی مشاغل، شرط‌بندی‌ها برای افزایش نرخ بهره فدرال رزرو را تقویت می‌کند.",
@@ -117,6 +137,16 @@
     }
   ],
   "news": [
+    {
+      "title": "با ادامه جریان نفت خام خلیج فارس توسط آمریکا، اهرم تحریم نفتی ایران تضعیف می‌شود",
+      "date": "2026-09-05 04:40",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سفارت آمریکا در بحبوحه محاصره نفتی و تحریم‌ها، هشدار بهداشتی برای کوبا صادر کرد.",
+      "date": "2026-09-05 02:30",
+      "source": "Investing.com"
+    },
     {
       "title": "شاخص S&P 500 هفته را بدون تغییر به پایان رساند، زیرا رشد قوی مشاغل، شرط‌بندی‌ها برای افزایش نرخ بهره فدرال رزرو را تقویت می‌کند.",
       "date": "Fri, 04 Sep 2026",
