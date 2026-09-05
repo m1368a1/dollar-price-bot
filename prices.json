@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-04 22:22",
+  "timestamp": "2026-09-05 00:59",
   "usd_sell": 222200,
   "usd_buy": 222100,
   "gold_18k": 23142804,
-  "btc_usd": 79712.93,
-  "fear_greed": 74,
+  "btc_usd": 79621.69,
+  "fear_greed": 73,
   "btc_dominance": 59.2,
   "market_cap": 2700000000000.0,
   "market_volume": 100000000000.0,
-  "market_change": -4.54,
+  "market_change": -4.25,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79713,
-      "change_24h": -1.98133,
-      "market_cap": 1600647528470
+      "price": 79619,
+      "change_24h": -1.67547,
+      "market_cap": 1598738013198
     },
     {
       "symbol": "eth",
-      "price": 2452.86,
-      "change_24h": -2.06407,
-      "market_cap": 299293137284
+      "price": 2454.15,
+      "change_24h": -1.9383,
+      "market_cap": 299438939654
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": 0.01726,
-      "market_cap": 183431483655
+      "change_24h": 0.02128,
+      "market_cap": 183432818661
     },
     {
       "symbol": "bnb",
-      "price": 718.17,
-      "change_24h": -0.91181,
-      "market_cap": 95635748459
+      "price": 719.87,
+      "change_24h": -0.46263,
+      "market_cap": 95856640440
     },
     {
       "symbol": "xrp",
       "price": 1.4,
-      "change_24h": -4.00171,
-      "market_cap": 87689982305
+      "change_24h": -3.1683,
+      "market_cap": 87656720909
     },
     {
       "symbol": "usdc",
       "price": 1.0,
-      "change_24h": -0.00012,
-      "market_cap": 74265662206
+      "change_24h": 0.00949,
+      "market_cap": 74578605242
     },
     {
       "symbol": "sol",
-      "price": 101.79,
-      "change_24h": -2.99218,
-      "market_cap": 59606311468
+      "price": 101.92,
+      "change_24h": -1.6347,
+      "market_cap": 59654080424
     },
     {
       "symbol": "trx",
-      "price": 0.33162,
-      "change_24h": 0.15348,
-      "market_cap": 31480323976
+      "price": 0.331751,
+      "change_24h": 0.5047,
+      "market_cap": 31494648456
     },
     {
       "symbol": "figr_heloc",
       "price": 1.038,
-      "change_24h": 1.35273,
-      "market_cap": 23095028061
+      "change_24h": 0.53205,
+      "market_cap": 23094733649
     },
     {
       "symbol": "hype",
-      "price": 84.04,
-      "change_24h": -1.60239,
-      "market_cap": 18692148627
+      "price": 84.44,
+      "change_24h": -2.42357,
+      "market_cap": 18782529771
     }
   ],
   "whales": {
@@ -83,13 +83,7 @@
       "top": []
     }
   },
-  "news_investing": [
-    {
-      "title": "شرکت معدنی گلدن، دیوید واتکینز را به عنوان مدیرعامل جدید خود معرفی کرد.",
-      "date": "2026-09-04 21:12",
-      "source": "Investing.com"
-    }
-  ],
+  "news_investing": [],
   "news_bloomberg": [
     {
       "title": "شاخص S&P 500 هفته را بدون تغییر به پایان رساند، زیرا رشد قوی مشاغل، شرط‌بندی‌ها برای افزایش نرخ بهره فدرال رزرو را تقویت می‌کند.",
@@ -123,11 +117,6 @@
     }
   ],
   "news": [
-    {
-      "title": "شرکت معدنی گلدن، دیوید واتکینز را به عنوان مدیرعامل جدید خود معرفی کرد.",
-      "date": "2026-09-04 21:12",
-      "source": "Investing.com"
-    },
     {
       "title": "شاخص S&P 500 هفته را بدون تغییر به پایان رساند، زیرا رشد قوی مشاغل، شرط‌بندی‌ها برای افزایش نرخ بهره فدرال رزرو را تقویت می‌کند.",
       "date": "Fri, 04 Sep 2026",
