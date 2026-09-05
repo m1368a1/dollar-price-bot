@@ -32,7 +32,7 @@ git push -u origin main
 
 | Name | Value |
 |------|-------|
-| `TELEGRAM_TOKEN` | `REDACTED_TOKEN` |
+| `TELEGRAM_TOKEN` | ⚠️ توکن را اینجا ننویسید! فقط از BotFather بگیرید و مستقیم در GitHub Secrets وارد کنید |
 | `TELEGRAM_CHANNEL` | `@robomohsen` |
 
 ### 4. فعال‌سازی GitHub Actions
