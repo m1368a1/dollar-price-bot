@@ -30,6 +30,8 @@ Features:
 
 
 
+import base64
+
 import requests
 
 import json
@@ -46,7 +48,7 @@ import warnings
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-from datetime import datetime
+from datetime import datetime, date, timedelta, timezone
 
 
 
@@ -64,7 +66,10 @@ TELEGRAM_CHANNEL = os.environ.get("TELEGRAM_CHANNEL", "@robomohsen")
 
 
 
-# ============================================================
+# Module-level variable for top coins data (used by dashboard)
+_TOP10_COINS = []
+
+# ===============================================================
 
 #  SECTION 1: Iran Market Prices (bonbast.com)
 
@@ -293,6 +298,7 @@ def build_crypto_rsi_message(report):
 
 
 def fetch_global_market():
+    global _TOP10_COINS
 
     """Fetch global crypto market data from CoinGecko."""
 
@@ -313,15 +319,17 @@ def fetch_global_market():
 
         r2 = s.get("https://api.coingecko.com/api/v3/search/trending", timeout=15)
 
-        trending = r2.json()["coins"][:5]
+        trending_data = r2.json()
+        trending = trending_data.get("coins", [])[:5] if isinstance(trending_data, dict) else []
 
 
 
         r3 = s.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&price_change_percentage=24h", timeout=15)
 
-        top_coins = r3.json()
+        top_data = r3.json()
+        top_coins = top_data if isinstance(top_data, list) else []
 
-
+        _TOP10_COINS = top_coins
 
         return {
 
@@ -565,18 +573,23 @@ def fmt(n):
 
 
 
-def send_telegram(text, chat_id=None):
+def send_telegram(text, chat_id=None, web_app_url=None):
 
     """Send one Telegram message and return success."""
     if not text:
         return False
     try:
 
+        payload = {"chat_id": chat_id or TELEGRAM_CHANNEL, "text": text}
+        if web_app_url:
+            payload["reply_markup"] = {
+                "inline_keyboard": [[{"text": "\U0001f310 \u0628\u0627\u0632\u062f\u06cc\u062f\u0646 \u062f\u0634\u0628\u0648\u0631\u062f", "url": web_app_url}]]
+            }
         resp = requests.post(
 
             f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage",
 
-            json={"chat_id": chat_id or TELEGRAM_CHANNEL, "text": text},
+            json=payload,
 
             timeout=15,
 
@@ -607,6 +620,24 @@ def send_telegram(text, chat_id=None):
         return False
 
 
+
+def set_bot_menu_button():
+    """Set the bot menu button to open the web app dashboard."""
+    try:
+        dashboard_url = "https://m1368a1.github.io/dollar-price-bot/dashboard.html"
+        requests.post(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/setChatMenuButton",
+            json={
+                "menu_button": {
+                    "type": "web_app",
+                    "text": "Start",
+                    "web_app": {"url": dashboard_url}
+                }
+            },
+            timeout=10,
+        )
+    except Exception:
+        pass
 
 
 
@@ -890,6 +921,158 @@ def fetch_investing_news():
         return []
 
 
+
+
+
+def detect_candlestick_pattern(klines):
+
+    """Detect strong candlestick patterns from 1h klines (Binance format).
+
+    Returns (direction, name) or None. direction is bullish/bearish/neutral."""
+
+    try:
+
+        candles = [{"o": float(k[1]), "h": float(k[2]), "l": float(k[3]), "c": float(k[4])} for k in klines]
+
+        n = len(candles)
+
+        if n < 5:
+
+            return None
+
+        last = candles[-1]
+
+        body = abs(last["c"] - last["o"])
+
+        rng = last["h"] - last["l"]
+
+        uppershadow = last["h"] - max(last["o"], last["c"])
+
+        lowershadow = min(last["o"], last["c"]) - last["l"]
+
+        # Hammer (bullish reversal)
+
+        if rng > 0 and lowershadow > body * 2 and lowershadow > rng * 0.5 and uppershadow < body:
+
+            return ("bullish", "\u0686\u06a9\u0634 (Hammer)")
+
+        # Shooting Star (bearish reversal)
+
+        if rng > 0 and uppershadow > body * 2 and uppershadow > rng * 0.5 and lowershadow < body:
+
+            return ("bearish", "\u0633\u062a\u0627\u0631\u0647 \u062b\u0627\u0642\u0628 (Shooting Star)")
+
+        # Bullish / Bearish Engulfing
+
+        if n >= 2:
+
+            p = candles[-2]
+
+            pb = p["c"] - p["o"]
+
+            cb = last["c"] - last["o"]
+
+            if pb < 0 and cb > 0 and last["o"] <= p["c"] and last["c"] >= p["o"]:
+
+                return ("bullish", "\u0627\u0646\u06af\u0648\u0644\u0641\u06cc\u0646\u06af \u0635\u0639\u0648\u062f\u06cc (Bullish Engulfing)")
+
+            if pb > 0 and cb < 0 and last["o"] >= p["c"] and last["c"] <= p["o"]:
+
+                return ("bearish", "\u0627\u0646\u06af\u0648\u0644\u0641\u06cc\u0646\u06af \u0646\u0632\u0648\u0644\u06cc (Bearish Engulfing)")
+
+        # Morning Star / Evening Star (3 candles)
+
+        if n >= 3:
+
+            a, b, cc = candles[-3], candles[-2], candles[-1]
+
+            if (a["c"] < a["o"]) and (abs(cc["c"] - cc["o"]) > abs(a["c"] - a["o"]) * 0.7) and (cc["c"] > cc["o"]) and (abs(b["c"] - b["o"]) < abs(a["c"] - a["o"]) * 0.4):
+
+                return ("bullish", "\u0633\u062a\u0627\u0631\u0647 \u0635\u0628\u062d\u06af\u0627\u0647\u06cc (Morning Star)")
+
+            if (a["c"] > a["o"]) and (abs(cc["c"] - cc["o"]) > abs(a["c"] - a["o"]) * 0.7) and (cc["c"] < cc["o"]) and (abs(b["c"] - b["o"]) < abs(a["c"] - a["o"]) * 0.4):
+
+                return ("bearish", "\u0633\u062a\u0627\u0631\u0647 \u063a\u0631\u0648\u0628 (Evening Star)")
+
+        # Three White Soldiers / Three Black Crows
+
+        if n >= 3:
+
+            a, b, cc = candles[-3], candles[-2], candles[-1]
+
+            if a["c"] > a["o"] and b["c"] > b["o"] and cc["c"] > cc["o"] and cc["c"] > b["c"] > a["c"]:
+
+                return ("bullish", "\u0633\u0647 \u0633\u0631\u0628\u0627\u0632 \u0633\u0641\u06cc\u062f (Three White Soldiers)")
+
+            if a["c"] < a["o"] and b["c"] < b["o"] and cc["c"] < cc["o"] and cc["c"] < b["c"] < a["c"]:
+
+                return ("bearish", "\u0633\u0647 \u06a9\u0644\u0627\u063a \u0633\u06cc\u0627\u0647 (Three Black Crows)")
+
+        # Doji (indecision)
+
+        if rng > 0 and body < rng * 0.1:
+
+            return ("neutral", "\u062f\u0648\u062c\u06cc (Doji)")
+
+    except Exception as e:
+
+        print(f"  Candlestick detect error: {e}", file=sys.stderr)
+
+    return None
+
+
+
+
+
+def fetch_bloomberg_news():
+
+    """Fetch breaking market news headlines from Bloomberg RSS feed."""
+
+    try:
+
+        import xml.etree.ElementTree as ET
+
+        s = requests.Session()
+
+        s.verify = False
+
+        s.headers.update({"User-Agent": "Mozilla/5.0"})
+
+        r = s.get("https://feeds.bloomberg.com/markets/news.rss", timeout=15)
+
+        root = ET.fromstring(r.text)
+
+        items = root.findall(".//item")
+
+        news = []
+
+        keywords = ["usd", "dollar", "gold", "bitcoin", "btc", "oil", "fed", "inflation",
+
+                     "interest rate", "gdp", "employment", "cpi", "treasury", "bond",
+
+                     "crypto", "ethereum", "forex", "market", "recession", "trade war",
+
+                     "iran", "sanctions", "oil price", "crude", "gold price", "currency"]
+
+        for item in items[:25]:
+
+            title = item.findtext("title", "")
+
+            pub_date = item.findtext("pubDate", "")
+
+            title_lower = title.lower()
+
+            if any(kw in title_lower for kw in keywords):
+
+                news.append({"title": title, "date": pub_date[:16], "source": "Bloomberg"})
+
+        return news[:6]  # Top 6 relevant Bloomberg headlines
+
+    except Exception as e:
+
+        print(f"  Bloomberg RSS error: {e}", file=sys.stderr)
+
+        return []
 
 
 
@@ -1285,6 +1468,159 @@ def _build_command_response(command):
     return None
 
 
+ANALYSES_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "analyses")
+ANALYSES_MANIFEST = os.path.join(ANALYSES_DIR, "manifest.json")
+ANALYSES_KEEP_DAYS = 365
+
+# Only these Telegram chat IDs may submit analysis photos (owner allowlist).
+# Extend by setting the ANALYSIS_ALLOWED_CHATS env var, e.g. "7902915191,426270134"
+ANALYSIS_ALLOWED_CHATS = {
+    int(x) for x in os.environ.get("ANALYSIS_ALLOWED_CHATS", "7902915191,426270134").replace(" ", "").split(",") if x
+}
+
+
+def _load_analyses_manifest():
+    try:
+        with open(ANALYSES_MANIFEST, "r", encoding="utf-8") as handle:
+            return json.load(handle)
+    except (FileNotFoundError, ValueError):
+        return []
+
+
+def _save_analyses_manifest(items):
+    os.makedirs(ANALYSES_DIR, exist_ok=True)
+    with open(ANALYSES_MANIFEST, "w", encoding="utf-8") as handle:
+        json.dump(items, handle, ensure_ascii=False, indent=1)
+
+
+def collect_daily_analysis_photos():
+    """Download photos sent to the bot and archive them as daily analyses.
+
+    Every authorized photo is stored as a unique archive entry. A newer
+    photo becomes the latest dashboard image, while older photos remain
+    available in the analysis history.
+    """
+    offset_file = os.environ.get("TELEGRAM_OFFSET_FILE", "telegram-command-offset.txt")
+    try:
+        with open(offset_file, "r", encoding="utf-8") as handle:
+            offset = int(handle.read().strip())
+    except (FileNotFoundError, ValueError):
+        offset = 0
+
+    manifest = _load_analyses_manifest()
+    processed_update_ids = {
+        str(item.get("update_id")) for item in manifest if item.get("update_id") is not None
+    }
+    new_offset = offset
+    found_any = False
+
+    try:
+        response = requests.get(
+            f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getUpdates",
+            params={"offset": offset, "timeout": 1, "allowed_updates": '["message"]'},
+            timeout=8,
+        )
+        updates = response.json().get("result", [])
+        for update in updates:
+            new_offset = max(new_offset, update["update_id"] + 1)
+            message = update.get("message", {})
+            chat_id = message.get("chat", {}).get("id")
+            sender_id = message.get("from", {}).get("id", chat_id)
+            if not chat_id:
+                continue
+            caption = (message.get("caption") or "").strip()
+            text = (message.get("text") or "").strip()
+            photo = message.get("photo") or []
+            document = message.get("document") or {}
+            is_image_document = str(document.get("mime_type", "")).startswith("image/")
+            update_id = update.get("update_id")
+
+            if (photo or is_image_document or (caption and not text.startswith("/"))) and sender_id not in ANALYSIS_ALLOWED_CHATS:
+                # Silently ignore analysis submissions from non-owner accounts.
+                print(f"  [SKIP] unauthorized analysis submission from {sender_id}")
+                continue
+
+            if str(update_id) in processed_update_ids:
+                continue
+
+            if photo or is_image_document:
+                # Use the largest Telegram photo variant or the original image document.
+                file_id = photo[-1].get("file_id") if photo else document.get("file_id")
+                try:
+                    meta = requests.get(
+                        f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/getFile",
+                        params={"file_id": file_id},
+                        timeout=15,
+                    ).json()
+                    file_path = meta.get("result", {}).get("file_path")
+                    if not file_path:
+                        continue
+                    img = requests.get(
+                        f"https://api.telegram.org/file/bot{TELEGRAM_TOKEN}/{file_path}",
+                        timeout=30,
+                    )
+                    img.raise_for_status()
+                    today = datetime.now(timezone(timedelta(hours=3, minutes=30))).date().isoformat()
+                    os.makedirs(ANALYSES_DIR, exist_ok=True)
+                    ext = os.path.splitext(file_path)[1].lower() or ".jpg"
+                    if ext not in {".jpg", ".jpeg", ".png", ".webp"}:
+                        ext = ".jpg"
+                    base_name = today + "_" + str(update_id)
+                    fname = base_name + ext
+                    with open(os.path.join(ANALYSES_DIR, fname), "wb") as handle:
+                        handle.write(img.content)
+                    entry = {
+                        "date": today,
+                        "file": "analyses/" + fname,
+                        "caption": caption or "تحلیل روزانه",
+                        "added": datetime.now().strftime("%Y-%m-%d %H:%M"),
+                        "update_id": update_id,
+                    }
+                    manifest.append(entry)
+                    processed_update_ids.add(str(update_id))
+                    manifest = sorted(manifest, key=lambda x: (x.get("date", ""), x.get("added", ""), x.get("update_id", 0)))
+                    found_any = True
+                    print(f"  [OK] analysis photo saved: {fname}")
+                    try:
+                        send_telegram(
+                            "✅ تحلیل امروز ذخیره شد و در داشبورد منتشر گردید.\n📅 " + today,
+                            chat_id=chat_id,
+                        )
+                    except Exception:
+                        pass
+                except Exception as exc:
+                    print(f"  Analysis photo download failed: {exc}", file=sys.stderr)
+            elif caption and not text.startswith("/"):
+                # Caption-only text updates today's analysis caption
+                today = datetime.now(timezone(timedelta(hours=3, minutes=30))).date().isoformat()
+                for item in reversed(manifest):
+                    if item.get("date") == today:
+                        item["caption"] = caption
+                        found_any = True
+                        break
+
+        # Do not persist this offset here. poll_telegram_commands() shares the
+        # same update stream and persists it after processing commands.
+        if found_any:
+            manifest = _prune_old_analyses(manifest)
+            _save_analyses_manifest(manifest)
+    except Exception as exc:
+        print(f"  Analysis photo polling skipped: {exc}", file=sys.stderr)
+
+
+def _prune_old_analyses(manifest):
+    """Keep the manifest bounded to the last ANALYSES_KEEP_DAYS days."""
+    cutoff = (datetime.now(timezone(timedelta(hours=3, minutes=30))).date() - timedelta(days=ANALYSES_KEEP_DAYS)).isoformat()
+    kept = [item for item in manifest if item.get("date", "") >= cutoff]
+    removed = [item for item in manifest if item.get("date", "") < cutoff]
+    for item in removed:
+        try:
+            os.remove(os.path.join(ANALYSES_DIR, os.path.basename(item.get("file", ""))))
+        except OSError:
+            pass
+    return kept
+
+
 def poll_telegram_commands():
     """Process recent private commands without interfering with scheduled channel posts."""
     offset_file = os.environ.get("TELEGRAM_OFFSET_FILE", "telegram-command-offset.txt")
@@ -1323,6 +1659,11 @@ def main():
     date_str = now.strftime("%Y-%m-%d %H:%M")
 
 
+
+    # Set bot menu button to web app (runs once, harmless if repeated)
+    set_bot_menu_button()
+
+    collect_daily_analysis_photos()
 
     poll_telegram_commands()
 
@@ -2037,6 +2378,7 @@ def main():
 
 
 
+
     # ============================================================
 
     #  MESSAGE 9: Whale Alert (only if > 500 BTC found)
@@ -2652,6 +2994,13 @@ def main():
 
     # ============================================================
 
+    signal_snapshot = {
+        "score": 0,
+        "label": "سیگنال صبر",
+        "factors": [],
+        "confidence": 50,
+    }
+
     try:
 
         signals = []
@@ -2672,7 +3021,7 @@ def main():
 
                 score += 30
 
-            elif fg_val >= 75:
+            elif fg_val >= 80:
 
                 signals.append(("\U0001f534 \u0641\u0631\u0648\u0634", f"\u0637\u0645\u0639 \u0634\u062f\u06cc\u062f ({fg_val}/100)"))
 
@@ -2719,6 +3068,22 @@ def main():
                 else:
 
                     signals.append(("\u27a1\ufe0f", f"\u0631\u0648\u0646\u062f \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646: \u062e\u0646\u062b\u06cc؛ {btc_7d:+.1f}% \u062f\u0631 ۷ \u0631\u0648\u0632"))
+                # Signal 2b: 24h momentum
+                try:
+                    now_ts = prices[-1][0]
+                    day_ago = [p for p in prices if p[0] <= now_ts - 86400000]
+                    if day_ago:
+                        btc_24h = (prices[-1][1] - day_ago[-1][1]) / day_ago[-1][1] * 100
+                        if btc_24h > 3:
+                            signals.append(("\U0001f4c8 \u0645\u0648\u0645\u0646\u062a\u0648\u0645 \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647", f"BTC {btc_24h:+.1f}% \u062f\u0631 \u06f2\u06f4 \u0633\u0627\u0639\u062a"))
+                            score += 15
+                        elif btc_24h < -3:
+                            signals.append(("\U0001f4c9 \u0645\u0648\u0645\u0646\u062a\u0648\u0645 \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647", f"BTC {btc_24h:+.1f}% \u062f\u0631 \u06f2\u06f4 \u0633\u0627\u0639\u062a"))
+                            score -= 15
+                        else:
+                            signals.append(("\u27a1\ufe0f \u0645\u0648\u0645\u0646\u062a\u0648\u0645 \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647", f"BTC {btc_24h:+.1f}% \u062f\u0631 \u06f2\u06f4 \u0633\u0627\u0639\u062a"))
+                except Exception:
+                    pass
 
         except Exception:
 
@@ -2726,23 +3091,25 @@ def main():
 
 
 
-        # Signal 3: Whale activity
+        # Signal 3: Whale activity (exchange-focused)
 
         if whale_unconfirmed:
 
-            total_btc = whale_unconfirmed.get('total_whale_btc', 0)
-
             whale_count = len(whale_unconfirmed.get('whales', []))
 
-            if total_btc > 5000:
+            to_ex = sum(1 for w in whale_unconfirmed.get('whales', []) if w.get('exchange_out'))
 
-                signals.append(("\U0001f4c9 \u0646\u0647\u0646\u06af\u0647\u0627 \u0641\u0631\u0648\u0634\u0646\u0646\u062f\u0647", f"{fmt(total_btc)} BTC \u062f\u0631 \u0631\u0627\u0647 \u0641\u0631\u0648\u0634"))
+            from_ex = sum(1 for w in whale_unconfirmed.get('whales', []) if w.get('exchange_in'))
+
+            if to_ex >= 3:
+
+                signals.append(("\U0001f4c9 \u0646\u0647\u0646\u06af\u0647\u0627 \u0641\u0631\u0648\u0634\u0646\u0646\u062f\u0647", f"{to_ex} \u0627\u0646\u062a\u0642\u0627\u0644 \u0628\u0632\u0631\u06af \u0628\u0647 \u0635\u0631\u0627\u0641\u06cc"))
 
                 score -= 20
 
-            elif whale_count > 3:
+            elif from_ex >= 3:
 
-                signals.append(("\U0001f4c8 \u0646\u0647\u0646\u06af\u0647\u0627 \u062e\u0631\u06cc\u062f\u0627\u0631", f"{whale_count} \u062a\u0631\u0627\u06a9\u0646\u0634 \u0628\u0632\u0631\u06af"))
+                signals.append(("\U0001f4c8 \u0646\u0647\u0646\u06af\u0647\u0627 \u062e\u0631\u06cc\u062f\u0627\u0631", f"{from_ex} \u0628\u0631\u062f\u0627\u0634\u062a \u0628\u0632\u0631\u06af \u0627\u0632 \u0635\u0631\u0627\u0641\u06cc"))
 
                 score += 15
 
@@ -2752,27 +3119,93 @@ def main():
 
 
 
-        # Signal 4: Iran gold premium
+        # Signal 4: BTC daily RSI
 
-        iran_gold_oz = gold * 31.1
+        try:
 
-        intl_gold_oz = ounce_usd * usd_sell
+            s_rsi = requests.Session()
 
-        if intl_gold_oz > 0:
+            s_rsi.verify = False
 
-            premium = ((iran_gold_oz - intl_gold_oz) / intl_gold_oz * 100)
+            r_rsi = s_rsi.get("https://api.binance.us/api/v3/klines", params={"symbol": "BTCUSDT", "interval": "1d", "limit": 100}, timeout=10)
 
-            if premium > 10:
+            closes = [float(row[4]) for row in r_rsi.json()]
 
-                signals.append(("\U0001f4a1 \u0637\u0644\u0627 \u06af\u0631\u0627\u0646", f"\u0627\u06cc\u0631\u0627\u0646 {premium:.0f}% \u06af\u0631\u0627\u0646\u062a\u0631"))
+            if len(closes) > 15:
 
-                score -= 10
+                gains, losses = [], []
 
-            elif premium < -3:
+                for prev, cur in zip(closes[-15:-1], closes[-14:]):
 
-                signals.append(("\U0001f4a1", f"\u0645\u0642\u0627\u06cc\u0633\u0647 \u0637\u0644\u0627: \u0627\u06cc\u0631\u0627\u0646 {abs(premium):.0f}% \u0627\u0631\u0632\u0627\u0646\u200c\u062a\u0631؛ \u0646\u06cc\u0627\u0632\u0645\u0646\u062f \u0628\u0631\u0631\u0633\u06cc \u0628\u06cc\u0634\u062a\u0631"))
+                    delta = cur - prev
 
-                score += 10
+                    gains.append(max(delta, 0))
+
+                    losses.append(max(-delta, 0))
+
+                gain = sum(gains) / 14
+
+                loss = sum(losses) / 14
+
+                btc_rsi = 100.0 if loss == 0 else 100 - (100 / (1 + gain / loss))
+
+                if btc_rsi < 30:
+
+                    signals.append(("\U0001f4c8 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u0641\u0631\u0648\u0634 ({btc_rsi:.0f}) \u2014 \u0641\u0631\u0635\u062a \u062e\u0631\u06cc\u062f"))
+
+                    score += 15
+
+                elif btc_rsi > 75:
+
+                    signals.append(("\U0001f4c9 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0627\u0634\u0628\u0627\u0639 \u062e\u0631\u06cc\u062f ({btc_rsi:.0f}) \u2014 \u0627\u062d\u062a\u0645\u0627\u0644 \u0627\u0635\u0644\u0627\u062d"))
+
+                    score -= 15
+
+                else:
+
+                    signals.append(("\u2705 RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646", f"\u0645\u0639\u062a\u062f\u0644: {btc_rsi:.0f}"))
+
+        except Exception:
+
+            pass
+
+
+
+        # Signal 5: Candlestick patterns (1h timeframe)
+
+        try:
+
+            s_c = requests.Session()
+
+            s_c.verify = False
+
+            r_c = s_c.get("https://api.binance.us/api/v3/klines", params={"symbol": "BTCUSDT", "interval": "1h", "limit": 30}, timeout=10)
+
+            pattern = detect_candlestick_pattern(r_c.json())
+
+            if pattern:
+
+                direction, name = pattern
+
+                if direction == "bullish":
+
+                    signals.append(("\U0001f4c8 \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9", f"{name} \u2014 \u0646\u0634\u0627\u0646\u0647 \u0635\u0639\u0648\u062f"))
+
+                    score += 20
+
+                elif direction == "bearish":
+
+                    signals.append(("\U0001f4c9 \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9", f"{name} \u2014 \u0646\u0634\u0627\u0646\u0647 \u0646\u0632\u0648\u0644"))
+
+                    score -= 20
+
+                else:
+
+                    signals.append(("\u2705 \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9", f"{name} \u2014 \u062a\u0635\u0645\u06cc\u0645\u06cc"))
+
+        except Exception:
+
+            pass
 
 
 
@@ -2780,13 +3213,13 @@ def main():
 
         score = max(-100, min(100, score))
 
-        if score >= 30:
+        if score >= 25:
 
             final = "\U0001f7e2 \u0633\u06cc\u06af\u0646\u0627\u0644 \u062e\u0631\u06cc\u062f"
 
             final_emoji = "\U0001f7e2"
 
-        elif score <= -30:
+        elif score <= -25:
 
             final = "\U0001f534 \u0633\u06cc\u06af\u0646\u0627\u0644 \u0641\u0631\u0648\u0634"
 
@@ -2802,7 +3235,7 @@ def main():
 
         msg14 = f"\U0001f9ed \u062a\u062d\u0644\u06cc\u0644 \u0628\u0627\u0632\u0627\u0631: \u067e\u06cc\u0634\u0646\u0647\u0627\u062f \u0635\u0628\u0631\n\n"
 
-        msg14 += f"{final_emoji} \u0648\u0636\u0639\u06cc\u062a \u06a9\u0644\u06cc: \u062e\u0646\u062b\u06cc\n" if -30 < score < 30 else f"{final_emoji} {final}\n"
+        msg14 += f"{final_emoji} \u0648\u0636\u0639\u06cc\u062a \u06a9\u0644\u06cc: \u062e\u0646\u062b\u06cc\n" if -25 < score < 25 else f"{final_emoji} {final}\n"
 
         msg14 += f"\U0001f4ca \u0627\u0645\u062a\u06cc\u0627\u0632 \u06a9\u0644\u06cc: {score:+d} \u0627\u0632 100\n\n"
 
@@ -2810,9 +3243,31 @@ def main():
 
             msg14 += f"• {desc}\n"
 
-        msg14 += f"\n\u26a0\ufe0f \u0627\u06cc\u0646 \u067e\u06cc\u0627\u0645 \u062a\u0648\u0635\u06cc\u0647 \u0645\u0627\u0644\u06cc \u0646\u06cc\u0633\u062a؛ \u067e\u06cc\u0634 \u0627\u0632 \u0645\u0639\u0627\u0645\u0644\u0647 \u062f\u0627\u062f\u0647\u200c\u0647\u0627 \u0648 \u0645\u0646\u0627\u0628\u0639 \u0631\u0627 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646\u06cc\u062f."
+        msg14 += "\n\U0001f9ed \u0645\u0628\u0646\u0627\u06cc \u0633\u06cc\u06af\u0646\u0627\u0644:\n   \u25cf \u062a\u0631\u0633 \u0648 \u0637\u0645\u0639 (\u067e\u0633\u0627\u0646\u0633)\n   \u25cf \u0631\u0648\u0646\u062f 7 \u0631\u0648\u0632\u0647 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 (\u062a\u0631\u0646\u062f)\n   \u25cf \u0645\u0648\u0645\u0646\u062a\u0648\u0645 \u06f2\u06f4 \u0633\u0627\u0639\u062a\u0647 \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646\n   \u25cf RSI \u0628\u06cc\u062a\u06a9\u0648\u06cc\u0646 (\u0627\u0634\u0628\u0627\u0639 \u062e\u0631\u06cc\u062f/\u0641\u0631\u0648\u0634)\n   \u25cf \u0641\u0639\u0627\u0644\u06cc\u062a \u0646\u0647\u0646\u06af\u200c\u0647\u0627 (\u0648\u0631\u0648\u062f/\u062e\u0631\u0648\u062c \u0628\u062a\u06a9\u0648\u06cc\u0646)\n   \u25cf \u0627\u0644\u06af\u0648\u06cc \u06a9\u0646\u062f\u0644\u0627\u0633\u062a\u06cc\u06a9 \u0633\u0627\u0639\u062a\u06cc (\u062d\u0645\u0644\u0647\u200c\u0647\u0627\u06cc \u0635\u0639\u0648\u062f/\u0646\u0632\u0648\u0644)\n"
+
+        msg14 += f"\n\u26a0\ufe0f \u0627\u06cc\u0646 \u067e\u06cc\u0627\u0645 \u062a\u0648\u0635\u06cc\u0647 \u0645\u0627\u0644\u06cc \u0646\u06cc\u0633\u062a؛ \u067e\u06cc\u0634 \u0627\u0632 \u0645\u0639\u0627\u0645\u0644\u0647 \u062f\u0627\u062f\u0647\u200c\u0647\u0627 \u0648 \u0645\u0646\u0627\u0628\u0639 \u0631\u0627 \u0628\u0631\u0631\u0633\u06cc \u06a9\u0646\u06cc\u062f.\n"
+
+        msg14 += "\U0001f916 RoboMohsen Bot"
 
 
+
+        # Persist the exact factors used by the bot so the web app explains the same signal.
+        factor_items = []
+        for factor_emoji, factor_desc in signals:
+            if any(word in factor_desc for word in ("فروش", "نزول", "اصلاح")):
+                tone = "bearish"
+            elif any(word in factor_desc for word in ("خرید", "صعود", "برداشت", "مثبت")):
+                tone = "bullish"
+            else:
+                tone = "neutral"
+            factor_items.append({"text": factor_desc, "tone": tone})
+        signal_snapshot = {
+            "score": score,
+            "label": final,
+            "factors": factor_items,
+            "confidence": min(95, max(50, 50 + abs(score) // 2)),
+            "updated": datetime.now().strftime("%Y-%m-%d %H:%M"),
+        }
 
         send_telegram(msg14)
 
@@ -3185,6 +3640,75 @@ def main():
         print(f"[{date_str}] Errors: {'; '.join(errors)}")
 
 
+
+    # Save prices.json for dashboard
+    try:
+        prices = {
+            "timestamp": date_str,
+            "usd_sell": usd_sell if 'usd_sell' in dir() else 0,
+            "usd_buy": usd_buy if 'usd_buy' in dir() else 0,
+            "gold_18k": gold if 'gold' in dir() else 0,
+            "btc_usd": btc_usd if 'btc_usd' in dir() else 0,
+            "fear_greed": fear_greed.get("value", 0) if fear_greed else 0,
+            "btc_dominance": global_market.get("btc_dominance", 0) if global_market else 0,
+            "market_cap": global_market.get("total_market_cap_t", 0) * 1e12 if global_market else 0,
+            "market_volume": global_market.get("total_volume_t", 0) * 1e12 if global_market else 0,
+            "market_change": global_market.get("market_cap_change_24h", 0) if global_market else 0,
+            "top10": [],
+            "signal": signal_snapshot,
+        }
+        top10_data = globals().get('_TOP10_COINS', [])
+        if top10_data:
+            for c in top10_data[:10]:
+                prices["top10"].append({
+                    "symbol": c.get("symbol", ""),
+                    "price": c.get("current_price", 0),
+                    "change_24h": c.get("price_change_percentage_24h", 0),
+                    "market_cap": c.get("market_cap", 0),
+                })
+        # Save whale analysis to prices dict
+        try:
+            wh_data = {}
+            if whale_unconfirmed:
+                wh_score = _whale_activity_score(whale_unconfirmed)
+                wh_level = "زیاد" if wh_score >= 65 else "متوسط" if wh_score >= 30 else "کم"
+                whales = whale_unconfirmed.get("whales", [])
+                wh_data["unconfirmed"] = {
+                    "score": wh_score,
+                    "level": wh_level,
+                    "count": len(whales),
+                    "total_btc": whale_unconfirmed.get("total_whale_btc", 0),
+                    "mega_whales": whale_unconfirmed.get("mega_whales", 0),
+                    "large_whales": whale_unconfirmed.get("large_whales", 0),
+                    "medium_whales": whale_unconfirmed.get("medium_whales", 0),
+                    "top": [{"btc": w.get("btc", 0), "tier": w.get("tier", ""), "fee": w.get("fee", 0), "inputs": w.get("inputs", 0), "outputs": w.get("outputs", 0), "direction": "exchange_out" if w.get("exchange_out") else "exchange_in" if w.get("exchange_in") else "unknown"} for w in whales[:3]],
+                }
+            if whale_wallets and whale_wallets.get("wallets"):
+                wh_data["wallets"] = {"total_btc": whale_wallets.get("total_btc", 0), "wallets": [{"label": w.get("label", ""), "balance": w.get("balance", 0)} for w in whale_wallets["wallets"][:4]]}
+            prices["whales"] = wh_data
+        except Exception as e:
+            print(f"  Whale save error: {e}", file=sys.stderr)
+            prices["whales"] = {}
+
+        # Save Investing.com + Bloomberg news (translated) as separate fields
+        try:
+            inews = fetch_investing_news()
+            bnews = fetch_bloomberg_news()
+            prices["news_investing"] = [{"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Investing.com"} for n in inews[:5]]
+            prices["news_bloomberg"] = [{"title": _translate_news_title(n["title"]), "date": n.get("date", ""), "source": "Bloomberg"} for n in bnews[:6]]
+            prices["news"] = prices["news_investing"] + prices["news_bloomberg"]
+        except Exception as e:
+            print(f"  News save error: {e}", file=sys.stderr)
+            prices["news"] = []
+            prices["news_investing"] = []
+            prices["news_bloomberg"] = []
+
+        import json as _json
+        with open("prices.json", "w", encoding="utf-8") as f:
+            _json.dump(prices, f, ensure_ascii=False, indent=2)
+        print(f"[{date_str}] Saved prices.json")
+    except Exception as e:
+        print(f"[{date_str}] prices.json error: {e}", file=sys.stderr)
 
     print(f"[{date_str}] All done! ({len(errors)} errors)")
 
