@@ -1,89 +1,108 @@
 {
-  "timestamp": "2026-09-05 10:26",
-  "usd_sell": 226000,
-  "usd_buy": 225900,
-  "gold_18k": 23627591,
-  "btc_usd": 79651.95,
+  "timestamp": "2026-09-05 10:38",
+  "usd_sell": 226200,
+  "usd_buy": 226100,
+  "gold_18k": 23655293,
+  "btc_usd": 79617.47,
   "fear_greed": 73,
   "btc_dominance": 59.0,
-  "market_cap": 2700000000000.0,
+  "market_cap": 2710000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -3.11,
+  "market_change": -3.09,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79626,
-      "change_24h": -1.48435,
-      "market_cap": 1598616864704
+      "price": 79608,
+      "change_24h": -1.75945,
+      "market_cap": 1598523397298
     },
     {
       "symbol": "eth",
-      "price": 2455.69,
-      "change_24h": -2.40287,
-      "market_cap": 299590155705
+      "price": 2454.57,
+      "change_24h": -2.81512,
+      "market_cap": 299503835511
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": 0.01384,
-      "market_cap": 183398542083
+      "change_24h": 0.01131,
+      "market_cap": 183400453999
     },
     {
       "symbol": "bnb",
-      "price": 750.2,
-      "change_24h": 4.49609,
-      "market_cap": 99913433295
+      "price": 747.78,
+      "change_24h": 3.76653,
+      "market_cap": 99564350466
     },
     {
       "symbol": "xrp",
       "price": 1.4,
-      "change_24h": -2.69531,
-      "market_cap": 88079169786
+      "change_24h": -2.96491,
+      "market_cap": 88127682411
     },
     {
       "symbol": "usdc",
-      "price": 0.999971,
-      "change_24h": 0.00971,
-      "market_cap": 74599652829
+      "price": 0.99997,
+      "change_24h": 0.00947,
+      "market_cap": 74599687133
     },
     {
       "symbol": "sol",
-      "price": 102.47,
-      "change_24h": -1.0908,
-      "market_cap": 59953088768
+      "price": 102.56,
+      "change_24h": -1.38461,
+      "market_cap": 60033755580
     },
     {
       "symbol": "trx",
-      "price": 0.332489,
-      "change_24h": 1.42614,
-      "market_cap": 31567445017
+      "price": 0.332768,
+      "change_24h": 1.42169,
+      "market_cap": 31591464543
     },
     {
       "symbol": "figr_heloc",
       "price": 1.039,
       "change_24h": null,
-      "market_cap": 23113675338
+      "market_cap": 23113418271
     },
     {
       "symbol": "hype",
-      "price": 84.64,
-      "change_24h": -2.41326,
-      "market_cap": 18822966953
+      "price": 84.76,
+      "change_24h": -2.37381,
+      "market_cap": 18854284284
     }
   ],
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 8,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 289.92,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 289.92,
+          "tier": "متوسط",
+          "fee": 5.32e-06,
+          "inputs": 1,
+          "outputs": 2,
+          "direction": "unknown"
+        }
+      ]
     }
   },
   "news_investing": [
+    {
+      "title": "گلدمن ساکس با توجه به چشم‌انداز درآمد شرکت‌های فناوری، هدف‌گذاری خود برای سهام آسیا-اقیانوسیه را افزایش داد.",
+      "date": "2026-09-05 10:33",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سه سناریو که می‌تواند قیمت طلا را به بالای ۵۰۰۰ دلار برساند",
+      "date": "2026-09-05 10:20",
+      "source": "Investing.com"
+    },
     {
       "title": "میلیاردر ونزوئلایی که آمریکا به اتهام پولشویی او را تحت نظر داشت، اکنون با پنتاگون قرارداد نفتی دارد.",
       "date": "2026-09-05 10:06",
@@ -97,11 +116,6 @@
     {
       "title": "فاکسکان می‌گوید سه‌ماهه سوم امسال به دلیل قدرت هوش مصنوعی، فراتر از انتظارات بازار عمل خواهد کرد.",
       "date": "2026-09-05 08:18",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بیت کوین با سیگنال دوجی در محدوده ۴۰۰۰ دلار گیر کرده است: سطوح زنده",
-      "date": "2026-09-05 07:02",
       "source": "Investing.com"
     }
   ],
@@ -134,6 +148,16 @@
   ],
   "news": [
     {
+      "title": "گلدمن ساکس با توجه به چشم‌انداز درآمد شرکت‌های فناوری، هدف‌گذاری خود برای سهام آسیا-اقیانوسیه را افزایش داد.",
+      "date": "2026-09-05 10:33",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سه سناریو که می‌تواند قیمت طلا را به بالای ۵۰۰۰ دلار برساند",
+      "date": "2026-09-05 10:20",
+      "source": "Investing.com"
+    },
+    {
       "title": "میلیاردر ونزوئلایی که آمریکا به اتهام پولشویی او را تحت نظر داشت، اکنون با پنتاگون قرارداد نفتی دارد.",
       "date": "2026-09-05 10:06",
       "source": "Investing.com"
@@ -146,11 +170,6 @@
     {
       "title": "فاکسکان می‌گوید سه‌ماهه سوم امسال به دلیل قدرت هوش مصنوعی، فراتر از انتظارات بازار عمل خواهد کرد.",
       "date": "2026-09-05 08:18",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بیت کوین با سیگنال دوجی در محدوده ۴۰۰۰ دلار گیر کرده است: سطوح زنده",
-      "date": "2026-09-05 07:02",
       "source": "Investing.com"
     },
     {
