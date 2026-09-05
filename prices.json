@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-05 19:02",
+  "timestamp": "2026-09-05 20:23",
   "usd_sell": 226800,
   "usd_buy": 226700,
   "gold_18k": 23385197,
-  "btc_usd": 79967.92,
+  "btc_usd": 79787.85,
   "fear_greed": 73,
-  "btc_dominance": 58.9,
+  "btc_dominance": 58.8,
   "market_cap": 2720000000000.0,
   "market_volume": 60000000000.0,
-  "market_change": -1.45,
+  "market_change": -1.96,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79998,
-      "change_24h": 0.40396,
-      "market_cap": 1606366880859
+      "price": 79737,
+      "change_24h": -0.09598,
+      "market_cap": 1601123607257
     },
     {
       "symbol": "eth",
-      "price": 2480.31,
-      "change_24h": 1.14784,
-      "market_cap": 302649723539
+      "price": 2477.38,
+      "change_24h": 0.88246,
+      "market_cap": 302292528951
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": 0.00145,
-      "market_cap": 183402300912
+      "change_24h": -0.00812,
+      "market_cap": 183399284276
     },
     {
       "symbol": "bnb",
-      "price": 777.12,
-      "change_24h": 8.02586,
-      "market_cap": 103482710940
+      "price": 771.57,
+      "change_24h": 7.19686,
+      "market_cap": 102743655749
     },
     {
       "symbol": "xrp",
       "price": 1.42,
-      "change_24h": 1.265,
-      "market_cap": 88970635846
+      "change_24h": 1.20653,
+      "market_cap": 88794545343
     },
     {
       "symbol": "usdc",
-      "price": 0.999992,
-      "change_24h": 0.00679,
-      "market_cap": 74567924183
+      "price": 1.0,
+      "change_24h": 0.00385,
+      "market_cap": 74573997679
     },
     {
       "symbol": "sol",
-      "price": 103.91,
-      "change_24h": 2.12953,
-      "market_cap": 60832829927
+      "price": 103.33,
+      "change_24h": 1.55753,
+      "market_cap": 60495956307
     },
     {
       "symbol": "trx",
-      "price": 0.334267,
-      "change_24h": 0.70837,
-      "market_cap": 31733828325
+      "price": 0.334079,
+      "change_24h": 0.75509,
+      "market_cap": 31716076761
     },
     {
       "symbol": "figr_heloc",
       "price": 1.005,
-      "change_24h": -2.68186,
-      "market_cap": 22395493325
+      "change_24h": -2.67317,
+      "market_cap": 22395813661
     },
     {
       "symbol": "hype",
-      "price": 85.78,
-      "change_24h": 0.75105,
-      "market_cap": 19080590881
+      "price": 85.36,
+      "change_24h": 0.68758,
+      "market_cap": 18988112269
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,15 +80,15 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +2.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +2.1% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.4% در ۲۴ ساعت",
+        "text": "BTC -0.0% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
@@ -96,35 +96,36 @@
         "tone": "neutral"
       },
       {
-        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
-        "tone": "bearish"
+        "text": "چکش (Hammer) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
     "confidence": 60,
-    "updated": "2026-09-05 19:02"
+    "updated": "2026-09-05 20:23"
   },
   "whales": {
     "unconfirmed": {
-      "score": 6,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 139.92,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 139.92,
-          "tier": "متوسط",
-          "fee": 1.044e-05,
-          "inputs": 1,
-          "outputs": 11,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
+    {
+      "title": "UBS: کالاها می‌توانند با افزایش تورم و خطرات ژئوپلیتیکی، تنوع‌بخشی کنند",
+      "date": "2026-09-05 19:17",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بیت کوین نزدیک به مقاومت ۸۲ هزار دلاری تثبیت شد: سطوح زنده",
+      "date": "2026-09-05 19:02",
+      "source": "Investing.com"
+    },
     {
       "title": "مایلی در مخالفت با پروژه نفتی جزایر فالکلند، وحدت نظر پیدا کرد",
       "date": "2026-09-05 18:36",
@@ -138,16 +139,6 @@
     {
       "title": "پس از فروش گسترده اوراق قرضه جهانی، UBS پیش‌بینی می‌کند که اوراق قرضه ۳ تا ۵ ساله بهتر منتقل شوند.",
       "date": "2026-09-05 17:50",
-      "source": "Investing.com"
-    },
-    {
-      "title": "رسانه‌های دولتی می‌گویند انفجار تانکر سوخت پس از تصادف رانندگی در غرب ایران ۱۰ کشته برجای گذاشت",
-      "date": "2026-09-05 16:24",
-      "source": "Investing.com"
-    },
-    {
-      "title": "با افزایش احتمال افزایش نرخ بهره توسط فدرال رزرو توسط داده‌های اشتغال، قیمت بیت‌کوین زیر ۸۰ هزار دلار باقی ماند؛ ورود ETFها ادامه دارد",
-      "date": "2026-09-05 16:17",
       "source": "Investing.com"
     }
   ],
@@ -170,6 +161,16 @@
   ],
   "news": [
     {
+      "title": "UBS: کالاها می‌توانند با افزایش تورم و خطرات ژئوپلیتیکی، تنوع‌بخشی کنند",
+      "date": "2026-09-05 19:17",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بیت کوین نزدیک به مقاومت ۸۲ هزار دلاری تثبیت شد: سطوح زنده",
+      "date": "2026-09-05 19:02",
+      "source": "Investing.com"
+    },
+    {
       "title": "مایلی در مخالفت با پروژه نفتی جزایر فالکلند، وحدت نظر پیدا کرد",
       "date": "2026-09-05 18:36",
       "source": "Investing.com"
@@ -182,16 +183,6 @@
     {
       "title": "پس از فروش گسترده اوراق قرضه جهانی، UBS پیش‌بینی می‌کند که اوراق قرضه ۳ تا ۵ ساله بهتر منتقل شوند.",
       "date": "2026-09-05 17:50",
-      "source": "Investing.com"
-    },
-    {
-      "title": "رسانه‌های دولتی می‌گویند انفجار تانکر سوخت پس از تصادف رانندگی در غرب ایران ۱۰ کشته برجای گذاشت",
-      "date": "2026-09-05 16:24",
-      "source": "Investing.com"
-    },
-    {
-      "title": "با افزایش احتمال افزایش نرخ بهره توسط فدرال رزرو توسط داده‌های اشتغال، قیمت بیت‌کوین زیر ۸۰ هزار دلار باقی ماند؛ ورود ETFها ادامه دارد",
-      "date": "2026-09-05 16:17",
       "source": "Investing.com"
     },
     {
