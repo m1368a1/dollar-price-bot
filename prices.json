@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-05 13:30",
-  "usd_sell": 228100,
-  "usd_buy": 228000,
-  "gold_18k": 23726857,
-  "btc_usd": 79764.34,
+  "timestamp": "2026-09-05 13:52",
+  "usd_sell": 228500,
+  "usd_buy": 228400,
+  "gold_18k": 23708389,
+  "btc_usd": 79704.41,
   "fear_greed": 73,
   "btc_dominance": 58.9,
   "market_cap": 2710000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -1.83,
+  "market_change": -1.84,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79753,
-      "change_24h": 0.53466,
-      "market_cap": 1601445763340
+      "price": 79694,
+      "change_24h": 0.12186,
+      "market_cap": 1600218497870
     },
     {
       "symbol": "eth",
-      "price": 2459.61,
-      "change_24h": 0.38521,
-      "market_cap": 300128363735
+      "price": 2457.57,
+      "change_24h": -0.07511,
+      "market_cap": 299870894615
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": 0.00911,
-      "market_cap": 183406144198
+      "change_24h": 0.01242,
+      "market_cap": 183406660046
     },
     {
       "symbol": "bnb",
-      "price": 763.99,
-      "change_24h": 6.86501,
-      "market_cap": 101726487783
+      "price": 763.82,
+      "change_24h": 6.54473,
+      "market_cap": 101701632041
     },
     {
       "symbol": "xrp",
-      "price": 1.42,
-      "change_24h": 0.62381,
-      "market_cap": 88863351219
+      "price": 1.41,
+      "change_24h": -0.26632,
+      "market_cap": 88746504938
     },
     {
       "symbol": "usdc",
-      "price": 0.999988,
-      "change_24h": 0.00661,
-      "market_cap": 74601757737
+      "price": 0.999995,
+      "change_24h": 0.00871,
+      "market_cap": 74602152967
     },
     {
       "symbol": "sol",
-      "price": 103.16,
-      "change_24h": 1.72996,
-      "market_cap": 60381643549
+      "price": 102.99,
+      "change_24h": 0.91602,
+      "market_cap": 60295582847
     },
     {
       "symbol": "trx",
-      "price": 0.333039,
-      "change_24h": 1.15727,
-      "market_cap": 31612888111
+      "price": 0.333222,
+      "change_24h": 1.09265,
+      "market_cap": 31634073229
     },
     {
       "symbol": "figr_heloc",
       "price": 1.039,
-      "change_24h": 0.66136,
-      "market_cap": 23126089096
+      "change_24h": 0.65718,
+      "market_cap": 23125962380
     },
     {
       "symbol": "hype",
-      "price": 85.53,
-      "change_24h": 0.18453,
-      "market_cap": 19027134674
+      "price": 85.55,
+      "change_24h": -0.10984,
+      "market_cap": 19034093483
     }
   ],
   "whales": {
