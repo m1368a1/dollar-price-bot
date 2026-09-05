@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-09-05 18:54",
-  "usd_sell": 227100,
-  "usd_buy": 227000,
+  "timestamp": "2026-09-05 19:02",
+  "usd_sell": 226800,
+  "usd_buy": 226700,
   "gold_18k": 23385197,
-  "btc_usd": 79952.06,
+  "btc_usd": 79967.92,
   "fear_greed": 73,
   "btc_dominance": 58.9,
   "market_cap": 2720000000000.0,
@@ -12,67 +12,67 @@
   "top10": [
     {
       "symbol": "btc",
-      "price": 79942,
-      "change_24h": 0.41481,
-      "market_cap": 1605182842310
+      "price": 79998,
+      "change_24h": 0.40396,
+      "market_cap": 1606366880859
     },
     {
       "symbol": "eth",
-      "price": 2476.9,
-      "change_24h": 1.10338,
-      "market_cap": 302209639356
+      "price": 2480.31,
+      "change_24h": 1.14784,
+      "market_cap": 302649723539
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": 0.00317,
-      "market_cap": 183403203713
+      "change_24h": 0.00145,
+      "market_cap": 183402300912
     },
     {
       "symbol": "bnb",
-      "price": 777.48,
-      "change_24h": 8.21514,
-      "market_cap": 103523608480
+      "price": 777.12,
+      "change_24h": 8.02586,
+      "market_cap": 103482710940
     },
     {
       "symbol": "xrp",
       "price": 1.42,
-      "change_24h": 1.35117,
-      "market_cap": 88974943878
+      "change_24h": 1.265,
+      "market_cap": 88970635846
     },
     {
       "symbol": "usdc",
-      "price": 1.0,
-      "change_24h": 0.00891,
-      "market_cap": 74568950550
+      "price": 0.999992,
+      "change_24h": 0.00679,
+      "market_cap": 74567924183
     },
     {
       "symbol": "sol",
-      "price": 103.81,
-      "change_24h": 2.18916,
-      "market_cap": 60769708727
+      "price": 103.91,
+      "change_24h": 2.12953,
+      "market_cap": 60832829927
     },
     {
       "symbol": "trx",
-      "price": 0.334226,
-      "change_24h": 0.70838,
-      "market_cap": 31723769861
+      "price": 0.334267,
+      "change_24h": 0.70837,
+      "market_cap": 31733828325
     },
     {
       "symbol": "figr_heloc",
       "price": 1.005,
-      "change_24h": -2.68324,
-      "market_cap": 22395383867
+      "change_24h": -2.68186,
+      "market_cap": 22395493325
     },
     {
       "symbol": "hype",
-      "price": 85.73,
-      "change_24h": 0.70775,
-      "market_cap": 19069379797
+      "price": 85.78,
+      "change_24h": 0.75105,
+      "market_cap": 19080590881
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -84,7 +84,7 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.6% در ۲۴ ساعت",
+        "text": "BTC +0.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,27 +94,31 @@
       {
         "text": "معتدل: 59",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-05 18:54"
+    "confidence": 60,
+    "updated": "2026-09-05 19:02"
   },
   "whales": {
     "unconfirmed": {
-      "score": 39,
-      "level": "متوسط",
+      "score": 6,
+      "level": "کم",
       "count": 1,
-      "total_btc": 2448.29,
-      "mega_whales": 1,
+      "total_btc": 139.92,
+      "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
+      "medium_whales": 1,
       "top": [
         {
-          "btc": 2448.29,
-          "tier": "بسیار بزرگ",
-          "fee": 3.649e-05,
-          "inputs": 18,
-          "outputs": 2,
+          "btc": 139.92,
+          "tier": "متوسط",
+          "fee": 1.044e-05,
+          "inputs": 1,
+          "outputs": 11,
           "direction": "unknown"
         }
       ]
