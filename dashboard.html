@@ -34,7 +34,7 @@ body{font-family:'Vazirmatn','Segoe UI',Tahoma,sans-serif;color:var(--text);dire
 .header .status{margin-top:9px;font-size:11.5px;color:var(--green);display:inline-flex;align-items:center;gap:6px;
   background:rgba(46,230,168,.08);border:1px solid rgba(46,230,168,.28);padding:4px 14px;border-radius:99px}
 .container{max-width:980px;margin:0 auto;padding:16px 14px;display:grid;grid-template-columns:1fr;gap:13px}
-@media(min-width:720px){.container{grid-template-columns:1fr 1fr}#c1,#c6,#c7,#c8,#c9,#ca{grid-column:1/-1}}
+@media(min-width:720px){.container{grid-template-columns:1fr 1fr}#c1,#c6,#c7,#c8,#c9,#ca,#ct{grid-column:1/-1}}
 .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:16px;
   backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
   box-shadow:0 10px 28px rgba(0,0,0,.38),inset 0 1px 0 rgba(255,255,255,.04);
@@ -93,6 +93,19 @@ tbody tr:last-child td{border-bottom:none}
   .signal-factor:last-child{border-bottom:0;padding-bottom:0}
   .signal-factor.bullish{color:var(--green)}.signal-factor.bearish{color:var(--red)}.signal-factor.neutral{color:var(--muted)}
   .signal-meta{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:var(--muted);font-size:11.5px;margin-top:9px}
+  /* Trends card */
+  .trends-tabs{display:flex;gap:8px;margin-bottom:12px}
+  .trends-tab{flex:1;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--muted);font:inherit;font-size:12.5px;font-weight:700;padding:8px 0;border-radius:99px;cursor:pointer;transition:all .2s ease}
+  .trends-tab.active{background:rgba(91,140,255,.16);border-color:rgba(91,140,255,.55);color:var(--text)}
+  .trends-pane{display:none}.trends-pane.active{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media(max-width:560px){.trends-pane.active{grid-template-columns:1fr}}
+  .trends-col{background:rgba(7,11,20,.34);border:1px solid var(--border);border-radius:12px;padding:10px 12px}
+  .trends-col-title{font-size:12.5px;font-weight:800;margin-bottom:6px;display:flex;align-items:center;gap:6px}
+  .trends-col.up .trends-col-title{color:var(--green)}.trends-col.down .trends-col-title{color:var(--red)}
+  .trends-item{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 0;border-bottom:1px dashed rgba(255,255,255,.06);font-size:12.5px}
+  .trends-item:last-child{border-bottom:none}
+  .trends-item .sym{font-weight:800;text-transform:uppercase}
+  .trends-item .val{font-variant-numeric:tabular-nums;font-weight:700}
 </style>
 </head>
 <body>
@@ -109,6 +122,7 @@ tbody tr:last-child td{border-bottom:none}
   <div class="card" id="c5"><div class="loading"><span class="spinner"></span> 🌍 بازار جهانی</div></div>
   <div class="card" id="cw"><div class="loading"><span class="spinner"></span> 🐋 تحلیل نهنگ‌ها</div></div>
   <div class="card" id="c7"><div class="loading"><span class="spinner"></span> 📊 10 رمزارز برتر</div></div>
+  <div class="card" id="ct"><div class="loading"><span class="spinner"></span> 📈 ترندهای بازار</div></div>
   <div class="card" id="c8"><div class="loading"><span class="spinner"></span> 📰 اخبار اینوستینگ</div></div>
   <div class="card" id="c9"><div class="loading"><span class="spinner"></span> 📰 اخبار بلومبرگ</div></div>
   <div class="card" id="ca"><div class="loading"><span class="spinner"></span> 📊 تحلیل روزانه</div></div>
@@ -275,6 +289,41 @@ async function load(){
   }else{c7+='<div style="color:#f85149;text-align:center">\u062E\u0637\u0627</div>';}
   document.getElementById('c7').innerHTML=c7;
 
+  // Card ct: Market Trends (top gainers/losers, 24h & 30d)
+  var SYM_FA={btc:'بیتکوین',eth:'اتریوم',usdt:'تتر',bnb:'بی‌ان‌بی',sol:'سولانا',xrp:'ریپل',ada:'کاردانو',doge:'دوجکوین',trx:'ترون',dot:'پولکادات',link:'چین‌لینک',avax:'آوالانچ',matic:'پالیگان',shib:'شیبااینو',ltc:'لایتکوین',dai:'دای',ton:'تونکوین',xlm:'استلار',hbar:'هدرا',uni:'یونی‌سواپ',hype:'هایپرلایکویید',sui:'سویی',near:'نیرپروتکل',apt:'اپتوس',arb:'آربیتروم',op:'اپتیمیسم',atom:'کازموس',fil:'فایلکوین',icp:'اینترنت‌کامپیوتر',etc:'اتریوم‌کلاسیک',xmr:'مونرو',bch:'بیتکوین‌کش',wet:'ويتينا',figr_heloc:'Figr HELOC',cbbtc:'Coinbase BTC',wbtc:'Wrapped بیتکوین',wbeth:'Wrapped اتریوم',leo:'لیو‌توکن',okb:'OKB',cro:'کرونوس',kas:'کاسپا',tao:'بیت‌تنسور',render:'رندر',ena:'اینا',bsc:'BNB چین'};
+  var ct='<div class="card-title">📈 ترندهای بازار — بیشترین صعود و نزول</div>';
+  var tr=d.trends||null;
+  if(tr&&(tr.gainers_24h&&tr.gainers_24h.length||tr.losers_24h&&tr.losers_24h.length||tr.gainers_30d&&tr.gainers_30d.length||tr.losers_30d&&tr.losers_30d.length)){
+    function tname(s){return SYM_FA[s]||s.toUpperCase()}
+    function tval(p){return '$'+(p>=1000?F(p):(p>=1?F2(p):p.toFixed(4)))}
+    function tcol(rows){
+      var h='';
+      if(rows&&rows.length){
+        for(var i=0;i<rows.length;i++){
+          var r=rows[i];var pos=r.chg>=0;
+          h+='<div class="trends-item"><span class="sym">'+tname(r.symbol)+'</span><span class="val '+(pos?'up':'down')+'">'+(pos?'+':'')+F2(r.chg)+'%</span><span class="val" style="color:var(--muted);font-weight:400">'+tval(r.price)+'</span></div>';
+        }
+      }else{h='<div style="color:var(--muted);font-size:12px;text-align:center;padding:8px 0">موردی ثبت نشده</div>';}
+      return h;
+    }
+    function pane(kind){
+      var k24=kind==='24h';
+      return '<div class="trends-pane'+(k24?' active':'')+'" id="tp-'+kind+'">'
+        +'<div class="trends-col up"><div class="trends-col-title">⬆️ بیشترین صعود</div>'+tcol(k24?tr.gainers_24h:tr.gainers_30d)+'</div>'
+        +'<div class="trends-col down"><div class="trends-col-title">⬇️ بیشترین نزول</div>'+tcol(k24?tr.losers_24h:tr.losers_30d)+'</div>'
+        +'</div>';
+    }
+    ct+='<div class="trends-tabs">'
+      +'<button type="button" class="trends-tab active" onclick="showTrendPane(\'24h\')">⏱ ۲۴ ساعت گذشته</button>'
+      +'<button type="button" class="trends-tab" onclick="showTrendPane(\'30d\')">📅 یک ماه گذشته</button>'
+      +'</div>'
+      +pane('24h')+pane('30d');
+    if(tr.updated)ct+='<div style="font-size:11px;color:var(--muted);margin-top:9px;text-align:center">🕒 محاسبه‌شده در '+tr.updated+'</div>';
+  }else{
+    ct+='<div style="color:var(--muted);text-align:center;padding:12px;line-height:1.9">داده ترندها هنوز آماده نیست<br><span style="font-size:11px">پس از اجرای بعدی ربات نمایش داده می‌شود.</span></div>';
+  }
+  document.getElementById('ct').innerHTML=ct;
+
   // Card 8: Investing.com News (separate)
   var c8='<div class="card-title">\uD83D\uDCF0 \u0627\u062e\u0628\u0627\u0631 \u0627\u06cc\u0646\u0648\u0633\u062a\u06cc\u0646\u06af</div>';
   if(d.news_investing&&d.news_investing.length){
@@ -430,6 +479,12 @@ function closeAnalysisModal(){
   document.getElementById('analysis-modal').classList.remove('open');
   document.getElementById('analysis-modal-img').removeAttribute('src');
 }
+function showTrendPane(kind){
+  var panes=document.querySelectorAll('.trends-pane');var tabs=document.querySelectorAll('.trends-tab');
+  for(var i=0;i<panes.length;i++)panes[i].classList.toggle('active',panes[i].id==='tp-'+kind);
+  var want='24h'===kind?0:1;
+  for(var j=0;j<tabs.length;j++)tabs[j].classList.toggle('active',j===want);
+}
 document.getElementById('analysis-modal').addEventListener('click',function(e){if(e.target===this)closeAnalysisModal()});
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeAnalysisModal()});
 
@@ -450,27 +505,34 @@ load();
   try{ if(countToday) sessionStorage.setItem('counted-'+dailyKey,'1'); }catch(e){}
   pDaily.then(function(d){elT.textContent='📅 بازدید امروز: '+toFa(d.value||0)}).catch(function(){elT.textContent='📅 بازدید امروز: —'});
   pTotal.then(function(d){elA.textContent='📊 بازدید کل: '+toFa(d.value||0)}).catch(function(){elA.textContent='📊 بازدید کل: —'});
-  // Online users: heartbeat every 25s, counts sessions active in last 90s via per-minute buckets
-  var sess=Math.random().toString(36).slice(2,10);
-  function beat(){
-    var now=new Date();
-    var bucket=now.toISOString().slice(0,16).replace(':','-'); // minute precision; safe counter key
-    fetch(BASE+'/hit/'+NS+'/online-'+bucket).then(function(r){return r.json()}).catch(function(){});
+  // Online users: one hit per 30s bucket per browser (dedup),
+  // displayed value = max of current+previous bucket = distinct active browsers (~60s window).
+  var ONLINE_WINDOW=2; // number of 30s buckets counted as "online"
+  function bucketKey(d){
+    // 30-second precision: 2026-09-05T17-49 or 2026-09-05T17-49-b
+    var base=d.toISOString().slice(0,16).replace(':','-');
+    return d.getUTCSeconds()<30?base:base+'-b';
   }
-  beat(); setInterval(beat, 25000);
+  var lastBeatBucket=null;
+  function beat(){
+    var key=bucketKey(new Date());
+    if(key===lastBeatBucket)return; // already counted in this bucket
+    lastBeatBucket=key;
+    fetch(BASE+'/hit/'+NS+'/online-'+key).then(function(r){return r.json()}).catch(function(){});
+  }
+  beat(); setInterval(beat, 15000); // check twice per bucket so the bucket switch is never missed
   function readOnline(){
-    var now=new Date(); var sum=0; var jobs=[];
-    for(var i=0;i<2;i++){
-      var d=new Date(now.getTime()-i*60000);
-      var bucket=d.toISOString().slice(0,16).replace(':','-');
-      jobs.push(fetch(BASE+'/get/'+NS+'/online-'+bucket).then(function(r){return r.json()}).then(function(d){sum+=(d.value||0)}).catch(function(){}));
+    var now=new Date(); var peak=0; var jobs=[];
+    for(var i=0;i<ONLINE_WINDOW;i++){
+      var key=bucketKey(new Date(now.getTime()-i*30000));
+      jobs.push(fetch(BASE+'/get/'+NS+'/online-'+key).then(function(r){return r.json()}).then(function(d){peak=Math.max(peak,d.value||0)}).catch(function(){}));
     }
     Promise.all(jobs).then(function(){
-      elO.textContent='👥 '+toFa(Math.max(1,sum))+' آنلاین';
+      elO.textContent='👥 '+toFa(Math.max(1,peak))+' آنلاین';
       document.getElementById('visit-stats').style.display='flex';
     });
   }
-  readOnline(); setInterval(readOnline, 30000);
+  readOnline(); setInterval(readOnline, 20000);
   document.getElementById('visit-stats').style.display='flex';
 })();
 
