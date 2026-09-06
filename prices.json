@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-06 15:46",
-  "usd_sell": 225800,
-  "usd_buy": 225700,
-  "gold_18k": 23332102,
-  "btc_usd": 79686.93,
+  "timestamp": "2026-09-06 17:05",
+  "usd_sell": 225200,
+  "usd_buy": 225100,
+  "gold_18k": 23491389,
+  "btc_usd": 79658.04,
   "fear_greed": 73,
-  "btc_dominance": 59.3,
+  "btc_dominance": 59.2,
   "market_cap": 2690000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -3.24,
+  "market_change": -3.58,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79686,
-      "change_24h": -0.08274,
-      "market_cap": 1600232198788
+      "price": 79664,
+      "change_24h": -0.512,
+      "market_cap": 1599778986425
     },
     {
       "symbol": "eth",
-      "price": 2480.22,
-      "change_24h": 0.86349,
-      "market_cap": 302648067369
+      "price": 2483.51,
+      "change_24h": 0.30684,
+      "market_cap": 303095795294
     },
     {
       "symbol": "usdt",
-      "price": 0.999955,
-      "change_24h": -0.01134,
-      "market_cap": 183381319907
+      "price": 0.999932,
+      "change_24h": -0.01519,
+      "market_cap": 183384228500
     },
     {
       "symbol": "bnb",
-      "price": 744.71,
-      "change_24h": -2.79764,
-      "market_cap": 99167339743
+      "price": 747.19,
+      "change_24h": -3.51597,
+      "market_cap": 99518237264
     },
     {
       "symbol": "xrp",
       "price": 1.41,
-      "change_24h": -0.18016,
-      "market_cap": 88478850157
+      "change_24h": -0.39433,
+      "market_cap": 88598572425
     },
     {
       "symbol": "usdc",
-      "price": 0.999948,
-      "change_24h": -0.00339,
-      "market_cap": 74587371264
+      "price": 0.99994,
+      "change_24h": -0.00205,
+      "market_cap": 74585100474
     },
     {
       "symbol": "sol",
-      "price": 105.87,
-      "change_24h": 3.0304,
-      "market_cap": 61989899594
+      "price": 106.04,
+      "change_24h": 2.5724,
+      "market_cap": 62102855107
     },
     {
       "symbol": "trx",
-      "price": 0.335187,
-      "change_24h": 0.40302,
-      "market_cap": 31820806779
+      "price": 0.335365,
+      "change_24h": 0.26443,
+      "market_cap": 31838636711
     },
     {
       "symbol": "figr_heloc",
       "price": 1.055,
-      "change_24h": 1.84392,
+      "change_24h": 4.87503,
       "market_cap": 23516084575
     },
     {
-      "symbol": "hype",
-      "price": 88.76,
-      "change_24h": 3.98712,
-      "market_cap": 19742250865
+      "symbol": "zec",
+      "price": 1184.16,
+      "change_24h": 14.24241,
+      "market_cap": 20049629982
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.1% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +0.4% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.1% در ۲۴ ساعت",
+        "text": "BTC -0.5% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 57",
+        "text": "معتدل: 56",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-06 15:46"
+    "updated": "2026-09-06 17:05"
   },
   "whales": {
     "unconfirmed": {
@@ -125,11 +125,6 @@
     {
       "title": "سرمایه‌گذاران برای یافتن سیگنال‌هایی در مورد مسیر نرخ بهره، داده‌های تورم را زیر نظر خواهند گرفت",
       "date": "2026-09-06 13:00",
-      "source": "Investing.com"
-    },
-    {
-      "title": "اوپک پلاس سیاست تولید نفت را برای ماه اکتبر متوقف کرد",
-      "date": "2026-09-06 12:36",
       "source": "Investing.com"
     }
   ],
@@ -172,11 +167,6 @@
       "source": "Investing.com"
     },
     {
-      "title": "اوپک پلاس سیاست تولید نفت را برای ماه اکتبر متوقف کرد",
-      "date": "2026-09-06 12:36",
-      "source": "Investing.com"
-    },
-    {
       "title": "ترامپ می‌گوید «عدم تعادل» دلار کانادا با آمریکا غیرقابل قبول است",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
@@ -202,96 +192,96 @@
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1164.14,
-        "chg": 14.49
+        "price": 1184.16,
+        "chg": 14.24
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.39,
-        "chg": 9.9
+        "price": 2.41,
+        "chg": 9.12
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.95,
-        "chg": 9.76
+        "price": 7.21,
+        "chg": 7.77
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 244.69,
-        "chg": 3.99
+        "price": 249.49,
+        "chg": 5.88
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 88.76,
-        "chg": 3.99
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.055,
+        "chg": 4.88
       }
     ],
     "losers_24h": [
       {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.760263,
-        "chg": -7.05
-      },
-      {
         "symbol": "bnb",
         "name": "BNB",
-        "price": 744.71,
-        "chg": -2.8
+        "price": 747.19,
+        "chg": -3.52
+      },
+      {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.76123,
+        "chg": -3.22
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 526.54,
-        "chg": -2.65
+        "price": 527.79,
+        "chg": -2.38
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.790068,
-        "chg": -0.82
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01681684,
+        "chg": -1.93
       },
       {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 5.4e-06,
-        "chg": -0.74
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 112.8,
+        "chg": -1.66
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1164.14,
-        "chg": 127.8
+        "price": 1184.16,
+        "chg": 130.5
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.95,
-        "chg": 73.5
+        "price": 7.21,
+        "chg": 81.1
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 88.76,
-        "chg": 58.2
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 133.42,
-        "chg": 49.1
+        "price": 87.99,
+        "chg": 57.7
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.39,
-        "chg": 47.2
+        "price": 2.41,
+        "chg": 50.4
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 12.33,
+        "chg": 49.1
       }
     ],
     "losers_30d": [
@@ -305,9 +295,9 @@
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.12,
-        "chg": -3.5
+        "chg": -4.2
       }
     ],
-    "updated": "2026-09-06 15:46"
+    "updated": "2026-09-06 17:05"
   }
 }
