@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-06 08:35",
-  "usd_sell": 229000,
-  "usd_buy": 228900,
-  "gold_18k": 23592963,
-  "btc_usd": 79813.63,
+  "timestamp": "2026-09-06 10:00",
+  "usd_sell": 226700,
+  "usd_buy": 226600,
+  "gold_18k": 23442910,
+  "btc_usd": 79869.88,
   "fear_greed": 73,
   "btc_dominance": 59.2,
   "market_cap": 2700000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -2.75,
+  "market_change": -2.63,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79795,
-      "change_24h": 0.26009,
-      "market_cap": 1602330584688
+      "price": 79855,
+      "change_24h": 0.28885,
+      "market_cap": 1603500503915
     },
     {
       "symbol": "eth",
-      "price": 2494.21,
-      "change_24h": 1.65967,
-      "market_cap": 304368530421
+      "price": 2498.11,
+      "change_24h": 1.61413,
+      "market_cap": 304818310032
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": -0.0032,
-      "market_cap": 183397169484
+      "change_24h": 0.00148,
+      "market_cap": 183397515109
     },
     {
       "symbol": "bnb",
-      "price": 755.42,
-      "change_24h": 1.18322,
-      "market_cap": 100591515792
+      "price": 757.36,
+      "change_24h": 1.29377,
+      "market_cap": 100854708371
     },
     {
       "symbol": "xrp",
       "price": 1.42,
-      "change_24h": 1.00319,
-      "market_cap": 88805752621
+      "change_24h": 0.85422,
+      "market_cap": 89022722538
     },
     {
       "symbol": "usdc",
-      "price": 0.99998,
-      "change_24h": 0.00308,
-      "market_cap": 74599742985
+      "price": 0.999966,
+      "change_24h": 0.00257,
+      "market_cap": 74560510869
     },
     {
       "symbol": "sol",
-      "price": 105.06,
-      "change_24h": 2.81533,
-      "market_cap": 61515180540
+      "price": 106.45,
+      "change_24h": 3.80901,
+      "market_cap": 62320245215
     },
     {
       "symbol": "trx",
-      "price": 0.333568,
-      "change_24h": 0.26271,
-      "market_cap": 31669440169
+      "price": 0.334229,
+      "change_24h": 0.6038,
+      "market_cap": 31731415271
     },
     {
       "symbol": "figr_heloc",
       "price": 1.055,
-      "change_24h": 1.58027,
+      "change_24h": 1.57579,
       "market_cap": 23516084575
     },
     {
       "symbol": "zec",
-      "price": 1164.1,
-      "change_24h": 15.98254,
-      "market_cap": 19702363311
+      "price": 1185.28,
+      "change_24h": 17.3726,
+      "market_cap": 20050041947
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 0,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,59 +80,43 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +2.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +2.4% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.1% در ۲۴ ساعت",
+        "text": "BTC +0.3% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 2 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
         "text": "معتدل: 57",
         "tone": "neutral"
-      },
-      {
-        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
-        "tone": "bearish"
       }
     ],
-    "confidence": 60,
-    "updated": "2026-09-06 08:36"
+    "confidence": 50,
+    "updated": "2026-09-06 10:00"
   },
   "whales": {
     "unconfirmed": {
-      "score": 47,
-      "level": "متوسط",
-      "count": 2,
-      "total_btc": 2652.17,
-      "mega_whales": 1,
+      "score": 0,
+      "level": "کم",
+      "count": 0,
+      "total_btc": 0,
+      "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 2455.6,
-          "tier": "بسیار بزرگ",
-          "fee": 8.21e-06,
-          "inputs": 2,
-          "outputs": 3,
-          "direction": "unknown"
-        },
-        {
-          "btc": 196.57,
-          "tier": "متوسط",
-          "fee": 1.84e-06,
-          "inputs": 1,
-          "outputs": 2,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
+    {
+      "title": "بیت‌کوین با توجه به تقاضای شرکت‌ها و سیاست‌های رمزنگاری ایالات متحده، نزدیک به ۸۰،۰۰۰ دلار معامله می‌شود",
+      "date": "2026-09-06 09:22",
+      "source": "Investing.com"
+    },
     {
       "title": "اوپک پلاس سیاست تولید نفت خود را برای ماه اکتبر ثابت نگه می‌دارد - رویترز",
       "date": "2026-09-06 08:17",
@@ -172,6 +156,11 @@
     }
   ],
   "news": [
+    {
+      "title": "بیت‌کوین با توجه به تقاضای شرکت‌ها و سیاست‌های رمزنگاری ایالات متحده، نزدیک به ۸۰،۰۰۰ دلار معامله می‌شود",
+      "date": "2026-09-06 09:22",
+      "source": "Investing.com"
+    },
     {
       "title": "اوپک پلاس سیاست تولید نفت خود را برای ماه اکتبر ثابت نگه می‌دارد - رویترز",
       "date": "2026-09-06 08:17",
