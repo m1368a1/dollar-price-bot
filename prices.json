@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-06 12:27",
-  "usd_sell": 226400,
-  "usd_buy": 226300,
-  "gold_18k": 23512165,
-  "btc_usd": 79983.46,
+  "timestamp": "2026-09-06 13:27",
+  "usd_sell": 226900,
+  "usd_buy": 226800,
+  "gold_18k": 23530633,
+  "btc_usd": 79832.75,
   "fear_greed": 73,
   "btc_dominance": 59.2,
-  "market_cap": 2710000000000.0,
+  "market_cap": 2700000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -2.45,
+  "market_change": -2.95,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79989,
-      "change_24h": 0.40224,
-      "market_cap": 1606213188326
+      "price": 79823,
+      "change_24h": 0.08544,
+      "market_cap": 1603034010478
     },
     {
       "symbol": "eth",
-      "price": 2502.91,
-      "change_24h": 1.95444,
-      "market_cap": 305415689010
+      "price": 2492.84,
+      "change_24h": 1.32871,
+      "market_cap": 304240241226
     },
     {
       "symbol": "usdt",
-      "price": 0.999983,
-      "change_24h": -0.01009,
-      "market_cap": 183389131093
+      "price": 0.999993,
+      "change_24h": -0.01073,
+      "market_cap": 183391098554
     },
     {
       "symbol": "bnb",
-      "price": 757.9,
-      "change_24h": 0.44335,
-      "market_cap": 100918970619
+      "price": 751.0,
+      "change_24h": -1.73686,
+      "market_cap": 100025310145
     },
     {
       "symbol": "xrp",
-      "price": 1.42,
-      "change_24h": 1.19304,
-      "market_cap": 89232446909
+      "price": 1.41,
+      "change_24h": -0.14747,
+      "market_cap": 88765957685
     },
     {
       "symbol": "usdc",
-      "price": 0.999931,
-      "change_24h": -0.00696,
-      "market_cap": 74538626520
+      "price": 0.999968,
+      "change_24h": -0.00423,
+      "market_cap": 74541111547
     },
     {
       "symbol": "sol",
-      "price": 106.54,
-      "change_24h": 4.06362,
-      "market_cap": 62378686384
+      "price": 106.18,
+      "change_24h": 2.91708,
+      "market_cap": 62178604849
     },
     {
       "symbol": "trx",
-      "price": 0.335094,
-      "change_24h": 0.64654,
-      "market_cap": 31812745172
+      "price": 0.33547,
+      "change_24h": 0.73571,
+      "market_cap": 31848307292
     },
     {
       "symbol": "figr_heloc",
       "price": 1.055,
-      "change_24h": 1.58316,
+      "change_24h": 1.52573,
       "market_cap": 23516084575
     },
     {
       "symbol": "zec",
-      "price": 1177.69,
-      "change_24h": 16.41884,
-      "market_cap": 19922850974
+      "price": 1184.85,
+      "change_24h": 16.41585,
+      "market_cap": 20040477489
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,69 +80,64 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.6% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.2% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.5% در ۲۴ ساعت",
+        "text": "BTC +0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 58",
+        "text": "معتدل: 57",
         "tone": "neutral"
+      },
+      {
+        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-06 12:27"
+    "confidence": 60,
+    "updated": "2026-09-06 13:27"
   },
   "whales": {
     "unconfirmed": {
-      "score": 6,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 137.43,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 137.43,
-          "tier": "متوسط",
-          "fee": 8.53e-06,
-          "inputs": 1,
-          "outputs": 5,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
     {
-      "title": "اوپک پلاس سیاست تولید نفت خود را برای ماه اکتبر بدون تغییر نگه داشت",
-      "date": "2026-09-06 12:06",
+      "title": "سرمایه‌گذاران برای یافتن سیگنال‌هایی در مورد مسیر نرخ بهره، داده‌های تورم را زیر نظر خواهند گرفت",
+      "date": "2026-09-06 13:00",
       "source": "Investing.com"
     },
     {
       "title": "اوپک پلاس سیاست تولید نفت را برای ماه اکتبر متوقف کرد",
-      "date": "2026-09-06 12:05",
+      "date": "2026-09-06 12:36",
       "source": "Investing.com"
     },
     {
-      "title": "پیش‌بینی رشد تولید ناخالص داخلی ترکیه تا سال ۲۰۲۹ به ۵ درصد می‌رسد",
-      "date": "2026-09-06 10:19",
-      "source": "Investing.com"
-    },
-    {
-      "title": "پیش‌بینی کاهش تورم ترکیه به ۲۸.۴ درصد در سال ۲۰۲۶",
-      "date": "2026-09-06 10:16",
+      "title": "اوپک پلاس سیاست تولید نفت خود را برای ماه اکتبر بدون تغییر نگه داشت",
+      "date": "2026-09-06 12:06",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
+    {
+      "title": "بلک راک و جی پی مورگان روی بازارهای نوظهور شرط بندی می کنند زیرا آشفتگی، اوراق قرضه جهانی را فرا گرفته است",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "مبارزه آمریکا با ایران به سمت استقامت اقتصادی تغییر جهت می‌دهد",
       "date": "Sun, 06 Sep 2026",
@@ -166,24 +161,24 @@
   ],
   "news": [
     {
+      "title": "سرمایه‌گذاران برای یافتن سیگنال‌هایی در مورد مسیر نرخ بهره، داده‌های تورم را زیر نظر خواهند گرفت",
+      "date": "2026-09-06 13:00",
+      "source": "Investing.com"
+    },
+    {
+      "title": "اوپک پلاس سیاست تولید نفت را برای ماه اکتبر متوقف کرد",
+      "date": "2026-09-06 12:36",
+      "source": "Investing.com"
+    },
+    {
       "title": "اوپک پلاس سیاست تولید نفت خود را برای ماه اکتبر بدون تغییر نگه داشت",
       "date": "2026-09-06 12:06",
       "source": "Investing.com"
     },
     {
-      "title": "اوپک پلاس سیاست تولید نفت را برای ماه اکتبر متوقف کرد",
-      "date": "2026-09-06 12:05",
-      "source": "Investing.com"
-    },
-    {
-      "title": "پیش‌بینی رشد تولید ناخالص داخلی ترکیه تا سال ۲۰۲۹ به ۵ درصد می‌رسد",
-      "date": "2026-09-06 10:19",
-      "source": "Investing.com"
-    },
-    {
-      "title": "پیش‌بینی کاهش تورم ترکیه به ۲۸.۴ درصد در سال ۲۰۲۶",
-      "date": "2026-09-06 10:16",
-      "source": "Investing.com"
+      "title": "بلک راک و جی پی مورگان روی بازارهای نوظهور شرط بندی می کنند زیرا آشفتگی، اوراق قرضه جهانی را فرا گرفته است",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "مبارزه آمریکا با ایران به سمت استقامت اقتصادی تغییر جهت می‌دهد",
@@ -205,5 +200,118 @@
       "date": "Sat, 05 Sep 2026",
       "source": "Bloomberg"
     }
-  ]
+  ],
+  "trends": {
+    "gainers_24h": [
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1184.85,
+        "chg": 16.42
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 7.01,
+        "chg": 12.28
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.39,
+        "chg": 7.36
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 88.94,
+        "chg": 4.08
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 12.27,
+        "chg": 3.66
+      }
+    ],
+    "losers_24h": [
+      {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.780251,
+        "chg": -7.94
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 529.07,
+        "chg": -2.97
+      },
+      {
+        "symbol": "shib",
+        "name": "Shiba Inu",
+        "price": 5.42e-06,
+        "chg": -2.57
+      },
+      {
+        "symbol": "bnb",
+        "name": "BNB",
+        "price": 751.0,
+        "chg": -1.74
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.056449,
+        "chg": -1.69
+      }
+    ],
+    "gainers_30d": [
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1184.85,
+        "chg": 128.6
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 7.01,
+        "chg": 73.8
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 88.94,
+        "chg": 56.7
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 134.75,
+        "chg": 50.4
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 12.27,
+        "chg": 50.3
+      }
+    ],
+    "losers_30d": [
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.33,
+        "chg": -4.6
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.13,
+        "chg": -2.3
+      }
+    ],
+    "updated": "2026-09-06 13:27"
+  }
 }
