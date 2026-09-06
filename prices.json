@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-06 14:12",
-  "usd_sell": 226700,
-  "usd_buy": 226600,
-  "gold_18k": 23465995,
-  "btc_usd": 79780.16,
+  "timestamp": "2026-09-06 15:46",
+  "usd_sell": 225800,
+  "usd_buy": 225700,
+  "gold_18k": 23332102,
+  "btc_usd": 79686.93,
   "fear_greed": 73,
-  "btc_dominance": 59.2,
-  "market_cap": 2700000000000.0,
+  "btc_dominance": 59.3,
+  "market_cap": 2690000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -2.82,
+  "market_change": -3.24,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79766,
-      "change_24h": 0.11642,
-      "market_cap": 1601838994958
+      "price": 79686,
+      "change_24h": -0.08274,
+      "market_cap": 1600232198788
     },
     {
       "symbol": "eth",
-      "price": 2490.56,
-      "change_24h": 1.42026,
-      "market_cap": 303945444239
+      "price": 2480.22,
+      "change_24h": 0.86349,
+      "market_cap": 302648067369
     },
     {
       "symbol": "usdt",
-      "price": 0.999948,
-      "change_24h": -0.01118,
-      "market_cap": 183386512095
+      "price": 0.999955,
+      "change_24h": -0.01134,
+      "market_cap": 183381319907
     },
     {
       "symbol": "bnb",
-      "price": 748.71,
-      "change_24h": -1.91214,
-      "market_cap": 99737370362
+      "price": 744.71,
+      "change_24h": -2.79764,
+      "market_cap": 99167339743
     },
     {
       "symbol": "xrp",
       "price": 1.41,
-      "change_24h": 0.10315,
-      "market_cap": 88813793463
+      "change_24h": -0.18016,
+      "market_cap": 88478850157
     },
     {
       "symbol": "usdc",
-      "price": 0.999959,
-      "change_24h": -0.00303,
-      "market_cap": 74541911385
+      "price": 0.999948,
+      "change_24h": -0.00339,
+      "market_cap": 74587371264
     },
     {
       "symbol": "sol",
-      "price": 106.76,
-      "change_24h": 3.87205,
-      "market_cap": 62536018737
+      "price": 105.87,
+      "change_24h": 3.0304,
+      "market_cap": 61989899594
     },
     {
       "symbol": "trx",
-      "price": 0.335022,
-      "change_24h": 0.53693,
-      "market_cap": 31799581571
+      "price": 0.335187,
+      "change_24h": 0.40302,
+      "market_cap": 31820806779
     },
     {
       "symbol": "figr_heloc",
       "price": 1.055,
-      "change_24h": 1.52394,
+      "change_24h": 1.84392,
       "market_cap": 23516084575
     },
     {
-      "symbol": "zec",
-      "price": 1177.4,
-      "change_24h": 16.02833,
-      "market_cap": 19927087737
+      "symbol": "hype",
+      "price": 88.76,
+      "change_24h": 3.98712,
+      "market_cap": 19742250865
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.1% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.2% در ۲۴ ساعت",
+        "text": "BTC -0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -97,7 +97,7 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-06 14:12"
+    "updated": "2026-09-06 15:46"
   },
   "whales": {
     "unconfirmed": {
@@ -113,6 +113,16 @@
   },
   "news_investing": [
     {
+      "title": "بیت‌کوین با کاهش قیمت، اما حفظ قیمت نزدیک به ۸۰،۰۰۰ دلار، در پی خرید شرکت‌ها و تمرکز بر انتخابات کریپتوی ایالات متحده",
+      "date": "2026-09-06 14:35",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بازارهای خلیج فارس در بحبوحه تنش‌های آمریکا و ایران، با نوسانات زیادی بسته شدند",
+      "date": "2026-09-06 14:20",
+      "source": "Investing.com"
+    },
+    {
       "title": "سرمایه‌گذاران برای یافتن سیگنال‌هایی در مورد مسیر نرخ بهره، داده‌های تورم را زیر نظر خواهند گرفت",
       "date": "2026-09-06 13:00",
       "source": "Investing.com"
@@ -120,11 +130,6 @@
     {
       "title": "اوپک پلاس سیاست تولید نفت را برای ماه اکتبر متوقف کرد",
       "date": "2026-09-06 12:36",
-      "source": "Investing.com"
-    },
-    {
-      "title": "اوپک پلاس سیاست تولید نفت خود را برای ماه اکتبر بدون تغییر نگه داشت",
-      "date": "2026-09-06 12:06",
       "source": "Investing.com"
     }
   ],
@@ -148,19 +153,19 @@
       "title": "اوپک پلاس به طرح خود برای حفظ سهمیه‌های تولید نفت بدون تغییر پایبند است",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش مشاغل، احتمال افزایش نرخ بهره فدرال رزرو در ماه سپتامبر را افزایش می‌دهد",
-      "date": "Sat, 05 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "حمله آمریکا به نفتکش‌های ایرانی پس از حمله به کشتی‌های جنگی آمریکا",
-      "date": "Sat, 05 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "news": [
+    {
+      "title": "بیت‌کوین با کاهش قیمت، اما حفظ قیمت نزدیک به ۸۰،۰۰۰ دلار، در پی خرید شرکت‌ها و تمرکز بر انتخابات کریپتوی ایالات متحده",
+      "date": "2026-09-06 14:35",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بازارهای خلیج فارس در بحبوحه تنش‌های آمریکا و ایران، با نوسانات زیادی بسته شدند",
+      "date": "2026-09-06 14:20",
+      "source": "Investing.com"
+    },
     {
       "title": "سرمایه‌گذاران برای یافتن سیگنال‌هایی در مورد مسیر نرخ بهره، داده‌های تورم را زیر نظر خواهند گرفت",
       "date": "2026-09-06 13:00",
@@ -169,11 +174,6 @@
     {
       "title": "اوپک پلاس سیاست تولید نفت را برای ماه اکتبر متوقف کرد",
       "date": "2026-09-06 12:36",
-      "source": "Investing.com"
-    },
-    {
-      "title": "اوپک پلاس سیاست تولید نفت خود را برای ماه اکتبر بدون تغییر نگه داشت",
-      "date": "2026-09-06 12:06",
       "source": "Investing.com"
     },
     {
@@ -195,16 +195,6 @@
       "title": "اوپک پلاس به طرح خود برای حفظ سهمیه‌های تولید نفت بدون تغییر پایبند است",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش مشاغل، احتمال افزایش نرخ بهره فدرال رزرو در ماه سپتامبر را افزایش می‌دهد",
-      "date": "Sat, 05 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "حمله آمریکا به نفتکش‌های ایرانی پس از حمله به کشتی‌های جنگی آمریکا",
-      "date": "Sat, 05 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
@@ -212,96 +202,96 @@
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1177.4,
-        "chg": 16.03
+        "price": 1164.14,
+        "chg": 14.49
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.46,
-        "chg": 11.77
+        "price": 2.39,
+        "chg": 9.9
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
         "price": 6.95,
-        "chg": 9.55
+        "chg": 9.76
+      },
+      {
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 244.69,
+        "chg": 3.99
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 89.27,
-        "chg": 4.54
-      },
-      {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.605655,
-        "chg": 4.36
+        "price": 88.76,
+        "chg": 3.99
       }
     ],
     "losers_24h": [
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.772059,
-        "chg": -5.78
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 529.2,
-        "chg": -2.13
+        "price": 0.760263,
+        "chg": -7.05
       },
       {
         "symbol": "bnb",
         "name": "BNB",
-        "price": 748.71,
-        "chg": -1.91
+        "price": 744.71,
+        "chg": -2.8
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 526.54,
+        "chg": -2.65
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.790068,
+        "chg": -0.82
       },
       {
         "symbol": "shib",
         "name": "Shiba Inu",
-        "price": 5.43e-06,
-        "chg": -0.72
-      },
-      {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.05672,
-        "chg": -0.39
+        "price": 5.4e-06,
+        "chg": -0.74
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1177.4,
-        "chg": 131.0
+        "price": 1164.14,
+        "chg": 127.8
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
         "price": 6.95,
-        "chg": 71.7
+        "chg": 73.5
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 89.27,
-        "chg": 58.0
+        "price": 88.76,
+        "chg": 58.2
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 134.98,
-        "chg": 50.2
+        "price": 133.42,
+        "chg": 49.1
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.46,
-        "chg": 49.9
+        "price": 2.39,
+        "chg": 47.2
       }
     ],
     "losers_30d": [
@@ -309,15 +299,15 @@
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.33,
-        "chg": -4.6
+        "chg": -4.4
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.13,
-        "chg": -2.2
+        "price": 1.12,
+        "chg": -3.5
       }
     ],
-    "updated": "2026-09-06 14:12"
+    "updated": "2026-09-06 15:46"
   }
 }
