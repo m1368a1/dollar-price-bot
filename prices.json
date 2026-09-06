@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-06 19:13",
+  "timestamp": "2026-09-06 21:24",
   "usd_sell": 226700,
   "usd_buy": 226600,
   "gold_18k": 23355187,
-  "btc_usd": 79862.22,
+  "btc_usd": 79934.32,
   "fear_greed": 73,
   "btc_dominance": 59.2,
-  "market_cap": 2700000000000.0,
+  "market_cap": 2710000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -3.36,
+  "market_change": -2.85,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79866,
-      "change_24h": -0.1284,
-      "market_cap": 1603682570111
+      "price": 79947,
+      "change_24h": 0.1105,
+      "market_cap": 1605442853558
     },
     {
       "symbol": "eth",
-      "price": 2491.55,
-      "change_24h": 0.49174,
-      "market_cap": 303998319423
+      "price": 2511.16,
+      "change_24h": 1.22574,
+      "market_cap": 306464321101
     },
     {
       "symbol": "usdt",
-      "price": 0.999945,
-      "change_24h": -0.01036,
-      "market_cap": 183378391379
+      "price": 0.999985,
+      "change_24h": -0.00286,
+      "market_cap": 183388923340
     },
     {
       "symbol": "bnb",
-      "price": 749.82,
-      "change_24h": -3.30098,
-      "market_cap": 99842010520
+      "price": 753.09,
+      "change_24h": -2.32949,
+      "market_cap": 100283709826
     },
     {
       "symbol": "xrp",
-      "price": 1.41,
-      "change_24h": -0.61043,
-      "market_cap": 88568096653
+      "price": 1.42,
+      "change_24h": 0.3762,
+      "market_cap": 89369733056
     },
     {
       "symbol": "usdc",
-      "price": 0.999946,
-      "change_24h": -0.00605,
-      "market_cap": 74559849945
+      "price": 0.999962,
+      "change_24h": -0.00082,
+      "market_cap": 74553908804
     },
     {
       "symbol": "sol",
-      "price": 105.84,
-      "change_24h": 1.88135,
-      "market_cap": 61949766419
+      "price": 106.09,
+      "change_24h": 2.2779,
+      "market_cap": 62092546160
     },
     {
       "symbol": "trx",
-      "price": 0.335413,
-      "change_24h": 0.33162,
-      "market_cap": 31842162114
+      "price": 0.336071,
+      "change_24h": 0.41947,
+      "market_cap": 31905698105
     },
     {
       "symbol": "figr_heloc",
       "price": 1.055,
-      "change_24h": 5.00351,
+      "change_24h": 5.05481,
       "market_cap": 23516084575
     },
     {
       "symbol": "zec",
-      "price": 1225.16,
-      "change_24h": 19.75365,
-      "market_cap": 20696037615
+      "price": 1227.4,
+      "change_24h": 21.12096,
+      "market_cap": 20741270213
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.7% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.2% در ۲۴ ساعت",
+        "text": "BTC +0.3% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,10 +94,14 @@
       {
         "text": "معتدل: 57",
         "tone": "neutral"
+      },
+      {
+        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-06 19:13"
+    "confidence": 60,
+    "updated": "2026-09-06 21:24"
   },
   "whales": {
     "unconfirmed": {
@@ -113,17 +117,22 @@
   },
   "news_investing": [
     {
-      "title": "بیت کوین با سیگنال‌های اشباع خرید، نزدیک به ۷۹۹۵۵ دلار تثبیت شد: سطوح زنده",
-      "date": "2026-09-06 19:02",
+      "title": "رایت می‌گوید دولت ترامپ بر افزایش تولید نفت تمرکز دارد",
+      "date": "2026-09-06 19:04",
       "source": "Investing.com"
     },
     {
-      "title": "بیت‌کوین با کاهش قیمت، اما حفظ قیمت نزدیک به ۸۰،۰۰۰ دلار، در پی خرید شرکت‌ها و تمرکز بر انتخابات کریپتوی ایالات متحده",
-      "date": "2026-09-06 14:35",
+      "title": "بیت کوین با سیگنال‌های اشباع خرید، نزدیک به ۷۹۹۵۵ دلار تثبیت شد: سطوح زنده",
+      "date": "2026-09-06 19:02",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
+    {
+      "title": "معامله‌گران اوراق قرضه خود را برای نوسانات بیشتر در هر دو انتهای منحنی بازدهی ایالات متحده آماده می‌کنند",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "ترامپ می‌گوید «عدم تعادل» دلار کانادا با آمریکا غیرقابل قبول است",
       "date": "Sun, 06 Sep 2026",
@@ -147,14 +156,19 @@
   ],
   "news": [
     {
+      "title": "رایت می‌گوید دولت ترامپ بر افزایش تولید نفت تمرکز دارد",
+      "date": "2026-09-06 19:04",
+      "source": "Investing.com"
+    },
+    {
       "title": "بیت کوین با سیگنال‌های اشباع خرید، نزدیک به ۷۹۹۵۵ دلار تثبیت شد: سطوح زنده",
       "date": "2026-09-06 19:02",
       "source": "Investing.com"
     },
     {
-      "title": "بیت‌کوین با کاهش قیمت، اما حفظ قیمت نزدیک به ۸۰،۰۰۰ دلار، در پی خرید شرکت‌ها و تمرکز بر انتخابات کریپتوی ایالات متحده",
-      "date": "2026-09-06 14:35",
-      "source": "Investing.com"
+      "title": "معامله‌گران اوراق قرضه خود را برای نوسانات بیشتر در هر دو انتهای منحنی بازدهی ایالات متحده آماده می‌کنند",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "ترامپ می‌گوید «عدم تعادل» دلار کانادا با آمریکا غیرقابل قبول است",
@@ -182,96 +196,96 @@
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1225.16,
-        "chg": 19.75
+        "price": 1227.4,
+        "chg": 21.12
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 259.72,
-        "chg": 11.05
+        "price": 269.51,
+        "chg": 14.91
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.41,
-        "chg": 8.02
+        "price": 2.42,
+        "chg": 11.62
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 13.1,
+        "chg": 8.59
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.055,
-        "chg": 5.0
-      },
-      {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.598229,
-        "chg": 2.76
+        "chg": 5.05
       }
     ],
     "losers_24h": [
       {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 530.97,
+        "chg": -3.28
+      },
+      {
         "symbol": "bnb",
         "name": "BNB",
-        "price": 749.82,
-        "chg": -3.3
+        "price": 753.09,
+        "chg": -2.33
       },
       {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.76854,
-        "chg": -2.74
-      },
-      {
-        "symbol": "doge",
-        "name": "Dogecoin",
-        "price": 0.089383,
-        "chg": -2.55
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01678389,
+        "chg": -1.43
       },
       {
         "symbol": "wlfi",
         "name": "World Liberty Financial",
-        "price": 0.05617,
-        "chg": -2.36
+        "price": 0.056647,
+        "chg": -1.33
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 529.98,
-        "chg": -2.04
+        "symbol": "doge",
+        "name": "Dogecoin",
+        "price": 0.090396,
+        "chg": -0.85
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1225.16,
-        "chg": 139.2
+        "price": 1227.4,
+        "chg": 138.8
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
         "price": 7.14,
-        "chg": 78.0
+        "chg": 76.1
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 87.37,
-        "chg": 61.9
+        "price": 88.0,
+        "chg": 61.6
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 12.35,
-        "chg": 51.2
+        "price": 13.1,
+        "chg": 59.7
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.41,
-        "chg": 51.1
+        "price": 2.42,
+        "chg": 51.6
       }
     ],
     "losers_30d": [
@@ -279,15 +293,15 @@
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.33,
-        "chg": -4.4
+        "chg": -4.3
       },
       {
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.12,
-        "chg": -3.3
+        "chg": -3.9
       }
     ],
-    "updated": "2026-09-06 19:13"
+    "updated": "2026-09-06 21:24"
   }
 }
