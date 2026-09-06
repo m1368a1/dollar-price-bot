@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-06 21:24",
+  "timestamp": "2026-09-06 23:56",
   "usd_sell": 226700,
   "usd_buy": 226600,
   "gold_18k": 23355187,
-  "btc_usd": 79934.32,
+  "btc_usd": 80427.35,
   "fear_greed": 73,
   "btc_dominance": 59.2,
-  "market_cap": 2710000000000.0,
+  "market_cap": 2720000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -2.85,
+  "market_change": -1.75,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79947,
-      "change_24h": 0.1105,
-      "market_cap": 1605442853558
+      "price": 80435,
+      "change_24h": 0.72259,
+      "market_cap": 1614788116038
     },
     {
       "symbol": "eth",
-      "price": 2511.16,
-      "change_24h": 1.22574,
-      "market_cap": 306464321101
+      "price": 2517.34,
+      "change_24h": 1.37664,
+      "market_cap": 307205730184
     },
     {
       "symbol": "usdt",
-      "price": 0.999985,
-      "change_24h": -0.00286,
-      "market_cap": 183388923340
+      "price": 0.999962,
+      "change_24h": -0.01254,
+      "market_cap": 183398729686
     },
     {
       "symbol": "bnb",
-      "price": 753.09,
-      "change_24h": -2.32949,
-      "market_cap": 100283709826
+      "price": 753.06,
+      "change_24h": -1.85884,
+      "market_cap": 100266168076
     },
     {
       "symbol": "xrp",
       "price": 1.42,
-      "change_24h": 0.3762,
-      "market_cap": 89369733056
+      "change_24h": 0.72147,
+      "market_cap": 89353595131
     },
     {
       "symbol": "usdc",
-      "price": 0.999962,
-      "change_24h": -0.00082,
-      "market_cap": 74553908804
+      "price": 0.999932,
+      "change_24h": -0.00888,
+      "market_cap": 74546299129
     },
     {
       "symbol": "sol",
-      "price": 106.09,
-      "change_24h": 2.2779,
-      "market_cap": 62092546160
+      "price": 106.66,
+      "change_24h": 3.28492,
+      "market_cap": 62434610903
     },
     {
       "symbol": "trx",
-      "price": 0.336071,
-      "change_24h": 0.41947,
-      "market_cap": 31905698105
+      "price": 0.335233,
+      "change_24h": 0.40358,
+      "market_cap": 31828414616
     },
     {
       "symbol": "figr_heloc",
       "price": 1.055,
-      "change_24h": 5.05481,
+      "change_24h": null,
       "market_cap": 23516084575
     },
     {
       "symbol": "zec",
-      "price": 1227.4,
-      "change_24h": 21.12096,
-      "market_cap": 20741270213
+      "price": 1229.34,
+      "change_24h": 19.76927,
+      "market_cap": 20793261422
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 0,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.7% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +3.5% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.3% در ۲۴ ساعت",
+        "text": "BTC +0.8% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 57",
+        "text": "معتدل: 59",
         "tone": "neutral"
-      },
-      {
-        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
-        "tone": "bearish"
       }
     ],
-    "confidence": 60,
-    "updated": "2026-09-06 21:24"
+    "confidence": 50,
+    "updated": "2026-09-06 23:57"
   },
   "whales": {
     "unconfirmed": {
@@ -117,17 +113,37 @@
   },
   "news_investing": [
     {
-      "title": "رایت می‌گوید دولت ترامپ بر افزایش تولید نفت تمرکز دارد",
-      "date": "2026-09-06 19:04",
+      "title": "گلدمن سايبر كب را عامل مزيت هزينه‌اي تسلا در روبوتاكسي‌سازي مي‌داند",
+      "date": "2026-09-06 21:16",
       "source": "Investing.com"
     },
     {
-      "title": "بیت کوین با سیگنال‌های اشباع خرید، نزدیک به ۷۹۹۵۵ دلار تثبیت شد: سطوح زنده",
-      "date": "2026-09-06 19:02",
+      "title": "رایت می‌گوید دولت ترامپ بر افزایش تولید نفت تمرکز دارد",
+      "date": "2026-09-06 19:04",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
+    {
+      "title": "سهام آسیایی در پی حملات آمریکا و ایران افزایش یافت: بسته شدن بازارها",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "مو از گلدمن ساکس، افزایش ۸۰ درصدی سهام کره را به دلیل رونق بازار حافظه پیش‌بینی می‌کند.",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا همچنان در حال کاهش است زیرا معامله‌گران در حال بررسی چشم‌انداز افزایش نرخ بهره فدرال رزرو هستند",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۷ سپتامبر",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "معامله‌گران اوراق قرضه خود را برای نوسانات بیشتر در هر دو انتهای منحنی بازدهی ایالات متحده آماده می‌کنند",
       "date": "Sun, 06 Sep 2026",
@@ -135,35 +151,40 @@
     },
     {
       "title": "ترامپ می‌گوید «عدم تعادل» دلار کانادا با آمریکا غیرقابل قبول است",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بلک راک و جی پی مورگان روی بازارهای نوظهور شرط بندی می کنند زیرا آشفتگی، اوراق قرضه جهانی را فرا گرفته است",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مبارزه آمریکا با ایران به سمت استقامت اقتصادی تغییر جهت می‌دهد",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "اوپک پلاس به طرح خود برای حفظ سهمیه‌های تولید نفت بدون تغییر پایبند است",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
+      "title": "گلدمن سايبر كب را عامل مزيت هزينه‌اي تسلا در روبوتاكسي‌سازي مي‌داند",
+      "date": "2026-09-06 21:16",
+      "source": "Investing.com"
+    },
+    {
       "title": "رایت می‌گوید دولت ترامپ بر افزایش تولید نفت تمرکز دارد",
       "date": "2026-09-06 19:04",
       "source": "Investing.com"
     },
     {
-      "title": "بیت کوین با سیگنال‌های اشباع خرید، نزدیک به ۷۹۹۵۵ دلار تثبیت شد: سطوح زنده",
-      "date": "2026-09-06 19:02",
-      "source": "Investing.com"
+      "title": "سهام آسیایی در پی حملات آمریکا و ایران افزایش یافت: بسته شدن بازارها",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "مو از گلدمن ساکس، افزایش ۸۰ درصدی سهام کره را به دلیل رونق بازار حافظه پیش‌بینی می‌کند.",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا همچنان در حال کاهش است زیرا معامله‌گران در حال بررسی چشم‌انداز افزایش نرخ بهره فدرال رزرو هستند",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۷ سپتامبر",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "معامله‌گران اوراق قرضه خود را برای نوسانات بیشتر در هر دو انتهای منحنی بازدهی ایالات متحده آماده می‌کنند",
@@ -172,21 +193,6 @@
     },
     {
       "title": "ترامپ می‌گوید «عدم تعادل» دلار کانادا با آمریکا غیرقابل قبول است",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بلک راک و جی پی مورگان روی بازارهای نوظهور شرط بندی می کنند زیرا آشفتگی، اوراق قرضه جهانی را فرا گرفته است",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مبارزه آمریکا با ایران به سمت استقامت اقتصادی تغییر جهت می‌دهد",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "اوپک پلاس به طرح خود برای حفظ سهمیه‌های تولید نفت بدون تغییر پایبند است",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
     }
@@ -196,112 +202,112 @@
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1227.4,
-        "chg": 21.12
+        "price": 1229.34,
+        "chg": 19.77
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 269.51,
-        "chg": 14.91
+        "price": 264.44,
+        "chg": 11.75
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.42,
-        "chg": 11.62
+        "price": 2.44,
+        "chg": 11.33
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 13.1,
-        "chg": 8.59
+        "price": 13.23,
+        "chg": 9.65
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.055,
-        "chg": 5.05
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.387559,
+        "chg": 4.58
       }
     ],
     "losers_24h": [
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 530.97,
-        "chg": -3.28
+        "price": 537.88,
+        "chg": -2.42
       },
       {
         "symbol": "bnb",
         "name": "BNB",
-        "price": 753.09,
-        "chg": -2.33
+        "price": 753.06,
+        "chg": -1.86
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01678389,
-        "chg": -1.43
+        "price": 0.01674528,
+        "chg": -1.32
       },
       {
         "symbol": "wlfi",
         "name": "World Liberty Financial",
-        "price": 0.056647,
-        "chg": -1.33
+        "price": 0.056815,
+        "chg": -0.66
       },
       {
-        "symbol": "doge",
-        "name": "Dogecoin",
-        "price": 0.090396,
-        "chg": -0.85
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.13,
+        "chg": -0.23
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1227.4,
-        "chg": 138.8
+        "price": 1229.34,
+        "chg": 141.0
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.14,
-        "chg": 76.1
+        "price": 7.24,
+        "chg": 80.0
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 88.0,
+        "price": 87.96,
         "chg": 61.6
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 13.1,
-        "chg": 59.7
+        "price": 13.23,
+        "chg": 59.5
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.42,
-        "chg": 51.6
+        "price": 2.44,
+        "chg": 53.1
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.33,
-        "chg": -4.3
+        "price": 9.35,
+        "chg": -4.1
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.12,
-        "chg": -3.9
+        "price": 1.13,
+        "chg": -2.4
       }
     ],
-    "updated": "2026-09-06 21:24"
+    "updated": "2026-09-06 23:56"
   }
 }
