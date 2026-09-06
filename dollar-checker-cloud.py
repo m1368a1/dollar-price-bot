@@ -324,7 +324,7 @@ def fetch_global_market():
 
 
 
-        r3 = s.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&price_change_percentage=24h", timeout=15)
+        r3 = s.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false&price_change_percentage=24h%2C7d%2C30d", timeout=15)
 
         top_data = r3.json()
         top_coins = top_data if isinstance(top_data, list) else []
@@ -346,6 +346,17 @@ def fetch_global_market():
             "top_gainers": [(c["name"], c["symbol"], c.get("price_change_percentage_24h", 0) or 0) for c in top_coins if (c.get("price_change_percentage_24h", 0) or 0) > 0][:3],
 
             "top_losers": [(c["name"], c["symbol"], c.get("price_change_percentage_24h", 0) or 0) for c in top_coins if (c.get("price_change_percentage_24h", 0) or 0) < 0][:3],
+
+            "top50": [
+                {
+                    "symbol": (c.get("symbol") or "").lower(),
+                    "name": c.get("name", ""),
+                    "price": c.get("current_price", 0),
+                    "change_24h": c.get("price_change_percentage_24h_in_currency", 0) or c.get("price_change_percentage_24h", 0) or 0,
+                    "change_30d": c.get("price_change_percentage_30d_in_currency", 0) or 0,
+                }
+                for c in top_coins
+            ],
 
         }
 
@@ -3702,6 +3713,30 @@ def main():
             prices["news"] = []
             prices["news_investing"] = []
             prices["news_bloomberg"] = []
+
+        # Save trends (top gainers/losers, 24h and 30d) for the web dashboard
+        try:
+            top50 = global_market.get("top50", []) if global_market else []
+            stable = {"usdt", "usdc", "dai", "tusd", "usde", "fdusd", "pyusd", "usds", "busd", "usdd", "usdp", "frax", "gusd", "eurc", "eurs", "usd1", "usdtb", "rlusd", "usdy", "usdx", "usdg", "buidl", "usdl", "usd0", "usdai"}
+            movers = [c for c in top50 if c.get("symbol") not in stable and (c.get("change_24h") or 0) != 0]
+            def _row(c):
+                return {"symbol": c.get("symbol", ""), "name": c.get("name", ""), "price": c.get("price", 0), "chg": round(c.get("change_24h") or 0, 2)}
+            def _row30(c):
+                return {"symbol": c.get("symbol", ""), "name": c.get("name", ""), "price": c.get("price", 0), "chg": round(c.get("change_30d") or 0, 2)}
+            pos24 = [c for c in movers if (c.get("change_24h") or 0) > 0]
+            neg24 = [c for c in movers if (c.get("change_24h") or 0) < 0]
+            pos30 = [c for c in movers if (c.get("change_30d") or 0) > 0]
+            neg30 = [c for c in movers if (c.get("change_30d") or 0) < 0]
+            prices["trends"] = {
+                "gainers_24h": [_row(c) for c in sorted(pos24, key=lambda x: x.get("change_24h") or 0, reverse=True)[:5]],
+                "losers_24h": [_row(c) for c in sorted(neg24, key=lambda x: x.get("change_24h") or 0)[:5]],
+                "gainers_30d": [_row30(c) for c in sorted(pos30, key=lambda x: x.get("change_30d") or 0, reverse=True)[:5]],
+                "losers_30d": [_row30(c) for c in sorted(neg30, key=lambda x: x.get("change_30d") or 0)[:5]],
+                "updated": date_str,
+            }
+        except Exception as e:
+            print(f"  Trends save error: {e}", file=sys.stderr)
+            prices["trends"] = {}
 
         import json as _json
         with open("prices.json", "w", encoding="utf-8") as f:
