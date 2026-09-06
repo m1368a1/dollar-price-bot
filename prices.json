@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-06 01:00",
-  "usd_sell": 226800,
-  "usd_buy": 226700,
-  "gold_18k": 23385197,
-  "btc_usd": 79925.82,
+  "timestamp": "2026-09-06 05:56",
+  "usd_sell": 226900,
+  "usd_buy": 226800,
+  "gold_18k": 23777644,
+  "btc_usd": 79991.07,
   "fear_greed": 73,
-  "btc_dominance": 59.3,
-  "market_cap": 2700000000000.0,
-  "market_volume": 60000000000.0,
-  "market_change": -2.52,
+  "btc_dominance": 59.1,
+  "market_cap": 2710000000000.0,
+  "market_volume": 70000000000.0,
+  "market_change": -2.05,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79929,
-      "change_24h": 0.38174,
-      "market_cap": 1604830318272
+      "price": 79987,
+      "change_24h": 0.50957,
+      "market_cap": 1606143987329
     },
     {
       "symbol": "eth",
-      "price": 2491.92,
-      "change_24h": 1.52845,
-      "market_cap": 303929463117
+      "price": 2514.2,
+      "change_24h": 2.56266,
+      "market_cap": 306780020169
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": -0.01409,
-      "market_cap": 183405844227
+      "change_24h": -0.01037,
+      "market_cap": 183399272065
     },
     {
       "symbol": "bnb",
-      "price": 767.6,
-      "change_24h": 6.54181,
-      "market_cap": 102214045626
+      "price": 761.05,
+      "change_24h": 5.32672,
+      "market_cap": 101361074547
     },
     {
       "symbol": "xrp",
-      "price": 1.42,
-      "change_24h": 1.35268,
-      "market_cap": 88859475077
+      "price": 1.43,
+      "change_24h": 1.79589,
+      "market_cap": 89420328467
     },
     {
       "symbol": "usdc",
-      "price": 1.0,
-      "change_24h": 0.00069,
-      "market_cap": 74641181134
+      "price": 0.999994,
+      "change_24h": 0.00094,
+      "market_cap": 74621537336
     },
     {
       "symbol": "sol",
-      "price": 103.4,
-      "change_24h": 1.41407,
-      "market_cap": 60517204305
+      "price": 106.57,
+      "change_24h": 4.61805,
+      "market_cap": 62384353608
     },
     {
       "symbol": "trx",
-      "price": 0.334321,
-      "change_24h": 0.7664,
-      "market_cap": 31734679119
+      "price": 0.333483,
+      "change_24h": 0.4842,
+      "market_cap": 31657108037
     },
     {
       "symbol": "figr_heloc",
       "price": 1.055,
-      "change_24h": 1.66108,
+      "change_24h": 1.65542,
       "market_cap": 23516084575
     },
     {
-      "symbol": "hype",
-      "price": 85.51,
-      "change_24h": 1.24324,
-      "market_cap": 19018602226
+      "symbol": "zec",
+      "price": 1169.96,
+      "change_24h": 14.83225,
+      "market_cap": 19775904294
     }
   ],
   "signal": {
@@ -80,60 +80,41 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +2.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +2.4% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.3% در ۲۴ ساعت",
+        "text": "BTC +0.6% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 57",
+        "text": "معتدل: 58",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-06 01:01"
+    "updated": "2026-09-06 05:57"
   },
   "whales": {
     "unconfirmed": {
-      "score": 7,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 173.92,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 173.92,
-          "tier": "متوسط",
-          "fee": 2.115e-05,
-          "inputs": 1,
-          "outputs": 2,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
     {
-      "title": "نیروهای آمریکایی و ایرانی به سمت کشتی‌ها در آب‌های نزدیک ایران شلیک کردند",
-      "date": "2026-09-05 21:36",
-      "source": "Investing.com"
-    },
-    {
-      "title": "UBS: کالاها می‌توانند با افزایش تورم و خطرات ژئوپلیتیکی، تنوع‌بخشی کنند",
-      "date": "2026-09-05 19:17",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بیت کوین نزدیک به مقاومت ۸۲ هزار دلاری تثبیت شد: سطوح زنده",
-      "date": "2026-09-05 19:02",
+      "title": "وال استریت ژورنال: میلیاردها دلار از دارایی‌های ایران علیرغم تحریم‌ها از طریق بانک‌های آمریکایی در حال انتقال است",
+      "date": "2026-09-06 01:52",
       "source": "Investing.com"
     }
   ],
@@ -156,18 +137,8 @@
   ],
   "news": [
     {
-      "title": "نیروهای آمریکایی و ایرانی به سمت کشتی‌ها در آب‌های نزدیک ایران شلیک کردند",
-      "date": "2026-09-05 21:36",
-      "source": "Investing.com"
-    },
-    {
-      "title": "UBS: کالاها می‌توانند با افزایش تورم و خطرات ژئوپلیتیکی، تنوع‌بخشی کنند",
-      "date": "2026-09-05 19:17",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بیت کوین نزدیک به مقاومت ۸۲ هزار دلاری تثبیت شد: سطوح زنده",
-      "date": "2026-09-05 19:02",
+      "title": "وال استریت ژورنال: میلیاردها دلار از دارایی‌های ایران علیرغم تحریم‌ها از طریق بانک‌های آمریکایی در حال انتقال است",
+      "date": "2026-09-06 01:52",
       "source": "Investing.com"
     },
     {
