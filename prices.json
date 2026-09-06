@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-06 13:27",
-  "usd_sell": 226900,
-  "usd_buy": 226800,
-  "gold_18k": 23530633,
-  "btc_usd": 79832.75,
+  "timestamp": "2026-09-06 14:12",
+  "usd_sell": 226700,
+  "usd_buy": 226600,
+  "gold_18k": 23465995,
+  "btc_usd": 79780.16,
   "fear_greed": 73,
   "btc_dominance": 59.2,
   "market_cap": 2700000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -2.95,
+  "market_change": -2.82,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79823,
-      "change_24h": 0.08544,
-      "market_cap": 1603034010478
+      "price": 79766,
+      "change_24h": 0.11642,
+      "market_cap": 1601838994958
     },
     {
       "symbol": "eth",
-      "price": 2492.84,
-      "change_24h": 1.32871,
-      "market_cap": 304240241226
+      "price": 2490.56,
+      "change_24h": 1.42026,
+      "market_cap": 303945444239
     },
     {
       "symbol": "usdt",
-      "price": 0.999993,
-      "change_24h": -0.01073,
-      "market_cap": 183391098554
+      "price": 0.999948,
+      "change_24h": -0.01118,
+      "market_cap": 183386512095
     },
     {
       "symbol": "bnb",
-      "price": 751.0,
-      "change_24h": -1.73686,
-      "market_cap": 100025310145
+      "price": 748.71,
+      "change_24h": -1.91214,
+      "market_cap": 99737370362
     },
     {
       "symbol": "xrp",
       "price": 1.41,
-      "change_24h": -0.14747,
-      "market_cap": 88765957685
+      "change_24h": 0.10315,
+      "market_cap": 88813793463
     },
     {
       "symbol": "usdc",
-      "price": 0.999968,
-      "change_24h": -0.00423,
-      "market_cap": 74541111547
+      "price": 0.999959,
+      "change_24h": -0.00303,
+      "market_cap": 74541911385
     },
     {
       "symbol": "sol",
-      "price": 106.18,
-      "change_24h": 2.91708,
-      "market_cap": 62178604849
+      "price": 106.76,
+      "change_24h": 3.87205,
+      "market_cap": 62536018737
     },
     {
       "symbol": "trx",
-      "price": 0.33547,
-      "change_24h": 0.73571,
-      "market_cap": 31848307292
+      "price": 0.335022,
+      "change_24h": 0.53693,
+      "market_cap": 31799581571
     },
     {
       "symbol": "figr_heloc",
       "price": 1.055,
-      "change_24h": 1.52573,
+      "change_24h": 1.52394,
       "market_cap": 23516084575
     },
     {
       "symbol": "zec",
-      "price": 1184.85,
-      "change_24h": 16.41585,
-      "market_cap": 20040477489
+      "price": 1177.4,
+      "change_24h": 16.02833,
+      "market_cap": 19927087737
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 0,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -84,7 +84,7 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.1% در ۲۴ ساعت",
+        "text": "BTC +0.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,14 +94,10 @@
       {
         "text": "معتدل: 57",
         "tone": "neutral"
-      },
-      {
-        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
-        "tone": "bearish"
       }
     ],
-    "confidence": 60,
-    "updated": "2026-09-06 13:27"
+    "confidence": 50,
+    "updated": "2026-09-06 14:12"
   },
   "whales": {
     "unconfirmed": {
@@ -133,6 +129,11 @@
     }
   ],
   "news_bloomberg": [
+    {
+      "title": "ترامپ می‌گوید «عدم تعادل» دلار کانادا با آمریکا غیرقابل قبول است",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "بلک راک و جی پی مورگان روی بازارهای نوظهور شرط بندی می کنند زیرا آشفتگی، اوراق قرضه جهانی را فرا گرفته است",
       "date": "Sun, 06 Sep 2026",
@@ -176,6 +177,11 @@
       "source": "Investing.com"
     },
     {
+      "title": "ترامپ می‌گوید «عدم تعادل» دلار کانادا با آمریکا غیرقابل قبول است",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "بلک راک و جی پی مورگان روی بازارهای نوظهور شرط بندی می کنند زیرا آشفتگی، اوراق قرضه جهانی را فرا گرفته است",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
@@ -206,96 +212,96 @@
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1184.85,
-        "chg": 16.42
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 7.01,
-        "chg": 12.28
+        "price": 1177.4,
+        "chg": 16.03
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.39,
-        "chg": 7.36
+        "price": 2.46,
+        "chg": 11.77
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.95,
+        "chg": 9.55
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 88.94,
-        "chg": 4.08
+        "price": 89.27,
+        "chg": 4.54
       },
       {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 12.27,
-        "chg": 3.66
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.605655,
+        "chg": 4.36
       }
     ],
     "losers_24h": [
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.780251,
-        "chg": -7.94
+        "price": 0.772059,
+        "chg": -5.78
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 529.07,
-        "chg": -2.97
-      },
-      {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 5.42e-06,
-        "chg": -2.57
+        "price": 529.2,
+        "chg": -2.13
       },
       {
         "symbol": "bnb",
         "name": "BNB",
-        "price": 751.0,
-        "chg": -1.74
+        "price": 748.71,
+        "chg": -1.91
+      },
+      {
+        "symbol": "shib",
+        "name": "Shiba Inu",
+        "price": 5.43e-06,
+        "chg": -0.72
       },
       {
         "symbol": "wlfi",
         "name": "World Liberty Financial",
-        "price": 0.056449,
-        "chg": -1.69
+        "price": 0.05672,
+        "chg": -0.39
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1184.85,
-        "chg": 128.6
+        "price": 1177.4,
+        "chg": 131.0
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.01,
-        "chg": 73.8
+        "price": 6.95,
+        "chg": 71.7
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 88.94,
-        "chg": 56.7
+        "price": 89.27,
+        "chg": 58.0
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 134.75,
-        "chg": 50.4
+        "price": 134.98,
+        "chg": 50.2
       },
       {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 12.27,
-        "chg": 50.3
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.46,
+        "chg": 49.9
       }
     ],
     "losers_30d": [
@@ -309,9 +315,9 @@
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.13,
-        "chg": -2.3
+        "chg": -2.2
       }
     ],
-    "updated": "2026-09-06 13:27"
+    "updated": "2026-09-06 14:12"
   }
 }
