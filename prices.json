@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-09-06 05:56",
+  "timestamp": "2026-09-06 05:59",
   "usd_sell": 226900,
   "usd_buy": 226800,
-  "gold_18k": 23777644,
-  "btc_usd": 79991.07,
+  "gold_18k": 23713006,
+  "btc_usd": 79958.5,
   "fear_greed": 73,
   "btc_dominance": 59.1,
   "market_cap": 2710000000000.0,
@@ -12,51 +12,51 @@
   "top10": [
     {
       "symbol": "btc",
-      "price": 79987,
-      "change_24h": 0.50957,
-      "market_cap": 1606143987329
+      "price": 79985,
+      "change_24h": 0.49294,
+      "market_cap": 1606145638744
     },
     {
       "symbol": "eth",
-      "price": 2514.2,
-      "change_24h": 2.56266,
-      "market_cap": 306780020169
+      "price": 2514.15,
+      "change_24h": 2.56165,
+      "market_cap": 306787768280
     },
     {
       "symbol": "usdt",
       "price": 1.0,
-      "change_24h": -0.01037,
-      "market_cap": 183399272065
+      "change_24h": -0.01151,
+      "market_cap": 183402320498
     },
     {
       "symbol": "bnb",
-      "price": 761.05,
-      "change_24h": 5.32672,
-      "market_cap": 101361074547
+      "price": 761.08,
+      "change_24h": 5.32647,
+      "market_cap": 101342811559
     },
     {
       "symbol": "xrp",
-      "price": 1.43,
-      "change_24h": 1.79589,
-      "market_cap": 89420328467
+      "price": 1.42,
+      "change_24h": 1.74087,
+      "market_cap": 89396104743
     },
     {
       "symbol": "usdc",
-      "price": 0.999994,
-      "change_24h": 0.00094,
-      "market_cap": 74621537336
+      "price": 0.999978,
+      "change_24h": -0.00114,
+      "market_cap": 74623120068
     },
     {
       "symbol": "sol",
-      "price": 106.57,
-      "change_24h": 4.61805,
-      "market_cap": 62384353608
+      "price": 106.58,
+      "change_24h": 4.56276,
+      "market_cap": 62396319967
     },
     {
       "symbol": "trx",
-      "price": 0.333483,
-      "change_24h": 0.4842,
-      "market_cap": 31657108037
+      "price": 0.333496,
+      "change_24h": 0.46818,
+      "market_cap": 31658647741
     },
     {
       "symbol": "figr_heloc",
@@ -66,9 +66,9 @@
     },
     {
       "symbol": "zec",
-      "price": 1169.96,
-      "change_24h": 14.83225,
-      "market_cap": 19775904294
+      "price": 1168.1,
+      "change_24h": 14.71912,
+      "market_cap": 19759218039
     }
   ],
   "signal": {
@@ -80,7 +80,7 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +2.4% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +2.3% در ۷ روز",
         "tone": "neutral"
       },
       {
@@ -97,7 +97,7 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-06 05:57"
+    "updated": "2026-09-06 05:59"
   },
   "whales": {
     "unconfirmed": {
