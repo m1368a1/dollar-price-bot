@@ -1,62 +1,62 @@
 {
-  "timestamp": "2026-09-07 21:38",
+  "timestamp": "2026-09-07 23:31",
   "usd_sell": 224200,
   "usd_buy": 224100,
   "gold_18k": 23011219,
-  "btc_usd": 79192.83,
+  "btc_usd": 78995.63,
   "fear_greed": 71,
   "btc_dominance": 59.1,
   "market_cap": 2680000000000.0,
-  "market_volume": 80000000000.0,
-  "market_change": -3.4,
+  "market_volume": 70000000000.0,
+  "market_change": -3.76,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79192,
-      "change_24h": -0.88665,
-      "market_cap": 1590245566833
+      "price": 78997,
+      "change_24h": -1.42954,
+      "market_cap": 1586323491503
     },
     {
       "symbol": "eth",
-      "price": 2491.69,
-      "change_24h": -0.60229,
-      "market_cap": 304048144266
+      "price": 2484.27,
+      "change_24h": -1.15247,
+      "market_cap": 303142164082
     },
     {
       "symbol": "usdt",
-      "price": 0.999834,
-      "change_24h": -0.01487,
-      "market_cap": 183380340884
+      "price": 0.999855,
+      "change_24h": -0.00946,
+      "market_cap": 183381238270
     },
     {
       "symbol": "bnb",
-      "price": 739.28,
-      "change_24h": -1.83835,
-      "market_cap": 98442471019
+      "price": 738.76,
+      "change_24h": -1.77332,
+      "market_cap": 98370187388
     },
     {
       "symbol": "xrp",
-      "price": 1.4,
-      "change_24h": -1.93144,
-      "market_cap": 87671066890
+      "price": 1.39,
+      "change_24h": -1.86579,
+      "market_cap": 87430932217
     },
     {
       "symbol": "usdc",
-      "price": 0.999899,
-      "change_24h": -0.00686,
-      "market_cap": 74396554823
+      "price": 0.999914,
+      "change_24h": -0.00063,
+      "market_cap": 74395629560
     },
     {
       "symbol": "sol",
-      "price": 103.89,
-      "change_24h": -2.08614,
-      "market_cap": 60897096754
+      "price": 103.68,
+      "change_24h": -2.50388,
+      "market_cap": 60776259811
     },
     {
       "symbol": "trx",
-      "price": 0.334668,
-      "change_24h": -0.3988,
-      "market_cap": 31776434456
+      "price": 0.334343,
+      "change_24h": -0.32537,
+      "market_cap": 31737496563
     },
     {
       "symbol": "figr_heloc",
@@ -66,13 +66,13 @@
     },
     {
       "symbol": "zec",
-      "price": 1151.24,
-      "change_24h": -6.23526,
-      "market_cap": 19479074530
+      "price": 1135.9,
+      "change_24h": -7.52351,
+      "market_cap": 19214620525
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +0.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +0.6% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.9% در ۲۴ ساعت",
+        "text": "BTC -1.3% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 51",
+        "text": "معتدل: 50",
         "tone": "neutral"
+      },
+      {
+        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-07 21:38"
+    "confidence": 60,
+    "updated": "2026-09-07 23:31"
   },
   "whales": {
     "unconfirmed": {
@@ -116,19 +120,19 @@
       "title": "بیتکوین trapped in $76K-$82K range: Live سطوح",
       "date": "2026-09-07 19:12",
       "source": "Investing.com"
-    },
-    {
-      "title": "Brent نفت stalls at resistance with RSI at 72: Live سطوح",
-      "date": "2026-09-07 19:12",
-      "source": "Investing.com"
-    },
-    {
-      "title": "Crude نفت WTI tests $93.64 resistance with overbought RSI: Live سطوح",
-      "date": "2026-09-07 19:12",
-      "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
+    {
+      "title": "Latest نفت Market News and Analysis for Sept. 8",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "Stocks in Asia Poised to Edge Down, Yen in Focus: Markets Wrap",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "Sapporo Breweries CSO on Tariffs, ایران War",
       "date": "Mon, 07 Sep 2026",
@@ -140,22 +144,12 @@
       "source": "Bloomberg"
     },
     {
-      "title": "Why Are Japan’s Bond Yields Rising? What’s Driving the Surge",
+      "title": "چرا بازده اوراق قرضه ژاپن در حال افزایش است؟ چه چیزی این افزایش را هدایت می‌کند؟",
       "date": "Mon, 07 Sep 2026",
       "source": "Bloomberg"
     },
     {
       "title": "آمریکا Stocks Slip as نفت Gains Keep Traders Cautious: Markets Wrap",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Copper Hits All-Time High Amid Tariff Turmoil, Mine Struggles",
-      "date": "Mon, 07 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Latest نفت Market News and Analysis for September 7",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
     }
@@ -167,14 +161,14 @@
       "source": "Investing.com"
     },
     {
-      "title": "Brent نفت stalls at resistance with RSI at 72: Live سطوح",
-      "date": "2026-09-07 19:12",
-      "source": "Investing.com"
+      "title": "Latest نفت Market News and Analysis for Sept. 8",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "Crude نفت WTI tests $93.64 resistance with overbought RSI: Live سطوح",
-      "date": "2026-09-07 19:12",
-      "source": "Investing.com"
+      "title": "Stocks in Asia Poised to Edge Down, Yen in Focus: Markets Wrap",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "Sapporo Breweries CSO on Tariffs, ایران War",
@@ -187,7 +181,7 @@
       "source": "Bloomberg"
     },
     {
-      "title": "Why Are Japan’s Bond Yields Rising? What’s Driving the Surge",
+      "title": "چرا بازده اوراق قرضه ژاپن در حال افزایش است؟ چه چیزی این افزایش را هدایت می‌کند؟",
       "date": "Mon, 07 Sep 2026",
       "source": "Bloomberg"
     },
@@ -195,192 +189,176 @@
       "title": "آمریکا Stocks Slip as نفت Gains Keep Traders Cautious: Markets Wrap",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "Copper Hits All-Time High Amid Tariff Turmoil, Mine Struggles",
-      "date": "Mon, 07 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Latest نفت Market News and Analysis for September 7",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-07 21:38",
+    "updated": "2026-09-07 23:31",
     "gainers_24h": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.071,
-        "chg": 8.78
-      },
-      {
-        "symbol": "wbt",
-        "name": "WhiteBIT Coin",
-        "price": 76.63,
-        "chg": 3.97
-      },
-      {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 8.14,
-        "chg": 3.74
+        "price": 1.057,
+        "chg": 8.55
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.192945,
-        "chg": 3.67
+        "price": 0.193003,
+        "chg": 3.61
+      },
+      {
+        "symbol": "wbt",
+        "name": "WhiteBIT Coin",
+        "price": 76.46,
+        "chg": 3.51
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 8.07,
+        "chg": 3.07
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.62178,
-        "chg": 3.15
+        "price": 0.621187,
+        "chg": 2.3
       }
     ],
     "losers_24h": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1151.24,
-        "chg": -6.24
+        "price": 1135.9,
+        "chg": -7.52
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.31,
-        "chg": -5.45
+        "price": 2.3,
+        "chg": -6.11
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.104723,
-        "chg": -5.07
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 515.75,
+        "chg": -4.81
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.91,
-        "chg": -3.28
+        "price": 6.87,
+        "chg": -4.78
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 260.72,
-        "chg": -3.22
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.104887,
+        "chg": -4.72
       }
     ],
     "gainers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1151.24,
-        "chg": 34.5
+        "price": 1135.9,
+        "chg": 32.1
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.91,
-        "chg": 33.2
+        "price": 6.87,
+        "chg": 29.8
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.071,
-        "chg": 27.2
+        "price": 1.057,
+        "chg": 24.1
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.31,
-        "chg": 24.0
+        "price": 2.3,
+        "chg": 20.5
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.827369,
-        "chg": 14.1
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 55.23,
+        "chg": 13.6
       }
     ],
     "losers_7d": [
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.104723,
-        "chg": -16.1
+        "price": 0.104887,
+        "chg": -15.2
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.26,
+        "price": 9.2,
         "chg": -4.7
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01630764,
-        "chg": -2.8
+        "price": 0.01628603,
+        "chg": -2.9
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 515.87,
-        "chg": -1.0
+        "price": 515.75,
+        "chg": -2.5
       },
       {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4413.89,
-        "chg": -0.9
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.39,
+        "chg": -1.0
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1151.24,
-        "chg": 126.3
+        "price": 1135.9,
+        "chg": 121.4
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.91,
-        "chg": 73.3
+        "price": 6.87,
+        "chg": 69.4
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 85.29,
-        "chg": 55.2
+        "price": 85.13,
+        "chg": 54.3
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 12.76,
-        "chg": 53.5
+        "price": 12.72,
+        "chg": 52.2
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.62178,
-        "chg": 44.9
+        "price": 0.621187,
+        "chg": 43.9
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.26,
-        "chg": -5.6
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.15,
-        "chg": 0.1
+        "price": 9.2,
+        "chg": -5.3
       },
       {
         "symbol": "usyc",
@@ -389,16 +367,22 @@
         "chg": 0.5
       },
       {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.15,
+        "chg": 1.0
+      },
+      {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4413.89,
-        "chg": 1.7
+        "price": 4411.61,
+        "chg": 1.5
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.334668,
-        "chg": 1.8
+        "price": 0.334343,
+        "chg": 1.7
       }
     ]
   }
