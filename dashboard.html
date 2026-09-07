@@ -145,6 +145,7 @@ function F2(n){return n?Number(n).toLocaleString('en-US',{maximumFractionDigits:
 function U(n){return '$'+F2(n)}
 function P(n){if(!n)return'0';return n.toLocaleString('en-US')}
 
+var trendsActive='24h';
 async function load(){
   var d=null;
   try{
@@ -307,7 +308,7 @@ async function load(){
       return h;
     }
     function pane(kind){
-      var first=kind==='24h';
+      var first=kind===trendsActive;
       return '<div class="trends-pane'+(first?' active':'')+'" id="tp-'+kind+'">'
         +'<div class="trends-col up"><div class="trends-col-title">⬆️ بیشترین صعود</div>'+tcol(tr['gainers_'+kind])+'</div>'
         +'<div class="trends-col down"><div class="trends-col-title">⬇️ بیشترین نزول</div>'+tcol(tr['losers_'+kind])+'</div>'
@@ -481,6 +482,7 @@ function closeAnalysisModal(){
   document.getElementById('analysis-modal-img').removeAttribute('src');
 }
 function showTrendPane(kind){
+  trendsActive=kind;
   var panes=document.querySelectorAll('.trends-pane');var tabs=document.querySelectorAll('.trends-tab');
   for(var i=0;i<panes.length;i++)panes[i].classList.toggle('active',panes[i].id==='tp-'+kind);
   var order=['24h','7d','30d'];var want=order.indexOf(kind);if(want<0)want=0;
