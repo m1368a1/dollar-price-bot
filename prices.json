@@ -1,62 +1,62 @@
 {
-  "timestamp": "2026-09-07 16:29",
+  "timestamp": "2026-09-07 19:39",
   "usd_sell": 224200,
   "usd_buy": 224100,
-  "gold_18k": 23055081,
-  "btc_usd": 78833.31,
+  "gold_18k": 23011219,
+  "btc_usd": 79371.18,
   "fear_greed": 71,
   "btc_dominance": 59.1,
-  "market_cap": 2670000000000.0,
+  "market_cap": 2690000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -3.44,
+  "market_change": -3.16,
   "top10": [
     {
       "symbol": "btc",
-      "price": 78804,
-      "change_24h": -1.12366,
-      "market_cap": 1582456274477
+      "price": 79374,
+      "change_24h": -0.56171,
+      "market_cap": 1594102611529
     },
     {
       "symbol": "eth",
-      "price": 2471.56,
-      "change_24h": -0.41792,
-      "market_cap": 301564728447
+      "price": 2496.08,
+      "change_24h": 0.21767,
+      "market_cap": 304658862788
     },
     {
       "symbol": "usdt",
-      "price": 0.999867,
-      "change_24h": -0.00934,
-      "market_cap": 183385891452
+      "price": 0.99988,
+      "change_24h": -0.00791,
+      "market_cap": 183391850055
     },
     {
       "symbol": "bnb",
-      "price": 737.35,
-      "change_24h": -1.41179,
-      "market_cap": 98185600030
+      "price": 741.33,
+      "change_24h": -1.01183,
+      "market_cap": 98724120324
     },
     {
       "symbol": "xrp",
-      "price": 1.39,
-      "change_24h": -1.67161,
-      "market_cap": 87122525366
+      "price": 1.4,
+      "change_24h": -0.65387,
+      "market_cap": 87919988957
     },
     {
       "symbol": "usdc",
-      "price": 0.999904,
-      "change_24h": -0.0065,
-      "market_cap": 74418125128
+      "price": 0.999927,
+      "change_24h": -0.00262,
+      "market_cap": 74405537237
     },
     {
       "symbol": "sol",
-      "price": 103.51,
-      "change_24h": -2.28559,
-      "market_cap": 60665923157
+      "price": 104.34,
+      "change_24h": -1.25825,
+      "market_cap": 61179713131
     },
     {
       "symbol": "trx",
-      "price": 0.334091,
-      "change_24h": -0.35738,
-      "market_cap": 31719334126
+      "price": 0.334417,
+      "change_24h": -0.21016,
+      "market_cap": 31750474891
     },
     {
       "symbol": "figr_heloc",
@@ -66,13 +66,13 @@
     },
     {
       "symbol": "zec",
-      "price": 1147.75,
-      "change_24h": -2.39311,
-      "market_cap": 19440945996
+      "price": 1162.35,
+      "change_24h": -4.7072,
+      "market_cap": 19677352139
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +0.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +0.6% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -1.1% در ۲۴ ساعت",
+        "text": "BTC -0.7% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 50",
+        "text": "معتدل: 51",
         "tone": "neutral"
       },
       {
-        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
-        "tone": "bearish"
+        "text": "انگولفینگ صعودی (Bullish Engulfing) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
     "confidence": 60,
-    "updated": "2026-09-07 16:29"
+    "updated": "2026-09-07 19:40"
   },
   "whales": {
     "unconfirmed": {
@@ -115,54 +115,90 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "بیت کوین در محدوده ۷۶ هزار تا ۸۲ هزار دلار گیر افتاده است: سطوح زنده",
+      "date": "2026-09-07 19:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "نفت برنت در سطح مقاومت متوقف شد و شاخص قدرت نسبی (RSI) در ۷۲ قرار دارد: سطوح زنده",
+      "date": "2026-09-07 19:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "نفت خام WTI مقاومت ۹۳.۶۴ دلاری را آزمایش می‌کند و RSI در وضعیت اشباع خرید قرار دارد: سطوح زنده",
+      "date": "2026-09-07 19:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "نفت گاز لندن ۱۲ درصد بالاتر از میانگین متحرک ۵۰ روزه افزایش یافت و به اشباع خرید رسید: سطوح زنده",
+      "date": "2026-09-07 19:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سر و شانه طلا در محدوده محدود ۴۴۵۲ دلار: سطوح زنده",
+      "date": "2026-09-07 19:11",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
-    {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۷ سپتامبر",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با تمرکز معامله‌گران بر نوسانات قیمت نفت و دلار، قیمت طلا کاهش یافت",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش قیمت مس به بالاترین حد خود در پی آشفتگی تعرفه‌ها در بازار",
-      "date": "Mon, 07 Sep 2026",
-      "source": "Bloomberg"
-    },
     {
       "title": "سهام ایالات متحده در حالی سقوط کرد که افزایش قیمت نفت، معامله‌گران را محتاط نگه داشته است: بازارها بسته شدند",
       "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "گفته می‌شود پلتفرم‌های جیو هفته آینده بازاریابی برای عرضه اولیه سهام خود در هند را آغاز می‌کنند که رکورد جدیدی محسوب می‌شود",
+      "title": "مس در بحبوحه آشفتگی تعرفه‌ها و مشکلات معادن به بالاترین قیمت خود رسید",
       "date": "Mon, 07 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "عراق پس از افزایش قیمت نفت بصره، برای فروش آن با مشکل مواجه است",
+      "title": "سهام بازارهای نوظهور به بالاترین حد خود از ژوئن رسید، زیرا فناوری، افزایش قیمت نفت را جبران کرد",
       "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۷ سپتامبر",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام اروپا با افزایش قیمت نفت و کاهش ارزش سهام نووارتیس، بی‌حرکت ماند",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با تمرکز معامله‌گران بر نوسانات قیمت نفت و دلار، قیمت طلا کاهش یافت",
+      "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۷ سپتامبر",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
+      "title": "بیت کوین در محدوده ۷۶ هزار تا ۸۲ هزار دلار گیر افتاده است: سطوح زنده",
+      "date": "2026-09-07 19:12",
+      "source": "Investing.com"
     },
     {
-      "title": "با تمرکز معامله‌گران بر نوسانات قیمت نفت و دلار، قیمت طلا کاهش یافت",
-      "date": "Sun, 06 Sep 2026",
-      "source": "Bloomberg"
+      "title": "نفت برنت در سطح مقاومت متوقف شد و شاخص قدرت نسبی (RSI) در ۷۲ قرار دارد: سطوح زنده",
+      "date": "2026-09-07 19:12",
+      "source": "Investing.com"
     },
     {
-      "title": "افزایش قیمت مس به بالاترین حد خود در پی آشفتگی تعرفه‌ها در بازار",
-      "date": "Mon, 07 Sep 2026",
-      "source": "Bloomberg"
+      "title": "نفت خام WTI مقاومت ۹۳.۶۴ دلاری را آزمایش می‌کند و RSI در وضعیت اشباع خرید قرار دارد: سطوح زنده",
+      "date": "2026-09-07 19:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "نفت گاز لندن ۱۲ درصد بالاتر از میانگین متحرک ۵۰ روزه افزایش یافت و به اشباع خرید رسید: سطوح زنده",
+      "date": "2026-09-07 19:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سر و شانه طلا در محدوده محدود ۴۴۵۲ دلار: سطوح زنده",
+      "date": "2026-09-07 19:11",
+      "source": "Investing.com"
     },
     {
       "title": "سهام ایالات متحده در حالی سقوط کرد که افزایش قیمت نفت، معامله‌گران را محتاط نگه داشته است: بازارها بسته شدند",
@@ -170,13 +206,28 @@
       "source": "Bloomberg"
     },
     {
-      "title": "گفته می‌شود پلتفرم‌های جیو هفته آینده بازاریابی برای عرضه اولیه سهام خود در هند را آغاز می‌کنند که رکورد جدیدی محسوب می‌شود",
+      "title": "مس در بحبوحه آشفتگی تعرفه‌ها و مشکلات معادن به بالاترین قیمت خود رسید",
       "date": "Mon, 07 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "عراق پس از افزایش قیمت نفت بصره، برای فروش آن با مشکل مواجه است",
+      "title": "سهام بازارهای نوظهور به بالاترین حد خود از ژوئن رسید، زیرا فناوری، افزایش قیمت نفت را جبران کرد",
       "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۷ سپتامبر",
+      "date": "Sun, 06 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام اروپا با افزایش قیمت نفت و کاهش ارزش سهام نووارتیس، بی‌حرکت ماند",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با تمرکز معامله‌گران بر نوسانات قیمت نفت و دلار، قیمت طلا کاهش یافت",
+      "date": "Sun, 06 Sep 2026",
       "source": "Bloomberg"
     }
   ],
@@ -185,112 +236,112 @@
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.091,
-        "chg": 12.83
+        "price": 1.082,
+        "chg": 12.92
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 8.06,
-        "chg": 5.47
+        "price": 8.15,
+        "chg": 6.38
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 259.83,
-        "chg": 4.82
+        "symbol": "xlm",
+        "name": "Stellar",
+        "price": 0.192788,
+        "chg": 4.78
+      },
+      {
+        "symbol": "wbt",
+        "name": "WhiteBIT Coin",
+        "price": 76.8,
+        "chg": 4.45
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.623538,
-        "chg": 4.31
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 12.82,
-        "chg": 4.25
+        "price": 0.625001,
+        "chg": 4.4
       }
     ],
     "losers_24h": [
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.81,
-        "chg": -6.48
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1162.35,
+        "chg": -4.71
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.3,
-        "chg": -5.67
+        "price": 2.31,
+        "chg": -4.69
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.105187,
-        "chg": -3.36
+        "price": 0.105717,
+        "chg": -3.56
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 85.28,
-        "chg": -3.27
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.91,
+        "chg": -3.18
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01631545,
-        "chg": -3.01
+        "price": 0.01631309,
+        "chg": -2.73
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1147.75,
-        "chg": 127.1
+        "price": 1162.35,
+        "chg": 128.6
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.81,
-        "chg": 69.7
+        "price": 6.91,
+        "chg": 72.4
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 85.28,
-        "chg": 55.7
+        "price": 85.37,
+        "chg": 54.8
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 12.82,
-        "chg": 54.0
+        "price": 12.81,
+        "chg": 53.2
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.623538,
-        "chg": 46.3
+        "price": 0.625001,
+        "chg": 44.7
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.15,
-        "chg": -5.7
+        "price": 9.22,
+        "chg": -5.0
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.12,
-        "chg": -2.6
+        "price": 1.15,
+        "chg": -0.4
       }
     ],
-    "updated": "2026-09-07 16:29"
+    "updated": "2026-09-07 19:39"
   }
 }
