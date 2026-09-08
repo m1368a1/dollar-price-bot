@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-09-08 14:34",
+  "timestamp": "2026-09-08 14:36",
   "usd_sell": 229000,
   "usd_buy": 228900,
-  "gold_18k": 23673761,
-  "btc_usd": 78257.0,
+  "gold_18k": 23650676,
+  "btc_usd": 78363.4,
   "fear_greed": 69,
   "btc_dominance": 58.9,
   "market_cap": 2660000000000.0,
@@ -12,63 +12,63 @@
   "top10": [
     {
       "symbol": "btc",
-      "price": 78263,
-      "change_24h": -0.95456,
-      "market_cap": 1571649442808
+      "price": 78339,
+      "change_24h": -0.89346,
+      "market_cap": 1573388071025
     },
     {
       "symbol": "eth",
-      "price": 2476.82,
-      "change_24h": -0.15693,
-      "market_cap": 302216411706
+      "price": 2479.03,
+      "change_24h": -0.07998,
+      "market_cap": 302576067509
     },
     {
       "symbol": "usdt",
-      "price": 0.999661,
-      "change_24h": -0.02247,
-      "market_cap": 183371543436
+      "price": 0.999615,
+      "change_24h": -0.02519,
+      "market_cap": 183372469009
     },
     {
       "symbol": "bnb",
-      "price": 748.74,
-      "change_24h": 0.7508,
-      "market_cap": 99698574575
+      "price": 749.15,
+      "change_24h": 0.77008,
+      "market_cap": 99789500378
     },
     {
       "symbol": "xrp",
       "price": 1.41,
-      "change_24h": 0.85715,
-      "market_cap": 88214629375
+      "change_24h": 1.00427,
+      "market_cap": 88356824955
     },
     {
       "symbol": "usdc",
-      "price": 0.999878,
-      "change_24h": -0.0006,
-      "market_cap": 74237454031
+      "price": 0.999832,
+      "change_24h": -0.00399,
+      "market_cap": 74238555327
     },
     {
       "symbol": "sol",
-      "price": 102.83,
-      "change_24h": -1.25722,
-      "market_cap": 60271599032
+      "price": 102.96,
+      "change_24h": -1.23611,
+      "market_cap": 60359055567
     },
     {
       "symbol": "trx",
-      "price": 0.339228,
-      "change_24h": 1.29774,
-      "market_cap": 32207359673
+      "price": 0.33923,
+      "change_24h": 1.26497,
+      "market_cap": 32204409419
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.025,
+      "price": 1.019,
       "change_24h": null,
-      "market_cap": 22855982124
+      "market_cap": 22721655765
     },
     {
       "symbol": "zec",
-      "price": 1164.7,
-      "change_24h": -0.94357,
-      "market_cap": 19705787391
+      "price": 1170.6,
+      "change_24h": 0.06365,
+      "market_cap": 19815269367
     }
   ],
   "signal": {
@@ -80,15 +80,15 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +0.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +0.3% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -1.4% در ۲۴ ساعت",
+        "text": "BTC -1.3% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
@@ -97,22 +97,47 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-08 14:34"
+    "updated": "2026-09-08 14:36"
   },
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 150.0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 150.0,
+          "tier": "متوسط",
+          "fee": 3.8e-06,
+          "inputs": 1,
+          "outputs": 1,
+          "direction": "unknown"
+        }
+      ]
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "با فراتر رفتن معاملات از ارزهای دیجیتال، WEEX به عنوان حامی پلاتینیوم به TOKEN2049 سنگاپور بازمی‌گردد",
+      "date": "2026-09-08 14:31",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام بمباردیه پس از تهدید ترامپ برای دسترسی به بازار آمریکا سقوط کرد",
+      "date": "2026-09-08 14:30",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
+    {
+      "title": "بدهی خرید سهام به ارزش ۱۳۸ میلیارد دلار قرار است در بازارهای اعتباری عرضه شود",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "نوسان قیمت طلا در پی بررسی تنش‌های خاورمیانه و نوسانات دلار توسط معامله‌گران",
       "date": "Mon, 07 Sep 2026",
@@ -135,17 +160,27 @@
     },
     {
       "title": "CME برای ورود به بازار آتی لبنیات اروپا به توافق رسید",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شرکت نفتکش می‌گوید ۵۵ میلیون دلار به دلیل اختلاف بر سر نرخ کرایه بدهکار است",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
+      "title": "با فراتر رفتن معاملات از ارزهای دیجیتال، WEEX به عنوان حامی پلاتینیوم به TOKEN2049 سنگاپور بازمی‌گردد",
+      "date": "2026-09-08 14:31",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام بمباردیه پس از تهدید ترامپ برای دسترسی به بازار آمریکا سقوط کرد",
+      "date": "2026-09-08 14:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بدهی خرید سهام به ارزش ۱۳۸ میلیارد دلار قرار است در بازارهای اعتباری عرضه شود",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "نوسان قیمت طلا در پی بررسی تنش‌های خاورمیانه و نوسانات دلار توسط معامله‌گران",
       "date": "Mon, 07 Sep 2026",
       "source": "Bloomberg"
@@ -169,108 +204,103 @@
       "title": "CME برای ورود به بازار آتی لبنیات اروپا به توافق رسید",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "شرکت نفتکش می‌گوید ۵۵ میلیون دلار به دلیل اختلاف بر سر نرخ کرایه بدهکار است",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-08 14:34",
+    "updated": "2026-09-08 14:36",
     "gainers_24h": [
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 79.56,
-        "chg": 9.18
+        "price": 79.63,
+        "chg": 9.26
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.060383,
-        "chg": 5.08
+        "price": 0.060512,
+        "chg": 5.25
       },
       {
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.17,
-        "chg": 4.25
+        "chg": 4.15
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.088,
-        "chg": 2.62
+        "price": 1.094,
+        "chg": 3.08
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0166629,
-        "chg": 1.73
+        "price": 0.01667309,
+        "chg": 1.65
       }
     ],
     "losers_24h": [
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 498.83,
-        "chg": -6.56
+        "price": 499.1,
+        "chg": -6.54
       },
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.75852,
-        "chg": -3.7
+        "price": 0.760262,
+        "chg": -3.66
       },
       {
         "symbol": "ltc",
         "name": "Litecoin",
-        "price": 54.74,
-        "chg": -3.61
+        "price": 54.81,
+        "chg": -3.44
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 12.52,
+        "chg": -3.33
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 83.47,
-        "chg": -3.48
-      },
-      {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 253.03,
-        "chg": -3.46
+        "price": 83.64,
+        "chg": -3.18
       }
     ],
     "gainers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1164.7,
+        "price": 1170.6,
         "chg": 36.0
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.088,
+        "price": 1.094,
         "chg": 25.0
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.92,
+        "price": 6.95,
         "chg": 20.8
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.32,
+        "price": 2.33,
         "chg": 16.6
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.624232,
+        "price": 0.624556,
         "chg": 15.5
       }
     ],
@@ -278,13 +308,13 @@
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.104442,
+        "price": 0.104498,
         "chg": -11.6
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 498.83,
+        "price": 499.1,
         "chg": -2.7
       },
       {
@@ -296,13 +326,13 @@
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 83.47,
+        "price": 83.64,
         "chg": -0.7
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0166629,
+        "price": 0.01667309,
         "chg": -0.7
       }
     ],
@@ -310,19 +340,19 @@
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1164.7,
+        "price": 1170.6,
         "chg": 120.8
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.92,
+        "price": 6.95,
         "chg": 73.3
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 83.47,
+        "price": 83.64,
         "chg": 52.6
       },
       {
@@ -334,7 +364,7 @@
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.624232,
+        "price": 0.624556,
         "chg": 47.6
       }
     ],
@@ -354,19 +384,19 @@
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4397.52,
+        "price": 4397.51,
         "chg": 1.2
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4394.17,
+        "price": 4394.06,
         "chg": 1.5
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.339228,
+        "price": 0.33923,
         "chg": 2.7
       }
     ]
