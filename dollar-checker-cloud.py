@@ -1135,24 +1135,44 @@ def _save_seen_headline(title):
 
 
 def _translate_news_title(title):
-    """Translate financial headlines to Persian using MyMemory API with dictionary fallback."""
-    import urllib.parse
+    """Translate financial headlines to Persian using Google Translate endpoint with MyMemory and dictionary fallback."""
+    import urllib.parse, time
 
-    # Try MyMemory API first (free, reliable)
+    title = title.strip()
+
+    # ---- Try Google Translate (free gtx endpoint, no API key needed) ----
+    for attempt in range(3):
+        try:
+            s = requests.Session()
+            s.headers.update({"User-Agent": "Mozilla/5.0"})
+            url = "https://translate.googleapis.com/translate_a/single"
+            params = {"client": "gtx", "sl": "en", "tl": "fa", "dt": "t", "q": title}
+            r = s.get(url, params=params, timeout=15)
+            if r.status_code == 200:
+                data = r.json()
+                translated = "".join(seg[0] for seg in data[0] if seg and seg[0])
+                translated = translated.strip()
+                if translated and len(translated) > 5 and translated != title:
+                    return _polish_persian(translated)
+            time.sleep(1)  # avoid rate limiting between retries
+        except Exception:
+            time.sleep(1)
+
+    # ---- Fallback 1: MyMemory API ----
     try:
         s = requests.Session()
         s.headers.update({"User-Agent": "Mozilla/5.0"})
-        url = f"https://api.mymemory.translated.net/get?q={urllib.parse.quote(title.strip())}&langpair=en|fa"
+        url = f"https://api.mymemory.translated.net/get?q={urllib.parse.quote(title)}&langpair=en|fa"
         r = s.get(url, timeout=15)
         if r.status_code == 200:
             data = r.json()
             translated = data.get("responseData", {}).get("translatedText", "")
-            if translated and len(translated) > 5 and translated != title.strip():
-                return translated
+            if translated and len(translated) > 5 and translated != title:
+                return _polish_persian(translated)
     except Exception:
         pass
 
-    # Fallback: dictionary-based translation
+    # Fallback 2: dictionary-based translation
     normalized = title.strip()
     phrases = [
         ("U.S. Treasury", "خزانه‌داری آمریکا"), ("US Treasury", "خزانه‌داری آمریکا"),
@@ -1201,7 +1221,36 @@ def _translate_news_title(title):
     for source, target in sorted(words, key=lambda item: len(item[0]), reverse=True):
         normalized = re.sub(r'(?<![A-Za-z])' + re.escape(source) + r'(?![A-Za-z])', target, normalized)
     normalized = re.sub(r'\s+', ' ', normalized).strip(' -:;,.')
-    return normalized
+    return _polish_persian(normalized)
+
+
+def _polish_persian(text):
+    """Clean up common Google-Translate artifacts in short financial headlines."""
+    if not text:
+        return text
+    # Translate common acronyms that Google often leaves in English
+    acronyms = [
+        (r'\bCPI\b', 'شاخص قیمت مصرف‌کننده'),
+        (r'\bGDP\b', 'تولید ناخالص داخلی'),
+        (r'\bBOJ\b', 'بانک مرکزی ژاپن'),
+        (r'\bECB\b', 'بانک مرکزی اروپا'),
+        (r'\bFed\b', 'فدرال رزرو'),
+        (r'\bQ1\b', 'سه ماهه اول'), (r'\bQ2\b', 'سه ماهه دوم'),
+        (r'\bQ3\b', 'سه ماهه سوم'), (r'\bQ4\b', 'سه ماهه چهارم'),
+        (r'\bUS\b', 'آمریکا'),
+        (r'\bBTC\b', 'بیت‌کوین'),
+    ]
+    for pat, rep in acronyms:
+        text = re.sub(pat, rep, text)
+    # Remove stray spaces before Persian punctuation
+    text = re.sub(r'\s+([،؛؟!])', r'\1', text)
+    # Normalize Persian digits and half-space around ی
+    text = text.replace(' ي ', ' ی ').replace('  ', ' ').strip()
+    # Unify bitcoin spelling (بیت کوین / بیت‌کوین -> بیت‌کوین)
+    text = re.sub(r'بیت\s*کوین', 'بیت‌کوین', text)
+    # Remove trailing punctuation artifacts
+    text = text.strip(' -:;,.')
+    return text
 
 def build_news_message(news_list):
 
