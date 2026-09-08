@@ -1,62 +1,62 @@
 {
-  "timestamp": "2026-09-08 09:43",
-  "usd_sell": 226700,
-  "usd_buy": 226600,
-  "gold_18k": 23479846,
-  "btc_usd": 78715.29,
+  "timestamp": "2026-09-08 12:10",
+  "usd_sell": 228000,
+  "usd_buy": 227900,
+  "gold_18k": 23496006,
+  "btc_usd": 78288.91,
   "fear_greed": 69,
   "btc_dominance": 58.9,
-  "market_cap": 2680000000000.0,
+  "market_cap": 2660000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -3.26,
+  "market_change": -3.7,
   "top10": [
     {
       "symbol": "btc",
-      "price": 78663,
-      "change_24h": -0.85312,
-      "market_cap": 1579465169349
+      "price": 78290,
+      "change_24h": -1.48052,
+      "market_cap": 1572071882100
     },
     {
       "symbol": "eth",
-      "price": 2492.37,
-      "change_24h": 0.11391,
-      "market_cap": 304087545091
+      "price": 2471.11,
+      "change_24h": -0.77496,
+      "market_cap": 301533427175
     },
     {
       "symbol": "usdt",
-      "price": 0.999749,
-      "change_24h": -0.0107,
-      "market_cap": 183395122491
+      "price": 0.999607,
+      "change_24h": -0.03082,
+      "market_cap": 183363445157
     },
     {
       "symbol": "bnb",
-      "price": 755.85,
-      "change_24h": 1.54576,
-      "market_cap": 100662309626
+      "price": 751.37,
+      "change_24h": 0.81806,
+      "market_cap": 100049667112
     },
     {
       "symbol": "xrp",
-      "price": 1.4,
-      "change_24h": -0.16192,
-      "market_cap": 87741066630
+      "price": 1.39,
+      "change_24h": -0.93415,
+      "market_cap": 87231244123
     },
     {
       "symbol": "usdc",
-      "price": 0.999842,
-      "change_24h": -0.00676,
-      "market_cap": 74297374818
+      "price": 0.999835,
+      "change_24h": -0.01064,
+      "market_cap": 74218807079
     },
     {
       "symbol": "sol",
-      "price": 103.57,
-      "change_24h": -1.29527,
-      "market_cap": 60711525725
+      "price": 102.7,
+      "change_24h": -2.21598,
+      "market_cap": 60196576385
     },
     {
       "symbol": "trx",
-      "price": 0.338377,
-      "change_24h": 0.51394,
-      "market_cap": 32131754815
+      "price": 0.338461,
+      "change_24h": 0.66949,
+      "market_cap": 32129791000
     },
     {
       "symbol": "figr_heloc",
@@ -66,9 +66,9 @@
     },
     {
       "symbol": "zec",
-      "price": 1136.99,
-      "change_24h": -4.15988,
-      "market_cap": 19261373462
+      "price": 1150.72,
+      "change_24h": -3.45996,
+      "market_cap": 19467722854
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.0% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +0.3% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.9% در ۲۴ ساعت",
+        "text": "BTC -1.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 51",
+        "text": "معتدل: 49",
         "tone": "neutral"
       },
       {
-        "text": "انگولفینگ صعودی (Bullish Engulfing) — نشانه صعود",
+        "text": "چکش (Hammer) — نشانه صعود",
         "tone": "bullish"
       }
     ],
     "confidence": 60,
-    "updated": "2026-09-08 09:44"
+    "updated": "2026-09-08 12:11"
   },
   "whales": {
     "unconfirmed": {
@@ -117,34 +117,24 @@
   },
   "news_investing": [
     {
-      "title": "با افزایش فشارهای فدرال رزرو و نفت، قیمت بیت‌کوین به ۷۸ هزار دلار کاهش یافت",
-      "date": "2026-09-08 09:41",
+      "title": "طلا پس از افزایش‌های اولیه، با کاهش مواجه شد، زیرا ضعف دلار، نگرانی‌ها در مورد افزایش نرخ بهره فدرال رزرو را خنثی کرد",
+      "date": "2026-09-08 12:02",
       "source": "Investing.com"
     },
     {
-      "title": "پس از تهدید ایران علیه زیرساخت‌های انرژی خلیج فارس، قیمت نفت برنت به نزدیک ۱۰۰ دلار در هر بشکه رسید",
-      "date": "2026-09-08 09:38",
+      "title": "گروه AGM با HashBeaver در زمینه نود استخراج بیت‌کوین دسکتاپ همکاری می‌کند",
+      "date": "2026-09-08 12:00",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "گلدمن و دویچه بانک انتخابات فرانسه را به تجارت اوراق قرضه تبدیل می‌کنند",
+      "title": "افزایش قیمت نفت، ترس از تورم را تشدید می‌کند؛ تعرفه‌های کانادا و آمریکا آغاز می‌شود",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط سهام در پی افزایش قیمت نفت و نگرانی از تورم: بازارها در هم تنیده شدند",
-      "date": "Mon, 07 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با محدود شدن تنگه هرمز، قیمت نفت برنت به ۱۰۰ دلار نزدیک شد",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ریچاردز از ماراتن می‌گوید سهام می‌تواند افزایش ۲۵ واحدی نرخ بهره فدرال رزرو را جذب کند",
+      "title": "دیویس از BMO می‌گوید: شاخص قیمت مصرف‌کننده می‌تواند به فدرال رزرو در افزایش نرخ بهره «کمک کند»",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
@@ -154,39 +144,39 @@
       "source": "Bloomberg"
     },
     {
-      "title": "سینون 2.3 میلیارد یورو برای آخرین صندوق خرید سهام میان‌رده جمع‌آوری کرد",
+      "title": "سقوط سهام در پی افزایش قیمت نفت و نگرانی از تورم: بازارها در هم تنیده شدند",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازارهای نوظهور با نزدیک شدن قیمت نفت خام به ۱۰۰ دلار، روند صعودی خود را متوقف کردند",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "معامله‌گر کوانت آلفاگرپ پس از مهار بانک هند به اوراق قرضه روی آورد",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "با افزایش فشارهای فدرال رزرو و نفت، قیمت بیت‌کوین به ۷۸ هزار دلار کاهش یافت",
-      "date": "2026-09-08 09:41",
+      "title": "طلا پس از افزایش‌های اولیه، با کاهش مواجه شد، زیرا ضعف دلار، نگرانی‌ها در مورد افزایش نرخ بهره فدرال رزرو را خنثی کرد",
+      "date": "2026-09-08 12:02",
       "source": "Investing.com"
     },
     {
-      "title": "پس از تهدید ایران علیه زیرساخت‌های انرژی خلیج فارس، قیمت نفت برنت به نزدیک ۱۰۰ دلار در هر بشکه رسید",
-      "date": "2026-09-08 09:38",
+      "title": "گروه AGM با HashBeaver در زمینه نود استخراج بیت‌کوین دسکتاپ همکاری می‌کند",
+      "date": "2026-09-08 12:00",
       "source": "Investing.com"
     },
     {
-      "title": "گلدمن و دویچه بانک انتخابات فرانسه را به تجارت اوراق قرضه تبدیل می‌کنند",
+      "title": "افزایش قیمت نفت، ترس از تورم را تشدید می‌کند؛ تعرفه‌های کانادا و آمریکا آغاز می‌شود",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط سهام در پی افزایش قیمت نفت و نگرانی از تورم: بازارها در هم تنیده شدند",
-      "date": "Mon, 07 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با محدود شدن تنگه هرمز، قیمت نفت برنت به ۱۰۰ دلار نزدیک شد",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ریچاردز از ماراتن می‌گوید سهام می‌تواند افزایش ۲۵ واحدی نرخ بهره فدرال رزرو را جذب کند",
+      "title": "دیویس از BMO می‌گوید: شاخص قیمت مصرف‌کننده می‌تواند به فدرال رزرو در افزایش نرخ بهره «کمک کند»",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
@@ -196,203 +186,213 @@
       "source": "Bloomberg"
     },
     {
-      "title": "سینون 2.3 میلیارد یورو برای آخرین صندوق خرید سهام میان‌رده جمع‌آوری کرد",
+      "title": "سقوط سهام در پی افزایش قیمت نفت و نگرانی از تورم: بازارها در هم تنیده شدند",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازارهای نوظهور با نزدیک شدن قیمت نفت خام به ۱۰۰ دلار، روند صعودی خود را متوقف کردند",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "معامله‌گر کوانت آلفاگرپ پس از مهار بانک هند به اوراق قرضه روی آورد",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-08 09:43",
+    "updated": "2026-09-08 12:10",
     "gainers_24h": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.075,
-        "chg": 9.93
+        "price": 1.077,
+        "chg": 9.36
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 78.75,
-        "chg": 7.73
+        "price": 78.26,
+        "chg": 6.94
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01699927,
-        "chg": 2.87
+        "symbol": "cro",
+        "name": "Cronos",
+        "price": 0.06124,
+        "chg": 5.93
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.16,
-        "chg": 2.73
+        "price": 1.18,
+        "chg": 3.92
       },
       {
-        "symbol": "okb",
-        "name": "OKB",
-        "price": 116.27,
-        "chg": 2.6
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01681883,
+        "chg": 2.11
       }
     ],
     "losers_24h": [
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 254.66,
-        "chg": -5.57
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 82.95,
+        "chg": -5.8
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 12.73,
-        "chg": -4.93
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1136.99,
-        "chg": -4.16
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 84.31,
-        "chg": -3.37
+        "price": 12.51,
+        "chg": -5.32
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 519.42,
-        "chg": -3.27
+        "price": 507.9,
+        "chg": -5.09
+      },
+      {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.754777,
+        "chg": -4.97
+      },
+      {
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 253.09,
+        "chg": -4.51
       }
     ],
     "gainers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1136.99,
-        "chg": 32.7
+        "price": 1150.72,
+        "chg": 37.1
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.075,
-        "chg": 22.7
+        "price": 1.077,
+        "chg": 24.9
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.11,
-        "chg": 21.3
+        "price": 7.01,
+        "chg": 21.4
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.32,
-        "chg": 18.9
+        "price": 2.28,
+        "chg": 17.6
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.627225,
-        "chg": 13.6
+        "price": 0.625845,
+        "chg": 15.6
       }
     ],
     "losers_7d": [
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.105232,
-        "chg": -14.0
+        "price": 0.104114,
+        "chg": -13.0
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 507.9,
+        "chg": -4.1
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.21,
-        "chg": -0.8
+        "price": 9.18,
+        "chg": -2.1
       },
       {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4397.63,
-        "chg": -0.6
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 82.95,
+        "chg": -0.4
       },
       {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4393.77,
-        "chg": -0.5
-      },
-      {
-        "symbol": "btc",
-        "name": "Bitcoin",
-        "price": 78663,
-        "chg": -0.3
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.1
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1136.99,
-        "chg": 120.6
+        "price": 1150.72,
+        "chg": 120.7
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.11,
-        "chg": 78.0
+        "price": 7.01,
+        "chg": 74.9
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 84.31,
-        "chg": 53.5
+        "price": 82.95,
+        "chg": 52.5
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 12.73,
-        "chg": 51.8
+        "price": 12.51,
+        "chg": 50.6
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.627225,
-        "chg": 45.4
+        "price": 0.625845,
+        "chg": 47.3
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.21,
-        "chg": -5.5
+        "price": 9.18,
+        "chg": -5.9
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
-        "chg": 0.5
+        "chg": 0.3
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4397.63,
-        "chg": 1.0
+        "price": 4403.71,
+        "chg": 1.3
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4393.77,
-        "chg": 1.3
+        "price": 4398.63,
+        "chg": 1.6
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.338377,
-        "chg": 2.7
+        "price": 0.338461,
+        "chg": 2.8
       }
     ]
   }
