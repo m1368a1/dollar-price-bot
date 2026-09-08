@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-08 16:19",
-  "usd_sell": 228900,
-  "usd_buy": 228800,
-  "gold_18k": 23592963,
-  "btc_usd": 78668.04,
+  "timestamp": "2026-09-08 18:42",
+  "usd_sell": 229000,
+  "usd_buy": 228900,
+  "gold_18k": 23662218,
+  "btc_usd": 78613.3,
   "fear_greed": 69,
   "btc_dominance": 58.3,
   "market_cap": 2700000000000.0,
   "market_volume": 90000000000.0,
-  "market_change": -1.55,
+  "market_change": -2.01,
   "top10": [
     {
       "symbol": "btc",
-      "price": 78625,
-      "change_24h": -0.32989,
-      "market_cap": 1579041311767
+      "price": 78600,
+      "change_24h": -0.64494,
+      "market_cap": 1578261008421
     },
     {
       "symbol": "eth",
-      "price": 2489.16,
-      "change_24h": 0.54407,
-      "market_cap": 303778626642
+      "price": 2494.85,
+      "change_24h": 0.30741,
+      "market_cap": 304426144891
     },
     {
       "symbol": "usdt",
-      "price": 0.999724,
-      "change_24h": -0.0168,
-      "market_cap": 183393350833
+      "price": 0.999762,
+      "change_24h": -0.01711,
+      "market_cap": 183388884009
     },
     {
       "symbol": "bnb",
-      "price": 753.75,
-      "change_24h": 2.25647,
-      "market_cap": 100372771334
+      "price": 750.93,
+      "change_24h": 1.6232,
+      "market_cap": 99980559593
     },
     {
       "symbol": "xrp",
       "price": 1.43,
-      "change_24h": 2.95673,
-      "market_cap": 89742054085
+      "change_24h": 2.76208,
+      "market_cap": 89929126291
     },
     {
       "symbol": "usdc",
-      "price": 0.999919,
-      "change_24h": -0.00085,
-      "market_cap": 74244228324
+      "price": 0.999953,
+      "change_24h": 0.00063,
+      "market_cap": 74419603901
     },
     {
       "symbol": "sol",
-      "price": 103.69,
-      "change_24h": 0.14086,
-      "market_cap": 60785055931
+      "price": 103.96,
+      "change_24h": 0.21431,
+      "market_cap": 60938084034
     },
     {
       "symbol": "trx",
-      "price": 0.339144,
-      "change_24h": 1.56271,
-      "market_cap": 32192793174
+      "price": 0.339097,
+      "change_24h": 1.35803,
+      "market_cap": 32194164568
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.051,
+      "price": 1.046,
       "change_24h": null,
-      "market_cap": 23433436917
+      "market_cap": 23316617414
     },
     {
       "symbol": "zec",
-      "price": 1179.53,
-      "change_24h": 2.32874,
-      "market_cap": 19959130787
+      "price": 1167.3,
+      "change_24h": 0.82478,
+      "market_cap": 19734792070
     }
   ],
   "signal": {
@@ -80,15 +80,15 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.3% در ۲۴ ساعت",
+        "text": "BTC -0.7% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
@@ -97,55 +97,87 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-08 16:19"
+    "updated": "2026-09-08 18:42"
   },
   "whales": {
     "unconfirmed": {
-      "score": 7,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 166.65,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 166.65,
-          "tier": "متوسط",
-          "fee": 1.014e-05,
-          "inputs": 1,
-          "outputs": 2,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "ردیت در کنفرانس فناوری و ارتباطات گلدمن ساکس ۲۰۲۶: فشار برای رشد",
+      "date": "2026-09-08 18:31",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
+    {
+      "title": "شرکت‌ها برای کاهش هزینه‌ها و معاملات صندوق، بازار وام ایالات متحده را شلوغ می‌کنند",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "سقوط سهام در پی افزایش قیمت نفت و تشدید نگرانی‌های تورمی: بازارها در هم تنیده شدند",
       "date": "Mon, 07 Sep 2026",
       "source": "Bloomberg"
     },
     {
+      "title": "آمریکای لاتین پیشتاز افزایش ارزش ارزهای بازارهای نوظهور، پیش از شاخص قیمت مصرف‌کننده در ایالات متحده",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "ریچاردز از CVC Marathon می‌گوید سهام می‌تواند افزایش ۲۵ واحدی نرخ بهره فدرال رزرو را جذب کند (صحیح)",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۸ سپتامبر",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "آمریکا در ادامه تحریم‌های جدید، خطوط هوایی ایران را هدف قرار می‌دهد",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نوسان سهام در آغاز هفته‌ای پر از داده‌های کلیدی تورم",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بدهی خرید سهام به ارزش ۱۳۸ میلیارد دلار در شرف ورود به بازارهای اعتباری است",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
+      "title": "ردیت در کنفرانس فناوری و ارتباطات گلدمن ساکس ۲۰۲۶: فشار برای رشد",
+      "date": "2026-09-08 18:31",
+      "source": "Investing.com"
+    },
+    {
+      "title": "شرکت‌ها برای کاهش هزینه‌ها و معاملات صندوق، بازار وام ایالات متحده را شلوغ می‌کنند",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "سقوط سهام در پی افزایش قیمت نفت و تشدید نگرانی‌های تورمی: بازارها در هم تنیده شدند",
+      "date": "Mon, 07 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آمریکای لاتین پیشتاز افزایش ارزش ارزهای بازارهای نوظهور، پیش از شاخص قیمت مصرف‌کننده در ایالات متحده",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "ریچاردز از CVC Marathon می‌گوید سهام می‌تواند افزایش ۲۵ واحدی نرخ بهره فدرال رزرو را جذب کند (صحیح)",
+      "date": "Tue, 08 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۸ سپتامبر",
       "date": "Mon, 07 Sep 2026",
       "source": "Bloomberg"
     },
@@ -153,134 +185,118 @@
       "title": "آمریکا در ادامه تحریم‌های جدید، خطوط هوایی ایران را هدف قرار می‌دهد",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "نوسان سهام در آغاز هفته‌ای پر از داده‌های کلیدی تورم",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بدهی خرید سهام به ارزش ۱۳۸ میلیارد دلار در شرف ورود به بازارهای اعتباری است",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-08 16:19",
+    "updated": "2026-09-08 18:42",
     "gainers_24h": [
-      {
-        "symbol": "wbt",
-        "name": "WhiteBIT Coin",
-        "price": 81.43,
-        "chg": 12.07
-      },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.18,
-        "chg": 8.81
+        "price": 1.23,
+        "chg": 11.87
+      },
+      {
+        "symbol": "wbt",
+        "name": "WhiteBIT Coin",
+        "price": 81.51,
+        "chg": 11.81
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.19,
-        "chg": 6.56
+        "price": 1.2,
+        "chg": 6.16
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.060367,
-        "chg": 5.52
+        "price": 0.060262,
+        "chg": 5.69
       },
       {
-        "symbol": "ada",
-        "name": "Cardano",
-        "price": 0.229247,
-        "chg": 4.76
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.640078,
+        "chg": 2.87
       }
     ],
     "losers_24h": [
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 500.2,
-        "chg": -6.12
+        "price": 501.25,
+        "chg": -3.25
       },
       {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 258.4,
-        "chg": -3.55
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.079806,
+        "chg": -2.75
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 83.66,
-        "chg": -2.14
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.377714,
+        "chg": -1.98
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 129.58,
+        "chg": -1.58
       },
       {
         "symbol": "ltc",
         "name": "Litecoin",
-        "price": 54.64,
-        "chg": -1.69
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 12.65,
-        "chg": -1.54
+        "price": 54.27,
+        "chg": -1.52
       }
     ],
     "gainers_7d": [
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1179.53,
-        "chg": 38.4
-      },
-      {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.18,
-        "chg": 37.7
+        "price": 1.23,
+        "chg": 41.6
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1167.3,
+        "chg": 40.3
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.85,
-        "chg": 20.4
+        "price": 6.91,
+        "chg": 20.0
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.38,
-        "chg": 19.0
+        "price": 2.36,
+        "chg": 19.5
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 264.83,
-        "chg": 16.3
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.640078,
+        "chg": 19.2
       }
     ],
     "losers_7d": [
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.105687,
-        "chg": -9.6
+        "price": 0.107184,
+        "chg": -6.0
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.21,
-        "chg": -2.1
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 500.2,
-        "chg": -1.4
+        "price": 9.2,
+        "chg": -1.9
       },
       {
         "symbol": "usyc",
@@ -289,50 +305,56 @@
         "chg": 0.1
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 83.66,
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 501.25,
         "chg": 0.3
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.0166589,
+        "chg": 0.6
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1179.53,
-        "chg": 125.8
+        "price": 1167.3,
+        "chg": 127.1
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.85,
-        "chg": 71.6
+        "price": 6.91,
+        "chg": 69.5
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 83.66,
-        "chg": 53.8
+        "price": 84.3,
+        "chg": 52.9
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 12.65,
-        "chg": 52.7
+        "price": 12.7,
+        "chg": 52.2
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.38,
-        "chg": 48.5
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.640078,
+        "chg": 51.1
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.21,
-        "chg": -5.5
+        "price": 9.2,
+        "chg": -5.3
       },
       {
         "symbol": "usyc",
@@ -343,20 +365,20 @@
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4387.82,
-        "chg": 1.0
+        "price": 4385.23,
+        "chg": 0.8
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4385.41,
-        "chg": 1.4
+        "price": 4384.32,
+        "chg": 1.2
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.051,
-        "chg": 2.3
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.339097,
+        "chg": 2.9
       }
     ]
   }
