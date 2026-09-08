@@ -324,7 +324,7 @@ def fetch_global_market():
 
 
 
-        r3 = s.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false&price_change_percentage=24h", timeout=15)
+        r3 = s.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=false&price_change_percentage=24h%2C7d%2C30d", timeout=15)
 
         top_data = r3.json()
         top_coins = top_data if isinstance(top_data, list) else []
@@ -346,6 +346,18 @@ def fetch_global_market():
             "top_gainers": [(c["name"], c["symbol"], c.get("price_change_percentage_24h", 0) or 0) for c in top_coins if (c.get("price_change_percentage_24h", 0) or 0) > 0][:3],
 
             "top_losers": [(c["name"], c["symbol"], c.get("price_change_percentage_24h", 0) or 0) for c in top_coins if (c.get("price_change_percentage_24h", 0) or 0) < 0][:3],
+
+            "top50": [
+                {
+                    "symbol": (c.get("symbol") or "").lower(),
+                    "name": c.get("name", ""),
+                    "price": c.get("current_price", 0),
+                    "change_24h": c.get("price_change_percentage_24h_in_currency", 0) or c.get("price_change_percentage_24h", 0) or 0,
+                    "change_7d": c.get("price_change_percentage_7d_in_currency", 0) or 0,
+                    "change_30d": c.get("price_change_percentage_30d_in_currency", 0) or 0,
+                }
+                for c in top_coins
+            ],
 
         }
 
@@ -1123,24 +1135,44 @@ def _save_seen_headline(title):
 
 
 def _translate_news_title(title):
-    """Translate financial headlines to Persian using MyMemory API with dictionary fallback."""
-    import urllib.parse
+    """Translate financial headlines to Persian using Google Translate endpoint with MyMemory and dictionary fallback."""
+    import urllib.parse, time
 
-    # Try MyMemory API first (free, reliable)
+    title = title.strip()
+
+    # ---- Try Google Translate (free gtx endpoint, no API key needed) ----
+    for attempt in range(3):
+        try:
+            s = requests.Session()
+            s.headers.update({"User-Agent": "Mozilla/5.0"})
+            url = "https://translate.googleapis.com/translate_a/single"
+            params = {"client": "gtx", "sl": "en", "tl": "fa", "dt": "t", "q": title}
+            r = s.get(url, params=params, timeout=15)
+            if r.status_code == 200:
+                data = r.json()
+                translated = "".join(seg[0] for seg in data[0] if seg and seg[0])
+                translated = translated.strip()
+                if translated and len(translated) > 5 and translated != title:
+                    return _polish_persian(translated)
+            time.sleep(1)  # avoid rate limiting between retries
+        except Exception:
+            time.sleep(1)
+
+    # ---- Fallback 1: MyMemory API ----
     try:
         s = requests.Session()
         s.headers.update({"User-Agent": "Mozilla/5.0"})
-        url = f"https://api.mymemory.translated.net/get?q={urllib.parse.quote(title.strip())}&langpair=en|fa"
+        url = f"https://api.mymemory.translated.net/get?q={urllib.parse.quote(title)}&langpair=en|fa"
         r = s.get(url, timeout=15)
         if r.status_code == 200:
             data = r.json()
             translated = data.get("responseData", {}).get("translatedText", "")
-            if translated and len(translated) > 5 and translated != title.strip():
-                return translated
+            if translated and len(translated) > 5 and translated != title:
+                return _polish_persian(translated)
     except Exception:
         pass
 
-    # Fallback: dictionary-based translation
+    # Fallback 2: dictionary-based translation
     normalized = title.strip()
     phrases = [
         ("U.S. Treasury", "خزانه‌داری آمریکا"), ("US Treasury", "خزانه‌داری آمریکا"),
@@ -1189,7 +1221,36 @@ def _translate_news_title(title):
     for source, target in sorted(words, key=lambda item: len(item[0]), reverse=True):
         normalized = re.sub(r'(?<![A-Za-z])' + re.escape(source) + r'(?![A-Za-z])', target, normalized)
     normalized = re.sub(r'\s+', ' ', normalized).strip(' -:;,.')
-    return normalized
+    return _polish_persian(normalized)
+
+
+def _polish_persian(text):
+    """Clean up common Google-Translate artifacts in short financial headlines."""
+    if not text:
+        return text
+    # Translate common acronyms that Google often leaves in English
+    acronyms = [
+        (r'\bCPI\b', 'شاخص قیمت مصرف‌کننده'),
+        (r'\bGDP\b', 'تولید ناخالص داخلی'),
+        (r'\bBOJ\b', 'بانک مرکزی ژاپن'),
+        (r'\bECB\b', 'بانک مرکزی اروپا'),
+        (r'\bFed\b', 'فدرال رزرو'),
+        (r'\bQ1\b', 'سه ماهه اول'), (r'\bQ2\b', 'سه ماهه دوم'),
+        (r'\bQ3\b', 'سه ماهه سوم'), (r'\bQ4\b', 'سه ماهه چهارم'),
+        (r'\bUS\b', 'آمریکا'),
+        (r'\bBTC\b', 'بیت‌کوین'),
+    ]
+    for pat, rep in acronyms:
+        text = re.sub(pat, rep, text)
+    # Remove stray spaces before Persian punctuation
+    text = re.sub(r'\s+([،؛؟!])', r'\1', text)
+    # Normalize Persian digits and half-space around ی
+    text = text.replace(' ي ', ' ی ').replace('  ', ' ').strip()
+    # Unify bitcoin spelling (بیت کوین / بیت‌کوین -> بیت‌کوین)
+    text = re.sub(r'بیت\s*کوین', 'بیت‌کوین', text)
+    # Remove trailing punctuation artifacts
+    text = text.strip(' -:;,.')
+    return text
 
 def build_news_message(news_list):
 
@@ -3702,6 +3763,25 @@ def main():
             prices["news"] = []
             prices["news_investing"] = []
             prices["news_bloomberg"] = []
+
+        # Save trends (top gainers/losers, 24h, 7d and 30d) for the web dashboard
+        try:
+            top50 = global_market.get("top50", []) if global_market else []
+            stable = {"usdt", "usdc", "dai", "tusd", "usde", "fdusd", "pyusd", "usds", "busd", "usdd", "usdp", "frax", "gusd", "eurc", "eurs", "usd1", "usdtb", "rlusd", "usdy", "usdx", "usdg", "buidl", "usdl", "usd0", "usdai"}
+            def _rows(period):
+                rows = [c for c in top50 if c.get("symbol") not in stable and (c.get("change_" + period) or 0) != 0]
+                return {
+                    "gainers": [{"symbol": c.get("symbol", ""), "name": c.get("name", ""), "price": c.get("price", 0), "chg": round(c.get("change_" + period) or 0, 2)} for c in sorted(rows, key=lambda x: x.get("change_" + period) or 0, reverse=True)[:5]],
+                    "losers": [{"symbol": c.get("symbol", ""), "name": c.get("name", ""), "price": c.get("price", 0), "chg": round(c.get("change_" + period) or 0, 2)} for c in sorted(rows, key=lambda x: x.get("change_" + period) or 0)[:5]],
+                }
+            prices["trends"] = {"updated": date_str}
+            for p in ("24h", "7d", "30d"):
+                r = _rows(p)
+                prices["trends"]["gainers_" + p] = r["gainers"]
+                prices["trends"]["losers_" + p] = r["losers"]
+        except Exception as e:
+            print(f"  Trends save error: {e}", file=sys.stderr)
+            prices["trends"] = {}
 
         import json as _json
         with open("prices.json", "w", encoding="utf-8") as f:
