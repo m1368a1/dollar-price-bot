@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-09 04:52",
-  "usd_sell": 229000,
-  "usd_buy": 228900,
-  "gold_18k": 23662218,
-  "btc_usd": 79132.5,
+  "timestamp": "2026-09-09 09:48",
+  "usd_sell": 232000,
+  "usd_buy": 231900,
+  "gold_18k": 24170090,
+  "btc_usd": 79098.0,
   "fear_greed": 66,
-  "btc_dominance": 58.4,
-  "market_cap": 2710000000000.0,
+  "btc_dominance": 59.0,
+  "market_cap": 2690000000000.0,
   "market_volume": 90000000000.0,
-  "market_change": -1.29,
+  "market_change": -1.66,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79117,
-      "change_24h": 0.40605,
-      "market_cap": 1588899799226
+      "price": 79056,
+      "change_24h": 0.41957,
+      "market_cap": 1587951545917
     },
     {
       "symbol": "eth",
-      "price": 2507.34,
-      "change_24h": 0.97509,
-      "market_cap": 306027132405
+      "price": 2494.96,
+      "change_24h": 0.07109,
+      "market_cap": 304474820521
     },
     {
       "symbol": "usdt",
-      "price": 0.999682,
-      "change_24h": -0.00674,
-      "market_cap": 183406911842
+      "price": 0.999767,
+      "change_24h": 0.01074,
+      "market_cap": 183416874663
     },
     {
       "symbol": "bnb",
-      "price": 754.35,
-      "change_24h": 1.19593,
-      "market_cap": 100455949144
+      "price": 752.73,
+      "change_24h": -0.33088,
+      "market_cap": 100278885449
     },
     {
       "symbol": "xrp",
-      "price": 1.44,
-      "change_24h": 2.87482,
-      "market_cap": 90025810583
+      "price": 1.42,
+      "change_24h": 1.59058,
+      "market_cap": 89275816503
     },
     {
       "symbol": "usdc",
-      "price": 0.999928,
-      "change_24h": 0.00655,
-      "market_cap": 74442026338
+      "price": 0.999948,
+      "change_24h": 0.01095,
+      "market_cap": 74372673037
     },
     {
       "symbol": "sol",
-      "price": 104.23,
-      "change_24h": 0.89635,
-      "market_cap": 61104975922
+      "price": 103.55,
+      "change_24h": -0.14715,
+      "market_cap": 60714153779
     },
     {
       "symbol": "trx",
-      "price": 0.338708,
-      "change_24h": 1.01279,
-      "market_cap": 32156208844
+      "price": 0.339056,
+      "change_24h": 0.25848,
+      "market_cap": 32192015722
     },
     {
       "symbol": "figr_heloc",
       "price": 1.035,
       "change_24h": null,
-      "market_cap": 23075053964
+      "market_cap": 23075166018
     },
     {
       "symbol": "zec",
-      "price": 1237.08,
-      "change_24h": 10.36973,
-      "market_cap": 20926093531
+      "price": 1234.28,
+      "change_24h": 7.90688,
+      "market_cap": 20904913949
     }
   ],
   "signal": {
-    "score": 20,
+    "score": 0,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,305 +80,290 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +2.1% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +3.1% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.3% در ۲۴ ساعت",
+        "text": "BTC +0.9% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
         "text": "معتدل: 50",
         "tone": "neutral"
-      },
-      {
-        "text": "انگولفینگ صعودی (Bullish Engulfing) — نشانه صعود",
-        "tone": "bullish"
       }
     ],
-    "confidence": 60,
-    "updated": "2026-09-09 04:53"
+    "confidence": 50,
+    "updated": "2026-09-09 09:49"
   },
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 119.52,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 119.52,
+          "tier": "متوسط",
+          "fee": 5.69e-06,
+          "inputs": 1,
+          "outputs": 5,
+          "direction": "unknown"
+        }
+      ]
     }
   },
   "news_investing": [
     {
-      "title": "سهام آسیا با افزایش قیمت تراشه‌ها، نگرانی‌های تورمی ناشی از نفت را خنثی کرد",
-      "date": "2026-09-09 03:57",
-      "source": "Investing.com"
-    },
-    {
-      "title": "افزایش هزینه‌های انرژی، تورم تولیدکننده و مصرف‌کننده چین را در ماه اوت افزایش داد",
-      "date": "2026-09-09 03:54",
-      "source": "Investing.com"
-    },
-    {
-      "title": "شرکت طلای بلویو در کنفرانس منابع در حال ظهور ستارگان ساحل طلایی: تمرکز بر جریان نقدی",
-      "date": "2026-09-09 03:41",
+      "title": "با تشدید درگیری‌ها در خاورمیانه، قیمت نفت برنت از ۱۰۰ دلار در هر بشکه فراتر رفت",
+      "date": "2026-09-09 09:18",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سهام چیپ آسیا افزایش یافت، نفت به ۱۰۰ دلار رسید: خلاصه بازارها",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کاهش قیمت ذرت برای پنجمین روز متوالی، همزمان با آزمایش بازار توسط صندوق‌های سرمایه‌گذاری با رکورد جدید",
+      "title": "کلاینمن از آپولو، عصر طلایی سرمایه را با هزینه کردن شرکت‌ها می‌بیند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۹ سپتامبر",
+      "title": "طلا با تضعیف دلار و جبران خطرات تورم، افزایش قیمت یافت",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا با تضعیف دلار و جبران خطرات تورم، به بالاترین قیمت خود رسید",
+      "title": "روپیه/دلار آمریکا: بانک مرکزی هند از سوآپ ارزی برای کاهش ۱۱۵ میلیارد دلار مازاد نقدینگی استفاده می‌کند",
+      "date": "Wed, 09 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازار اعتبار جهانی پس از انتشار 70 میلیارد دلار اوراق قرضه، دوباره رونق گرفت",
+      "date": "Wed, 09 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سقوط سهام ایالات متحده در حالی که نفت برنت ۱۰۰ دلاری ریسک تورم را افزایش می‌دهد: بازارها در هم تنیده‌اند",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "پس از حمله آمریکا به نفتکش‌های ایرانی، قیمت نفت برنت به ۱۰۰ دلار نزدیک شد",
-      "date": "Wed, 09 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ارزش رینگیت در برابر دلار سنگاپور به پایین‌ترین حد خود از ماه نوامبر رسید",
-      "date": "Wed, 09 Sep 2026",
+      "title": "نفت برنت به ۱۰۰ دلار رسید، در حالی که نشانه کمی از فروکش کردن جنگ آمریکا و ایران دیده می‌شود",
+      "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام آسیا با افزایش قیمت تراشه‌ها، نگرانی‌های تورمی ناشی از نفت را خنثی کرد",
-      "date": "2026-09-09 03:57",
+      "title": "با تشدید درگیری‌ها در خاورمیانه، قیمت نفت برنت از ۱۰۰ دلار در هر بشکه فراتر رفت",
+      "date": "2026-09-09 09:18",
       "source": "Investing.com"
     },
     {
-      "title": "افزایش هزینه‌های انرژی، تورم تولیدکننده و مصرف‌کننده چین را در ماه اوت افزایش داد",
-      "date": "2026-09-09 03:54",
-      "source": "Investing.com"
-    },
-    {
-      "title": "شرکت طلای بلویو در کنفرانس منابع در حال ظهور ستارگان ساحل طلایی: تمرکز بر جریان نقدی",
-      "date": "2026-09-09 03:41",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام چیپ آسیا افزایش یافت، نفت به ۱۰۰ دلار رسید: خلاصه بازارها",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کاهش قیمت ذرت برای پنجمین روز متوالی، همزمان با آزمایش بازار توسط صندوق‌های سرمایه‌گذاری با رکورد جدید",
+      "title": "کلاینمن از آپولو، عصر طلایی سرمایه را با هزینه کردن شرکت‌ها می‌بیند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۹ سپتامبر",
+      "title": "طلا با تضعیف دلار و جبران خطرات تورم، افزایش قیمت یافت",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا با تضعیف دلار و جبران خطرات تورم، به بالاترین قیمت خود رسید",
+      "title": "روپیه/دلار آمریکا: بانک مرکزی هند از سوآپ ارزی برای کاهش ۱۱۵ میلیارد دلار مازاد نقدینگی استفاده می‌کند",
+      "date": "Wed, 09 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازار اعتبار جهانی پس از انتشار 70 میلیارد دلار اوراق قرضه، دوباره رونق گرفت",
+      "date": "Wed, 09 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سقوط سهام ایالات متحده در حالی که نفت برنت ۱۰۰ دلاری ریسک تورم را افزایش می‌دهد: بازارها در هم تنیده‌اند",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "پس از حمله آمریکا به نفتکش‌های ایرانی، قیمت نفت برنت به ۱۰۰ دلار نزدیک شد",
-      "date": "Wed, 09 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ارزش رینگیت در برابر دلار سنگاپور به پایین‌ترین حد خود از ماه نوامبر رسید",
-      "date": "Wed, 09 Sep 2026",
+      "title": "نفت برنت به ۱۰۰ دلار رسید، در حالی که نشانه کمی از فروکش کردن جنگ آمریکا و ایران دیده می‌شود",
+      "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-09 04:52",
+    "updated": "2026-09-09 09:48",
     "gainers_24h": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.22,
-        "chg": 13.52
+        "price": 1.18,
+        "chg": 8.43
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1237.08,
-        "chg": 10.37
+        "price": 1234.28,
+        "chg": 7.91
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.44,
+        "chg": 4.11
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 81.96,
-        "chg": 7.45
-      },
-      {
-        "symbol": "cro",
-        "name": "Cronos",
-        "price": 0.060665,
-        "chg": 4.89
+        "price": 81.77,
+        "chg": 3.78
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00448057,
-        "chg": 3.43
+        "price": 0.00444981,
+        "chg": 3.12
       }
     ],
     "losers_24h": [
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 505.24,
-        "chg": -2.45
-      },
-      {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.079438,
-        "chg": -2.34
-      },
-      {
-        "symbol": "ltc",
-        "name": "Litecoin",
-        "price": 54.39,
-        "chg": -1.58
-      },
-      {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.91,
-        "chg": -1.29
+        "price": 6.7,
+        "chg": -6.22
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01607343,
-        "chg": -1.26
+        "price": 0.01604735,
+        "chg": -5.67
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 497.76,
+        "chg": -4.32
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 12.33,
+        "chg": -3.4
+      },
+      {
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 54.21,
+        "chg": -2.71
       }
     ],
     "gainers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1237.08,
-        "chg": 42.6
+        "price": 1234.28,
+        "chg": 49.0
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.22,
-        "chg": 37.7
+        "price": 1.18,
+        "chg": 37.0
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.33,
-        "chg": 21.9
+        "price": 2.44,
+        "chg": 33.1
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 259.54,
-        "chg": 16.9
+        "price": 258.72,
+        "chg": 19.9
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.631018,
-        "chg": 16.4
+        "price": 0.642611,
+        "chg": 18.2
       }
     ],
     "losers_7d": [
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01607343,
-        "chg": -7.3
-      },
-      {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.109239,
-        "chg": -4.5
+        "price": 0.107157,
+        "chg": -4.7
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01604735,
+        "chg": -4.2
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 505.24,
-        "chg": -2.5
+        "price": 497.76,
+        "chg": -2.8
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.19,
-        "chg": -1.6
+        "price": 9.18,
+        "chg": -1.0
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.035,
-        "chg": -1.0
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 128.66,
+        "chg": -0.3
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1237.08,
-        "chg": 132.5
+        "price": 1234.28,
+        "chg": 144.4
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.91,
-        "chg": 66.6
+        "price": 6.7,
+        "chg": 69.2
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00448057,
-        "chg": 66.6
+        "price": 0.00444981,
+        "chg": 64.7
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 85.98,
-        "chg": 56.8
+        "price": 85.89,
+        "chg": 58.2
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 12.57,
-        "chg": 50.9
+        "price": 12.33,
+        "chg": 52.0
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.19,
-        "chg": -5.2
+        "price": 9.18,
+        "chg": -4.8
       },
       {
         "symbol": "usyc",
@@ -389,20 +374,20 @@
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4380.08,
-        "chg": 1.5
+        "price": 4396.81,
+        "chg": 1.3
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4377.35,
-        "chg": 1.7
+        "price": 4392.22,
+        "chg": 1.5
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.338708,
-        "chg": 2.8
+        "price": 0.339056,
+        "chg": 2.9
       }
     ]
   }
