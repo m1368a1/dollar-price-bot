@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-09 14:38",
-  "usd_sell": 233900,
-  "usd_buy": 233800,
-  "gold_18k": 24204718,
-  "btc_usd": 79365.9,
+  "timestamp": "2026-09-09 18:39",
+  "usd_sell": 235200,
+  "usd_buy": 235100,
+  "gold_18k": 24442495,
+  "btc_usd": 78542.43,
   "fear_greed": 66,
   "btc_dominance": 58.4,
-  "market_cap": 2720000000000.0,
+  "market_cap": 2700000000000.0,
   "market_volume": 90000000000.0,
-  "market_change": -1.37,
+  "market_change": -2.68,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79316,
-      "change_24h": 1.3264,
-      "market_cap": 1593224749552
+      "price": 78570,
+      "change_24h": -0.0835,
+      "market_cap": 1577842121884
     },
     {
       "symbol": "eth",
-      "price": 2511.4,
-      "change_24h": 1.42546,
-      "market_cap": 306584109090
+      "price": 2488.66,
+      "change_24h": -0.31823,
+      "market_cap": 303697141827
     },
     {
       "symbol": "usdt",
-      "price": 0.999796,
-      "change_24h": 0.02073,
-      "market_cap": 183422997256
+      "price": 0.999849,
+      "change_24h": 0.01104,
+      "market_cap": 183432386750
     },
     {
       "symbol": "bnb",
-      "price": 745.95,
-      "change_24h": -0.28762,
-      "market_cap": 99367520681
+      "price": 740.71,
+      "change_24h": -1.39577,
+      "market_cap": 98633820366
     },
     {
       "symbol": "xrp",
-      "price": 1.43,
-      "change_24h": 1.71033,
-      "market_cap": 89822701185
+      "price": 1.42,
+      "change_24h": -0.90449,
+      "market_cap": 89201937221
     },
     {
       "symbol": "usdc",
-      "price": 0.999884,
-      "change_24h": 0.00637,
-      "market_cap": 74317125812
+      "price": 0.999909,
+      "change_24h": -0.00265,
+      "market_cap": 74360431697
     },
     {
       "symbol": "sol",
-      "price": 104.02,
-      "change_24h": 1.16972,
-      "market_cap": 61037837105
+      "price": 103.59,
+      "change_24h": -0.4072,
+      "market_cap": 60729366984
     },
     {
       "symbol": "trx",
-      "price": 0.338512,
-      "change_24h": -0.21578,
-      "market_cap": 32142178837
+      "price": 0.340244,
+      "change_24h": 0.3547,
+      "market_cap": 32303472308
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.036,
-      "change_24h": 3.16079,
-      "market_cap": 23073216355
+      "price": 1.028,
+      "change_24h": -1.68714,
+      "market_cap": 23013894900
     },
     {
       "symbol": "zec",
-      "price": 1289.51,
-      "change_24h": 10.4116,
-      "market_cap": 21840363835
+      "price": 1278.06,
+      "change_24h": 9.19499,
+      "market_cap": 21627201307
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +3.0% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.6% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +1.8% در ۲۴ ساعت",
+        "text": "BTC +0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 51",
+        "text": "معتدل: 48",
         "tone": "neutral"
+      },
+      {
+        "text": "ستاره غروب (Evening Star) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-09 14:38"
+    "confidence": 60,
+    "updated": "2026-09-09 18:39"
   },
   "whales": {
     "unconfirmed": {
@@ -113,227 +117,227 @@
   },
   "news_investing": [
     {
-      "title": "دادستان کل دیویدسون به دلیل خطرات اجرای ادغام، هدف قیمت سهام فدرال واشنگتن را کاهش داد",
-      "date": "2026-09-09 14:32",
+      "title": "رئیس خزانه‌داری آمریکا، بسنت، از استفاده از قدرت مالی آمریکا به عنوان ابزار سیاست خارجی حمایت می‌کند",
+      "date": "2026-09-09 18:31",
       "source": "Investing.com"
     },
     {
-      "title": "دیویدسون، مدیر ارشد اجرایی، رتبه‌بندی سهام کرین NXT را در دستور چاپ فدرال رزرو تکرار کرد",
-      "date": "2026-09-09 14:32",
+      "title": "سقوط شاخص S&P 500 با عبور نفت از مرز ۱۰۰ دلار در هر بشکه",
+      "date": "2026-09-09 18:24",
       "source": "Investing.com"
     },
     {
-      "title": "سهام شرکت Atkore به بالاترین سطح خود در ۵۲ هفته گذشته یعنی ۹۴.۱۴ دلار رسید",
-      "date": "2026-09-09 14:29",
+      "title": "F5 در کنفرانس فناوری و ارتباطات گلدمن ساکس ۲۰۲۶: رشد گسترش می‌یابد",
+      "date": "2026-09-09 18:22",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "طلا با تضعیف دلار و جبران خطرات تورم، افزایش قیمت یافت",
+      "title": "بازخرید بدهی سه برابر شد، اما بازار ناامیدکننده نشان می‌دهد",
+      "date": "Wed, 09 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سقوط سهام در پی جهش قیمت نفت و افزایش بازدهی طرح خزانه‌داری: خلاصه بازارها",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط سهام و اوراق قرضه با جهش نفت برنت به بالای ۱۰۰ دلار: خلاصه بازارها",
+      "title": "نفت به دلیل نگرانی از عرضه از ۱۰۰ دلار عبور کرد، اپل با آزمون بزرگی روبروست",
+      "date": "Wed, 09 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "نوسان سهام در آغاز هفته‌ای پر از داده‌های کلیدی تورم",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "مایک ویلسون از مورگان استنلی می‌گوید ما هنوز در بازار صعودی هستیم",
+      "title": "با تشدید جنگ آمریکا و ایران و هدف قرار گرفتن نفتکش‌ها، قیمت نفت خام به ۱۰۰ دلار رسید",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تضعیف اوراق خزانه‌داری با افزایش قیمت نفت و افزایش احتمال افزایش نرخ بهره",
-      "date": "Wed, 09 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مایک ویلسون می‌گوید ریسک نفت برای سهام غیرقابل عبور نیست",
-      "date": "Wed, 09 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ادغام شرکت‌های نفتی کانادا، رونق آلبرتا را مورد توجه قرار می‌دهد",
+      "title": "مدیر مالی ویل می‌گوید: این شرکت به دنبال عرضه اوراق قرضه چین در سال جاری است",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "دادستان کل دیویدسون به دلیل خطرات اجرای ادغام، هدف قیمت سهام فدرال واشنگتن را کاهش داد",
-      "date": "2026-09-09 14:32",
+      "title": "رئیس خزانه‌داری آمریکا، بسنت، از استفاده از قدرت مالی آمریکا به عنوان ابزار سیاست خارجی حمایت می‌کند",
+      "date": "2026-09-09 18:31",
       "source": "Investing.com"
     },
     {
-      "title": "دیویدسون، مدیر ارشد اجرایی، رتبه‌بندی سهام کرین NXT را در دستور چاپ فدرال رزرو تکرار کرد",
-      "date": "2026-09-09 14:32",
+      "title": "سقوط شاخص S&P 500 با عبور نفت از مرز ۱۰۰ دلار در هر بشکه",
+      "date": "2026-09-09 18:24",
       "source": "Investing.com"
     },
     {
-      "title": "سهام شرکت Atkore به بالاترین سطح خود در ۵۲ هفته گذشته یعنی ۹۴.۱۴ دلار رسید",
-      "date": "2026-09-09 14:29",
+      "title": "F5 در کنفرانس فناوری و ارتباطات گلدمن ساکس ۲۰۲۶: رشد گسترش می‌یابد",
+      "date": "2026-09-09 18:22",
       "source": "Investing.com"
     },
     {
-      "title": "طلا با تضعیف دلار و جبران خطرات تورم، افزایش قیمت یافت",
+      "title": "بازخرید بدهی سه برابر شد، اما بازار ناامیدکننده نشان می‌دهد",
+      "date": "Wed, 09 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سقوط سهام در پی جهش قیمت نفت و افزایش بازدهی طرح خزانه‌داری: خلاصه بازارها",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط سهام و اوراق قرضه با جهش نفت برنت به بالای ۱۰۰ دلار: خلاصه بازارها",
+      "title": "نفت به دلیل نگرانی از عرضه از ۱۰۰ دلار عبور کرد، اپل با آزمون بزرگی روبروست",
+      "date": "Wed, 09 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "نوسان سهام در آغاز هفته‌ای پر از داده‌های کلیدی تورم",
       "date": "Tue, 08 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "مایک ویلسون از مورگان استنلی می‌گوید ما هنوز در بازار صعودی هستیم",
+      "title": "با تشدید جنگ آمریکا و ایران و هدف قرار گرفتن نفتکش‌ها، قیمت نفت خام به ۱۰۰ دلار رسید",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تضعیف اوراق خزانه‌داری با افزایش قیمت نفت و افزایش احتمال افزایش نرخ بهره",
-      "date": "Wed, 09 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مایک ویلسون می‌گوید ریسک نفت برای سهام غیرقابل عبور نیست",
-      "date": "Wed, 09 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ادغام شرکت‌های نفتی کانادا، رونق آلبرتا را مورد توجه قرار می‌دهد",
+      "title": "مدیر مالی ویل می‌گوید: این شرکت به دنبال عرضه اوراق قرضه چین در سال جاری است",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-09 14:38",
+    "updated": "2026-09-09 18:39",
     "gainers_24h": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.61,
-        "chg": 13.02
+        "price": 2.62,
+        "chg": 11.4
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1289.51,
-        "chg": 10.41
+        "price": 1278.06,
+        "chg": 9.19
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00467711,
-        "chg": 6.75
+        "price": 0.0047302,
+        "chg": 7.24
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 263.66,
-        "chg": 4.2
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 513.36,
+        "chg": 2.89
       },
       {
-        "symbol": "dot",
-        "name": "Polkadot",
-        "price": 1.13,
-        "chg": 3.63
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 86.4,
+        "chg": 2.52
       }
     ],
     "losers_24h": [
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.66,
-        "chg": -3.66
+        "symbol": "dot",
+        "name": "Polkadot",
+        "price": 1.12,
+        "chg": -8.22
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 12.14,
-        "chg": -2.92
+        "price": 11.98,
+        "chg": -5.84
       },
       {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.078715,
-        "chg": -1.5
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.62,
+        "chg": -4.25
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.103743,
+        "chg": -3.1
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01645942,
-        "chg": -1.22
-      },
-      {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.750349,
-        "chg": -1.1
+        "price": 0.01615195,
+        "chg": -3.03
       }
     ],
     "gainers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1289.51,
-        "chg": 60.1
+        "price": 1278.06,
+        "chg": 56.4
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.61,
-        "chg": 40.0
+        "price": 2.62,
+        "chg": 42.0
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.13,
-        "chg": 38.2
+        "price": 1.12,
+        "chg": 32.7
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 263.66,
-        "chg": 21.2
+        "price": 260.79,
+        "chg": 19.7
       },
       {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.64009,
-        "chg": 17.5
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.0047302,
+        "chg": 16.5
       }
     ],
     "losers_7d": [
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.10537,
-        "chg": -5.4
+        "price": 0.103743,
+        "chg": -6.5
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01645942,
-        "chg": -2.7
+        "price": 0.01615195,
+        "chg": -3.2
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 511.91,
-        "chg": -0.8
+        "price": 513.36,
+        "chg": -1.1
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.19,
-        "chg": -0.8
+        "price": 9.18,
+        "chg": -0.7
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.036,
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
         "chg": 0.1
       }
     ],
@@ -341,40 +345,40 @@
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1289.51,
-        "chg": 153.1
+        "price": 1278.06,
+        "chg": 155.7
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00467711,
-        "chg": 72.4
+        "price": 0.0047302,
+        "chg": 74.1
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.66,
-        "chg": 65.9
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 86.45,
-        "chg": 58.0
+        "price": 6.62,
+        "chg": 68.8
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.61,
-        "chg": 56.0
+        "price": 2.62,
+        "chg": 63.7
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 86.4,
+        "chg": 60.5
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.19,
-        "chg": -4.8
+        "price": 9.18,
+        "chg": -4.7
       },
       {
         "symbol": "usyc",
@@ -383,21 +387,21 @@
         "chg": 0.3
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.338512,
-        "chg": 2.1
-      },
-      {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4424.15,
-        "chg": 2.1
+        "price": 4414.45,
+        "chg": 1.7
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4420.33,
+        "price": 4410.73,
+        "chg": 1.9
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.028,
         "chg": 2.3
       }
     ]
