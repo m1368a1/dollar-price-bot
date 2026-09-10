@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-10 18:30",
+  "timestamp": "2026-09-10 21:39",
   "usd_sell": 234900,
   "usd_buy": 234800,
   "gold_18k": 24158548,
-  "btc_usd": 77041.0,
+  "btc_usd": 77167.74,
   "fear_greed": 69,
   "btc_dominance": 58.5,
-  "market_cap": 2640000000000.0,
-  "market_volume": 100000000000.0,
-  "market_change": -4.96,
+  "market_cap": 2650000000000.0,
+  "market_volume": 90000000000.0,
+  "market_change": -4.1,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77087,
-      "change_24h": -1.92445,
-      "market_cap": 1548059536280
+      "price": 77169,
+      "change_24h": -1.30975,
+      "market_cap": 1549773920035
     },
     {
       "symbol": "eth",
-      "price": 2461.35,
-      "change_24h": -1.18365,
-      "market_cap": 300321564686
+      "price": 2459.33,
+      "change_24h": -0.22543,
+      "market_cap": 300128561608
     },
     {
       "symbol": "usdt",
-      "price": 0.999564,
-      "change_24h": -0.02799,
-      "market_cap": 183383183504
+      "price": 0.999702,
+      "change_24h": -0.00877,
+      "market_cap": 183405816104
     },
     {
       "symbol": "bnb",
-      "price": 711.54,
-      "change_24h": -3.96232,
-      "market_cap": 94728847510
+      "price": 713.98,
+      "change_24h": -2.22027,
+      "market_cap": 95063544720
     },
     {
       "symbol": "xrp",
       "price": 1.35,
-      "change_24h": -4.90793,
-      "market_cap": 84751375108
+      "change_24h": -3.2512,
+      "market_cap": 84836475138
     },
     {
       "symbol": "usdc",
-      "price": 0.999842,
-      "change_24h": -0.00898,
-      "market_cap": 74132017636
+      "price": 0.999933,
+      "change_24h": 0.00759,
+      "market_cap": 74137446988
     },
     {
       "symbol": "sol",
-      "price": 99.39,
-      "change_24h": -4.08891,
-      "market_cap": 58262192096
+      "price": 99.87,
+      "change_24h": -2.48321,
+      "market_cap": 58556727440
     },
     {
       "symbol": "trx",
-      "price": 0.339355,
-      "change_24h": -0.27534,
-      "market_cap": 32214106084
+      "price": 0.339512,
+      "change_24h": 0.0805,
+      "market_cap": 32237347047
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.027,
-      "change_24h": -0.14427,
-      "market_cap": 23049326741
+      "price": 1.033,
+      "change_24h": 0.49657,
+      "market_cap": 23175907294
     },
     {
       "symbol": "zec",
-      "price": 1129.97,
-      "change_24h": -11.01346,
-      "market_cap": 19134051615
+      "price": 1127.27,
+      "change_24h": -8.92448,
+      "market_cap": 19094578411
     }
   ],
   "signal": {
@@ -80,7 +80,15 @@
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "روند بیتکوین: خنثی؛ -5.4% در ۷ روز",
+        "tone": "neutral"
+      },
+      {
+        "text": "BTC -1.4% در ۲۴ ساعت",
+        "tone": "neutral"
+      },
+      {
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
@@ -89,275 +97,266 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-10 18:30"
+    "updated": "2026-09-10 21:40"
   },
   "whales": {
     "unconfirmed": {
-      "score": 7,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 180.0,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 180.0,
-          "tier": "متوسط",
-          "fee": 6.783e-05,
-          "inputs": 18,
-          "outputs": 2,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
     {
-      "title": "اینتویت در کنفرانس گلدمن ساکس: تنظیم مجدد رشد با فشار هوش مصنوعی همراه می‌شود",
-      "date": "2026-09-10 18:15",
+      "title": "گلدکانا ریسورسز شرایط عرضه خصوصی را اعلام کرد",
+      "date": "2026-09-10 21:12",
       "source": "Investing.com"
     },
     {
-      "title": "AMD و Intel از جمله نوسان‌گیران ارزش سهام در بازار سهام در روز پنجشنبه بودند",
-      "date": "2026-09-10 18:04",
+      "title": "روز معاملاتی: تپش‌های تورمی",
+      "date": "2026-09-10 21:06",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "گزارش شاخص قیمت مصرف‌کننده ایالات متحده، راهنمای تصمیم فدرال رزرو در مورد نرخ بهره و تأثیر آن بر اقتصاد خواهد بود",
+      "title": "افزایش بازده اوراق خزانه‌داری همزمان با افزایش قیمت نفت و افزایش فروش اوراق قرضه",
       "date": "Thu, 10 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام و اوراق قرضه با جهش قیمت نفت سقوط کردند، پیش‌بینی‌ها در مورد افزایش نرخ بهره فدرال رزرو تقویت شد: بازارها به پایان رسیدند",
+      "title": "بازدهی اوراق قرضه شهرداری در روت به بالاترین حد از سال ۲۰۱۱ رسید",
+      "date": "Thu, 10 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام و اوراق قرضه با افزایش قیمت نفت و افزایش شرط‌بندی‌های فدرال رزرو، سقوط کردند: خلاصه بازارها",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازده اوراق قرضه مونی به بالاترین حد خود از آوریل 2025 رسید - به دلیل تعرفه های گمرکی",
+      "title": "دلار با افزایش احتمال افزایش نرخ بهره فدرال رزرو، در آستانه گزارش تورم، افزایش یافت",
       "date": "Thu, 10 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "درآمد اوراکل، میزان تحمل بازار در برابر ریسک سرمایه‌گذاری در هوش مصنوعی را می‌سنجد",
+      "title": "شاخص S&P 500 برای چهارمین روز متوالی کاهش یافت، زیرا قیمت نفت و بازده آن افزایش یافت",
       "date": "Thu, 10 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "وال استریت در انتخابات میان‌دوره‌ای شرط‌بندی می‌کند: ناظر انتخابات بازار سهام",
+      "title": "سازمان حمل و نقل نیویورک برای فروش اوراق قرضه مالیاتی عمارت به ارزش ۷۸۵ میلیون دلار آماده می‌شود",
       "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای 10 سپتامبر",
-      "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "اینتویت در کنفرانس گلدمن ساکس: تنظیم مجدد رشد با فشار هوش مصنوعی همراه می‌شود",
-      "date": "2026-09-10 18:15",
+      "title": "گلدکانا ریسورسز شرایط عرضه خصوصی را اعلام کرد",
+      "date": "2026-09-10 21:12",
       "source": "Investing.com"
     },
     {
-      "title": "AMD و Intel از جمله نوسان‌گیران ارزش سهام در بازار سهام در روز پنجشنبه بودند",
-      "date": "2026-09-10 18:04",
+      "title": "روز معاملاتی: تپش‌های تورمی",
+      "date": "2026-09-10 21:06",
       "source": "Investing.com"
     },
     {
-      "title": "گزارش شاخص قیمت مصرف‌کننده ایالات متحده، راهنمای تصمیم فدرال رزرو در مورد نرخ بهره و تأثیر آن بر اقتصاد خواهد بود",
+      "title": "افزایش بازده اوراق خزانه‌داری همزمان با افزایش قیمت نفت و افزایش فروش اوراق قرضه",
       "date": "Thu, 10 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام و اوراق قرضه با جهش قیمت نفت سقوط کردند، پیش‌بینی‌ها در مورد افزایش نرخ بهره فدرال رزرو تقویت شد: بازارها به پایان رسیدند",
+      "title": "بازدهی اوراق قرضه شهرداری در روت به بالاترین حد از سال ۲۰۱۱ رسید",
+      "date": "Thu, 10 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام و اوراق قرضه با افزایش قیمت نفت و افزایش شرط‌بندی‌های فدرال رزرو، سقوط کردند: خلاصه بازارها",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازده اوراق قرضه مونی به بالاترین حد خود از آوریل 2025 رسید - به دلیل تعرفه های گمرکی",
+      "title": "دلار با افزایش احتمال افزایش نرخ بهره فدرال رزرو، در آستانه گزارش تورم، افزایش یافت",
       "date": "Thu, 10 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "درآمد اوراکل، میزان تحمل بازار در برابر ریسک سرمایه‌گذاری در هوش مصنوعی را می‌سنجد",
+      "title": "شاخص S&P 500 برای چهارمین روز متوالی کاهش یافت، زیرا قیمت نفت و بازده آن افزایش یافت",
       "date": "Thu, 10 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "وال استریت در انتخابات میان‌دوره‌ای شرط‌بندی می‌کند: ناظر انتخابات بازار سهام",
+      "title": "سازمان حمل و نقل نیویورک برای فروش اوراق قرضه مالیاتی عمارت به ارزش ۷۸۵ میلیون دلار آماده می‌شود",
       "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای 10 سپتامبر",
-      "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-10 18:30",
+    "updated": "2026-09-10 21:39",
     "gainers_24h": [
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.19,
-        "chg": 0.06
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.51,
+        "chg": 1.89
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.01
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.056502,
+        "chg": 1.08
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.027,
-        "chg": -0.14
-      },
-      {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.339355,
-        "chg": -0.28
+        "symbol": "dot",
+        "name": "Polkadot",
+        "price": 1.12,
+        "chg": 0.6
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 512.41,
-        "chg": -0.37
+        "price": 510.18,
+        "chg": 0.52
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.033,
+        "chg": 0.5
       }
     ],
     "losers_24h": [
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 225.53,
-        "chg": -12.62
+        "price": 225.71,
+        "chg": -11.15
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1129.97,
-        "chg": -11.01
+        "price": 1127.27,
+        "chg": -8.92
       },
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.04,
-        "chg": -8.7
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.098374,
+        "chg": -5.92
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.575007,
-        "chg": -7.96
+        "price": 0.571373,
+        "chg": -5.75
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 79.95,
-        "chg": -7.73
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 239.42,
+        "chg": -5.64
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.5,
-        "chg": 26.1
+        "price": 2.51,
+        "chg": 26.8
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.1,
-        "chg": 24.5
+        "price": 1.12,
+        "chg": 23.9
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1129.97,
-        "chg": 22.1
+        "price": 1127.27,
+        "chg": 17.3
       },
       {
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.16,
-        "chg": 8.8
+        "chg": 9.2
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 79.79,
-        "chg": 8.1
+        "price": 79.85,
+        "chg": 7.2
       }
     ],
     "losers_7d": [
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.098681,
-        "chg": -12.2
-      },
-      {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 225.53,
-        "chg": -12.1
+        "price": 225.71,
+        "chg": -12.5
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.098374,
+        "chg": -11.5
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 122.44,
-        "chg": -7.4
+        "price": 122.58,
+        "chg": -8.3
       },
       {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 5.07e-06,
-        "chg": -6.9
+        "symbol": "xrp",
+        "name": "XRP",
+        "price": 1.35,
+        "chg": -7.9
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01593171,
-        "chg": -6.7
+        "price": 0.01583156,
+        "chg": -7.7
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1129.97,
-        "chg": 146.0
+        "price": 1127.27,
+        "chg": 138.0
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.04,
-        "chg": 63.5
+        "price": 6.01,
+        "chg": 62.4
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.5,
-        "chg": 61.5
+        "price": 2.51,
+        "chg": 59.5
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 79.95,
-        "chg": 49.1
+        "price": 80.2,
+        "chg": 47.6
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 79.79,
-        "chg": 45.8
+        "price": 79.85,
+        "chg": 45.5
       }
     ],
     "losers_30d": [
@@ -365,30 +364,30 @@
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.19,
-        "chg": -2.4
+        "chg": -2.3
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.098681,
-        "chg": -1.4
+        "price": 0.098374,
+        "chg": -1.8
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4342.37,
-        "chg": -0.5
+        "price": 4325.63,
+        "chg": -1.0
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4341.31,
-        "chg": -0.2
+        "price": 4324.75,
+        "chg": -0.7
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.027,
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
         "chg": 0.3
       }
     ]
