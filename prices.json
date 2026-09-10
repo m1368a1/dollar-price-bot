@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-10 00:16",
+  "timestamp": "2026-09-10 04:53",
   "usd_sell": 235500,
   "usd_buy": 235400,
   "gold_18k": 24442495,
-  "btc_usd": 78259.72,
+  "btc_usd": 78311.35,
   "fear_greed": 69,
-  "btc_dominance": 58.6,
+  "btc_dominance": 58.5,
   "market_cap": 2680000000000.0,
-  "market_volume": 90000000000.0,
-  "market_change": -3.25,
+  "market_volume": 100000000000.0,
+  "market_change": -3.28,
   "top10": [
     {
       "symbol": "btc",
-      "price": 78283,
-      "change_24h": -0.505,
-      "market_cap": 1572255221172
+      "price": 78312,
+      "change_24h": -1.06116,
+      "market_cap": 1572750243049
     },
     {
       "symbol": "eth",
-      "price": 2467.54,
-      "change_24h": -1.03226,
-      "market_cap": 301216337525
+      "price": 2476.31,
+      "change_24h": -1.33995,
+      "market_cap": 302224817437
     },
     {
       "symbol": "usdt",
-      "price": 0.999724,
-      "change_24h": -0.00962,
-      "market_cap": 183412853176
+      "price": 0.999594,
+      "change_24h": -0.00892,
+      "market_cap": 183386135078
     },
     {
       "symbol": "bnb",
-      "price": 722.76,
-      "change_24h": -4.21279,
-      "market_cap": 96264604548
+      "price": 721.96,
+      "change_24h": -4.36848,
+      "market_cap": 96152063972
     },
     {
       "symbol": "xrp",
       "price": 1.39,
-      "change_24h": -2.0906,
-      "market_cap": 87472732257
+      "change_24h": -3.3983,
+      "market_cap": 87102812734
     },
     {
       "symbol": "usdc",
-      "price": 0.999866,
-      "change_24h": -0.01171,
-      "market_cap": 74389654936
+      "price": 0.999751,
+      "change_24h": -0.01919,
+      "market_cap": 74365781228
     },
     {
       "symbol": "sol",
-      "price": 101.44,
-      "change_24h": -2.18156,
-      "market_cap": 59489677651
+      "price": 101.84,
+      "change_24h": -2.38922,
+      "market_cap": 59716810576
     },
     {
       "symbol": "trx",
-      "price": 0.339077,
-      "change_24h": -0.02797,
-      "market_cap": 32194931862
+      "price": 0.340162,
+      "change_24h": 0.45565,
+      "market_cap": 32298772134
     },
     {
       "symbol": "figr_heloc",
       "price": 1.025,
-      "change_24h": -0.94285,
-      "market_cap": 22946401986
+      "change_24h": -0.93961,
+      "market_cap": 22949561470
     },
     {
       "symbol": "zec",
-      "price": 1241.14,
-      "change_24h": 5.04988,
-      "market_cap": 21006325131
+      "price": 1245.06,
+      "change_24h": 0.54939,
+      "market_cap": 21075092669
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.6% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +0.7% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.2% در ۲۴ ساعت",
+        "text": "BTC -0.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -97,7 +97,7 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-10 00:17"
+    "updated": "2026-09-10 04:54"
   },
   "whales": {
     "unconfirmed": {
@@ -113,35 +113,20 @@
   },
   "news_investing": [
     {
-      "title": "فناوری‌های Ethos در کنفرانس فناوری و ارتباطات گلدمن ساکس: انگیزه رشد",
-      "date": "2026-09-09 23:41",
-      "source": "Investing.com"
-    },
-    {
-      "title": "کنفرانس فناوری و ارتباطات گلدمن ساکس (Goldman Sachs Communacopia + Technology Conference): هوش مصنوعی، افزایش سرعت صدور فاکتور",
-      "date": "2026-09-09 23:39",
-      "source": "Investing.com"
-    },
-    {
-      "title": "اتودسک در گلدمن ساکس، ارتباطات + فناوری: هوش مصنوعی رشد را هدایت می‌کند",
-      "date": "2026-09-09 23:38",
+      "title": "پیشنهاد صبحگاهی: لاگارد با رسیدن قیمت نفت به بالای ۱۰۰ دلار، توجه‌ها را به خود جلب می‌کند",
+      "date": "2026-09-10 04:36",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سهام آسیا با تشدید ترس از تورم در پی افزایش قیمت نفت سقوط کرد: بازارها در هم تنیدند",
+      "title": "سقوط سهام در آسیا با افزایش نگرانی‌های تورمی ناشی از نفت: بازارها در هم تنیده‌اند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با بهبود بازارها، پول جهانی به اندونزی بازمی‌گردد",
+      "title": "شکاف بازدهی اوراق قرضه 10 ساله چین و آمریکا به دلیل اختلاف بر سر سیاست‌ها، به رکورد جدیدی رسید",
       "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "صندوق‌های سرمایه‌گذاری می‌گویند، حراج ضعیف اوراق قرضه جنوب شرقی آسیا، فرصت خرید را فراهم می‌کند",
-      "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
@@ -150,45 +135,35 @@
       "source": "Bloomberg"
     },
     {
-      "title": "طلا در نزدیکی ۴۴۰۰ دلار تثبیت شد، زیرا معامله‌گران مسیر افزایش نرخ بهره فدرال رزرو را ارزیابی می‌کنند",
+      "title": "بدهی هوش مصنوعی سلسله مراتب ریسک را با اوراق قرضه نوظهور تغییر می‌دهد",
+      "date": "Thu, 10 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "صندوق‌های سرمایه‌گذاری می‌گویند فروش ضعیف اوراق قرضه در جنوب شرقی آسیا، فرصتی را فراهم می‌کند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "خریدهای بزرگ بسنت تحت تأثیر واقعیت بازار اوراق قرضه قرار گرفت",
+      "title": "طلا در نزدیکی ۴۴۰۰ دلار تثبیت شد، زیرا معامله‌گران مسیر افزایش نرخ بهره فدرال رزرو را ارزیابی می‌کنند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "فناوری‌های Ethos در کنفرانس فناوری و ارتباطات گلدمن ساکس: انگیزه رشد",
-      "date": "2026-09-09 23:41",
+      "title": "پیشنهاد صبحگاهی: لاگارد با رسیدن قیمت نفت به بالای ۱۰۰ دلار، توجه‌ها را به خود جلب می‌کند",
+      "date": "2026-09-10 04:36",
       "source": "Investing.com"
     },
     {
-      "title": "کنفرانس فناوری و ارتباطات گلدمن ساکس (Goldman Sachs Communacopia + Technology Conference): هوش مصنوعی، افزایش سرعت صدور فاکتور",
-      "date": "2026-09-09 23:39",
-      "source": "Investing.com"
-    },
-    {
-      "title": "اتودسک در گلدمن ساکس، ارتباطات + فناوری: هوش مصنوعی رشد را هدایت می‌کند",
-      "date": "2026-09-09 23:38",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام آسیا با تشدید ترس از تورم در پی افزایش قیمت نفت سقوط کرد: بازارها در هم تنیدند",
+      "title": "سقوط سهام در آسیا با افزایش نگرانی‌های تورمی ناشی از نفت: بازارها در هم تنیده‌اند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با بهبود بازارها، پول جهانی به اندونزی بازمی‌گردد",
+      "title": "شکاف بازدهی اوراق قرضه 10 ساله چین و آمریکا به دلیل اختلاف بر سر سیاست‌ها، به رکورد جدیدی رسید",
       "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "صندوق‌های سرمایه‌گذاری می‌گویند، حراج ضعیف اوراق قرضه جنوب شرقی آسیا، فرصت خرید را فراهم می‌کند",
-      "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
@@ -197,175 +172,180 @@
       "source": "Bloomberg"
     },
     {
-      "title": "طلا در نزدیکی ۴۴۰۰ دلار تثبیت شد، زیرا معامله‌گران مسیر افزایش نرخ بهره فدرال رزرو را ارزیابی می‌کنند",
+      "title": "بدهی هوش مصنوعی سلسله مراتب ریسک را با اوراق قرضه نوظهور تغییر می‌دهد",
+      "date": "Thu, 10 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "صندوق‌های سرمایه‌گذاری می‌گویند فروش ضعیف اوراق قرضه در جنوب شرقی آسیا، فرصتی را فراهم می‌کند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "خریدهای بزرگ بسنت تحت تأثیر واقعیت بازار اوراق قرضه قرار گرفت",
+      "title": "طلا در نزدیکی ۴۴۰۰ دلار تثبیت شد، زیرا معامله‌گران مسیر افزایش نرخ بهره فدرال رزرو را ارزیابی می‌کنند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-10 00:16",
+    "updated": "2026-09-10 04:53",
     "gainers_24h": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.47,
-        "chg": 5.31
+        "price": 2.52,
+        "chg": 7.83
       },
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1241.14,
-        "chg": 5.05
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.22,
+        "chg": 2.83
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01639372,
+        "chg": 2.07
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 510.02,
-        "chg": 2.42
+        "price": 514.38,
+        "chg": 1.72
       },
       {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4392.37,
-        "chg": 0.98
-      },
-      {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4394.49,
-        "chg": 0.93
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.056494,
+        "chg": 0.85
       }
     ],
     "losers_24h": [
       {
-        "symbol": "dot",
-        "name": "Polkadot",
-        "price": 1.12,
-        "chg": -10.15
-      },
-      {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.13,
-        "chg": -9.4
+        "price": 6.07,
+        "chg": -12.29
+      },
+      {
+        "symbol": "dot",
+        "name": "Polkadot",
+        "price": 1.11,
+        "chg": -9.22
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.769674,
-        "chg": -6.37
+        "price": 0.768179,
+        "chg": -6.66
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 11.77,
-        "chg": -6.06
+        "price": 11.81,
+        "chg": -6.03
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.600394,
-        "chg": -5.7
+        "price": 0.596589,
+        "chg": -5.47
       }
     ],
     "gainers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1241.14,
-        "chg": 53.6
+        "price": 1245.06,
+        "chg": 50.7
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.47,
-        "chg": 32.5
+        "price": 2.52,
+        "chg": 33.4
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.12,
-        "chg": 30.3
+        "price": 1.11,
+        "chg": 25.2
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 253.11,
-        "chg": 17.7
+        "price": 256.22,
+        "chg": 17.1
       },
       {
-        "symbol": "wbt",
-        "name": "WhiteBIT Coin",
-        "price": 80.8,
-        "chg": 14.4
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.22,
+        "chg": 15.0
       }
     ],
     "losers_7d": [
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01596295,
-        "chg": -4.8
-      },
-      {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.104544,
-        "chg": -4.6
+        "price": 0.103668,
+        "chg": -7.9
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 125.04,
-        "chg": -0.7
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01639372,
+        "chg": -1.8
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.19,
-        "chg": -0.6
+        "chg": -1.4
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.1
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 125.02,
+        "chg": -1.4
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.768179,
+        "chg": -1.0
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1241.14,
-        "chg": 150.7
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.13,
-        "chg": 56.1
+        "price": 1245.06,
+        "chg": 151.5
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.47,
-        "chg": 56.0
+        "price": 2.52,
+        "chg": 57.9
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.07,
+        "chg": 52.9
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 83.43,
-        "chg": 51.5
+        "price": 84.28,
+        "chg": 52.1
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.8,
+        "price": 80.88,
         "chg": 46.3
       }
     ],
@@ -374,12 +354,12 @@
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.19,
-        "chg": -4.8
+        "chg": -3.2
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4394.49,
+        "price": 4408.82,
         "chg": 0.1
       },
       {
@@ -391,7 +371,7 @@
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4392.37,
+        "price": 4405.58,
         "chg": 0.4
       },
       {
