@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-09-09 21:43",
+  "timestamp": "2026-09-10 00:16",
   "usd_sell": 235500,
   "usd_buy": 235400,
   "gold_18k": 24442495,
-  "btc_usd": 78245.77,
-  "fear_greed": 66,
-  "btc_dominance": 58.5,
+  "btc_usd": 78259.72,
+  "fear_greed": 69,
+  "btc_dominance": 58.6,
   "market_cap": 2680000000000.0,
   "market_volume": 90000000000.0,
-  "market_change": -3.23,
+  "market_change": -3.25,
   "top10": [
     {
       "symbol": "btc",
-      "price": 78194,
-      "change_24h": -0.40064,
-      "market_cap": 1570298603992
+      "price": 78283,
+      "change_24h": -0.505,
+      "market_cap": 1572255221172
     },
     {
       "symbol": "eth",
-      "price": 2465.49,
-      "change_24h": -0.7143,
-      "market_cap": 300870089684
+      "price": 2467.54,
+      "change_24h": -1.03226,
+      "market_cap": 301216337525
     },
     {
       "symbol": "usdt",
-      "price": 0.999791,
-      "change_24h": -0.00514,
-      "market_cap": 183421923972
+      "price": 0.999724,
+      "change_24h": -0.00962,
+      "market_cap": 183412853176
     },
     {
       "symbol": "bnb",
-      "price": 730.33,
-      "change_24h": -2.97085,
-      "market_cap": 97251037711
+      "price": 722.76,
+      "change_24h": -4.21279,
+      "market_cap": 96264604548
     },
     {
       "symbol": "xrp",
-      "price": 1.4,
-      "change_24h": -1.5568,
-      "market_cap": 87753502149
+      "price": 1.39,
+      "change_24h": -2.0906,
+      "market_cap": 87472732257
     },
     {
       "symbol": "usdc",
-      "price": 0.999858,
-      "change_24h": -0.01367,
-      "market_cap": 74358476448
+      "price": 0.999866,
+      "change_24h": -0.01171,
+      "market_cap": 74389654936
     },
     {
       "symbol": "sol",
-      "price": 102.45,
-      "change_24h": -0.62581,
-      "market_cap": 60058990281
+      "price": 101.44,
+      "change_24h": -2.18156,
+      "market_cap": 59489677651
     },
     {
       "symbol": "trx",
-      "price": 0.339288,
-      "change_24h": 0.33595,
-      "market_cap": 32212673967
+      "price": 0.339077,
+      "change_24h": -0.02797,
+      "market_cap": 32194931862
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.027,
-      "change_24h": -1.09105,
-      "market_cap": 22992399244
+      "price": 1.025,
+      "change_24h": -0.94285,
+      "market_cap": 22946401986
     },
     {
       "symbol": "zec",
-      "price": 1239.32,
-      "change_24h": 6.18631,
-      "market_cap": 20971604937
+      "price": 1241.14,
+      "change_24h": 5.04988,
+      "market_cap": 21006325131
     }
   ],
   "signal": {
-    "score": 20,
+    "score": 0,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 66/100",
+        "text": "وضعیت: 69/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.6% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.4% در ۲۴ ساعت",
+        "text": "BTC -0.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 47",
+        "text": "معتدل: 43",
         "tone": "neutral"
-      },
-      {
-        "text": "چکش (Hammer) — نشانه صعود",
-        "tone": "bullish"
       }
     ],
-    "confidence": 60,
-    "updated": "2026-09-09 21:43"
+    "confidence": 50,
+    "updated": "2026-09-10 00:17"
   },
   "whales": {
     "unconfirmed": {
@@ -117,239 +113,259 @@
   },
   "news_investing": [
     {
-      "title": "شرکت انبریج کانادا، شرکت نفت خام تالگرس را به قیمت ۲.۵۵ میلیارد دلار خریداری می‌کند",
-      "date": "2026-09-09 21:13",
+      "title": "فناوری‌های Ethos در کنفرانس فناوری و ارتباطات گلدمن ساکس: انگیزه رشد",
+      "date": "2026-09-09 23:41",
+      "source": "Investing.com"
+    },
+    {
+      "title": "کنفرانس فناوری و ارتباطات گلدمن ساکس (Goldman Sachs Communacopia + Technology Conference): هوش مصنوعی، افزایش سرعت صدور فاکتور",
+      "date": "2026-09-09 23:39",
+      "source": "Investing.com"
+    },
+    {
+      "title": "اتودسک در گلدمن ساکس، ارتباطات + فناوری: هوش مصنوعی رشد را هدایت می‌کند",
+      "date": "2026-09-09 23:38",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "هوستون و لندن به دلیل نوسانات بازار برق برزیل در پرداخت Trader Pay با چالش مواجه هستند",
+      "title": "سهام آسیا با تشدید ترس از تورم در پی افزایش قیمت نفت سقوط کرد: بازارها در هم تنیدند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "انبریج، شرکت نفت خام تالگرس را به قیمت ۲.۶ میلیارد دلار خریداری می‌کند",
+      "title": "با بهبود بازارها، پول جهانی به اندونزی بازمی‌گردد",
+      "date": "Thu, 10 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "صندوق‌های سرمایه‌گذاری می‌گویند، حراج ضعیف اوراق قرضه جنوب شرقی آسیا، فرصت خرید را فراهم می‌کند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "دلار روز را در پایین‌ترین سطح از فوریه به پایان رساند، زیرا حضور فعلی به ین کمک می‌کند",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای 10 سپتامبر",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "خریدهای بزرگ بسنت تحت تأثیر واقعیت بازار خزانه داری قرار گرفت",
+      "title": "طلا در نزدیکی ۴۴۰۰ دلار تثبیت شد، زیرا معامله‌گران مسیر افزایش نرخ بهره فدرال رزرو را ارزیابی می‌کنند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط سهام در پی جهش قیمت نفت و افزایش بازدهی طرح خزانه‌داری: خلاصه بازارها",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش بازدهی اوراق خزانه‌داری پس از ناامیدکننده بودن اهداف جدید بازخرید اوراق قرضه",
+      "title": "خریدهای بزرگ بسنت تحت تأثیر واقعیت بازار اوراق قرضه قرار گرفت",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "شرکت انبریج کانادا، شرکت نفت خام تالگرس را به قیمت ۲.۵۵ میلیارد دلار خریداری می‌کند",
-      "date": "2026-09-09 21:13",
+      "title": "فناوری‌های Ethos در کنفرانس فناوری و ارتباطات گلدمن ساکس: انگیزه رشد",
+      "date": "2026-09-09 23:41",
       "source": "Investing.com"
     },
     {
-      "title": "هوستون و لندن به دلیل نوسانات بازار برق برزیل در پرداخت Trader Pay با چالش مواجه هستند",
+      "title": "کنفرانس فناوری و ارتباطات گلدمن ساکس (Goldman Sachs Communacopia + Technology Conference): هوش مصنوعی، افزایش سرعت صدور فاکتور",
+      "date": "2026-09-09 23:39",
+      "source": "Investing.com"
+    },
+    {
+      "title": "اتودسک در گلدمن ساکس، ارتباطات + فناوری: هوش مصنوعی رشد را هدایت می‌کند",
+      "date": "2026-09-09 23:38",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام آسیا با تشدید ترس از تورم در پی افزایش قیمت نفت سقوط کرد: بازارها در هم تنیدند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "انبریج، شرکت نفت خام تالگرس را به قیمت ۲.۶ میلیارد دلار خریداری می‌کند",
+      "title": "با بهبود بازارها، پول جهانی به اندونزی بازمی‌گردد",
+      "date": "Thu, 10 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "صندوق‌های سرمایه‌گذاری می‌گویند، حراج ضعیف اوراق قرضه جنوب شرقی آسیا، فرصت خرید را فراهم می‌کند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "دلار روز را در پایین‌ترین سطح از فوریه به پایان رساند، زیرا حضور فعلی به ین کمک می‌کند",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای 10 سپتامبر",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "خریدهای بزرگ بسنت تحت تأثیر واقعیت بازار خزانه داری قرار گرفت",
+      "title": "طلا در نزدیکی ۴۴۰۰ دلار تثبیت شد، زیرا معامله‌گران مسیر افزایش نرخ بهره فدرال رزرو را ارزیابی می‌کنند",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط سهام در پی جهش قیمت نفت و افزایش بازدهی طرح خزانه‌داری: خلاصه بازارها",
-      "date": "Tue, 08 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش بازدهی اوراق خزانه‌داری پس از ناامیدکننده بودن اهداف جدید بازخرید اوراق قرضه",
+      "title": "خریدهای بزرگ بسنت تحت تأثیر واقعیت بازار اوراق قرضه قرار گرفت",
       "date": "Wed, 09 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-09 21:43",
+    "updated": "2026-09-10 00:16",
     "gainers_24h": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.46,
-        "chg": 6.87
+        "price": 2.47,
+        "chg": 5.31
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1239.32,
-        "chg": 6.19
+        "price": 1241.14,
+        "chg": 5.05
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 507.08,
-        "chg": 1.84
-      },
-      {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4403.53,
-        "chg": 0.92
+        "price": 510.02,
+        "chg": 2.42
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4399.61,
-        "chg": 0.83
+        "price": 4392.37,
+        "chg": 0.98
+      },
+      {
+        "symbol": "paxg",
+        "name": "PAX Gold",
+        "price": 4394.49,
+        "chg": 0.93
       }
     ],
     "losers_24h": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.11,
-        "chg": -10.37
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 11.75,
-        "chg": -5.98
+        "price": 1.12,
+        "chg": -10.15
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.33,
-        "chg": -5.95
-      },
-      {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.605782,
-        "chg": -3.95
+        "price": 6.13,
+        "chg": -9.4
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.780259,
-        "chg": -3.87
+        "price": 0.769674,
+        "chg": -6.37
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 11.77,
+        "chg": -6.06
+      },
+      {
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.600394,
+        "chg": -5.7
       }
     ],
     "gainers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1239.32,
-        "chg": 53.7
+        "price": 1241.14,
+        "chg": 53.6
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.46,
-        "chg": 34.5
+        "price": 2.47,
+        "chg": 32.5
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.11,
-        "chg": 29.3
+        "price": 1.12,
+        "chg": 30.3
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 253.84,
-        "chg": 18.9
+        "price": 253.11,
+        "chg": 17.7
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.72,
-        "chg": 14.1
+        "price": 80.8,
+        "chg": 14.4
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01591013,
+        "price": 0.01596295,
         "chg": -4.8
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.104525,
-        "chg": -4.2
-      },
-      {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.18,
-        "chg": -1.1
+        "price": 0.104544,
+        "chg": -4.6
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 125.37,
+        "price": 125.04,
         "chg": -0.7
       },
       {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.056012,
-        "chg": -0.2
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.19,
+        "chg": -0.6
+      },
+      {
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.1
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1239.32,
-        "chg": 150.8
+        "price": 1241.14,
+        "chg": 150.7
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.33,
-        "chg": 62.1
+        "price": 6.13,
+        "chg": 56.1
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.46,
-        "chg": 55.9
+        "price": 2.47,
+        "chg": 56.0
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 84.96,
-        "chg": 53.0
+        "price": 83.43,
+        "chg": 51.5
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.72,
+        "price": 80.8,
         "chg": 46.3
       }
     ],
@@ -357,8 +373,14 @@
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.18,
+        "price": 9.19,
         "chg": -4.8
+      },
+      {
+        "symbol": "paxg",
+        "name": "PAX Gold",
+        "price": 4394.49,
+        "chg": 0.1
       },
       {
         "symbol": "usyc",
@@ -367,22 +389,16 @@
         "chg": 0.3
       },
       {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4403.53,
-        "chg": 0.6
-      },
-      {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4399.61,
-        "chg": 0.8
+        "price": 4392.37,
+        "chg": 0.4
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.027,
-        "chg": 2.1
+        "price": 1.025,
+        "chg": 2.3
       }
     ]
   }
