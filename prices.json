@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-11 14:27",
-  "usd_sell": 235400,
-  "usd_buy": 235300,
-  "gold_18k": 24211644,
-  "btc_usd": 79036.21,
+  "timestamp": "2026-09-11 18:35",
+  "usd_sell": 237500,
+  "usd_buy": 237400,
+  "gold_18k": 24412484,
+  "btc_usd": 77184.64,
   "fear_greed": 56,
-  "btc_dominance": 58.3,
-  "market_cap": 2710000000000.0,
-  "market_volume": 100000000000.0,
-  "market_change": -0.01,
+  "btc_dominance": 58.2,
+  "market_cap": 2660000000000.0,
+  "market_volume": 110000000000.0,
+  "market_change": -2.32,
   "top10": [
     {
       "symbol": "btc",
-      "price": 79036,
-      "change_24h": 2.30542,
-      "market_cap": 1587260062200
+      "price": 77185,
+      "change_24h": 0.16088,
+      "market_cap": 1549679147547
     },
     {
       "symbol": "eth",
-      "price": 2613.09,
-      "change_24h": 7.07767,
-      "market_cap": 318897520812
+      "price": 2542.4,
+      "change_24h": 3.44929,
+      "market_cap": 310158645952
     },
     {
       "symbol": "usdt",
-      "price": 0.999617,
-      "change_24h": -0.00413,
-      "market_cap": 183390547775
+      "price": 0.999699,
+      "change_24h": 0.00932,
+      "market_cap": 183403558239
     },
     {
       "symbol": "bnb",
-      "price": 733.71,
-      "change_24h": 3.33167,
-      "market_cap": 97701893441
+      "price": 724.28,
+      "change_24h": 1.85843,
+      "market_cap": 96420679690
     },
     {
       "symbol": "xrp",
-      "price": 1.4,
-      "change_24h": 2.29736,
-      "market_cap": 87941091196
+      "price": 1.36,
+      "change_24h": 0.78638,
+      "market_cap": 85414990926
     },
     {
       "symbol": "usdc",
-      "price": 0.999828,
-      "change_24h": 0.00045,
-      "market_cap": 74180328171
+      "price": 0.999847,
+      "change_24h": -0.00671,
+      "market_cap": 74402190879
     },
     {
       "symbol": "sol",
-      "price": 103.7,
-      "change_24h": 3.6692,
-      "market_cap": 60825831877
+      "price": 101.35,
+      "change_24h": 2.06856,
+      "market_cap": 59414300904
     },
     {
       "symbol": "trx",
-      "price": 0.336678,
-      "change_24h": -0.57761,
-      "market_cap": 31965782476
+      "price": 0.336611,
+      "change_24h": -0.81304,
+      "market_cap": 31952583517
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.034,
-      "change_24h": 0.73645,
-      "market_cap": 23220148588
+      "price": 1.031,
+      "change_24h": 0.41811,
+      "market_cap": 23205781976
     },
     {
       "symbol": "zec",
-      "price": 1203.61,
-      "change_24h": 2.55395,
-      "market_cap": 20371854943
+      "price": 1169.88,
+      "change_24h": 4.24662,
+      "market_cap": 19797997076
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +0.1% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -3.1% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +2.4% در ۲۴ ساعت",
+        "text": "BTC -0.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 54",
+        "text": "معتدل: 48",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-11 14:28"
+    "updated": "2026-09-11 18:35"
   },
   "whales": {
     "unconfirmed": {
@@ -113,281 +113,281 @@
   },
   "news_investing": [
     {
-      "title": "سهام شرکت دل به بالاترین حد خود در تاریخ رسید و به ۵۶۳.۱۹ دلار رسید",
-      "date": "2026-09-11 14:20",
+      "title": "شرکت‌های GE Vernova و IBM در میان افزایش ارزش سهام در بازار سهام در روز جمعه قرار گرفتند",
+      "date": "2026-09-11 18:07",
       "source": "Investing.com"
     },
     {
-      "title": "پس از گزارش تورم درون خطی، قیمت بیت‌کوین به نزدیک ۷۹ هزار دلار رسید",
-      "date": "2026-09-11 14:19",
+      "title": "کسری بودجه فدرال بیش از حد انتظار کاهش یافت",
+      "date": "2026-09-11 18:00",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "پویلیور می‌گوید تجارت با کانادا می‌تواند به کاهش تورم در آمریکا کمک کند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "طلا به دلیل دلار افزایش یافت و پس از تورم ایالات متحده، از نوسانات قیمت سود برد",
+      "title": "سهام در آستانه تصمیم فدرال رزرو هفته آینده صعود کردند: خلاصه بازارها",
       "date": "Thu, 10 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام و اوراق قرضه افزایش یافتند زیرا افت نفت بر داده‌های شاخص قیمت مصرف‌کننده غلبه کرد: خلاصه بازارها",
+      "title": "شرکت آب جنوب شرقی پس از توقف مذاکرات اوراق قرضه، طرح بدهی خود را تجدید می‌کند",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "اوراق خزانه‌داری هفته‌ی نزولی خود را با تثبیت شرط‌بندی‌ها برای افزایش نرخ بهره‌ی فدرال رزرو پس از شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به پایان رساندند",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "تحریم‌های هواپیمایی آمریکا، آخرین پیوندهای خارجی ایران را قطع می‌کند",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام ایالات متحده پس از انتشار شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) با کاهش قیمت نفت، افزایش یافت",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۱ سپتامبر",
       "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "معامله‌گران اوراق قرضه پس از گزارش شاخص قیمت مصرف‌کننده، دو افزایش نرخ بهره فدرال رزرو در سال جاری را پیش‌بینی می‌کنند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "وایلدینگ از پیمکو می‌گوید، شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) «افزایش مدیریت ریسک» را برای فدرال رزرو تنظیم می‌کند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام ایالات متحده صعود کردند، زیرا کاهش قیمت نفت پس از انتشار شاخص قیمت مصرف کننده (شاخص قیمت مصرف‌کننده) تسکین دهنده بود",
-      "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام شرکت دل به بالاترین حد خود در تاریخ رسید و به ۵۶۳.۱۹ دلار رسید",
-      "date": "2026-09-11 14:20",
+      "title": "شرکت‌های GE Vernova و IBM در میان افزایش ارزش سهام در بازار سهام در روز جمعه قرار گرفتند",
+      "date": "2026-09-11 18:07",
       "source": "Investing.com"
     },
     {
-      "title": "پس از گزارش تورم درون خطی، قیمت بیت‌کوین به نزدیک ۷۹ هزار دلار رسید",
-      "date": "2026-09-11 14:19",
+      "title": "کسری بودجه فدرال بیش از حد انتظار کاهش یافت",
+      "date": "2026-09-11 18:00",
       "source": "Investing.com"
     },
     {
-      "title": "پویلیور می‌گوید تجارت با کانادا می‌تواند به کاهش تورم در آمریکا کمک کند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "طلا به دلیل دلار افزایش یافت و پس از تورم ایالات متحده، از نوسانات قیمت سود برد",
+      "title": "سهام در آستانه تصمیم فدرال رزرو هفته آینده صعود کردند: خلاصه بازارها",
       "date": "Thu, 10 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام و اوراق قرضه افزایش یافتند زیرا افت نفت بر داده‌های شاخص قیمت مصرف‌کننده غلبه کرد: خلاصه بازارها",
+      "title": "شرکت آب جنوب شرقی پس از توقف مذاکرات اوراق قرضه، طرح بدهی خود را تجدید می‌کند",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "اوراق خزانه‌داری هفته‌ی نزولی خود را با تثبیت شرط‌بندی‌ها برای افزایش نرخ بهره‌ی فدرال رزرو پس از شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به پایان رساندند",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "تحریم‌های هواپیمایی آمریکا، آخرین پیوندهای خارجی ایران را قطع می‌کند",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام ایالات متحده پس از انتشار شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) با کاهش قیمت نفت، افزایش یافت",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۱ سپتامبر",
       "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "معامله‌گران اوراق قرضه پس از گزارش شاخص قیمت مصرف‌کننده، دو افزایش نرخ بهره فدرال رزرو در سال جاری را پیش‌بینی می‌کنند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "وایلدینگ از پیمکو می‌گوید، شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) «افزایش مدیریت ریسک» را برای فدرال رزرو تنظیم می‌کند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام ایالات متحده صعود کردند، زیرا کاهش قیمت نفت پس از انتشار شاخص قیمت مصرف کننده (شاخص قیمت مصرف‌کننده) تسکین دهنده بود",
-      "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-11 14:27",
+    "updated": "2026-09-11 18:35",
     "gainers_24h": [
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.66,
-        "chg": 8.9
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.35,
-        "chg": 7.14
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1169.88,
+        "chg": 4.25
       },
       {
         "symbol": "eth",
         "name": "Ethereum",
-        "price": 2613.09,
-        "chg": 7.08
+        "price": 2542.4,
+        "chg": 3.45
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 128.92,
-        "chg": 5.49
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.56,
+        "chg": 2.9
       },
       {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 5.32e-06,
-        "chg": 4.65
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.589011,
+        "chg": 2.46
+      },
+      {
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 53.41,
+        "chg": 2.43
       }
     ],
     "losers_24h": [
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.101201,
-        "chg": -0.78
+        "symbol": "dot",
+        "name": "Polkadot",
+        "price": 1.05,
+        "chg": -4.46
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.336678,
-        "chg": -0.58
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.685519,
+        "chg": -2.11
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.16,
-        "chg": -0.39
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.205176,
+        "chg": -1.67
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.03
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 235.83,
+        "chg": -1.65
       },
       {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4378.3,
-        "chg": 0.19
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01567224,
+        "chg": -1.56
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.66,
-        "chg": 37.0
+        "price": 2.56,
+        "chg": 30.7
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.095,
-        "chg": 29.4
+        "price": 1.05,
+        "chg": 22.6
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1203.61,
-        "chg": 21.6
+        "price": 1169.88,
+        "chg": 14.0
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 82.42,
-        "chg": 12.9
+        "price": 80.39,
+        "chg": 10.3
       },
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.19,
-        "chg": 10.2
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 53.41,
+        "chg": 6.6
       }
     ],
     "losers_7d": [
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.101201,
-        "chg": -8.0
+        "price": 0.097908,
+        "chg": -8.9
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 234.42,
-        "chg": -6.5
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01610735,
-        "chg": -3.0
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 83.06,
-        "chg": -2.8
+        "price": 227.15,
+        "chg": -8.5
       },
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.708241,
-        "chg": -2.1
+        "price": 0.685519,
+        "chg": -6.8
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01567224,
+        "chg": -4.9
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 124.69,
+        "chg": -4.8
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1203.61,
-        "chg": 143.2
+        "price": 1169.88,
+        "chg": 143.1
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.35,
-        "chg": 82.5
+        "price": 6.07,
+        "chg": 73.3
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.66,
-        "chg": 60.9
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 83.06,
-        "chg": 49.0
+        "price": 2.56,
+        "chg": 57.5
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 82.42,
-        "chg": 48.3
+        "price": 80.39,
+        "chg": 47.0
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 80.72,
+        "chg": 44.5
       }
     ],
     "losers_30d": [
       {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4382.67,
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.097908,
         "chg": -0.8
       },
       {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4378.3,
-        "chg": -0.5
+        "symbol": "paxg",
+        "name": "PAX Gold",
+        "price": 4351.6,
+        "chg": -0.7
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.034,
-        "chg": -0.3
+        "price": 1.031,
+        "chg": -0.5
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4346.21,
+        "chg": -0.5
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.336678,
-        "chg": 0.3
-      },
-      {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
+        "price": 0.336611,
         "chg": 0.3
       }
     ]
