@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-11 18:35",
+  "timestamp": "2026-09-11 21:44",
   "usd_sell": 237500,
   "usd_buy": 237400,
   "gold_18k": 24412484,
-  "btc_usd": 77184.64,
+  "btc_usd": 77334.37,
   "fear_greed": 56,
   "btc_dominance": 58.2,
   "market_cap": 2660000000000.0,
   "market_volume": 110000000000.0,
-  "market_change": -2.32,
+  "market_change": -2.08,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77185,
-      "change_24h": 0.16088,
-      "market_cap": 1549679147547
+      "price": 77342,
+      "change_24h": 0.27769,
+      "market_cap": 1553291762704
     },
     {
       "symbol": "eth",
-      "price": 2542.4,
-      "change_24h": 3.44929,
-      "market_cap": 310158645952
+      "price": 2535.9,
+      "change_24h": 3.14429,
+      "market_cap": 309531084124
     },
     {
       "symbol": "usdt",
-      "price": 0.999699,
-      "change_24h": 0.00932,
-      "market_cap": 183403558239
+      "price": 0.999818,
+      "change_24h": 0.01083,
+      "market_cap": 183426035268
     },
     {
       "symbol": "bnb",
-      "price": 724.28,
-      "change_24h": 1.85843,
-      "market_cap": 96420679690
+      "price": 726.39,
+      "change_24h": 1.74213,
+      "market_cap": 96728736067
     },
     {
       "symbol": "xrp",
       "price": 1.36,
-      "change_24h": 0.78638,
-      "market_cap": 85414990926
+      "change_24h": 0.59581,
+      "market_cap": 85574634582
     },
     {
       "symbol": "usdc",
-      "price": 0.999847,
-      "change_24h": -0.00671,
-      "market_cap": 74402190879
+      "price": 0.999859,
+      "change_24h": -0.00514,
+      "market_cap": 74327584620
     },
     {
       "symbol": "sol",
-      "price": 101.35,
-      "change_24h": 2.06856,
-      "market_cap": 59414300904
+      "price": 102.61,
+      "change_24h": 2.77764,
+      "market_cap": 60177147743
     },
     {
       "symbol": "trx",
-      "price": 0.336611,
-      "change_24h": -0.81304,
-      "market_cap": 31952583517
+      "price": 0.338412,
+      "change_24h": -0.41924,
+      "market_cap": 32135704911
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.031,
-      "change_24h": 0.41811,
-      "market_cap": 23205781976
+      "price": 1.032,
+      "change_24h": -0.00833,
+      "market_cap": 23233370062
     },
     {
       "symbol": "zec",
-      "price": 1169.88,
-      "change_24h": 4.24662,
-      "market_cap": 19797997076
+      "price": 1175.33,
+      "change_24h": 3.86022,
+      "market_cap": 19895047437
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.1% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -2.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.2% در ۲۴ ساعت",
+        "text": "BTC +0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,10 +94,14 @@
       {
         "text": "معتدل: 48",
         "tone": "neutral"
+      },
+      {
+        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-11 18:35"
+    "confidence": 60,
+    "updated": "2026-09-11 21:44"
   },
   "whales": {
     "unconfirmed": {
@@ -113,24 +117,19 @@
   },
   "news_investing": [
     {
-      "title": "شرکت‌های GE Vernova و IBM در میان افزایش ارزش سهام در بازار سهام در روز جمعه قرار گرفتند",
-      "date": "2026-09-11 18:07",
+      "title": "رقابت گلدمن ساکس و بانک مرکزی آمریکا برای مدیریت ثروت کارکنان آنتروپیک - بلومبرگ",
+      "date": "2026-09-11 20:54",
       "source": "Investing.com"
     },
     {
-      "title": "کسری بودجه فدرال بیش از حد انتظار کاهش یافت",
-      "date": "2026-09-11 18:00",
+      "title": "سرمایه‌گذاران خود را برای افزایش احتمالی نرخ بهره در نشست نامشخص فدرال رزرو آماده می‌کنند",
+      "date": "2026-09-11 20:54",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سهام در آستانه تصمیم فدرال رزرو هفته آینده صعود کردند: خلاصه بازارها",
-      "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شرکت آب جنوب شرقی پس از توقف مذاکرات اوراق قرضه، طرح بدهی خود را تجدید می‌کند",
+      "title": "بیل دادلی انتظار دارد فدرال رزرو نرخ بهره را 25 واحد پایه افزایش دهد",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     },
@@ -140,39 +139,39 @@
       "source": "Bloomberg"
     },
     {
-      "title": "تحریم‌های هواپیمایی آمریکا، آخرین پیوندهای خارجی ایران را قطع می‌کند",
+      "title": "دلار متزلزل می‌شود زیرا شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به افزایش نرخ بهره فدرال رزرو کمک می‌کند در حالی که نفت سقوط می‌کند",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام ایالات متحده پس از انتشار شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) با کاهش قیمت نفت، افزایش یافت",
+      "title": "وال استریتِ شیفته‌ی هوش مصنوعی، میلیاردها دلار در شرط‌بندی‌های دوران تورم سرمایه‌گذاری می‌کند",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۱ سپتامبر",
+      "title": "سهام در آستانه تصمیم فدرال رزرو هفته آینده صعود کردند: خلاصه بازارها",
       "date": "Thu, 10 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام با توجه به تصمیم نرخ بهره فدرال رزرو در هفته آینده، افزایش یافت",
+      "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "شرکت‌های GE Vernova و IBM در میان افزایش ارزش سهام در بازار سهام در روز جمعه قرار گرفتند",
-      "date": "2026-09-11 18:07",
+      "title": "رقابت گلدمن ساکس و بانک مرکزی آمریکا برای مدیریت ثروت کارکنان آنتروپیک - بلومبرگ",
+      "date": "2026-09-11 20:54",
       "source": "Investing.com"
     },
     {
-      "title": "کسری بودجه فدرال بیش از حد انتظار کاهش یافت",
-      "date": "2026-09-11 18:00",
+      "title": "سرمایه‌گذاران خود را برای افزایش احتمالی نرخ بهره در نشست نامشخص فدرال رزرو آماده می‌کنند",
+      "date": "2026-09-11 20:54",
       "source": "Investing.com"
     },
     {
-      "title": "سهام در آستانه تصمیم فدرال رزرو هفته آینده صعود کردند: خلاصه بازارها",
-      "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شرکت آب جنوب شرقی پس از توقف مذاکرات اوراق قرضه، طرح بدهی خود را تجدید می‌کند",
+      "title": "بیل دادلی انتظار دارد فدرال رزرو نرخ بهره را 25 واحد پایه افزایش دهد",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     },
@@ -182,213 +181,218 @@
       "source": "Bloomberg"
     },
     {
-      "title": "تحریم‌های هواپیمایی آمریکا، آخرین پیوندهای خارجی ایران را قطع می‌کند",
+      "title": "دلار متزلزل می‌شود زیرا شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به افزایش نرخ بهره فدرال رزرو کمک می‌کند در حالی که نفت سقوط می‌کند",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام ایالات متحده پس از انتشار شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) با کاهش قیمت نفت، افزایش یافت",
+      "title": "وال استریتِ شیفته‌ی هوش مصنوعی، میلیاردها دلار در شرط‌بندی‌های دوران تورم سرمایه‌گذاری می‌کند",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۱ سپتامبر",
+      "title": "سهام در آستانه تصمیم فدرال رزرو هفته آینده صعود کردند: خلاصه بازارها",
       "date": "Thu, 10 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام با توجه به تصمیم نرخ بهره فدرال رزرو در هفته آینده، افزایش یافت",
+      "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-11 18:35",
+    "updated": "2026-09-11 21:44",
     "gainers_24h": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1169.88,
-        "chg": 4.25
+        "price": 1175.33,
+        "chg": 3.86
       },
       {
         "symbol": "eth",
         "name": "Ethereum",
-        "price": 2542.4,
-        "chg": 3.45
+        "price": 2535.9,
+        "chg": 3.14
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.56,
-        "chg": 2.9
+        "symbol": "sol",
+        "name": "Solana",
+        "price": 102.61,
+        "chg": 2.78
       },
       {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.589011,
-        "chg": 2.46
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.19,
+        "chg": 2.71
       },
       {
-        "symbol": "ltc",
-        "name": "Litecoin",
-        "price": 53.41,
-        "chg": 2.43
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 125.58,
+        "chg": 2.33
       }
     ],
     "losers_24h": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.05,
-        "chg": -4.46
+        "price": 1.04,
+        "chg": -7.47
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.054643,
+        "chg": -3.22
       },
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.685519,
-        "chg": -2.11
+        "price": 0.68212,
+        "chg": -3.1
       },
       {
-        "symbol": "ada",
-        "name": "Cardano",
-        "price": 0.205176,
-        "chg": -1.67
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.074417,
+        "chg": -1.61
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 235.83,
-        "chg": -1.65
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01567224,
-        "chg": -1.56
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.727989,
+        "chg": -1.52
       }
     ],
     "gainers_7d": [
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.56,
-        "chg": 30.7
-      },
-      {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.05,
-        "chg": 22.6
+        "price": 1.04,
+        "chg": 19.4
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.49,
+        "chg": 14.2
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1169.88,
-        "chg": 14.0
+        "price": 1175.33,
+        "chg": 13.6
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.39,
-        "chg": 10.3
+        "price": 80.4,
+        "chg": 9.6
       },
       {
-        "symbol": "ltc",
-        "name": "Litecoin",
-        "price": 53.41,
-        "chg": 6.6
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.19,
+        "chg": 7.8
       }
     ],
     "losers_7d": [
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.097908,
-        "chg": -8.9
-      },
-      {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 227.15,
-        "chg": -8.5
+        "price": 228.49,
+        "chg": -9.7
       },
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.685519,
-        "chg": -6.8
+        "price": 0.68212,
+        "chg": -8.1
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.097612,
+        "chg": -7.6
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01567224,
-        "chg": -4.9
+        "price": 0.01558608,
+        "chg": -6.2
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 124.69,
-        "chg": -4.8
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 80.46,
+        "chg": -5.1
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1169.88,
-        "chg": 143.1
+        "price": 1175.33,
+        "chg": 140.7
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.07,
-        "chg": 73.3
+        "price": 6.05,
+        "chg": 70.6
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.56,
-        "chg": 57.5
+        "price": 2.49,
+        "chg": 51.5
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.39,
-        "chg": 47.0
+        "price": 80.4,
+        "chg": 46.3
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 80.72,
-        "chg": 44.5
+        "price": 80.46,
+        "chg": 43.3
       }
     ],
     "losers_30d": [
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.097908,
-        "chg": -0.8
-      },
-      {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4351.6,
-        "chg": -0.7
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.031,
-        "chg": -0.5
+        "price": 4354.12,
+        "chg": -1.2
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4346.21,
-        "chg": -0.5
+        "price": 4347.7,
+        "chg": -1.0
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.336611,
-        "chg": 0.3
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.097612,
+        "chg": -0.9
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.054643,
+        "chg": -0.9
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.032,
+        "chg": -0.6
       }
     ]
   }
