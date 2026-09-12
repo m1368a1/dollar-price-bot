@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-09-11 21:44",
+  "timestamp": "2026-09-12 00:19",
   "usd_sell": 237500,
   "usd_buy": 237400,
   "gold_18k": 24412484,
-  "btc_usd": 77334.37,
-  "fear_greed": 56,
-  "btc_dominance": 58.2,
+  "btc_usd": 77281.45,
+  "fear_greed": 63,
+  "btc_dominance": 58.3,
   "market_cap": 2660000000000.0,
   "market_volume": 110000000000.0,
-  "market_change": -2.08,
+  "market_change": -1.43,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77342,
-      "change_24h": 0.27769,
-      "market_cap": 1553291762704
+      "price": 77277,
+      "change_24h": 0.65698,
+      "market_cap": 1551955739366
     },
     {
       "symbol": "eth",
-      "price": 2535.9,
-      "change_24h": 3.14429,
-      "market_cap": 309531084124
+      "price": 2515.96,
+      "change_24h": 2.76524,
+      "market_cap": 307035919311
     },
     {
       "symbol": "usdt",
-      "price": 0.999818,
-      "change_24h": 0.01083,
-      "market_cap": 183426035268
+      "price": 0.999854,
+      "change_24h": 0.01095,
+      "market_cap": 183434124496
     },
     {
       "symbol": "bnb",
-      "price": 726.39,
-      "change_24h": 1.74213,
-      "market_cap": 96728736067
+      "price": 727.33,
+      "change_24h": 2.16714,
+      "market_cap": 96834408479
     },
     {
       "symbol": "xrp",
       "price": 1.36,
-      "change_24h": 0.59581,
-      "market_cap": 85574634582
+      "change_24h": 1.14473,
+      "market_cap": 85281873035
     },
     {
       "symbol": "usdc",
-      "price": 0.999859,
-      "change_24h": -0.00514,
-      "market_cap": 74327584620
+      "price": 0.999879,
+      "change_24h": -0.01199,
+      "market_cap": 74329917893
     },
     {
       "symbol": "sol",
-      "price": 102.61,
-      "change_24h": 2.77764,
-      "market_cap": 60177147743
+      "price": 102.28,
+      "change_24h": 3.40715,
+      "market_cap": 59996462643
     },
     {
       "symbol": "trx",
-      "price": 0.338412,
-      "change_24h": -0.41924,
-      "market_cap": 32135704911
+      "price": 0.338489,
+      "change_24h": -0.51119,
+      "market_cap": 32138612702
     },
     {
       "symbol": "figr_heloc",
       "price": 1.032,
-      "change_24h": -0.00833,
-      "market_cap": 23233370062
+      "change_24h": -0.33252,
+      "market_cap": 23221646090
     },
     {
       "symbol": "zec",
-      "price": 1175.33,
-      "change_24h": 3.86022,
-      "market_cap": 19895047437
+      "price": 1159.97,
+      "change_24h": 6.894,
+      "market_cap": 19638849548
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 56/100",
+        "text": "وضعیت: 63/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -2.9% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -3.0% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.1% در ۲۴ ساعت",
+        "text": "BTC +0.9% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 48",
+        "text": "معتدل: 46",
         "tone": "neutral"
       },
       {
-        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
-        "tone": "bearish"
+        "text": "سه سرباز سفید (Three White Soldiers) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
     "confidence": 60,
-    "updated": "2026-09-11 21:44"
+    "updated": "2026-09-12 00:20"
   },
   "whales": {
     "unconfirmed": {
@@ -115,19 +115,28 @@
       "top": []
     }
   },
-  "news_investing": [
+  "news_investing": [],
+  "news_bloomberg": [
     {
-      "title": "رقابت گلدمن ساکس و بانک مرکزی آمریکا برای مدیریت ثروت کارکنان آنتروپیک - بلومبرگ",
-      "date": "2026-09-11 20:54",
-      "source": "Investing.com"
+      "title": "هفته وال استریت | آزمون نفت ونزوئلا، ظرفیت مازاد انرژی‌های تجدیدپذیر، رونق فناوری دفاعی",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "سرمایه‌گذاران خود را برای افزایش احتمالی نرخ بهره در نشست نامشخص فدرال رزرو آماده می‌کنند",
-      "date": "2026-09-11 20:54",
-      "source": "Investing.com"
-    }
-  ],
-  "news_bloomberg": [
+      "title": "رئیس سابق فدرال رزرو نیویورک درباره به یاد آوردن حادثه یازده سپتامبر",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازسازی پس از یازده سپتامبر، خیریه سالانه کانتور فیتزجرالد، نگاهی به بازارهای انرژی",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "معامله‌گر اوراق قرضه‌ای که شرط‌بندی‌های اشتباهش باعث فروپاشی شرکتش شد، به ۱۶ سال زندان محکوم شد",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "بیل دادلی انتظار دارد فدرال رزرو نرخ بهره را 25 واحد پایه افزایش دهد",
       "date": "Fri, 11 Sep 2026",
@@ -135,40 +144,30 @@
     },
     {
       "title": "اوراق خزانه‌داری هفته‌ی نزولی خود را با تثبیت شرط‌بندی‌ها برای افزایش نرخ بهره‌ی فدرال رزرو پس از شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به پایان رساندند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "دلار متزلزل می‌شود زیرا شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به افزایش نرخ بهره فدرال رزرو کمک می‌کند در حالی که نفت سقوط می‌کند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "وال استریتِ شیفته‌ی هوش مصنوعی، میلیاردها دلار در شرط‌بندی‌های دوران تورم سرمایه‌گذاری می‌کند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام در آستانه تصمیم فدرال رزرو هفته آینده صعود کردند: خلاصه بازارها",
-      "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام با توجه به تصمیم نرخ بهره فدرال رزرو در هفته آینده، افزایش یافت",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "رقابت گلدمن ساکس و بانک مرکزی آمریکا برای مدیریت ثروت کارکنان آنتروپیک - بلومبرگ",
-      "date": "2026-09-11 20:54",
-      "source": "Investing.com"
+      "title": "هفته وال استریت | آزمون نفت ونزوئلا، ظرفیت مازاد انرژی‌های تجدیدپذیر، رونق فناوری دفاعی",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "سرمایه‌گذاران خود را برای افزایش احتمالی نرخ بهره در نشست نامشخص فدرال رزرو آماده می‌کنند",
-      "date": "2026-09-11 20:54",
-      "source": "Investing.com"
+      "title": "رئیس سابق فدرال رزرو نیویورک درباره به یاد آوردن حادثه یازده سپتامبر",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازسازی پس از یازده سپتامبر، خیریه سالانه کانتور فیتزجرالد، نگاهی به بازارهای انرژی",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "معامله‌گر اوراق قرضه‌ای که شرط‌بندی‌های اشتباهش باعث فروپاشی شرکتش شد، به ۱۶ سال زندان محکوم شد",
+      "date": "Fri, 11 Sep 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "بیل دادلی انتظار دارد فدرال رزرو نرخ بهره را 25 واحد پایه افزایش دهد",
@@ -179,220 +178,200 @@
       "title": "اوراق خزانه‌داری هفته‌ی نزولی خود را با تثبیت شرط‌بندی‌ها برای افزایش نرخ بهره‌ی فدرال رزرو پس از شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به پایان رساندند",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "دلار متزلزل می‌شود زیرا شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به افزایش نرخ بهره فدرال رزرو کمک می‌کند در حالی که نفت سقوط می‌کند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "وال استریتِ شیفته‌ی هوش مصنوعی، میلیاردها دلار در شرط‌بندی‌های دوران تورم سرمایه‌گذاری می‌کند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام در آستانه تصمیم فدرال رزرو هفته آینده صعود کردند: خلاصه بازارها",
-      "date": "Thu, 10 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام با توجه به تصمیم نرخ بهره فدرال رزرو در هفته آینده، افزایش یافت",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-11 21:44",
+    "updated": "2026-09-12 00:19",
     "gainers_24h": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1175.33,
-        "chg": 3.86
-      },
-      {
-        "symbol": "eth",
-        "name": "Ethereum",
-        "price": 2535.9,
-        "chg": 3.14
-      },
-      {
-        "symbol": "sol",
-        "name": "Solana",
-        "price": 102.61,
-        "chg": 2.78
+        "price": 1159.97,
+        "chg": 6.89
       },
       {
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.19,
-        "chg": 2.71
+        "chg": 4.01
+      },
+      {
+        "symbol": "sol",
+        "name": "Solana",
+        "price": 102.28,
+        "chg": 3.41
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 125.58,
-        "chg": 2.33
+        "price": 125.11,
+        "chg": 3.36
+      },
+      {
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 113.28,
+        "chg": 3.3
       }
     ],
     "losers_24h": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.04,
-        "chg": -7.47
+        "price": 1.045,
+        "chg": -5.54
       },
       {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.054643,
-        "chg": -3.22
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.36,
+        "chg": -4.36
       },
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.68212,
-        "chg": -3.1
+        "price": 0.679893,
+        "chg": -3.0
       },
       {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.074417,
-        "chg": -1.61
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.055048,
+        "chg": -2.32
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.727989,
-        "chg": -1.52
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01543649,
+        "chg": -1.98
       }
     ],
     "gainers_7d": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.04,
-        "chg": 19.4
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.49,
-        "chg": 14.2
+        "price": 1.045,
+        "chg": 19.5
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1175.33,
-        "chg": 13.6
+        "price": 1159.97,
+        "chg": 13.8
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.36,
+        "chg": 11.2
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.4,
-        "chg": 9.6
+        "price": 80.21,
+        "chg": 9.5
       },
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.19,
-        "chg": 7.8
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 235.39,
+        "chg": 5.9
       }
     ],
     "losers_7d": [
       {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.09738,
+        "chg": -8.6
+      },
+      {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 228.49,
-        "chg": -9.7
+        "price": 227.99,
+        "chg": -8.4
       },
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.68212,
-        "chg": -8.1
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.097612,
-        "chg": -7.6
+        "price": 0.679893,
+        "chg": -7.7
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01558608,
-        "chg": -6.2
+        "price": 0.01543649,
+        "chg": -6.8
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 80.46,
-        "chg": -5.1
+        "price": 79.01,
+        "chg": -5.3
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1175.33,
-        "chg": 140.7
+        "price": 1159.97,
+        "chg": 137.6
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.05,
-        "chg": 70.6
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.49,
-        "chg": 51.5
+        "price": 6.02,
+        "chg": 69.0
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.4,
-        "chg": 46.3
+        "price": 80.21,
+        "chg": 46.0
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 80.46,
-        "chg": 43.3
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.36,
+        "chg": 45.5
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 125.11,
+        "chg": 42.6
       }
     ],
     "losers_30d": [
       {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4354.12,
-        "chg": -1.2
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4347.7,
-        "chg": -1.0
-      },
-      {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.097612,
-        "chg": -0.9
+        "price": 0.09738,
+        "chg": -1.1
       },
       {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.054643,
+        "symbol": "paxg",
+        "name": "PAX Gold",
+        "price": 4355.1,
         "chg": -0.9
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.032,
+        "chg": -0.8
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4350.13,
         "chg": -0.6
+      },
+      {
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.3
       }
     ]
   }
