@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-12 17:12",
-  "usd_sell": 234500,
-  "usd_buy": 234400,
-  "gold_18k": 23830740,
-  "btc_usd": 77379.62,
+  "timestamp": "2026-09-12 19:23",
+  "usd_sell": 233800,
+  "usd_buy": 233700,
+  "gold_18k": 23858442,
+  "btc_usd": 77133.38,
   "fear_greed": 63,
   "btc_dominance": 58.2,
   "market_cap": 2660000000000.0,
-  "market_volume": 60000000000.0,
-  "market_change": -3.36,
+  "market_volume": 50000000000.0,
+  "market_change": -2.54,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77375,
-      "change_24h": -0.55616,
-      "market_cap": 1553999910222
+      "price": 77146,
+      "change_24h": -0.06396,
+      "market_cap": 1549301778089
     },
     {
       "symbol": "eth",
-      "price": 2532.83,
-      "change_24h": -1.60514,
-      "market_cap": 309098351359
+      "price": 2520.11,
+      "change_24h": -0.85439,
+      "market_cap": 307539414991
     },
     {
       "symbol": "usdt",
-      "price": 0.999807,
-      "change_24h": -0.00533,
-      "market_cap": 183487312191
+      "price": 0.999863,
+      "change_24h": 0.01681,
+      "market_cap": 183491999163
     },
     {
       "symbol": "bnb",
-      "price": 731.99,
-      "change_24h": 0.36978,
-      "market_cap": 97479284599
+      "price": 726.01,
+      "change_24h": 0.27641,
+      "market_cap": 96679986002
     },
     {
       "symbol": "xrp",
-      "price": 1.37,
-      "change_24h": -0.071,
-      "market_cap": 86104629403
+      "price": 1.36,
+      "change_24h": 0.69885,
+      "market_cap": 85722591406
     },
     {
       "symbol": "usdc",
-      "price": 0.999862,
-      "change_24h": -0.00204,
-      "market_cap": 74330581196
+      "price": 0.999914,
+      "change_24h": 0.00688,
+      "market_cap": 74309603346
     },
     {
       "symbol": "sol",
-      "price": 102.09,
-      "change_24h": -0.10359,
-      "market_cap": 59892848632
+      "price": 101.52,
+      "change_24h": 0.31708,
+      "market_cap": 59548947091
     },
     {
       "symbol": "trx",
-      "price": 0.340324,
-      "change_24h": 1.22188,
-      "market_cap": 32308536233
+      "price": 0.339836,
+      "change_24h": 1.01063,
+      "market_cap": 32263928632
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.007,
-      "change_24h": -2.25528,
-      "market_cap": 22696008578
+      "price": 1.003,
+      "change_24h": -2.62084,
+      "market_cap": 22621418849
     },
     {
       "symbol": "zec",
-      "price": 1142.07,
-      "change_24h": -3.56037,
-      "market_cap": 19331413408
+      "price": 1125.68,
+      "change_24h": -3.21735,
+      "market_cap": 19049525989
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -84,308 +84,293 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.7% در ۲۴ ساعت",
+        "text": "BTC +0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 47",
+        "text": "معتدل: 46",
         "tone": "neutral"
+      },
+      {
+        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-12 17:12"
+    "confidence": 60,
+    "updated": "2026-09-12 19:24"
   },
   "whales": {
     "unconfirmed": {
-      "score": 6,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 100.43,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 100.43,
-          "tier": "متوسط",
-          "fee": 1.534e-05,
-          "inputs": 1,
-          "outputs": 11,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
     {
-      "title": "ایران و امارات متحده عربی از بیانیه مشترک بریکس مبنی بر خویشتنداری در جنگ حمایت کردند",
+      "title": "در حالی که حوثی‌ها کنترل کشتی‌های دریایی در دریای سرخ را بیشتر کرده‌اند، سعودی‌ها خط لوله نفت را تعطیل کردند",
+      "date": "2026-09-12 17:24",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ایران می‌گوید بازگشایی هرمز منوط به تحقق شرایط آمریکاست",
+      "date": "2026-09-12 17:04",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ایران و امارات از بیانیه مشترک بریکس مبنی بر خویشتنداری در جنگ حمایت کردند",
       "date": "2026-09-12 15:12",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سعودی‌ها خط لوله نفت را در حالی که حوثی‌ها کنترل خود را بر کشتیرانی دریای سرخ تشدید می‌کنند، تعطیل کردند",
-      "date": "2026-09-12 14:42",
-      "source": "Investing.com"
-    },
-    {
-      "title": "SailPoint در کنفرانس فناوری و ارتباطات گلدمن ساکس: فشار عامل‌محور",
-      "date": "2026-09-12 14:14",
-      "source": "Investing.com"
-    },
-    {
-      "title": "ترامپ می‌گوید جنگ ایران احتمالاً پس از انتخابات میان‌دوره‌ای پایان می‌یابد، زیرا جنگ یمن تشدید شده است",
-      "date": "2026-09-12 13:38",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "جنگ ایران درس‌های عراق را برای فوکویاما زنده کرد",
+      "title": "جنگ ایران درس های عراق را برای فوکویاما احیا کرد",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تورم ناشی از انرژی، تصمیم فدرال رزرو برای افزایش نرخ بهره را پیچیده می‌کند",
+      "title": "تورم ناشی از انرژی، درخواست نرخ فدرال رزرو را پیچیده می کند",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تعداد کشتی‌هایی که در محاصره آمریکا علیه ایران تغییر مسیر دادند به ۱۰۰ رسید",
+      "title": "تعداد شناورهای تغییر مسیر در محاصره آمریکا علیه ایران به 100 فروند رسید",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با قطع دسترسی آژانس بین‌المللی انرژی اتمی، نقطه کور هسته‌ای ایران عمیق‌تر می‌شود",
+      "title": "با قطع دسترسی آژانس بین المللی انرژی اتمی، نقطه کور هسته ای ایران عمیق تر می شود",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "نرخ بهره بالاتر ممکن است به یک هنجار جدید تبدیل شود",
+      "title": "نرخ بهره بالاتر ممکن است عادی جدید باشد",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "فعالیت‌های هسته‌ای ایران نگرانی‌های جدیدی را ایجاد می‌کند",
+      "title": "فعالیت هسته ای ایران نگرانی های جدیدی را ایجاد می کند",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "ایران و امارات متحده عربی از بیانیه مشترک بریکس مبنی بر خویشتنداری در جنگ حمایت کردند",
+      "title": "در حالی که حوثی‌ها کنترل کشتی‌های دریایی در دریای سرخ را بیشتر کرده‌اند، سعودی‌ها خط لوله نفت را تعطیل کردند",
+      "date": "2026-09-12 17:24",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ایران می‌گوید بازگشایی هرمز منوط به تحقق شرایط آمریکاست",
+      "date": "2026-09-12 17:04",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ایران و امارات از بیانیه مشترک بریکس مبنی بر خویشتنداری در جنگ حمایت کردند",
       "date": "2026-09-12 15:12",
       "source": "Investing.com"
     },
     {
-      "title": "سعودی‌ها خط لوله نفت را در حالی که حوثی‌ها کنترل خود را بر کشتیرانی دریای سرخ تشدید می‌کنند، تعطیل کردند",
-      "date": "2026-09-12 14:42",
-      "source": "Investing.com"
-    },
-    {
-      "title": "SailPoint در کنفرانس فناوری و ارتباطات گلدمن ساکس: فشار عامل‌محور",
-      "date": "2026-09-12 14:14",
-      "source": "Investing.com"
-    },
-    {
-      "title": "ترامپ می‌گوید جنگ ایران احتمالاً پس از انتخابات میان‌دوره‌ای پایان می‌یابد، زیرا جنگ یمن تشدید شده است",
-      "date": "2026-09-12 13:38",
-      "source": "Investing.com"
-    },
-    {
-      "title": "جنگ ایران درس‌های عراق را برای فوکویاما زنده کرد",
+      "title": "جنگ ایران درس های عراق را برای فوکویاما احیا کرد",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تورم ناشی از انرژی، تصمیم فدرال رزرو برای افزایش نرخ بهره را پیچیده می‌کند",
+      "title": "تورم ناشی از انرژی، درخواست نرخ فدرال رزرو را پیچیده می کند",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تعداد کشتی‌هایی که در محاصره آمریکا علیه ایران تغییر مسیر دادند به ۱۰۰ رسید",
+      "title": "تعداد شناورهای تغییر مسیر در محاصره آمریکا علیه ایران به 100 فروند رسید",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با قطع دسترسی آژانس بین‌المللی انرژی اتمی، نقطه کور هسته‌ای ایران عمیق‌تر می‌شود",
+      "title": "با قطع دسترسی آژانس بین المللی انرژی اتمی، نقطه کور هسته ای ایران عمیق تر می شود",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "نرخ بهره بالاتر ممکن است به یک هنجار جدید تبدیل شود",
+      "title": "نرخ بهره بالاتر ممکن است عادی جدید باشد",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "فعالیت‌های هسته‌ای ایران نگرانی‌های جدیدی را ایجاد می‌کند",
+      "title": "فعالیت هسته ای ایران نگرانی های جدیدی را ایجاد می کند",
       "date": "Sat, 12 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-12 17:12",
+    "updated": "2026-09-12 19:23",
     "gainers_24h": [
       {
         "symbol": "wlfi",
         "name": "World Liberty Financial",
-        "price": 0.058727,
-        "chg": 12.04
+        "price": 0.057453,
+        "chg": 7.05
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.059005,
-        "chg": 3.47
+        "price": 0.058433,
+        "chg": 4.05
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.36,
-        "chg": 3.46
+        "price": 6.29,
+        "chg": 3.75
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 526.73,
-        "chg": 2.64
+        "price": 534.05,
+        "chg": 3.27
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.340324,
-        "chg": 1.22
+        "symbol": "shib",
+        "name": "Shiba Inu",
+        "price": 5.28e-06,
+        "chg": 2.68
       }
     ],
     "losers_24h": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.4,
-        "chg": -7.56
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01505616,
-        "chg": -4.63
-      },
-      {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.571357,
-        "chg": -4.57
+        "price": 2.35,
+        "chg": -6.47
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1142.07,
-        "chg": -3.56
+        "price": 1125.68,
+        "chg": -3.22
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.003,
+        "chg": -2.62
+      },
+      {
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.569971,
+        "chg": -2.62
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.04,
-        "chg": -2.34
+        "price": 1.026,
+        "chg": -1.87
       }
     ],
     "gainers_7d": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.04,
-        "chg": 14.0
+        "price": 1.026,
+        "chg": 12.7
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1142.07,
-        "chg": 12.3
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.4,
-        "chg": 10.6
+        "price": 1125.68,
+        "chg": 9.5
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.42,
-        "chg": 9.7
+        "price": 80.19,
+        "chg": 9.0
       },
       {
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.18,
-        "chg": 5.0
+        "chg": 5.8
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.35,
+        "chg": 4.6
       }
     ],
     "losers_7d": [
       {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.694626,
-        "chg": -14.2
-      },
-      {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.097756,
-        "chg": -11.2
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01505616,
-        "chg": -10.6
+        "price": 0.096787,
+        "chg": -12.1
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 228.44,
-        "chg": -9.3
+        "price": 226.8,
+        "chg": -12.0
+      },
+      {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.685593,
+        "chg": -11.9
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.727128,
-        "chg": -8.7
+        "price": 0.721102,
+        "chg": -10.1
+      },
+      {
+        "symbol": "doge",
+        "name": "Dogecoin",
+        "price": 0.084775,
+        "chg": -9.9
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1142.07,
-        "chg": 133.7
+        "price": 1125.68,
+        "chg": 132.0
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.36,
-        "chg": 83.9
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.4,
-        "chg": 46.8
+        "price": 6.29,
+        "chg": 81.1
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.42,
-        "chg": 46.3
+        "price": 80.19,
+        "chg": 46.8
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 125.91,
-        "chg": 44.3
+        "price": 126.19,
+        "chg": 44.8
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.35,
+        "chg": 44.4
       }
     ],
     "losers_30d": [
@@ -398,26 +383,26 @@
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.007,
-        "chg": -3.4
-      },
-      {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4355.26,
-        "chg": -0.2
+        "price": 1.003,
+        "chg": -3.5
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4349.75,
-        "chg": 0.1
+        "price": 4350.28,
+        "chg": 0.3
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.3
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.096787,
+        "chg": 1.0
       }
     ]
   }
