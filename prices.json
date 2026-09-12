@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-12 05:49",
-  "usd_sell": 237300,
-  "usd_buy": 237200,
-  "gold_18k": 24400941,
-  "btc_usd": 77226.93,
+  "timestamp": "2026-09-12 10:50",
+  "usd_sell": 236400,
+  "usd_buy": 236300,
+  "gold_18k": 24089293,
+  "btc_usd": 77329.84,
   "fear_greed": 63,
   "btc_dominance": 58.2,
-  "market_cap": 2660000000000.0,
-  "market_volume": 110000000000.0,
-  "market_change": -2.1,
+  "market_cap": 2670000000000.0,
+  "market_volume": 100000000000.0,
+  "market_change": -1.74,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77228,
-      "change_24h": 0.08497,
-      "market_cap": 1550977657981
+      "price": 77339,
+      "change_24h": 0.46571,
+      "market_cap": 1553318390096
     },
     {
       "symbol": "eth",
-      "price": 2511.61,
-      "change_24h": 1.86863,
-      "market_cap": 306520847480
+      "price": 2532.24,
+      "change_24h": 2.81418,
+      "market_cap": 309066937471
     },
     {
       "symbol": "usdt",
-      "price": 0.999886,
-      "change_24h": 0.02664,
-      "market_cap": 183496189669
+      "price": 0.999782,
+      "change_24h": 0.01442,
+      "market_cap": 183477122911
     },
     {
       "symbol": "bnb",
-      "price": 733.11,
-      "change_24h": 2.31312,
-      "market_cap": 97621638597
+      "price": 738.91,
+      "change_24h": 3.6577,
+      "market_cap": 98401189771
     },
     {
       "symbol": "xrp",
-      "price": 1.36,
-      "change_24h": 1.09606,
-      "market_cap": 85768970276
+      "price": 1.37,
+      "change_24h": 2.77971,
+      "market_cap": 86321385032
     },
     {
       "symbol": "usdc",
-      "price": 0.999905,
-      "change_24h": -0.00741,
-      "market_cap": 74324072665
+      "price": 0.999842,
+      "change_24h": 0.0068,
+      "market_cap": 74339077006
     },
     {
       "symbol": "sol",
-      "price": 101.61,
-      "change_24h": 1.83658,
-      "market_cap": 59610064980
+      "price": 102.0,
+      "change_24h": 2.77771,
+      "market_cap": 59844773038
     },
     {
       "symbol": "trx",
-      "price": 0.343715,
-      "change_24h": 1.36689,
-      "market_cap": 32633877546
+      "price": 0.339641,
+      "change_24h": 0.45537,
+      "market_cap": 32239726236
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.032,
-      "change_24h": -0.33958,
-      "market_cap": 23220587675
+      "price": 1.016,
+      "change_24h": -1.77456,
+      "market_cap": 22871290770
     },
     {
       "symbol": "zec",
-      "price": 1130.46,
-      "change_24h": 3.34868,
-      "market_cap": 19133820763
+      "price": 1151.1,
+      "change_24h": 4.63203,
+      "market_cap": 19476592189
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.0% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -2.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.2% در ۲۴ ساعت",
+        "text": "BTC +0.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 46",
+        "text": "معتدل: 47",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-12 05:50"
+    "updated": "2026-09-12 10:50"
   },
   "whales": {
     "unconfirmed": {
@@ -111,18 +111,7 @@
       "top": []
     }
   },
-  "news_investing": [
-    {
-      "title": "وال استریت ژورنال: آمریکا تصاویر ماهواره‌ای چین را به حمله مرگبار ایران مرتبط می‌داند",
-      "date": "2026-09-12 03:16",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سعودی‌ها خط لوله نفت را در حالی که حوثی‌ها کنترل خود را بر کشتیرانی دریای سرخ تشدید می‌کنند، تعطیل کردند",
-      "date": "2026-09-12 02:48",
-      "source": "Investing.com"
-    }
-  ],
+  "news_investing": [],
   "news_bloomberg": [
     {
       "title": "رئیس سابق فدرال رزرو نیویورک درباره به یاد آوردن حادثه یازده سپتامبر",
@@ -143,29 +132,9 @@
       "title": "معامله‌گر اوراق قرضه‌ای که شرط‌بندی‌های اشتباهش باعث فروپاشی شرکتش شد، به ۱۶ سال زندان محکوم شد",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "بیل دادلی انتظار دارد فدرال رزرو نرخ بهره را 25 واحد پایه افزایش دهد",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "اوراق خزانه‌داری هفته‌ی نزولی خود را با تثبیت شرط‌بندی‌ها برای افزایش نرخ بهره‌ی فدرال رزرو پس از شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به پایان رساندند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "news": [
-    {
-      "title": "وال استریت ژورنال: آمریکا تصاویر ماهواره‌ای چین را به حمله مرگبار ایران مرتبط می‌داند",
-      "date": "2026-09-12 03:16",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سعودی‌ها خط لوله نفت را در حالی که حوثی‌ها کنترل خود را بر کشتیرانی دریای سرخ تشدید می‌کنند، تعطیل کردند",
-      "date": "2026-09-12 02:48",
-      "source": "Investing.com"
-    },
     {
       "title": "رئیس سابق فدرال رزرو نیویورک درباره به یاد آوردن حادثه یازده سپتامبر",
       "date": "Fri, 11 Sep 2026",
@@ -185,210 +154,200 @@
       "title": "معامله‌گر اوراق قرضه‌ای که شرط‌بندی‌های اشتباهش باعث فروپاشی شرکتش شد، به ۱۶ سال زندان محکوم شد",
       "date": "Fri, 11 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "بیل دادلی انتظار دارد فدرال رزرو نرخ بهره را 25 واحد پایه افزایش دهد",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "اوراق خزانه‌داری هفته‌ی نزولی خود را با تثبیت شرط‌بندی‌ها برای افزایش نرخ بهره‌ی فدرال رزرو پس از شاخص قیمت مصرف‌کننده (شاخص قیمت مصرف‌کننده) به پایان رساندند",
-      "date": "Fri, 11 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-12 05:49",
+    "updated": "2026-09-12 10:50",
     "gainers_24h": [
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.056977,
+        "chg": 15.66
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.36,
+        "chg": 6.36
+      },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 536.53,
-        "chg": 4.19
-      },
-      {
-        "symbol": "okb",
-        "name": "OKB",
-        "price": 114.45,
-        "chg": 4.11
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1130.46,
-        "chg": 3.35
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.2,
-        "chg": 2.78
+        "price": 534.05,
+        "chg": 4.96
       },
       {
         "symbol": "shib",
         "name": "Shiba Inu",
-        "price": 5.22e-06,
-        "chg": 2.39
+        "price": 5.29e-06,
+        "chg": 4.68
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1151.1,
+        "chg": 4.63
       }
     ],
     "losers_24h": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.043,
-        "chg": -9.37
+        "price": 1.04,
+        "chg": -4.04
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.36,
-        "chg": -4.26
+        "price": 2.37,
+        "chg": -3.57
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01519669,
-        "chg": -3.54
+        "price": 0.01512818,
+        "chg": -3.28
       },
       {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.685314,
-        "chg": -3.31
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.016,
+        "chg": -1.77
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.72351,
-        "chg": -2.23
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.574483,
+        "chg": -0.85
       }
     ],
     "gainers_7d": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.043,
-        "chg": 17.6
+        "price": 1.04,
+        "chg": 15.4
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1130.46,
-        "chg": 10.9
+        "price": 1151.1,
+        "chg": 14.5
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.15,
-        "chg": 9.6
+        "price": 80.38,
+        "chg": 9.8
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.36,
-        "chg": 5.2
+        "price": 2.37,
+        "chg": 6.7
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.2,
-        "chg": 5.0
+        "price": 1.18,
+        "chg": 5.3
       }
     ],
     "losers_7d": [
       {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.686669,
+        "chg": -8.7
+      },
+      {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.098712,
-        "chg": -9.5
+        "price": 0.098884,
+        "chg": -8.3
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 230.16,
-        "chg": -7.2
+        "price": 231.25,
+        "chg": -8.2
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01519669,
-        "chg": -6.9
+        "price": 0.01512818,
+        "chg": -7.9
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 78.7,
-        "chg": -6.5
-      },
-      {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.685314,
-        "chg": -5.7
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.725872,
+        "chg": -7.6
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1130.46,
-        "chg": 130.3
+        "price": 1151.1,
+        "chg": 131.8
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.2,
-        "chg": 74.6
+        "price": 6.36,
+        "chg": 76.2
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.15,
+        "price": 80.38,
         "chg": 45.6
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 125.28,
-        "chg": 41.8
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.36,
-        "chg": 41.6
+        "price": 2.37,
+        "chg": 42.4
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 126.79,
+        "chg": 41.9
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.14,
-        "chg": -2.8
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.098712,
-        "chg": -2.1
+        "price": 9.11,
+        "chg": -2.9
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.032,
-        "chg": -0.8
+        "price": 1.016,
+        "chg": -2.3
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.098884,
+        "chg": -1.0
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4353.78,
-        "chg": -0.8
+        "price": 4355.07,
+        "chg": -0.4
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4349.3,
-        "chg": -0.6
+        "price": 4349.78,
+        "chg": -0.2
       }
     ]
   }
