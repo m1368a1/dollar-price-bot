@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-13 11:57",
-  "usd_sell": 231500,
-  "usd_buy": 231400,
-  "gold_18k": 23616048,
-  "btc_usd": 76757.49,
+  "timestamp": "2026-09-13 16:19",
+  "usd_sell": 230800,
+  "usd_buy": 230700,
+  "gold_18k": 23484463,
+  "btc_usd": 77179.05,
   "fear_greed": 61,
-  "btc_dominance": 58.8,
-  "market_cap": 2610000000000.0,
+  "btc_dominance": 58.9,
+  "market_cap": 2630000000000.0,
   "market_volume": 50000000000.0,
-  "market_change": -4.49,
+  "market_change": -4.07,
   "top10": [
     {
       "symbol": "btc",
-      "price": 76763,
-      "change_24h": -0.74459,
-      "market_cap": 1541683836753
+      "price": 77176,
+      "change_24h": -0.23253,
+      "market_cap": 1549941460301
     },
     {
       "symbol": "eth",
-      "price": 2479.92,
-      "change_24h": -2.19063,
-      "market_cap": 302633783100
+      "price": 2498.72,
+      "change_24h": -1.38266,
+      "market_cap": 304957685862
     },
     {
       "symbol": "usdt",
-      "price": 0.999698,
-      "change_24h": -0.01111,
-      "market_cap": 183460715815
+      "price": 0.99977,
+      "change_24h": -0.00278,
+      "market_cap": 183472700154
     },
     {
       "symbol": "bnb",
-      "price": 716.19,
-      "change_24h": -2.70627,
-      "market_cap": 95369900495
+      "price": 720.05,
+      "change_24h": -1.89617,
+      "market_cap": 95900285122
     },
     {
       "symbol": "xrp",
-      "price": 1.34,
-      "change_24h": -2.13521,
-      "market_cap": 84449418403
+      "price": 1.35,
+      "change_24h": -1.7392,
+      "market_cap": 84684330864
     },
     {
       "symbol": "usdc",
-      "price": 0.999752,
-      "change_24h": -0.01074,
-      "market_cap": 74218720539
+      "price": 0.999872,
+      "change_24h": 0.00211,
+      "market_cap": 74222951705
     },
     {
       "symbol": "sol",
-      "price": 99.8,
-      "change_24h": -2.24874,
-      "market_cap": 58555771505
+      "price": 100.64,
+      "change_24h": -1.32333,
+      "market_cap": 59049603606
     },
     {
       "symbol": "trx",
-      "price": 0.340813,
-      "change_24h": -0.00263,
-      "market_cap": 32374264674
+      "price": 0.341022,
+      "change_24h": 0.24404,
+      "market_cap": 32387800308
     },
     {
       "symbol": "figr_heloc",
       "price": 1.0,
-      "change_24h": -1.59036,
+      "change_24h": -3.20491,
       "market_cap": 22551817529
     },
     {
       "symbol": "zec",
-      "price": 1095.16,
-      "change_24h": -4.72833,
-      "market_cap": 18538186073
+      "price": 1096.89,
+      "change_24h": -4.17766,
+      "market_cap": 18562396653
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.9% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -3.2% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.7% در ۲۴ ساعت",
+        "text": "BTC -0.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 47",
+        "text": "معتدل: 48",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-13 11:57"
+    "updated": "2026-09-13 16:20"
   },
   "whales": {
     "unconfirmed": {
@@ -113,264 +113,254 @@
   },
   "news_investing": [
     {
-      "title": "بیت‌کوین به زیر ۷۷۰۰۰ دلار سقوط کرد زیرا فشار نرخ بهره با طرح تنوع‌بخشی در تضاد است",
-      "date": "2026-09-13 09:26",
+      "title": "ETFهای سهام ایالات متحده خروجی 4.5 میلیارد دلاری را به عنوان قیمت معامله گران در افزایش نرخ بهره فدرال رزرو مشاهده می کنند",
+      "date": "2026-09-13 12:37",
       "source": "Investing.com"
     },
     {
-      "title": "به گفته سیتی، ۵ نگرانی بازار که سرمایه‌گذاران نمی‌توانند نادیده بگیرند",
-      "date": "2026-09-13 08:41",
+      "title": "قطع شدن خط لوله عربستان 4 درصد از عرضه جهانی نفت را تهدید می کند",
+      "date": "2026-09-13 12:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "گزارش جدید از حمله به تنگه هرمز هواداران کشتیرانی نگران تهدید عرضه نفت هستند",
+      "date": "2026-09-13 12:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بیت‌کوین به زیر 77000 دلار سقوط کرد زیرا فشار نرخ با مورد تنوع در تقابل است",
+      "date": "2026-09-13 09:26",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سنگال ۱۷۹ میلیون دلار جمع‌آوری کرد، زیرا بازنگری بدهی‌ها بازار محلی را آزمایش می‌کند",
+      "title": "ایران به دنبال حمایت خلیج فارس از طرح هرمز است",
       "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "جنگ ایران درس‌های عراق را برای فوکویاما زنده کرد",
-      "date": "Sat, 12 Sep 2026",
+      "title": "پس از افزایش نفت و جنگ، بازارهای نوظهور تحت تأثیر ریسک فدرال رزرو قرار نگرفتند",
+      "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تورم ناشی از انرژی، تصمیم فدرال رزرو برای افزایش نرخ بهره را پیچیده می‌کند",
-      "date": "Sat, 12 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "تعداد کشتی‌هایی که در محاصره آمریکا علیه ایران تغییر مسیر دادند به ۱۰۰ رسید",
-      "date": "Sat, 12 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با قطع دسترسی آژانس بین‌المللی انرژی اتمی، نقطه کور هسته‌ای ایران عمیق‌تر می‌شود",
-      "date": "Sat, 12 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نرخ بهره بالاتر ممکن است به یک هنجار جدید تبدیل شود",
-      "date": "Sat, 12 Sep 2026",
+      "title": "سنگال 179 میلیون دلار به عنوان بازنگری بدهی در بازار محلی جمع آوری می کند",
+      "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "بیت‌کوین به زیر ۷۷۰۰۰ دلار سقوط کرد زیرا فشار نرخ بهره با طرح تنوع‌بخشی در تضاد است",
+      "title": "ETFهای سهام ایالات متحده خروجی 4.5 میلیارد دلاری را به عنوان قیمت معامله گران در افزایش نرخ بهره فدرال رزرو مشاهده می کنند",
+      "date": "2026-09-13 12:37",
+      "source": "Investing.com"
+    },
+    {
+      "title": "قطع شدن خط لوله عربستان 4 درصد از عرضه جهانی نفت را تهدید می کند",
+      "date": "2026-09-13 12:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "گزارش جدید از حمله به تنگه هرمز هواداران کشتیرانی نگران تهدید عرضه نفت هستند",
+      "date": "2026-09-13 12:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بیت‌کوین به زیر 77000 دلار سقوط کرد زیرا فشار نرخ با مورد تنوع در تقابل است",
       "date": "2026-09-13 09:26",
       "source": "Investing.com"
     },
     {
-      "title": "به گفته سیتی، ۵ نگرانی بازار که سرمایه‌گذاران نمی‌توانند نادیده بگیرند",
-      "date": "2026-09-13 08:41",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سنگال ۱۷۹ میلیون دلار جمع‌آوری کرد، زیرا بازنگری بدهی‌ها بازار محلی را آزمایش می‌کند",
+      "title": "ایران به دنبال حمایت خلیج فارس از طرح هرمز است",
       "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "جنگ ایران درس‌های عراق را برای فوکویاما زنده کرد",
-      "date": "Sat, 12 Sep 2026",
+      "title": "پس از افزایش نفت و جنگ، بازارهای نوظهور تحت تأثیر ریسک فدرال رزرو قرار نگرفتند",
+      "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تورم ناشی از انرژی، تصمیم فدرال رزرو برای افزایش نرخ بهره را پیچیده می‌کند",
-      "date": "Sat, 12 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "تعداد کشتی‌هایی که در محاصره آمریکا علیه ایران تغییر مسیر دادند به ۱۰۰ رسید",
-      "date": "Sat, 12 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با قطع دسترسی آژانس بین‌المللی انرژی اتمی، نقطه کور هسته‌ای ایران عمیق‌تر می‌شود",
-      "date": "Sat, 12 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نرخ بهره بالاتر ممکن است به یک هنجار جدید تبدیل شود",
-      "date": "Sat, 12 Sep 2026",
+      "title": "سنگال 179 میلیون دلار به عنوان بازنگری بدهی در بازار محلی جمع آوری می کند",
+      "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-13 11:57",
+    "updated": "2026-09-13 16:19",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.682973,
-        "chg": 24.07
+        "price": 0.666001,
+        "chg": 20.36
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01534456,
-        "chg": 1.44
+        "price": 0.01532516,
+        "chg": 1.92
       },
       {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.05762,
-        "chg": 1.07
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.075694,
+        "chg": 1.08
       },
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.693882,
-        "chg": 0.98
+        "price": 0.69731,
+        "chg": 0.87
       },
       {
-        "symbol": "cro",
-        "name": "Cronos",
-        "price": 0.05878,
-        "chg": 0.86
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 54.38,
+        "chg": 0.61
       }
     ],
     "losers_24h": [
       {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.29,
+        "chg": -4.35
+      },
+      {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1095.16,
-        "chg": -4.73
+        "price": 1096.89,
+        "chg": -4.18
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.095004,
-        "chg": -3.77
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.26,
+        "chg": -4.06
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 77.55,
-        "chg": -3.34
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.13,
+        "chg": -3.8
       },
       {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 223.54,
-        "chg": -3.21
-      },
-      {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 5.21e-06,
-        "chg": -2.98
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.0,
+        "chg": -3.2
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.682973,
-        "chg": 25.2
+        "price": 0.666001,
+        "chg": 47.8
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 79.61,
-        "chg": 7.9
-      },
-      {
-        "symbol": "cro",
-        "name": "Cronos",
-        "price": 0.05878,
-        "chg": 2.1
+        "price": 79.99,
+        "chg": 9.1
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.340813,
-        "chg": 1.7
+        "price": 0.341022,
+        "chg": 1.8
       },
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.15,
-        "chg": 1.4
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 532.66,
+        "chg": 1.5
+      },
+      {
+        "symbol": "cro",
+        "name": "Cronos",
+        "price": 0.057954,
+        "chg": 1.0
       }
     ],
     "losers_7d": [
       {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 223.54,
-        "chg": -14.6
-      },
-      {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.095004,
-        "chg": -14.5
+        "price": 0.095408,
+        "chg": -13.2
+      },
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 223.24,
+        "chg": -12.4
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 77.55,
-        "chg": -12.1
+        "price": 78.28,
+        "chg": -12.3
       },
       {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.693882,
-        "chg": -12.1
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.26,
+        "chg": -10.6
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.711054,
-        "chg": -11.6
+        "price": 0.714268,
+        "chg": -10.0
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1095.16,
-        "chg": 124.3
+        "price": 1096.89,
+        "chg": 125.1
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.682973,
-        "chg": 92.3
+        "price": 0.666001,
+        "chg": 118.8
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.27,
-        "chg": 81.3
-      },
-      {
-        "symbol": "wbt",
-        "name": "WhiteBIT Coin",
-        "price": 79.61,
-        "chg": 46.1
+        "price": 6.26,
+        "chg": 92.6
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 123.97,
-        "chg": 43.4
+        "price": 125.72,
+        "chg": 47.4
+      },
+      {
+        "symbol": "wbt",
+        "name": "WhiteBIT Coin",
+        "price": 79.99,
+        "chg": 47.2
       }
     ],
     "losers_30d": [
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.06,
-        "chg": -1.8
-      },
-      {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.095004,
-        "chg": -1.0
+        "price": 0.095408,
+        "chg": -2.4
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.05,
+        "chg": -1.7
       },
       {
         "symbol": "figr_heloc",
@@ -381,14 +371,14 @@
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4352.44,
-        "chg": -0.2
+        "price": 4353.36,
+        "chg": -0.6
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4346.79,
-        "chg": 0.2
+        "price": 4349.78,
+        "chg": -0.3
       }
     ]
   }
