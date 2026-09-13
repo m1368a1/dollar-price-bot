@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-12 22:20",
+  "timestamp": "2026-09-13 01:02",
   "usd_sell": 233800,
   "usd_buy": 233700,
   "gold_18k": 23858442,
-  "btc_usd": 77228.33,
-  "fear_greed": 63,
+  "btc_usd": 77257.55,
+  "fear_greed": 61,
   "btc_dominance": 58.2,
   "market_cap": 2660000000000.0,
   "market_volume": 50000000000.0,
-  "market_change": -2.43,
+  "market_change": -2.54,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77238,
-      "change_24h": 0.11306,
-      "market_cap": 1551205214493
+      "price": 77259,
+      "change_24h": -0.00736,
+      "market_cap": 1551622764696
     },
     {
       "symbol": "eth",
-      "price": 2522.64,
-      "change_24h": 0.11219,
-      "market_cap": 307866797986
+      "price": 2524.44,
+      "change_24h": 0.5443,
+      "market_cap": 308085225672
     },
     {
       "symbol": "usdt",
-      "price": 0.999818,
-      "change_24h": 0.00434,
-      "market_cap": 183483589591
+      "price": 0.99984,
+      "change_24h": -0.00447,
+      "market_cap": 183487938247
     },
     {
       "symbol": "bnb",
-      "price": 726.27,
-      "change_24h": 0.28156,
-      "market_cap": 96711128004
+      "price": 727.97,
+      "change_24h": 0.25067,
+      "market_cap": 96934230386
     },
     {
       "symbol": "xrp",
-      "price": 1.36,
-      "change_24h": 0.68021,
-      "market_cap": 85761276135
+      "price": 1.37,
+      "change_24h": 0.79634,
+      "market_cap": 85972133652
     },
     {
       "symbol": "usdc",
-      "price": 0.999871,
-      "change_24h": 0.00492,
-      "market_cap": 74293603697
+      "price": 0.999891,
+      "change_24h": -0.00065,
+      "market_cap": 74289064560
     },
     {
       "symbol": "sol",
-      "price": 101.65,
-      "change_24h": -0.4161,
-      "market_cap": 59633159142
+      "price": 101.73,
+      "change_24h": -0.1473,
+      "market_cap": 59673172319
     },
     {
       "symbol": "trx",
-      "price": 0.339941,
-      "change_24h": 0.55528,
-      "market_cap": 32275542373
+      "price": 0.340111,
+      "change_24h": 0.33588,
+      "market_cap": 32286671622
     },
     {
       "symbol": "figr_heloc",
       "price": 1.0,
-      "change_24h": -3.13102,
-      "market_cap": 22552082112
+      "change_24h": -3.07532,
+      "market_cap": 22551666237
     },
     {
       "symbol": "zec",
-      "price": 1123.35,
-      "change_24h": -3.55772,
-      "market_cap": 19013534433
+      "price": 1126.35,
+      "change_24h": -2.53718,
+      "market_cap": 19065660553
     }
   ],
   "signal": {
@@ -76,7 +76,7 @@
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 63/100",
+        "text": "وضعیت: 61/100",
         "tone": "neutral"
       },
       {
@@ -84,7 +84,7 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.2% در ۲۴ ساعت",
+        "text": "BTC -0.0% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 46",
+        "text": "معتدل: 48",
         "tone": "neutral"
       },
       {
-        "text": "سه سرباز سفید (Three White Soldiers) — نشانه صعود",
+        "text": "انگولفینگ صعودی (Bullish Engulfing) — نشانه صعود",
         "tone": "bullish"
       }
     ],
     "confidence": 60,
-    "updated": "2026-09-12 22:20"
+    "updated": "2026-09-13 01:02"
   },
   "whales": {
     "unconfirmed": {
@@ -212,197 +212,197 @@
     }
   ],
   "trends": {
-    "updated": "2026-09-12 22:20",
+    "updated": "2026-09-13 01:02",
     "gainers_24h": [
-      {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.05796,
-        "chg": 6.66
-      },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.059557,
-        "chg": 6.28
+        "price": 0.06051,
+        "chg": 7.31
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.36,
-        "chg": 5.79
+        "price": 6.42,
+        "chg": 6.74
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.057029,
+        "chg": 4.41
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 538.04,
-        "chg": 4.28
+        "price": 540.25,
+        "chg": 3.32
       },
       {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 5.3e-06,
-        "chg": 2.93
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01573329,
+        "chg": 2.64
       }
     ],
     "losers_24h": [
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1123.35,
-        "chg": -3.56
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.553978,
+        "chg": -4.35
+      },
+      {
+        "symbol": "dot",
+        "name": "Polkadot",
+        "price": 1.015,
+        "chg": -3.22
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.0,
-        "chg": -3.13
+        "chg": -3.08
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.35,
-        "chg": -2.76
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1126.35,
+        "chg": -2.54
       },
       {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.568855,
-        "chg": -1.82
-      },
-      {
-        "symbol": "dot",
-        "name": "Polkadot",
-        "price": 1.025,
-        "chg": -1.12
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.18,
+        "chg": -1.93
       }
     ],
     "gainers_7d": [
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.025,
-        "chg": 12.4
+        "price": 1.015,
+        "chg": 10.8
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1123.35,
-        "chg": 11.2
+        "price": 1126.35,
+        "chg": 9.7
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.29,
-        "chg": 9.4
+        "price": 80.27,
+        "chg": 9.3
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.35,
+        "price": 2.37,
         "chg": 8.2
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.059557,
-        "chg": 5.9
+        "price": 0.06051,
+        "chg": 6.8
       }
     ],
     "losers_7d": [
       {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.68531,
-        "chg": -11.8
-      },
-      {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 225.56,
+        "price": 226.34,
         "chg": -11.7
       },
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.36,
-        "chg": -11.1
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.691495,
+        "chg": -11.0
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.097124,
-        "chg": -11.0
+        "price": 0.097721,
+        "chg": -10.3
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.42,
+        "chg": -8.9
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.723087,
-        "chg": -9.6
+        "price": 0.728313,
+        "chg": -8.4
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1123.35,
-        "chg": 131.4
+        "price": 1126.35,
+        "chg": 129.4
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.36,
-        "chg": 82.7
+        "price": 6.42,
+        "chg": 84.7
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.29,
-        "chg": 46.3
+        "price": 80.27,
+        "chg": 46.1
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.35,
-        "chg": 44.1
+        "price": 2.37,
+        "chg": 44.7
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 125.55,
-        "chg": 42.3
+        "price": 125.89,
+        "chg": 43.3
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.15,
-        "chg": -3.5
+        "price": 9.14,
+        "chg": -3.8
       },
       {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4354.45,
-        "chg": 0.2
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.0,
+        "chg": -1.0
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.097721,
+        "chg": -0.1
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4349.98,
+        "chg": 0.3
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.3
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4349.86,
-        "chg": 0.4
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.0,
-        "chg": 1.5
       }
     ]
   }
