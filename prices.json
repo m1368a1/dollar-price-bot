@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-14 06:20",
-  "usd_sell": 229200,
-  "usd_buy": 229100,
-  "gold_18k": 23708389,
-  "btc_usd": 77706.86,
+  "timestamp": "2026-09-14 14:06",
+  "usd_sell": 233600,
+  "usd_buy": 233500,
+  "gold_18k": 23449836,
+  "btc_usd": 78395.38,
   "fear_greed": 57,
-  "btc_dominance": 58.8,
-  "market_cap": 2640000000000.0,
-  "market_volume": 60000000000.0,
-  "market_change": -2.33,
+  "btc_dominance": 58.6,
+  "market_cap": 2680000000000.0,
+  "market_volume": 70000000000.0,
+  "market_change": -0.45,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77716,
-      "change_24h": 0.56162,
-      "market_cap": 1560880978164
+      "price": 78373,
+      "change_24h": 1.983,
+      "market_cap": 1573950552365
     },
     {
       "symbol": "eth",
-      "price": 2521.88,
-      "change_24h": -0.00359,
-      "market_cap": 307824871910
+      "price": 2508.12,
+      "change_24h": 1.1255,
+      "market_cap": 306034624408
     },
     {
       "symbol": "usdt",
       "price": 0.99964,
-      "change_24h": -0.01882,
-      "market_cap": 183368606267
+      "change_24h": -0.00805,
+      "market_cap": 183365023290
     },
     {
       "symbol": "bnb",
-      "price": 724.88,
-      "change_24h": -0.09407,
-      "market_cap": 96526743627
+      "price": 721.92,
+      "change_24h": 0.54377,
+      "market_cap": 96123471866
     },
     {
       "symbol": "xrp",
-      "price": 1.38,
-      "change_24h": 1.26795,
-      "market_cap": 87036333644
+      "price": 1.4,
+      "change_24h": 4.27756,
+      "market_cap": 88051598737
     },
     {
       "symbol": "usdc",
-      "price": 0.999773,
-      "change_24h": -0.01009,
-      "market_cap": 74196690493
+      "price": 0.999781,
+      "change_24h": -0.00611,
+      "market_cap": 74137705064
     },
     {
       "symbol": "sol",
-      "price": 101.65,
-      "change_24h": -0.01958,
-      "market_cap": 59660130976
+      "price": 101.75,
+      "change_24h": 1.57677,
+      "market_cap": 59704720637
     },
     {
       "symbol": "trx",
-      "price": 0.339805,
-      "change_24h": 0.06862,
-      "market_cap": 32259320832
+      "price": 0.340778,
+      "change_24h": -0.01633,
+      "market_cap": 32348553432
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.0,
+      "price": 1.042,
       "change_24h": null,
-      "market_cap": 22551817529
+      "market_cap": 23494521800
     },
     {
       "symbol": "zec",
-      "price": 1137.0,
-      "change_24h": -0.56761,
-      "market_cap": 19250107867
+      "price": 1153.53,
+      "change_24h": 5.28595,
+      "market_cap": 19517845944
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -2.6% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -1.2% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.5% در ۲۴ ساعت",
+        "text": "BTC +2.0% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 47",
+        "text": "معتدل: 49",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-14 06:20"
+    "updated": "2026-09-14 14:06"
   },
   "whales": {
     "unconfirmed": {
@@ -113,71 +113,96 @@
   },
   "news_investing": [
     {
-      "title": "با افزایش قیمت نفت و احتمال افزایش نرخ بهره، سهام در آسیا کاهش یافت",
-      "date": "2026-09-14 05:30",
+      "title": "در بحبوحه فشار بازار دفیبریلاتور، همه نگاه‌ها به درآمد کسترا مدیکال است",
+      "date": "2026-09-14 13:35",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام دراپ‌باکس به بالاترین سطح خود در ۵۲ هفته اخیر یعنی ۳۶.۴۲ دلار رسید",
+      "date": "2026-09-14 13:34",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام GXO به پایین‌ترین حد خود در ۵۲ هفته اخیر یعنی ۴۴.۹۹ دلار رسید",
+      "date": "2026-09-14 13:32",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام DoubleVerify به بالاترین سطح خود در ۵۲ هفته گذشته یعنی ۱۳.۶۵ دلار رسید",
+      "date": "2026-09-14 13:32",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام NTR به پایین‌ترین حد خود در ۵۲ هفته گذشته یعنی ۱۸.۲۱ دلار رسید",
+      "date": "2026-09-14 13:32",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "وارش از فدرال رزرو در مورد مسیر برخورد ترامپ با نزدیک شدن به افزایش نرخ بهره (ویدئو)",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کاهش قیمت مس در پی انتشار داده‌های تورمی که گمانه‌زنی‌ها در مورد افزایش نرخ بهره فدرال رزرو را افزایش می‌دهد",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "الحسن: پیروزی حوثی ها در یمن برای ایران مهم است",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افت سهام به دلیل نگرانی از کند شدن هوش مصنوعی، افزایش قیمت نفت: خلاصه بازارها",
+      "title": "سهام سقوط کرد زیرا نگرانی‌ها در مورد کند شدن هوش مصنوعی به تولیدکنندگان تراشه ضربه زد: بسته شدن بازارها",
       "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شاخص FTSE 100 زنده: افزایش معاملات آتی سهام بریتانیا همزمان با افزایش قیمت نفت",
+      "title": "سقوط ارزهای نوظهور با نزدیک شدن قیمت نفت به ۱۱۰ دلار در آغاز هفته فدرال رزرو",
       "date": "Mon, 14 Sep 2026",
       "source": "Bloomberg"
     },
     {
       "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۴ سپتامبر",
       "date": "Sun, 13 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام با ترس از کند شدن هوش مصنوعی سقوط می‌کنند، نوسانات نفت به احساسات بازار ضربه می‌زند",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "وزیر انرژی ایالات متحده، رایت، درباره جریان نفت خاورمیانه، هرمز و پالایش نفت",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "باسمن، پیشکسوت اوراق قرضه، درگیری با صادرکننده ETF 14 میلیارد دلاری را تشدید می‌کند",
+      "date": "Mon, 14 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "با افزایش قیمت نفت و احتمال افزایش نرخ بهره، سهام در آسیا کاهش یافت",
-      "date": "2026-09-14 05:30",
+      "title": "در بحبوحه فشار بازار دفیبریلاتور، همه نگاه‌ها به درآمد کسترا مدیکال است",
+      "date": "2026-09-14 13:35",
       "source": "Investing.com"
     },
     {
-      "title": "وارش از فدرال رزرو در مورد مسیر برخورد ترامپ با نزدیک شدن به افزایش نرخ بهره (ویدئو)",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
+      "title": "سهام دراپ‌باکس به بالاترین سطح خود در ۵۲ هفته اخیر یعنی ۳۶.۴۲ دلار رسید",
+      "date": "2026-09-14 13:34",
+      "source": "Investing.com"
     },
     {
-      "title": "کاهش قیمت مس در پی انتشار داده‌های تورمی که گمانه‌زنی‌ها در مورد افزایش نرخ بهره فدرال رزرو را افزایش می‌دهد",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
+      "title": "سهام GXO به پایین‌ترین حد خود در ۵۲ هفته اخیر یعنی ۴۴.۹۹ دلار رسید",
+      "date": "2026-09-14 13:32",
+      "source": "Investing.com"
     },
     {
-      "title": "الحسن: پیروزی حوثی ها در یمن برای ایران مهم است",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
+      "title": "سهام DoubleVerify به بالاترین سطح خود در ۵۲ هفته گذشته یعنی ۱۳.۶۵ دلار رسید",
+      "date": "2026-09-14 13:32",
+      "source": "Investing.com"
     },
     {
-      "title": "افت سهام به دلیل نگرانی از کند شدن هوش مصنوعی، افزایش قیمت نفت: خلاصه بازارها",
+      "title": "سهام NTR به پایین‌ترین حد خود در ۵۲ هفته گذشته یعنی ۱۸.۲۱ دلار رسید",
+      "date": "2026-09-14 13:32",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام سقوط کرد زیرا نگرانی‌ها در مورد کند شدن هوش مصنوعی به تولیدکنندگان تراشه ضربه زد: بسته شدن بازارها",
       "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شاخص FTSE 100 زنده: افزایش معاملات آتی سهام بریتانیا همزمان با افزایش قیمت نفت",
+      "title": "سقوط ارزهای نوظهور با نزدیک شدن قیمت نفت به ۱۱۰ دلار در آغاز هفته فدرال رزرو",
       "date": "Mon, 14 Sep 2026",
       "source": "Bloomberg"
     },
@@ -185,200 +210,215 @@
       "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۴ سپتامبر",
       "date": "Sun, 13 Sep 2026",
       "source": "Bloomberg"
+    },
+    {
+      "title": "سهام با ترس از کند شدن هوش مصنوعی سقوط می‌کنند، نوسانات نفت به احساسات بازار ضربه می‌زند",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "وزیر انرژی ایالات متحده، رایت، درباره جریان نفت خاورمیانه، هرمز و پالایش نفت",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "باسمن، پیشکسوت اوراق قرضه، درگیری با صادرکننده ETF 14 میلیارد دلاری را تشدید می‌کند",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-14 06:20",
+    "updated": "2026-09-14 14:06",
     "gainers_24h": [
       {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 0.757697,
-        "chg": 36.8
+        "symbol": "xlm",
+        "name": "Stellar",
+        "price": 0.191646,
+        "chg": 6.7
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1153.53,
+        "chg": 5.29
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.44,
-        "chg": 4.52
+        "price": 2.42,
+        "chg": 4.76
       },
       {
-        "symbol": "xlm",
-        "name": "Stellar",
-        "price": 0.18362,
-        "chg": 1.64
+        "symbol": "xrp",
+        "name": "XRP",
+        "price": 1.4,
+        "chg": 4.28
       },
       {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.057924,
-        "chg": 1.61
-      },
-      {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.564289,
-        "chg": 1.58
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 80.8,
+        "chg": 3.63
       }
     ],
     "losers_24h": [
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01513373,
-        "chg": -4.16
-      },
-      {
-        "symbol": "cro",
-        "name": "Cronos",
-        "price": 0.058149,
-        "chg": -2.99
-      },
-      {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 519.35,
-        "chg": -2.34
+        "price": 512.18,
+        "chg": -3.54
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.15,
-        "chg": -2.24
+        "price": 1.11,
+        "chg": -3.07
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.096408,
-        "chg": -1.88
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4271.29,
+        "chg": -1.73
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01500736,
+        "chg": -1.69
+      },
+      {
+        "symbol": "paxg",
+        "name": "PAX Gold",
+        "price": 4276.74,
+        "chg": -1.69
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.757697,
-        "chg": 76.0
+        "price": 0.698366,
+        "chg": 54.3
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 80.58,
-        "chg": 9.5
+        "price": 81.05,
+        "chg": 10.0
       },
       {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.057924,
-        "chg": 2.3
-      },
-      {
-        "symbol": "okb",
-        "name": "OKB",
-        "price": 114.11,
-        "chg": 1.1
-      },
-      {
-        "symbol": "eth",
-        "name": "Ethereum",
-        "price": 2521.88,
-        "chg": 0.7
-      }
-    ],
-    "losers_7d": [
-      {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 234.83,
-        "chg": -14.4
-      },
-      {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.564289,
-        "chg": -13.2
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 224.65,
-        "chg": -12.9
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 11.45,
-        "chg": -12.8
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.096408,
-        "chg": -12.5
-      }
-    ],
-    "gainers_30d": [
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 0.757697,
-        "chg": 147.0
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1137.0,
-        "chg": 129.5
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.35,
-        "chg": 92.5
-      },
-      {
-        "symbol": "wbt",
-        "name": "WhiteBIT Coin",
-        "price": 80.58,
-        "chg": 47.2
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.44,
-        "chg": 46.5
-      }
-    ],
-    "losers_30d": [
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.096408,
-        "chg": -1.0
-      },
-      {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4333.63,
-        "chg": -0.9
+        "symbol": "cro",
+        "name": "Cronos",
+        "price": 0.059505,
+        "chg": 2.5
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.0,
-        "chg": -0.6
+        "price": 1.042,
+        "chg": 2.2
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.340778,
+        "chg": 1.5
+      }
+    ],
+    "losers_7d": [
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 223.71,
+        "chg": -14.6
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 11.39,
+        "chg": -14.5
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.72558,
+        "chg": -14.0
+      },
+      {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.696662,
+        "chg": -12.8
+      },
+      {
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 233.87,
+        "chg": -12.4
+      }
+    ],
+    "gainers_30d": [
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1153.53,
+        "chg": 133.2
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.698366,
+        "chg": 131.5
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.39,
+        "chg": 95.6
+      },
+      {
+        "symbol": "wbt",
+        "name": "WhiteBIT Coin",
+        "price": 81.05,
+        "chg": 47.9
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.42,
+        "chg": 47.3
+      }
+    ],
+    "losers_30d": [
+      {
+        "symbol": "paxg",
+        "name": "PAX Gold",
+        "price": 4276.74,
+        "chg": -2.1
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4329.34,
-        "chg": -0.5
+        "price": 4271.29,
+        "chg": -1.9
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.042,
+        "chg": -1.1
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.3
+      },
+      {
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.35,
+        "chg": 1.0
       }
     ]
   }
