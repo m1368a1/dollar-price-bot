@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-14 23:09",
+  "timestamp": "2026-09-15 01:30",
   "usd_sell": 231200,
   "usd_buy": 231100,
   "gold_18k": 23292857,
-  "btc_usd": 78383.61,
-  "fear_greed": 57,
-  "btc_dominance": 58.5,
-  "market_cap": 2690000000000.0,
+  "btc_usd": 77826.19,
+  "fear_greed": 69,
+  "btc_dominance": 58.4,
+  "market_cap": 2670000000000.0,
   "market_volume": 90000000000.0,
-  "market_change": 0.41,
+  "market_change": -0.45,
   "top10": [
     {
       "symbol": "btc",
-      "price": 78368,
-      "change_24h": 2.2303,
-      "market_cap": 1574324017528
+      "price": 77970,
+      "change_24h": 1.48711,
+      "market_cap": 1566375477430
     },
     {
       "symbol": "eth",
-      "price": 2526.42,
-      "change_24h": 2.02104,
-      "market_cap": 308392977063
+      "price": 2516.25,
+      "change_24h": 1.30056,
+      "market_cap": 307205254245
     },
     {
       "symbol": "usdt",
-      "price": 0.999882,
-      "change_24h": 0.02812,
-      "market_cap": 183408475403
+      "price": 0.999833,
+      "change_24h": 0.01987,
+      "market_cap": 183402513325
     },
     {
       "symbol": "bnb",
-      "price": 720.05,
-      "change_24h": 0.51563,
-      "market_cap": 95884159888
+      "price": 720.41,
+      "change_24h": 0.47993,
+      "market_cap": 95951786346
     },
     {
       "symbol": "xrp",
-      "price": 1.43,
-      "change_24h": 6.66076,
-      "market_cap": 89814802154
+      "price": 1.42,
+      "change_24h": 5.61389,
+      "market_cap": 89420178996
     },
     {
       "symbol": "usdc",
-      "price": 0.999903,
-      "change_24h": 0.01257,
-      "market_cap": 74237177751
+      "price": 0.999862,
+      "change_24h": 0.00716,
+      "market_cap": 74300666892
     },
     {
       "symbol": "sol",
-      "price": 102.63,
-      "change_24h": 2.92527,
-      "market_cap": 60254978680
+      "price": 102.4,
+      "change_24h": 2.76757,
+      "market_cap": 60141493340
     },
     {
       "symbol": "trx",
-      "price": 0.338448,
-      "change_24h": -0.26767,
-      "market_cap": 32137839568
+      "price": 0.338003,
+      "change_24h": -0.16343,
+      "market_cap": 32090665817
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.041,
+      "price": 1.028,
       "change_24h": null,
-      "market_cap": 23488469607
+      "market_cap": 23190457469
     },
     {
       "symbol": "zec",
-      "price": 1167.18,
-      "change_24h": 9.01766,
-      "market_cap": 19754244386
+      "price": 1160.53,
+      "change_24h": 9.09354,
+      "market_cap": 19674208268
     }
   ],
   "signal": {
@@ -76,15 +76,15 @@
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 57/100",
+        "text": "وضعیت: 69/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -0.9% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -1.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +2.2% در ۲۴ ساعت",
+        "text": "BTC +1.5% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,7 +92,7 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 49",
+        "text": "معتدل: 52",
         "tone": "neutral"
       },
       {
@@ -101,7 +101,7 @@
       }
     ],
     "confidence": 60,
-    "updated": "2026-09-14 23:09"
+    "updated": "2026-09-15 01:30"
   },
   "whales": {
     "unconfirmed": {
@@ -115,42 +115,93 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "رایلی سنفورد، رئیس گروه کارت شاخص قیمت مصرف‌کننده، مبلغ 299989 دلار سهام خریداری کرد",
+      "date": "2026-09-15 01:15",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ماللا راوی، مدیر گروه کارت شاخص قیمت مصرف‌کننده، مبلغ ۲۱۵۰۰ دلار سهام عادی خریداری کرد",
+      "date": "2026-09-15 01:15",
+      "source": "Investing.com"
+    },
+    {
+      "title": "نیکلاس پیترز، مدیر گروه کارت شاخص قیمت مصرف‌کننده، مبلغ ۲۵۰،۰۰۲ دلار سهام خریداری کرد",
+      "date": "2026-09-15 01:05",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
+    {
+      "title": "نفت به افزایش خود ادامه می‌دهد، اوراق قرضه به دلیل نگرانی‌های تورمی سقوط می‌کنند: خلاصه بازارها",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۵ سپتامبر",
       "date": "Mon, 14 Sep 2026",
       "source": "Bloomberg"
     },
     {
+      "title": "با افزایش تورم و نگرانی‌های مربوط به عرضه، ایالات متحده در 10 سال گذشته 5 درصد از نرخ تورم خود را نقض کرده است",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا با افزایش قیمت نفت، ضررهای خود را حفظ کرد/ احتمال افزایش نرخ بهره در ماه سپتامبر قوت گرفت",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بدهی‌های بی‌ارزش آسیایی تقریباً در همه جا از بازده اوراق قرضه پیشی می‌گیرد",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "مدیرعامل BetMGM در مورد بازارهای اولیه شرط‌بندی و پیش‌بینی NFL",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "استراتژیست MRA می‌گوید: پیش‌بینی می‌شود شاخص S&P 500 با افزایش نرخ بهره فدرال رزرو، 10 درصد کاهش یابد",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پیش‌بینی مارکتس: تما در مورد اسپیس‌ایکس تاس انداخت",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بازارهای نوظهور در پی نگرانی‌های مربوط به نفت و هوش مصنوعی که اشتهای ریسک‌پذیری را کاهش می‌دهد، دچار افت می‌شوند",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شرکت Aon از فروش اوراق قرضه ۱۳.۵ میلیارد دلار برای تأمین مالی تصاحب USI جمع‌آوری کرد",
       "date": "Mon, 14 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
+      "title": "رایلی سنفورد، رئیس گروه کارت شاخص قیمت مصرف‌کننده، مبلغ 299989 دلار سهام خریداری کرد",
+      "date": "2026-09-15 01:15",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ماللا راوی، مدیر گروه کارت شاخص قیمت مصرف‌کننده، مبلغ ۲۱۵۰۰ دلار سهام عادی خریداری کرد",
+      "date": "2026-09-15 01:15",
+      "source": "Investing.com"
+    },
+    {
+      "title": "نیکلاس پیترز، مدیر گروه کارت شاخص قیمت مصرف‌کننده، مبلغ ۲۵۰،۰۰۲ دلار سهام خریداری کرد",
+      "date": "2026-09-15 01:05",
+      "source": "Investing.com"
+    },
+    {
+      "title": "نفت به افزایش خود ادامه می‌دهد، اوراق قرضه به دلیل نگرانی‌های تورمی سقوط می‌کنند: خلاصه بازارها",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۵ سپتامبر",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با افزایش تورم و نگرانی‌های مربوط به عرضه، ایالات متحده در 10 سال گذشته 5 درصد از نرخ تورم خود را نقض کرده است",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا با افزایش قیمت نفت، ضررهای خود را حفظ کرد/ احتمال افزایش نرخ بهره در ماه سپتامبر قوت گرفت",
+      "date": "Mon, 14 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بدهی‌های بی‌ارزش آسیایی تقریباً در همه جا از بازده اوراق قرضه پیشی می‌گیرد",
       "date": "Mon, 14 Sep 2026",
       "source": "Bloomberg"
     },
@@ -158,220 +209,200 @@
       "title": "مدیرعامل BetMGM در مورد بازارهای اولیه شرط‌بندی و پیش‌بینی NFL",
       "date": "Mon, 14 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "استراتژیست MRA می‌گوید: پیش‌بینی می‌شود شاخص S&P 500 با افزایش نرخ بهره فدرال رزرو، 10 درصد کاهش یابد",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پیش‌بینی مارکتس: تما در مورد اسپیس‌ایکس تاس انداخت",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بازارهای نوظهور در پی نگرانی‌های مربوط به نفت و هوش مصنوعی که اشتهای ریسک‌پذیری را کاهش می‌دهد، دچار افت می‌شوند",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شرکت Aon از فروش اوراق قرضه ۱۳.۵ میلیارد دلار برای تأمین مالی تصاحب USI جمع‌آوری کرد",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-14 23:09",
+    "updated": "2026-09-15 01:30",
     "gainers_24h": [
-      {
-        "symbol": "xlm",
-        "name": "Stellar",
-        "price": 0.193144,
-        "chg": 9.23
-      },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1167.18,
-        "chg": 9.02
+        "price": 1160.53,
+        "chg": 9.09
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.49,
-        "chg": 7.6
-      },
-      {
-        "symbol": "xrp",
-        "name": "XRP",
-        "price": 1.43,
-        "chg": 6.66
+        "symbol": "xlm",
+        "name": "Stellar",
+        "price": 0.193374,
+        "chg": 8.57
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.52,
-        "chg": 5.7
+        "price": 6.7,
+        "chg": 8.15
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.45,
+        "chg": 6.36
+      },
+      {
+        "symbol": "xrp",
+        "name": "XRP",
+        "price": 1.42,
+        "chg": 5.61
       }
     ],
     "losers_24h": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01431673,
-        "chg": -5.6
+        "price": 0.01424606,
+        "chg": -6.14
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.094,
-        "chg": -4.03
+        "price": 1.096,
+        "chg": -3.08
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 513.79,
-        "chg": -1.2
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 52.92,
+        "chg": -2.05
+      },
+      {
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 112.56,
+        "chg": -1.06
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4295.71,
-        "chg": -0.99
-      },
-      {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4299.6,
-        "chg": -0.98
+        "price": 4301.12,
+        "chg": -0.77
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.49,
-        "chg": 8.2
+        "price": 2.45,
+        "chg": 7.2
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 81.19,
-        "chg": 6.2
+        "price": 80.7,
+        "chg": 5.5
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.05946,
-        "chg": 4.4
+        "price": 0.059136,
+        "chg": 3.0
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.057529,
+        "chg": 2.7
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.041,
-        "chg": 3.6
-      },
-      {
-        "symbol": "xrp",
-        "name": "XRP",
-        "price": 1.43,
-        "chg": 2.9
+        "price": 1.028,
+        "chg": 2.3
       }
     ],
     "losers_7d": [
       {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00369206,
+        "chg": -15.4
+      },
+      {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 223.74,
-        "chg": -13.9
+        "price": 223.17,
+        "chg": -13.8
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01431673,
-        "chg": -12.2
+        "price": 0.01424606,
+        "chg": -12.3
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.723007,
-        "chg": -11.8
+        "price": 0.720247,
+        "chg": -12.1
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 232.72,
-        "chg": -10.4
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 11.54,
-        "chg": -9.3
+        "price": 232.42,
+        "chg": -10.6
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1167.18,
-        "chg": 139.1
+        "price": 1160.53,
+        "chg": 138.5
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.52,
-        "chg": 101.5
+        "price": 6.7,
+        "chg": 107.1
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.49,
-        "chg": 52.8
+        "price": 2.45,
+        "chg": 52.7
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 128.48,
+        "price": 128.45,
         "chg": 48.9
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 81.19,
-        "chg": 48.7
+        "price": 80.7,
+        "chg": 47.6
       }
     ],
     "losers_30d": [
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.094,
-        "chg": -1.9
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.09596,
+        "chg": -3.4
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4299.6,
-        "chg": -1.7
+        "price": 4305.0,
+        "chg": -1.8
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4295.71,
-        "chg": -1.4
+        "price": 4301.12,
+        "chg": -1.5
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.097285,
-        "chg": -1.1
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.096,
+        "chg": -0.7
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.35,
-        "chg": -0.2
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.3
       }
     ]
   }
