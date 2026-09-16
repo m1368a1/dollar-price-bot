@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-15 21:25",
+  "timestamp": "2026-09-16 00:23",
   "usd_sell": 231200,
   "usd_buy": 231100,
   "gold_18k": 23246687,
-  "btc_usd": 75751.75,
-  "fear_greed": 69,
+  "btc_usd": 75699.81,
+  "fear_greed": 51,
   "btc_dominance": 58.5,
   "market_cap": 2590000000000.0,
-  "market_volume": 100000000000.0,
-  "market_change": -6.87,
+  "market_volume": 110000000000.0,
+  "market_change": -5.78,
   "top10": [
     {
       "symbol": "btc",
-      "price": 75747,
-      "change_24h": -3.98082,
-      "market_cap": 1520878895093
+      "price": 75718,
+      "change_24h": -2.96185,
+      "market_cap": 1520880057327
     },
     {
       "symbol": "eth",
-      "price": 2398.64,
-      "change_24h": -6.13581,
-      "market_cap": 292724640602
+      "price": 2402.0,
+      "change_24h": -4.2433,
+      "market_cap": 293216800178
     },
     {
       "symbol": "usdt",
-      "price": 0.999425,
-      "change_24h": -0.0442,
-      "market_cap": 183325668594
+      "price": 0.99945,
+      "change_24h": -0.0415,
+      "market_cap": 183342301165
     },
     {
       "symbol": "bnb",
-      "price": 713.29,
-      "change_24h": -1.53726,
-      "market_cap": 94983241451
+      "price": 714.74,
+      "change_24h": -0.63775,
+      "market_cap": 95162174531
     },
     {
       "symbol": "xrp",
       "price": 1.29,
-      "change_24h": -11.42163,
-      "market_cap": 80864340295
+      "change_24h": -9.25516,
+      "market_cap": 80903564618
     },
     {
       "symbol": "usdc",
-      "price": 0.999706,
-      "change_24h": -0.01391,
-      "market_cap": 73771405707
+      "price": 0.999726,
+      "change_24h": -0.01608,
+      "market_cap": 73742917913
     },
     {
       "symbol": "sol",
       "price": 96.95,
-      "change_24h": -6.4784,
-      "market_cap": 56904067069
+      "change_24h": -5.40169,
+      "market_cap": 56919372707
     },
     {
       "symbol": "trx",
-      "price": 0.332405,
-      "change_24h": -2.02516,
-      "market_cap": 31564211050
+      "price": 0.3329,
+      "change_24h": -1.3374,
+      "market_cap": 31606910798
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.037,
-      "change_24h": -0.4491,
-      "market_cap": 23452476175
+      "price": 1.003,
+      "change_24h": -2.96132,
+      "market_cap": 22693423266
     },
     {
       "symbol": "zec",
-      "price": 1116.88,
-      "change_24h": -5.347,
-      "market_cap": 18897447364
+      "price": 1109.78,
+      "change_24h": -4.39994,
+      "market_cap": 18798934060
     }
   ],
   "signal": {
@@ -76,15 +76,15 @@
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 69/100",
+        "text": "وضعیت: 51/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.5% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -3.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -4.2% در ۲۴ ساعت",
+        "text": "BTC -3.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 45",
+        "text": "معتدل: 46",
         "tone": "neutral"
       }
     ],
     "confidence": 57,
-    "updated": "2026-09-15 21:26"
+    "updated": "2026-09-16 00:23"
   },
   "whales": {
     "unconfirmed": {
@@ -111,106 +111,85 @@
       "top": []
     }
   },
-  "news_investing": [
+  "news_investing": [],
+  "news_bloomberg": [
     {
-      "title": "حاشیه سود بنزین شمال غربی اروپا با افزایش قیمت نفت خام بیش از 7 دلار کاهش یافت",
-      "date": "2026-09-15 21:15",
-      "source": "Investing.com"
+      "title": "سهام آسیا در انتظار تصمیم فدرال رزرو ثابت ماند: بازارها در حال بسته شدن هستند",
+      "date": "Tue, 15 Sep 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "شرکت معدنی گلدکوئست، دنیس کوانگ را به عنوان مدیر مالی منصوب کرد",
-      "date": "2026-09-15 21:08",
-      "source": "Investing.com"
-    }
-  ],
-  "news_bloomberg": [
+      "title": "قیمت طلا در زیر ۴۳۰۰ دلار تثبیت شد، زیرا بازارها در انتظار تصمیم فدرال رزرو برای نرخ بهره هستند",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "فدرال رزرو برخلاف نظر ترامپ، نرخ بهره را افزایش می‌دهد: راهنمای روز تصمیم‌گیری",
+      "date": "Tue, 15 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "پولی از اوکتری می‌گوید بازار جذاب است اما مشکلاتی در کمین است",
+      "date": "Tue, 15 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کریستین بارون، مدیرعامل داچ برادرز، درباره انبساط و تورم می‌گوید",
+      "date": "Tue, 15 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "با نزدیک شدن فدرال رزرو، بازدهی اوراق قرضه ۱۰ ساله ایالات متحده به بالاترین حد خود از سال ۲۰۰۷ رسید",
       "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "دارایی‌های نوظهور با افت شدید بازدهی نفت و ۵ درصد در آمریکا، روند نزولی چهار روزه خود را ادامه دادند",
-      "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پیکرینگ می‌گوید، افتتاح میدان نفتی ونزوئلا «ابهام‌زدایی» است",
-      "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پیش‌بینی‌های کوتاه‌مدت «شدید» بازار اوراق قرضه روی افزایش نرخ بهره توسط فدرال رزرو حساب می‌کند",
-      "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "جان ون اک می‌گوید: طلا تحت تأثیر تورم ایالات متحده نیست",
-      "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام در آستانه انتخابات فدرال رزرو سقوط می‌کنند، زیرا بازده همچنان بالا است: بسته‌بندی بازارها",
-      "date": "Mon, 14 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "حاشیه سود بنزین شمال غربی اروپا با افزایش قیمت نفت خام بیش از 7 دلار کاهش یافت",
-      "date": "2026-09-15 21:15",
-      "source": "Investing.com"
+      "title": "سهام آسیا در انتظار تصمیم فدرال رزرو ثابت ماند: بازارها در حال بسته شدن هستند",
+      "date": "Tue, 15 Sep 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "شرکت معدنی گلدکوئست، دنیس کوانگ را به عنوان مدیر مالی منصوب کرد",
-      "date": "2026-09-15 21:08",
-      "source": "Investing.com"
+      "title": "قیمت طلا در زیر ۴۳۰۰ دلار تثبیت شد، زیرا بازارها در انتظار تصمیم فدرال رزرو برای نرخ بهره هستند",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "فدرال رزرو برخلاف نظر ترامپ، نرخ بهره را افزایش می‌دهد: راهنمای روز تصمیم‌گیری",
+      "date": "Tue, 15 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "پولی از اوکتری می‌گوید بازار جذاب است اما مشکلاتی در کمین است",
+      "date": "Tue, 15 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کریستین بارون، مدیرعامل داچ برادرز، درباره انبساط و تورم می‌گوید",
+      "date": "Tue, 15 Sep 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "با نزدیک شدن فدرال رزرو، بازدهی اوراق قرضه ۱۰ ساله ایالات متحده به بالاترین حد خود از سال ۲۰۰۷ رسید",
       "date": "Tue, 15 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "دارایی‌های نوظهور با افت شدید بازدهی نفت و ۵ درصد در آمریکا، روند نزولی چهار روزه خود را ادامه دادند",
-      "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پیکرینگ می‌گوید، افتتاح میدان نفتی ونزوئلا «ابهام‌زدایی» است",
-      "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پیش‌بینی‌های کوتاه‌مدت «شدید» بازار اوراق قرضه روی افزایش نرخ بهره توسط فدرال رزرو حساب می‌کند",
-      "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "جان ون اک می‌گوید: طلا تحت تأثیر تورم ایالات متحده نیست",
-      "date": "Tue, 15 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام در آستانه انتخابات فدرال رزرو سقوط می‌کنند، زیرا بازده همچنان بالا است: بسته‌بندی بازارها",
-      "date": "Mon, 14 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-15 21:25",
+    "updated": "2026-09-16 00:23",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.695235,
-        "chg": 10.75
+        "price": 0.691161,
+        "chg": 18.87
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.12,
-        "chg": 2.2
+        "price": 1.14,
+        "chg": 3.79
       },
       {
         "symbol": "usyc",
@@ -219,16 +198,16 @@
         "chg": 0.01
       },
       {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4291.84,
-        "chg": -0.2
-      },
-      {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4294.66,
-        "chg": -0.25
+        "price": 4287.21,
+        "chg": -0.02
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4283.86,
+        "chg": -0.02
       }
     ],
     "losers_24h": [
@@ -236,57 +215,57 @@
         "symbol": "xrp",
         "name": "XRP",
         "price": 1.29,
-        "chg": -11.42
+        "chg": -9.26
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.17568,
-        "chg": -9.5
+        "price": 0.176315,
+        "chg": -8.04
       },
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.195904,
-        "chg": -7.49
+        "price": 0.195061,
+        "chg": -6.21
+      },
+      {
+        "symbol": "cro",
+        "name": "Cronos",
+        "price": 0.055464,
+        "chg": -5.61
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 218.19,
-        "chg": -7.31
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.32,
-        "chg": -7.23
+        "price": 218.11,
+        "chg": -5.58
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.695235,
-        "chg": 56.8
+        "price": 0.691161,
+        "chg": 58.8
       },
       {
         "symbol": "wlfi",
         "name": "World Liberty Financial",
-        "price": 0.056977,
-        "chg": 1.7
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 496.87,
-        "chg": 0.3
+        "price": 0.057131,
+        "chg": 1.2
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.32,
-        "chg": 0.2
+        "price": 2.34,
+        "chg": 1.1
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 506.45,
+        "chg": 0.1
       },
       {
         "symbol": "usyc",
@@ -299,58 +278,58 @@
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 216.14,
-        "chg": -15.2
-      },
-      {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.684943,
-        "chg": -15.2
+        "price": 218.28,
+        "chg": -16.2
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 218.19,
-        "chg": -14.8
+        "price": 218.11,
+        "chg": -16.0
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01407355,
-        "chg": -14.6
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.090966,
+        "chg": -15.8
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.686674,
+        "chg": -15.6
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.54054,
-        "chg": -14.4
+        "price": 0.54322,
+        "chg": -14.2
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1116.88,
-        "chg": 129.0
+        "price": 1109.78,
+        "chg": 128.2
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.27,
-        "chg": 90.9
+        "price": 6.38,
+        "chg": 93.9
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.695235,
-        "chg": 84.4
+        "price": 0.691161,
+        "chg": 83.3
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.32,
-        "chg": 44.9
+        "price": 2.34,
+        "chg": 46.5
       },
       {
         "symbol": "wbt",
@@ -363,32 +342,32 @@
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.88,
-        "chg": -5.2
-      },
-      {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.056977,
-        "chg": -4.5
+        "price": 8.83,
+        "chg": -5.3
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.091702,
-        "chg": -3.2
+        "price": 0.090966,
+        "chg": -5.0
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.057131,
+        "chg": -4.5
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4294.66,
-        "chg": -1.9
+        "price": 4287.21,
+        "chg": -2.2
       },
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.12,
-        "chg": -1.8
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4283.86,
+        "chg": -1.9
       }
     ]
   }
