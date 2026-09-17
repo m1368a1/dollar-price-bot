@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-17 18:16",
+  "timestamp": "2026-09-17 21:29",
   "usd_sell": 228600,
   "usd_buy": 228500,
   "gold_18k": 23362112,
-  "btc_usd": 76658.77,
+  "btc_usd": 76500.51,
   "fear_greed": 50,
   "btc_dominance": 58.2,
   "market_cap": 2640000000000.0,
-  "market_volume": 90000000000.0,
-  "market_change": -0.85,
+  "market_volume": 80000000000.0,
+  "market_change": -1.72,
   "top10": [
     {
       "symbol": "btc",
-      "price": 76633,
-      "change_24h": 1.09648,
-      "market_cap": 1539225764434
+      "price": 76499,
+      "change_24h": 0.61751,
+      "market_cap": 1536520195170
     },
     {
       "symbol": "eth",
-      "price": 2459.27,
-      "change_24h": 2.36658,
-      "market_cap": 300174943677
+      "price": 2450.18,
+      "change_24h": 1.80248,
+      "market_cap": 299047869407
     },
     {
       "symbol": "usdt",
-      "price": 0.999225,
-      "change_24h": -0.00613,
-      "market_cap": 183299795020
+      "price": 0.999318,
+      "change_24h": 0.00609,
+      "market_cap": 183316539942
     },
     {
       "symbol": "bnb",
-      "price": 728.7,
-      "change_24h": 1.8522,
-      "market_cap": 97038388985
+      "price": 734.17,
+      "change_24h": 1.95524,
+      "market_cap": 97772108517
     },
     {
       "symbol": "xrp",
       "price": 1.3,
-      "change_24h": 1.7208,
-      "market_cap": 81674214179
+      "change_24h": 0.04995,
+      "market_cap": 81430847631
     },
     {
       "symbol": "usdc",
-      "price": 0.999593,
-      "change_24h": -0.00195,
-      "market_cap": 73683242229
+      "price": 0.999637,
+      "change_24h": 0.00055,
+      "market_cap": 73854822529
     },
     {
       "symbol": "sol",
-      "price": 101.39,
-      "change_24h": 3.6452,
-      "market_cap": 59538254772
+      "price": 101.22,
+      "change_24h": 2.87317,
+      "market_cap": 59433540382
     },
     {
       "symbol": "trx",
-      "price": 0.333619,
-      "change_24h": -0.45862,
-      "market_cap": 31680680586
+      "price": 0.334837,
+      "change_24h": -0.27633,
+      "market_cap": 31798655686
     },
     {
       "symbol": "zec",
-      "price": 1468.1,
-      "change_24h": 10.24613,
-      "market_cap": 24865711409
+      "price": 1471.88,
+      "change_24h": 11.70683,
+      "market_cap": 24934493276
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.024,
-      "change_24h": 2.13769,
-      "market_cap": 23203322982
+      "price": 1.006,
+      "change_24h": 0.21025,
+      "market_cap": 22808273068
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -0.7% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -0.8% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +1.2% در ۲۴ ساعت",
+        "text": "BTC +0.5% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 31",
+        "text": "معتدل: 30",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-17 18:16"
+    "updated": "2026-09-17 21:29"
   },
   "whales": {
     "unconfirmed": {
@@ -113,146 +113,142 @@
   },
   "news_investing": [
     {
-      "title": "چرا سهام Blossom Gold امروز در حال افزایش است؟",
-      "date": "2026-09-17 18:09",
+      "title": "بیت‌کوین بهبودی پس از عقب‌نشینی Clarity را افزایش می‌دهد، سودهایی که توسط جنگ‌طلبی فدرال رزرو محدود شده است",
+      "date": "2026-09-17 21:19",
       "source": "Investing.com"
     },
     {
-      "title": "سهام Arm و AMD در میان نوسان‌کنندگان بازار در روز پنجشنبه",
-      "date": "2026-09-17 18:06",
-      "source": "Investing.com"
-    },
-    {
-      "title": "چرا سهام شرکت نیوکور گلد امروز افزایش یافت؟",
-      "date": "2026-09-17 18:06",
+      "title": "پس از تصمیمات فدرال رزرو و BoE، سهام جهان دوباره بازگشت، بازده خزانه داری عقب نشینی کرد",
+      "date": "2026-09-17 21:18",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سهام و اوراق قرضه پس از افت روز فدرال رزرو با سقوط نفت افزایش یافتند: بازارها در حال بسته شدن هستند",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نوسانات قیمت نفت در بحبوحه تعمیرات خط لوله عربستان و نگرانی‌ها در مورد عرضه",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش ارزش اوراق خزانه‌داری با افزایش اعتماد به بازار وارش",
+      "title": "Carry Trade توضیح داد: چرا ین ژاپن جذابیت خود را از دست می دهد (JPY/USD)",
       "date": "Thu, 17 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام ایالات متحده پس از سقوط روز تصمیم‌گیری فدرال رزرو، همزمان با سقوط نفت، دوباره رشد کردند",
+      "title": "عربستان سعودی پس از حمله به خط لوله، مسیرهای نفتی را تغییر می دهد",
       "date": "Thu, 17 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام در پی فدرال رزرو افزایش یافت",
-      "date": "Thu, 17 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با تشدید کاهش قیمت نفت، قیمت طلا به همراه اوراق قرضه خزانه‌داری آمریکا افزایش یافت",
+      "title": "با تعمیق کاهش قیمت نفت، طلا همراه با اوراق خزانه داری ایالات متحده افزایش یافت",
       "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام، اوراق قرضه پس از افت روز فدرال رزرو با سقوط نفت: بازارها افزایش یافتند",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "نفت کاهش می یابد زیرا معامله گران می بینند که قطعی عرضه کوتاه مدت است",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "برداشت بزرگ: چرا فدرال رزرو نرخ بهره را افزایش داد؟",
+      "date": "Thu, 17 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "چرا سهام Blossom Gold امروز در حال افزایش است؟",
-      "date": "2026-09-17 18:09",
+      "title": "بیت‌کوین بهبودی پس از عقب‌نشینی Clarity را افزایش می‌دهد، سودهایی که توسط جنگ‌طلبی فدرال رزرو محدود شده است",
+      "date": "2026-09-17 21:19",
       "source": "Investing.com"
     },
     {
-      "title": "سهام Arm و AMD در میان نوسان‌کنندگان بازار در روز پنجشنبه",
-      "date": "2026-09-17 18:06",
+      "title": "پس از تصمیمات فدرال رزرو و BoE، سهام جهان دوباره بازگشت، بازده خزانه داری عقب نشینی کرد",
+      "date": "2026-09-17 21:18",
       "source": "Investing.com"
     },
     {
-      "title": "چرا سهام شرکت نیوکور گلد امروز افزایش یافت؟",
-      "date": "2026-09-17 18:06",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام و اوراق قرضه پس از افت روز فدرال رزرو با سقوط نفت افزایش یافتند: بازارها در حال بسته شدن هستند",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نوسانات قیمت نفت در بحبوحه تعمیرات خط لوله عربستان و نگرانی‌ها در مورد عرضه",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش ارزش اوراق خزانه‌داری با افزایش اعتماد به بازار وارش",
+      "title": "Carry Trade توضیح داد: چرا ین ژاپن جذابیت خود را از دست می دهد (JPY/USD)",
       "date": "Thu, 17 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام ایالات متحده پس از سقوط روز تصمیم‌گیری فدرال رزرو، همزمان با سقوط نفت، دوباره رشد کردند",
+      "title": "عربستان سعودی پس از حمله به خط لوله، مسیرهای نفتی را تغییر می دهد",
       "date": "Thu, 17 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام در پی فدرال رزرو افزایش یافت",
-      "date": "Thu, 17 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با تشدید کاهش قیمت نفت، قیمت طلا به همراه اوراق قرضه خزانه‌داری آمریکا افزایش یافت",
+      "title": "با تعمیق کاهش قیمت نفت، طلا همراه با اوراق خزانه داری ایالات متحده افزایش یافت",
       "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام، اوراق قرضه پس از افت روز فدرال رزرو با سقوط نفت: بازارها افزایش یافتند",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "نفت کاهش می یابد زیرا معامله گران می بینند که قطعی عرضه کوتاه مدت است",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "برداشت بزرگ: چرا فدرال رزرو نرخ بهره را افزایش داد؟",
+      "date": "Thu, 17 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-17 18:16",
+    "updated": "2026-09-17 21:29",
     "gainers_24h": [
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.72,
-        "chg": 21.22
+        "price": 7.65,
+        "chg": 18.26
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.03,
-        "chg": 20.72
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 128.19,
-        "chg": 10.86
+        "price": 3.01,
+        "chg": 15.93
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1468.1,
-        "chg": 10.25
+        "price": 1471.88,
+        "chg": 11.71
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.100087,
-        "chg": 8.9
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 128.51,
+        "chg": 9.64
+      },
+      {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.74688,
+        "chg": 7.85
       }
     ],
     "losers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.707074,
-        "chg": -5.2
+        "price": 0.694565,
+        "chg": -5.5
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01279931,
+        "chg": -3.23
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.333619,
-        "chg": -0.46
+        "price": 0.334837,
+        "chg": -0.28
       },
       {
         "symbol": "usyc",
@@ -261,62 +257,50 @@
         "chg": 0.01
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.92,
-        "chg": 0.77
-      },
-      {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4359.45,
-        "chg": 1.07
+        "symbol": "xrp",
+        "name": "XRP",
+        "price": 1.3,
+        "chg": 0.05
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.707074,
-        "chg": 50.0
+        "price": 0.694565,
+        "chg": 44.7
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1468.1,
-        "chg": 30.7
+        "price": 1471.88,
+        "chg": 31.8
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.72,
-        "chg": 27.7
+        "price": 7.65,
+        "chg": 25.1
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.03,
-        "chg": 23.2
+        "price": 3.01,
+        "chg": 21.7
       },
       {
         "symbol": "aster",
         "name": "Aster",
-        "price": 0.741821,
-        "chg": 6.4
+        "price": 0.74688,
+        "chg": 5.9
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01302514,
-        "chg": -18.7
-      },
-      {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 229.61,
-        "chg": -4.7
+        "price": 0.01279931,
+        "chg": -19.1
       },
       {
         "symbol": "xrp",
@@ -325,48 +309,54 @@
         "chg": -3.9
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.92,
-        "chg": -2.9
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 229.26,
+        "chg": -3.9
       },
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.202164,
-        "chg": -2.5
+        "price": 0.201661,
+        "chg": -3.3
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 8.92,
+        "chg": -3.0
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1468.1,
-        "chg": 190.4
+        "price": 1471.88,
+        "chg": 191.1
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.72,
-        "chg": 133.7
+        "price": 7.65,
+        "chg": 131.0
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.03,
-        "chg": 89.0
+        "price": 3.01,
+        "chg": 87.0
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.707074,
-        "chg": 79.3
+        "price": 0.694565,
+        "chg": 67.3
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 128.19,
-        "chg": 43.9
+        "price": 128.51,
+        "chg": 43.8
       }
     ],
     "losers_30d": [
@@ -374,31 +364,31 @@
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.92,
-        "chg": -5.8
+        "chg": -5.9
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.058437,
+        "chg": -3.8
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.006,
+        "chg": -2.6
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01302514,
-        "chg": -1.1
-      },
-      {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.333619,
-        "chg": -0.3
+        "price": 0.01279931,
+        "chg": -1.9
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4359.45,
-        "chg": -0.2
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4358.46,
-        "chg": 0.1
+        "price": 4340.13,
+        "chg": -0.1
       }
     ]
   }
