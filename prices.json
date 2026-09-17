@@ -1,168 +1,196 @@
 {
-  "timestamp": "2026-09-16 22:57",
+  "timestamp": "2026-09-17 01:27",
   "usd_sell": 230700,
   "usd_buy": 230600,
   "gold_18k": 23500623,
-  "btc_usd": 75604.25,
-  "fear_greed": 51,
+  "btc_usd": 76474.93,
+  "fear_greed": 50,
   "btc_dominance": 58.4,
-  "market_cap": 2590000000000.0,
+  "market_cap": 2630000000000.0,
   "market_volume": 90000000000.0,
-  "market_change": -2.26,
+  "market_change": -1.54,
   "top10": [
     {
       "symbol": "btc",
-      "price": 75608,
-      "change_24h": -0.06493,
-      "market_cap": 1518500087319
+      "price": 76470,
+      "change_24h": 0.82107,
+      "market_cap": 1535927615462
     },
     {
       "symbol": "eth",
-      "price": 2390.1,
-      "change_24h": -0.32493,
-      "market_cap": 291706015122
+      "price": 2427.38,
+      "change_24h": 1.00029,
+      "market_cap": 296268811259
     },
     {
       "symbol": "usdt",
-      "price": 0.999351,
-      "change_24h": -0.00536,
-      "market_cap": 183324155726
+      "price": 0.999324,
+      "change_24h": -0.00924,
+      "market_cap": 183318502917
     },
     {
       "symbol": "bnb",
-      "price": 718.19,
-      "change_24h": 0.67258,
-      "market_cap": 95621615889
+      "price": 726.2,
+      "change_24h": 1.73438,
+      "market_cap": 96701138360
     },
     {
       "symbol": "xrp",
-      "price": 1.29,
-      "change_24h": -0.27452,
-      "market_cap": 80783648015
+      "price": 1.3,
+      "change_24h": 0.88837,
+      "market_cap": 81750948305
     },
     {
       "symbol": "usdc",
-      "price": 0.999667,
-      "change_24h": -0.00163,
-      "market_cap": 73606733541
+      "price": 0.999668,
+      "change_24h": -0.0048,
+      "market_cap": 73606633097
     },
     {
       "symbol": "sol",
-      "price": 97.47,
-      "change_24h": 0.29022,
-      "market_cap": 57218169559
+      "price": 98.9,
+      "change_24h": 1.84285,
+      "market_cap": 58075882100
     },
     {
       "symbol": "trx",
-      "price": 0.33514,
-      "change_24h": 0.63822,
-      "market_cap": 31820653590
+      "price": 0.335704,
+      "change_24h": 0.99063,
+      "market_cap": 31875807447
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.006,
-      "change_24h": 0.12031,
-      "market_cap": 22745023995
+      "price": 1.027,
+      "change_24h": 2.41574,
+      "market_cap": 23215555481
     },
     {
       "symbol": "zec",
-      "price": 1293.75,
-      "change_24h": 15.19023,
-      "market_cap": 21878855631
+      "price": 1359.51,
+      "change_24h": 21.0919,
+      "market_cap": 23021574800
     }
   ],
   "signal": {
-    "score": 0,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 51/100",
+        "text": "وضعیت: 50/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.0% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -2.0% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.3% در ۲۴ ساعت",
+        "text": "BTC +1.0% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 45",
+        "text": "معتدل: 30",
         "tone": "neutral"
+      },
+      {
+        "text": "سه سرباز سفید (Three White Soldiers) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-16 22:58"
+    "confidence": 60,
+    "updated": "2026-09-17 01:27"
   },
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 115.4,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 115.4,
+          "tier": "متوسط",
+          "fee": 5.76e-06,
+          "inputs": 1,
+          "outputs": 2,
+          "direction": "unknown"
+        }
+      ]
     }
   },
   "news_investing": [
     {
-      "title": "ترامپ پس از حمایت وارش از افزایش نرخ بهره، فدرال رزرو را به باد انتقاد گرفت",
-      "date": "2026-09-16 22:43",
+      "title": "با کاهش نگرانی‌ها از اختلالات عرضه در خاورمیانه، قیمت نفت همچنان کاهش می‌یابد",
+      "date": "2026-09-17 01:06",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سهام آسیایی با افزایش نرخ بهره فدرال رزرو و جهش دلار سقوط می‌کنند: خلاصه بازارها",
+      "title": "آلومینیوم ونزوئلا به آمریکا می‌رود؛ هینی به دنبال معامله طلا",
       "date": "Wed, 16 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "ادامه روند نزولی قیمت نفت با اقدام عربستان سعودی برای احیای خط لوله کلیدی",
+      "title": "اوراق خزانه‌داری ضرر ناشی از افزایش نرخ بهره فدرال رزرو را جبران کرد، دلار سود کرد: خلاصه بازارها",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با اقدام عربستان سعودی برای احیای خط لوله حیاتی، قیمت نفت همچنان کاهش یافت",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "اوراق قرضه آسیب‌دیده مالزی با خطر فزاینده خروج صندوق ژاپن روبرو است",
+      "date": "Thu, 17 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا پس از آنکه فدرال رزرو به سیاست‌های انبساطی روی آورد و نرخ بهره را افزایش داد، روند نزولی خود را حفظ کرد",
       "date": "Wed, 16 Sep 2026",
       "source": "Bloomberg"
     },
     {
       "title": "نکات برجسته کنفرانس خبری وارش، رئیس فدرال رزرو",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "معامله‌گران اوراق قرضه از افزایش اعتبار وارش در مبارزه با تورم خبر می‌دهند",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مدیرعامل براون هریس استیونز: ما به مسکن بیشتری در بازار نیاز داریم",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نظارت بلومبرگ: فدرال رزرو در تاریخ 16/9/2026 تصمیم می‌گیرد",
       "date": "Wed, 16 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "ترامپ پس از حمایت وارش از افزایش نرخ بهره، فدرال رزرو را به باد انتقاد گرفت",
-      "date": "2026-09-16 22:43",
+      "title": "با کاهش نگرانی‌ها از اختلالات عرضه در خاورمیانه، قیمت نفت همچنان کاهش می‌یابد",
+      "date": "2026-09-17 01:06",
       "source": "Investing.com"
     },
     {
-      "title": "سهام آسیایی با افزایش نرخ بهره فدرال رزرو و جهش دلار سقوط می‌کنند: خلاصه بازارها",
+      "title": "آلومینیوم ونزوئلا به آمریکا می‌رود؛ هینی به دنبال معامله طلا",
       "date": "Wed, 16 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "ادامه روند نزولی قیمت نفت با اقدام عربستان سعودی برای احیای خط لوله کلیدی",
+      "title": "اوراق خزانه‌داری ضرر ناشی از افزایش نرخ بهره فدرال رزرو را جبران کرد، دلار سود کرد: خلاصه بازارها",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با اقدام عربستان سعودی برای احیای خط لوله حیاتی، قیمت نفت همچنان کاهش یافت",
+      "date": "Wed, 16 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "اوراق قرضه آسیب‌دیده مالزی با خطر فزاینده خروج صندوق ژاپن روبرو است",
+      "date": "Thu, 17 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا پس از آنکه فدرال رزرو به سیاست‌های انبساطی روی آورد و نرخ بهره را افزایش داد، روند نزولی خود را حفظ کرد",
       "date": "Wed, 16 Sep 2026",
       "source": "Bloomberg"
     },
@@ -170,215 +198,200 @@
       "title": "نکات برجسته کنفرانس خبری وارش، رئیس فدرال رزرو",
       "date": "Wed, 16 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "معامله‌گران اوراق قرضه از افزایش اعتبار وارش در مبارزه با تورم خبر می‌دهند",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مدیرعامل براون هریس استیونز: ما به مسکن بیشتری در بازار نیاز داریم",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نظارت بلومبرگ: فدرال رزرو در تاریخ 16/9/2026 تصمیم می‌گیرد",
-      "date": "Wed, 16 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-16 22:57",
+    "updated": "2026-09-17 01:27",
     "gainers_24h": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1293.75,
-        "chg": 15.19
+        "price": 1359.51,
+        "chg": 21.09
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.58,
-        "chg": 10.1
-      },
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 0.742721,
-        "chg": 8.42
+        "price": 2.66,
+        "chg": 13.34
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.096488,
-        "chg": 5.88
+        "price": 0.099357,
+        "chg": 9.03
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.700427,
-        "chg": 2.2
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.723907,
+        "chg": 5.83
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.73,
+        "chg": 5.59
       }
     ],
     "losers_24h": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01309788,
-        "chg": -6.67
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 117.14,
-        "chg": -4.15
+        "price": 0.01291658,
+        "chg": -8.26
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 489.4,
-        "chg": -3.11
+        "price": 501.09,
+        "chg": -1.64
       },
       {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.072657,
-        "chg": -2.34
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 110.12,
+        "chg": -1.48
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.11,
-        "chg": -1.82
+        "price": 1.12,
+        "chg": -1.19
+      },
+      {
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.073714,
+        "chg": -0.83
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.742721,
-        "chg": 64.1
+        "price": 0.723907,
+        "chg": 61.8
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1293.75,
-        "chg": 5.8
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.58,
-        "chg": 3.0
-      },
-      {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.057373,
-        "chg": 2.5
+        "price": 1359.51,
+        "chg": 8.2
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.42,
-        "chg": 1.0
+        "price": 6.73,
+        "chg": 8.2
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.66,
+        "chg": 7.5
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.059205,
+        "chg": 4.9
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01309788,
-        "chg": -17.3
-      },
-      {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 218.21,
-        "chg": -14.9
+        "price": 0.01291658,
+        "chg": -19.0
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 217.82,
-        "chg": -14.4
+        "price": 220.95,
+        "chg": -12.4
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.700427,
-        "chg": -10.2
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 225.52,
+        "chg": -11.6
       },
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.549692,
-        "chg": -9.7
+        "price": 0.552111,
+        "chg": -8.1
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.714483,
+        "chg": -8.0
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1293.75,
-        "chg": 155.3
+        "price": 1359.51,
+        "chg": 162.0
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.742721,
-        "chg": 109.8
+        "price": 0.723907,
+        "chg": 103.5
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.42,
-        "chg": 96.7
+        "price": 6.73,
+        "chg": 102.9
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.58,
-        "chg": 58.8
+        "price": 2.66,
+        "chg": 63.2
       },
       {
         "symbol": "wbt",
         "name": "WhiteBIT Coin",
-        "price": 77.61,
-        "chg": 40.4
+        "price": 78.54,
+        "chg": 40.8
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.89,
-        "chg": -5.5
-      },
-      {
-        "symbol": "wlfi",
-        "name": "World Liberty Financial",
-        "price": 0.057373,
-        "chg": -5.1
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.11,
-        "chg": -3.8
+        "price": 8.93,
+        "chg": -4.9
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4270.33,
+        "price": 4309.41,
         "chg": -3.1
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4268.03,
+        "price": 4308.59,
         "chg": -2.8
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.12,
+        "chg": -2.5
+      },
+      {
+        "symbol": "wlfi",
+        "name": "World Liberty Financial",
+        "price": 0.059205,
+        "chg": -2.3
       }
     ]
   }
