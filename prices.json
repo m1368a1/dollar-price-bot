@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-18 19:38",
+  "timestamp": "2026-09-18 22:35",
   "usd_sell": 228600,
   "usd_buy": 228500,
   "gold_18k": 23459070,
-  "btc_usd": 81115.8,
+  "btc_usd": 81161.08,
   "fear_greed": 56,
   "btc_dominance": 58.4,
   "market_cap": 2790000000000.0,
-  "market_volume": 120000000000.0,
-  "market_change": 2.97,
+  "market_volume": 130000000000.0,
+  "market_change": 3.09,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81093,
-      "change_24h": 6.01601,
-      "market_cap": 1629209396537
+      "price": 81204,
+      "change_24h": 6.45994,
+      "market_cap": 1631227273968
     },
     {
       "symbol": "eth",
-      "price": 2630.29,
-      "change_24h": 7.42775,
-      "market_cap": 321202090120
+      "price": 2629.16,
+      "change_24h": 7.69394,
+      "market_cap": 320882697674
     },
     {
       "symbol": "usdt",
-      "price": 0.999624,
-      "change_24h": 0.03241,
-      "market_cap": 183376269091
+      "price": 0.999749,
+      "change_24h": 0.04539,
+      "market_cap": 183399187257
     },
     {
       "symbol": "bnb",
-      "price": 766.17,
-      "change_24h": 5.0107,
-      "market_cap": 102078937514
+      "price": 762.84,
+      "change_24h": 3.95859,
+      "market_cap": 101591967667
     },
     {
       "symbol": "xrp",
       "price": 1.4,
-      "change_24h": 8.3094,
-      "market_cap": 88177261356
+      "change_24h": 8.18322,
+      "market_cap": 87866113468
     },
     {
       "symbol": "usdc",
-      "price": 0.999738,
-      "change_24h": 0.01117,
-      "market_cap": 73939911322
+      "price": 0.999824,
+      "change_24h": 0.01914,
+      "market_cap": 73923367047
     },
     {
       "symbol": "sol",
-      "price": 113.7,
-      "change_24h": 12.76452,
-      "market_cap": 66798698496
+      "price": 113.11,
+      "change_24h": 11.88114,
+      "market_cap": 66429679406
     },
     {
       "symbol": "trx",
-      "price": 0.338287,
-      "change_24h": 1.21033,
-      "market_cap": 32119640078
+      "price": 0.338377,
+      "change_24h": 1.16459,
+      "market_cap": 32137658596
     },
     {
       "symbol": "zec",
-      "price": 1478.21,
-      "change_24h": -0.65682,
-      "market_cap": 25049535768
+      "price": 1498.54,
+      "change_24h": 1.75519,
+      "market_cap": 25381918014
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.031,
-      "change_24h": 0.7234,
-      "market_cap": 23410432447
+      "price": 1.033,
+      "change_24h": 1.23581,
+      "market_cap": 23464960784
     }
   ],
   "signal": {
@@ -80,15 +80,15 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +5.0% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +5.3% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +6.0% در ۲۴ ساعت",
+        "text": "BTC +6.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
@@ -101,172 +101,134 @@
       }
     ],
     "confidence": 52,
-    "updated": "2026-09-18 19:39"
+    "updated": "2026-09-18 22:36"
   },
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 129.86,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 129.86,
+          "tier": "متوسط",
+          "fee": 1.87e-05,
+          "inputs": 6,
+          "outputs": 1,
+          "direction": "unknown"
+        }
+      ]
     }
   },
-  "news_investing": [
-    {
-      "title": "سهام ایالات متحده در پایان هفته پر حادثه که با افزایش نرخ بهره فدرال رزرو و غوغاهای هوش مصنوعی مشخص شد، در هم ریخت",
-      "date": "2026-09-18 19:31",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام شرکت Molson Coors Brewing Co به 37.73 دلار به پایین‌ترین سطح 52 هفته اخیر رسید",
-      "date": "2026-09-18 19:20",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بیت‌کوین پس از شکست مثلث: سطوح زنده به 81 هزار دلار اضافه خرید کرد",
-      "date": "2026-09-18 19:18",
-      "source": "Investing.com"
-    },
-    {
-      "title": "با چشم‌انداز افزایش نرخ‌ها، دلار در برابر ین رشد می‌کند",
-      "date": "2026-09-18 19:18",
-      "source": "Investing.com"
-    }
-  ],
+  "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "S&P 500 Wavers به ​​عنوان 7 تریلیون دلار گزینه منقضی می شود: بازارها بسته می شوند",
+      "title": "افزایش حجم معاملات S&P 500 در روز معاملات آپشن به ارزش ۷ تریلیون دلار: خلاصه بازارها",
       "date": "Thu, 17 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هاورث می‌گوید: نفت همچنان ریسک اصلی است و نرخ‌های بالاتر را افزایش می‌دهد",
+      "title": "سهام شخصی، اوراق قرضه دولتی Trim: مک‌وی از KKR",
       "date": "Fri, 18 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "دلار در چشم انداز نرخ بالاتر به بهترین هفته از ژوئن رسیده است",
+      "title": "دلار با چشم‌انداز نرخ بهره بالاتر، بهترین هفته خود را از ژوئن تاکنون ثبت کرد",
       "date": "Fri, 18 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "McVey KKR از بازارهای خصوصی به عنوان پرچین های سنتی در حال فروپاشی است",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۸ سپتامبر",
+      "date": "Thu, 17 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "هاورث می‌گوید نفت همچنان ریسک اصلی افزایش نرخ بهره است",
       "date": "Fri, 18 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سرمایه گذاران 1.8 میلیارد دلار از بازار Muni با افزایش رکود بازده خارج می کنند",
-      "date": "Fri, 18 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سود، نه فدرال رزرو، سهام را هدایت می کند: لاول UBS",
+      "title": "مک‌وی از KKR در حالی که پوشش ریسک سنتی در حال فروپاشی است، از بازارهای خصوصی حمایت می‌کند",
       "date": "Fri, 18 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام ایالات متحده در پایان هفته پر حادثه که با افزایش نرخ بهره فدرال رزرو و غوغاهای هوش مصنوعی مشخص شد، در هم ریخت",
-      "date": "2026-09-18 19:31",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام شرکت Molson Coors Brewing Co به 37.73 دلار به پایین‌ترین سطح 52 هفته اخیر رسید",
-      "date": "2026-09-18 19:20",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بیت‌کوین پس از شکست مثلث: سطوح زنده به 81 هزار دلار اضافه خرید کرد",
-      "date": "2026-09-18 19:18",
-      "source": "Investing.com"
-    },
-    {
-      "title": "با چشم‌انداز افزایش نرخ‌ها، دلار در برابر ین رشد می‌کند",
-      "date": "2026-09-18 19:18",
-      "source": "Investing.com"
-    },
-    {
-      "title": "S&P 500 Wavers به ​​عنوان 7 تریلیون دلار گزینه منقضی می شود: بازارها بسته می شوند",
+      "title": "افزایش حجم معاملات S&P 500 در روز معاملات آپشن به ارزش ۷ تریلیون دلار: خلاصه بازارها",
       "date": "Thu, 17 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هاورث می‌گوید: نفت همچنان ریسک اصلی است و نرخ‌های بالاتر را افزایش می‌دهد",
+      "title": "سهام شخصی، اوراق قرضه دولتی Trim: مک‌وی از KKR",
       "date": "Fri, 18 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "دلار در چشم انداز نرخ بالاتر به بهترین هفته از ژوئن رسیده است",
+      "title": "دلار با چشم‌انداز نرخ بهره بالاتر، بهترین هفته خود را از ژوئن تاکنون ثبت کرد",
       "date": "Fri, 18 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "McVey KKR از بازارهای خصوصی به عنوان پرچین های سنتی در حال فروپاشی است",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۸ سپتامبر",
+      "date": "Thu, 17 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "هاورث می‌گوید نفت همچنان ریسک اصلی افزایش نرخ بهره است",
       "date": "Fri, 18 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سرمایه گذاران 1.8 میلیارد دلار از بازار Muni با افزایش رکود بازده خارج می کنند",
-      "date": "Fri, 18 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سود، نه فدرال رزرو، سهام را هدایت می کند: لاول UBS",
+      "title": "مک‌وی از KKR در حالی که پوشش ریسک سنتی در حال فروپاشی است، از بازارهای خصوصی حمایت می‌کند",
       "date": "Fri, 18 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-18 19:38",
+    "updated": "2026-09-18 22:35",
     "gainers_24h": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.72,
-        "chg": 24.27
+        "price": 3.73,
+        "chg": 22.99
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.96,
-        "chg": 17.65
+        "price": 8.78,
+        "chg": 15.0
+      },
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 263.12,
+        "chg": 13.47
+      },
+      {
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.225351,
+        "chg": 12.27
       },
       {
         "symbol": "sol",
         "name": "Solana",
-        "price": 113.7,
-        "chg": 12.76
-      },
-      {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00440316,
-        "chg": 12.2
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 91.85,
-        "chg": 11.07
+        "price": 113.11,
+        "chg": 11.88
       }
     ],
     "losers_24h": [
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1478.21,
-        "chg": -0.66
-      },
-      {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.88,
-        "chg": -0.41
+        "price": 8.91,
+        "chg": -0.1
       },
       {
         "symbol": "usyc",
@@ -275,68 +237,74 @@
         "chg": 0.03
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.031,
-        "chg": 0.72
-      },
-      {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4377.06,
-        "chg": 0.84
+        "price": 4376.84,
+        "chg": 0.73
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.338377,
+        "chg": 1.16
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.033,
+        "chg": 1.24
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.72,
-        "chg": 45.6
+        "price": 3.73,
+        "chg": 52.1
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.96,
-        "chg": 45.4
+        "price": 8.78,
+        "chg": 48.4
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1478.21,
-        "chg": 23.6
+        "price": 1498.54,
+        "chg": 26.4
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00440316,
-        "chg": 16.6
+        "price": 0.00435751,
+        "chg": 22.6
       },
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.32,
-        "chg": 12.9
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.397356,
+        "chg": 13.6
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0135139,
-        "chg": -16.4
+        "price": 0.01345247,
+        "chg": -13.3
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.88,
-        "chg": -2.9
+        "price": 8.91,
+        "chg": -2.7
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.031,
-        "chg": 0.1
+        "price": 1.033,
+        "chg": -0.3
       },
       {
         "symbol": "usyc",
@@ -345,62 +313,62 @@
         "chg": 0.1
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.338287,
-        "chg": 0.4
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.38,
+        "chg": 0.7
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1478.21,
-        "chg": 163.1
+        "price": 1498.54,
+        "chg": 166.8
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.96,
-        "chg": 152.0
+        "price": 8.78,
+        "chg": 147.5
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.72,
-        "chg": 120.3
+        "price": 3.73,
+        "chg": 118.7
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 138.35,
-        "chg": 49.1
+        "price": 137.99,
+        "chg": 45.9
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 91.85,
-        "chg": 46.4
+        "symbol": "dot",
+        "name": "Polkadot",
+        "price": 1.14,
+        "chg": 44.5
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.88,
-        "chg": -4.3
+        "price": 8.91,
+        "chg": -4.0
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0135139,
-        "chg": -3.3
+        "price": 0.01345247,
+        "chg": -3.6
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4377.06,
-        "chg": -1.9
+        "price": 4376.84,
+        "chg": -2.7
       },
       {
         "symbol": "usyc",
@@ -409,10 +377,10 @@
         "chg": 0.3
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.338287,
-        "chg": 1.7
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.38,
+        "chg": 0.8
       }
     ]
   }
