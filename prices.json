@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-19 11:03",
-  "usd_sell": 230800,
-  "usd_buy": 230700,
-  "gold_18k": 23846899,
-  "btc_usd": 81194.64,
+  "timestamp": "2026-09-19 14:27",
+  "usd_sell": 231700,
+  "usd_buy": 231600,
+  "gold_18k": 23996952,
+  "btc_usd": 81483.93,
   "fear_greed": 71,
   "btc_dominance": 58.3,
-  "market_cap": 2790000000000.0,
-  "market_volume": 120000000000.0,
-  "market_change": 0.75,
+  "market_cap": 2800000000000.0,
+  "market_volume": 100000000000.0,
+  "market_change": -0.52,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81192,
-      "change_24h": 3.78769,
-      "market_cap": 1630866761999
+      "price": 81449,
+      "change_24h": 0.90537,
+      "market_cap": 1636036729549
     },
     {
       "symbol": "eth",
-      "price": 2637.47,
-      "change_24h": 4.95502,
-      "market_cap": 321934370325
+      "price": 2641.38,
+      "change_24h": 2.6848,
+      "market_cap": 322433509604
     },
     {
       "symbol": "usdt",
-      "price": 0.999634,
-      "change_24h": 0.04651,
-      "market_cap": 183317542816
+      "price": 0.999603,
+      "change_24h": 0.02075,
+      "market_cap": 183309160940
     },
     {
       "symbol": "bnb",
-      "price": 765.02,
-      "change_24h": 1.66951,
-      "market_cap": 101870677363
+      "price": 772.27,
+      "change_24h": 1.68266,
+      "market_cap": 102854065912
     },
     {
       "symbol": "xrp",
-      "price": 1.42,
-      "change_24h": 6.62273,
-      "market_cap": 89205242258
+      "price": 1.45,
+      "change_24h": 5.48937,
+      "market_cap": 91167472716
     },
     {
       "symbol": "usdc",
-      "price": 0.999733,
-      "change_24h": 0.02226,
-      "market_cap": 74263488630
+      "price": 0.999717,
+      "change_24h": 0.00849,
+      "market_cap": 74238626950
     },
     {
       "symbol": "sol",
-      "price": 111.64,
-      "change_24h": 5.16836,
-      "market_cap": 65566388214
+      "price": 111.91,
+      "change_24h": 2.24368,
+      "market_cap": 65723047940
     },
     {
       "symbol": "trx",
-      "price": 0.337591,
-      "change_24h": 0.10335,
-      "market_cap": 32056254719
+      "price": 0.337829,
+      "change_24h": -0.45212,
+      "market_cap": 32074860623
     },
     {
       "symbol": "zec",
-      "price": 1540.72,
-      "change_24h": 4.55694,
-      "market_cap": 26100116619
+      "price": 1528.66,
+      "change_24h": 3.87313,
+      "market_cap": 25900624474
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.03,
-      "change_24h": 0.22507,
-      "market_cap": 23395854250
+      "price": 1.031,
+      "change_24h": 0.22989,
+      "market_cap": 23414524712
     }
   ],
   "signal": {
-    "score": 15,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +5.0% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +5.2% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +3.8% در ۲۴ ساعت",
+        "text": "BTC +1.8% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 55",
+        "text": "معتدل: 56",
         "tone": "neutral"
+      },
+      {
+        "text": "سه سرباز سفید (Three White Soldiers) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
-    "confidence": 57,
-    "updated": "2026-09-19 11:04"
+    "confidence": 60,
+    "updated": "2026-09-19 14:27"
   },
   "whales": {
     "unconfirmed": {
@@ -111,243 +115,274 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "بانک مرکزی اروپا should stay vigilant on تورم but avoid hasty rate حرکات - Stournaras",
+      "date": "2026-09-19 13:54",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "یک بانکدار گلدمن ساکس به برگزاری المپیک در لس‌آنجلس کمک کرد",
+      "title": "Companies Avoid Selling The Bonds Investors Crave: Credit Weekly",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چیزهای عجیب و غریب: نظر سایکس از گلدمن ساکس در مورد توافق المپیک ۲۰۲۸ (پادکست)",
+      "title": "Diesel Prices Keep Pressure on فدرال رزرو and Markets",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "افزایش حجم معاملات S&P 500 در روز معاملات آپشن به ارزش ۷ تریلیون دلار: خلاصه بازارها",
-      "date": "Thu, 17 Sep 2026",
+      "title": "UN Talks Offer a New Opening on ایران War",
+      "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام شخصی، اوراق قرضه دولتی Trim: مک‌وی از KKR",
-      "date": "Fri, 18 Sep 2026",
+      "title": "JPMorgan Sees No Clear Endgame for نفت Markets",
+      "date": "Sat, 19 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "World Running Short of Supertankers Threatens Long-Haul نفت Flow",
+      "date": "Sat, 19 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "A گلدمن M&A Banker Helped Bring the Olympics to Los Angeles",
+      "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "یک بانکدار گلدمن ساکس به برگزاری المپیک در لس‌آنجلس کمک کرد",
+      "title": "بانک مرکزی اروپا should stay vigilant on تورم but avoid hasty rate حرکات - Stournaras",
+      "date": "2026-09-19 13:54",
+      "source": "Investing.com"
+    },
+    {
+      "title": "Companies Avoid Selling The Bonds Investors Crave: Credit Weekly",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چیزهای عجیب و غریب: نظر سایکس از گلدمن ساکس در مورد توافق المپیک ۲۰۲۸ (پادکست)",
+      "title": "Diesel Prices Keep Pressure on فدرال رزرو and Markets",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "افزایش حجم معاملات S&P 500 در روز معاملات آپشن به ارزش ۷ تریلیون دلار: خلاصه بازارها",
-      "date": "Thu, 17 Sep 2026",
+      "title": "UN Talks Offer a New Opening on ایران War",
+      "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام شخصی، اوراق قرضه دولتی Trim: مک‌وی از KKR",
-      "date": "Fri, 18 Sep 2026",
+      "title": "JPMorgan Sees No Clear Endgame for نفت Markets",
+      "date": "Sat, 19 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "World Running Short of Supertankers Threatens Long-Haul نفت Flow",
+      "date": "Sat, 19 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "A گلدمن M&A Banker Helped Bring the Olympics to Los Angeles",
+      "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-19 11:03",
+    "updated": "2026-09-19 14:27",
     "gainers_24h": [
       {
-        "symbol": "morpho",
-        "name": "Morpho",
-        "price": 2.77,
-        "chg": 17.11
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.202153,
+        "chg": 22.48
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.18,
-        "chg": 14.79
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 585.73,
-        "chg": 9.12
+        "price": 9.32,
+        "chg": 15.21
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01392843,
-        "chg": 7.87
+        "price": 0.01395647,
+        "chg": 9.88
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.854998,
-        "chg": 7.71
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.431052,
+        "chg": 8.76
+      },
+      {
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.640805,
+        "chg": 7.47
       }
     ],
     "losers_24h": [
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.0041381,
-        "chg": -3.17
+        "price": 0.00414567,
+        "chg": -3.61
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.89,
-        "chg": -0.29
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.29,
+        "chg": -1.68
       },
       {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4373.35,
-        "chg": -0.18
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 3.59,
+        "chg": -0.5
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.37,
-        "chg": -0.02
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.337829,
+        "chg": -0.45
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.03
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 254.22,
+        "chg": -0.19
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.66,
-        "chg": 54.6
+        "price": 3.59,
+        "chg": 51.5
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.202153,
+        "chg": 41.2
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 9.04,
-        "chg": 42.4
+        "price": 9.0,
+        "chg": 41.1
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1540.72,
-        "chg": 33.8
+        "price": 1528.66,
+        "chg": 32.2
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.18,
-        "chg": 23.0
-      },
-      {
-        "symbol": "morpho",
-        "name": "Morpho",
-        "price": 2.77,
-        "chg": 21.3
+        "price": 9.32,
+        "chg": 25.6
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01392843,
-        "chg": -7.9
+        "price": 0.01395647,
+        "chg": -8.0
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.89,
-        "chg": -2.4
+        "price": 8.9,
+        "chg": -2.5
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.337591,
-        "chg": -0.6
-      },
-      {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.37,
-        "chg": -0.3
+        "price": 0.337829,
+        "chg": -0.9
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.1
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4372.93,
+        "chg": 0.6
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1540.72,
-        "chg": 176.4
+        "price": 1528.66,
+        "chg": 168.5
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 9.04,
-        "chg": 145.1
+        "price": 9.0,
+        "chg": 143.3
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.66,
-        "chg": 109.2
+        "price": 3.59,
+        "chg": 107.2
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.202153,
+        "chg": 101.6
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 143.65,
-        "chg": 47.6
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 585.73,
-        "chg": 39.8
+        "price": 143.16,
+        "chg": 46.6
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.89,
+        "price": 8.9,
         "chg": -4.0
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4373.35,
-        "chg": -2.0
-      },
-      {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.37,
-        "chg": -1.4
+        "price": 4372.93,
+        "chg": -1.9
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.03,
-        "chg": -1.2
+        "price": 1.031,
+        "chg": -1.1
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.3
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.39,
+        "chg": -0.8
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01395647,
+        "chg": -0.1
       }
     ]
   }
