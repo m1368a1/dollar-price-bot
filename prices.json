@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-19 18:03",
-  "usd_sell": 230900,
-  "usd_buy": 230800,
-  "gold_18k": 23881527,
-  "btc_usd": 81457.97,
+  "timestamp": "2026-09-19 20:43",
+  "usd_sell": 230700,
+  "usd_buy": 230600,
+  "gold_18k": 23950782,
+  "btc_usd": 81248.35,
   "fear_greed": 71,
   "btc_dominance": 58.3,
-  "market_cap": 2800000000000.0,
-  "market_volume": 90000000000.0,
-  "market_change": -1.64,
+  "market_cap": 2790000000000.0,
+  "market_volume": 80000000000.0,
+  "market_change": -2.54,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81444,
-      "change_24h": 0.65273,
-      "market_cap": 1636063087555
+      "price": 81240,
+      "change_24h": 0.20748,
+      "market_cap": 1631797378564
     },
     {
       "symbol": "eth",
-      "price": 2644.6,
-      "change_24h": 1.55054,
-      "market_cap": 322902073426
+      "price": 2638.39,
+      "change_24h": 0.23696,
+      "market_cap": 321981126457
     },
     {
       "symbol": "usdt",
-      "price": 0.999656,
-      "change_24h": 0.00704,
-      "market_cap": 183319855457
+      "price": 0.999636,
+      "change_24h": -0.00967,
+      "market_cap": 183319075310
     },
     {
       "symbol": "bnb",
-      "price": 762.8,
-      "change_24h": 0.19982,
-      "market_cap": 101542004862
+      "price": 762.16,
+      "change_24h": -0.31696,
+      "market_cap": 101481562995
     },
     {
       "symbol": "xrp",
       "price": 1.43,
-      "change_24h": 2.81809,
-      "market_cap": 89720220190
+      "change_24h": 1.7671,
+      "market_cap": 89886576572
     },
     {
       "symbol": "usdc",
-      "price": 0.999738,
-      "change_24h": 0.00179,
-      "market_cap": 74163696026
+      "price": 0.999715,
+      "change_24h": -0.01017,
+      "market_cap": 74080423694
     },
     {
       "symbol": "sol",
-      "price": 111.43,
-      "change_24h": -0.8171,
-      "market_cap": 65434842223
+      "price": 111.17,
+      "change_24h": -2.12209,
+      "market_cap": 65294647441
     },
     {
       "symbol": "trx",
-      "price": 0.33889,
-      "change_24h": 0.2161,
-      "market_cap": 32177233891
+      "price": 0.339324,
+      "change_24h": 0.25354,
+      "market_cap": 32215895278
     },
     {
       "symbol": "zec",
-      "price": 1491.03,
-      "change_24h": 2.7413,
-      "market_cap": 25269210154
+      "price": 1477.29,
+      "change_24h": -1.00721,
+      "market_cap": 25021405492
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.033,
-      "change_24h": 0.44692,
-      "market_cap": 23747261108
+      "price": 1.002,
+      "change_24h": -2.86936,
+      "market_cap": 22792493647
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +5.5% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +5.3% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.6% در ۲۴ ساعت",
+        "text": "BTC +0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 56",
+        "text": "معتدل: 55",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-19 18:03"
+    "confidence": 60,
+    "updated": "2026-09-19 20:43"
   },
   "whales": {
     "unconfirmed": {
@@ -113,302 +117,292 @@
   },
   "news_investing": [
     {
-      "title": "سنتکام می‌گوید با موفقیت عملیات پاکسازی مین توسط آمریکا، جریان نفت هرمز به بالاترین حد خود در ۶ ماه گذشته رسید",
-      "date": "2026-09-19 16:22",
+      "title": "سیتی انتظار دارد که فدرال رزرو جنگ‌طلب اقتصاد غیر هوش مصنوعی را کند کند",
+      "date": "2026-09-19 19:46",
       "source": "Investing.com"
     },
     {
-      "title": "چرا فدرال رزرو با شوک عرضه مواجه شد؟",
-      "date": "2026-09-19 15:50",
+      "title": "بیت‌کوین مقاومت ۸۲۱۷۸ دلاری را با RSI overbought: Live سطوح تست می کند",
+      "date": "2026-09-19 19:01",
       "source": "Investing.com"
     },
     {
-      "title": "وزارت دارایی فرانسه پیش‌بینی می‌کند که بدهی این کشور در سال ۲۰۲۶ به رکورد بی‌سابقه‌ای برسد و به نزدیک به ۱۲۰ درصد تولید ناخالص داخلی برسد",
-      "date": "2026-09-19 15:12",
+      "title": "«بسنت» و «هه» وزیر خزانه داری آمریکا روز یکشنبه در مقر جی پی مورگان با یکدیگر دیدار خواهند کرد",
+      "date": "2026-09-19 18:36",
       "source": "Investing.com"
     },
     {
-      "title": "چرا مدل معاملات لحظه‌ای آربیت‌فلو در معاملات مدیریت‌شده‌ی کریپتو برجسته است؟",
-      "date": "2026-09-19 14:31",
+      "title": "ترامپ خواستار طرح‌هایی برای تشکیل «نیروی هوش مصنوعی» فدرال شد",
+      "date": "2026-09-19 18:14",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "فرمانده آمریکایی می‌گوید صادرات نفت هرمز به بالاترین حد خود در شش ماه گذشته رسیده است",
+      "title": "فرمانده آمریکایی می گوید محموله های نفتی هرمز به بالاترین حد خود در شش ماه گذشته رسید",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هفته‌نامه کردیت: شرکت‌ها از فروش اوراق قرضه‌ای که سرمایه‌گذاران آرزویش را دارند، خودداری می‌کنند",
+      "title": "شرکت‌ها از فروش اوراق قرضه‌ای که سرمایه‌گذاران آرزو دارند اجتناب می‌کنند: اعتبار هفتگی",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "قیمت دیزل همچنان بر فدرال رزرو و بازارها فشار می‌آورد",
+      "title": "قیمت گازوئیل بر فدرال رزرو و بازارها فشار می آورد",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "مذاکرات سازمان ملل، دریچه جدیدی به روی جنگ ایران می‌گشاید",
+      "title": "مذاکرات سازمان ملل گشایش جدیدی در مورد جنگ ایران ارائه می دهد",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "جی‌پی‌مورگان پایان روشنی برای بازارهای نفت نمی‌بیند",
-      "date": "Sat, 19 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کمبود ابرنفتکش‌ها در جهان، جریان نفت در مسیرهای طولانی را تهدید می‌کند",
+      "title": "جی پی مورگان هیچ پایان بازی روشنی برای بازارهای نفت نمی بیند",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سنتکام می‌گوید با موفقیت عملیات پاکسازی مین توسط آمریکا، جریان نفت هرمز به بالاترین حد خود در ۶ ماه گذشته رسید",
-      "date": "2026-09-19 16:22",
+      "title": "سیتی انتظار دارد که فدرال رزرو جنگ‌طلب اقتصاد غیر هوش مصنوعی را کند کند",
+      "date": "2026-09-19 19:46",
       "source": "Investing.com"
     },
     {
-      "title": "چرا فدرال رزرو با شوک عرضه مواجه شد؟",
-      "date": "2026-09-19 15:50",
+      "title": "بیت‌کوین مقاومت ۸۲۱۷۸ دلاری را با RSI overbought: Live سطوح تست می کند",
+      "date": "2026-09-19 19:01",
       "source": "Investing.com"
     },
     {
-      "title": "وزارت دارایی فرانسه پیش‌بینی می‌کند که بدهی این کشور در سال ۲۰۲۶ به رکورد بی‌سابقه‌ای برسد و به نزدیک به ۱۲۰ درصد تولید ناخالص داخلی برسد",
-      "date": "2026-09-19 15:12",
+      "title": "«بسنت» و «هه» وزیر خزانه داری آمریکا روز یکشنبه در مقر جی پی مورگان با یکدیگر دیدار خواهند کرد",
+      "date": "2026-09-19 18:36",
       "source": "Investing.com"
     },
     {
-      "title": "چرا مدل معاملات لحظه‌ای آربیت‌فلو در معاملات مدیریت‌شده‌ی کریپتو برجسته است؟",
-      "date": "2026-09-19 14:31",
+      "title": "ترامپ خواستار طرح‌هایی برای تشکیل «نیروی هوش مصنوعی» فدرال شد",
+      "date": "2026-09-19 18:14",
       "source": "Investing.com"
     },
     {
-      "title": "فرمانده آمریکایی می‌گوید صادرات نفت هرمز به بالاترین حد خود در شش ماه گذشته رسیده است",
+      "title": "فرمانده آمریکایی می گوید محموله های نفتی هرمز به بالاترین حد خود در شش ماه گذشته رسید",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هفته‌نامه کردیت: شرکت‌ها از فروش اوراق قرضه‌ای که سرمایه‌گذاران آرزویش را دارند، خودداری می‌کنند",
+      "title": "شرکت‌ها از فروش اوراق قرضه‌ای که سرمایه‌گذاران آرزو دارند اجتناب می‌کنند: اعتبار هفتگی",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "قیمت دیزل همچنان بر فدرال رزرو و بازارها فشار می‌آورد",
+      "title": "قیمت گازوئیل بر فدرال رزرو و بازارها فشار می آورد",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "مذاکرات سازمان ملل، دریچه جدیدی به روی جنگ ایران می‌گشاید",
+      "title": "مذاکرات سازمان ملل گشایش جدیدی در مورد جنگ ایران ارائه می دهد",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "جی‌پی‌مورگان پایان روشنی برای بازارهای نفت نمی‌بیند",
-      "date": "Sat, 19 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کمبود ابرنفتکش‌ها در جهان، جریان نفت در مسیرهای طولانی را تهدید می‌کند",
+      "title": "جی پی مورگان هیچ پایان بازی روشنی برای بازارهای نفت نمی بیند",
       "date": "Sat, 19 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-19 18:03",
+    "updated": "2026-09-19 20:43",
     "gainers_24h": [
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.200953,
-        "chg": 21.89
+        "price": 0.207718,
+        "chg": 21.65
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.66,
-        "chg": 18.93
+        "price": 9.68,
+        "chg": 17.43
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.46,
-        "chg": 9.86
-      },
-      {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.435888,
-        "chg": 9.02
+        "price": 1.47,
+        "chg": 12.13
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.860685,
-        "chg": 7.25
+        "price": 0.87105,
+        "chg": 7.07
+      },
+      {
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.4222,
+        "chg": 5.9
       }
     ],
     "losers_24h": [
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 3.66,
-        "chg": -4.18
-      },
-      {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00415488,
-        "chg": -3.64
+        "price": 0.00419187,
+        "chg": -4.48
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.69,
-        "chg": -2.0
+        "price": 8.66,
+        "chg": -4.43
       },
       {
-        "symbol": "sol",
-        "name": "Solana",
-        "price": 111.43,
-        "chg": -0.82
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 3.55,
+        "chg": -3.77
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 552.28,
-        "chg": -0.71
+        "price": 541.76,
+        "chg": -3.37
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.002,
+        "chg": -2.87
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.66,
-        "chg": 51.8
+        "price": 3.55,
+        "chg": 49.3
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.200953,
-        "chg": 40.4
+        "price": 0.207718,
+        "chg": 45.2
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.69,
-        "chg": 36.2
+        "price": 8.66,
+        "chg": 38.2
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1491.03,
-        "chg": 30.7
+        "price": 1477.29,
+        "chg": 31.6
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.66,
-        "chg": 30.4
+        "price": 9.68,
+        "chg": 30.2
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01395097,
-        "chg": -7.2
+        "price": 0.01386705,
+        "chg": -11.0
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.93,
-        "chg": -1.9
+        "price": 8.9,
+        "chg": -2.1
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.33889,
-        "chg": -0.4
+        "price": 0.339324,
+        "chg": -0.1
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.002,
+        "chg": -0.1
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.1
-      },
-      {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.39,
-        "chg": 0.5
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1491.03,
-        "chg": 153.5
+        "price": 1477.29,
+        "chg": 163.4
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.69,
-        "chg": 131.7
+        "price": 8.66,
+        "chg": 134.7
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.66,
-        "chg": 108.0
+        "price": 3.55,
+        "chg": 104.6
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.200953,
-        "chg": 94.8
+        "price": 0.207718,
+        "chg": 91.3
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 142.63,
-        "chg": 46.5
+        "price": 142.26,
+        "chg": 47.5
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.93,
-        "chg": -3.8
+        "price": 8.9,
+        "chg": -4.0
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4374.36,
-        "chg": -2.6
+        "price": 4372.67,
+        "chg": -2.8
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.033,
-        "chg": -1.6
+        "price": 1.002,
+        "chg": -2.5
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.39,
-        "chg": -0.9
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01386705,
+        "chg": -0.1
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.33889,
-        "chg": -0.2
+        "price": 0.339324,
+        "chg": 0.1
       }
     ]
   }
