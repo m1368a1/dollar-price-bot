@@ -1,73 +1,73 @@
 {
-  "timestamp": "2026-09-19 23:08",
+  "timestamp": "2026-09-20 01:12",
   "usd_sell": 230700,
   "usd_buy": 230600,
   "gold_18k": 23950782,
-  "btc_usd": 81229.36,
+  "btc_usd": 81202.13,
   "fear_greed": 71,
   "btc_dominance": 58.9,
   "market_cap": 2770000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -3.35,
+  "market_change": -3.76,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81230,
-      "change_24h": 0.16774,
-      "market_cap": 1631546819328
+      "price": 81223,
+      "change_24h": -0.1262,
+      "market_cap": 1631708163158
     },
     {
       "symbol": "eth",
-      "price": 2630.76,
-      "change_24h": 0.59847,
-      "market_cap": 321070257821
+      "price": 2623.87,
+      "change_24h": 0.36342,
+      "market_cap": 320340037851
     },
     {
       "symbol": "usdt",
-      "price": 0.999568,
-      "change_24h": -0.01503,
-      "market_cap": 183304770019
+      "price": 0.999632,
+      "change_24h": -0.00644,
+      "market_cap": 183316467432
     },
     {
       "symbol": "bnb",
-      "price": 761.65,
-      "change_24h": -0.14467,
-      "market_cap": 101424705720
+      "price": 763.0,
+      "change_24h": 0.07253,
+      "market_cap": 101594688478
     },
     {
       "symbol": "xrp",
-      "price": 1.42,
-      "change_24h": 1.36692,
-      "market_cap": 88972714971
+      "price": 1.4,
+      "change_24h": -0.22113,
+      "market_cap": 88217208202
     },
     {
       "symbol": "usdc",
-      "price": 0.999675,
-      "change_24h": -0.01097,
-      "market_cap": 74076534135
+      "price": 0.999708,
+      "change_24h": -0.00588,
+      "market_cap": 74230444939
     },
     {
       "symbol": "sol",
-      "price": 110.66,
-      "change_24h": -2.27214,
-      "market_cap": 64969916183
+      "price": 110.67,
+      "change_24h": -2.4131,
+      "market_cap": 65024390978
     },
     {
       "symbol": "trx",
-      "price": 0.340509,
-      "change_24h": 0.62486,
-      "market_cap": 32338565514
+      "price": 0.340035,
+      "change_24h": 0.49043,
+      "market_cap": 32284854540
     },
     {
       "symbol": "zec",
-      "price": 1476.66,
-      "change_24h": -6.63236,
-      "market_cap": 25008724502
+      "price": 1471.86,
+      "change_24h": -6.8007,
+      "market_cap": 25029434115
     },
     {
       "symbol": "figr_heloc",
       "price": 1.017,
-      "change_24h": -1.6126,
+      "change_24h": -1.49295,
       "market_cap": 23140466333
     }
   ],
@@ -80,55 +80,46 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +5.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +5.1% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.1% در ۲۴ ساعت",
+        "text": "BTC -0.5% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 55",
+        "text": "معتدل: 53",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-19 23:09"
+    "updated": "2026-09-20 01:12"
   },
   "whales": {
     "unconfirmed": {
-      "score": 29,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 1379.51,
-      "mega_whales": 1,
+      "count": 0,
+      "total_btc": 0,
+      "mega_whales": 0,
       "large_whales": 0,
       "medium_whales": 0,
-      "top": [
-        {
-          "btc": 1379.51,
-          "tier": "بسیار بزرگ",
-          "fee": 7.76e-06,
-          "inputs": 1,
-          "outputs": 2,
-          "direction": "unknown"
-        }
-      ]
+      "top": []
     }
   },
   "news_investing": [
     {
-      "title": "سیتی انتظار دارد که فدرال رزرو جنگ‌طلب اقتصاد غیر هوش مصنوعی را کند کند",
-      "date": "2026-09-19 19:46",
+      "title": "رودریگز، رهبر ونزوئلا با شرکت نفت فرانسوی توتال انرژی، قرارداد امضا کرد",
+      "date": "2026-09-19 23:24",
       "source": "Investing.com"
     },
     {
-      "title": "بیت‌کوین مقاومت ۸۲۱۷۸ دلاری را با RSI overbought: Live سطوح تست می کند",
-      "date": "2026-09-19 19:01",
+      "title": "سیتی انتظار دارد که فدرال رزرو آمریکا اقتصاد غیر هوش مصنوعی را کند کند",
+      "date": "2026-09-19 19:46",
       "source": "Investing.com"
     }
   ],
@@ -161,13 +152,13 @@
   ],
   "news": [
     {
-      "title": "سیتی انتظار دارد که فدرال رزرو جنگ‌طلب اقتصاد غیر هوش مصنوعی را کند کند",
-      "date": "2026-09-19 19:46",
+      "title": "رودریگز، رهبر ونزوئلا با شرکت نفت فرانسوی توتال انرژی، قرارداد امضا کرد",
+      "date": "2026-09-19 23:24",
       "source": "Investing.com"
     },
     {
-      "title": "بیت‌کوین مقاومت ۸۲۱۷۸ دلاری را با RSI overbought: Live سطوح تست می کند",
-      "date": "2026-09-19 19:01",
+      "title": "سیتی انتظار دارد که فدرال رزرو آمریکا اقتصاد غیر هوش مصنوعی را کند کند",
+      "date": "2026-09-19 19:46",
       "source": "Investing.com"
     },
     {
@@ -197,179 +188,179 @@
     }
   ],
   "trends": {
-    "updated": "2026-09-19 23:08",
+    "updated": "2026-09-20 01:12",
     "gainers_24h": [
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.204106,
-        "chg": 21.52
-      },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.79,
-        "chg": 19.68
+        "price": 10.01,
+        "chg": 20.27
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.207185,
+        "chg": 19.85
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.52,
-        "chg": 16.45
+        "price": 1.53,
+        "chg": 17.39
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 265.21,
-        "chg": 6.64
+        "price": 266.07,
+        "chg": 5.36
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.866204,
-        "chg": 6.43
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.083424,
+        "chg": 5.23
       }
     ],
     "losers_24h": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1476.66,
-        "chg": -6.63
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 546.31,
-        "chg": -3.89
+        "price": 1471.86,
+        "chg": -6.8
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.62,
-        "chg": -3.59
+        "price": 3.57,
+        "chg": -5.71
       },
       {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 253.94,
-        "chg": -2.96
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 541.24,
+        "chg": -5.23
       },
       {
-        "symbol": "sol",
-        "name": "Solana",
-        "price": 110.66,
-        "chg": -2.27
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.108217,
+        "chg": -3.3
+      },
+      {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.762014,
+        "chg": -2.49
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.62,
-        "chg": 53.6
+        "price": 3.57,
+        "chg": 49.6
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.204106,
-        "chg": 43.1
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 8.64,
-        "chg": 35.8
+        "price": 0.207185,
+        "chg": 45.8
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.79,
-        "chg": 32.3
+        "price": 10.01,
+        "chg": 40.3
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 8.77,
+        "chg": 35.9
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1476.66,
-        "chg": 31.6
+        "price": 1471.86,
+        "chg": 31.3
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01375419,
-        "chg": -13.1
+        "price": 0.01371616,
+        "chg": -12.8
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.9,
-        "chg": -2.7
+        "price": 8.91,
+        "chg": -2.5
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.059381,
-        "chg": -0.5
+        "price": 0.059961,
+        "chg": -0.9
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.38,
-        "chg": -0.3
-      },
-      {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.340509,
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
         "chg": 0.1
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4373.31,
+        "chg": 0.5
       }
     ],
     "gainers_30d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1476.66,
-        "chg": 158.6
+        "price": 1471.86,
+        "chg": 158.9
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.64,
-        "chg": 132.2
+        "price": 8.77,
+        "chg": 130.1
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.62,
-        "chg": 106.3
+        "price": 3.57,
+        "chg": 100.6
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.204106,
-        "chg": 78.7
+        "price": 0.207185,
+        "chg": 77.7
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 141.64,
-        "chg": 44.5
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 10.01,
+        "chg": 42.4
       }
     ],
     "losers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.9,
-        "chg": -4.2
+        "price": 8.91,
+        "chg": -4.0
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4374.06,
-        "chg": -2.7
+        "price": 4373.31,
+        "chg": -2.9
       },
       {
         "symbol": "figr_heloc",
@@ -380,14 +371,14 @@
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01375419,
-        "chg": -1.1
+        "price": 0.01371616,
+        "chg": -1.0
       },
       {
         "symbol": "gram",
         "name": "Gram (prev. Toncoin)",
         "price": 1.38,
-        "chg": -0.8
+        "chg": -0.9
       }
     ]
   }
