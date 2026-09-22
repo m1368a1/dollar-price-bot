@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-21 23:18",
-  "usd_sell": 229600,
-  "usd_buy": 229500,
+  "timestamp": "2026-09-22 05:00",
+  "usd_sell": 229800,
+  "usd_buy": 229700,
   "gold_18k": 23731474,
-  "btc_usd": 86579.26,
-  "fear_greed": 70,
+  "btc_usd": 85412.48,
+  "fear_greed": 78,
   "btc_dominance": 58.8,
-  "market_cap": 2950000000000.0,
+  "market_cap": 2900000000000.0,
   "market_volume": 160000000000.0,
-  "market_change": 2.69,
+  "market_change": 0.89,
   "top10": [
     {
       "symbol": "btc",
-      "price": 86603,
-      "change_24h": 6.67913,
-      "market_cap": 1740227706695
+      "price": 85436,
+      "change_24h": 4.97541,
+      "market_cap": 1716104191632
     },
     {
       "symbol": "eth",
-      "price": 2782.41,
-      "change_24h": 5.55116,
-      "market_cap": 339843874159
+      "price": 2728.11,
+      "change_24h": 2.42998,
+      "market_cap": 332987189579
     },
     {
       "symbol": "usdt",
-      "price": 0.999777,
-      "change_24h": 0.0053,
-      "market_cap": 183343498228
+      "price": 0.999745,
+      "change_24h": 0.00662,
+      "market_cap": 183334434503
     },
     {
       "symbol": "bnb",
-      "price": 802.28,
-      "change_24h": 3.64646,
-      "market_cap": 106882641386
+      "price": 786.69,
+      "change_24h": 1.67893,
+      "market_cap": 104746074707
     },
     {
       "symbol": "xrp",
-      "price": 1.56,
-      "change_24h": 10.38805,
-      "market_cap": 97882459245
+      "price": 1.51,
+      "change_24h": 6.52954,
+      "market_cap": 94977559419
     },
     {
       "symbol": "usdc",
-      "price": 0.999857,
-      "change_24h": 0.01053,
-      "market_cap": 74665317287
+      "price": 0.99982,
+      "change_24h": 0.01316,
+      "market_cap": 74736279380
     },
     {
       "symbol": "sol",
-      "price": 119.44,
-      "change_24h": 7.93006,
-      "market_cap": 70196941187
+      "price": 116.35,
+      "change_24h": 4.41017,
+      "market_cap": 68318666352
     },
     {
       "symbol": "trx",
-      "price": 0.344431,
-      "change_24h": 0.52154,
-      "market_cap": 32709074322
+      "price": 0.348643,
+      "change_24h": 1.54037,
+      "market_cap": 33107335824
     },
     {
       "symbol": "zec",
-      "price": 1471.8,
-      "change_24h": -2.48921,
-      "market_cap": 24917103018
+      "price": 1462.72,
+      "change_24h": -4.28561,
+      "market_cap": 24785885410
     },
     {
       "symbol": "figr_heloc",
       "price": 1.013,
-      "change_24h": null,
-      "market_cap": 23055460298
+      "change_24h": 1.27815,
+      "market_cap": 23062145546
     }
   ],
   "signal": {
@@ -76,15 +76,15 @@
     "label": "🟢 سیگنال خرید",
     "factors": [
       {
-        "text": "وضعیت: 70/100",
+        "text": "وضعیت: 78/100",
         "tone": "neutral"
       },
       {
-        "text": "BTC +10.3% در 7 روز",
+        "text": "BTC +10.2% در 7 روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +6.7% در ۲۴ ساعت",
+        "text": "BTC +4.9% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 70",
+        "text": "معتدل: 68",
         "tone": "neutral"
       }
     ],
     "confidence": 70,
-    "updated": "2026-09-21 23:19"
+    "updated": "2026-09-22 05:00"
   },
   "whales": {
     "unconfirmed": {
@@ -111,187 +111,188 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "بانک مرکزی استرالیا می گوید خطرات تورمی ممکن است تحقق یابد",
+      "date": "2026-09-22 04:42",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۲ سپتامبر",
+      "title": "بورس‌های آسیایی در خوش‌بینی هوش مصنوعی، پیشرفت‌های نفتی: بسته‌بندی بازارها افزایش یافت",
       "date": "Mon, 21 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام آسیایی با خوش‌بینی به فناوری و کاهش قیمت نفت، رشد خواهند کرد: خلاصه بازارها",
+      "title": "واردات طلای چین به بیش از 1000 تن بر اساس تقاضای سرمایه گذاری قوی",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 22 شهریور",
       "date": "Mon, 21 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آمریکا ۵ میلیارد دلار برای بازسازی خاورمیانه در نظر گرفته است",
-      "date": "Mon, 21 Sep 2026",
+      "title": "SEBI هند از هوش مصنوعی به معامله گران پلیس، مبارزه با تقلب در بازار استفاده می کند",
+      "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با افزایش جریان نفت در تنگه هرمز، قیمت نفت به نزدیک ۱۰۰ دلار رسید",
-      "date": "Mon, 21 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پروژه مرکز داده CoreWeave-Tied عرضه اوراق قرضه بی‌ارزش را آغاز می‌کند",
-      "date": "Mon, 21 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Strategy Makes First Purchase of بیت‌کوین Since August",
-      "date": "Mon, 21 Sep 2026",
+      "title": "فروشگاه های Prop از بازار 2 تریلیون دلاری مشتقات NSE عقب نشینی می کنند",
+      "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۲ سپتامبر",
+      "title": "بانک مرکزی استرالیا می گوید خطرات تورمی ممکن است تحقق یابد",
+      "date": "2026-09-22 04:42",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بورس‌های آسیایی در خوش‌بینی هوش مصنوعی، پیشرفت‌های نفتی: بسته‌بندی بازارها افزایش یافت",
       "date": "Mon, 21 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام آسیایی با خوش‌بینی به فناوری و کاهش قیمت نفت، رشد خواهند کرد: خلاصه بازارها",
+      "title": "واردات طلای چین به بیش از 1000 تن بر اساس تقاضای سرمایه گذاری قوی",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 22 شهریور",
       "date": "Mon, 21 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آمریکا ۵ میلیارد دلار برای بازسازی خاورمیانه در نظر گرفته است",
-      "date": "Mon, 21 Sep 2026",
+      "title": "SEBI هند از هوش مصنوعی به معامله گران پلیس، مبارزه با تقلب در بازار استفاده می کند",
+      "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با افزایش جریان نفت در تنگه هرمز، قیمت نفت به نزدیک ۱۰۰ دلار رسید",
-      "date": "Mon, 21 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پروژه مرکز داده CoreWeave-Tied عرضه اوراق قرضه بی‌ارزش را آغاز می‌کند",
-      "date": "Mon, 21 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Strategy Makes First Purchase of بیت‌کوین Since August",
-      "date": "Mon, 21 Sep 2026",
+      "title": "فروشگاه های Prop از بازار 2 تریلیون دلاری مشتقات NSE عقب نشینی می کنند",
+      "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-21 23:18",
+    "updated": "2026-09-22 05:00",
     "gainers_24h": [
+      {
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 5.09e-06,
+        "chg": 27.06
+      },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 313.24,
-        "chg": 19.38
-      },
-      {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 1.036,
-        "chg": 16.42
+        "price": 310.71,
+        "chg": 17.21
       },
       {
         "symbol": "doge",
         "name": "Dogecoin",
-        "price": 0.101254,
-        "chg": 16.1
+        "price": 0.100345,
+        "chg": 13.67
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.821832,
+        "chg": 9.87
       },
       {
         "symbol": "shib",
         "name": "Shiba Inu",
-        "price": 6.08e-06,
-        "chg": 10.95
-      },
-      {
-        "symbol": "cro",
-        "name": "Cronos",
-        "price": 0.066005,
-        "chg": 10.77
+        "price": 6.03e-06,
+        "chg": 9.24
       }
     ],
     "losers_24h": [
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.212546,
-        "chg": -2.84
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1471.8,
-        "chg": -2.49
-      },
-      {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.46,
-        "chg": -1.13
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01399312,
-        "chg": -0.83
+        "price": 1.39,
+        "chg": -9.4
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 11.25,
-        "chg": -0.77
+        "price": 10.83,
+        "chg": -6.42
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1462.72,
+        "chg": -4.29
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01366391,
+        "chg": -3.58
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.29,
+        "chg": -3.03
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.27,
-        "chg": 72.28
+        "price": 4.29,
+        "chg": 79.62
       },
       {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 11.25,
-        "chg": 47.22
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 5.09e-06,
+        "chg": 50.92
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.212546,
-        "chg": 46.34
+        "price": 0.209542,
+        "chg": 47.31
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 10.83,
+        "chg": 45.29
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.036,
-        "chg": 40.49
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 9.03,
-        "chg": 36.97
+        "price": 1.016,
+        "chg": 43.95
       }
     ],
     "losers_7d": [
       {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01366391,
+        "chg": -2.89
+      },
+      {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.013,
-        "chg": -2.74
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01399312,
-        "chg": -2.44
+        "chg": -1.46
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.96,
-        "chg": -0.48
+        "chg": 0.06
       },
       {
         "symbol": "usyc",
@@ -302,40 +303,40 @@
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4362.14,
-        "chg": 1.44
+        "price": 4343.64,
+        "chg": 0.73
       }
     ],
     "gainers_30d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.27,
-        "chg": 128.23
+        "price": 4.29,
+        "chg": 134.47
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 9.03,
-        "chg": 109.49
+        "price": 8.84,
+        "chg": 114.95
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1471.8,
-        "chg": 83.94
+        "price": 1462.72,
+        "chg": 83.56
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.818075,
-        "chg": 83.89
+        "price": 0.821832,
+        "chg": 80.0
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 11.25,
-        "chg": 50.52
+        "price": 10.83,
+        "chg": 47.45
       }
     ],
     "losers_30d": [
@@ -343,31 +344,31 @@
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.96,
-        "chg": -4.75
+        "chg": -5.32
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4362.14,
-        "chg": -4.68
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.118093,
-        "chg": -1.21
+        "price": 4343.64,
+        "chg": -5.16
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 270.79,
-        "chg": -1.13
+        "price": 263.55,
+        "chg": -3.74
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01399312,
-        "chg": -0.45
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.117175,
+        "chg": -1.91
+      },
+      {
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.44,
+        "chg": -1.7
       }
     ]
   }
