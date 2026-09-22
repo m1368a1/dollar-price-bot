@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-22 14:56",
-  "usd_sell": 232100,
-  "usd_buy": 232000,
-  "gold_18k": 23996952,
-  "btc_usd": 86080.38,
+  "timestamp": "2026-09-22 18:56",
+  "usd_sell": 231500,
+  "usd_buy": 231400,
+  "gold_18k": 23927697,
+  "btc_usd": 86532.14,
   "fear_greed": 78,
   "btc_dominance": 58.9,
-  "market_cap": 2920000000000.0,
+  "market_cap": 2940000000000.0,
   "market_volume": 130000000000.0,
-  "market_change": -2.31,
+  "market_change": -1.78,
   "top10": [
     {
       "symbol": "btc",
-      "price": 86044,
-      "change_24h": 0.06964,
-      "market_cap": 1727779534442
+      "price": 86503,
+      "change_24h": 0.55746,
+      "market_cap": 1737452773406
     },
     {
       "symbol": "eth",
-      "price": 2734.03,
-      "change_24h": -0.38323,
-      "market_cap": 333658594246
+      "price": 2750.75,
+      "change_24h": -0.14466,
+      "market_cap": 335747085828
     },
     {
       "symbol": "usdt",
-      "price": 0.999836,
-      "change_24h": 0.01369,
-      "market_cap": 183350817971
+      "price": 0.999899,
+      "change_24h": 0.00117,
+      "market_cap": 183365408915
     },
     {
       "symbol": "bnb",
-      "price": 784.85,
-      "change_24h": -1.65694,
-      "market_cap": 104486146694
+      "price": 787.12,
+      "change_24h": -1.71579,
+      "market_cap": 104810189051
     },
     {
       "symbol": "xrp",
-      "price": 1.56,
-      "change_24h": 3.47246,
-      "market_cap": 97765339863
+      "price": 1.58,
+      "change_24h": 4.83864,
+      "market_cap": 99570272984
     },
     {
       "symbol": "usdc",
-      "price": 0.999903,
-      "change_24h": 0.01203,
-      "market_cap": 74589274336
+      "price": 0.999905,
+      "change_24h": 2e-05,
+      "market_cap": 74833150061
     },
     {
       "symbol": "sol",
-      "price": 116.55,
-      "change_24h": -1.4609,
-      "market_cap": 68446311433
+      "price": 118.18,
+      "change_24h": 0.4377,
+      "market_cap": 69425991434
     },
     {
       "symbol": "trx",
-      "price": 0.341466,
-      "change_24h": -1.03969,
-      "market_cap": 32424385314
+      "price": 0.34165,
+      "change_24h": -0.65637,
+      "market_cap": 32443947627
     },
     {
       "symbol": "zec",
-      "price": 1528.27,
-      "change_24h": 0.19896,
-      "market_cap": 25924346832
+      "price": 1519.34,
+      "change_24h": 2.72181,
+      "market_cap": 25748558704
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.015,
-      "change_24h": 0.0545,
-      "market_cap": 23108651636
+      "price": 1.042,
+      "change_24h": 2.85708,
+      "market_cap": 23925151545
     }
   ],
   "signal": {
@@ -80,7 +80,7 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC +13.4% در 7 روز",
+        "text": "BTC +13.9% در 7 روز",
         "tone": "neutral"
       },
       {
@@ -88,11 +88,11 @@
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 71",
+        "text": "معتدل: 73",
         "tone": "neutral"
       },
       {
@@ -101,307 +101,288 @@
       }
     ],
     "confidence": 72,
-    "updated": "2026-09-22 14:57"
+    "updated": "2026-09-22 18:56"
   },
   "whales": {
     "unconfirmed": {
-      "score": 7,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 191.29,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 191.29,
-          "tier": "متوسط",
-          "fee": 4.755e-05,
-          "inputs": 2,
-          "outputs": 24,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
     {
-      "title": "کالینز فدرال رزرو می گوید که با افزایش ریسک تورم، سیاست سختگیرانه تری لازم است",
-      "date": "2026-09-22 14:39",
-      "source": "Investing.com"
-    },
-    {
-      "title": "SanDisk، Micron در میان سهامداران ارزش بازار در روز سه شنبه",
-      "date": "2026-09-22 14:36",
+      "title": "سهام شرکت Zions Bancorporation Pa ADR به پایین‌ترین حد خود در ۵۲ هفته گذشته یعنی ۱۷.۶۶ دلار رسید",
+      "date": "2026-09-22 18:41",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سهام، اوراق قرضه به عنوان سخنرانی ترامپ در سازمان ملل در کانون توجه: بازارها متزلزل می شوند",
+      "title": "تیم آمریکایی ترامپ روز سه‌شنبه در نیویورک با ایرانیان دیدار کرد",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بارکین از فدرال رزرو هشدار می‌دهد که فشارهای تورمی ممکن است برای عبور زمان‌بر باشند",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام با اشاره ترامپ به مذاکرات آمریکا با ایران افزایش یافت: بازارها بسته شدند",
       "date": "Mon, 21 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "Goldman's Snider انتظار رشد دو رقمی S&P را دارد",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۲ سپتامبر",
+      "date": "Mon, 21 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "شاخص S&P با کاهش قیمت نفت، نزدیک به بالاترین رکورد خود معامله می‌شود",
       "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "در حالی که معامله گران برای سرنخ های مربوط به نرخ فدرال رزرو حرکت نفت را دنبال می کنند، زیان طلا کاهش می یابد",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کالینز فدرال رزرو می گوید افزایش نرخ بهره به دستیابی به هدف تورم کمک می کند",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "گلدمن ساکس در حال مذاکره برای خرید شرکت اعتباری 37 میلیارد دلاری پالمر اسکوئر است",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ویلیامز فدرال رزرو می گوید تسویه خزانه داری زودتر از موعد مقرر حرکت می کند",
+      "title": "ورود بی‌سابقه ETFهای بلک‌راک و ونگارد مونی پس از شکست اوراق قرضه",
       "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "کالینز فدرال رزرو می گوید که با افزایش ریسک تورم، سیاست سختگیرانه تری لازم است",
-      "date": "2026-09-22 14:39",
+      "title": "سهام شرکت Zions Bancorporation Pa ADR به پایین‌ترین حد خود در ۵۲ هفته گذشته یعنی ۱۷.۶۶ دلار رسید",
+      "date": "2026-09-22 18:41",
       "source": "Investing.com"
     },
     {
-      "title": "SanDisk، Micron در میان سهامداران ارزش بازار در روز سه شنبه",
-      "date": "2026-09-22 14:36",
-      "source": "Investing.com"
+      "title": "تیم آمریکایی ترامپ روز سه‌شنبه در نیویورک با ایرانیان دیدار کرد",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "سهام، اوراق قرضه به عنوان سخنرانی ترامپ در سازمان ملل در کانون توجه: بازارها متزلزل می شوند",
+      "title": "بارکین از فدرال رزرو هشدار می‌دهد که فشارهای تورمی ممکن است برای عبور زمان‌بر باشند",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام با اشاره ترامپ به مذاکرات آمریکا با ایران افزایش یافت: بازارها بسته شدند",
       "date": "Mon, 21 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "Goldman's Snider انتظار رشد دو رقمی S&P را دارد",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۲ سپتامبر",
+      "date": "Mon, 21 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "شاخص S&P با کاهش قیمت نفت، نزدیک به بالاترین رکورد خود معامله می‌شود",
       "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "در حالی که معامله گران برای سرنخ های مربوط به نرخ فدرال رزرو حرکت نفت را دنبال می کنند، زیان طلا کاهش می یابد",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کالینز فدرال رزرو می گوید افزایش نرخ بهره به دستیابی به هدف تورم کمک می کند",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "گلدمن ساکس در حال مذاکره برای خرید شرکت اعتباری 37 میلیارد دلاری پالمر اسکوئر است",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ویلیامز فدرال رزرو می گوید تسویه خزانه داری زودتر از موعد مقرر حرکت می کند",
+      "title": "ورود بی‌سابقه ETFهای بلک‌راک و ونگارد مونی پس از شکست اوراق قرضه",
       "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-22 14:56",
+    "updated": "2026-09-22 18:56",
     "gainers_24h": [
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 315.65,
-        "chg": 18.57
+        "price": 339.61,
+        "chg": 28.25
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 315.64,
-        "chg": 10.55
+        "price": 308.21,
+        "chg": 7.69
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.35,
-        "chg": 5.19
+        "price": 4.34,
+        "chg": 7.18
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.096056,
-        "chg": 4.93
+        "price": 0.097085,
+        "chg": 6.65
       },
       {
-        "symbol": "doge",
-        "name": "Dogecoin",
-        "price": 0.099324,
-        "chg": 4.82
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.669137,
+        "chg": 6.32
       }
     ],
     "losers_24h": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.31,
-        "chg": -12.73
+        "price": 1.3,
+        "chg": -12.95
       },
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.207496,
-        "chg": -7.21
-      },
-      {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.426211,
-        "chg": -5.1
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.860376,
+        "chg": -10.09
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01341907,
-        "chg": -5.01
+        "price": 0.01318598,
+        "chg": -5.96
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.99672,
-        "chg": -4.1
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.112884,
+        "chg": -1.86
+      },
+      {
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.433147,
+        "chg": -1.77
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.35,
-        "chg": 86.41
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.207496,
-        "chg": 47.88
+        "price": 4.34,
+        "chg": 86.84
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 315.65,
-        "chg": 46.3
+        "price": 339.61,
+        "chg": 50.37
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 11.01,
-        "chg": 45.95
+        "price": 11.0,
+        "chg": 48.7
+      },
+      {
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 4.91e-06,
+        "chg": 44.16
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.99672,
-        "chg": 43.21
+        "price": 1.008,
+        "chg": 43.43
       }
     ],
     "losers_7d": [
       {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01318598,
+        "chg": -2.84
+      },
+      {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.015,
-        "chg": -1.47
+        "price": 1.042,
+        "chg": -0.34
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
-        "chg": 0.07
-      },
-      {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.98,
-        "chg": 0.08
+        "chg": 0.06
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4325.09,
-        "chg": 1.07
+        "price": 4353.47,
+        "chg": 1.31
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.341466,
-        "chg": 1.48
+        "price": 0.34165,
+        "chg": 1.81
       }
     ],
     "gainers_30d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.35,
-        "chg": 128.83
-      },
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 0.875952,
-        "chg": 107.67
+        "price": 4.34,
+        "chg": 125.75
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.92,
-        "chg": 107.5
+        "price": 9.19,
+        "chg": 101.28
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.860376,
+        "chg": 91.6
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1528.27,
-        "chg": 86.62
+        "price": 1519.34,
+        "chg": 79.89
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 11.01,
-        "chg": 46.15
+        "price": 11.0,
+        "chg": 45.95
       }
     ],
     "losers_30d": [
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00440599,
-        "chg": -15.24
+        "price": 0.00446621,
+        "chg": -14.12
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01318598,
+        "chg": -5.64
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4325.09,
-        "chg": -5.51
+        "price": 4353.47,
+        "chg": -5.34
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.98,
-        "chg": -5.29
+        "chg": -5.25
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.43,
-        "chg": -4.7
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01341907,
-        "chg": -3.67
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.112884,
+        "chg": -4.51
       }
     ]
   }
