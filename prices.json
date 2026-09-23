@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-23 00:36",
-  "usd_sell": 231500,
-  "usd_buy": 231400,
-  "gold_18k": 23927697,
-  "btc_usd": 86507.71,
+  "timestamp": "2026-09-23 06:00",
+  "usd_sell": 231200,
+  "usd_buy": 231100,
+  "gold_18k": 23315942,
+  "btc_usd": 86454.76,
   "fear_greed": 71,
   "btc_dominance": 58.7,
   "market_cap": 2950000000000.0,
   "market_volume": 120000000000.0,
-  "market_change": -2.54,
+  "market_change": -1.05,
   "top10": [
     {
       "symbol": "btc",
-      "price": 86520,
-      "change_24h": 0.12373,
-      "market_cap": 1737827197245
+      "price": 86515,
+      "change_24h": 1.26238,
+      "market_cap": 1737822558857
     },
     {
       "symbol": "eth",
-      "price": 2764.92,
-      "change_24h": -0.28572,
-      "market_cap": 337368010302
+      "price": 2759.28,
+      "change_24h": 0.89953,
+      "market_cap": 336797426262
     },
     {
       "symbol": "usdt",
-      "price": 0.999877,
-      "change_24h": 0.01107,
-      "market_cap": 183444920748
+      "price": 0.999782,
+      "change_24h": 0.01049,
+      "market_cap": 183434638635
     },
     {
       "symbol": "bnb",
-      "price": 791.72,
-      "change_24h": -0.93609,
-      "market_cap": 105417125214
+      "price": 790.55,
+      "change_24h": 0.37146,
+      "market_cap": 105241695157
     },
     {
       "symbol": "xrp",
-      "price": 1.58,
-      "change_24h": 3.18046,
-      "market_cap": 99540729444
+      "price": 1.61,
+      "change_24h": 6.11198,
+      "market_cap": 101044364528
     },
     {
       "symbol": "usdc",
-      "price": 0.999913,
-      "change_24h": 0.00624,
-      "market_cap": 75284775230
+      "price": 0.999853,
+      "change_24h": 0.00837,
+      "market_cap": 75270079402
     },
     {
       "symbol": "sol",
-      "price": 118.97,
-      "change_24h": -0.1112,
-      "market_cap": 69878899690
+      "price": 118.44,
+      "change_24h": 1.25828,
+      "market_cap": 69591403469
     },
     {
       "symbol": "trx",
-      "price": 0.342293,
-      "change_24h": -0.94691,
-      "market_cap": 32497945614
+      "price": 0.343831,
+      "change_24h": -1.37887,
+      "market_cap": 32649043364
     },
     {
       "symbol": "zec",
-      "price": 1617.8,
-      "change_24h": 10.23946,
-      "market_cap": 27415743329
+      "price": 1619.98,
+      "change_24h": 8.88186,
+      "market_cap": 27461724560
     },
     {
       "symbol": "figr_heloc",
       "price": 1.031,
-      "change_24h": 1.79689,
-      "market_cap": 23677269528
+      "change_24h": 1.76216,
+      "market_cap": 23677182505
     }
   ],
   "signal": {
-    "score": 45,
+    "score": 25,
     "label": "🟢 سیگنال خرید",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC +14.3% در 7 روز",
+        "text": "BTC +13.9% در 7 روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.1% در ۲۴ ساعت",
+        "text": "BTC +1.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,14 +94,10 @@
       {
         "text": "معتدل: 72",
         "tone": "neutral"
-      },
-      {
-        "text": "ستاره صبحگاهی (Morning Star) — نشانه صعود",
-        "tone": "bullish"
       }
     ],
-    "confidence": 72,
-    "updated": "2026-09-23 00:36"
+    "confidence": 62,
+    "updated": "2026-09-23 06:01"
   },
   "whales": {
     "unconfirmed": {
@@ -115,103 +111,124 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "کاهش قیمت طلا در پی تقویت دلار و چشم‌انداز نرخ بهره",
+      "date": "2026-09-23 05:37",
+      "source": "Investing.com"
+    },
+    {
+      "title": "شاخص قیمت مصرف‌کننده سنگاپور (شاخص قیمت مصرف‌کننده) طبق انتظار در ماه اوت افزایش یافت، تورم اصلی به بالاترین سطح خود در 2 سال گذشته رسید",
+      "date": "2026-09-23 05:21",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
+    {
+      "title": "افزایش اوراق قرضه و معاملات آتی خزانه‌داری با ادامه روند نزولی نفت: بازارها در هم تنیده شدند",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "فیلیپین به دنبال اوراق قرضه جدید پزو خرده فروشی با سررسید ۲۵ ساله است",
+      "date": "Wed, 23 Sep 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۳ سپتامبر",
       "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام آسیا پس از افزایش سهام شرکت‌های فناوری ایالات متحده، افزایش یافت، نفت کاهش یافت: بازارها بسته شدند",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بانک توسعه آسیا هشدار داد: آسیا تا سال ۲۰۲۷ با فشار تورمی پایدار مواجه خواهد بود",
+      "title": "کریشنان: دور زدن تنگه هرمز جایگزین نفت خلیج فارس نخواهد شد",
       "date": "Wed, 23 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "قیمت طلا با کاهش نگرانی‌ها در مورد مسیر نرخ بهره فدرال رزرو، در پی مذاکرات ایران تثبیت شد",
-      "date": "Tue, 22 Sep 2026",
+      "title": "ترامپ از مذاکرات ایران استقبال کرد، بعید است شی جین پینگ، رئیس جمهور چین، مدیران عامل را به اجلاس بیاورد",
+      "date": "Wed, 23 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هشدار CFTC به بازارهای پیش‌بینی: در شرط‌بندی‌های پرخطر «ذکر» سهیم شوید",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سیسکو تقاضای زیادی برای عرضه جهانی ۱۷ میلیارد دلاری اوراق قرضه دارد",
-      "date": "Tue, 22 Sep 2026",
+      "title": "جون بی لیو از Ten Cap: نفت همچنان ریسک اصلی بازار در دیدار شی و ترامپ است",
+      "date": "Wed, 23 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
+      "title": "کاهش قیمت طلا در پی تقویت دلار و چشم‌انداز نرخ بهره",
+      "date": "2026-09-23 05:37",
+      "source": "Investing.com"
+    },
+    {
+      "title": "شاخص قیمت مصرف‌کننده سنگاپور (شاخص قیمت مصرف‌کننده) طبق انتظار در ماه اوت افزایش یافت، تورم اصلی به بالاترین سطح خود در 2 سال گذشته رسید",
+      "date": "2026-09-23 05:21",
+      "source": "Investing.com"
+    },
+    {
+      "title": "افزایش اوراق قرضه و معاملات آتی خزانه‌داری با ادامه روند نزولی نفت: بازارها در هم تنیده شدند",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "فیلیپین به دنبال اوراق قرضه جدید پزو خرده فروشی با سررسید ۲۵ ساله است",
+      "date": "Wed, 23 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۳ سپتامبر",
       "date": "Tue, 22 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام آسیا پس از افزایش سهام شرکت‌های فناوری ایالات متحده، افزایش یافت، نفت کاهش یافت: بازارها بسته شدند",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بانک توسعه آسیا هشدار داد: آسیا تا سال ۲۰۲۷ با فشار تورمی پایدار مواجه خواهد بود",
+      "title": "کریشنان: دور زدن تنگه هرمز جایگزین نفت خلیج فارس نخواهد شد",
       "date": "Wed, 23 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "قیمت طلا با کاهش نگرانی‌ها در مورد مسیر نرخ بهره فدرال رزرو، در پی مذاکرات ایران تثبیت شد",
-      "date": "Tue, 22 Sep 2026",
+      "title": "ترامپ از مذاکرات ایران استقبال کرد، بعید است شی جین پینگ، رئیس جمهور چین، مدیران عامل را به اجلاس بیاورد",
+      "date": "Wed, 23 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هشدار CFTC به بازارهای پیش‌بینی: در شرط‌بندی‌های پرخطر «ذکر» سهیم شوید",
-      "date": "Tue, 22 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سیسکو تقاضای زیادی برای عرضه جهانی ۱۷ میلیارد دلاری اوراق قرضه دارد",
-      "date": "Tue, 22 Sep 2026",
+      "title": "جون بی لیو از Ten Cap: نفت همچنان ریسک اصلی بازار در دیدار شی و ترامپ است",
+      "date": "Wed, 23 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-23 00:36",
+    "updated": "2026-09-23 06:00",
     "gainers_24h": [
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 345.47,
-        "chg": 28.15
+        "price": 339.83,
+        "chg": 28.23
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.902522,
-        "chg": 15.0
+        "price": 0.928967,
+        "chg": 16.13
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 10.45,
-        "chg": 12.61
+        "price": 10.4,
+        "chg": 15.59
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1617.8,
-        "chg": 10.24
+        "price": 1619.98,
+        "chg": 8.88
       },
       {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.098567,
-        "chg": 5.27
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.688918,
+        "chg": 7.59
       }
     ],
     "losers_24h": [
@@ -219,71 +236,71 @@
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.31,
-        "chg": -8.75
+        "chg": -4.52
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01313713,
-        "chg": -5.76
+        "price": 0.01310241,
+        "chg": -4.24
       },
       {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.43986,
-        "chg": -4.46
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 4.95e-06,
+        "chg": -4.24
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 566.61,
-        "chg": -3.99
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 311.56,
+        "chg": -3.84
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.115331,
-        "chg": -3.72
+        "price": 0.115914,
+        "chg": -2.32
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.38,
-        "chg": 88.12
+        "price": 4.43,
+        "chg": 86.33
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 10.45,
-        "chg": 61.43
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 345.47,
-        "chg": 59.16
-      },
-      {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 11.21,
-        "chg": 55.05
+        "price": 10.4,
+        "chg": 64.61
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.218017,
-        "chg": 54.56
+        "price": 0.21814,
+        "chg": 53.9
+      },
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 339.83,
+        "chg": 53.87
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 11.19,
+        "chg": 52.94
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01313713,
-        "chg": -6.72
+        "price": 0.01310241,
+        "chg": -6.07
       },
       {
         "symbol": "usyc",
@@ -292,86 +309,86 @@
         "chg": 0.06
       },
       {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4334.55,
+        "chg": 0.5
+      },
+      {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.98,
-        "chg": 1.61
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4357.09,
-        "chg": 1.74
+        "chg": 1.23
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.031,
-        "chg": 2.64
+        "chg": 2.77
       }
     ],
     "gainers_30d": [
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 10.45,
-        "chg": 125.28
+        "price": 10.4,
+        "chg": 136.12
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.38,
-        "chg": 117.46
+        "price": 4.43,
+        "chg": 121.05
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 0.902522,
-        "chg": 105.37
+        "price": 0.928967,
+        "chg": 110.25
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1617.8,
-        "chg": 90.31
+        "price": 1619.98,
+        "chg": 93.02
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 11.21,
-        "chg": 48.01
+        "price": 11.19,
+        "chg": 49.39
       }
     ],
     "losers_30d": [
       {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4334.55,
+        "chg": -5.96
+      },
+      {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01313713,
-        "chg": -6.51
+        "price": 0.01310241,
+        "chg": -5.31
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.115914,
+        "chg": -4.34
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.98,
-        "chg": -5.48
+        "chg": -3.74
       },
       {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4357.09,
-        "chg": -4.93
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.115331,
-        "chg": -4.51
-      },
-      {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.47,
-        "chg": -1.57
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.26
       }
     ]
   }
