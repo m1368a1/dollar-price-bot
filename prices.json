@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-09-24 15:08",
-  "usd_sell": 234500,
-  "usd_buy": 234400,
-  "gold_18k": 24089293,
-  "btc_usd": 83857.03,
+  "timestamp": "2026-09-24 19:12",
+  "usd_sell": 234200,
+  "usd_buy": 234100,
+  "gold_18k": 24054665,
+  "btc_usd": 84468.53,
   "fear_greed": 71,
   "btc_dominance": 58.6,
-  "market_cap": 2860000000000.0,
+  "market_cap": 2880000000000.0,
   "market_volume": 110000000000.0,
-  "market_change": -3.52,
+  "market_change": -2.2,
   "top10": [
     {
       "symbol": "btc",
-      "price": 83822,
-      "change_24h": -0.98218,
-      "market_cap": 1683021761571
+      "price": 84417,
+      "change_24h": 0.12313,
+      "market_cap": 1695588559066
     },
     {
       "symbol": "eth",
-      "price": 2661.33,
-      "change_24h": -0.69024,
-      "market_cap": 324828487140
+      "price": 2686.49,
+      "change_24h": 0.76118,
+      "market_cap": 327912051074
     },
     {
       "symbol": "usdt",
-      "price": 0.999688,
-      "change_24h": -0.0083,
-      "market_cap": 183484627136
+      "price": 0.999647,
+      "change_24h": -0.01901,
+      "market_cap": 183478512684
     },
     {
       "symbol": "bnb",
-      "price": 777.9,
-      "change_24h": 1.3407,
-      "market_cap": 103570142422
+      "price": 780.32,
+      "change_24h": 1.80889,
+      "market_cap": 103900675611
     },
     {
       "symbol": "xrp",
-      "price": 1.5,
-      "change_24h": -2.02458,
-      "market_cap": 94288316050
+      "price": 1.53,
+      "change_24h": 2.49016,
+      "market_cap": 96314247492
     },
     {
       "symbol": "usdc",
-      "price": 0.999807,
-      "change_24h": -0.00113,
-      "market_cap": 75152579541
+      "price": 0.999781,
+      "change_24h": -0.0075,
+      "market_cap": 75110867664
     },
     {
       "symbol": "sol",
-      "price": 114.84,
-      "change_24h": -0.41258,
-      "market_cap": 67457494166
+      "price": 117.31,
+      "change_24h": 2.78718,
+      "market_cap": 68918852158
     },
     {
       "symbol": "trx",
-      "price": 0.339629,
-      "change_24h": -0.10581,
-      "market_cap": 32248766970
+      "price": 0.340536,
+      "change_24h": 0.09431,
+      "market_cap": 32341491261
     },
     {
       "symbol": "zec",
-      "price": 1502.56,
-      "change_24h": -6.37475,
-      "market_cap": 25408608546
+      "price": 1550.57,
+      "change_24h": 2.10802,
+      "market_cap": 26277908789
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.038,
-      "change_24h": 0.67864,
-      "market_cap": 23914205342
+      "price": 1.035,
+      "change_24h": 0.57463,
+      "market_cap": 23894150742
     }
   ],
   "signal": {
-    "score": 0,
-    "label": "🟡 سیگنال صبر",
+    "score": 45,
+    "label": "🟢 سیگنال خرید",
     "factors": [
       {
         "text": "وضعیت: 71/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +9.7% در ۷ روز",
+        "text": "BTC +10.4% در 7 روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.8% در ۲۴ ساعت",
+        "text": "BTC +0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 69",
+        "text": "معتدل: 71",
         "tone": "neutral"
+      },
+      {
+        "text": "چکش (Hammer) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-09-24 15:09"
+    "confidence": 72,
+    "updated": "2026-09-24 19:12"
   },
   "whales": {
     "unconfirmed": {
@@ -113,216 +117,236 @@
   },
   "news_investing": [
     {
-      "title": "با کاهش ناگهانی ارزش اوراق قرضه ۵ درصدی خزانه‌داری، سرمایه‌گذاران نگران نرخ بهره ۶ درصدی هستند",
-      "date": "2026-09-24 14:37",
+      "title": "سهام Fidelity National Financial به 41.1 دلار به پایین ترین حد 52 هفته اخیر رسید",
+      "date": "2026-09-24 18:49",
       "source": "Investing.com"
     },
     {
-      "title": "نیویورک از پلی‌مارکت شکایت کرد و گفت که این شرکت عملیات قمار غیرقانونی انجام داده است",
-      "date": "2026-09-24 14:36",
+      "title": "سهام Hormel Foods به 19.7 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-09-24 18:48",
       "source": "Investing.com"
     },
     {
-      "title": "اوراکل و سینکس در میان سهام‌های با ارزش بازار در روز پنجشنبه قرار گرفتند",
-      "date": "2026-09-24 14:35",
+      "title": "سرادو طلا در 96 کنفرانس رشد نوظهور: خط لوله رشد در تمرکز",
+      "date": "2026-09-24 18:42",
+      "source": "Investing.com"
+    },
+    {
+      "title": "وال استریت با تمرکز سرمایه گذاران بر جنگ ایالات متحده و ایران سقوط می کند",
+      "date": "2026-09-24 18:36",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام اولین به 16.35 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-09-24 18:34",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "پالسون از فدرال رزرو می‌گوید ممکن است به انقباض ملایم‌تری نیاز باشد",
-      "date": "Thu, 24 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "طلا در حالی سقوط می‌کند که معامله‌گران، افزایش قیمت نفت و مسیر نرخ بهره فدرال رزرو را زیر نظر دارند",
-      "date": "Thu, 24 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افت سهام در پی افزایش قیمت نفت و نوسانات خزانه‌داری: خلاصه بازارها",
+      "title": "سهام متزلزل می شود زیرا رالی نفت باعث نوسانات اوراق قرضه می شود: بازارها بسته می شوند",
       "date": "Wed, 23 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هامک از فدرال رزرو می‌گوید شوک‌ها خطر ذهنیت تورمی را به همراه دارند",
+      "title": "فدرال رزرو از برنامه های استیبل کوین بیشتری رونمایی می کند، زیرا تنظیم کننده ها از کریپتو استقبال می کنند",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام اروپا ضررهای خود را جبران کردند، زیرا بخش انرژی از سود نفت پیشی گرفت",
+      "title": "با افزایش فروش اوراق قرضه، بازدهی 30 ساله آمریکا به بالاترین میزان از سال 2004 رسید",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شیلی برای اولین بار وارد بازار اوراق قرضه فرانک سوئیس می‌شود",
+      "title": "Trump Crypto Venture World Liberty با کوتاهی برنامه ها پول زیادی به دست آورد",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازده اوراق قرضه 30 ساله Muni برای اولین بار حداقل از سال 2011 از 5 درصد فراتر رفت",
+      "date": "Thu, 24 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "رپسول می‌گوید 90 درصد از عرضه نفت خام این شرکت در معرض خطر نقض قوانین جدید اتحادیه اروپا است",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "با کاهش ناگهانی ارزش اوراق قرضه ۵ درصدی خزانه‌داری، سرمایه‌گذاران نگران نرخ بهره ۶ درصدی هستند",
-      "date": "2026-09-24 14:37",
+      "title": "سهام Fidelity National Financial به 41.1 دلار به پایین ترین حد 52 هفته اخیر رسید",
+      "date": "2026-09-24 18:49",
       "source": "Investing.com"
     },
     {
-      "title": "نیویورک از پلی‌مارکت شکایت کرد و گفت که این شرکت عملیات قمار غیرقانونی انجام داده است",
-      "date": "2026-09-24 14:36",
+      "title": "سهام Hormel Foods به 19.7 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-09-24 18:48",
       "source": "Investing.com"
     },
     {
-      "title": "اوراکل و سینکس در میان سهام‌های با ارزش بازار در روز پنجشنبه قرار گرفتند",
-      "date": "2026-09-24 14:35",
+      "title": "سرادو طلا در 96 کنفرانس رشد نوظهور: خط لوله رشد در تمرکز",
+      "date": "2026-09-24 18:42",
       "source": "Investing.com"
     },
     {
-      "title": "پالسون از فدرال رزرو می‌گوید ممکن است به انقباض ملایم‌تری نیاز باشد",
-      "date": "Thu, 24 Sep 2026",
-      "source": "Bloomberg"
+      "title": "وال استریت با تمرکز سرمایه گذاران بر جنگ ایالات متحده و ایران سقوط می کند",
+      "date": "2026-09-24 18:36",
+      "source": "Investing.com"
     },
     {
-      "title": "طلا در حالی سقوط می‌کند که معامله‌گران، افزایش قیمت نفت و مسیر نرخ بهره فدرال رزرو را زیر نظر دارند",
-      "date": "Thu, 24 Sep 2026",
-      "source": "Bloomberg"
+      "title": "سهام اولین به 16.35 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-09-24 18:34",
+      "source": "Investing.com"
     },
     {
-      "title": "افت سهام در پی افزایش قیمت نفت و نوسانات خزانه‌داری: خلاصه بازارها",
+      "title": "سهام متزلزل می شود زیرا رالی نفت باعث نوسانات اوراق قرضه می شود: بازارها بسته می شوند",
       "date": "Wed, 23 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هامک از فدرال رزرو می‌گوید شوک‌ها خطر ذهنیت تورمی را به همراه دارند",
+      "title": "فدرال رزرو از برنامه های استیبل کوین بیشتری رونمایی می کند، زیرا تنظیم کننده ها از کریپتو استقبال می کنند",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام اروپا ضررهای خود را جبران کردند، زیرا بخش انرژی از سود نفت پیشی گرفت",
+      "title": "با افزایش فروش اوراق قرضه، بازدهی 30 ساله آمریکا به بالاترین میزان از سال 2004 رسید",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شیلی برای اولین بار وارد بازار اوراق قرضه فرانک سوئیس می‌شود",
+      "title": "Trump Crypto Venture World Liberty با کوتاهی برنامه ها پول زیادی به دست آورد",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازده اوراق قرضه 30 ساله Muni برای اولین بار حداقل از سال 2011 از 5 درصد فراتر رفت",
+      "date": "Thu, 24 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "رپسول می‌گوید 90 درصد از عرضه نفت خام این شرکت در معرض خطر نقض قوانین جدید اتحادیه اروپا است",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-24 15:08",
+    "updated": "2026-09-24 19:12",
     "gainers_24h": [
-      {
-        "symbol": "ltc",
-        "name": "Litecoin",
-        "price": 72.83,
-        "chg": 19.5
-      },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.502139,
-        "chg": 19.46
+        "price": 0.506794,
+        "chg": 23.56
       },
       {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.044,
-        "chg": 9.4
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 71.24,
+        "chg": 16.97
       },
       {
-        "symbol": "morpho",
-        "name": "Morpho",
-        "price": 2.81,
-        "chg": 7.99
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 13.3,
+        "chg": 8.76
       },
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.21702,
-        "chg": 4.87
+        "symbol": "dot",
+        "name": "Polkadot",
+        "price": 1.17,
+        "chg": 6.62
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.63,
+        "chg": 6.2
       }
     ],
     "losers_24h": [
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1502.56,
-        "chg": -6.37
-      },
-      {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 287.4,
-        "chg": -4.68
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 337.37,
+        "chg": -2.82
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01205213,
-        "chg": -3.96
+        "price": 0.01202855,
+        "chg": -1.79
       },
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 9.15,
-        "chg": -3.26
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 8.89,
+        "chg": -0.72
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 92.17,
-        "chg": -3.1
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.990902,
+        "chg": -0.61
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 550.99,
+        "chg": -0.56
       }
     ],
     "gainers_7d": [
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.53,
-        "chg": 56.37
-      },
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.044,
-        "chg": 55.22
+        "price": 4.63,
+        "chg": 52.13
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 336.2,
-        "chg": 48.27
+        "price": 337.37,
+        "chg": 45.96
       },
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.21702,
-        "chg": 40.49
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.990902,
+        "chg": 40.66
       },
       {
-        "symbol": "ltc",
-        "name": "Litecoin",
-        "price": 72.83,
-        "chg": 37.26
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 1.005,
+        "chg": 37.46
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 10.39,
+        "chg": 37.31
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01205213,
-        "chg": -7.73
+        "price": 0.01202855,
+        "chg": -6.75
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4252.24,
-        "chg": -2.42
+        "price": 4270.27,
+        "chg": -1.85
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.9,
-        "chg": -0.25
+        "price": 8.89,
+        "chg": -0.32
       },
       {
         "symbol": "usyc",
@@ -333,72 +357,72 @@
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.038,
-        "chg": 0.66
+        "price": 1.035,
+        "chg": 1.08
       }
     ],
     "gainers_30d": [
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 4.53,
-        "chg": 135.31
-      },
-      {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.044,
-        "chg": 133.38
+        "price": 0.990902,
+        "chg": 162.34
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.63,
+        "chg": 144.26
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 9.15,
-        "chg": 108.29
+        "price": 9.26,
+        "chg": 114.09
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1502.56,
-        "chg": 82.39
+        "price": 1550.57,
+        "chg": 94.87
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.21702,
-        "chg": 45.05
+        "price": 0.218633,
+        "chg": 44.04
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01205213,
-        "chg": -16.82
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.109119,
-        "chg": -7.47
+        "price": 0.01202855,
+        "chg": -24.37
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4252.24,
-        "chg": -7.45
+        "price": 4270.27,
+        "chg": -7.66
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.112719,
+        "chg": -7.21
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.9,
-        "chg": -4.86
+        "price": 8.89,
+        "chg": -4.85
       },
       {
         "symbol": "gram",
         "name": "Gram (prev. Toncoin)",
         "price": 1.42,
-        "chg": -2.14
+        "chg": -2.17
       }
     ]
   }
