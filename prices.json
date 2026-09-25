@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-09-25 13:50",
-  "usd_sell": 233600,
-  "usd_buy": 233500,
-  "gold_18k": 23823814,
-  "btc_usd": 83690.06,
+  "timestamp": "2026-09-25 18:38",
+  "usd_sell": 233700,
+  "usd_buy": 233600,
+  "gold_18k": 23731474,
+  "btc_usd": 83977.54,
   "fear_greed": 71,
   "btc_dominance": 58.2,
   "market_cap": 2890000000000.0,
   "market_volume": 110000000000.0,
-  "market_change": -1.45,
+  "market_change": -2.31,
   "top10": [
     {
       "symbol": "btc",
-      "price": 83756,
-      "change_24h": -0.17655,
-      "market_cap": 1682807338411
+      "price": 83977,
+      "change_24h": -0.5279,
+      "market_cap": 1687133518778
     },
     {
       "symbol": "eth",
-      "price": 2689.14,
-      "change_24h": 1.00393,
-      "market_cap": 328309999097
+      "price": 2694.36,
+      "change_24h": 0.32905,
+      "market_cap": 328967265916
     },
     {
       "symbol": "usdt",
-      "price": 0.999768,
-      "change_24h": 0.00377,
-      "market_cap": 183735492561
+      "price": 0.999791,
+      "change_24h": 0.01245,
+      "market_cap": 183741238416
     },
     {
       "symbol": "bnb",
-      "price": 772.15,
-      "change_24h": -0.34611,
-      "market_cap": 102822065796
+      "price": 775.69,
+      "change_24h": -0.58982,
+      "market_cap": 103294741229
     },
     {
       "symbol": "xrp",
-      "price": 1.58,
-      "change_24h": 5.75641,
-      "market_cap": 99557778910
+      "price": 1.57,
+      "change_24h": 2.40868,
+      "market_cap": 98933112015
     },
     {
       "symbol": "usdc",
-      "price": 0.999893,
-      "change_24h": 0.009,
-      "market_cap": 75345742503
+      "price": 0.999896,
+      "change_24h": 0.00958,
+      "market_cap": 75247925479
     },
     {
       "symbol": "sol",
-      "price": 118.95,
-      "change_24h": 3.75533,
-      "market_cap": 69926084743
+      "price": 122.27,
+      "change_24h": 4.39077,
+      "market_cap": 71826808250
     },
     {
       "symbol": "trx",
-      "price": 0.33745,
-      "change_24h": -0.75564,
-      "market_cap": 32042043865
+      "price": 0.337508,
+      "change_24h": -0.89907,
+      "market_cap": 32050386075
     },
     {
       "symbol": "zec",
-      "price": 1590.15,
-      "change_24h": 5.28271,
-      "market_cap": 26965465804
+      "price": 1547.01,
+      "change_24h": -1.14955,
+      "market_cap": 26200630267
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.027,
-      "change_24h": -0.93245,
-      "market_cap": 23711385960
+      "price": 1.026,
+      "change_24h": -0.82727,
+      "market_cap": 23758346661
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,15 +80,15 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +4.7% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +3.7% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.2% در ۲۴ ساعت",
+        "text": "BTC -0.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
@@ -96,293 +96,322 @@
         "tone": "neutral"
       },
       {
-        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
-        "tone": "bearish"
+        "text": "ستاره صبحگاهی (Morning Star) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
     "confidence": 60,
-    "updated": "2026-09-25 13:50"
+    "updated": "2026-09-25 18:39"
   },
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 109.37,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 109.37,
+          "tier": "متوسط",
+          "fee": 9.36e-06,
+          "inputs": 2,
+          "outputs": 2,
+          "direction": "unknown"
+        }
+      ]
     }
   },
   "news_investing": [
     {
-      "title": "فروش گسترده اوراق قرضه جهانی ادامه دارد/ بازده اوراق قرضه ۳۰ ساله آمریکا به بالاترین حد از سال ۲۰۰۴ رسید",
-      "date": "2026-09-25 13:18",
+      "title": "هامک از فدرال رزرو می‌گوید انتظارات تورمی عمومی می‌تواند بدتر شود",
+      "date": "2026-09-25 18:28",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بلومبرگ نیوز گزارش داد، شرکت کانورس پس از جنجال‌های نژادپرستی، تبلیغات و بازاریابی خود در شبکه‌های اجتماعی را متوقف می‌کند",
+      "date": "2026-09-25 18:24",
+      "source": "Investing.com"
+    },
+    {
+      "title": "همزمان با بررسی مسیر خروج آمریکا و ایران از جنگ، قیمت نفت حدود ۳ درصد کاهش یافت",
+      "date": "2026-09-25 18:12",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سهام ایالات متحده با افزایش مواجه شد، زیرا سرمایه‌گذاران شاهد تسکین در بازده و قیمت نفت بودند",
-      "date": "Fri, 25 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام افزایش یافت زیرا اوراق قرضه فروش گسترده را در پی کاهش قیمت نفت متوقف کرد: خلاصه بازارها",
+      "title": "سهام با کاهش قیمت نفت به دلیل امید به توافق ایران و آمریکا، صعود کردند: بازارها در حال بسته شدن هستند",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "افزایش ارزش ین در حالی که مقامات ژاپنی می‌گویند ارز ضعیف یک مشکل است",
+      "title": "وزیر می‌گوید تحریم‌های آمریکا تلاش‌های اصلاحات اقتصادی کوبا را خفه می‌کند",
       "date": "Fri, 25 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با افزایش خطرات انتخاباتی، بازده 10 درصدی اوراق قرضه آرژانتین، خریداران اوراق قرضه را وسوسه می‌کند",
+      "title": "شرط‌بندی‌های چندبازاری روی ورشکستگی بانک‌ها، نگرانی‌های FDIC را برانگیخته است",
       "date": "Fri, 25 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چرا سرمایه‌گذار وان باند می‌گوید چشم‌انداز فرانسه یادآور یونان در سال ۲۰۱۰ است؟",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای DATE",
+      "date": "Thu, 24 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "زمزمه فروش اوراق قرضه بی‌ارزش پراسپکت کپیتال با بازدهی ۸ درصد",
       "date": "Fri, 25 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "نوسانات خزانه‌داری با ریزش اوراق قرضه، بزرگترین جهش سالانه را تجربه خواهد کرد",
+      "title": "سهام ایالات متحده با کاهش قیمت نفت در پی بازگشایی امیدها در تنگه هرمز، افزایش یافت",
       "date": "Fri, 25 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "فروش گسترده اوراق قرضه جهانی ادامه دارد/ بازده اوراق قرضه ۳۰ ساله آمریکا به بالاترین حد از سال ۲۰۰۴ رسید",
-      "date": "2026-09-25 13:18",
+      "title": "هامک از فدرال رزرو می‌گوید انتظارات تورمی عمومی می‌تواند بدتر شود",
+      "date": "2026-09-25 18:28",
       "source": "Investing.com"
     },
     {
-      "title": "سهام ایالات متحده با افزایش مواجه شد، زیرا سرمایه‌گذاران شاهد تسکین در بازده و قیمت نفت بودند",
-      "date": "Fri, 25 Sep 2026",
-      "source": "Bloomberg"
+      "title": "بلومبرگ نیوز گزارش داد، شرکت کانورس پس از جنجال‌های نژادپرستی، تبلیغات و بازاریابی خود در شبکه‌های اجتماعی را متوقف می‌کند",
+      "date": "2026-09-25 18:24",
+      "source": "Investing.com"
     },
     {
-      "title": "سهام افزایش یافت زیرا اوراق قرضه فروش گسترده را در پی کاهش قیمت نفت متوقف کرد: خلاصه بازارها",
+      "title": "همزمان با بررسی مسیر خروج آمریکا و ایران از جنگ، قیمت نفت حدود ۳ درصد کاهش یافت",
+      "date": "2026-09-25 18:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام با کاهش قیمت نفت به دلیل امید به توافق ایران و آمریکا، صعود کردند: بازارها در حال بسته شدن هستند",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "افزایش ارزش ین در حالی که مقامات ژاپنی می‌گویند ارز ضعیف یک مشکل است",
+      "title": "وزیر می‌گوید تحریم‌های آمریکا تلاش‌های اصلاحات اقتصادی کوبا را خفه می‌کند",
       "date": "Fri, 25 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با افزایش خطرات انتخاباتی، بازده 10 درصدی اوراق قرضه آرژانتین، خریداران اوراق قرضه را وسوسه می‌کند",
+      "title": "شرط‌بندی‌های چندبازاری روی ورشکستگی بانک‌ها، نگرانی‌های FDIC را برانگیخته است",
       "date": "Fri, 25 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چرا سرمایه‌گذار وان باند می‌گوید چشم‌انداز فرانسه یادآور یونان در سال ۲۰۱۰ است؟",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای DATE",
+      "date": "Thu, 24 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "زمزمه فروش اوراق قرضه بی‌ارزش پراسپکت کپیتال با بازدهی ۸ درصد",
       "date": "Fri, 25 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "نوسانات خزانه‌داری با ریزش اوراق قرضه، بزرگترین جهش سالانه را تجربه خواهد کرد",
+      "title": "سهام ایالات متحده با کاهش قیمت نفت در پی بازگشایی امیدها در تنگه هرمز، افزایش یافت",
       "date": "Fri, 25 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-25 13:50",
+    "updated": "2026-09-25 18:38",
     "gainers_24h": [
-      {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 1.12,
-        "chg": 13.97
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 5.08,
-        "chg": 12.84
-      },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.18,
-        "chg": 12.82
-      },
-      {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.544448,
-        "chg": 12.68
+        "price": 1.25,
+        "chg": 27.91
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.243512,
-        "chg": 12.58
+        "price": 0.261156,
+        "chg": 20.56
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.129916,
+        "chg": 16.38
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 1.14,
+        "chg": 13.01
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 155.39,
+        "chg": 7.77
       }
     ],
     "losers_24h": [
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.18,
-        "chg": -2.53
-      },
-      {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.669044,
-        "chg": -2.14
+        "price": 0.662884,
+        "chg": -2.52
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 91.82,
+        "chg": -2.1
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01185861,
-        "chg": -1.52
+        "price": 0.01184922,
+        "chg": -1.58
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.027,
-        "chg": -0.93
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.2,
+        "chg": -1.43
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.33745,
-        "chg": -0.76
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1547.01,
+        "chg": -1.15
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.18,
-        "chg": 70.61
+        "price": 1.25,
+        "chg": 89.34
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.243512,
-        "chg": 49.46
+        "price": 0.261156,
+        "chg": 57.17
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.12,
-        "chg": 44.64
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 5.08,
-        "chg": 44.18
+        "price": 1.14,
+        "chg": 40.11
       },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.544448,
-        "chg": 41.23
+        "price": 0.540938,
+        "chg": 35.72
+      },
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 340.38,
+        "chg": 35.24
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01185861,
-        "chg": -7.27
+        "price": 0.01184922,
+        "chg": -11.18
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.18,
-        "chg": -6.39
+        "price": 1.2,
+        "chg": -10.7
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4273.05,
-        "chg": -1.87
+        "price": 4291.56,
+        "chg": -2.29
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 557.43,
+        "chg": -2.2
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.84,
-        "chg": -0.92
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.027,
-        "chg": -0.1
+        "price": 8.83,
+        "chg": -0.51
       }
     ],
     "gainers_30d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.18,
-        "chg": 183.91
+        "price": 1.25,
+        "chg": 191.08
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.08,
-        "chg": 172.74
+        "price": 4.97,
+        "chg": 173.08
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 9.68,
-        "chg": 130.35
+        "price": 9.65,
+        "chg": 129.57
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1590.15,
-        "chg": 104.94
+        "price": 1547.01,
+        "chg": 99.61
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.243512,
-        "chg": 70.39
+        "price": 0.261156,
+        "chg": 89.5
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01185861,
-        "chg": -32.3
+        "price": 0.01184922,
+        "chg": -31.6
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4273.05,
-        "chg": -6.84
+        "price": 4291.56,
+        "chg": -6.54
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.84,
-        "chg": -4.86
+        "price": 8.83,
+        "chg": -4.48
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
-        "chg": 0.3
+        "chg": 0.29
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.33745,
-        "chg": 0.46
+        "price": 0.337508,
+        "chg": 0.92
       }
     ]
   }
