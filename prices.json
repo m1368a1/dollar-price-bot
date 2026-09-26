@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-25 22:23",
+  "timestamp": "2026-09-26 01:36",
   "usd_sell": 233700,
   "usd_buy": 233600,
   "gold_18k": 23731474,
-  "btc_usd": 83927.37,
-  "fear_greed": 71,
+  "btc_usd": 83945.71,
+  "fear_greed": 74,
   "btc_dominance": 58.2,
   "market_cap": 2890000000000.0,
   "market_volume": 110000000000.0,
-  "market_change": -2.64,
+  "market_change": -2.77,
   "top10": [
     {
       "symbol": "btc",
-      "price": 83933,
-      "change_24h": -0.15266,
-      "market_cap": 1686264729842
+      "price": 83946,
+      "change_24h": -0.5114,
+      "market_cap": 1686416971668
     },
     {
       "symbol": "eth",
-      "price": 2686.59,
-      "change_24h": 0.31614,
-      "market_cap": 328001568979
+      "price": 2688.91,
+      "change_24h": 0.2102,
+      "market_cap": 328252183292
     },
     {
       "symbol": "usdt",
-      "price": 0.999796,
-      "change_24h": 0.00428,
-      "market_cap": 183741895868
+      "price": 0.999841,
+      "change_24h": 0.01118,
+      "market_cap": 183791382533
     },
     {
       "symbol": "bnb",
-      "price": 774.27,
-      "change_24h": -0.2177,
-      "market_cap": 103108454159
+      "price": 775.52,
+      "change_24h": -0.06006,
+      "market_cap": 103269268096
     },
     {
       "symbol": "xrp",
-      "price": 1.56,
-      "change_24h": 2.07701,
-      "market_cap": 98296719933
+      "price": 1.57,
+      "change_24h": 2.352,
+      "market_cap": 98882379061
     },
     {
       "symbol": "usdc",
-      "price": 0.999894,
-      "change_24h": 0.00673,
-      "market_cap": 75257726342
+      "price": 0.999904,
+      "change_24h": 0.00933,
+      "market_cap": 75350237933
     },
     {
       "symbol": "sol",
-      "price": 121.84,
-      "change_24h": 4.81759,
-      "market_cap": 71605395325
+      "price": 121.68,
+      "change_24h": 3.8096,
+      "market_cap": 71500723408
     },
     {
       "symbol": "trx",
-      "price": 0.337967,
-      "change_24h": -0.63017,
-      "market_cap": 32095274192
+      "price": 0.337637,
+      "change_24h": -0.65438,
+      "market_cap": 32064984162
     },
     {
       "symbol": "zec",
-      "price": 1534.13,
-      "change_24h": 0.41637,
-      "market_cap": 26010535718
+      "price": 1542.01,
+      "change_24h": 0.1922,
+      "market_cap": 26156918280
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.031,
-      "change_24h": 0.94636,
-      "market_cap": 23860597057
+      "price": 1.027,
+      "change_24h": -0.04681,
+      "market_cap": 23764929910
     }
   ],
   "signal": {
@@ -76,15 +76,15 @@
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 71/100",
+        "text": "وضعیت: 74/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +3.5% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +3.3% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.5% در ۲۴ ساعت",
+        "text": "BTC -0.7% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -97,7 +97,7 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-25 22:23"
+    "updated": "2026-09-26 01:36"
   },
   "whales": {
     "unconfirmed": {
@@ -113,13 +113,8 @@
   },
   "news_investing": [
     {
-      "title": "شرکت‌های مری‌گولد طی یک معامله تمام نقدی توسط مدیسون دیربورن پارتنرز خصوصی می‌شوند",
-      "date": "2026-09-25 22:02",
-      "source": "Investing.com"
-    },
-    {
-      "title": "شرکت‌های مری‌گولد برای خصوصی شدن در معامله‌ای با مدیسون دیربورن به توافق رسیدند",
-      "date": "2026-09-25 21:54",
+      "title": "گلدکانا قرارداد خصوصی اکتشاف به ارزش ۲ میلیون دلار کانادا را می‌بندد",
+      "date": "2026-09-26 00:52",
       "source": "Investing.com"
     }
   ],
@@ -138,27 +133,12 @@
       "title": "سهام با کاهش قیمت نفت به دلیل امید به توافق ایران و آمریکا، صعود کردند: بازارها در حال بسته شدن هستند",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "سهام ایالات متحده با کاهش قیمت نفت در پی بازگشایی امیدها در تنگه هرمز، افزایش یافت",
-      "date": "Fri, 25 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "روزنبرگ: بازار اوراق قرضه توجه جریان اصلی را به خود جلب می‌کند",
-      "date": "Fri, 25 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "شرکت‌های مری‌گولد طی یک معامله تمام نقدی توسط مدیسون دیربورن پارتنرز خصوصی می‌شوند",
-      "date": "2026-09-25 22:02",
-      "source": "Investing.com"
-    },
-    {
-      "title": "شرکت‌های مری‌گولد برای خصوصی شدن در معامله‌ای با مدیسون دیربورن به توافق رسیدند",
-      "date": "2026-09-25 21:54",
+      "title": "گلدکانا قرارداد خصوصی اکتشاف به ارزش ۲ میلیون دلار کانادا را می‌بندد",
+      "date": "2026-09-26 00:52",
       "source": "Investing.com"
     },
     {
@@ -175,198 +155,188 @@
       "title": "سهام با کاهش قیمت نفت به دلیل امید به توافق ایران و آمریکا، صعود کردند: بازارها در حال بسته شدن هستند",
       "date": "Thu, 24 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "سهام ایالات متحده با کاهش قیمت نفت در پی بازگشایی امیدها در تنگه هرمز، افزایش یافت",
-      "date": "Fri, 25 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "روزنبرگ: بازار اوراق قرضه توجه جریان اصلی را به خود جلب می‌کند",
-      "date": "Fri, 25 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-25 22:23",
+    "updated": "2026-09-26 01:36",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.31,
-        "chg": 38.5
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.264115,
-        "chg": 19.0
-      },
-      {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 1.19,
-        "chg": 18.92
+        "price": 1.23,
+        "chg": 27.6
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.129451,
-        "chg": 15.31
+        "price": 0.134846,
+        "chg": 17.85
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.26494,
+        "chg": 16.58
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 1.18,
+        "chg": 15.22
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
         "price": 4.97,
-        "chg": 9.03
+        "chg": 9.33
       }
     ],
     "losers_24h": [
       {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.664493,
-        "chg": -2.13
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01095507,
+        "chg": -8.92
       },
       {
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.2,
-        "chg": -2.03
+        "chg": -2.1
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 553.52,
-        "chg": -1.59
+        "price": 558.21,
+        "chg": -1.87
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01189008,
-        "chg": -1.17
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.672572,
+        "chg": -0.79
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.84,
-        "chg": -0.93
+        "price": 8.86,
+        "chg": -0.7
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.31,
-        "chg": 107.99
+        "price": 1.23,
+        "chg": 112.79
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.264115,
-        "chg": 54.63
+        "price": 0.26494,
+        "chg": 59.83
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.19,
-        "chg": 42.58
+        "price": 1.18,
+        "chg": 44.99
       },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.543916,
-        "chg": 35.02
+        "price": 0.543953,
+        "chg": 37.12
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 4.97,
-        "chg": 34.46
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 343.46,
+        "chg": 33.31
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01189008,
-        "chg": -11.58
+        "price": 0.01095507,
+        "chg": -17.27
       },
       {
         "symbol": "m",
         "name": "MemeCore",
         "price": 1.2,
-        "chg": -11.07
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 553.52,
-        "chg": -2.17
+        "chg": -7.64
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4280.45,
-        "chg": -2.0
+        "price": 4280.56,
+        "chg": -2.18
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.84,
-        "chg": -0.79
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 558.21,
+        "chg": -1.42
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1542.01,
+        "chg": -1.38
       }
     ],
     "gainers_30d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.31,
-        "chg": 218.21
+        "price": 1.23,
+        "chg": 235.02
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
         "price": 4.97,
-        "chg": 165.89
+        "chg": 157.62
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 9.51,
-        "chg": 120.84
+        "price": 9.54,
+        "chg": 118.22
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1534.13,
-        "chg": 95.17
+        "price": 1542.01,
+        "chg": 88.64
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.264115,
-        "chg": 90.08
+        "price": 0.26494,
+        "chg": 82.14
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01189008,
-        "chg": -31.69
+        "price": 0.01095507,
+        "chg": -36.92
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4280.45,
-        "chg": -6.5
+        "price": 4280.56,
+        "chg": -7.16
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.84,
-        "chg": -4.46
+        "price": 8.86,
+        "chg": -4.59
       },
       {
         "symbol": "usyc",
@@ -377,8 +347,8 @@
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.337967,
-        "chg": 0.59
+        "price": 0.337637,
+        "chg": 0.46
       }
     ]
   }
