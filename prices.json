@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-09-27 08:13",
-  "usd_sell": 234500,
-  "usd_buy": 234400,
-  "gold_18k": 23893069,
-  "btc_usd": 84786.32,
+  "timestamp": "2026-09-27 14:02",
+  "usd_sell": 236100,
+  "usd_buy": 236000,
+  "gold_18k": 23973867,
+  "btc_usd": 85026.45,
   "fear_greed": 70,
-  "btc_dominance": 58.7,
-  "market_cap": 2900000000000.0,
-  "market_volume": 60000000000.0,
-  "market_change": -2.6,
+  "btc_dominance": 58.4,
+  "market_cap": 2930000000000.0,
+  "market_volume": 70000000000.0,
+  "market_change": -1.69,
   "top10": [
     {
       "symbol": "btc",
-      "price": 84812,
-      "change_24h": 0.9109,
-      "market_cap": 1703849994298
+      "price": 85002,
+      "change_24h": 1.2823,
+      "market_cap": 1707684818225
     },
     {
       "symbol": "eth",
-      "price": 2719.09,
-      "change_24h": 1.14089,
-      "market_cap": 331959243766
+      "price": 2708.88,
+      "change_24h": 0.86865,
+      "market_cap": 330713196198
     },
     {
       "symbol": "usdt",
-      "price": 0.999776,
-      "change_24h": -0.00484,
-      "market_cap": 183778409577
+      "price": 0.999848,
+      "change_24h": -0.00416,
+      "market_cap": 183790898805
     },
     {
       "symbol": "bnb",
-      "price": 778.2,
-      "change_24h": 0.70406,
-      "market_cap": 103631940222
+      "price": 780.63,
+      "change_24h": 1.13224,
+      "market_cap": 103948123852
     },
     {
       "symbol": "xrp",
-      "price": 1.54,
-      "change_24h": -0.62704,
-      "market_cap": 96755146605
+      "price": 1.53,
+      "change_24h": -0.47127,
+      "market_cap": 96374298117
     },
     {
       "symbol": "usdc",
-      "price": 0.999847,
-      "change_24h": -0.00317,
-      "market_cap": 75259658025
+      "price": 0.999926,
+      "change_24h": -0.00158,
+      "market_cap": 75198405347
     },
     {
       "symbol": "sol",
-      "price": 124.19,
-      "change_24h": 3.23232,
-      "market_cap": 73016183704
+      "price": 123.13,
+      "change_24h": 2.03236,
+      "market_cap": 72364183259
     },
     {
       "symbol": "trx",
-      "price": 0.333719,
-      "change_24h": -1.01351,
-      "market_cap": 31688800867
+      "price": 0.333739,
+      "change_24h": -0.76012,
+      "market_cap": 31694221831
     },
     {
       "symbol": "zec",
-      "price": 1662.41,
-      "change_24h": 8.57527,
-      "market_cap": 28184815432
+      "price": 1652.55,
+      "change_24h": 7.57785,
+      "market_cap": 28018828755
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.062,
-      "change_24h": 3.68403,
-      "market_cap": 24610425446
+      "price": 1.058,
+      "change_24h": 3.09138,
+      "market_cap": 24516003984
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +5.7% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +5.6% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.8% در ۲۴ ساعت",
+        "text": "BTC +1.3% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,14 +94,10 @@
       {
         "text": "معتدل: 72",
         "tone": "neutral"
-      },
-      {
-        "text": "دوجی (Doji) — تصمیمی",
-        "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-09-27 08:14"
+    "updated": "2026-09-27 14:02"
   },
   "whales": {
     "unconfirmed": {
@@ -115,184 +111,193 @@
       "top": []
     }
   },
-  "news_investing": [
-    {
-      "title": "یک مطالعه نشان می‌دهد جاسوسی آلمان شرقی در اواخر دهه ۱۹۸۰ تولید ناخالص داخلی را ۷.۴ درصد افزایش داد",
-      "date": "2026-09-27 06:36",
-      "source": "Investing.com"
-    }
-  ],
+  "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "نوسانات بازار اوراق قرضه، خطراتی را برای سرمایه‌گذاران بدهی شرکتی نشان می‌دهد",
-      "date": "Sat, 26 Sep 2026",
+      "title": "تورم همچنان فدرال رزرو را تحت فشار قرار می‌دهد",
+      "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بنگلادش برای اولین فروش اوراق قرضه دولتی خود تا سقف یک میلیارد دلار هدف گذاری کرده است",
-      "date": "Sat, 26 Sep 2026",
+      "title": "روبنشتاین درباره رونق میلیارد دلاری ورزش",
+      "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط ۳۰ درصدی سهام مک‌دونالد در پی افزایش تورم ناشی از فروش بیگ مک",
-      "date": "Sat, 26 Sep 2026",
+      "title": "آژانس بین‌المللی انرژی اتمی می‌گوید نظارت بر فعالیت‌های هسته‌ای ایران می‌تواند به سرعت از سر گرفته شود",
+      "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازده بالاتر اوراق قرضه نشان دهنده بازگشت به حالت عادی است",
-      "date": "Sat, 26 Sep 2026",
+      "title": "ترامپ طرح ایران برای بازگشایی تنگه هرمز را رد کرد",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سرمایه‌گذاران بازارهای نوظهور با افزایش بازده اوراق قرضه آمریکا، از اوراق قرضه پرخطر دوری می‌کنند",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "یک اسطوره هاکی، یک پل جدید و جنگ تجاری که همسایگان را از هم جدا می‌کند",
+      "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "یک مطالعه نشان می‌دهد جاسوسی آلمان شرقی در اواخر دهه ۱۹۸۰ تولید ناخالص داخلی را ۷.۴ درصد افزایش داد",
-      "date": "2026-09-27 06:36",
-      "source": "Investing.com"
-    },
-    {
-      "title": "نوسانات بازار اوراق قرضه، خطراتی را برای سرمایه‌گذاران بدهی شرکتی نشان می‌دهد",
-      "date": "Sat, 26 Sep 2026",
+      "title": "تورم همچنان فدرال رزرو را تحت فشار قرار می‌دهد",
+      "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بنگلادش برای اولین فروش اوراق قرضه دولتی خود تا سقف یک میلیارد دلار هدف گذاری کرده است",
-      "date": "Sat, 26 Sep 2026",
+      "title": "روبنشتاین درباره رونق میلیارد دلاری ورزش",
+      "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط ۳۰ درصدی سهام مک‌دونالد در پی افزایش تورم ناشی از فروش بیگ مک",
-      "date": "Sat, 26 Sep 2026",
+      "title": "آژانس بین‌المللی انرژی اتمی می‌گوید نظارت بر فعالیت‌های هسته‌ای ایران می‌تواند به سرعت از سر گرفته شود",
+      "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازده بالاتر اوراق قرضه نشان دهنده بازگشت به حالت عادی است",
-      "date": "Sat, 26 Sep 2026",
+      "title": "ترامپ طرح ایران برای بازگشایی تنگه هرمز را رد کرد",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سرمایه‌گذاران بازارهای نوظهور با افزایش بازده اوراق قرضه آمریکا، از اوراق قرضه پرخطر دوری می‌کنند",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "یک اسطوره هاکی، یک پل جدید و جنگ تجاری که همسایگان را از هم جدا می‌کند",
+      "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-27 08:13",
+    "updated": "2026-09-27 14:02",
     "gainers_24h": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 171.85,
-        "chg": 67.89
+        "price": 162.45,
+        "chg": 52.25
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.065,
-        "chg": 20.05
+        "price": 1.16,
+        "chg": 20.94
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.38,
-        "chg": 11.3
+        "price": 5.25,
+        "chg": 8.74
       },
       {
         "symbol": "gram",
         "name": "Gram (prev. Toncoin)",
-        "price": 1.59,
-        "chg": 9.75
+        "price": 1.6,
+        "chg": 8.42
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 1.26,
-        "chg": 9.32
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1652.55,
+        "chg": 7.58
       }
     ],
     "losers_24h": [
       {
         "symbol": "mnt",
         "name": "Mantle",
-        "price": 0.686539,
-        "chg": -3.7
+        "price": 0.682412,
+        "chg": -2.7
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.270309,
-        "chg": -1.84
+        "price": 0.272967,
+        "chg": -2.21
       },
       {
-        "symbol": "ltc",
-        "name": "Litecoin",
-        "price": 71.93,
-        "chg": -1.68
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.19,
+        "chg": -1.88
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.135774,
-        "chg": -1.51
+        "price": 0.135956,
+        "chg": -1.86
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.333719,
-        "chg": -1.01
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 71.17,
+        "chg": -1.02
       }
     ],
     "gainers_7d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 171.85,
-        "chg": 162.9
+        "price": 162.45,
+        "chg": 152.9
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.065,
-        "chg": 74.93
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 5.38,
-        "chg": 56.17
+        "price": 1.16,
+        "chg": 59.58
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.26,
-        "chg": 53.63
+        "price": 1.25,
+        "chg": 52.24
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 5.25,
+        "chg": 40.77
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 345.21,
-        "chg": 40.36
+        "price": 336.43,
+        "chg": 36.22
       }
     ],
     "losers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.23,
-        "chg": -25.92
+        "price": 1.19,
+        "chg": -22.62
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0127284,
-        "chg": -4.98
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4279.32,
-        "chg": -2.07
+        "price": 0.01266247,
+        "chg": -4.18
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.333719,
-        "chg": -1.92
+        "price": 0.333739,
+        "chg": -2.6
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4278.64,
+        "chg": -2.05
       },
       {
         "symbol": "usyc",
@@ -303,66 +308,66 @@
     ],
     "gainers_30d": [
       {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.16,
+        "chg": 185.56
+      },
+      {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.38,
-        "chg": 186.84
+        "price": 5.25,
+        "chg": 180.88
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 171.85,
-        "chg": 169.9
-      },
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.065,
-        "chg": 166.66
+        "price": 162.45,
+        "chg": 159.22
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 10.04,
-        "chg": 115.94
+        "price": 9.86,
+        "chg": 114.81
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1662.41,
-        "chg": 109.55
+        "price": 1652.55,
+        "chg": 106.98
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0127284,
-        "chg": -26.61
+        "price": 0.01266247,
+        "chg": -27.36
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4279.32,
-        "chg": -6.93
+        "price": 4278.64,
+        "chg": -6.76
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.02,
-        "chg": -4.91
+        "chg": -4.52
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.333719,
-        "chg": -1.96
+        "price": 0.333739,
+        "chg": -2.18
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
-        "chg": 0.28
+        "chg": 0.25
       }
     ]
   }
