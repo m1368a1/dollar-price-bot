@@ -1,176 +1,217 @@
 {
-  "timestamp": "2026-09-27 22:14",
+  "timestamp": "2026-09-28 00:50",
   "usd_sell": 235800,
   "usd_buy": 235700,
   "gold_18k": 24020037,
-  "btc_usd": 84392.2,
-  "fear_greed": 70,
+  "btc_usd": 84451.37,
+  "fear_greed": 74,
   "btc_dominance": 58.8,
-  "market_cap": 2880000000000.0,
-  "market_volume": 70000000000.0,
-  "market_change": -3.37,
+  "market_cap": 2870000000000.0,
+  "market_volume": 110000000000.0,
+  "market_change": -3.78,
   "top10": [
     {
       "symbol": "btc",
-      "price": 84406,
-      "change_24h": 0.0596,
-      "market_cap": 1695830322432
+      "price": 84405,
+      "change_24h": 0.12678,
+      "market_cap": 1695388082083
     },
     {
       "symbol": "eth",
-      "price": 2675.57,
-      "change_24h": -0.54671,
-      "market_cap": 326691764218
+      "price": 2682.09,
+      "change_24h": -0.39631,
+      "market_cap": 327356914701
     },
     {
       "symbol": "usdt",
-      "price": 0.999834,
-      "change_24h": 0.00055,
-      "market_cap": 183785477352
+      "price": 0.99978,
+      "change_24h": -0.00519,
+      "market_cap": 183778542371
     },
     {
       "symbol": "bnb",
-      "price": 776.87,
-      "change_24h": 0.43986,
-      "market_cap": 103452646630
+      "price": 780.39,
+      "change_24h": 1.02805,
+      "market_cap": 103896905887
     },
     {
       "symbol": "xrp",
-      "price": 1.51,
-      "change_24h": -0.99522,
-      "market_cap": 95027523917
+      "price": 1.52,
+      "change_24h": 0.33196,
+      "market_cap": 95618326218
     },
     {
       "symbol": "usdc",
-      "price": 0.999892,
-      "change_24h": 0.00032,
-      "market_cap": 75152318109
+      "price": 0.999826,
+      "change_24h": -0.00582,
+      "market_cap": 75144804913
     },
     {
       "symbol": "sol",
-      "price": 121.83,
-      "change_24h": 0.0556,
-      "market_cap": 71620230681
+      "price": 122.19,
+      "change_24h": 1.16859,
+      "market_cap": 71793432937
     },
     {
       "symbol": "trx",
-      "price": 0.333402,
-      "change_24h": -0.35535,
-      "market_cap": 31658703555
+      "price": 0.333645,
+      "change_24h": -0.08652,
+      "market_cap": 31681052989
     },
     {
       "symbol": "zec",
-      "price": 1589.48,
-      "change_24h": -4.4675,
-      "market_cap": 26963926158
+      "price": 1581.16,
+      "change_24h": -3.85357,
+      "market_cap": 26791934853
     },
     {
       "symbol": "figr_heloc",
       "price": 1.058,
-      "change_24h": 3.17693,
+      "change_24h": -0.37915,
       "market_cap": 24516003984
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 0,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 70/100",
+        "text": "وضعیت: 74/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +3.9% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +3.6% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.3% در ۲۴ ساعت",
+        "text": "BTC +0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 71",
+        "text": "معتدل: 69",
         "tone": "neutral"
       },
       {
-        "text": "انگولفینگ نزولی (Bearish Engulfing) — نشانه نزول",
-        "tone": "bearish"
+        "text": "دوجی (Doji) — تصمیمی",
+        "tone": "neutral"
       }
     ],
-    "confidence": 60,
-    "updated": "2026-09-27 22:14"
+    "confidence": 50,
+    "updated": "2026-09-28 00:50"
   },
   "whales": {
     "unconfirmed": {
-      "score": 6,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 103.86,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 103.86,
-          "tier": "متوسط",
-          "fee": 1e-05,
-          "inputs": 1,
-          "outputs": 3,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
     {
-      "title": "ترامپ: قیمت نفت پس از پایان جنگ «خیلی زود» کاهش خواهد یافت",
-      "date": "2026-09-27 21:52",
+      "title": "معاملات آتی سهام ایالات متحده با تجزیه بازارها تنش های ایران، آموزش OpenAI متوقف شد",
+      "date": "2026-09-28 00:31",
+      "source": "Investing.com"
+    },
+    {
+      "title": "تورم خدمات شرکتی ژاپن به بالاترین حد در دو سال اخیر رسید",
+      "date": "2026-09-28 00:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ایران پس از رد طرح صلح ترامپ بر راه حل دیپلماتیک اصرار دارد",
+      "date": "2026-09-28 00:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "با افزایش محموله های عربستان سعودی، صادرات نفت خاورمیانه در ماه سپتامبر بهبود یافت",
+      "date": "2026-09-28 00:24",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "بازار اوراق قرضه به زنگ خطری برای اقتصاد نزدیک می شود",
+      "title": "با مخالفت ترامپ با ایران: بازارها، سود نفت، سقوط اوراق خزانه",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت 28 شهریور",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا کاهش می یابد زیرا بن بست هرمز شرط های افزایش نرخ را افزایش می دهد",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "استراتژیست ها می گویند تقاضای نفت و هوش مصنوعی به رینگیت فضایی برای رالی می دهد",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازار اوراق قرضه در حال نزدیک شدن به زنگ خطر برای اقتصاد است",
       "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     },
     {
       "title": "مذاکرات ایران در ایالات متحده به نکات آشنا رسید",
-      "date": "Sun, 27 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "لرزش ها از هوش مصنوعی تا نفت باعث تقویت تجارت پراکندگی صندوق های تامینی محبوب می شود",
-      "date": "Sun, 27 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "تورم بر فدرال رزرو فشار می آورد",
-      "date": "Sun, 27 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "روبنشتاین در رونق ورزشی میلیارد دلاری",
-      "date": "Sun, 27 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آژانس بین‌المللی انرژی اتمی می‌گوید نظارت هسته‌ای ایران می‌تواند به سرعت از سر گرفته شود",
       "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "ترامپ: قیمت نفت پس از پایان جنگ «خیلی زود» کاهش خواهد یافت",
-      "date": "2026-09-27 21:52",
+      "title": "معاملات آتی سهام ایالات متحده با تجزیه بازارها تنش های ایران، آموزش OpenAI متوقف شد",
+      "date": "2026-09-28 00:31",
       "source": "Investing.com"
     },
     {
-      "title": "بازار اوراق قرضه به زنگ خطری برای اقتصاد نزدیک می شود",
+      "title": "تورم خدمات شرکتی ژاپن به بالاترین حد در دو سال اخیر رسید",
+      "date": "2026-09-28 00:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ایران پس از رد طرح صلح ترامپ بر راه حل دیپلماتیک اصرار دارد",
+      "date": "2026-09-28 00:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "با افزایش محموله های عربستان سعودی، صادرات نفت خاورمیانه در ماه سپتامبر بهبود یافت",
+      "date": "2026-09-28 00:24",
+      "source": "Investing.com"
+    },
+    {
+      "title": "با مخالفت ترامپ با ایران: بازارها، سود نفت، سقوط اوراق خزانه",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت 28 شهریور",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا کاهش می یابد زیرا بن بست هرمز شرط های افزایش نرخ را افزایش می دهد",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "استراتژیست ها می گویند تقاضای نفت و هوش مصنوعی به رینگیت فضایی برای رالی می دهد",
+      "date": "Sun, 27 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بازار اوراق قرضه در حال نزدیک شدن به زنگ خطر برای اقتصاد است",
       "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
     },
@@ -178,214 +219,194 @@
       "title": "مذاکرات ایران در ایالات متحده به نکات آشنا رسید",
       "date": "Sun, 27 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "لرزش ها از هوش مصنوعی تا نفت باعث تقویت تجارت پراکندگی صندوق های تامینی محبوب می شود",
-      "date": "Sun, 27 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "تورم بر فدرال رزرو فشار می آورد",
-      "date": "Sun, 27 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "روبنشتاین در رونق ورزشی میلیارد دلاری",
-      "date": "Sun, 27 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آژانس بین‌المللی انرژی اتمی می‌گوید نظارت هسته‌ای ایران می‌تواند به سرعت از سر گرفته شود",
-      "date": "Sun, 27 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-27 22:14",
+    "updated": "2026-09-28 00:50",
     "gainers_24h": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 230.36,
-        "chg": 84.54
+        "price": 272.58,
+        "chg": 74.31
       },
       {
         "symbol": "btw",
         "name": "Bitway",
         "price": 1.22,
-        "chg": 17.15
+        "chg": 21.05
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00502175,
-        "chg": 14.83
+        "price": 0.00514012,
+        "chg": 16.6
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.26,
-        "chg": 8.43
+        "price": 1.28,
+        "chg": 9.76
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 5.39,
-        "chg": 7.33
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.572876,
+        "chg": 6.61
       }
     ],
     "losers_24h": [
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1589.48,
-        "chg": -4.47
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01255817,
-        "chg": -2.69
-      },
-      {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.19,
-        "chg": -2.38
+        "price": 1.17,
+        "chg": -5.44
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1581.16,
+        "chg": -3.85
       },
       {
         "symbol": "ltc",
         "name": "Litecoin",
-        "price": 70.72,
-        "chg": -1.77
+        "price": 70.45,
+        "chg": -2.29
       },
       {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 331.06,
-        "chg": -1.62
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 90.88,
+        "chg": -1.94
+      },
+      {
+        "symbol": "cro",
+        "name": "Cronos",
+        "price": 0.066837,
+        "chg": -1.56
       }
     ],
     "gainers_7d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 230.36,
-        "chg": 256.24
+        "price": 272.58,
+        "chg": 342.09
       },
       {
         "symbol": "btw",
         "name": "Bitway",
         "price": 1.22,
-        "chg": 62.89
+        "chg": 61.37
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.26,
-        "chg": 43.06
+        "price": 1.28,
+        "chg": 41.14
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 5.39,
-        "chg": 33.36
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.572876,
+        "chg": 35.62
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 331.06,
-        "chg": 32.43
+        "price": 330.68,
+        "chg": 32.7
       }
     ],
     "losers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.19,
-        "chg": -18.66
+        "price": 1.17,
+        "chg": -21.27
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01255817,
-        "chg": -10.96
+        "price": 0.01265138,
+        "chg": -9.99
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 10.89,
+        "chg": -3.21
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.333402,
-        "chg": -2.76
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4272.75,
-        "chg": -2.16
+        "price": 0.333645,
+        "chg": -2.72
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 548.09,
-        "chg": -1.77
+        "price": 548.78,
+        "chg": -2.62
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 230.36,
-        "chg": 275.59
+        "price": 272.58,
+        "chg": 364.06
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.39,
-        "chg": 205.54
+        "price": 5.34,
+        "chg": 195.8
       },
       {
         "symbol": "btw",
         "name": "Bitway",
         "price": 1.22,
-        "chg": 199.62
+        "chg": 189.7
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 9.62,
-        "chg": 119.87
+        "price": 9.66,
+        "chg": 118.56
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1589.48,
-        "chg": 100.59
+        "price": 1581.16,
+        "chg": 97.93
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01255817,
-        "chg": -28.64
+        "price": 0.01265138,
+        "chg": -27.98
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4272.75,
-        "chg": -3.91
+        "price": 4238.86,
+        "chg": -4.49
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.05,
-        "chg": -3.81
+        "price": 9.01,
+        "chg": -3.95
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.333402,
-        "chg": -2.31
+        "price": 0.333645,
+        "chg": -2.46
       },
       {
         "symbol": "usyc",
