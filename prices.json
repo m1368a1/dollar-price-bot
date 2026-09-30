@@ -1,72 +1,151 @@
 {
-  "timestamp": "2026-09-30 00:29",
-  "usd_sell": 255800,
-  "usd_buy": 255700,
-  "gold_18k": 25428228,
-  "btc_usd": 83489.59,
+  "timestamp": "2026-09-30 06:45",
+  "usd_sell": 256700,
+  "usd_buy": 256600,
+  "gold_18k": 25232005,
+  "btc_usd": 83061.51,
   "fear_greed": 71,
-  "btc_dominance": 0,
-  "market_cap": 0,
-  "market_volume": 0,
-  "market_change": 0,
-  "top10": [],
+  "btc_dominance": 58.3,
+  "market_cap": 2860000000000.0,
+  "market_volume": 110000000000.0,
+  "market_change": -2.96,
+  "top10": [
+    {
+      "symbol": "btc",
+      "price": 83074,
+      "change_24h": -0.95173,
+      "market_cap": 1669031933684
+    },
+    {
+      "symbol": "eth",
+      "price": 2661.65,
+      "change_24h": -1.30946,
+      "market_cap": 324968223715
+    },
+    {
+      "symbol": "usdt",
+      "price": 0.999651,
+      "change_24h": -0.00829,
+      "market_cap": 183806421943
+    },
+    {
+      "symbol": "bnb",
+      "price": 758.66,
+      "change_24h": -0.57906,
+      "market_cap": 101022909806
+    },
+    {
+      "symbol": "xrp",
+      "price": 1.5,
+      "change_24h": -0.24624,
+      "market_cap": 94514572186
+    },
+    {
+      "symbol": "usdc",
+      "price": 0.999831,
+      "change_24h": -0.01077,
+      "market_cap": 74365027045
+    },
+    {
+      "symbol": "sol",
+      "price": 118.36,
+      "change_24h": -0.49975,
+      "market_cap": 69596521987
+    },
+    {
+      "symbol": "trx",
+      "price": 0.337248,
+      "change_24h": 0.70742,
+      "market_cap": 32030364386
+    },
+    {
+      "symbol": "figr_heloc",
+      "price": 1.03,
+      "change_24h": 2.72657,
+      "market_cap": 23956319869
+    },
+    {
+      "symbol": "zec",
+      "price": 1397.28,
+      "change_24h": -0.13672,
+      "market_cap": 23697915891
+    }
+  ],
   "signal": {
-    "score": -35,
-    "label": "🔴 سیگنال فروش",
+    "score": 0,
+    "label": "🟡 سیگنال صبر",
     "factors": [
       {
         "text": "وضعیت: 71/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.4% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -3.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.0% در ۲۴ ساعت",
+        "text": "BTC -0.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "اشباع خرید (75) — احتمال اصلاح",
-        "tone": "bearish"
-      },
-      {
-        "text": "انگولفینگ نزولی (Bearish Engulfing) — نشانه نزول",
-        "tone": "bearish"
+        "text": "معتدل: 72",
+        "tone": "neutral"
       }
     ],
-    "confidence": 67,
-    "updated": "2026-09-30 00:29"
+    "confidence": 50,
+    "updated": "2026-09-30 06:45"
   },
   "whales": {
     "unconfirmed": {
-      "score": 6,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 141.62,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 141.62,
-          "tier": "متوسط",
-          "fee": 1e-05,
-          "inputs": 1,
-          "outputs": 3,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "سهام آسیا در آستانه تورم PCE ایالات متحده افزایش یافت؛ داده‌های منطقه‌ای در کانون توجه قرار دارند",
+      "date": "2026-09-30 06:17",
+      "source": "Investing.com"
+    },
+    {
+      "title": "رشد تولید ناخالص داخلی بریتانیا در سه ماهه دوم سال به دلیل خدمات و صادرات قوی‌تر، تا 0.5 درصد اصلاح شد",
+      "date": "2026-09-30 06:09",
+      "source": "Investing.com"
+    },
+    {
+      "title": "دلار در ماه سپتامبر با افزایش قابل توجهی روبرو خواهد شد که عمدتاً به ضرر یورو تمام می‌شود",
+      "date": "2026-09-30 06:06",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "آیا نرخ بازده اوراق خزانه می‌تواند به ۶ درصد برسد؟",
+      "title": "گلدمن درایتون: رونق معاملات آسیا-اقیانوسیه ممکن است تا سال 2027 ادامه داشته باشد",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بهبود سهام و ثبات اوراق قرضه پیش از انتشار داده‌های کلیدی ایالات متحده: بازارها در هم تنیده شدند",
+      "date": "Tue, 29 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بصیری تبریزی: مذاکرات ایران و آمریکا از هم دورتر می‌شود",
+      "date": "Wed, 30 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "ویل در حال بررسی جمع‌آوری بیش از ۵۰۰ میلیون دلار در اولین فروش اوراق قرضه پاندا است",
       "date": "Wed, 30 Sep 2026",
       "source": "Bloomberg"
     },
@@ -76,29 +155,44 @@
       "source": "Bloomberg"
     },
     {
-      "title": "دلار در پی مبارزه با تورم فدرال رزرو، بهترین ماه خود را از ژوئن تاکنون ثبت کرد",
+      "title": "فروش اوراق قرضه دو ساله ژاپن، تقاضای قوی‌تری را برای بازدهی بالا به همراه دارد",
       "date": "Wed, 30 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام آسیا با پیشتازی فناوری و تمرکز بر اوراق قرضه افزایش یافت: خلاصه بازارها",
-      "date": "Tue, 29 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ثبات قیمت طلا در حالی که معامله‌گران، کاهش قیمت نفت را در مقابل افزایش بازدهی آن می‌سنجند",
-      "date": "Tue, 29 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شکایت از ترامپ به دلیل تلاش برای بازپس‌گیری بودجه فدرال که قرار است منقضی شود",
-      "date": "Tue, 29 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "آیا نرخ بازده اوراق خزانه می‌تواند به ۶ درصد برسد؟",
+      "title": "سهام آسیا در آستانه تورم PCE ایالات متحده افزایش یافت؛ داده‌های منطقه‌ای در کانون توجه قرار دارند",
+      "date": "2026-09-30 06:17",
+      "source": "Investing.com"
+    },
+    {
+      "title": "رشد تولید ناخالص داخلی بریتانیا در سه ماهه دوم سال به دلیل خدمات و صادرات قوی‌تر، تا 0.5 درصد اصلاح شد",
+      "date": "2026-09-30 06:09",
+      "source": "Investing.com"
+    },
+    {
+      "title": "دلار در ماه سپتامبر با افزایش قابل توجهی روبرو خواهد شد که عمدتاً به ضرر یورو تمام می‌شود",
+      "date": "2026-09-30 06:06",
+      "source": "Investing.com"
+    },
+    {
+      "title": "گلدمن درایتون: رونق معاملات آسیا-اقیانوسیه ممکن است تا سال 2027 ادامه داشته باشد",
+      "date": "Tue, 22 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بهبود سهام و ثبات اوراق قرضه پیش از انتشار داده‌های کلیدی ایالات متحده: بازارها در هم تنیده شدند",
+      "date": "Tue, 29 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بصیری تبریزی: مذاکرات ایران و آمریکا از هم دورتر می‌شود",
+      "date": "Wed, 30 Sep 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "ویل در حال بررسی جمع‌آوری بیش از ۵۰۰ میلیون دلار در اولین فروش اوراق قرضه پاندا است",
       "date": "Wed, 30 Sep 2026",
       "source": "Bloomberg"
     },
@@ -108,33 +202,204 @@
       "source": "Bloomberg"
     },
     {
-      "title": "دلار در پی مبارزه با تورم فدرال رزرو، بهترین ماه خود را از ژوئن تاکنون ثبت کرد",
+      "title": "فروش اوراق قرضه دو ساله ژاپن، تقاضای قوی‌تری را برای بازدهی بالا به همراه دارد",
       "date": "Wed, 30 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام آسیا با پیشتازی فناوری و تمرکز بر اوراق قرضه افزایش یافت: خلاصه بازارها",
-      "date": "Tue, 29 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ثبات قیمت طلا در حالی که معامله‌گران، کاهش قیمت نفت را در مقابل افزایش بازدهی آن می‌سنجند",
-      "date": "Tue, 29 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شکایت از ترامپ به دلیل تلاش برای بازپس‌گیری بودجه فدرال که قرار است منقضی شود",
-      "date": "Tue, 29 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-30 00:29",
-    "gainers_24h": [],
-    "losers_24h": [],
-    "gainers_7d": [],
-    "losers_7d": [],
-    "gainers_30d": [],
-    "losers_30d": []
+    "updated": "2026-09-30 06:45",
+    "gainers_24h": [
+      {
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 294.17,
+        "chg": 18.22
+      },
+      {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.0056883,
+        "chg": 17.11
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.93,
+        "chg": 4.93
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 1.17,
+        "chg": 3.19
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 160.72,
+        "chg": 2.98
+      }
+    ],
+    "losers_24h": [
+      {
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.104646,
+        "chg": -11.19
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.085,
+        "chg": -8.12
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.018,
+        "chg": -7.04
+      },
+      {
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.48,
+        "chg": -6.31
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.124745,
+        "chg": -5.13
+      }
+    ],
+    "gainers_7d": [
+      {
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 294.17,
+        "chg": 278.23
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.085,
+        "chg": 32.71
+      },
+      {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.0056883,
+        "chg": 29.82
+      },
+      {
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.500823,
+        "chg": 14.13
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.244979,
+        "chg": 13.92
+      }
+    ],
+    "losers_7d": [
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.018,
+        "chg": -20.71
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 8.76,
+        "chg": -15.1
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1397.28,
+        "chg": -12.24
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 85.45,
+        "chg": -11.91
+      },
+      {
+        "symbol": "doge",
+        "name": "Dogecoin",
+        "price": 0.093237,
+        "chg": -9.38
+      }
+    ],
+    "gainers_30d": [
+      {
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 294.17,
+        "chg": 370.46
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.085,
+        "chg": 200.36
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.93,
+        "chg": 172.57
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 8.76,
+        "chg": 76.23
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1397.28,
+        "chg": 71.21
+      }
+    ],
+    "losers_30d": [
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01238725,
+        "chg": -26.77
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.05,
+        "chg": -5.83
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4179.07,
+        "chg": -5.38
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.018,
+        "chg": -4.1
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.337248,
+        "chg": 0.27
+      }
+    ]
   }
 }
