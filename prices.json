@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-09-30 18:17",
-  "usd_sell": 256000,
-  "usd_buy": 255900,
-  "gold_18k": 25428228,
-  "btc_usd": 83997.12,
+  "timestamp": "2026-09-30 19:23",
+  "usd_sell": 256200,
+  "usd_buy": 256100,
+  "gold_18k": 25393600,
+  "btc_usd": 83706.32,
   "fear_greed": 71,
   "btc_dominance": 58.4,
-  "market_cap": 2880000000000.0,
-  "market_volume": 100000000000.0,
-  "market_change": -1.88,
+  "market_cap": 2870000000000.0,
+  "market_volume": 110000000000.0,
+  "market_change": -2.77,
   "top10": [
     {
       "symbol": "btc",
-      "price": 84005,
-      "change_24h": 0.66568,
-      "market_cap": 1687975425410
+      "price": 83690,
+      "change_24h": 0.14371,
+      "market_cap": 1681398102022
     },
     {
       "symbol": "eth",
-      "price": 2681.07,
-      "change_24h": -0.17745,
-      "market_cap": 327400854718
+      "price": 2672.51,
+      "change_24h": -0.83942,
+      "market_cap": 326280390715
     },
     {
       "symbol": "usdt",
-      "price": 0.999717,
-      "change_24h": -0.00461,
-      "market_cap": 183814954785
+      "price": 0.999549,
+      "change_24h": -0.01618,
+      "market_cap": 183786945985
     },
     {
       "symbol": "bnb",
-      "price": 768.36,
-      "change_24h": 1.79888,
-      "market_cap": 102347701525
+      "price": 765.83,
+      "change_24h": 1.41768,
+      "market_cap": 101965925270
     },
     {
       "symbol": "xrp",
-      "price": 1.5,
-      "change_24h": 0.43445,
-      "market_cap": 94535539305
+      "price": 1.49,
+      "change_24h": -0.59541,
+      "market_cap": 94009027701
     },
     {
       "symbol": "usdc",
-      "price": 0.99986,
-      "change_24h": -0.00588,
-      "market_cap": 74182835823
+      "price": 0.999736,
+      "change_24h": -0.01352,
+      "market_cap": 74058845492
     },
     {
       "symbol": "sol",
-      "price": 118.93,
-      "change_24h": 0.28899,
-      "market_cap": 69949721235
+      "price": 117.74,
+      "change_24h": -1.27266,
+      "market_cap": 69217090375
     },
     {
       "symbol": "trx",
-      "price": 0.337566,
-      "change_24h": 0.7483,
-      "market_cap": 32056733834
-    },
-    {
-      "symbol": "zec",
-      "price": 1435.99,
-      "change_24h": 1.35633,
-      "market_cap": 24377498777
+      "price": 0.337504,
+      "change_24h": 0.73849,
+      "market_cap": 32056009773
     },
     {
       "symbol": "figr_heloc",
       "price": 1.03,
-      "change_24h": 2.89569,
-      "market_cap": 24038855666
+      "change_24h": 2.91035,
+      "market_cap": 24042622794
+    },
+    {
+      "symbol": "zec",
+      "price": 1417.14,
+      "change_24h": -0.34032,
+      "market_cap": 24023339583
     }
   ],
   "signal": {
-    "score": -15,
-    "label": "🟡 سیگنال صبر",
+    "score": -35,
+    "label": "🔴 سیگنال فروش",
     "factors": [
       {
         "text": "وضعیت: 71/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -0.4% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -0.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +1.1% در ۲۴ ساعت",
+        "text": "BTC +0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,10 +94,14 @@
       {
         "text": "اشباع خرید (76) — احتمال اصلاح",
         "tone": "bearish"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 57,
-    "updated": "2026-09-30 18:17"
+    "confidence": 67,
+    "updated": "2026-09-30 19:23"
   },
   "whales": {
     "unconfirmed": {
@@ -113,61 +117,31 @@
   },
   "news_investing": [
     {
-      "title": "سهام مک‌دونالد به پایین‌ترین حد خود در ۵۲ هفته اخیر یعنی ۲۳۲.۰۵ دلار رسید",
-      "date": "2026-09-30 18:07",
-      "source": "Investing.com"
-    },
-    {
-      "title": "گلدمن ساکس پیش‌بینی افزایش نرخ بهره را به دسامبر موکول کرد",
-      "date": "2026-09-30 18:04",
-      "source": "Investing.com"
-    },
-    {
-      "title": "گوگل و جابیل در میان سهام‌های با ارزش بازار در روز چهارشنبه قرار گرفتند",
-      "date": "2026-09-30 18:04",
+      "title": "گلدمن ساکس پس از کاهش تورم، افزایش نرخ بهره فدرال رزرو را به دسامبر موکول کرد",
+      "date": "2026-09-30 19:03",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "افزایش سهام در پی کاهش غیرمنتظره تورم و کاهش ریسک فدرال رزرو: بازارها به هم پیوستند",
+      "title": "شاخص S&P 500 با کاهش غیرمنتظره تورم و کاهش ریسک‌های فدرال رزرو، رشد کرد: خلاصه بازارها",
       "date": "Tue, 29 Sep 2026",
       "source": "Bloomberg"
     },
     {
       "title": "اوراق قرضه جهانی به دلیل ترس از تورم، بدترین فصل خود را از سال 2024 تجربه می‌کنند",
-      "date": "Wed, 30 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "فدرال رزرو به نفع بانک‌های بزرگ به اصلاح تست‌های استرس رأی داد",
-      "date": "Wed, 30 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پارامونت قصد دارد از طریق عرضه اوراق قرضه ۴۲.۴ میلیارد دلار جمع‌آوری کند",
       "date": "Wed, 30 Sep 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام مک‌دونالد به پایین‌ترین حد خود در ۵۲ هفته اخیر یعنی ۲۳۲.۰۵ دلار رسید",
-      "date": "2026-09-30 18:07",
+      "title": "گلدمن ساکس پس از کاهش تورم، افزایش نرخ بهره فدرال رزرو را به دسامبر موکول کرد",
+      "date": "2026-09-30 19:03",
       "source": "Investing.com"
     },
     {
-      "title": "گلدمن ساکس پیش‌بینی افزایش نرخ بهره را به دسامبر موکول کرد",
-      "date": "2026-09-30 18:04",
-      "source": "Investing.com"
-    },
-    {
-      "title": "گوگل و جابیل در میان سهام‌های با ارزش بازار در روز چهارشنبه قرار گرفتند",
-      "date": "2026-09-30 18:04",
-      "source": "Investing.com"
-    },
-    {
-      "title": "افزایش سهام در پی کاهش غیرمنتظره تورم و کاهش ریسک فدرال رزرو: بازارها به هم پیوستند",
+      "title": "شاخص S&P 500 با کاهش غیرمنتظره تورم و کاهش ریسک‌های فدرال رزرو، رشد کرد: خلاصه بازارها",
       "date": "Tue, 29 Sep 2026",
       "source": "Bloomberg"
     },
@@ -175,210 +149,200 @@
       "title": "اوراق قرضه جهانی به دلیل ترس از تورم، بدترین فصل خود را از سال 2024 تجربه می‌کنند",
       "date": "Wed, 30 Sep 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "فدرال رزرو به نفع بانک‌های بزرگ به اصلاح تست‌های استرس رأی داد",
-      "date": "Wed, 30 Sep 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پارامونت قصد دارد از طریق عرضه اوراق قرضه ۴۲.۴ میلیارد دلار جمع‌آوری کند",
-      "date": "Wed, 30 Sep 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-09-30 18:17",
+    "updated": "2026-09-30 19:23",
     "gainers_24h": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 295.43,
-        "chg": 15.33
+        "price": 293.36,
+        "chg": 7.55
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.35,
-        "chg": 9.22
+        "price": 5.36,
+        "chg": 5.77
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.263781,
-        "chg": 6.48
-      },
-      {
-        "symbol": "mnt",
-        "name": "Mantle",
-        "price": 0.693114,
-        "chg": 4.18
+        "price": 0.264028,
+        "chg": 5.32
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 88.56,
-        "chg": 2.93
+        "price": 89.91,
+        "chg": 4.14
+      },
+      {
+        "symbol": "mnt",
+        "name": "Mantle",
+        "price": 0.694772,
+        "chg": 4.1
       }
     ],
     "losers_24h": [
       {
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.486561,
+        "chg": -5.14
+      },
+      {
         "symbol": "aave",
         "name": "Aave",
-        "price": 159.3,
-        "chg": -5.03
+        "price": 158.15,
+        "chg": -4.06
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01225891,
+        "price": 0.01224039,
         "chg": -3.69
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 14.37,
-        "chg": -1.94
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 11.02,
-        "chg": -1.93
+        "price": 10.92,
+        "chg": -3.44
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.067807,
-        "chg": -1.91
+        "price": 0.06655,
+        "chg": -3.43
       }
     ],
     "gainers_7d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 295.43,
-        "chg": 321.33
+        "price": 293.36,
+        "chg": 315.44
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00584207,
-        "chg": 45.88
+        "price": 0.00581797,
+        "chg": 47.01
       },
       {
         "symbol": "btw",
         "name": "Bitway",
         "price": 1.34,
-        "chg": 36.21
+        "chg": 39.01
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.263781,
-        "chg": 27.59
+        "price": 0.264028,
+        "chg": 23.94
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.35,
-        "chg": 24.19
+        "price": 5.36,
+        "chg": 23.11
       }
     ],
     "losers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.041,
-        "chg": -14.24
+        "price": 1.04,
+        "chg": -14.89
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 307.38,
-        "chg": -12.36
+        "price": 305.76,
+        "chg": -11.73
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1435.99,
-        "chg": -5.72
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 88.56,
-        "chg": -4.08
+        "price": 1417.14,
+        "chg": -6.86
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.84,
-        "chg": -3.3
+        "price": 8.86,
+        "chg": -4.01
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 89.91,
+        "chg": -3.94
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 295.43,
-        "chg": 391.59
+        "price": 293.36,
+        "chg": 381.4
       },
       {
         "symbol": "btw",
         "name": "Bitway",
         "price": 1.34,
-        "chg": 224.63
+        "chg": 229.73
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.35,
-        "chg": 189.37
+        "price": 5.36,
+        "chg": 189.25
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.263781,
-        "chg": 77.38
+        "price": 0.264028,
+        "chg": 76.2
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 8.84,
-        "chg": 72.55
+        "price": 8.86,
+        "chg": 70.26
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01225891,
-        "chg": -27.77
+        "price": 0.01224039,
+        "chg": -27.25
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.02,
-        "chg": -6.32
+        "chg": -6.17
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4154.56,
-        "chg": -6.12
+        "price": 4156.92,
+        "chg": -6.15
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.041,
-        "chg": -3.67
+        "price": 1.04,
+        "chg": -3.97
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.03,
-        "chg": -2.33
+        "chg": -2.35
       }
     ]
   }
