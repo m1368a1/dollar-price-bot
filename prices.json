@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-10-03 21:19",
+  "timestamp": "2026-10-04 00:40",
   "usd_sell": 268500,
   "usd_buy": 268400,
   "gold_18k": 26201579,
-  "btc_usd": 84698.11,
-  "fear_greed": 67,
+  "btc_usd": 84810.41,
+  "fear_greed": 65,
   "btc_dominance": 58.6,
   "market_cap": 2900000000000.0,
   "market_volume": 50000000000.0,
-  "market_change": -2.04,
+  "market_change": -2.15,
   "top10": [
     {
       "symbol": "btc",
-      "price": 84694,
-      "change_24h": 0.23089,
-      "market_cap": 1701730067879
+      "price": 84804,
+      "change_24h": 0.24838,
+      "market_cap": 1704052614905
     },
     {
       "symbol": "eth",
-      "price": 2687.14,
-      "change_24h": 0.88377,
-      "market_cap": 328102545387
+      "price": 2691.35,
+      "change_24h": 0.6629,
+      "market_cap": 328627269388
     },
     {
       "symbol": "usdt",
-      "price": 0.999895,
-      "change_24h": -0.00438,
-      "market_cap": 184065555746
+      "price": 0.999854,
+      "change_24h": -0.00484,
+      "market_cap": 184063721613
     },
     {
       "symbol": "bnb",
-      "price": 785.74,
-      "change_24h": 2.64658,
-      "market_cap": 104631603637
+      "price": 786.42,
+      "change_24h": 2.27632,
+      "market_cap": 104708424781
     },
     {
       "symbol": "xrp",
       "price": 1.49,
-      "change_24h": 1.01211,
-      "market_cap": 93983992309
+      "change_24h": 0.01092,
+      "market_cap": 93957814856
     },
     {
       "symbol": "usdc",
-      "price": 1.0,
-      "change_24h": 0.00295,
-      "market_cap": 74102394298
+      "price": 0.999975,
+      "change_24h": 0.00091,
+      "market_cap": 74102697493
     },
     {
       "symbol": "sol",
-      "price": 119.72,
-      "change_24h": 1.39781,
-      "market_cap": 70420223945
+      "price": 120.03,
+      "change_24h": 0.82763,
+      "market_cap": 70595202567
     },
     {
       "symbol": "trx",
-      "price": 0.335455,
-      "change_24h": 0.31893,
-      "market_cap": 31869249380
+      "price": 0.335574,
+      "change_24h": 0.33696,
+      "market_cap": 31874871605
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.025,
-      "change_24h": -2.02254,
-      "market_cap": 24073296087
+      "price": 1.069,
+      "change_24h": 2.30412,
+      "market_cap": 25084853378
     },
     {
       "symbol": "zec",
-      "price": 1317.99,
-      "change_24h": 2.47954,
-      "market_cap": 22364322949
+      "price": 1319.51,
+      "change_24h": 0.2643,
+      "market_cap": 22382722418
     }
   ],
   "signal": {
@@ -76,43 +76,52 @@
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 67/100",
+        "text": "وضعیت: 65/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +0.8% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +0.6% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.3% در ۲۴ ساعت",
+        "text": "BTC +0.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 65",
+        "text": "معتدل: 66",
         "tone": "neutral"
       },
       {
-        "text": "چکش (Hammer) — نشانه صعود",
+        "text": "انگولفینگ صعودی (Bullish Engulfing) — نشانه صعود",
         "tone": "bullish"
       }
     ],
     "confidence": 60,
-    "updated": "2026-10-03 21:20"
+    "updated": "2026-10-04 00:40"
   },
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 7,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 199.47,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 199.47,
+          "tier": "متوسط",
+          "fee": 7.56e-06,
+          "inputs": 2,
+          "outputs": 11,
+          "direction": "unknown"
+        }
+      ]
     }
   },
   "news_investing": [
@@ -125,21 +134,6 @@
       "title": "در حالی که مداخله 2 میلیارد دلاری ارز نتوانست جلوی کاهش را بگیرد، ریال ایران به پایین ترین حد خود رسید",
       "date": "2026-10-03 20:13",
       "source": "Investing.com"
-    },
-    {
-      "title": "بیت‌کوین در محدوده انقباضی: سطوح زنده در 84947 دلار باقی ماند",
-      "date": "2026-10-03 19:02",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بیت‌کوین به بالای 85000 دلار رسید زیرا پیشنهاد نگهداری SEC چشم انداز سازمانی را تقویت می کند",
-      "date": "2026-10-03 18:16",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بسنت می گوید افزایش بازدهی خزانه داری نشان دهنده روند جهانی است، نه دلیلی برای هشدار",
-      "date": "2026-10-03 16:49",
-      "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
@@ -150,11 +144,6 @@
     },
     {
       "title": "مبارزه حقوقی بدنه طلای لندن، بازار شمش را تهدید می کند",
-      "date": "Sat, 03 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام اروپا تحت فشار بازده اوراق قرضه تحت فشار هستند",
       "date": "Sat, 03 Oct 2026",
       "source": "Bloomberg"
     }
@@ -171,21 +160,6 @@
       "source": "Investing.com"
     },
     {
-      "title": "بیت‌کوین در محدوده انقباضی: سطوح زنده در 84947 دلار باقی ماند",
-      "date": "2026-10-03 19:02",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بیت‌کوین به بالای 85000 دلار رسید زیرا پیشنهاد نگهداری SEC چشم انداز سازمانی را تقویت می کند",
-      "date": "2026-10-03 18:16",
-      "source": "Investing.com"
-    },
-    {
-      "title": "بسنت می گوید افزایش بازدهی خزانه داری نشان دهنده روند جهانی است، نه دلیلی برای هشدار",
-      "date": "2026-10-03 16:49",
-      "source": "Investing.com"
-    },
-    {
       "title": "تقویت نظامی آمریکا خطر تشدید تنش ایران را افزایش می دهد",
       "date": "Sat, 03 Oct 2026",
       "source": "Bloomberg"
@@ -194,205 +168,200 @@
       "title": "مبارزه حقوقی بدنه طلای لندن، بازار شمش را تهدید می کند",
       "date": "Sat, 03 Oct 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "سهام اروپا تحت فشار بازده اوراق قرضه تحت فشار هستند",
-      "date": "Sat, 03 Oct 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-03 21:19",
+    "updated": "2026-10-04 00:40",
     "gainers_24h": [
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00631388,
-        "chg": 19.37
+        "price": 0.00627821,
+        "chg": 13.36
       },
       {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 266.43,
-        "chg": 16.05
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01151951,
+        "chg": 12.43
       },
       {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.54,
-        "chg": 6.4
+        "symbol": "wld",
+        "name": "Worldcoin",
+        "price": 0.59628,
+        "chg": 6.35
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 1.18,
-        "chg": 4.56
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.125623,
+        "chg": 4.83
       },
       {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 11.09,
-        "chg": 4.41
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 306.94,
+        "chg": 4.32
       }
     ],
     "losers_24h": [
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.025,
-        "chg": -2.02
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.976962,
+        "chg": -28.14
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.039,
-        "chg": -1.77
+        "price": 1.033,
+        "chg": -3.0
+      },
+      {
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.101651,
+        "chg": -0.93
+      },
+      {
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.244232,
+        "chg": -0.86
       },
       {
         "symbol": "ltc",
         "name": "Litecoin",
-        "price": 68.99,
-        "chg": -0.65
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 180.78,
-        "chg": -0.33
-      },
-      {
-        "symbol": "cro",
-        "name": "Cronos",
-        "price": 0.066291,
-        "chg": -0.21
+        "price": 70.56,
+        "chg": -0.77
       }
     ],
     "gainers_7d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 266.43,
-        "chg": 116.46
-      },
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.54,
-        "chg": 49.18
+        "price": 257.54,
+        "chg": 79.21
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00631388,
-        "chg": 43.09
+        "price": 0.00627821,
+        "chg": 44.03
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 180.78,
-        "chg": 17.04
+        "price": 182.06,
+        "chg": 17.65
+      },
+      {
+        "symbol": "wld",
+        "name": "Worldcoin",
+        "price": 0.59628,
+        "chg": 14.26
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.102363,
-        "chg": 9.81
+        "price": 0.101651,
+        "chg": 9.34
       }
     ],
     "losers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1317.99,
-        "chg": -15.71
+        "price": 1319.51,
+        "chg": -21.27
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.039,
-        "chg": -14.24
+        "price": 1.033,
+        "chg": -15.23
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.237315,
-        "chg": -12.43
+        "price": 0.239335,
+        "chg": -11.62
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01138601,
-        "chg": -12.09
+        "price": 0.01151951,
+        "chg": -11.55
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.122245,
-        "chg": -9.33
+        "price": 0.125623,
+        "chg": -8.13
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 266.43,
-        "chg": 307.08
-      },
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.54,
-        "chg": 211.6
+        "price": 257.54,
+        "chg": 293.67
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.75,
-        "chg": 139.31
+        "price": 4.89,
+        "chg": 146.47
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 0.976962,
+        "chg": 129.53
       },
       {
         "symbol": "sui",
         "name": "Sui",
         "price": 1.18,
-        "chg": 49.39
+        "chg": 51.41
       },
       {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 11.09,
-        "chg": 47.32
+        "symbol": "wld",
+        "name": "Worldcoin",
+        "price": 0.59628,
+        "chg": 51.4
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01138601,
-        "chg": -33.68
+        "price": 0.01151951,
+        "chg": -33.55
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4140.1,
-        "chg": -7.29
+        "price": 4140.36,
+        "chg": -7.28
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.99,
-        "chg": -3.54
+        "chg": -3.55
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.039,
-        "chg": -2.73
+        "price": 1.033,
+        "chg": -1.19
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.025,
-        "chg": -1.02
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.28
       }
     ]
   }
