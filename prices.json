@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-10-04 13:13",
-  "usd_sell": 268700,
-  "usd_buy": 268600,
-  "gold_18k": 26363174,
-  "btc_usd": 85119.27,
+  "timestamp": "2026-10-04 17:36",
+  "usd_sell": 269300,
+  "usd_buy": 269200,
+  "gold_18k": 26379334,
+  "btc_usd": 85358.19,
   "fear_greed": 65,
-  "btc_dominance": 58.6,
-  "market_cap": 2910000000000.0,
+  "btc_dominance": 59.1,
+  "market_cap": 2900000000000.0,
   "market_volume": 40000000000.0,
-  "market_change": -2.22,
+  "market_change": -2.86,
   "top10": [
     {
       "symbol": "btc",
-      "price": 85120,
-      "change_24h": 0.32244,
-      "market_cap": 1710403037464
+      "price": 85356,
+      "change_24h": 0.56641,
+      "market_cap": 1715084798286
     },
     {
       "symbol": "eth",
-      "price": 2695.81,
-      "change_24h": 0.56427,
-      "market_cap": 329157774836
+      "price": 2702.18,
+      "change_24h": 0.71127,
+      "market_cap": 329947305045
     },
     {
       "symbol": "usdt",
-      "price": 0.999897,
-      "change_24h": 0.00114,
-      "market_cap": 184067438861
+      "price": 0.999863,
+      "change_24h": -0.00576,
+      "market_cap": 184061024304
     },
     {
       "symbol": "bnb",
-      "price": 789.12,
-      "change_24h": 2.18046,
-      "market_cap": 105083316840
+      "price": 788.8,
+      "change_24h": 0.09244,
+      "market_cap": 105038645158
     },
     {
       "symbol": "xrp",
       "price": 1.5,
-      "change_24h": 0.94863,
-      "market_cap": 94553986482
+      "change_24h": 0.64484,
+      "market_cap": 94639663934
     },
     {
       "symbol": "usdc",
-      "price": 0.999957,
-      "change_24h": -0.0006,
-      "market_cap": 74109811449
+      "price": 0.999934,
+      "change_24h": -0.00655,
+      "market_cap": 74105273834
     },
     {
       "symbol": "sol",
-      "price": 121.36,
-      "change_24h": 1.54666,
-      "market_cap": 71379372467
+      "price": 121.67,
+      "change_24h": 1.57318,
+      "market_cap": 71579900997
     },
     {
       "symbol": "trx",
-      "price": 0.336332,
-      "change_24h": 0.20483,
-      "market_cap": 31937206693
+      "price": 0.335363,
+      "change_24h": -0.31492,
+      "market_cap": 31851963693
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.067,
-      "change_24h": 2.02689,
-      "market_cap": 25058244006
+      "price": 1.07,
+      "change_24h": 4.80039,
+      "market_cap": 25112322544
     },
     {
       "symbol": "zec",
-      "price": 1328.49,
-      "change_24h": 1.78463,
-      "market_cap": 22541863969
+      "price": 1335.3,
+      "change_24h": 2.31889,
+      "market_cap": 22657990200
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +0.4% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.0% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.3% در ۲۴ ساعت",
+        "text": "BTC +0.6% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -101,7 +101,7 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-10-04 13:13"
+    "updated": "2026-10-04 17:36"
   },
   "whales": {
     "unconfirmed": {
@@ -117,173 +117,153 @@
   },
   "news_investing": [
     {
-      "title": "افزایش بازده اوراق قرضه، میان مدت، سود برای آزمایش قدرت معمول سهام ایالات متحده در سه ماهه چهارم",
-      "date": "2026-10-04 13:00",
+      "title": "دولت یمن حمله‌ای را برای تصرف تمام مناطق از حوثی‌های تحت حمایت ایران آغاز کرد",
+      "date": "2026-10-04 16:36",
       "source": "Investing.com"
     },
     {
-      "title": "رهبر یمن از عملیات نظامی بزرگ علیه حوثی های مورد حمایت ایران خبر داد",
-      "date": "2026-10-04 12:54",
+      "title": "مشاور ترامپ، هاست، پس از گزارش نوسازی، از پاول خواست تا هیئت مدیره فدرال رزرو را ترک کند",
+      "date": "2026-10-04 16:36",
       "source": "Investing.com"
     },
     {
-      "title": "اوپک پلاس موافقت کرد که اهداف تولید نفت در ماه نوامبر را ثابت نگه دارد",
-      "date": "2026-10-04 12:12",
-      "source": "Investing.com"
-    },
-    {
-      "title": "ایران هرمز را بسته نگه می دارد زیرا مذاکرات با واشنگتن به بن بست باقی مانده است",
-      "date": "2026-10-04 11:36",
+      "title": "توضیح- حوثی‌ها، متحدان ایران در یمن چه کسانی هستند؟",
+      "date": "2026-10-04 13:36",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "مشاغل کند است اما تورم فدرال را در حالت هشدار نگه می دارد",
+      "title": "کاهش اشتغال اما تورم، فدرال رزرو را در حالت آماده‌باش نگه می‌دارد",
       "date": "Sun, 04 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازارها برای نوسانات تند بدون توجه به رای برزیل آماده می شوند",
+      "title": "بازارها خود را برای نوسانات شدید، صرف نظر از نتیجه انتخابات برزیل، آماده می‌کنند",
       "date": "Sun, 04 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "اوپک پلاس با ثابت نگه داشتن اهداف تولید نفت در ماه نوامبر موافقت کرد",
+      "title": "اوپک پلاس توافق کرد که اهداف تولید نفت را در ماه نوامبر ثابت نگه دارد",
       "date": "Sun, 04 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "زمزمه های ریسک سرایت به بازار اوراق قرضه اروپا باز می گردد",
+      "title": "زمزمه‌های خطر سرایت بیماری به بازار اوراق قرضه اروپا بازمی‌گردد",
       "date": "Sun, 04 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "عراق استراتژی نفت را با ترتیب دادن یک نفتکش برای عبور از هرمز تغییر می دهد",
+      "title": "عراق با عبور نفتکش‌ها از تنگه هرمز، استراتژی نفتی خود را تغییر می‌دهد",
       "date": "Sun, 04 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "تقویت نظامی آمریکا خطر تشدید تنش ایران را افزایش می دهد",
-      "date": "Sat, 03 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "افزایش بازده اوراق قرضه، میان مدت، سود برای آزمایش قدرت معمول سهام ایالات متحده در سه ماهه چهارم",
-      "date": "2026-10-04 13:00",
+      "title": "دولت یمن حمله‌ای را برای تصرف تمام مناطق از حوثی‌های تحت حمایت ایران آغاز کرد",
+      "date": "2026-10-04 16:36",
       "source": "Investing.com"
     },
     {
-      "title": "رهبر یمن از عملیات نظامی بزرگ علیه حوثی های مورد حمایت ایران خبر داد",
-      "date": "2026-10-04 12:54",
+      "title": "مشاور ترامپ، هاست، پس از گزارش نوسازی، از پاول خواست تا هیئت مدیره فدرال رزرو را ترک کند",
+      "date": "2026-10-04 16:36",
       "source": "Investing.com"
     },
     {
-      "title": "اوپک پلاس موافقت کرد که اهداف تولید نفت در ماه نوامبر را ثابت نگه دارد",
-      "date": "2026-10-04 12:12",
+      "title": "توضیح- حوثی‌ها، متحدان ایران در یمن چه کسانی هستند؟",
+      "date": "2026-10-04 13:36",
       "source": "Investing.com"
     },
     {
-      "title": "ایران هرمز را بسته نگه می دارد زیرا مذاکرات با واشنگتن به بن بست باقی مانده است",
-      "date": "2026-10-04 11:36",
-      "source": "Investing.com"
-    },
-    {
-      "title": "مشاغل کند است اما تورم فدرال را در حالت هشدار نگه می دارد",
+      "title": "کاهش اشتغال اما تورم، فدرال رزرو را در حالت آماده‌باش نگه می‌دارد",
       "date": "Sun, 04 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازارها برای نوسانات تند بدون توجه به رای برزیل آماده می شوند",
+      "title": "بازارها خود را برای نوسانات شدید، صرف نظر از نتیجه انتخابات برزیل، آماده می‌کنند",
       "date": "Sun, 04 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "اوپک پلاس با ثابت نگه داشتن اهداف تولید نفت در ماه نوامبر موافقت کرد",
+      "title": "اوپک پلاس توافق کرد که اهداف تولید نفت را در ماه نوامبر ثابت نگه دارد",
       "date": "Sun, 04 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "زمزمه های ریسک سرایت به بازار اوراق قرضه اروپا باز می گردد",
+      "title": "زمزمه‌های خطر سرایت بیماری به بازار اوراق قرضه اروپا بازمی‌گردد",
       "date": "Sun, 04 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "عراق استراتژی نفت را با ترتیب دادن یک نفتکش برای عبور از هرمز تغییر می دهد",
+      "title": "عراق با عبور نفتکش‌ها از تنگه هرمز، استراتژی نفتی خود را تغییر می‌دهد",
       "date": "Sun, 04 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "تقویت نظامی آمریکا خطر تشدید تنش ایران را افزایش می دهد",
-      "date": "Sat, 03 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-04 13:13",
+    "updated": "2026-10-04 17:36",
     "gainers_24h": [
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01194575,
-        "chg": 14.18
-      },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00629118,
-        "chg": 8.35
+        "price": 0.00666575,
+        "chg": 10.12
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 303.66,
-        "chg": 4.77
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01169932,
+        "chg": 6.71
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.87,
-        "chg": 4.29
+        "price": 4.95,
+        "chg": 5.55
       },
       {
-        "symbol": "cro",
-        "name": "Cronos",
-        "price": 0.068565,
-        "chg": 4.13
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.07,
+        "chg": 4.8
+      },
+      {
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 71.35,
+        "chg": 3.71
       }
     ],
     "losers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.18,
-        "chg": -18.74
+        "price": 1.22,
+        "chg": -17.38
       },
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 9.02,
-        "chg": -1.22
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 546.67,
+        "chg": -1.08
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 10.98,
-        "chg": -0.69
+        "price": 11.05,
+        "chg": -0.71
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 180.02,
-        "chg": -0.63
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.335363,
+        "chg": -0.31
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.99,
+        "symbol": "shib",
+        "name": "Shiba Inu",
+        "price": 5.73e-06,
         "chg": -0.17
       }
     ],
@@ -291,128 +271,128 @@
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 253.71,
-        "chg": 55.62
+        "price": 255.73,
+        "chg": 43.28
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00629118,
-        "chg": 39.16
+        "price": 0.00666575,
+        "chg": 37.5
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 180.02,
-        "chg": 15.45
+        "price": 179.6,
+        "chg": 16.87
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.101868,
-        "chg": 7.2
+        "price": 0.102194,
+        "chg": 9.5
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.18,
-        "chg": 2.94
+        "price": 1.22,
+        "chg": 3.94
       }
     ],
     "losers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1328.49,
-        "chg": -20.07
+        "price": 1335.3,
+        "chg": -15.3
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.236486,
-        "chg": -13.98
+        "price": 0.241227,
+        "chg": -13.53
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.044,
-        "chg": -13.48
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.123935,
-        "chg": -10.45
+        "price": 1.02,
+        "chg": -13.06
       },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.491379,
-        "chg": -9.92
+        "price": 0.493054,
+        "chg": -9.09
+      },
+      {
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.53,
+        "chg": -7.23
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 253.71,
-        "chg": 283.43
+        "price": 255.73,
+        "chg": 298.12
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.18,
-        "chg": 163.13
+        "price": 1.22,
+        "chg": 169.68
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.87,
-        "chg": 140.06
+        "price": 4.95,
+        "chg": 155.62
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.18,
-        "chg": 52.24
+        "price": 1.22,
+        "chg": 63.44
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00629118,
-        "chg": 48.12
+        "price": 0.00666575,
+        "chg": 58.05
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01194575,
-        "chg": -29.94
+        "price": 0.01169932,
+        "chg": -29.07
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 1.02,
+        "chg": -7.72
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4141.77,
-        "chg": -7.16
+        "price": 4139.44,
+        "chg": -6.52
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.99,
-        "chg": -3.36
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 1.044,
-        "chg": -2.92
+        "chg": -3.21
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
-        "chg": 0.28
+        "chg": 0.24
       }
     ]
   }
