@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-10-05 15:20",
-  "usd_sell": 269100,
-  "usd_buy": 269000,
-  "gold_18k": 26517844,
-  "btc_usd": 85515.45,
+  "timestamp": "2026-10-05 16:03",
+  "usd_sell": 269600,
+  "usd_buy": 269500,
+  "gold_18k": 26559397,
+  "btc_usd": 85237.03,
   "fear_greed": 70,
   "btc_dominance": 58.7,
   "market_cap": 2920000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -1.71,
+  "market_change": -1.99,
   "top10": [
     {
       "symbol": "btc",
-      "price": 85547,
-      "change_24h": 0.1722,
-      "market_cap": 1719304000508
+      "price": 85235,
+      "change_24h": 0.00826,
+      "market_cap": 1712641541286
     },
     {
       "symbol": "eth",
-      "price": 2702.05,
-      "change_24h": 0.0256,
-      "market_cap": 330008025502
+      "price": 2695.94,
+      "change_24h": -0.05327,
+      "market_cap": 329168583680
     },
     {
       "symbol": "usdt",
-      "price": 0.999862,
-      "change_24h": -0.00411,
-      "market_cap": 184062910608
+      "price": 0.999963,
+      "change_24h": 0.00674,
+      "market_cap": 184081057945
     },
     {
       "symbol": "bnb",
-      "price": 788.58,
-      "change_24h": 0.09521,
-      "market_cap": 105039742496
+      "price": 786.69,
+      "change_24h": 0.00567,
+      "market_cap": 104761252244
     },
     {
       "symbol": "xrp",
-      "price": 1.5,
-      "change_24h": -0.47453,
-      "market_cap": 94692093989
+      "price": 1.49,
+      "change_24h": -0.73168,
+      "market_cap": 94093656228
     },
     {
       "symbol": "usdc",
-      "price": 0.999971,
-      "change_24h": 0.00046,
-      "market_cap": 73967209726
+      "price": 0.999983,
+      "change_24h": 0.00515,
+      "market_cap": 74016108380
     },
     {
       "symbol": "sol",
-      "price": 119.63,
-      "change_24h": -1.89545,
-      "market_cap": 70394603156
+      "price": 119.3,
+      "change_24h": -1.83289,
+      "market_cap": 70194701432
     },
     {
       "symbol": "trx",
-      "price": 0.336098,
-      "change_24h": 0.12807,
-      "market_cap": 31935794792
+      "price": 0.336409,
+      "change_24h": 0.23007,
+      "market_cap": 31960190085
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.064,
+      "price": 1.063,
       "change_24h": null,
-      "market_cap": 25047874706
+      "market_cap": 24974755726
     },
     {
       "symbol": "zec",
-      "price": 1310.67,
-      "change_24h": -1.76765,
-      "market_cap": 22258802217
+      "price": 1293.78,
+      "change_24h": -1.91097,
+      "market_cap": 21958672916
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +2.6% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.3% در ۲۴ ساعت",
+        "text": "BTC -0.0% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 44",
+        "text": "معتدل: 42",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-10-05 15:20"
+    "confidence": 60,
+    "updated": "2026-10-05 16:03"
   },
   "whales": {
     "unconfirmed": {
@@ -113,15 +117,50 @@
   },
   "news_investing": [
     {
-      "title": "سهام Marathon Petroleum به 431.23 دلار به بالاترین سطح تاریخ رسید",
-      "date": "2026-10-05 15:00",
+      "title": "با حرکت بازار اوراق قرضه، سهام ایالات متحده بالاتر می رود، قیمت نفت همچنان در کانون توجه است",
+      "date": "2026-10-05 15:56",
+      "source": "Investing.com"
+    },
+    {
+      "title": "دادگاه عالی ایالات متحده به درخواست شرکت های نفتی برای اجتناب از دعوای آب و هوایی رسیدگی می کند",
+      "date": "2026-10-05 15:54",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام ایالات متحده مخلوط شد، در حالی که سقوط یورو در فرانسه نگران بود و بازارهای برزیل افزایش یافت",
+      "date": "2026-10-05 15:43",
+      "source": "Investing.com"
+    },
+    {
+      "title": "به گفته مدیران، آشفتگی بازار نفت ممکن است سال ها ادامه داشته باشد",
+      "date": "2026-10-05 15:42",
+      "source": "Investing.com"
+    },
+    {
+      "title": "شورون CFO را به رهبری عملیات نفت و گاز ارتقا می دهد",
+      "date": "2026-10-05 15:42",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "افزایش سهام در حالی که افت نفت نگرانی های بدهی اروپا را جبران می کند: بازارها به هم می ریزند",
+      "title": "سهام ها علیرغم زیان مجدد اوراق قرضه افزایش فنی پیدا می کنند: بازارها بسته می شوند",
       "date": "Sun, 04 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 5 مهر",
+      "date": "Sun, 04 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "خطر جدید برای خزانه داری در چاپ دقیق اوراق قرضه آتی پنهان می شود",
+      "date": "Mon, 05 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "رالی امداد طلا در افق؟",
+      "date": "Mon, 05 Oct 2026",
       "source": "Bloomberg"
     },
     {
@@ -131,34 +170,54 @@
     },
     {
       "title": "نوسانات نفت با تمرکز بر کاهش شدید قیمت در عربستان",
-      "date": "Mon, 05 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش سهام در حالی که افت نفت نگرانی های بدهی اروپا را جبران می کند",
-      "date": "Mon, 05 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "عراق به دنبال نفتکش های بیشتری برای کنترل ترانزیت نفت هرمز خود است",
-      "date": "Mon, 05 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شورون مدیر مالی گوستاوسون را به عنوان جانشین مدیرعامل Oil Giant Eyes معرفی کرد",
       "date": "Mon, 05 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام Marathon Petroleum به 431.23 دلار به بالاترین سطح تاریخ رسید",
-      "date": "2026-10-05 15:00",
+      "title": "با حرکت بازار اوراق قرضه، سهام ایالات متحده بالاتر می رود، قیمت نفت همچنان در کانون توجه است",
+      "date": "2026-10-05 15:56",
       "source": "Investing.com"
     },
     {
-      "title": "افزایش سهام در حالی که افت نفت نگرانی های بدهی اروپا را جبران می کند: بازارها به هم می ریزند",
+      "title": "دادگاه عالی ایالات متحده به درخواست شرکت های نفتی برای اجتناب از دعوای آب و هوایی رسیدگی می کند",
+      "date": "2026-10-05 15:54",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام ایالات متحده مخلوط شد، در حالی که سقوط یورو در فرانسه نگران بود و بازارهای برزیل افزایش یافت",
+      "date": "2026-10-05 15:43",
+      "source": "Investing.com"
+    },
+    {
+      "title": "به گفته مدیران، آشفتگی بازار نفت ممکن است سال ها ادامه داشته باشد",
+      "date": "2026-10-05 15:42",
+      "source": "Investing.com"
+    },
+    {
+      "title": "شورون CFO را به رهبری عملیات نفت و گاز ارتقا می دهد",
+      "date": "2026-10-05 15:42",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام ها علیرغم زیان مجدد اوراق قرضه افزایش فنی پیدا می کنند: بازارها بسته می شوند",
       "date": "Sun, 04 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 5 مهر",
+      "date": "Sun, 04 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "خطر جدید برای خزانه داری در چاپ دقیق اوراق قرضه آتی پنهان می شود",
+      "date": "Mon, 05 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "رالی امداد طلا در افق؟",
+      "date": "Mon, 05 Oct 2026",
       "source": "Bloomberg"
     },
     {
@@ -170,55 +229,40 @@
       "title": "نوسانات نفت با تمرکز بر کاهش شدید قیمت در عربستان",
       "date": "Mon, 05 Oct 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش سهام در حالی که افت نفت نگرانی های بدهی اروپا را جبران می کند",
-      "date": "Mon, 05 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "عراق به دنبال نفتکش های بیشتری برای کنترل ترانزیت نفت هرمز خود است",
-      "date": "Mon, 05 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شورون مدیر مالی گوستاوسون را به عنوان جانشین مدیرعامل Oil Giant Eyes معرفی کرد",
-      "date": "Mon, 05 Oct 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-05 15:20",
+    "updated": "2026-10-05 16:03",
     "gainers_24h": [
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.268389,
-        "chg": 7.99
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.249427,
-        "chg": 4.85
+        "price": 0.263554,
+        "chg": 6.57
       },
       {
         "symbol": "okb",
         "name": "OKB",
-        "price": 126.8,
-        "chg": 4.68
+        "price": 126.65,
+        "chg": 4.76
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.245786,
+        "chg": 4.37
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 5.02,
+        "chg": 4.11
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 92.95,
-        "chg": 3.24
-      },
-      {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 5.88e-06,
-        "chg": 2.86
+        "price": 92.73,
+        "chg": 3.12
       }
     ],
     "losers_24h": [
@@ -226,153 +270,153 @@
         "symbol": "sui",
         "name": "Sui",
         "price": 1.19,
-        "chg": -3.51
+        "chg": -4.52
+      },
+      {
+        "symbol": "xlm",
+        "name": "Stellar",
+        "price": 0.212058,
+        "chg": -2.86
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 13.83,
-        "chg": -2.69
+        "price": 13.78,
+        "chg": -2.55
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.01165196,
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 69.96,
         "chg": -2.38
-      },
-      {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 299.9,
-        "chg": -2.26
-      },
-      {
-        "symbol": "sol",
-        "name": "Solana",
-        "price": 119.63,
-        "chg": -1.9
-      }
-    ],
-    "gainers_7d": [
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 182.55,
-        "chg": 22.54
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00638097,
-        "chg": 21.08
+        "price": 0.00631869,
+        "chg": -2.34
+      }
+    ],
+    "gainers_7d": [
+      {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00631869,
+        "chg": 26.19
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 182.64,
+        "chg": 25.72
+      },
+      {
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 254.8,
+        "chg": 11.56
       },
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.268389,
-        "chg": 7.69
+        "price": 0.263554,
+        "chg": 9.39
       },
       {
         "symbol": "okb",
         "name": "OKB",
-        "price": 126.8,
-        "chg": 6.96
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 92.95,
-        "chg": 4.55
+        "price": 126.65,
+        "chg": 8.05
       }
     ],
     "losers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1310.67,
-        "chg": -16.76
+        "price": 1293.78,
+        "chg": -15.58
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.10114,
-        "chg": -15.79
+        "price": 0.100774,
+        "chg": -14.69
       },
       {
         "symbol": "btw",
         "name": "Bitway",
         "price": 1.2,
-        "chg": -14.22
+        "chg": -13.2
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.026,
-        "chg": -12.8
+        "price": 1.024,
+        "chg": -10.74
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.52,
-        "chg": -9.49
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01166493,
+        "chg": -6.9
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 254.0,
-        "chg": 297.46
+        "price": 254.8,
+        "chg": 301.61
       },
       {
         "symbol": "btw",
         "name": "Bitway",
         "price": 1.2,
-        "chg": 151.25
+        "chg": 168.46
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.01,
-        "chg": 125.74
+        "price": 5.02,
+        "chg": 128.58
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00638097,
-        "chg": 55.8
+        "price": 0.00631869,
+        "chg": 54.62
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.249427,
-        "chg": 51.54
+        "price": 0.245786,
+        "chg": 50.53
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01165196,
-        "chg": -28.87
+        "price": 0.01166493,
+        "chg": -28.95
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.026,
-        "chg": -8.28
+        "price": 1.024,
+        "chg": -8.53
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4137.75,
-        "chg": -6.29
+        "price": 4135.54,
+        "chg": -6.46
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.96,
-        "chg": -3.38
+        "price": 8.95,
+        "chg": -3.53
       },
       {
         "symbol": "usyc",
