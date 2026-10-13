@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-10-12 17:57",
+  "timestamp": "2026-10-13 00:43",
   "usd_sell": 260600,
   "usd_buy": 260400,
-  "gold_18k": 25901472,
-  "btc_usd": 82394.45,
-  "fear_greed": 69,
-  "btc_dominance": 59.1,
-  "market_cap": 2800000000000.0,
-  "market_volume": 80000000000.0,
-  "market_change": -3.66,
+  "gold_18k": 25919940,
+  "btc_usd": 81332.75,
+  "fear_greed": 57,
+  "btc_dominance": 59.3,
+  "market_cap": 2750000000000.0,
+  "market_volume": 90000000000.0,
+  "market_change": -5.06,
   "top10": [
     {
       "symbol": "btc",
-      "price": 82424,
-      "change_24h": -1.69818,
-      "market_cap": 1656511713750
+      "price": 81350,
+      "change_24h": -2.92186,
+      "market_cap": 1635944185686
     },
     {
       "symbol": "eth",
-      "price": 2509.14,
-      "change_24h": -1.24094,
-      "market_cap": 306436547250
+      "price": 2425.04,
+      "change_24h": -4.62713,
+      "market_cap": 296383286481
     },
     {
       "symbol": "usdt",
-      "price": 0.999114,
-      "change_24h": 0.00646,
-      "market_cap": 184091677170
+      "price": 0.999209,
+      "change_24h": 0.00964,
+      "market_cap": 184038488616
     },
     {
       "symbol": "bnb",
-      "price": 743.99,
-      "change_24h": -1.36081,
-      "market_cap": 99070710803
+      "price": 726.35,
+      "change_24h": -3.5671,
+      "market_cap": 96788364047
     },
     {
       "symbol": "xrp",
-      "price": 1.36,
-      "change_24h": -3.93667,
-      "market_cap": 85936113230
+      "price": 1.33,
+      "change_24h": -5.89699,
+      "market_cap": 83869207971
     },
     {
       "symbol": "usdc",
-      "price": 0.999691,
-      "change_24h": 0.00998,
-      "market_cap": 72801618522
+      "price": 0.999733,
+      "change_24h": 0.00784,
+      "market_cap": 72771174733
     },
     {
       "symbol": "sol",
-      "price": 107.69,
-      "change_24h": -4.06498,
-      "market_cap": 63444912970
+      "price": 103.69,
+      "change_24h": -7.00077,
+      "market_cap": 61167336636
     },
     {
       "symbol": "trx",
-      "price": 0.33011,
-      "change_24h": -0.28339,
-      "market_cap": 31362359583
+      "price": 0.328544,
+      "change_24h": -0.43209,
+      "market_cap": 31210273624
     },
     {
       "symbol": "figr_heloc",
       "price": 1.064,
       "change_24h": null,
-      "market_cap": 25286453227
+      "market_cap": 25285853440
     },
     {
       "symbol": "zec",
-      "price": 1238.86,
-      "change_24h": -3.88929,
-      "market_cap": 21041815222
+      "price": 1144.07,
+      "change_24h": -10.77211,
+      "market_cap": 19418569467
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 69/100",
+        "text": "وضعیت: 57/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.5% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -5.3% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -1.7% در ۲۴ ساعت",
+        "text": "BTC -2.8% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 46",
+        "text": "معتدل: 41",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-10-12 17:58"
+    "confidence": 60,
+    "updated": "2026-10-13 00:44"
   },
   "whales": {
     "unconfirmed": {
@@ -113,282 +117,312 @@
   },
   "news_investing": [
     {
-      "title": "Hammack فدرال رزرو از سیاست محدودکننده حمایت می کند، می گوید اگر \"نسبتا سریع\" انجام شود بهتر است",
-      "date": "2026-10-12 17:42",
+      "title": "نفت کاهش می یابد زیرا چشم انداز عرضه گازوئیل روسیه با خطرات عرضه خلیج فارس مقابله می کند",
+      "date": "2026-10-13 00:30",
       "source": "Investing.com"
     },
     {
-      "title": "وارانت طلای گالانتاس برای 1.18 میلیون سهم اعمال شد",
-      "date": "2026-10-12 17:26",
+      "title": "با افزایش صادرات گازوئیل روسیه، قیمت نفت کاهش می یابد",
+      "date": "2026-10-13 00:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "معاملات آتی سهام ایالات متحده با افزایش درآمدهای بانکی و داده های تورم ثابت است",
+      "date": "2026-10-13 00:25",
+      "source": "Investing.com"
+    },
+    {
+      "title": "فدرال رزرو’s Hammack: امید به کاهش تقاضا و تورم، بدون دردسر بازار کار",
+      "date": "2026-10-13 00:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "PPI ژاپن به طور غیرمنتظره ای در ماه سپتامبر با افزایش ین و روغن خنک کننده کاهش یافت",
+      "date": "2026-10-13 00:04",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "فدرال رزرو’s Hammack تنظیمات کوچکتر و مکرر نرخ را ترجیح می دهد",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 13 مهر",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "S&P 500 Wavers به‌عنوان شرط‌های درآمدی شکست تراشه‌های افست: بسته‌بندی بازارها",
-      "date": "Sun, 11 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نفت در مورد تهدیدات عرضه از روسیه به خاورمیانه پیشرفت می کند",
+      "title": "سقوط سهام آسیایی، پیگیری از دست دادن تراشه های ایالات متحده: بسته بندی بازارها",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سوپرتانکرها از مرکز انتقال نفت خلیج فارس در میان حملات ایران دور می‌شوند",
+      "title": "طلا همچنان افت می کند زیرا جنگ خاورمیانه ترس از تورم را تشدید می کند",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "فدرال رزرو's Hammack می گوید که تنظیمات نرخ کوچکتر و مکرر ترجیح داده می شود",
+      "title": "گلدمن می‌گوید بازارها تا چه اندازه یوان می‌تواند افزایش یابد را دست‌کم می‌گیرند",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "کنیا بازار خارج از بورس اوراق بهادار دولتی را برنامه ریزی می کند",
+      "title": "Fmr. بتسی دوک، رئیس فدرال رزرو در مورد شاخص قیمت مصرف‌کننده در میان نتایج بانک",
+      "date": "Mon, 12 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بلک راک اوراق قرضه کوتاه مدت را صعودی می کند، سهام را کاهش می دهد",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "Hammack فدرال رزرو از سیاست محدودکننده حمایت می کند، می گوید اگر \"نسبتا سریع\" انجام شود بهتر است",
-      "date": "2026-10-12 17:42",
+      "title": "نفت کاهش می یابد زیرا چشم انداز عرضه گازوئیل روسیه با خطرات عرضه خلیج فارس مقابله می کند",
+      "date": "2026-10-13 00:30",
       "source": "Investing.com"
     },
     {
-      "title": "وارانت طلای گالانتاس برای 1.18 میلیون سهم اعمال شد",
-      "date": "2026-10-12 17:26",
+      "title": "با افزایش صادرات گازوئیل روسیه، قیمت نفت کاهش می یابد",
+      "date": "2026-10-13 00:30",
       "source": "Investing.com"
     },
     {
-      "title": "فدرال رزرو’s Hammack تنظیمات کوچکتر و مکرر نرخ را ترجیح می دهد",
+      "title": "معاملات آتی سهام ایالات متحده با افزایش درآمدهای بانکی و داده های تورم ثابت است",
+      "date": "2026-10-13 00:25",
+      "source": "Investing.com"
+    },
+    {
+      "title": "فدرال رزرو’s Hammack: امید به کاهش تقاضا و تورم، بدون دردسر بازار کار",
+      "date": "2026-10-13 00:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "PPI ژاپن به طور غیرمنتظره ای در ماه سپتامبر با افزایش ین و روغن خنک کننده کاهش یافت",
+      "date": "2026-10-13 00:04",
+      "source": "Investing.com"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 13 مهر",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "S&P 500 Wavers به‌عنوان شرط‌های درآمدی شکست تراشه‌های افست: بسته‌بندی بازارها",
-      "date": "Sun, 11 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نفت در مورد تهدیدات عرضه از روسیه به خاورمیانه پیشرفت می کند",
+      "title": "سقوط سهام آسیایی، پیگیری از دست دادن تراشه های ایالات متحده: بسته بندی بازارها",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سوپرتانکرها از مرکز انتقال نفت خلیج فارس در میان حملات ایران دور می‌شوند",
+      "title": "طلا همچنان افت می کند زیرا جنگ خاورمیانه ترس از تورم را تشدید می کند",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "فدرال رزرو's Hammack می گوید که تنظیمات نرخ کوچکتر و مکرر ترجیح داده می شود",
+      "title": "گلدمن می‌گوید بازارها تا چه اندازه یوان می‌تواند افزایش یابد را دست‌کم می‌گیرند",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "کنیا بازار خارج از بورس اوراق بهادار دولتی را برنامه ریزی می کند",
+      "title": "Fmr. بتسی دوک، رئیس فدرال رزرو در مورد شاخص قیمت مصرف‌کننده در میان نتایج بانک",
+      "date": "Mon, 12 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بلک راک اوراق قرضه کوتاه مدت را صعودی می کند، سهام را کاهش می دهد",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-12 17:57",
+    "updated": "2026-10-13 00:43",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.69,
-        "chg": 0.18
-      },
-      {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.33011,
-        "chg": -0.28
+        "price": 1.75,
+        "chg": 5.92
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 8.89,
-        "chg": -0.3
+        "chg": -0.0
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.328544,
+        "chg": -0.43
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4164.87,
-        "chg": -0.67
+        "price": 4156.69,
+        "chg": -1.05
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 533.45,
-        "chg": -1.0
+        "price": 524.37,
+        "chg": -2.72
       }
     ],
     "losers_24h": [
       {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00523797,
-        "chg": -9.9
-      },
-      {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.219809,
-        "chg": -8.23
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 227.03,
-        "chg": -7.44
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 7.37,
-        "chg": -5.92
+        "price": 0.202423,
+        "chg": -16.43
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.43,
-        "chg": -5.87
+        "price": 5.03,
+        "chg": -14.76
+      },
+      {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00486727,
+        "chg": -14.05
+      },
+      {
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.463102,
+        "chg": -12.75
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.87,
+        "chg": -11.65
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.69,
-        "chg": 43.09
+        "price": 1.75,
+        "chg": 40.87
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 5.43,
-        "chg": 7.6
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.064,
+        "chg": 3.01
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4164.87,
-        "chg": 0.55
-      },
-      {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.492881,
-        "chg": 0.28
+        "price": 4156.69,
+        "chg": 0.59
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.07
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 8.89,
+        "chg": -0.26
       }
     ],
     "losers_7d": [
       {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00523797,
-        "chg": -17.88
-      },
-      {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.37,
-        "chg": -17.68
+        "price": 6.87,
+        "chg": -23.3
+      },
+      {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00486727,
+        "chg": -22.95
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.202423,
+        "chg": -17.87
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 274.27,
-        "chg": -13.05
+        "price": 261.78,
+        "chg": -16.05
       },
       {
-        "symbol": "cro",
-        "name": "Cronos",
-        "price": 0.05997,
-        "chg": -12.45
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 161.37,
-        "chg": -11.68
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 1.009,
+        "chg": -15.61
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 227.03,
-        "chg": 254.38
+        "price": 222.68,
+        "chg": 254.57
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.69,
-        "chg": 214.51
+        "price": 1.75,
+        "chg": 218.02
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.43,
-        "chg": 124.52
+        "price": 5.03,
+        "chg": 116.09
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.219809,
-        "chg": 52.41
+        "price": 0.202423,
+        "chg": 44.95
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.07,
-        "chg": 46.41
+        "price": 1.009,
+        "chg": 42.35
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.01029247,
-        "chg": -31.4
+        "price": 0.00973464,
+        "chg": -37.5
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.931012,
-        "chg": -21.19
+        "price": 0.896209,
+        "chg": -23.24
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4164.87,
-        "chg": -4.36
+        "price": 4156.69,
+        "chg": -4.22
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.33011,
-        "chg": -2.71
+        "price": 0.328544,
+        "chg": -3.23
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.89,
-        "chg": -2.52
+        "symbol": "eth",
+        "name": "Ethereum",
+        "price": 2425.04,
+        "chg": -3.07
       }
     ]
   }
