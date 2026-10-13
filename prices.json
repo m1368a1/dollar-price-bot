@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-10-13 00:43",
-  "usd_sell": 260600,
-  "usd_buy": 260400,
-  "gold_18k": 25919940,
-  "btc_usd": 81332.75,
+  "timestamp": "2026-10-13 07:45",
+  "usd_sell": 259900,
+  "usd_buy": 259700,
+  "gold_18k": 25797589,
+  "btc_usd": 83810.51,
   "fear_greed": 57,
-  "btc_dominance": 59.3,
-  "market_cap": 2750000000000.0,
-  "market_volume": 90000000000.0,
-  "market_change": -5.06,
+  "btc_dominance": 59.2,
+  "market_cap": 2840000000000.0,
+  "market_volume": 100000000000.0,
+  "market_change": -2.8,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81350,
-      "change_24h": -2.92186,
-      "market_cap": 1635944185686
+      "price": 83851,
+      "change_24h": -0.06841,
+      "market_cap": 1685193012648
     },
     {
       "symbol": "eth",
-      "price": 2425.04,
-      "change_24h": -4.62713,
-      "market_cap": 296383286481
+      "price": 2531.3,
+      "change_24h": -1.30408,
+      "market_cap": 309149972698
     },
     {
       "symbol": "usdt",
-      "price": 0.999209,
-      "change_24h": 0.00964,
-      "market_cap": 184038488616
+      "price": 0.999268,
+      "change_24h": -0.00312,
+      "market_cap": 184064771397
     },
     {
       "symbol": "bnb",
-      "price": 726.35,
-      "change_24h": -3.5671,
-      "market_cap": 96788364047
+      "price": 745.85,
+      "change_24h": -1.10938,
+      "market_cap": 99316118712
     },
     {
       "symbol": "xrp",
-      "price": 1.33,
-      "change_24h": -5.89699,
-      "market_cap": 83869207971
+      "price": 1.38,
+      "change_24h": -2.47222,
+      "market_cap": 86964962488
     },
     {
       "symbol": "usdc",
-      "price": 0.999733,
-      "change_24h": 0.00784,
-      "market_cap": 72771174733
+      "price": 0.999858,
+      "change_24h": 0.01252,
+      "market_cap": 72665061622
     },
     {
       "symbol": "sol",
-      "price": 103.69,
-      "change_24h": -7.00077,
-      "market_cap": 61167336636
+      "price": 108.7,
+      "change_24h": -3.50708,
+      "market_cap": 64044846167
     },
     {
       "symbol": "trx",
-      "price": 0.328544,
-      "change_24h": -0.43209,
-      "market_cap": 31210273624
+      "price": 0.329665,
+      "change_24h": -0.5133,
+      "market_cap": 31316198761
     },
     {
       "symbol": "figr_heloc",
       "price": 1.064,
       "change_24h": null,
-      "market_cap": 25285853440
+      "market_cap": 25283975359
     },
     {
       "symbol": "zec",
-      "price": 1144.07,
-      "change_24h": -10.77211,
-      "market_cap": 19418569467
+      "price": 1224.62,
+      "change_24h": -7.69514,
+      "market_cap": 20796350136
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -5.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -2.0% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -2.8% در ۲۴ ساعت",
+        "text": "BTC -0.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 41",
+        "text": "معتدل: 51",
         "tone": "neutral"
       },
       {
-        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
-        "tone": "bearish"
+        "text": "سه سرباز سفید (Three White Soldiers) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
     "confidence": 60,
-    "updated": "2026-10-13 00:44"
+    "updated": "2026-10-13 07:45"
   },
   "whales": {
     "unconfirmed": {
@@ -115,314 +115,233 @@
       "top": []
     }
   },
-  "news_investing": [
-    {
-      "title": "نفت کاهش می یابد زیرا چشم انداز عرضه گازوئیل روسیه با خطرات عرضه خلیج فارس مقابله می کند",
-      "date": "2026-10-13 00:30",
-      "source": "Investing.com"
-    },
-    {
-      "title": "با افزایش صادرات گازوئیل روسیه، قیمت نفت کاهش می یابد",
-      "date": "2026-10-13 00:30",
-      "source": "Investing.com"
-    },
-    {
-      "title": "معاملات آتی سهام ایالات متحده با افزایش درآمدهای بانکی و داده های تورم ثابت است",
-      "date": "2026-10-13 00:25",
-      "source": "Investing.com"
-    },
-    {
-      "title": "فدرال رزرو’s Hammack: امید به کاهش تقاضا و تورم، بدون دردسر بازار کار",
-      "date": "2026-10-13 00:12",
-      "source": "Investing.com"
-    },
-    {
-      "title": "PPI ژاپن به طور غیرمنتظره ای در ماه سپتامبر با افزایش ین و روغن خنک کننده کاهش یافت",
-      "date": "2026-10-13 00:04",
-      "source": "Investing.com"
-    }
-  ],
+  "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 13 مهر",
+      "title": "رکود تراشه‌ها پیش از گزارش‌های درآمدی وال استریت عمیق‌تر می‌شود: بازارها در هم تنیده شده‌اند",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط سهام آسیایی، پیگیری از دست دادن تراشه های ایالات متحده: بسته بندی بازارها",
+      "title": "افزایش قیمت طلا با داده‌های تورم ایالات متحده و تمرکز بر مسیر نرخ بهره فدرال رزرو",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا همچنان افت می کند زیرا جنگ خاورمیانه ترس از تورم را تشدید می کند",
-      "date": "Mon, 12 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "گلدمن می‌گوید بازارها تا چه اندازه یوان می‌تواند افزایش یابد را دست‌کم می‌گیرند",
-      "date": "Mon, 12 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Fmr. بتسی دوک، رئیس فدرال رزرو در مورد شاخص قیمت مصرف‌کننده در میان نتایج بانک",
-      "date": "Mon, 12 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بلک راک اوراق قرضه کوتاه مدت را صعودی می کند، سهام را کاهش می دهد",
-      "date": "Mon, 12 Oct 2026",
+      "title": "عربستان سعودی از حملات تازه خبر می‌دهد، در حالی که درگیری‌های گسترده‌تر می‌تواند قیمت نفت را به ۱۲۰ دلار برساند",
+      "date": "Tue, 13 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "نفت کاهش می یابد زیرا چشم انداز عرضه گازوئیل روسیه با خطرات عرضه خلیج فارس مقابله می کند",
-      "date": "2026-10-13 00:30",
-      "source": "Investing.com"
-    },
-    {
-      "title": "با افزایش صادرات گازوئیل روسیه، قیمت نفت کاهش می یابد",
-      "date": "2026-10-13 00:30",
-      "source": "Investing.com"
-    },
-    {
-      "title": "معاملات آتی سهام ایالات متحده با افزایش درآمدهای بانکی و داده های تورم ثابت است",
-      "date": "2026-10-13 00:25",
-      "source": "Investing.com"
-    },
-    {
-      "title": "فدرال رزرو’s Hammack: امید به کاهش تقاضا و تورم، بدون دردسر بازار کار",
-      "date": "2026-10-13 00:12",
-      "source": "Investing.com"
-    },
-    {
-      "title": "PPI ژاپن به طور غیرمنتظره ای در ماه سپتامبر با افزایش ین و روغن خنک کننده کاهش یافت",
-      "date": "2026-10-13 00:04",
-      "source": "Investing.com"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 13 مهر",
+      "title": "رکود تراشه‌ها پیش از گزارش‌های درآمدی وال استریت عمیق‌تر می‌شود: بازارها در هم تنیده شده‌اند",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سقوط سهام آسیایی، پیگیری از دست دادن تراشه های ایالات متحده: بسته بندی بازارها",
+      "title": "افزایش قیمت طلا با داده‌های تورم ایالات متحده و تمرکز بر مسیر نرخ بهره فدرال رزرو",
       "date": "Mon, 12 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا همچنان افت می کند زیرا جنگ خاورمیانه ترس از تورم را تشدید می کند",
-      "date": "Mon, 12 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "گلدمن می‌گوید بازارها تا چه اندازه یوان می‌تواند افزایش یابد را دست‌کم می‌گیرند",
-      "date": "Mon, 12 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Fmr. بتسی دوک، رئیس فدرال رزرو در مورد شاخص قیمت مصرف‌کننده در میان نتایج بانک",
-      "date": "Mon, 12 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بلک راک اوراق قرضه کوتاه مدت را صعودی می کند، سهام را کاهش می دهد",
-      "date": "Mon, 12 Oct 2026",
+      "title": "عربستان سعودی از حملات تازه خبر می‌دهد، در حالی که درگیری‌های گسترده‌تر می‌تواند قیمت نفت را به ۱۲۰ دلار برساند",
+      "date": "Tue, 13 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-13 00:43",
+    "updated": "2026-10-13 07:45",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.75,
-        "chg": 5.92
+        "price": 1.8,
+        "chg": 4.34
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.89,
-        "chg": -0.0
-      },
-      {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.328544,
-        "chg": -0.43
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4156.69,
-        "chg": -1.05
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.01059245,
+        "chg": 2.43
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 524.37,
-        "chg": -2.72
+        "price": 542.18,
+        "chg": 1.07
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4185.14,
+        "chg": 0.14
+      },
+      {
+        "symbol": "btc",
+        "name": "Bitcoin",
+        "price": 83851,
+        "chg": -0.07
       }
     ],
     "losers_24h": [
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.202423,
-        "chg": -16.43
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00511665,
+        "chg": -12.38
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.03,
-        "chg": -14.76
+        "price": 5.26,
+        "chg": -10.19
       },
       {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00486727,
-        "chg": -14.05
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1224.62,
+        "chg": -7.7
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.218399,
+        "chg": -7.52
       },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.463102,
-        "chg": -12.75
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.87,
-        "chg": -11.65
+        "price": 0.48139,
+        "chg": -6.69
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.75,
-        "chg": 40.87
+        "price": 1.8,
+        "chg": 53.67
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.064,
-        "chg": 3.01
+        "chg": 2.97
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4156.69,
-        "chg": 0.59
+        "price": 4185.14,
+        "chg": 1.55
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.07
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 5.26,
+        "chg": 1.54
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 8.89,
-        "chg": -0.26
+        "price": 8.9,
+        "chg": 0.09
       }
     ],
     "losers_7d": [
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.87,
-        "chg": -23.3
-      },
-      {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00486727,
-        "chg": -22.95
+        "price": 0.00511665,
+        "chg": -18.79
       },
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.202423,
-        "chg": -17.87
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 7.5,
+        "chg": -15.64
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 261.78,
-        "chg": -16.05
+        "price": 275.04,
+        "chg": -13.02
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 1.009,
-        "chg": -15.61
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.088138,
+        "chg": -12.32
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 161.31,
+        "chg": -11.5
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 222.68,
-        "chg": 254.57
+        "price": 229.4,
+        "chg": 257.0
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.75,
-        "chg": 218.02
+        "price": 1.8,
+        "chg": 224.4
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.03,
-        "chg": 116.09
+        "price": 5.26,
+        "chg": 125.22
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.202423,
-        "chg": 44.95
+        "price": 0.218399,
+        "chg": 52.79
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.009,
-        "chg": 42.35
+        "price": 1.075,
+        "chg": 47.87
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00973464,
-        "chg": -37.5
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.896209,
-        "chg": -23.24
+        "price": 0.01059245,
+        "chg": -32.19
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4156.69,
-        "chg": -4.22
+        "price": 4185.14,
+        "chg": -3.77
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.328544,
-        "chg": -3.23
+        "price": 0.329665,
+        "chg": -2.84
       },
       {
-        "symbol": "eth",
-        "name": "Ethereum",
-        "price": 2425.04,
-        "chg": -3.07
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 8.9,
+        "chg": -1.66
+      },
+      {
+        "symbol": "shib",
+        "name": "Shiba Inu",
+        "price": 5.27e-06,
+        "chg": 0.16
       }
     ]
   }
