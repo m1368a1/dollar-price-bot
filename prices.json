@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-10-14 17:13",
-  "usd_sell": 265400,
-  "usd_buy": 265200,
-  "gold_18k": 26067685,
-  "btc_usd": 81930.08,
+  "timestamp": "2026-10-14 20:44",
+  "usd_sell": 265200,
+  "usd_buy": 265000,
+  "gold_18k": 26136940,
+  "btc_usd": 81680.39,
   "fear_greed": 62,
-  "btc_dominance": 59.2,
-  "market_cap": 2780000000000.0,
-  "market_volume": 80370000000000.0,
-  "market_change": -4.27,
+  "btc_dominance": 59.4,
+  "market_cap": 2760000000000.0,
+  "market_volume": 80650000000000.0,
+  "market_change": -4.6,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81961,
-      "change_24h": -1.40043,
-      "market_cap": 1647266272838
+      "price": 81728,
+      "change_24h": -1.80932,
+      "market_cap": 1642541429389
     },
     {
       "symbol": "eth",
-      "price": 2445.64,
-      "change_24h": -2.35933,
-      "market_cap": 298689471825
+      "price": 2418.63,
+      "change_24h": -3.52232,
+      "market_cap": 295388764087
     },
     {
       "symbol": "usdt",
-      "price": 0.999316,
-      "change_24h": -0.00024,
-      "market_cap": 184030865144
+      "price": 0.999165,
+      "change_24h": -0.01618,
+      "market_cap": 184003573646
     },
     {
       "symbol": "bnb",
-      "price": 731.36,
-      "change_24h": -1.42347,
-      "market_cap": 97384906596
+      "price": 728.35,
+      "change_24h": -1.82024,
+      "market_cap": 96991992128
     },
     {
       "symbol": "xrp",
-      "price": 1.34,
-      "change_24h": -2.21009,
-      "market_cap": 84309287796
+      "price": 1.32,
+      "change_24h": -3.52599,
+      "market_cap": 83431644350
     },
     {
       "symbol": "usdc",
-      "price": 0.999749,
-      "change_24h": -0.01053,
-      "market_cap": 72721941300
+      "price": 0.999711,
+      "change_24h": -0.01249,
+      "market_cap": 72705059861
     },
     {
       "symbol": "sol",
-      "price": 104.97,
-      "change_24h": -2.11282,
-      "market_cap": 61845198769
+      "price": 103.79,
+      "change_24h": -3.01941,
+      "market_cap": 61154984717
     },
     {
       "symbol": "trx",
-      "price": 0.334151,
-      "change_24h": 2.02259,
-      "market_cap": 31735314625
+      "price": 0.332773,
+      "change_24h": 1.19642,
+      "market_cap": 31616201550
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.035,
-      "change_24h": -1.57762,
-      "market_cap": 24677400373
+      "price": 1.038,
+      "change_24h": 0.79643,
+      "market_cap": 24758162106
     },
     {
       "symbol": "zec",
-      "price": 1168.73,
-      "change_24h": -2.87073,
-      "market_cap": 19846237830
+      "price": 1130.31,
+      "change_24h": -7.21944,
+      "market_cap": 19205591664
     }
   ],
   "signal": {
-    "score": 0,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -1.7% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -2.0% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -1.7% در ۲۴ ساعت",
+        "text": "BTC -1.8% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,10 +94,14 @@
       {
         "text": "معتدل: 44",
         "tone": "neutral"
+      },
+      {
+        "text": "سه سرباز سفید (Three White Soldiers) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-10-14 17:14"
+    "confidence": 60,
+    "updated": "2026-10-14 20:44"
   },
   "whales": {
     "unconfirmed": {
@@ -113,292 +117,282 @@
   },
   "news_investing": [
     {
-      "title": "سهام DraftKings به 18.52 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-14 17:00",
+      "title": "نگاهی به بازار پررونق شرط‌بندی‌ها بر سر انتخابات میان‌دوره‌ای آمریکا",
+      "date": "2026-10-14 20:25",
       "source": "Investing.com"
     },
     {
-      "title": "سهام UZE به 15.7 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-14 16:58",
-      "source": "Investing.com"
-    },
-    {
-      "title": "Wall St سقوط کرد زیرا شاخص قیمت مصرف‌کننده داغ شرط‌های افزایش نرخ را افزایش می‌دهد. بانک ها، سهام هوش مصنوعی وزن دارند",
-      "date": "2026-10-14 16:54",
+      "title": "مدیرعامل CoreWeave در یادداشتی به حجم بالای سفارشات معوقه اشاره کرد تا به کارکنان خود در مورد بررسی دقیق بازار اطمینان خاطر دهد",
+      "date": "2026-10-14 20:24",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "دلار به بالاترین میزان از ماه می 2025 بر اساس بازدیدهای فدرال رزرو افزایش یافت",
-      "date": "Wed, 14 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سقوط سهام به دلیل مشکلات تورمی با عمیق‌تر شدن شکست تراشه‌ها: بازارها بسته می‌شوند",
+      "title": "سقوط سهام به دلیل مشکلات تورمی و تشدید مشکلات چیپ‌ها: گزارش بازارها",
       "date": "Tue, 13 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 14 مهر",
+      "title": "کاهش قیمت طلا با افزایش تورم در آمریکا و افزایش احتمال افزایش نرخ بهره فدرال رزرو",
+      "date": "Wed, 14 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "دلار با افزایش نرخ بهره فدرال رزرو به بالاترین سطح خود از ماه مه 2025 رسید",
+      "date": "Wed, 14 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کمیسیون بورس و اوراق بهادار آمریکا (SEC) پیش‌بینی شاخص‌های کلیدی عملکرد (KPI) شرکت Cboe - شرط‌بندی‌های بازار از طریق رابین‌هود را تأیید کرد",
+      "date": "Wed, 14 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با سقوط سهام، اوراق خزانه‌داری بیشتر ضررهای پس از شاخص قیمت مصرف‌کننده خود را جبران می‌کنند",
+      "date": "Wed, 14 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۴ اکتبر",
       "date": "Tue, 13 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "اوراق قرضه CoreWeave پریشان می‌شود و از ماسک «Yikes» می‌گیرد",
-      "date": "Wed, 14 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "SEC شرط‌های بازار پیش‌بینی KPI Cboe را با Robinhood تأیید می‌کند",
-      "date": "Wed, 14 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام، اوراق قرضه با توجه به شرط‌بندی فدرال رزرو با سوخت داده‌های شاخص قیمت مصرف‌کننده سقوط می‌کنند",
-      "date": "Wed, 14 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام DraftKings به 18.52 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-14 17:00",
+      "title": "نگاهی به بازار پررونق شرط‌بندی‌ها بر سر انتخابات میان‌دوره‌ای آمریکا",
+      "date": "2026-10-14 20:25",
       "source": "Investing.com"
     },
     {
-      "title": "سهام UZE به 15.7 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-14 16:58",
+      "title": "مدیرعامل CoreWeave در یادداشتی به حجم بالای سفارشات معوقه اشاره کرد تا به کارکنان خود در مورد بررسی دقیق بازار اطمینان خاطر دهد",
+      "date": "2026-10-14 20:24",
       "source": "Investing.com"
     },
     {
-      "title": "Wall St سقوط کرد زیرا شاخص قیمت مصرف‌کننده داغ شرط‌های افزایش نرخ را افزایش می‌دهد. بانک ها، سهام هوش مصنوعی وزن دارند",
-      "date": "2026-10-14 16:54",
-      "source": "Investing.com"
-    },
-    {
-      "title": "دلار به بالاترین میزان از ماه می 2025 بر اساس بازدیدهای فدرال رزرو افزایش یافت",
-      "date": "Wed, 14 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سقوط سهام به دلیل مشکلات تورمی با عمیق‌تر شدن شکست تراشه‌ها: بازارها بسته می‌شوند",
+      "title": "سقوط سهام به دلیل مشکلات تورمی و تشدید مشکلات چیپ‌ها: گزارش بازارها",
       "date": "Tue, 13 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 14 مهر",
+      "title": "کاهش قیمت طلا با افزایش تورم در آمریکا و افزایش احتمال افزایش نرخ بهره فدرال رزرو",
+      "date": "Wed, 14 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "دلار با افزایش نرخ بهره فدرال رزرو به بالاترین سطح خود از ماه مه 2025 رسید",
+      "date": "Wed, 14 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کمیسیون بورس و اوراق بهادار آمریکا (SEC) پیش‌بینی شاخص‌های کلیدی عملکرد (KPI) شرکت Cboe - شرط‌بندی‌های بازار از طریق رابین‌هود را تأیید کرد",
+      "date": "Wed, 14 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با سقوط سهام، اوراق خزانه‌داری بیشتر ضررهای پس از شاخص قیمت مصرف‌کننده خود را جبران می‌کنند",
+      "date": "Wed, 14 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۱۴ اکتبر",
       "date": "Tue, 13 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "اوراق قرضه CoreWeave پریشان می‌شود و از ماسک «Yikes» می‌گیرد",
-      "date": "Wed, 14 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "SEC شرط‌های بازار پیش‌بینی KPI Cboe را با Robinhood تأیید می‌کند",
-      "date": "Wed, 14 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام، اوراق قرضه با توجه به شرط‌بندی فدرال رزرو با سوخت داده‌های شاخص قیمت مصرف‌کننده سقوط می‌کنند",
-      "date": "Wed, 14 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-14 17:13",
+    "updated": "2026-10-14 20:44",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.19,
-        "chg": 12.8
+        "price": 2.23,
+        "chg": 14.77
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 551.99,
-        "chg": 4.14
-      },
-      {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.334151,
-        "chg": 2.02
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 207.71,
-        "chg": 1.91
+        "price": 548.53,
+        "chg": 1.64
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.03,
-        "chg": 1.45
+        "price": 9.01,
+        "chg": 1.21
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.332773,
+        "chg": 1.2
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.038,
+        "chg": 0.8
       }
     ],
     "losers_24h": [
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.119181,
-        "chg": -8.27
+        "price": 0.116024,
+        "chg": -9.24
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00921299,
-        "chg": -7.68
+        "price": 0.00915394,
+        "chg": -8.4
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.198622,
-        "chg": -5.57
+        "price": 0.194778,
+        "chg": -8.18
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1130.31,
+        "chg": -7.22
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.23,
-        "chg": -4.26
-      },
-      {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00478242,
-        "chg": -3.99
+        "price": 7.09,
+        "chg": -6.65
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.19,
-        "chg": 81.08
+        "price": 2.23,
+        "chg": 70.25
       },
       {
         "symbol": "dot",
         "name": "Polkadot",
-        "price": 1.14,
-        "chg": 2.7
+        "price": 1.13,
+        "chg": 2.78
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.038,
+        "chg": 1.95
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.03,
-        "chg": 1.57
+        "price": 9.01,
+        "chg": 1.66
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.07
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.035,
-        "chg": -0.13
       }
     ],
     "losers_7d": [
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00478242,
-        "chg": -23.93
+        "price": 0.00471849,
+        "chg": -24.86
+      },
+      {
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 208.29,
+        "chg": -18.93
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00921299,
-        "chg": -15.96
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 207.71,
-        "chg": -14.85
+        "price": 0.00915394,
+        "chg": -16.2
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.198622,
-        "chg": -12.92
+        "price": 0.194778,
+        "chg": -13.22
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1168.73,
-        "chg": -12.23
+        "price": 1130.31,
+        "chg": -13.04
       }
     ],
     "gainers_30d": [
       {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 207.71,
-        "chg": 220.56
-      },
-      {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.19,
-        "chg": 212.26
+        "price": 2.23,
+        "chg": 221.07
+      },
+      {
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 208.29,
+        "chg": 219.17
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.91,
-        "chg": 103.98
+        "price": 4.78,
+        "chg": 86.99
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.03,
-        "chg": 42.02
+        "price": 1.018,
+        "chg": 37.39
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.198622,
-        "chg": 40.24
+        "price": 0.194778,
+        "chg": 34.28
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00921299,
-        "chg": -35.97
+        "price": 0.00915394,
+        "chg": -35.94
       },
       {
         "symbol": "xrp",
         "name": "XRP",
-        "price": 1.34,
-        "chg": -4.91
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4080.63,
-        "chg": -4.86
+        "price": 1.32,
+        "chg": -10.41
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.184509,
-        "chg": -4.35
+        "price": 0.183396,
+        "chg": -6.07
       },
       {
         "symbol": "shib",
         "name": "Shiba Inu",
-        "price": 5.07e-06,
-        "chg": -3.1
+        "price": 5.06e-06,
+        "chg": -5.5
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4099.35,
+        "chg": -4.8
       }
     ]
   }
