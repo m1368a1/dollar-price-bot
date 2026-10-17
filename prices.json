@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-10-17 19:26",
+  "timestamp": "2026-10-17 22:21",
   "usd_sell": 263400,
   "usd_buy": 263200,
   "gold_18k": 26051525,
-  "btc_usd": 81430.27,
+  "btc_usd": 81114.35,
   "fear_greed": 55,
-  "btc_dominance": 59.4,
-  "market_cap": 2750000000000.0,
-  "market_volume": 183220000000000.0,
-  "market_change": -2.35,
+  "btc_dominance": 59.5,
+  "market_cap": 2740000000000.0,
+  "market_volume": 180520000000000.0,
+  "market_change": -3.3,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81455,
-      "change_24h": -0.09742,
-      "market_cap": 1637146057555
+      "price": 81155,
+      "change_24h": -0.67812,
+      "market_cap": 1631304363566
     },
     {
       "symbol": "eth",
-      "price": 2414.77,
-      "change_24h": -0.03434,
-      "market_cap": 294945909977
+      "price": 2384.59,
+      "change_24h": -1.55621,
+      "market_cap": 291346487387
     },
     {
       "symbol": "usdt",
-      "price": 0.99904,
-      "change_24h": -0.00421,
-      "market_cap": 183488682677
+      "price": 0.999088,
+      "change_24h": -0.00028,
+      "market_cap": 183497581766
     },
     {
       "symbol": "bnb",
-      "price": 714.67,
-      "change_24h": -1.04893,
-      "market_cap": 95164053488
+      "price": 714.05,
+      "change_24h": -1.14488,
+      "market_cap": 95102076194
     },
     {
       "symbol": "xrp",
-      "price": 1.3,
-      "change_24h": -0.22461,
-      "market_cap": 81926342962
+      "price": 1.29,
+      "change_24h": -1.58883,
+      "market_cap": 81361280778
     },
     {
       "symbol": "usdc",
-      "price": 0.999763,
-      "change_24h": -0.007,
-      "market_cap": 72531800871
+      "price": 0.99979,
+      "change_24h": 0.00129,
+      "market_cap": 72532895220
     },
     {
       "symbol": "sol",
-      "price": 103.94,
-      "change_24h": 0.43781,
-      "market_cap": 61258861958
+      "price": 102.55,
+      "change_24h": -1.85491,
+      "market_cap": 60458375844
     },
     {
       "symbol": "trx",
-      "price": 0.334,
-      "change_24h": -0.15971,
-      "market_cap": 31729969307
+      "price": 0.333252,
+      "change_24h": -0.55521,
+      "market_cap": 31663051890
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.03,
-      "change_24h": -0.48376,
-      "market_cap": 24732522637
+      "price": 1.023,
+      "change_24h": -1.30959,
+      "market_cap": 24563615690
     },
     {
       "symbol": "zec",
-      "price": 1150.43,
-      "change_24h": 0.43644,
-      "market_cap": 19546688713
+      "price": 1118.69,
+      "change_24h": -2.45232,
+      "market_cap": 19023129755
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -1.9% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -2.2% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.5% در ۲۴ ساعت",
+        "text": "BTC -0.6% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 39",
-        "tone": "neutral"
-      },
-      {
-        "text": "دوجی (Doji) — تصمیمی",
+        "text": "معتدل: 38",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-10-17 19:27"
+    "updated": "2026-10-17 22:21"
   },
   "whales": {
     "unconfirmed": {
@@ -117,282 +113,282 @@
   },
   "news_investing": [
     {
-      "title": "کویل بیت‌کوین در سطح 23.6% فیب نزدیک به 81,495 دلار: سطوح زنده",
+      "title": "سیتی می‌گوید نرخ بهره ممکن است برای اقتصاد بیشتر از ارزش‌گذاری سهام اهمیت داشته باشد",
+      "date": "2026-10-17 19:54",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بیت‌کوین در سطح فیبوناچی ۲۳.۶٪ نزدیک به ۸۱۴۹۵ دلار قرار دارد: سطوح زنده",
       "date": "2026-10-17 19:02",
       "source": "Investing.com"
     },
     {
-      "title": "قیمت بیت‌کوین بالای 81000 دلار باقی می ماند زیرا خروجی ETF بر احساسات تأثیر می گذارد",
+      "title": "قیمت بیت‌کوین بالاتر از ۸۱۰۰۰ دلار باقی ماند، زیرا خروج ETFها بر احساسات بازار تأثیر می‌گذارد",
       "date": "2026-10-17 19:00",
-      "source": "Investing.com"
-    },
-    {
-      "title": "زلنسکی از معافیت ترامپ از تحریم های روسیه انتقاد کرد و آن را \"اشتباه\" خواند",
-      "date": "2026-10-17 17:48",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "لغو تحریم‌های روسیه، نگرانی از بدهی هوش مصنوعی، ساخت «GTA VI»",
+      "title": "لغو تحریم‌های روسیه، نگرانی‌های مربوط به بدهی هوش مصنوعی، ساخت «GTA VI»",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "مشکلات CoreWeave خطر تعطیلی بازار آشغال هوش مصنوعی: هفتگی اعتبار",
+      "title": "CoreWeave از خطر تعطیلی بازار ناخواسته هوش مصنوعی ابراز نگرانی می‌کند: کردیت ویکلی",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آیا فدرال رزرو می تواند بدون آسیب رساندن به کشاورزان با تورم مبارزه کند؟",
+      "title": "آیا فدرال رزرو می‌تواند بدون آسیب رساندن به کشاورزان با تورم مبارزه کند؟",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "ترامپ تحریم های جدید روسیه را به حالت تعلیق درآورد",
+      "title": "ترامپ تحریم‌های جدید روسیه را به حالت تعلیق درآورد",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "یائویائو لیو، تاجر نفت که میلیاردها دلار برای ویتول درآمد، ترک می‌کند",
+      "title": "یائویائو لیو، تاجر نفتی که میلیاردها دلار برای ویتول سود کرد، این شرکت را ترک می‌کند",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "کویل بیت‌کوین در سطح 23.6% فیب نزدیک به 81,495 دلار: سطوح زنده",
+      "title": "سیتی می‌گوید نرخ بهره ممکن است برای اقتصاد بیشتر از ارزش‌گذاری سهام اهمیت داشته باشد",
+      "date": "2026-10-17 19:54",
+      "source": "Investing.com"
+    },
+    {
+      "title": "بیت‌کوین در سطح فیبوناچی ۲۳.۶٪ نزدیک به ۸۱۴۹۵ دلار قرار دارد: سطوح زنده",
       "date": "2026-10-17 19:02",
       "source": "Investing.com"
     },
     {
-      "title": "قیمت بیت‌کوین بالای 81000 دلار باقی می ماند زیرا خروجی ETF بر احساسات تأثیر می گذارد",
+      "title": "قیمت بیت‌کوین بالاتر از ۸۱۰۰۰ دلار باقی ماند، زیرا خروج ETFها بر احساسات بازار تأثیر می‌گذارد",
       "date": "2026-10-17 19:00",
       "source": "Investing.com"
     },
     {
-      "title": "زلنسکی از معافیت ترامپ از تحریم های روسیه انتقاد کرد و آن را \"اشتباه\" خواند",
-      "date": "2026-10-17 17:48",
-      "source": "Investing.com"
-    },
-    {
-      "title": "لغو تحریم‌های روسیه، نگرانی از بدهی هوش مصنوعی، ساخت «GTA VI»",
+      "title": "لغو تحریم‌های روسیه، نگرانی‌های مربوط به بدهی هوش مصنوعی، ساخت «GTA VI»",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "مشکلات CoreWeave خطر تعطیلی بازار آشغال هوش مصنوعی: هفتگی اعتبار",
+      "title": "CoreWeave از خطر تعطیلی بازار ناخواسته هوش مصنوعی ابراز نگرانی می‌کند: کردیت ویکلی",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آیا فدرال رزرو می تواند بدون آسیب رساندن به کشاورزان با تورم مبارزه کند؟",
+      "title": "آیا فدرال رزرو می‌تواند بدون آسیب رساندن به کشاورزان با تورم مبارزه کند؟",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "ترامپ تحریم های جدید روسیه را به حالت تعلیق درآورد",
+      "title": "ترامپ تحریم‌های جدید روسیه را به حالت تعلیق درآورد",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "یائویائو لیو، تاجر نفت که میلیاردها دلار برای ویتول درآمد، ترک می‌کند",
+      "title": "یائویائو لیو، تاجر نفتی که میلیاردها دلار برای ویتول سود کرد، این شرکت را ترک می‌کند",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-17 19:26",
+    "updated": "2026-10-17 22:21",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.64,
-        "chg": 41.49
+        "price": 2.52,
+        "chg": 31.46
       },
       {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00447441,
-        "chg": 3.9
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.04,
+        "chg": 0.84
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.104337,
-        "chg": 1.38
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 563.85,
+        "chg": 0.69
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.083685,
-        "chg": 1.27
+        "price": 0.084097,
+        "chg": 0.67
       },
       {
         "symbol": "gram",
         "name": "Gram (prev. Toncoin)",
-        "price": 1.37,
-        "chg": 1.1
+        "price": 1.35,
+        "chg": -0.25
       }
     ],
     "losers_24h": [
       {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00433758,
+        "chg": -8.31
+      },
+      {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.191451,
-        "chg": -3.99
+        "price": 0.187418,
+        "chg": -5.61
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.987693,
-        "chg": -2.56
+        "price": 0.96874,
+        "chg": -5.24
       },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.442416,
-        "chg": -2.48
+        "price": 0.435194,
+        "chg": -4.42
       },
       {
-        "symbol": "dot",
-        "name": "Polkadot",
-        "price": 1.13,
-        "chg": -2.34
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 152.47,
-        "chg": -2.25
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.86,
+        "chg": -4.06
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.64,
-        "chg": 60.24
+        "price": 2.52,
+        "chg": 60.86
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 560.96,
-        "chg": 6.59
+        "price": 563.85,
+        "chg": 6.15
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.03,
-        "chg": 2.81
+        "price": 1.023,
+        "chg": 2.92
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.04,
-        "chg": 2.17
+        "chg": 2.62
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.334,
-        "chg": 1.04
+        "price": 0.333252,
+        "chg": 0.76
       }
     ],
     "losers_7d": [
       {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00890892,
+        "chg": -22.61
+      },
+      {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00447441,
-        "chg": -20.19
+        "price": 0.00433758,
+        "chg": -22.46
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 199.39,
-        "chg": -17.48
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00878762,
-        "chg": -14.53
+        "price": 194.26,
+        "chg": -19.46
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.191451,
-        "chg": -13.56
+        "price": 0.187418,
+        "chg": -16.53
       },
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.22212,
-        "chg": -12.57
+        "price": 0.218249,
+        "chg": -14.61
       }
     ],
     "gainers_30d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.64,
-        "chg": 269.54
+        "price": 2.52,
+        "chg": 263.27
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 199.39,
-        "chg": 225.8
+        "price": 194.26,
+        "chg": 215.82
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.97,
-        "chg": 62.5
+        "price": 4.86,
+        "chg": 60.88
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.987693,
-        "chg": 34.64
+        "price": 0.96874,
+        "chg": 30.93
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.87,
-        "chg": 29.47
+        "price": 9.68,
+        "chg": 26.35
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00878762,
-        "chg": -32.07
+        "price": 0.00890892,
+        "chg": -31.55
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1150.43,
-        "chg": -22.27
+        "price": 1118.69,
+        "chg": -24.35
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.16,
-        "chg": -6.75
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4153.74,
-        "chg": -4.64
+        "price": 7.1,
+        "chg": -7.07
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 79.03,
-        "chg": -4.29
+        "price": 78.16,
+        "chg": -6.37
+      },
+      {
+        "symbol": "aster",
+        "name": "Aster",
+        "price": 0.700755,
+        "chg": -6.26
       }
     ]
   }
