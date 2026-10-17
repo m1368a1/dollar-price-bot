@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-10-17 17:13",
-  "usd_sell": 263600,
-  "usd_buy": 263400,
-  "gold_18k": 26127706,
-  "btc_usd": 81158.09,
+  "timestamp": "2026-10-17 19:26",
+  "usd_sell": 263400,
+  "usd_buy": 263200,
+  "gold_18k": 26051525,
+  "btc_usd": 81430.27,
   "fear_greed": 55,
-  "btc_dominance": 59.5,
-  "market_cap": 2740000000000.0,
-  "market_volume": 185930000000000.0,
-  "market_change": -3.29,
+  "btc_dominance": 59.4,
+  "market_cap": 2750000000000.0,
+  "market_volume": 183220000000000.0,
+  "market_change": -2.35,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81176,
-      "change_24h": 0.06372,
-      "market_cap": 1631549507058
+      "price": 81455,
+      "change_24h": -0.09742,
+      "market_cap": 1637146057555
     },
     {
       "symbol": "eth",
-      "price": 2402.76,
-      "change_24h": -0.56801,
-      "market_cap": 293478681726
+      "price": 2414.77,
+      "change_24h": -0.03434,
+      "market_cap": 294945909977
     },
     {
       "symbol": "usdt",
-      "price": 0.998974,
-      "change_24h": -0.03153,
-      "market_cap": 183476653315
+      "price": 0.99904,
+      "change_24h": -0.00421,
+      "market_cap": 183488682677
     },
     {
       "symbol": "bnb",
-      "price": 712.2,
-      "change_24h": -1.26629,
-      "market_cap": 94835674478
+      "price": 714.67,
+      "change_24h": -1.04893,
+      "market_cap": 95164053488
     },
     {
       "symbol": "xrp",
-      "price": 1.29,
-      "change_24h": -0.96996,
-      "market_cap": 81424233810
+      "price": 1.3,
+      "change_24h": -0.22461,
+      "market_cap": 81926342962
     },
     {
       "symbol": "usdc",
-      "price": 0.999677,
-      "change_24h": -0.01588,
-      "market_cap": 72545336108
+      "price": 0.999763,
+      "change_24h": -0.007,
+      "market_cap": 72531800871
     },
     {
       "symbol": "sol",
-      "price": 103.11,
-      "change_24h": -0.45253,
-      "market_cap": 60773428877
+      "price": 103.94,
+      "change_24h": 0.43781,
+      "market_cap": 61258861958
     },
     {
       "symbol": "trx",
-      "price": 0.334365,
-      "change_24h": -0.04802,
-      "market_cap": 31764637218
+      "price": 0.334,
+      "change_24h": -0.15971,
+      "market_cap": 31729969307
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.029,
-      "change_24h": -0.55424,
-      "market_cap": 24712953434
+      "price": 1.03,
+      "change_24h": -0.48376,
+      "market_cap": 24732522637
     },
     {
       "symbol": "zec",
-      "price": 1118.21,
-      "change_24h": -2.83329,
-      "market_cap": 18999263970
+      "price": 1150.43,
+      "change_24h": 0.43644,
+      "market_cap": 19546688713
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -2.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -1.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.3% در ۲۴ ساعت",
+        "text": "BTC +0.5% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 38",
+        "text": "معتدل: 39",
+        "tone": "neutral"
+      },
+      {
+        "text": "دوجی (Doji) — تصمیمی",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-10-17 17:13"
+    "updated": "2026-10-17 19:27"
   },
   "whales": {
     "unconfirmed": {
@@ -113,175 +117,185 @@
   },
   "news_investing": [
     {
-      "title": "صندوق سرمایه‌گذاری جهانی تتر ۱.۲۸ میلیون دلار از سهام Gold.com را خریداری کرد",
-      "date": "2026-10-17 14:31",
+      "title": "کویل بیت‌کوین در سطح 23.6% فیب نزدیک به 81,495 دلار: سطوح زنده",
+      "date": "2026-10-17 19:02",
       "source": "Investing.com"
     },
     {
-      "title": "قیمت بیت‌کوین نزدیک به ۸۱۰۰۰ دلار باقی ماند، زیرا خروج ETFها بر احساسات بازار تأثیر می‌گذارد",
-      "date": "2026-10-17 14:14",
+      "title": "قیمت بیت‌کوین بالای 81000 دلار باقی می ماند زیرا خروجی ETF بر احساسات تأثیر می گذارد",
+      "date": "2026-10-17 19:00",
       "source": "Investing.com"
     },
     {
-      "title": "مکلم می‌گوید بانک مرکزی کانادا با افزایش قیمت نفت، چشم‌انداز تورم را به شدت بالاتر می‌بیند",
-      "date": "2026-10-17 14:06",
+      "title": "زلنسکی از معافیت ترامپ از تحریم های روسیه انتقاد کرد و آن را \"اشتباه\" خواند",
+      "date": "2026-10-17 17:48",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "CoreWeave از خطر تعطیلی بازار ناخواسته هوش مصنوعی ابراز نگرانی می‌کند: کردیت ویکلی",
+      "title": "لغو تحریم‌های روسیه، نگرانی از بدهی هوش مصنوعی، ساخت «GTA VI»",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آیا فدرال رزرو می‌تواند بدون آسیب رساندن به کشاورزان با تورم مبارزه کند؟",
+      "title": "مشکلات CoreWeave خطر تعطیلی بازار آشغال هوش مصنوعی: هفتگی اعتبار",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "ترامپ تحریم‌های جدید روسیه را به حالت تعلیق درآورد",
+      "title": "آیا فدرال رزرو می تواند بدون آسیب رساندن به کشاورزان با تورم مبارزه کند؟",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "یائویائو لیو، تاجر نفتی که میلیاردها دلار برای ویتول سود کرد، این شرکت را ترک می‌کند",
+      "title": "ترامپ تحریم های جدید روسیه را به حالت تعلیق درآورد",
+      "date": "Sat, 17 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "یائویائو لیو، تاجر نفت که میلیاردها دلار برای ویتول درآمد، ترک می‌کند",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "صندوق سرمایه‌گذاری جهانی تتر ۱.۲۸ میلیون دلار از سهام Gold.com را خریداری کرد",
-      "date": "2026-10-17 14:31",
+      "title": "کویل بیت‌کوین در سطح 23.6% فیب نزدیک به 81,495 دلار: سطوح زنده",
+      "date": "2026-10-17 19:02",
       "source": "Investing.com"
     },
     {
-      "title": "قیمت بیت‌کوین نزدیک به ۸۱۰۰۰ دلار باقی ماند، زیرا خروج ETFها بر احساسات بازار تأثیر می‌گذارد",
-      "date": "2026-10-17 14:14",
+      "title": "قیمت بیت‌کوین بالای 81000 دلار باقی می ماند زیرا خروجی ETF بر احساسات تأثیر می گذارد",
+      "date": "2026-10-17 19:00",
       "source": "Investing.com"
     },
     {
-      "title": "مکلم می‌گوید بانک مرکزی کانادا با افزایش قیمت نفت، چشم‌انداز تورم را به شدت بالاتر می‌بیند",
-      "date": "2026-10-17 14:06",
+      "title": "زلنسکی از معافیت ترامپ از تحریم های روسیه انتقاد کرد و آن را \"اشتباه\" خواند",
+      "date": "2026-10-17 17:48",
       "source": "Investing.com"
     },
     {
-      "title": "CoreWeave از خطر تعطیلی بازار ناخواسته هوش مصنوعی ابراز نگرانی می‌کند: کردیت ویکلی",
+      "title": "لغو تحریم‌های روسیه، نگرانی از بدهی هوش مصنوعی، ساخت «GTA VI»",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آیا فدرال رزرو می‌تواند بدون آسیب رساندن به کشاورزان با تورم مبارزه کند؟",
+      "title": "مشکلات CoreWeave خطر تعطیلی بازار آشغال هوش مصنوعی: هفتگی اعتبار",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "ترامپ تحریم‌های جدید روسیه را به حالت تعلیق درآورد",
+      "title": "آیا فدرال رزرو می تواند بدون آسیب رساندن به کشاورزان با تورم مبارزه کند؟",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "یائویائو لیو، تاجر نفتی که میلیاردها دلار برای ویتول سود کرد، این شرکت را ترک می‌کند",
+      "title": "ترامپ تحریم های جدید روسیه را به حالت تعلیق درآورد",
+      "date": "Sat, 17 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "یائویائو لیو، تاجر نفت که میلیاردها دلار برای ویتول درآمد، ترک می‌کند",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-17 17:13",
+    "updated": "2026-10-17 19:26",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.42,
-        "chg": 32.8
+        "price": 2.64,
+        "chg": 41.49
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00434725,
-        "chg": 1.24
+        "price": 0.00447441,
+        "chg": 3.9
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.103381,
-        "chg": 0.92
+        "price": 0.104337,
+        "chg": 1.38
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 551.16,
-        "chg": 0.13
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.083685,
+        "chg": 1.27
       },
       {
-        "symbol": "btc",
-        "name": "Bitcoin",
-        "price": 81176,
-        "chg": 0.06
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.37,
+        "chg": 1.1
       }
     ],
     "losers_24h": [
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.186755,
-        "chg": -5.56
+        "price": 0.191451,
+        "chg": -3.99
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.970175,
-        "chg": -4.15
+        "price": 0.987693,
+        "chg": -2.56
       },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.43603,
-        "chg": -3.5
+        "price": 0.442416,
+        "chg": -2.48
       },
       {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 11.86,
-        "chg": -3.46
+        "symbol": "dot",
+        "name": "Polkadot",
+        "price": 1.13,
+        "chg": -2.34
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 266.36,
-        "chg": -3.43
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 152.47,
+        "chg": -2.25
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.42,
-        "chg": 47.12
+        "price": 2.64,
+        "chg": 60.24
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 551.16,
-        "chg": 4.17
+        "price": 560.96,
+        "chg": 6.59
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.029,
-        "chg": 3.22
+        "price": 1.03,
+        "chg": 2.81
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.04,
-        "chg": 2.46
+        "chg": 2.17
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.334365,
+        "price": 0.334,
         "chg": 1.04
       }
     ],
@@ -289,96 +303,96 @@
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00434725,
-        "chg": -24.08
+        "price": 0.00447441,
+        "chg": -20.19
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 196.61,
-        "chg": -19.78
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.186755,
-        "chg": -15.72
+        "price": 199.39,
+        "chg": -17.48
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0087407,
-        "chg": -15.09
+        "price": 0.00878762,
+        "chg": -14.53
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.103381,
-        "chg": -14.26
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.191451,
+        "chg": -13.56
+      },
+      {
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.22212,
+        "chg": -12.57
       }
     ],
     "gainers_30d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.42,
-        "chg": 226.02
+        "price": 2.64,
+        "chg": 269.54
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 196.61,
-        "chg": 219.83
+        "price": 199.39,
+        "chg": 225.8
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.85,
-        "chg": 69.42
+        "price": 4.97,
+        "chg": 62.5
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.970175,
-        "chg": 32.63
+        "price": 0.987693,
+        "chg": 34.64
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.73,
-        "chg": 27.84
+        "price": 9.87,
+        "chg": 29.47
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0087407,
-        "chg": -32.57
+        "price": 0.00878762,
+        "chg": -32.07
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1118.21,
-        "chg": -23.99
+        "price": 1150.43,
+        "chg": -22.27
       },
       {
-        "symbol": "aster",
-        "name": "Aster",
-        "price": 0.697779,
-        "chg": -6.14
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 7.16,
+        "chg": -6.75
       },
       {
-        "symbol": "xlm",
-        "name": "Stellar",
-        "price": 0.176241,
-        "chg": -5.51
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4153.74,
+        "chg": -4.64
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 78.38,
-        "chg": -5.04
+        "price": 79.03,
+        "chg": -4.29
       }
     ]
   }
