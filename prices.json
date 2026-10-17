@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-10-17 09:24",
-  "usd_sell": 263900,
-  "usd_buy": 263700,
-  "gold_18k": 26247749,
-  "btc_usd": 81597.28,
+  "timestamp": "2026-10-17 13:45",
+  "usd_sell": 263000,
+  "usd_buy": 262800,
+  "gold_18k": 26213121,
+  "btc_usd": 81373.78,
   "fear_greed": 55,
-  "btc_dominance": 59.3,
-  "market_cap": 2760000000000.0,
-  "market_volume": 237200000000000.0,
-  "market_change": -3.55,
+  "btc_dominance": 59.4,
+  "market_cap": 2750000000000.0,
+  "market_volume": 168730000000000.0,
+  "market_change": -3.65,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81615,
-      "change_24h": -0.57464,
-      "market_cap": 1640357105215
+      "price": 81388,
+      "change_24h": -0.62533,
+      "market_cap": 1635779289681
     },
     {
       "symbol": "eth",
-      "price": 2432.59,
-      "change_24h": -0.78454,
-      "market_cap": 297122790509
+      "price": 2420.39,
+      "change_24h": -1.57775,
+      "market_cap": 295644930923
     },
     {
       "symbol": "usdt",
-      "price": 0.998875,
-      "change_24h": -0.03639,
-      "market_cap": 183458421852
+      "price": 0.998871,
+      "change_24h": -0.03762,
+      "market_cap": 183454605954
     },
     {
       "symbol": "bnb",
-      "price": 721.66,
-      "change_24h": -1.1352,
-      "market_cap": 96095211078
+      "price": 718.77,
+      "change_24h": -1.10877,
+      "market_cap": 95711047050
     },
     {
       "symbol": "xrp",
-      "price": 1.3,
-      "change_24h": -2.66306,
-      "market_cap": 82365170060
+      "price": 1.29,
+      "change_24h": -2.93739,
+      "market_cap": 81737836483
     },
     {
       "symbol": "usdc",
-      "price": 0.999554,
-      "change_24h": -0.02444,
-      "market_cap": 72568831694
+      "price": 0.999587,
+      "change_24h": -0.02396,
+      "market_cap": 72547370366
     },
     {
       "symbol": "sol",
-      "price": 104.92,
-      "change_24h": -1.56532,
-      "market_cap": 61838569954
+      "price": 103.76,
+      "change_24h": -1.54951,
+      "market_cap": 61163635964
     },
     {
       "symbol": "trx",
-      "price": 0.335538,
-      "change_24h": 0.12052,
-      "market_cap": 31876038484
+      "price": 0.336504,
+      "change_24h": 0.39884,
+      "market_cap": 31969050215
     },
     {
       "symbol": "figr_heloc",
       "price": 1.034,
-      "change_24h": 0.29264,
-      "market_cap": 24775399790
+      "change_24h": 0.20631,
+      "market_cap": 24764976369
     },
     {
       "symbol": "zec",
-      "price": 1173.2,
-      "change_24h": -4.51493,
-      "market_cap": 19933531724
+      "price": 1159.34,
+      "change_24h": -5.35874,
+      "market_cap": 19704258360
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,7 +80,7 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -1.4% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -1.7% در ۷ روز",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 40",
+        "text": "معتدل: 39",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-10-17 09:24"
+    "confidence": 60,
+    "updated": "2026-10-17 13:45"
   },
   "whales": {
     "unconfirmed": {
@@ -113,262 +117,252 @@
   },
   "news_investing": [
     {
-      "title": "لاگارد، رئیس بانک مرکزی اروپا، می‌گوید فروش اوراق قرضه، تورم را کاهش خواهد داد",
-      "date": "2026-10-17 08:06",
+      "title": "ترامپ تحریم‌ها و تعرفه‌های کلیدی مرتبط با روسیه را پیش از اعمال قانون جدید لغو می‌کند",
+      "date": "2026-10-17 13:06",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "نخست وزیر ویتنام رشد تولید ناخالص داخلی حداقل 10 درصدی را برای سال 2027 هدف قرار داد",
+      "title": "ترامپ تحریم های جدید روسیه را به حالت تعلیق درآورد",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "مدیرعامل گرازا درباره گسترش بازار و چشم‌انداز مصرف‌کننده",
-      "date": "Fri, 16 Oct 2026",
+      "title": "یائویائو لیو، تاجر نفت که میلیاردها دلار برای ویتول درآمد، ترک می‌کند",
+      "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام چیپ طولانی‌ترین روند نزولی خود را از سال ۲۰۰۸ تاکنون ثبت کرد: گزارش بازارها",
-      "date": "Thu, 15 Oct 2026",
+      "title": "نخست وزیر ویتنام رشد تولید ناخالص داخلی 2027 را حداقل 10 درصد هدف قرار داده است",
+      "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا با کاهش احتمال افزایش نرخ بهره، ثابت ماند، نفت بازدهی اوراق قرضه را بالاتر برد",
-      "date": "Thu, 15 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "دلار با آرامش نسبی در مسیر نرخ بهره، بدترین هفته را در ماه گذشته تجربه کرد",
+      "title": "مدیر عامل Graza در توسعه بازار، چشم انداز مصرف کننده",
       "date": "Fri, 16 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "لاگارد، رئیس بانک مرکزی اروپا، می‌گوید فروش اوراق قرضه، تورم را کاهش خواهد داد",
-      "date": "2026-10-17 08:06",
+      "title": "ترامپ تحریم‌ها و تعرفه‌های کلیدی مرتبط با روسیه را پیش از اعمال قانون جدید لغو می‌کند",
+      "date": "2026-10-17 13:06",
       "source": "Investing.com"
     },
     {
-      "title": "نخست وزیر ویتنام رشد تولید ناخالص داخلی حداقل 10 درصدی را برای سال 2027 هدف قرار داد",
+      "title": "ترامپ تحریم های جدید روسیه را به حالت تعلیق درآورد",
       "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "مدیرعامل گرازا درباره گسترش بازار و چشم‌انداز مصرف‌کننده",
-      "date": "Fri, 16 Oct 2026",
+      "title": "یائویائو لیو، تاجر نفت که میلیاردها دلار برای ویتول درآمد، ترک می‌کند",
+      "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام چیپ طولانی‌ترین روند نزولی خود را از سال ۲۰۰۸ تاکنون ثبت کرد: گزارش بازارها",
-      "date": "Thu, 15 Oct 2026",
+      "title": "نخست وزیر ویتنام رشد تولید ناخالص داخلی 2027 را حداقل 10 درصد هدف قرار داده است",
+      "date": "Sat, 17 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا با کاهش احتمال افزایش نرخ بهره، ثابت ماند، نفت بازدهی اوراق قرضه را بالاتر برد",
-      "date": "Thu, 15 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "دلار با آرامش نسبی در مسیر نرخ بهره، بدترین هفته را در ماه گذشته تجربه کرد",
+      "title": "مدیر عامل Graza در توسعه بازار، چشم انداز مصرف کننده",
       "date": "Fri, 16 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-17 09:24",
+    "updated": "2026-10-17 13:45",
     "gainers_24h": [
-      {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00464836,
-        "chg": 3.86
-      },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.02,
-        "chg": 1.3
+        "price": 2.26,
+        "chg": 20.76
+      },
+      {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00448253,
+        "chg": 1.58
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.336504,
+        "chg": 0.4
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.034,
-        "chg": 0.29
+        "chg": 0.21
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.335538,
-        "chg": 0.12
-      },
-      {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.03
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.05,
+        "chg": 0.05
       }
     ],
     "losers_24h": [
       {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.192892,
+        "chg": -6.76
+      },
+      {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 274.85,
-        "chg": -4.79
+        "price": 269.61,
+        "chg": -6.0
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1173.2,
-        "chg": -4.51
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.0089063,
-        "chg": -4.03
-      },
-      {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.452283,
-        "chg": -3.99
+        "price": 1159.34,
+        "chg": -5.36
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.004,
-        "chg": -3.8
+        "price": 0.987438,
+        "chg": -5.34
+      },
+      {
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.442853,
+        "chg": -5.25
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.02,
-        "chg": 26.13
+        "price": 2.26,
+        "chg": 41.85
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 555.55,
-        "chg": 5.67
+        "price": 552.55,
+        "chg": 5.37
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.034,
-        "chg": 3.33
+        "chg": 3.31
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.04,
-        "chg": 2.88
+        "price": 9.05,
+        "chg": 3.15
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.335538,
-        "chg": 1.39
+        "price": 0.336504,
+        "chg": 1.63
       }
     ],
     "losers_7d": [
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00464836,
-        "chg": -17.25
+        "price": 0.00448253,
+        "chg": -20.73
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 203.1,
-        "chg": -17.22
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.103186,
-        "chg": -14.42
+        "price": 201.95,
+        "chg": -18.5
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0089063,
-        "chg": -13.2
+        "price": 0.00880198,
+        "chg": -13.94
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.103359,
+        "chg": -13.87
       },
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.223001,
-        "chg": -11.96
+        "price": 0.220436,
+        "chg": -13.53
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 203.1,
-        "chg": 236.65
+        "price": 201.95,
+        "chg": 230.03
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 2.02,
-        "chg": 189.58
+        "price": 2.26,
+        "chg": 218.83
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.14,
-        "chg": 89.28
+        "price": 5.03,
+        "chg": 75.92
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 1.004,
-        "chg": 39.22
+        "price": 0.987438,
+        "chg": 36.79
       },
       {
-        "symbol": "wld",
-        "name": "Worldcoin",
-        "price": 0.518686,
-        "chg": 38.55
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 9.81,
+        "chg": 30.75
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0089063,
-        "chg": -30.44
+        "price": 0.00880198,
+        "chg": -33.09
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1173.2,
-        "chg": -14.36
+        "price": 1159.34,
+        "chg": -15.26
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4155.18,
-        "chg": -3.88
+        "price": 4157.33,
+        "chg": -4.29
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.179149,
-        "chg": -1.93
+        "price": 0.177283,
+        "chg": -2.11
       },
       {
         "symbol": "doge",
         "name": "Dogecoin",
-        "price": 0.080245,
-        "chg": -0.86
+        "price": 0.079536,
+        "chg": -1.74
       }
     ]
   }
