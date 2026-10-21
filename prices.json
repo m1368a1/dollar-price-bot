@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-10-21 15:18",
-  "usd_sell": 265900,
-  "usd_buy": 265700,
-  "gold_18k": 26854887,
-  "btc_usd": 84550.71,
+  "timestamp": "2026-10-21 20:11",
+  "usd_sell": 267600,
+  "usd_buy": 267400,
+  "gold_18k": 27148067,
+  "btc_usd": 84494.49,
   "fear_greed": 63,
   "btc_dominance": 59.7,
   "market_cap": 2840000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -1.35,
+  "market_change": -0.52,
   "top10": [
     {
       "symbol": "btc",
-      "price": 84585,
-      "change_24h": 2.55415,
-      "market_cap": 1700544156056
+      "price": 84487,
+      "change_24h": 2.31361,
+      "market_cap": 1698421476336
     },
     {
       "symbol": "eth",
-      "price": 2504.76,
-      "change_24h": 2.70479,
-      "market_cap": 306106710236
+      "price": 2490.54,
+      "change_24h": 2.14439,
+      "market_cap": 304265433234
     },
     {
       "symbol": "usdt",
-      "price": 0.999186,
-      "change_24h": -0.00888,
-      "market_cap": 182790768119
+      "price": 0.99946,
+      "change_24h": 0.0325,
+      "market_cap": 182850294149
     },
     {
       "symbol": "bnb",
-      "price": 748.15,
-      "change_24h": 2.06339,
-      "market_cap": 98417933450
+      "price": 748.1,
+      "change_24h": 1.26107,
+      "market_cap": 98397642567
     },
     {
       "symbol": "xrp",
-      "price": 1.38,
-      "change_24h": 4.64537,
-      "market_cap": 87095115061
+      "price": 1.39,
+      "change_24h": 4.31122,
+      "market_cap": 87573542298
     },
     {
       "symbol": "usdc",
-      "price": 0.999504,
-      "change_24h": -0.02997,
-      "market_cap": 72098908920
+      "price": 0.999743,
+      "change_24h": -0.00304,
+      "market_cap": 72358879293
     },
     {
       "symbol": "sol",
-      "price": 107.97,
-      "change_24h": 2.27199,
-      "market_cap": 63693181471
+      "price": 108.09,
+      "change_24h": 1.92138,
+      "market_cap": 63742208899
     },
     {
       "symbol": "trx",
-      "price": 0.33208,
-      "change_24h": 0.2828,
-      "market_cap": 31541349705
+      "price": 0.331695,
+      "change_24h": 0.18266,
+      "market_cap": 31516198959
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.026,
-      "change_24h": 0.63015,
-      "market_cap": 24729287641
+      "price": 1.014,
+      "change_24h": -3.79724,
+      "market_cap": 25319029916
     },
     {
       "symbol": "zec",
-      "price": 1332.47,
-      "change_24h": 11.35572,
-      "market_cap": 22657394548
+      "price": 1353.47,
+      "change_24h": 11.80156,
+      "market_cap": 22994503769
     }
   ],
   "signal": {
-    "score": -20,
+    "score": 0,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,278 +80,344 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +3.6% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +3.4% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +1.6% در ۲۴ ساعت",
+        "text": "BTC +2.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
         "text": "معتدل: 55",
         "tone": "neutral"
-      },
-      {
-        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
-        "tone": "bearish"
       }
     ],
-    "confidence": 60,
-    "updated": "2026-10-21 15:18"
+    "confidence": 50,
+    "updated": "2026-10-21 20:11"
   },
   "whales": {
     "unconfirmed": {
-      "score": 0,
+      "score": 6,
       "level": "کم",
-      "count": 0,
-      "total_btc": 0,
+      "count": 1,
+      "total_btc": 122.21,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 0,
-      "top": []
+      "medium_whales": 1,
+      "top": [
+        {
+          "btc": 122.21,
+          "tier": "متوسط",
+          "fee": 5.536e-05,
+          "inputs": 16,
+          "outputs": 2,
+          "direction": "unknown"
+        }
+      ]
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "سهام شرکت Agree Realty Corp به 64.43 دلار به پایین ترین سطح 52 هفته اخیر رسید",
+      "date": "2026-10-21 19:53",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام FactSet به 320.67 دلار رسید به بالاترین حد 52 هفته اخیر",
+      "date": "2026-10-21 19:53",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام خالص اجاره برادستون به 17.15 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-10-21 19:48",
+      "source": "Investing.com"
+    },
+    {
+      "title": "استخدام میادین نفتی ونزوئلا با شروع موج اول سرمایه گذاری افزایش می یابد",
+      "date": "2026-10-21 19:42",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "Nasdaq 100 با نتایج SpaceX صعود می کند تجارت هوش مصنوعی سوخت: بسته بندی بازارها",
+      "title": "افزایش سهام در شرط‌بندی هوش مصنوعی؛ جهش متا در ساعات پایانی: بسته بندی بازارها",
       "date": "Tue, 20 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "کابانای BofA از فدرال رزرو در مورد افزایش نرخ بهره می‌پرسد: «چرا اکنون صبر کنید؟»",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 21 مهر",
+      "date": "Tue, 20 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "پس از اینکه گزارش نزاع خاورمیانه باعث افزایش سود نفتی شد، اوراق خزانه سقوط کرد",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "جریان نفت خاورمیانه در نزدیکی سطوح قبل از جنگ با حملات هرمز مخالفت می کند",
+      "title": "باند سلوف آرژانتینی با افزایش ترس از رای، گاوها را کور می کند",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "کارگزاران قدرت بازار خزانه داری از همیشه حساس تر هستند",
+      "title": "الصباح، مدیرعامل KPC می گوید تولید نفت بیش از 2 میلیون بشکه در روز است",
+      "date": "Wed, 21 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "مدیرعامل کویت پترولیوم می‌گوید تولید نفت به ۲ میلیون بشکه در روز می‌رسد",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "Nasdaq 100 با نتایج SpaceX صعود می کند تجارت هوش مصنوعی سوخت: بسته بندی بازارها",
+      "title": "سهام شرکت Agree Realty Corp به 64.43 دلار به پایین ترین سطح 52 هفته اخیر رسید",
+      "date": "2026-10-21 19:53",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام FactSet به 320.67 دلار رسید به بالاترین حد 52 هفته اخیر",
+      "date": "2026-10-21 19:53",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام خالص اجاره برادستون به 17.15 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-10-21 19:48",
+      "source": "Investing.com"
+    },
+    {
+      "title": "استخدام میادین نفتی ونزوئلا با شروع موج اول سرمایه گذاری افزایش می یابد",
+      "date": "2026-10-21 19:42",
+      "source": "Investing.com"
+    },
+    {
+      "title": "افزایش سهام در شرط‌بندی هوش مصنوعی؛ جهش متا در ساعات پایانی: بسته بندی بازارها",
       "date": "Tue, 20 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "کابانای BofA از فدرال رزرو در مورد افزایش نرخ بهره می‌پرسد: «چرا اکنون صبر کنید؟»",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 21 مهر",
+      "date": "Tue, 20 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "پس از اینکه گزارش نزاع خاورمیانه باعث افزایش سود نفتی شد، اوراق خزانه سقوط کرد",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "جریان نفت خاورمیانه در نزدیکی سطوح قبل از جنگ با حملات هرمز مخالفت می کند",
+      "title": "باند سلوف آرژانتینی با افزایش ترس از رای، گاوها را کور می کند",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "کارگزاران قدرت بازار خزانه داری از همیشه حساس تر هستند",
+      "title": "الصباح، مدیرعامل KPC می گوید تولید نفت بیش از 2 میلیون بشکه در روز است",
+      "date": "Wed, 21 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "مدیرعامل کویت پترولیوم می‌گوید تولید نفت به ۲ میلیون بشکه در روز می‌رسد",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-21 15:18",
+    "updated": "2026-10-21 20:11",
     "gainers_24h": [
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.216437,
-        "chg": 11.94
+        "price": 0.21677,
+        "chg": 12.47
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1332.47,
-        "chg": 11.36
+        "price": 1353.47,
+        "chg": 11.8
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.114195,
+        "chg": 8.62
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.35,
-        "chg": 9.68
-      },
-      {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00493197,
-        "chg": 8.29
-      },
-      {
-        "symbol": "xrp",
-        "name": "XRP",
-        "price": 1.38,
-        "chg": 4.65
-      }
-    ],
-    "losers_24h": [
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.54,
-        "chg": -14.79
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 603.09,
-        "chg": -3.24
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4125.59,
-        "chg": -0.18
+        "price": 5.29,
+        "chg": 8.6
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 196.55,
-        "chg": -0.04
-      },
-      {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.01
+        "price": 208.91,
+        "chg": 7.38
       }
     ],
-    "gainers_7d": [
+    "losers_24h": [
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.014,
+        "chg": -3.8
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.69,
+        "chg": -2.62
+      },
       {
         "symbol": "wld",
         "name": "Worldcoin",
-        "price": 0.574474,
-        "chg": 16.43
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1332.47,
-        "chg": 9.81
+        "price": 0.569245,
+        "chg": -2.42
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 603.09,
-        "chg": 9.7
+        "price": 613.92,
+        "chg": -0.97
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00914586,
+        "chg": -0.03
+      }
+    ],
+    "gainers_7d": [
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1353.47,
+        "chg": 17.85
+      },
+      {
+        "symbol": "wld",
+        "name": "Worldcoin",
+        "price": 0.569245,
+        "chg": 16.14
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 613.92,
+        "chg": 11.51
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.21677,
+        "chg": 11.05
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.35,
-        "chg": 6.5
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 289.32,
-        "chg": 6.05
+        "price": 5.29,
+        "chg": 10.39
       }
     ],
     "losers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.54,
-        "chg": -34.52
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.108911,
-        "chg": -7.62
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 196.55,
-        "chg": -5.48
+        "price": 1.69,
+        "chg": -21.99
       },
       {
         "symbol": "okb",
         "name": "OKB",
-        "price": 117.14,
-        "chg": -3.39
+        "price": 116.54,
+        "chg": -4.56
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00929817,
-        "chg": -2.56
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.014,
+        "chg": -1.98
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.114195,
+        "chg": -1.56
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.331695,
+        "chg": -0.48
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 196.55,
-        "chg": 189.37
+        "price": 208.91,
+        "chg": 211.88
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.54,
-        "chg": 90.05
-      },
-      {
-        "symbol": "wld",
-        "name": "Worldcoin",
-        "price": 0.574474,
-        "chg": 29.04
+        "price": 1.69,
+        "chg": 75.14
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.35,
-        "chg": 27.65
+        "price": 5.29,
+        "chg": 31.59
+      },
+      {
+        "symbol": "wld",
+        "name": "Worldcoin",
+        "price": 0.569245,
+        "chg": 31.17
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00493197,
-        "chg": 11.29
+        "price": 0.00501908,
+        "chg": 19.12
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00929817,
-        "chg": -34.46
+        "price": 0.00914586,
+        "chg": -34.73
+      },
+      {
+        "symbol": "doge",
+        "name": "Dogecoin",
+        "price": 0.082847,
+        "chg": -16.66
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.59,
-        "chg": -15.53
+        "price": 7.56,
+        "chg": -13.07
+      },
+      {
+        "symbol": "shib",
+        "name": "Shiba Inu",
+        "price": 5.2e-06,
+        "chg": -12.35
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 82.25,
-        "chg": -14.09
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1332.47,
-        "chg": -13.63
-      },
-      {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 9.89,
-        "chg": -13.03
+        "price": 81.82,
+        "chg": -11.94
       }
     ]
   }
