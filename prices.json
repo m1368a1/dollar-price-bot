@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-10-21 20:11",
+  "timestamp": "2026-10-21 23:22",
   "usd_sell": 267600,
   "usd_buy": 267400,
   "gold_18k": 27148067,
-  "btc_usd": 84494.49,
+  "btc_usd": 84336.78,
   "fear_greed": 63,
   "btc_dominance": 59.7,
-  "market_cap": 2840000000000.0,
+  "market_cap": 2830000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -0.52,
+  "market_change": -1.44,
   "top10": [
     {
       "symbol": "btc",
-      "price": 84487,
-      "change_24h": 2.31361,
-      "market_cap": 1698421476336
+      "price": 84336,
+      "change_24h": 1.77251,
+      "market_cap": 1695070077988
     },
     {
       "symbol": "eth",
-      "price": 2490.54,
-      "change_24h": 2.14439,
-      "market_cap": 304265433234
+      "price": 2478.81,
+      "change_24h": 1.32915,
+      "market_cap": 302792467211
     },
     {
       "symbol": "usdt",
-      "price": 0.99946,
-      "change_24h": 0.0325,
-      "market_cap": 182850294149
+      "price": 0.999428,
+      "change_24h": 0.01443,
+      "market_cap": 182843257360
     },
     {
       "symbol": "bnb",
-      "price": 748.1,
-      "change_24h": 1.26107,
-      "market_cap": 98397642567
+      "price": 747.4,
+      "change_24h": 0.95233,
+      "market_cap": 98291928023
     },
     {
       "symbol": "xrp",
-      "price": 1.39,
-      "change_24h": 4.31122,
-      "market_cap": 87573542298
+      "price": 1.37,
+      "change_24h": 2.56606,
+      "market_cap": 86385590785
     },
     {
       "symbol": "usdc",
-      "price": 0.999743,
-      "change_24h": -0.00304,
-      "market_cap": 72358879293
+      "price": 0.999747,
+      "change_24h": -0.00336,
+      "market_cap": 72497515153
     },
     {
       "symbol": "sol",
-      "price": 108.09,
-      "change_24h": 1.92138,
-      "market_cap": 63742208899
+      "price": 107.15,
+      "change_24h": 0.71166,
+      "market_cap": 63180092175
     },
     {
       "symbol": "trx",
-      "price": 0.331695,
-      "change_24h": 0.18266,
-      "market_cap": 31516198959
+      "price": 0.330676,
+      "change_24h": -0.09955,
+      "market_cap": 31420472698
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.014,
-      "change_24h": -3.79724,
-      "market_cap": 25319029916
+      "price": 1.029,
+      "change_24h": 0.41767,
+      "market_cap": 25682016381
     },
     {
       "symbol": "zec",
-      "price": 1353.47,
-      "change_24h": 11.80156,
-      "market_cap": 22994503769
+      "price": 1336.28,
+      "change_24h": 6.02722,
+      "market_cap": 22711059042
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +3.4% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +3.3% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +2.4% در ۲۴ ساعت",
+        "text": "BTC +1.6% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,29 +92,29 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 55",
+        "text": "معتدل: 54",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-10-21 20:11"
+    "updated": "2026-10-21 23:22"
   },
   "whales": {
     "unconfirmed": {
       "score": 6,
       "level": "کم",
       "count": 1,
-      "total_btc": 122.21,
+      "total_btc": 110.0,
       "mega_whales": 0,
       "large_whales": 0,
       "medium_whales": 1,
       "top": [
         {
-          "btc": 122.21,
+          "btc": 110.0,
           "tier": "متوسط",
-          "fee": 5.536e-05,
-          "inputs": 16,
-          "outputs": 2,
+          "fee": 6.458e-05,
+          "inputs": 11,
+          "outputs": 41,
           "direction": "unknown"
         }
       ]
@@ -122,302 +122,262 @@
   },
   "news_investing": [
     {
-      "title": "سهام شرکت Agree Realty Corp به 64.43 دلار به پایین ترین سطح 52 هفته اخیر رسید",
-      "date": "2026-10-21 19:53",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام FactSet به 320.67 دلار رسید به بالاترین حد 52 هفته اخیر",
-      "date": "2026-10-21 19:53",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام خالص اجاره برادستون به 17.15 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-21 19:48",
-      "source": "Investing.com"
-    },
-    {
-      "title": "استخدام میادین نفتی ونزوئلا با شروع موج اول سرمایه گذاری افزایش می یابد",
-      "date": "2026-10-21 19:42",
+      "title": "سهام با افزایش درآمد ناشی از هوش مصنوعی افزایش یافت، بازده اوراق قرضه 10 ساله فرانسه به 5 درصد رسید",
+      "date": "2026-10-21 22:48",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "افزایش سهام در شرط‌بندی هوش مصنوعی؛ جهش متا در ساعات پایانی: بسته بندی بازارها",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۲ اکتبر",
+      "date": "Wed, 21 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سانتوس رکورد تولید فصلی پروژه‌های جدید LNG و نفت را ثبت کرد",
+      "date": "Wed, 21 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "افت معاملات آتی سهام ایالات متحده همزمان با کاهش سود شرکت‌های فناوری: خلاصه بازارها",
+      "date": "Wed, 21 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام در ساعات پایانی با شرط‌بندی‌های بزرگ هوش مصنوعی متا صعود کردند: خلاصه بازارها",
       "date": "Tue, 20 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 21 مهر",
-      "date": "Tue, 20 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پس از اینکه گزارش نزاع خاورمیانه باعث افزایش سود نفتی شد، اوراق خزانه سقوط کرد",
-      "date": "Wed, 21 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "باند سلوف آرژانتینی با افزایش ترس از رای، گاوها را کور می کند",
-      "date": "Wed, 21 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "الصباح، مدیرعامل KPC می گوید تولید نفت بیش از 2 میلیون بشکه در روز است",
-      "date": "Wed, 21 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مدیرعامل کویت پترولیوم می‌گوید تولید نفت به ۲ میلیون بشکه در روز می‌رسد",
+      "title": "نوسانات طلا همزمان با ارزیابی مسیر نرخ بهره فدرال رزرو توسط معامله‌گران در بحبوحه نگرانی‌های خاورمیانه",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام شرکت Agree Realty Corp به 64.43 دلار به پایین ترین سطح 52 هفته اخیر رسید",
-      "date": "2026-10-21 19:53",
+      "title": "سهام با افزایش درآمد ناشی از هوش مصنوعی افزایش یافت، بازده اوراق قرضه 10 ساله فرانسه به 5 درصد رسید",
+      "date": "2026-10-21 22:48",
       "source": "Investing.com"
     },
     {
-      "title": "سهام FactSet به 320.67 دلار رسید به بالاترین حد 52 هفته اخیر",
-      "date": "2026-10-21 19:53",
-      "source": "Investing.com"
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۲ اکتبر",
+      "date": "Wed, 21 Oct 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "سهام خالص اجاره برادستون به 17.15 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-21 19:48",
-      "source": "Investing.com"
+      "title": "سانتوس رکورد تولید فصلی پروژه‌های جدید LNG و نفت را ثبت کرد",
+      "date": "Wed, 21 Oct 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "استخدام میادین نفتی ونزوئلا با شروع موج اول سرمایه گذاری افزایش می یابد",
-      "date": "2026-10-21 19:42",
-      "source": "Investing.com"
+      "title": "افت معاملات آتی سهام ایالات متحده همزمان با کاهش سود شرکت‌های فناوری: خلاصه بازارها",
+      "date": "Wed, 21 Oct 2026",
+      "source": "Bloomberg"
     },
     {
-      "title": "افزایش سهام در شرط‌بندی هوش مصنوعی؛ جهش متا در ساعات پایانی: بسته بندی بازارها",
+      "title": "سهام در ساعات پایانی با شرط‌بندی‌های بزرگ هوش مصنوعی متا صعود کردند: خلاصه بازارها",
       "date": "Tue, 20 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 21 مهر",
-      "date": "Tue, 20 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "پس از اینکه گزارش نزاع خاورمیانه باعث افزایش سود نفتی شد، اوراق خزانه سقوط کرد",
-      "date": "Wed, 21 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "باند سلوف آرژانتینی با افزایش ترس از رای، گاوها را کور می کند",
-      "date": "Wed, 21 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "الصباح، مدیرعامل KPC می گوید تولید نفت بیش از 2 میلیون بشکه در روز است",
-      "date": "Wed, 21 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مدیرعامل کویت پترولیوم می‌گوید تولید نفت به ۲ میلیون بشکه در روز می‌رسد",
+      "title": "نوسانات طلا همزمان با ارزیابی مسیر نرخ بهره فدرال رزرو توسط معامله‌گران در بحبوحه نگرانی‌های خاورمیانه",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-21 20:11",
+    "updated": "2026-10-21 23:22",
     "gainers_24h": [
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.21677,
-        "chg": 12.47
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1353.47,
-        "chg": 11.8
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.114195,
-        "chg": 8.62
+        "price": 0.213911,
+        "chg": 8.97
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.29,
-        "chg": 8.6
+        "price": 5.27,
+        "chg": 7.62
       },
       {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 208.91,
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00510426,
         "chg": 7.38
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.112898,
+        "chg": 6.63
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1336.28,
+        "chg": 6.03
       }
     ],
     "losers_24h": [
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.014,
-        "chg": -3.8
-      },
-      {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.69,
-        "chg": -2.62
-      },
-      {
-        "symbol": "wld",
-        "name": "Worldcoin",
-        "price": 0.569245,
-        "chg": -2.42
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 613.92,
-        "chg": -0.97
+        "price": 1.66,
+        "chg": -14.03
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00914586,
-        "chg": -0.03
+        "price": 0.00908703,
+        "chg": -4.62
+      },
+      {
+        "symbol": "wld",
+        "name": "Worldcoin",
+        "price": 0.581427,
+        "chg": -1.46
+      },
+      {
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 271.97,
+        "chg": -0.66
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 9.69,
+        "chg": -0.47
       }
     ],
     "gainers_7d": [
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1353.47,
-        "chg": 17.85
+        "price": 1336.28,
+        "chg": 17.99
       },
       {
         "symbol": "wld",
         "name": "Worldcoin",
-        "price": 0.569245,
-        "chg": 16.14
+        "price": 0.581427,
+        "chg": 16.78
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 613.92,
-        "chg": 11.51
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.21677,
-        "chg": 11.05
+        "price": 625.5,
+        "chg": 13.11
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 5.29,
-        "chg": 10.39
+        "price": 5.27,
+        "chg": 9.31
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.213911,
+        "chg": 9.19
       }
     ],
     "losers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.69,
-        "chg": -21.99
+        "price": 1.66,
+        "chg": -29.94
       },
       {
         "symbol": "okb",
         "name": "OKB",
-        "price": 116.54,
-        "chg": -4.56
+        "price": 116.0,
+        "chg": -5.21
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.014,
-        "chg": -1.98
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 9.69,
+        "chg": -2.71
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.114195,
-        "chg": -1.56
+        "price": 0.112898,
+        "chg": -2.07
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.331695,
-        "chg": -0.48
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.22604,
+        "chg": -1.11
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 208.91,
-        "chg": 211.88
+        "price": 205.53,
+        "chg": 208.9
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.69,
-        "chg": 75.14
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 5.29,
-        "chg": 31.59
+        "price": 1.66,
+        "chg": 90.94
       },
       {
         "symbol": "wld",
         "name": "Worldcoin",
-        "price": 0.569245,
-        "chg": 31.17
+        "price": 0.581427,
+        "chg": 28.13
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 5.27,
+        "chg": 28.03
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00501908,
-        "chg": 19.12
+        "price": 0.00510426,
+        "chg": 18.91
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00914586,
-        "chg": -34.73
+        "price": 0.00908703,
+        "chg": -34.74
       },
       {
         "symbol": "doge",
         "name": "Dogecoin",
-        "price": 0.082847,
-        "chg": -16.66
+        "price": 0.082032,
+        "chg": -17.19
+      },
+      {
+        "symbol": "xlm",
+        "name": "Stellar",
+        "price": 0.184204,
+        "chg": -14.96
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.56,
-        "chg": -13.07
+        "price": 7.5,
+        "chg": -14.49
       },
       {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 5.2e-06,
-        "chg": -12.35
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 81.82,
-        "chg": -11.94
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 9.69,
+        "chg": -14.29
       }
     ]
   }
