@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-10-22 20:09",
+  "timestamp": "2026-10-22 23:24",
   "usd_sell": 272300,
   "usd_buy": 272100,
   "gold_18k": 27071886,
-  "btc_usd": 81314.77,
+  "btc_usd": 81236.39,
   "fear_greed": 68,
   "btc_dominance": 59.5,
   "market_cap": 2740000000000.0,
   "market_volume": 80000000000.0,
-  "market_change": -6.04,
+  "market_change": -6.01,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81387,
-      "change_24h": -3.66881,
-      "market_cap": 1636043137056
+      "price": 81258,
+      "change_24h": -3.60736,
+      "market_cap": 1633309839907
     },
     {
       "symbol": "eth",
-      "price": 2384.21,
-      "change_24h": -4.26963,
-      "market_cap": 291236738659
+      "price": 2382.48,
+      "change_24h": -3.81043,
+      "market_cap": 290973056394
     },
     {
       "symbol": "usdt",
-      "price": 0.998916,
-      "change_24h": -0.05441,
-      "market_cap": 182633026602
+      "price": 0.998989,
+      "change_24h": -0.04818,
+      "market_cap": 182646220699
     },
     {
       "symbol": "bnb",
-      "price": 731.06,
-      "change_24h": -2.27831,
-      "market_cap": 96142553540
+      "price": 730.21,
+      "change_24h": -2.25953,
+      "market_cap": 96014219371
     },
     {
       "symbol": "xrp",
       "price": 1.31,
-      "change_24h": -5.9175,
-      "market_cap": 82388304664
+      "change_24h": -4.50942,
+      "market_cap": 82435691900
     },
     {
       "symbol": "usdc",
-      "price": 0.999466,
-      "change_24h": -0.02771,
-      "market_cap": 71967478464
+      "price": 0.999509,
+      "change_24h": -0.0274,
+      "market_cap": 72022609681
     },
     {
       "symbol": "sol",
-      "price": 103.54,
-      "change_24h": -4.20407,
-      "market_cap": 61053712444
+      "price": 103.27,
+      "change_24h": -3.54475,
+      "market_cap": 60883542723
     },
     {
       "symbol": "trx",
-      "price": 0.328088,
-      "change_24h": -1.08754,
-      "market_cap": 31170906232
+      "price": 0.328112,
+      "change_24h": -0.75488,
+      "market_cap": 31169346548
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.041,
-      "change_24h": 2.60595,
-      "market_cap": 26506127410
+      "price": 1.028,
+      "change_24h": -0.11161,
+      "market_cap": 26172740929
     },
     {
       "symbol": "zec",
-      "price": 1214.94,
-      "change_24h": -10.23556,
-      "market_cap": 20654557917
+      "price": 1210.76,
+      "change_24h": -9.1791,
+      "market_cap": 20567107420
     }
   ],
   "signal": {
@@ -84,11 +84,11 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC -3.6% در ۲۴ ساعت",
+        "text": "BTC -3.7% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 2 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
@@ -97,137 +97,73 @@
       }
     ],
     "confidence": 57,
-    "updated": "2026-10-22 20:09"
+    "updated": "2026-10-22 23:24"
   },
   "whales": {
     "unconfirmed": {
-      "score": 18,
+      "score": 0,
       "level": "کم",
-      "count": 2,
-      "total_btc": 773.69,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
-      "large_whales": 1,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 593.28,
-          "tier": "بزرگ",
-          "fee": 2.14e-06,
-          "inputs": 1,
-          "outputs": 2,
-          "direction": "unknown"
-        },
-        {
-          "btc": 180.41,
-          "tier": "متوسط",
-          "fee": 1.69e-06,
-          "inputs": 1,
-          "outputs": 2,
-          "direction": "unknown"
-        }
-      ]
+      "large_whales": 0,
+      "medium_whales": 0,
+      "top": []
     }
   },
-  "news_investing": [
-    {
-      "title": "سهام مارش و مک‌لنان به بالاترین سطح خود در ۵۲ هفته اخیر یعنی ۱۹۸.۵ دلار رسید",
-      "date": "2026-10-22 19:48",
-      "source": "Investing.com"
-    },
-    {
-      "title": "ارزش سهام اپل به بالاترین حد خود در تاریخ رسید و به ۳۴۸.۲۵ دلار رسید",
-      "date": "2026-10-22 19:46",
-      "source": "Investing.com"
-    }
-  ],
+  "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "شرکت سابق گلدمن بانکر در میسوری، به ظهور فین‌تک‌ها دامن می‌زند",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۳ اکتبر",
       "date": "Thu, 22 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تانکرهای نفتی که در مسیر ایالات متحده-چین تردد می‌کنند، ۶۰ میلیون دلار هزینه دارند. این تقاضا را به شدت کاهش می‌دهد",
+      "title": "طوفان چمپی بازار سهام ۵ تریلیون دلاری تایوان را تعطیل کرد",
       "date": "Thu, 22 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شاخص نزدک ۱۰۰ با افزایش قیمت نفت، ۳ درصد کاهش یافت",
+      "title": "سقوط سهام آسیا در پی سقوط فناوری و افزایش اوراق قرضه: خلاصه بازارها",
       "date": "Thu, 22 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "«داستان دو بازار» با بازدهی بالا: کارویی از پیمکو",
-      "date": "Thu, 22 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۲ اکتبر",
-      "date": "Wed, 21 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شاخص نزدک ۱۰۰ با افزایش ارزش اوراق قرضه، بیشترین افت خود را از ماه ژوئن تجربه کرد: بازارها به هم ریختند",
+      "title": "سهام سقوط می‌کنند زیرا هوش مصنوعی، شرط‌بندی‌ها روی افزایش نرخ بهره فدرال رزرو را کاهش می‌دهد: بسته شدن بازارها",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام مارش و مک‌لنان به بالاترین سطح خود در ۵۲ هفته اخیر یعنی ۱۹۸.۵ دلار رسید",
-      "date": "2026-10-22 19:48",
-      "source": "Investing.com"
-    },
-    {
-      "title": "ارزش سهام اپل به بالاترین حد خود در تاریخ رسید و به ۳۴۸.۲۵ دلار رسید",
-      "date": "2026-10-22 19:46",
-      "source": "Investing.com"
-    },
-    {
-      "title": "شرکت سابق گلدمن بانکر در میسوری، به ظهور فین‌تک‌ها دامن می‌زند",
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۳ اکتبر",
       "date": "Thu, 22 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "تانکرهای نفتی که در مسیر ایالات متحده-چین تردد می‌کنند، ۶۰ میلیون دلار هزینه دارند. این تقاضا را به شدت کاهش می‌دهد",
+      "title": "طوفان چمپی بازار سهام ۵ تریلیون دلاری تایوان را تعطیل کرد",
       "date": "Thu, 22 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شاخص نزدک ۱۰۰ با افزایش قیمت نفت، ۳ درصد کاهش یافت",
+      "title": "سقوط سهام آسیا در پی سقوط فناوری و افزایش اوراق قرضه: خلاصه بازارها",
       "date": "Thu, 22 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "«داستان دو بازار» با بازدهی بالا: کارویی از پیمکو",
-      "date": "Thu, 22 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۲ اکتبر",
-      "date": "Wed, 21 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "شاخص نزدک ۱۰۰ با افزایش ارزش اوراق قرضه، بیشترین افت خود را از ماه ژوئن تجربه کرد: بازارها به هم ریختند",
+      "title": "سهام سقوط می‌کنند زیرا هوش مصنوعی، شرط‌بندی‌ها روی افزایش نرخ بهره فدرال رزرو را کاهش می‌دهد: بسته شدن بازارها",
       "date": "Wed, 21 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-22 20:09",
+    "updated": "2026-10-22 23:24",
     "gainers_24h": [
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.041,
-        "chg": 2.61
-      },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.73,
-        "chg": 2.31
+        "price": 1.9,
+        "chg": 16.05
       },
       {
         "symbol": "usyc",
@@ -236,176 +172,182 @@
         "chg": 0.01
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 8.97,
-        "chg": -0.8
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.028,
+        "chg": -0.11
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 608.7,
-        "chg": -0.85
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 8.99,
+        "chg": -0.56
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.328112,
+        "chg": -0.75
       }
     ],
     "losers_24h": [
       {
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00453367,
+        "chg": -10.94
+      },
+      {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.102156,
-        "chg": -10.55
+        "price": 0.102341,
+        "chg": -9.29
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1214.94,
-        "chg": -10.24
+        "price": 1210.76,
+        "chg": -9.18
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 187.59,
-        "chg": -10.21
+        "price": 186.35,
+        "chg": -9.09
       },
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.199489,
-        "chg": -7.97
-      },
-      {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.429563,
-        "chg": -7.88
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.86,
+        "chg": -7.7
       }
     ],
     "gainers_7d": [
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 608.7,
-        "chg": 11.91
+        "price": 598.66,
+        "chg": 8.71
       },
       {
         "symbol": "wld",
         "name": "Worldcoin",
-        "price": 0.554474,
-        "chg": 9.82
+        "price": 0.541772,
+        "chg": 7.51
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.041,
-        "chg": 1.34
-      },
-      {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00463858,
-        "chg": 1.19
+        "price": 1.028,
+        "chg": 0.18
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.06
+      },
+      {
+        "symbol": "bnb",
+        "name": "BNB",
+        "price": 730.21,
+        "chg": -0.08
       }
     ],
     "losers_7d": [
       {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 187.59,
-        "chg": -11.31
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00856531,
+        "chg": -10.43
       },
       {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.73,
-        "chg": -9.14
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 186.35,
+        "chg": -10.16
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.12,
-        "chg": -8.87
+        "price": 9.11,
+        "chg": -9.11
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.92,
-        "chg": -7.99
+        "price": 4.86,
+        "chg": -9.03
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 256.62,
-        "chg": -7.81
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.21173,
+        "chg": -8.3
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 187.59,
-        "chg": 161.6
+        "price": 186.35,
+        "chg": 152.67
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.73,
-        "chg": 101.47
+        "price": 1.9,
+        "chg": 103.16
       },
       {
         "symbol": "wld",
         "name": "Worldcoin",
-        "price": 0.554474,
-        "chg": 21.19
+        "price": 0.541772,
+        "chg": 17.51
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.92,
-        "chg": 13.37
+        "price": 4.86,
+        "chg": 11.75
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 608.7,
-        "chg": 6.47
+        "price": 598.66,
+        "chg": 4.8
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00857465,
-        "chg": -34.79
+        "price": 0.00856531,
+        "chg": -34.55
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.03,
-        "chg": -23.21
+        "price": 6.98,
+        "chg": -25.84
       },
       {
         "symbol": "doge",
         "name": "Dogecoin",
-        "price": 0.078605,
-        "chg": -21.33
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1214.94,
-        "chg": -20.13
+        "price": 0.078603,
+        "chg": -21.46
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 77.47,
-        "chg": -19.71
+        "price": 77.22,
+        "chg": -20.73
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1210.76,
+        "chg": -20.42
       }
     ]
   }
