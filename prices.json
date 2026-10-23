@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-10-23 15:07",
-  "usd_sell": 271900,
-  "usd_buy": 271700,
-  "gold_18k": 26767163,
-  "btc_usd": 81525.34,
+  "timestamp": "2026-10-23 19:16",
+  "usd_sell": 269700,
+  "usd_buy": 269500,
+  "gold_18k": 26420887,
+  "btc_usd": 81213.18,
   "fear_greed": 50,
   "btc_dominance": 59.4,
-  "market_cap": 2750000000000.0,
+  "market_cap": 2740000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -2.92,
+  "market_change": -2.62,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81520,
-      "change_24h": -0.1643,
-      "market_cap": 1638734824967
+      "price": 81286,
+      "change_24h": 0.01195,
+      "market_cap": 1634055861441
     },
     {
       "symbol": "eth",
-      "price": 2400.54,
-      "change_24h": -0.18348,
-      "market_cap": 293238345319
+      "price": 2396.69,
+      "change_24h": 0.67536,
+      "market_cap": 292768222713
     },
     {
       "symbol": "usdt",
-      "price": 0.999037,
-      "change_24h": -0.02859,
-      "market_cap": 182550227379
+      "price": 0.999122,
+      "change_24h": 0.01727,
+      "market_cap": 182565624826
     },
     {
       "symbol": "bnb",
-      "price": 747.39,
-      "change_24h": 2.00942,
-      "market_cap": 98291116386
+      "price": 741.71,
+      "change_24h": 1.54049,
+      "market_cap": 97543198825
     },
     {
       "symbol": "xrp",
-      "price": 1.31,
-      "change_24h": -0.93883,
-      "market_cap": 82655071997
+      "price": 1.3,
+      "change_24h": -0.20441,
+      "market_cap": 82380863860
     },
     {
       "symbol": "usdc",
-      "price": 0.999566,
-      "change_24h": -0.01515,
-      "market_cap": 71875043382
+      "price": 0.999628,
+      "change_24h": 0.01251,
+      "market_cap": 71749555149
     },
     {
       "symbol": "sol",
-      "price": 104.4,
-      "change_24h": -0.07869,
-      "market_cap": 61562648340
+      "price": 103.91,
+      "change_24h": 0.48789,
+      "market_cap": 61275289219
     },
     {
       "symbol": "trx",
-      "price": 0.329685,
-      "change_24h": -0.14451,
-      "market_cap": 31323125125
+      "price": 0.329798,
+      "change_24h": 0.64369,
+      "market_cap": 31333864023
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.028,
-      "change_24h": -0.07292,
-      "market_cap": 26199449472
+      "price": 1.021,
+      "change_24h": -1.71384,
+      "market_cap": 26025575726
     },
     {
       "symbol": "zec",
-      "price": 1227.79,
-      "change_24h": -0.70828,
-      "market_cap": 20873021539
+      "price": 1230.22,
+      "change_24h": 1.36563,
+      "market_cap": 20914364556
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -0.5% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +0.2% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.4% در ۲۴ ساعت",
+        "text": "BTC -0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 46",
+        "text": "معتدل: 45",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-10-23 15:07"
+    "confidence": 60,
+    "updated": "2026-10-23 19:16"
   },
   "whales": {
     "unconfirmed": {
@@ -113,272 +117,312 @@
   },
   "news_investing": [
     {
-      "title": "سهام شرکت Plains All American Pipeline به بالاترین سطح خود در ۵۲ هفته اخیر یعنی ۲۶.۳۹ دلار رسید",
-      "date": "2026-10-23 14:45",
+      "title": "قیمت نفت از 116 دلار گذشته و در نزدیکی ایران به بالاترین حد خود در بحبوحه آشفتگی عرضه در خاورمیانه می رسد",
+      "date": "2026-10-23 19:05",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام T-Mobile به 147.89 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-10-23 19:00",
+      "source": "Investing.com"
+    },
+    {
+      "title": "رونوشت تماس سود: بانک ترجیحی بالاتر از EPS سه ماهه سوم 2026، پیش‌فروش اوراق سهام",
+      "date": "2026-10-23 18:40",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام هانتینگتون بانکشرز به 14.9 دلار به پایین ترین حد 52 هفته اخیر رسید",
+      "date": "2026-10-23 18:38",
+      "source": "Investing.com"
+    },
+    {
+      "title": "به دلیل حملات حوثی‌ها و نشت نفت امارات، قیمت نفت برنت به بالاترین سطح از آوریل رسیده است",
+      "date": "2026-10-23 18:36",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "سهام سقوط می‌کنند در حالی که افزایش قیمت نفت، اوراق خزانه‌داری را مهار می‌کند: خلاصه بازارها",
+      "title": "سقوط سهام در حالی که رالی نفت روی اوراق خزانه داری بسته می شود: بازارها بسته می شوند",
       "date": "Thu, 22 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "عرضه اولیه سهام جیو با تقاضای قوی روبرو شد و از رکود بازار هند عبور کرد",
+      "title": "فروش اوراق قرضه شهرداری با سرعتی بی سابقه از 500 میلیارد دلار گذشت",
       "date": "Fri, 23 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شاخص اعتماد مصرف‌کننده در آمریکا به پایین‌ترین حد خود در پنج ماه گذشته رسید",
+      "title": "قرارداد Muni Bond متعلق به Mega-Complex بازنشسته فلوریدا تقاضای زیادی دارد",
       "date": "Fri, 23 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با عمیق‌تر شدن بحران، ریسک اوراق قرضه فرانسه به بزرگترین افزایش هفتگی خود نزدیک می‌شود",
-      "date": "Fri, 23 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آلمان می‌خواهد با افزایش هزینه‌ها، از تعطیلی بیشتر پالایشگاه‌های نفت جلوگیری کند",
-      "date": "Fri, 23 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "قربانیان کلاهبرداری در نروژ، طلاهای خود را در جنگل‌ها رها می‌کنند",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 23 مهر",
       "date": "Thu, 22 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "CIBC می‌گوید: مجموعه‌ای از بازار مخزن برای نوسانات در فشار تسویه دیرهنگام",
+      "date": "Fri, 23 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "احساسات مصرف کننده در ایالات متحده با توجه به تورم به پایین ترین حد پنج ماهه می رسد",
+      "date": "Fri, 23 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام شرکت Plains All American Pipeline به بالاترین سطح خود در ۵۲ هفته اخیر یعنی ۲۶.۳۹ دلار رسید",
-      "date": "2026-10-23 14:45",
+      "title": "قیمت نفت از 116 دلار گذشته و در نزدیکی ایران به بالاترین حد خود در بحبوحه آشفتگی عرضه در خاورمیانه می رسد",
+      "date": "2026-10-23 19:05",
       "source": "Investing.com"
     },
     {
-      "title": "سهام سقوط می‌کنند در حالی که افزایش قیمت نفت، اوراق خزانه‌داری را مهار می‌کند: خلاصه بازارها",
+      "title": "سهام T-Mobile به 147.89 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-10-23 19:00",
+      "source": "Investing.com"
+    },
+    {
+      "title": "رونوشت تماس سود: بانک ترجیحی بالاتر از EPS سه ماهه سوم 2026، پیش‌فروش اوراق سهام",
+      "date": "2026-10-23 18:40",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سهام هانتینگتون بانکشرز به 14.9 دلار به پایین ترین حد 52 هفته اخیر رسید",
+      "date": "2026-10-23 18:38",
+      "source": "Investing.com"
+    },
+    {
+      "title": "به دلیل حملات حوثی‌ها و نشت نفت امارات، قیمت نفت برنت به بالاترین سطح از آوریل رسیده است",
+      "date": "2026-10-23 18:36",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سقوط سهام در حالی که رالی نفت روی اوراق خزانه داری بسته می شود: بازارها بسته می شوند",
       "date": "Thu, 22 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "عرضه اولیه سهام جیو با تقاضای قوی روبرو شد و از رکود بازار هند عبور کرد",
+      "title": "فروش اوراق قرضه شهرداری با سرعتی بی سابقه از 500 میلیارد دلار گذشت",
       "date": "Fri, 23 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شاخص اعتماد مصرف‌کننده در آمریکا به پایین‌ترین حد خود در پنج ماه گذشته رسید",
+      "title": "قرارداد Muni Bond متعلق به Mega-Complex بازنشسته فلوریدا تقاضای زیادی دارد",
       "date": "Fri, 23 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با عمیق‌تر شدن بحران، ریسک اوراق قرضه فرانسه به بزرگترین افزایش هفتگی خود نزدیک می‌شود",
-      "date": "Fri, 23 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آلمان می‌خواهد با افزایش هزینه‌ها، از تعطیلی بیشتر پالایشگاه‌های نفت جلوگیری کند",
-      "date": "Fri, 23 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "قربانیان کلاهبرداری در نروژ، طلاهای خود را در جنگل‌ها رها می‌کنند",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 23 مهر",
       "date": "Thu, 22 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "CIBC می‌گوید: مجموعه‌ای از بازار مخزن برای نوسانات در فشار تسویه دیرهنگام",
+      "date": "Fri, 23 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "احساسات مصرف کننده در ایالات متحده با توجه به تورم به پایین ترین حد پنج ماهه می رسد",
+      "date": "Fri, 23 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-23 15:07",
+    "updated": "2026-10-23 19:16",
     "gainers_24h": [
       {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.79,
-        "chg": 4.19
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.208206,
+        "chg": 4.47
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 284.23,
-        "chg": 3.7
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.204159,
-        "chg": 2.76
+        "price": 285.0,
+        "chg": 4.03
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.893402,
-        "chg": 2.54
+        "price": 0.900052,
+        "chg": 3.03
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.104312,
-        "chg": 2.46
+        "symbol": "shib",
+        "name": "Shiba Inu",
+        "price": 5.06e-06,
+        "chg": 2.25
+      },
+      {
+        "symbol": "bnb",
+        "name": "BNB",
+        "price": 741.71,
+        "chg": 1.54
       }
     ],
     "losers_24h": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 179.77,
-        "chg": -6.47
+        "price": 182.05,
+        "chg": -3.88
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00839466,
-        "chg": -3.7
+        "price": 0.00828361,
+        "chg": -3.45
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00455631,
-        "chg": -2.61
-      },
-      {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.31,
-        "chg": -1.92
+        "price": 0.00449944,
+        "chg": -2.89
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.87,
-        "chg": -1.86
+        "price": 4.77,
+        "chg": -2.46
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 596.29,
+        "chg": -2.16
       }
     ],
     "gainers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.893402,
-        "chg": 9.75
+        "price": 0.900052,
+        "chg": 14.8
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1230.22,
+        "chg": 8.1
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 606.15,
-        "chg": 9.35
+        "price": 596.29,
+        "chg": 7.97
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.208206,
+        "chg": 6.59
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00455631,
-        "chg": 4.09
-      },
-      {
-        "symbol": "bnb",
-        "name": "BNB",
-        "price": 747.39,
-        "chg": 2.92
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 284.23,
-        "chg": 1.3
+        "price": 0.00449944,
+        "chg": 5.79
       }
     ],
     "losers_7d": [
       {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 179.77,
-        "chg": -12.18
-      },
-      {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 9.1,
-        "chg": -11.19
+        "price": 9.09,
+        "chg": -8.7
+      },
+      {
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 182.05,
+        "chg": -8.2
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00828361,
+        "chg": -6.55
+      },
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.81,
+        "chg": -6.01
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 259.11,
-        "chg": -9.26
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 147.11,
-        "chg": -8.14
-      },
-      {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.079218,
-        "chg": -8.08
+        "price": 258.45,
+        "chg": -5.74
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 179.77,
-        "chg": 144.98
+        "price": 182.05,
+        "chg": 157.47
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.79,
-        "chg": 83.27
+        "price": 1.81,
+        "chg": 80.99
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00455631,
-        "chg": 9.41
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 606.15,
-        "chg": 7.55
+        "price": 0.00449944,
+        "chg": 13.43
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.87,
-        "chg": 2.78
+        "price": 4.77,
+        "chg": 9.73
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 596.29,
+        "chg": 8.58
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00839466,
-        "chg": -33.66
+        "price": 0.00828361,
+        "chg": -33.11
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.893402,
-        "chg": -28.42
+        "price": 0.900052,
+        "chg": -26.53
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
         "price": 7.09,
-        "chg": -25.44
+        "chg": -22.78
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1227.79,
-        "chg": -24.41
+        "price": 1230.22,
+        "chg": -18.62
       },
       {
-        "symbol": "doge",
-        "name": "Dogecoin",
-        "price": 0.079826,
-        "chg": -19.6
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 285.0,
+        "chg": -18.16
       }
     ]
   }
