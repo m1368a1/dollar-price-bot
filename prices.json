@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-10-25 11:35",
-  "usd_sell": 269800,
-  "usd_buy": 269600,
-  "gold_18k": 26102313,
-  "btc_usd": 80288.87,
+  "timestamp": "2026-10-25 16:25",
+  "usd_sell": 269000,
+  "usd_buy": 268800,
+  "gold_18k": 25986887,
+  "btc_usd": 80450.3,
   "fear_greed": 54,
   "btc_dominance": 60.1,
-  "market_cap": 2680000000000.0,
-  "market_volume": 50000000000.0,
-  "market_change": -3.89,
+  "market_cap": 2690000000000.0,
+  "market_volume": 40000000000.0,
+  "market_change": -2.45,
   "top10": [
     {
       "symbol": "btc",
-      "price": 80323,
-      "change_24h": -0.26218,
-      "market_cap": 1614766037100
+      "price": 80489,
+      "change_24h": 1.17281,
+      "market_cap": 1617989197192
     },
     {
       "symbol": "eth",
-      "price": 2328.43,
-      "change_24h": -1.51836,
-      "market_cap": 284457114211
+      "price": 2341.67,
+      "change_24h": 1.96753,
+      "market_cap": 286013998953
     },
     {
       "symbol": "usdt",
-      "price": 0.999084,
-      "change_24h": 0.00226,
-      "market_cap": 182457783323
+      "price": 0.999006,
+      "change_24h": -0.02307,
+      "market_cap": 182442830696
     },
     {
       "symbol": "bnb",
-      "price": 740.34,
-      "change_24h": 1.20941,
-      "market_cap": 97371988099
+      "price": 740.97,
+      "change_24h": 2.92529,
+      "market_cap": 97434254995
     },
     {
       "symbol": "xrp",
-      "price": 1.29,
-      "change_24h": 1.11599,
-      "market_cap": 81870964365
+      "price": 1.3,
+      "change_24h": 2.74175,
+      "market_cap": 82254352428
     },
     {
       "symbol": "usdc",
-      "price": 0.999563,
-      "change_24h": -0.00893,
-      "market_cap": 71570895251
+      "price": 0.999517,
+      "change_24h": -0.02387,
+      "market_cap": 71550559159
     },
     {
       "symbol": "sol",
-      "price": 100.68,
-      "change_24h": -0.68744,
-      "market_cap": 59378875027
+      "price": 101.31,
+      "change_24h": 1.80836,
+      "market_cap": 59738573581
     },
     {
       "symbol": "trx",
-      "price": 0.328883,
-      "change_24h": -0.35449,
-      "market_cap": 31243667017
+      "price": 0.329137,
+      "change_24h": 0.02673,
+      "market_cap": 31271058797
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.063,
-      "change_24h": null,
-      "market_cap": 27189417100
+      "price": 1.056,
+      "change_24h": 3.38509,
+      "market_cap": 27000066134
     },
     {
       "symbol": "zec",
-      "price": 1192.27,
-      "change_24h": 3.31079,
-      "market_cap": 20278081691
+      "price": 1209.99,
+      "change_24h": 6.10186,
+      "market_cap": 20570704777
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -2.0% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -0.6% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.3% در ۲۴ ساعت",
+        "text": "BTC +0.9% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -97,7 +97,7 @@
       }
     ],
     "confidence": 50,
-    "updated": "2026-10-25 11:35"
+    "updated": "2026-10-25 16:26"
   },
   "whales": {
     "unconfirmed": {
@@ -113,12 +113,27 @@
   },
   "news_investing": [
     {
-      "title": "داده‌های اخیر بازار کار نشانه‌هایی از مخالفت‌های استخدامی مرتبط با هوش مصنوعی را نشان می‌دهد",
-      "date": "2026-10-25 10:02",
+      "title": "بیت‌کوین پس از فروش آخر هفته نزدیک به 80,400 دلار ثابت می ماند، تصمیم فدرال رزرو در آینده نزدیک است",
+      "date": "2026-10-25 14:32",
+      "source": "Investing.com"
+    },
+    {
+      "title": "سیل درآمدها، جلسه فدرال رزرو، افزایش بازار نابسامان هوش مصنوعی را آزمایش خواهد کرد",
+      "date": "2026-10-25 13:00",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
+    {
+      "title": "به نظر می رسد فدرال رزرو پس از افزایش نرخ بهره در سپتامبر متوقف شود",
+      "date": "Sun, 25 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آنچه در EM اتفاق می افتد: سرمایه گذاران اوراق قرضه به دنیای در حال توسعه روی می آورند",
+      "date": "Sun, 25 Oct 2026",
+      "source": "Bloomberg"
+    },
     {
       "title": "شکست اوراق قرضه فرانسه، بحران را در قلب پایان بازی جانشینی بانک مرکزی اروپا قرار می دهد",
       "date": "Sun, 25 Oct 2026",
@@ -130,21 +145,31 @@
       "source": "Bloomberg"
     },
     {
-      "title": "استقبال از بازار اوراق قرضه: کارشناسی ارشد در تجارت با رابین ویگلسورث",
-      "date": "Sat, 24 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "«فروپاشی کامل» در مخاطره‌آمیزترین بازار بدهی‌ها: هفته‌نامه اعتبار",
+      "title": "استقبال از بازار اوراق قرضه: کارشناسی ارشد در تجارت با رابین ویگلزورث",
       "date": "Sat, 24 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "داده‌های اخیر بازار کار نشانه‌هایی از مخالفت‌های استخدامی مرتبط با هوش مصنوعی را نشان می‌دهد",
-      "date": "2026-10-25 10:02",
+      "title": "بیت‌کوین پس از فروش آخر هفته نزدیک به 80,400 دلار ثابت می ماند، تصمیم فدرال رزرو در آینده نزدیک است",
+      "date": "2026-10-25 14:32",
       "source": "Investing.com"
+    },
+    {
+      "title": "سیل درآمدها، جلسه فدرال رزرو، افزایش بازار نابسامان هوش مصنوعی را آزمایش خواهد کرد",
+      "date": "2026-10-25 13:00",
+      "source": "Investing.com"
+    },
+    {
+      "title": "به نظر می رسد فدرال رزرو پس از افزایش نرخ بهره در سپتامبر متوقف شود",
+      "date": "Sun, 25 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آنچه در EM اتفاق می افتد: سرمایه گذاران اوراق قرضه به دنیای در حال توسعه روی می آورند",
+      "date": "Sun, 25 Oct 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "شکست اوراق قرضه فرانسه، بحران را در قلب پایان بازی جانشینی بانک مرکزی اروپا قرار می دهد",
@@ -157,208 +182,203 @@
       "source": "Bloomberg"
     },
     {
-      "title": "استقبال از بازار اوراق قرضه: کارشناسی ارشد در تجارت با رابین ویگلسورث",
-      "date": "Sat, 24 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "«فروپاشی کامل» در مخاطره‌آمیزترین بازار بدهی‌ها: هفته‌نامه اعتبار",
+      "title": "استقبال از بازار اوراق قرضه: کارشناسی ارشد در تجارت با رابین ویگلزورث",
       "date": "Sat, 24 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-25 11:35",
+    "updated": "2026-10-25 16:25",
     "gainers_24h": [
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1192.27,
-        "chg": 3.31
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.202542,
+        "chg": 9.56
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00824161,
-        "chg": 2.08
+        "price": 0.00844988,
+        "chg": 7.95
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 602.39,
-        "chg": 1.48
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 186.1,
+        "chg": 6.42
       },
       {
-        "symbol": "bnb",
-        "name": "BNB",
-        "price": 740.34,
-        "chg": 1.21
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1209.99,
+        "chg": 6.1
       },
       {
-        "symbol": "xrp",
-        "name": "XRP",
-        "price": 1.29,
-        "chg": 1.12
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.83,
+        "chg": 4.08
       }
     ],
     "losers_24h": [
       {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.62,
+        "chg": -7.71
+      },
+      {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.937292,
-        "chg": -15.12
+        "price": 0.915888,
+        "chg": -5.23
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.911924,
-        "chg": -3.65
+        "price": 0.915597,
+        "chg": -0.57
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 135.6,
-        "chg": -3.44
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 8.99,
+        "chg": -0.54
       },
       {
-        "symbol": "ada",
-        "name": "Cardano",
-        "price": 0.203407,
-        "chg": -2.37
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 4.4,
-        "chg": -2.3
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.329137,
+        "chg": 0.03
       }
     ],
     "gainers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.937292,
-        "chg": 23.77
+        "price": 0.915888,
+        "chg": 20.17
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.202542,
+        "chg": 11.44
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1192.27,
-        "chg": 4.45
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 602.39,
-        "chg": 2.95
+        "price": 1209.99,
+        "chg": 10.1
       },
       {
         "symbol": "bnb",
         "name": "BNB",
-        "price": 740.34,
-        "chg": 1.99
+        "price": 740.97,
+        "chg": 4.02
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.07
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.102216,
+        "chg": 3.66
       }
     ],
     "losers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.71,
-        "chg": -29.98
+        "price": 1.62,
+        "chg": -29.06
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.076484,
-        "chg": -12.46
+        "price": 0.077266,
+        "chg": -11.63
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 135.6,
-        "chg": -12.26
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 4.4,
-        "chg": -11.91
+        "price": 135.95,
+        "chg": -9.16
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00824161,
-        "chg": -11.26
+        "price": 0.00844988,
+        "chg": -9.1
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 8.88,
+        "chg": -6.57
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 180.61,
-        "chg": 87.77
+        "price": 186.1,
+        "chg": 96.98
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.71,
-        "chg": 57.76
+        "price": 1.62,
+        "chg": 37.14
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 602.39,
-        "chg": 5.53
+        "price": 604.24,
+        "chg": 9.75
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00418372,
-        "chg": 4.12
+        "price": 0.00426885,
+        "chg": 3.88
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.063,
-        "chg": 3.54
+        "price": 1.056,
+        "chg": 2.82
       }
     ],
     "losers_30d": [
       {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 6.83,
+        "chg": -29.45
+      },
+      {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00824161,
-        "chg": -31.07
+        "price": 0.00844988,
+        "chg": -29.04
       },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.399923,
-        "chg": -28.47
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.68,
-        "chg": -28.33
+        "price": 0.404813,
+        "chg": -25.25
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1192.27,
-        "chg": -25.26
+        "price": 1209.99,
+        "chg": -23.22
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.168825,
-        "chg": -23.44
+        "price": 0.168953,
+        "chg": -22.05
       }
     ]
   }
