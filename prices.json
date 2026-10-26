@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-10-25 22:35",
+  "timestamp": "2026-10-26 01:13",
   "usd_sell": 269500,
   "usd_buy": 269300,
   "gold_18k": 26063068,
-  "btc_usd": 80485.62,
-  "fear_greed": 54,
+  "btc_usd": 79924.17,
+  "fear_greed": 50,
   "btc_dominance": 60.0,
-  "market_cap": 2690000000000.0,
+  "market_cap": 2670000000000.0,
   "market_volume": 40000000000.0,
-  "market_change": -3.34,
+  "market_change": -4.53,
   "top10": [
     {
       "symbol": "btc",
-      "price": 80485,
-      "change_24h": 0.04615,
-      "market_cap": 1617946914297
+      "price": 79982,
+      "change_24h": -0.94079,
+      "market_cap": 1608254694579
     },
     {
       "symbol": "eth",
-      "price": 2344.24,
-      "change_24h": 0.14183,
-      "market_cap": 286382080077
+      "price": 2320.28,
+      "change_24h": -1.5087,
+      "market_cap": 283506947767
     },
     {
       "symbol": "usdt",
-      "price": 0.998997,
-      "change_24h": -0.01156,
-      "market_cap": 182446664391
+      "price": 0.99901,
+      "change_24h": -0.00881,
+      "market_cap": 182312955949
     },
     {
       "symbol": "bnb",
-      "price": 740.84,
-      "change_24h": 0.90755,
-      "market_cap": 97422213425
+      "price": 739.91,
+      "change_24h": -0.05268,
+      "market_cap": 97309670240
     },
     {
       "symbol": "xrp",
-      "price": 1.3,
-      "change_24h": 0.66259,
-      "market_cap": 82328302041
+      "price": 1.29,
+      "change_24h": -0.82248,
+      "market_cap": 81775370647
     },
     {
       "symbol": "usdc",
-      "price": 0.99962,
-      "change_24h": 0.00708,
-      "market_cap": 71525940897
+      "price": 0.999663,
+      "change_24h": 0.00581,
+      "market_cap": 71518663420
     },
     {
       "symbol": "sol",
-      "price": 101.67,
-      "change_24h": 0.17678,
-      "market_cap": 59967570693
+      "price": 101.21,
+      "change_24h": -0.96811,
+      "market_cap": 59698366859
     },
     {
       "symbol": "trx",
-      "price": 0.329957,
-      "change_24h": 0.29717,
-      "market_cap": 31350742280
+      "price": 0.330035,
+      "change_24h": 0.30395,
+      "market_cap": 31359154578
     },
     {
       "symbol": "figr_heloc",
       "price": 1.056,
-      "change_24h": 0.97377,
+      "change_24h": -0.69093,
       "market_cap": 27000066134
     },
     {
       "symbol": "zec",
-      "price": 1219.76,
-      "change_24h": 1.73649,
-      "market_cap": 20748698003
+      "price": 1208.32,
+      "change_24h": 0.09903,
+      "market_cap": 20556773602
     }
   ],
   "signal": {
-    "score": 0,
+    "score": -20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 54/100",
+        "text": "وضعیت: 50/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -1.5% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -2.8% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.2% در ۲۴ ساعت",
+        "text": "BTC -1.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 37",
+        "text": "معتدل: 42",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-10-25 22:35"
+    "confidence": 60,
+    "updated": "2026-10-26 01:14"
   },
   "whales": {
     "unconfirmed": {
@@ -113,228 +117,238 @@
   },
   "news_investing": [
     {
-      "title": "ترامپ می‌گوید جنگ با ایران تا زمانی که تهدید هسته‌ای از بین نرود، پایان نخواهد یافت؛ امروز حمله‌ای صورت نخواهد گرفت",
-      "date": "2026-10-25 22:12",
+      "title": "علیرغم نگرانی‌ها در مورد عرضه، قیمت نفت از بالاترین سطح شش ماه گذشته کاهش یافت",
+      "date": "2026-10-26 00:54",
       "source": "Investing.com"
     },
     {
-      "title": "گلدمن ساکس سه عامل را که از موقعیت‌های خرید کالاهای اساسی پشتیبانی می‌کنند، فهرست می‌کند",
-      "date": "2026-10-25 21:53",
+      "title": "پس از ضررهای سنگین شرکت‌های فناوری، معاملات آتی سهام ایالات متحده افزایش یافت؛ فدرال رزرو و سوددهی در آستانه بهره‌برداری",
+      "date": "2026-10-26 00:41",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "افزایش معاملات آتی سهام ایالات متحده همزمان با کاهش قیمت نفت خام: خلاصه بازارها",
+      "title": "سهام تحت فشار قبل از گزارش درآمد، افت قیمت نفت: بازارها در هم تنیده شدند",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "به نظر می‌رسد فدرال رزرو پس از افزایش نرخ بهره در ماه سپتامبر، روند افزایش نرخ بهره را متوقف خواهد کرد",
+      "title": "طلا پس از کاهش هفتگی، با تغییر تمرکز به جلسه فدرال رزرو، تثبیت شد",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چه اتفاقی در بازارهای نوظهور می‌افتد: سرمایه‌گذاران اوراق قرضه به کشورهای در حال توسعه روی می‌آورند",
+      "title": "هررو از ناتیکسیس: توسعه آهسته هوش مصنوعی می‌تواند تورم‌زا باشد",
+      "date": "Mon, 26 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۶ اکتبر",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شکست اوراق قرضه فرانسه، بحران را در قلب بازی نهایی جانشینی بانک مرکزی اروپا قرار می‌دهد",
+      "title": "گلدمن ساکس می‌گوید ین در حال تبدیل شدن به پوشش بهتری در برابر شوک بازار هوش مصنوعی است",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "گلدمن ساکس هدف ۱۲ ماهه Kospi را ۲۵ درصد کاهش داد، زیرا تجارت هوش مصنوعی از هم پاشیده است",
+      "title": "تحلیلگران می‌گویند بات با ورود اوراق قرضه ملی، دوباره تقویت خواهد شد",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "ترامپ می‌گوید جنگ با ایران تا زمانی که تهدید هسته‌ای از بین نرود، پایان نخواهد یافت؛ امروز حمله‌ای صورت نخواهد گرفت",
-      "date": "2026-10-25 22:12",
+      "title": "علیرغم نگرانی‌ها در مورد عرضه، قیمت نفت از بالاترین سطح شش ماه گذشته کاهش یافت",
+      "date": "2026-10-26 00:54",
       "source": "Investing.com"
     },
     {
-      "title": "گلدمن ساکس سه عامل را که از موقعیت‌های خرید کالاهای اساسی پشتیبانی می‌کنند، فهرست می‌کند",
-      "date": "2026-10-25 21:53",
+      "title": "پس از ضررهای سنگین شرکت‌های فناوری، معاملات آتی سهام ایالات متحده افزایش یافت؛ فدرال رزرو و سوددهی در آستانه بهره‌برداری",
+      "date": "2026-10-26 00:41",
       "source": "Investing.com"
     },
     {
-      "title": "افزایش معاملات آتی سهام ایالات متحده همزمان با کاهش قیمت نفت خام: خلاصه بازارها",
+      "title": "سهام تحت فشار قبل از گزارش درآمد، افت قیمت نفت: بازارها در هم تنیده شدند",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "به نظر می‌رسد فدرال رزرو پس از افزایش نرخ بهره در ماه سپتامبر، روند افزایش نرخ بهره را متوقف خواهد کرد",
+      "title": "طلا پس از کاهش هفتگی، با تغییر تمرکز به جلسه فدرال رزرو، تثبیت شد",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چه اتفاقی در بازارهای نوظهور می‌افتد: سرمایه‌گذاران اوراق قرضه به کشورهای در حال توسعه روی می‌آورند",
+      "title": "هررو از ناتیکسیس: توسعه آهسته هوش مصنوعی می‌تواند تورم‌زا باشد",
+      "date": "Mon, 26 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۲۶ اکتبر",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "شکست اوراق قرضه فرانسه، بحران را در قلب بازی نهایی جانشینی بانک مرکزی اروپا قرار می‌دهد",
+      "title": "گلدمن ساکس می‌گوید ین در حال تبدیل شدن به پوشش بهتری در برابر شوک بازار هوش مصنوعی است",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "گلدمن ساکس هدف ۱۲ ماهه Kospi را ۲۵ درصد کاهش داد، زیرا تجارت هوش مصنوعی از هم پاشیده است",
+      "title": "تحلیلگران می‌گویند بات با ورود اوراق قرضه ملی، دوباره تقویت خواهد شد",
       "date": "Sun, 25 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-25 22:35",
+    "updated": "2026-10-26 01:13",
     "gainers_24h": [
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.948111,
+        "chg": 5.77
+      },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.209439,
-        "chg": 8.87
+        "price": 0.205739,
+        "chg": 5.46
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00861346,
+        "chg": 4.66
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 191.86,
-        "chg": 8.31
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 4.6,
-        "chg": 3.12
+        "price": 188.84,
+        "chg": 4.23
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.98,
-        "chg": 2.71
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.929995,
-        "chg": 2.65
+        "price": 6.91,
+        "chg": 1.01
       }
     ],
     "losers_24h": [
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 593.78,
-        "chg": -2.71
-      },
-      {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.68,
-        "chg": -2.46
+        "price": 1.65,
+        "chg": -6.51
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 593.98,
+        "chg": -3.25
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.05431,
-        "chg": -1.89
+        "price": 0.054289,
+        "chg": -2.72
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.168627,
-        "chg": -1.11
+        "price": 0.167855,
+        "chg": -2.29
       },
       {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 4.86e-06,
-        "chg": -0.81
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.203614,
+        "chg": -2.28
       }
     ],
     "gainers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.929995,
-        "chg": 26.37
+        "price": 0.948111,
+        "chg": 25.38
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.209439,
-        "chg": 16.62
+        "price": 0.205739,
+        "chg": 10.22
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1219.76,
-        "chg": 12.99
+        "price": 1208.32,
+        "chg": 7.24
+      },
+      {
+        "symbol": "bnb",
+        "name": "BNB",
+        "price": 739.91,
+        "chg": 2.28
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00426277,
-        "chg": 7.11
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 279.2,
-        "chg": 4.67
+        "price": 0.00424114,
+        "chg": 1.86
       }
     ],
     "losers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.68,
-        "chg": -30.89
+        "price": 1.65,
+        "chg": -31.44
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 137.04,
-        "chg": -7.58
+        "price": 135.42,
+        "chg": -10.65
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.077654,
-        "chg": -7.15
+        "price": 0.077371,
+        "chg": -9.25
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00843334,
-        "chg": -6.61
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.54,
+        "chg": -8.77
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.26,
-        "chg": -5.47
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 8.91,
+        "chg": -8.65
       }
     ],
     "gainers_30d": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 191.86,
-        "chg": 93.59
+        "price": 188.84,
+        "chg": 91.78
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.68,
-        "chg": 29.49
+        "price": 1.65,
+        "chg": 25.75
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 593.78,
-        "chg": 6.48
+        "price": 593.98,
+        "chg": 6.69
       },
       {
         "symbol": "figr_heloc",
@@ -343,42 +357,42 @@
         "chg": 2.82
       },
       {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00426277,
-        "chg": 2.8
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.01,
+        "chg": 2.31
       }
     ],
     "losers_30d": [
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00843334,
-        "chg": -30.47
-      },
-      {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 6.98,
-        "chg": -28.17
+        "price": 6.91,
+        "chg": -28.05
       },
       {
         "symbol": "ondo",
         "name": "Ondo",
-        "price": 0.40906,
-        "chg": -26.06
+        "price": 0.406772,
+        "chg": -25.88
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00861346,
+        "chg": -24.4
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.168627,
-        "chg": -23.56
+        "price": 0.167855,
+        "chg": -23.66
       },
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1219.76,
-        "chg": -22.03
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.917483,
+        "chg": -22.88
       }
     ]
   }
