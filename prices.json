@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-10-28 21:40",
+  "timestamp": "2026-10-29 01:49",
   "usd_sell": 270700,
   "usd_buy": 270500,
   "gold_18k": 26432429,
-  "btc_usd": 81110.88,
+  "btc_usd": 80201.92,
   "fear_greed": 51,
   "btc_dominance": 59.5,
-  "market_cap": 2730000000000.0,
+  "market_cap": 2710000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -2.09,
+  "market_change": -2.92,
   "top10": [
     {
       "symbol": "btc",
-      "price": 81120,
-      "change_24h": 0.04734,
-      "market_cap": 1631139138686
+      "price": 80420,
+      "change_24h": -0.47762,
+      "market_cap": 1616949361622
     },
     {
       "symbol": "eth",
-      "price": 2355.97,
-      "change_24h": 0.0145,
-      "market_cap": 287881279579
+      "price": 2327.55,
+      "change_24h": -1.06045,
+      "market_cap": 284399138426
     },
     {
       "symbol": "usdt",
-      "price": 0.999214,
-      "change_24h": 0.04004,
-      "market_cap": 181687963099
+      "price": 0.998989,
+      "change_24h": 0.01922,
+      "market_cap": 180843390634
     },
     {
       "symbol": "bnb",
-      "price": 755.17,
-      "change_24h": 0.96037,
-      "market_cap": 99312360873
+      "price": 750.66,
+      "change_24h": 0.77765,
+      "market_cap": 98723691549
     },
     {
       "symbol": "xrp",
-      "price": 1.33,
-      "change_24h": 0.00927,
-      "market_cap": 84050866644
+      "price": 1.31,
+      "change_24h": -1.98606,
+      "market_cap": 82863790200
     },
     {
       "symbol": "usdc",
-      "price": 0.99955,
-      "change_24h": 0.02085,
-      "market_cap": 71288511623
+      "price": 0.999468,
+      "change_24h": 0.00722,
+      "market_cap": 71216185504
     },
     {
       "symbol": "sol",
-      "price": 102.17,
-      "change_24h": 0.62675,
-      "market_cap": 60281614042
+      "price": 100.56,
+      "change_24h": -0.98855,
+      "market_cap": 59330684942
     },
     {
       "symbol": "trx",
-      "price": 0.329197,
-      "change_24h": -0.63745,
-      "market_cap": 31285084649
+      "price": 0.329432,
+      "change_24h": -0.47166,
+      "market_cap": 31303568500
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.037,
-      "change_24h": 1.65098,
-      "market_cap": 26715363383
+      "price": 1.03,
+      "change_24h": 0.025,
+      "market_cap": 26544692812
     },
     {
       "symbol": "zec",
-      "price": 1295.41,
-      "change_24h": -1.09837,
-      "market_cap": 22049153477
+      "price": 1276.23,
+      "change_24h": -2.27336,
+      "market_cap": 21710656083
     }
   ],
   "signal": {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -4.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -3.8% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +0.5% در ۲۴ ساعت",
+        "text": "BTC -0.5% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 47",
+        "text": "معتدل: 39",
         "tone": "neutral"
       }
     ],
     "confidence": 50,
-    "updated": "2026-10-28 21:40"
+    "updated": "2026-10-29 01:49"
   },
   "whales": {
     "unconfirmed": {
@@ -113,282 +113,272 @@
   },
   "news_investing": [
     {
-      "title": "پس از تصمیم فدرال رزرو و افزایش قیمت نفت، سهام جهانی رشد خود را حفظ کردند",
-      "date": "2026-10-28 21:24",
-      "source": "Investing.com"
-    },
-    {
-      "title": "مونرو فدرال بانکورپ چارلز جی براون سوم را به عنوان مدیرعامل و رئیس جدید معرفی کرد",
-      "date": "2026-10-28 21:20",
+      "title": "پس از اینکه فدرال رزرو نرخ بهره را نگه داشت و داده های تورم PCE در کانون توجه قرار گرفت، طلا سقوط کرد",
+      "date": "2026-10-29 01:21",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
+      "title": "سهام فناوری به دلیل نگرانی در مورد هوش مصنوعی، سقوط نفت: بازارها کاهش یافت",
+      "date": "Wed, 28 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کاهش قیمت نفت در حالی که معامله گران نشانه های دیپلماسی تازه در مورد ایران را تجزیه می کنند",
+      "date": "Wed, 28 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "پس از اینکه فدرال رزرو نرخ ها را با راهنمایی محدود نگه داشت، لبه های طلا کاهش می یابد",
+      "date": "Wed, 28 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "اوراق قرضه چین با تشدید تیرگی بر سهام افزایش یافت",
+      "date": "Tue, 27 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "در حالی که جنگ ایران بازارهای نفت را متحول می کند، پمپ پتروبراس رکورد می کند",
+      "date": "Wed, 28 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
       "title": "فدرال رزرو mantiene tasas sin dar muchas pistas sobre diciembre",
       "date": "Wed, 28 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 28 مهر",
-      "date": "Tue, 27 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با افزایش 11 درصدی Oracle: بازارها پس از فدرال رزرو، سهام بالاتر می‌روند",
-      "date": "Tue, 27 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "وارش می گوید: فدرال رزرو ثبات قیمت را ارائه خواهد کرد",
-      "date": "Wed, 28 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "رکورد فروش اوراق قرضه جهانی را شکست، که توسط AI Borrowing Binge تقویت شده است",
-      "date": "Wed, 28 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با توقف فدرال رزرو و سکوت در مورد افزایش های آینده، طلا ضررهای خود را کاهش می دهد",
-      "date": "Tue, 27 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "پس از تصمیم فدرال رزرو و افزایش قیمت نفت، سهام جهانی رشد خود را حفظ کردند",
-      "date": "2026-10-28 21:24",
+      "title": "پس از اینکه فدرال رزرو نرخ بهره را نگه داشت و داده های تورم PCE در کانون توجه قرار گرفت، طلا سقوط کرد",
+      "date": "2026-10-29 01:21",
       "source": "Investing.com"
     },
     {
-      "title": "مونرو فدرال بانکورپ چارلز جی براون سوم را به عنوان مدیرعامل و رئیس جدید معرفی کرد",
-      "date": "2026-10-28 21:20",
-      "source": "Investing.com"
+      "title": "سهام فناوری به دلیل نگرانی در مورد هوش مصنوعی، سقوط نفت: بازارها کاهش یافت",
+      "date": "Wed, 28 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کاهش قیمت نفت در حالی که معامله گران نشانه های دیپلماسی تازه در مورد ایران را تجزیه می کنند",
+      "date": "Wed, 28 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "پس از اینکه فدرال رزرو نرخ ها را با راهنمایی محدود نگه داشت، لبه های طلا کاهش می یابد",
+      "date": "Wed, 28 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "اوراق قرضه چین با تشدید تیرگی بر سهام افزایش یافت",
+      "date": "Tue, 27 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "در حالی که جنگ ایران بازارهای نفت را متحول می کند، پمپ پتروبراس رکورد می کند",
+      "date": "Wed, 28 Oct 2026",
+      "source": "Bloomberg"
     },
     {
       "title": "فدرال رزرو mantiene tasas sin dar muchas pistas sobre diciembre",
       "date": "Wed, 28 Oct 2026",
       "source": "Bloomberg"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 28 مهر",
-      "date": "Tue, 27 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با افزایش 11 درصدی Oracle: بازارها پس از فدرال رزرو، سهام بالاتر می‌روند",
-      "date": "Tue, 27 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "وارش می گوید: فدرال رزرو ثبات قیمت را ارائه خواهد کرد",
-      "date": "Wed, 28 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "رکورد فروش اوراق قرضه جهانی را شکست، که توسط AI Borrowing Binge تقویت شده است",
-      "date": "Wed, 28 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "با توقف فدرال رزرو و سکوت در مورد افزایش های آینده، طلا ضررهای خود را کاهش می دهد",
-      "date": "Tue, 27 Oct 2026",
-      "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-28 21:40",
+    "updated": "2026-10-29 01:49",
     "gainers_24h": [
+      {
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 59.03,
+        "chg": 2.88
+      },
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 5.05e-06,
-        "chg": 11.01
+        "price": 5.03e-06,
+        "chg": 2.39
+      },
+      {
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 110.77,
+        "chg": 0.89
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00453058,
-        "chg": 4.2
+        "price": 0.00439851,
+        "chg": 0.82
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.42,
-        "chg": 4.19
-      },
-      {
-        "symbol": "ltc",
-        "name": "Litecoin",
-        "price": 59.22,
-        "chg": 3.92
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 11.79,
-        "chg": 2.04
+        "symbol": "bnb",
+        "name": "BNB",
+        "price": 750.66,
+        "chg": 0.78
       }
     ],
     "losers_24h": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00688846,
-        "chg": -4.47
-      },
-      {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.74,
-        "chg": -3.27
+        "price": 0.00680113,
+        "chg": -5.5
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.044,
-        "chg": -2.15
+        "price": 1.027,
+        "chg": -3.8
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 596.93,
-        "chg": -1.73
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 284.56,
+        "chg": -3.29
       },
       {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.075281,
-        "chg": -1.55
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.202109,
+        "chg": -3.19
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 4.56,
+        "chg": -2.82
       }
     ],
     "gainers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 1.044,
-        "chg": 39.14
+        "price": 1.027,
+        "chg": 37.79
       },
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 5.05e-06,
-        "chg": 7.47
-      },
-      {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.42,
-        "chg": 4.52
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.037,
-        "chg": 2.18
+        "price": 5.03e-06,
+        "chg": 9.32
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.74,
-        "chg": 2.16
+        "price": 1.72,
+        "chg": 4.89
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.46,
+        "chg": 4.69
+      },
+      {
+        "symbol": "bnb",
+        "name": "BNB",
+        "price": 750.66,
+        "chg": 1.25
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00688846,
-        "chg": -24.57
+        "price": 0.00680113,
+        "chg": -24.46
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 135.25,
-        "chg": -13.77
+        "price": 131.99,
+        "chg": -13.65
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.100357,
-        "chg": -12.57
-      },
-      {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.075281,
-        "chg": -11.55
+        "symbol": "pump",
+        "name": "Pump.fun",
+        "price": 0.00439851,
+        "chg": -12.64
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 4.72,
-        "chg": -10.96
+        "price": 4.56,
+        "chg": -11.31
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.098566,
+        "chg": -10.7
       }
     ],
     "gainers_30d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.74,
-        "chg": 71.11
+        "price": 1.72,
+        "chg": 54.25
       },
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 5.05e-06,
-        "chg": 20.52
+        "price": 5.03e-06,
+        "chg": 20.19
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 596.93,
-        "chg": 10.65
+        "price": 594.56,
+        "chg": 10.44
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.42,
-        "chg": 4.2
+        "price": 9.46,
+        "chg": 4.37
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.28
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.03,
+        "chg": 2.56
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00688846,
-        "chg": -44.77
+        "price": 0.00680113,
+        "chg": -45.08
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.075281,
-        "chg": -37.8
+        "price": 0.074273,
+        "chg": -38.56
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.172844,
-        "chg": -23.67
+        "price": 0.169972,
+        "chg": -26.13
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 1.24,
-        "chg": -22.23
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.098566,
+        "chg": -23.94
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 11.79,
-        "chg": -21.86
+        "price": 11.6,
+        "chg": -23.85
       }
     ]
   }
