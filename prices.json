@@ -1,79 +1,79 @@
 {
-  "timestamp": "2026-10-30 14:12",
+  "timestamp": "2026-10-30 19:26",
   "usd_sell": 274000,
   "usd_buy": 273800,
-  "gold_18k": 25746802,
-  "btc_usd": 76778.57,
+  "gold_18k": 25739877,
+  "btc_usd": 76375.31,
   "fear_greed": 30,
-  "btc_dominance": 59.2,
-  "market_cap": 2610000000000.0,
+  "btc_dominance": 59.1,
+  "market_cap": 2590000000000.0,
   "market_volume": 150000000000.0,
-  "market_change": -6.36,
+  "market_change": -7.2,
   "top10": [
     {
       "symbol": "btc",
-      "price": 76883,
-      "change_24h": -4.2715,
-      "market_cap": 1545820002305
+      "price": 76413,
+      "change_24h": -5.41489,
+      "market_cap": 1536314265268
     },
     {
       "symbol": "eth",
-      "price": 2219.07,
-      "change_24h": -4.51204,
-      "market_cap": 271122608283
+      "price": 2225.27,
+      "change_24h": -4.44987,
+      "market_cap": 271870634443
     },
     {
       "symbol": "usdt",
-      "price": 0.998931,
-      "change_24h": -0.01198,
-      "market_cap": 180319683950
+      "price": 0.998955,
+      "change_24h": -0.00214,
+      "market_cap": 180324151254
     },
     {
       "symbol": "bnb",
-      "price": 695.86,
-      "change_24h": -6.36006,
-      "market_cap": 91514377504
+      "price": 696.13,
+      "change_24h": -6.3807,
+      "market_cap": 91549017849
     },
     {
       "symbol": "xrp",
-      "price": 1.23,
-      "change_24h": -4.27219,
-      "market_cap": 78192426296
+      "price": 1.24,
+      "change_24h": -3.42161,
+      "market_cap": 78558194719
     },
     {
       "symbol": "usdc",
-      "price": 0.999559,
-      "change_24h": -0.00144,
-      "market_cap": 71324326168
+      "price": 0.999606,
+      "change_24h": 0.01689,
+      "market_cap": 71690767296
     },
     {
       "symbol": "sol",
-      "price": 94.69,
-      "change_24h": -5.81947,
-      "market_cap": 55874309236
+      "price": 94.25,
+      "change_24h": -6.04002,
+      "market_cap": 55609890474
     },
     {
       "symbol": "trx",
-      "price": 0.333839,
-      "change_24h": 0.85773,
-      "market_cap": 31723527567
+      "price": 0.332131,
+      "change_24h": 0.28627,
+      "market_cap": 31559144206
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.03,
-      "change_24h": -0.31357,
-      "market_cap": 26600821513
+      "price": 1.026,
+      "change_24h": -3.27413,
+      "market_cap": 26560166274
     },
     {
       "symbol": "hype",
-      "price": 90.68,
-      "change_24h": -0.07499,
-      "market_cap": 21705588240
+      "price": 90.27,
+      "change_24h": -4.09587,
+      "market_cap": 21611044650
     }
   ],
   "signal": {
-    "score": -15,
-    "label": "🟡 سیگنال صبر",
+    "score": -35,
+    "label": "🔴 سیگنال فروش",
     "factors": [
       {
         "text": "وضعیت: 30/100",
@@ -84,7 +84,7 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC -4.2% در ۲۴ ساعت",
+        "text": "BTC -5.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,10 +94,14 @@
       {
         "text": "معتدل: 31",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 57,
-    "updated": "2026-10-30 14:12"
+    "confidence": 67,
+    "updated": "2026-10-30 19:26"
   },
   "whales": {
     "unconfirmed": {
@@ -113,25 +117,35 @@
   },
   "news_investing": [
     {
-      "title": "سهام گروه مالی امریکن به 20.03 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-30 13:54",
+      "title": "سهام North Trust Corp به 17.6 دلار به پایین‌ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-10-30 19:06",
       "source": "Investing.com"
     },
     {
-      "title": "سهام Bancorp Inc به 46.83 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-30 13:51",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام EOG Resources به 165.3 دلار به بالاترین حد تاریخ رسید",
-      "date": "2026-10-30 13:51",
+      "title": "سهام Assurant Inc به 16.5 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-10-30 18:39",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "با توجه به تورم و سقوط سهام در بازار، طلا به کمترین میزان در یک سال گذشته رسید",
+      "title": "طلا برای بدترین اکتبر از سال 2008 به دلیل رشد سهام هوش مصنوعی آماده است",
       "date": "Thu, 29 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "Nasdaq 100 10% از پیک در تماس بیدارباش هوش مصنوعی افت کرد: بازارها بسته شدند",
+      "date": "Thu, 29 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کلمبیا با سرد شدن اقتصاد، نرخ بهره را به حالت تعلیق درآورد",
+      "date": "Fri, 30 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با کاهش فناوری، ترس از رشد سوخت نفت، مس به پایین‌ترین حد یک هفته‌ای سقوط کرد",
+      "date": "Fri, 30 Oct 2026",
       "source": "Bloomberg"
     },
     {
@@ -140,45 +154,40 @@
       "source": "Bloomberg"
     },
     {
-      "title": "نزدک 100 با افت 3 درصدی درآمد. حسابرسی هوش مصنوعی استوک: بسته شدن بازار",
-      "date": "Thu, 29 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 30 مهر",
-      "date": "Thu, 29 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سارا هانت می‌گوید نفت در حال حاضر یک تجارت سخت است",
-      "date": "Fri, 30 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بازار سهام لندن در میان کسانی که احساس می کنند از بودجه بریتانیا کنار گذاشته شده اند",
+      "title": "مدیرعامل Bessemer Trust: سازنده در بازارها",
       "date": "Fri, 30 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام گروه مالی امریکن به 20.03 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-30 13:54",
+      "title": "سهام North Trust Corp به 17.6 دلار به پایین‌ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-10-30 19:06",
       "source": "Investing.com"
     },
     {
-      "title": "سهام Bancorp Inc به 46.83 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-10-30 13:51",
+      "title": "سهام Assurant Inc به 16.5 دلار به پایین ترین حد در 52 هفته گذشته رسید",
+      "date": "2026-10-30 18:39",
       "source": "Investing.com"
     },
     {
-      "title": "سهام EOG Resources به 165.3 دلار به بالاترین حد تاریخ رسید",
-      "date": "2026-10-30 13:51",
-      "source": "Investing.com"
-    },
-    {
-      "title": "با توجه به تورم و سقوط سهام در بازار، طلا به کمترین میزان در یک سال گذشته رسید",
+      "title": "طلا برای بدترین اکتبر از سال 2008 به دلیل رشد سهام هوش مصنوعی آماده است",
       "date": "Thu, 29 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "Nasdaq 100 10% از پیک در تماس بیدارباش هوش مصنوعی افت کرد: بازارها بسته شدند",
+      "date": "Thu, 29 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کلمبیا با سرد شدن اقتصاد، نرخ بهره را به حالت تعلیق درآورد",
+      "date": "Fri, 30 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "با کاهش فناوری، ترس از رشد سوخت نفت، مس به پایین‌ترین حد یک هفته‌ای سقوط کرد",
+      "date": "Fri, 30 Oct 2026",
       "source": "Bloomberg"
     },
     {
@@ -187,46 +196,19 @@
       "source": "Bloomberg"
     },
     {
-      "title": "نزدک 100 با افت 3 درصدی درآمد. حسابرسی هوش مصنوعی استوک: بسته شدن بازار",
-      "date": "Thu, 29 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 30 مهر",
-      "date": "Thu, 29 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سارا هانت می‌گوید نفت در حال حاضر یک تجارت سخت است",
-      "date": "Fri, 30 Oct 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بازار سهام لندن در میان کسانی که احساس می کنند از بودجه بریتانیا کنار گذاشته شده اند",
+      "title": "مدیرعامل Bessemer Trust: سازنده در بازارها",
       "date": "Fri, 30 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-30 14:12",
+    "updated": "2026-10-30 19:26",
     "gainers_24h": [
-      {
-        "symbol": "pepe",
-        "name": "Pepe",
-        "price": 5.15e-06,
-        "chg": 6.45
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 284.57,
-        "chg": 2.1
-      },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.333839,
-        "chg": 0.86
+        "price": 0.332131,
+        "chg": 0.29
       },
       {
         "symbol": "usyc",
@@ -235,132 +217,144 @@
         "chg": 0.03
       },
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 90.68,
-        "chg": -0.07
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.4,
+        "chg": -0.64
+      },
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 285.56,
+        "chg": -1.05
+      },
+      {
+        "symbol": "xlm",
+        "name": "Stellar",
+        "price": 0.166863,
+        "chg": -1.54
       }
     ],
     "losers_24h": [
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.18636,
-        "chg": -10.21
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.28,
+        "chg": -12.84
       },
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.968284,
-        "chg": -9.69
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.184582,
+        "chg": -11.69
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 231.23,
-        "chg": -8.53
+        "price": 230.52,
+        "chg": -8.68
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 123.97,
-        "chg": -6.8
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.939213,
+        "chg": -8.66
       },
       {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 8.23,
-        "chg": -6.61
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1218.83,
+        "chg": -7.85
       }
     ],
     "gainers_7d": [
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 90.68,
-        "chg": 17.38
+        "price": 90.27,
+        "chg": 14.65
+      },
+      {
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 5e-06,
+        "chg": 6.3
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.968284,
-        "chg": 8.98
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 191.47,
-        "chg": 5.6
+        "price": 0.939213,
+        "chg": 4.28
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.41,
-        "chg": 4.15
+        "price": 9.4,
+        "chg": 4.17
       },
       {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.333839,
-        "chg": 1.23
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 188.28,
+        "chg": 3.72
       }
     ],
     "losers_7d": [
       {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.28,
+        "chg": -31.79
+      },
+      {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00648998,
-        "chg": -23.07
+        "price": 0.00629234,
+        "chg": -23.41
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 123.97,
-        "chg": -16.02
+        "price": 125.91,
+        "chg": -14.99
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 4.26,
-        "chg": -13.69
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.184582,
+        "chg": -12.77
       },
       {
-        "symbol": "ada",
-        "name": "Cardano",
-        "price": 0.190963,
-        "chg": -11.91
-      },
-      {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.880432,
-        "chg": -11.56
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.15,
+        "chg": -12.22
       }
     ],
     "gainers_30d": [
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 5.15e-06,
-        "chg": 15.75
+        "price": 5e-06,
+        "chg": 16.86
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 583.54,
-        "chg": 7.64
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 90.68,
-        "chg": 4.56
+        "price": 588.44,
+        "chg": 8.01
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.41,
-        "chg": 4.5
+        "price": 9.4,
+        "chg": 4.14
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 90.27,
+        "chg": 0.69
       },
       {
         "symbol": "usyc",
@@ -373,32 +367,32 @@
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00648998,
-        "chg": -48.52
+        "price": 0.00629234,
+        "chg": -48.13
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 191.47,
-        "chg": -37.46
+        "price": 188.28,
+        "chg": -37.53
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.071064,
-        "chg": -34.4
+        "price": 0.071179,
+        "chg": -33.22
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.18636,
-        "chg": -28.71
+        "price": 0.184582,
+        "chg": -30.74
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.166062,
-        "chg": -27.82
+        "price": 0.166863,
+        "chg": -25.57
       }
     ]
   }
