@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-10-31 05:47",
-  "usd_sell": 274000,
-  "usd_buy": 273800,
-  "gold_18k": 25462856,
-  "btc_usd": 77175.08,
+  "timestamp": "2026-10-31 12:37",
+  "usd_sell": 272100,
+  "usd_buy": 271900,
+  "gold_18k": 25382058,
+  "btc_usd": 77462.03,
   "fear_greed": 30,
   "btc_dominance": 59.2,
-  "market_cap": 2620000000000.0,
-  "market_volume": 90000000000.0,
-  "market_change": -3.56,
+  "market_cap": 2630000000000.0,
+  "market_volume": 70000000000.0,
+  "market_change": -2.46,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77199,
-      "change_24h": -1.81158,
-      "market_cap": 1552108783537
+      "price": 77480,
+      "change_24h": 0.0645,
+      "market_cap": 1557760396381
     },
     {
       "symbol": "eth",
-      "price": 2240.62,
-      "change_24h": -0.28564,
-      "market_cap": 273764833199
+      "price": 2248.31,
+      "change_24h": 0.6818,
+      "market_cap": 274690747465
     },
     {
       "symbol": "usdt",
-      "price": 0.999193,
-      "change_24h": 0.05802,
-      "market_cap": 179978244404
+      "price": 0.999278,
+      "change_24h": 0.01881,
+      "market_cap": 179993376135
     },
     {
       "symbol": "bnb",
-      "price": 702.96,
-      "change_24h": -2.04433,
-      "market_cap": 92443518177
+      "price": 704.44,
+      "change_24h": 0.78938,
+      "market_cap": 92636062012
     },
     {
       "symbol": "xrp",
       "price": 1.25,
-      "change_24h": -1.14987,
-      "market_cap": 78902548850
+      "change_24h": -0.00725,
+      "market_cap": 79079253616
     },
     {
       "symbol": "usdc",
-      "price": 0.999846,
-      "change_24h": 0.05278,
-      "market_cap": 71739068741
+      "price": 0.999874,
+      "change_24h": 0.02626,
+      "market_cap": 71768462468
     },
     {
       "symbol": "sol",
-      "price": 96.11,
-      "change_24h": -2.30403,
-      "market_cap": 56716748681
+      "price": 95.84,
+      "change_24h": -0.76802,
+      "market_cap": 56557500594
     },
     {
       "symbol": "trx",
-      "price": 0.324701,
-      "change_24h": -4.11926,
-      "market_cap": 30874933840
+      "price": 0.317965,
+      "change_24h": -4.63701,
+      "market_cap": 30212852896
     },
     {
       "symbol": "figr_heloc",
       "price": 1.028,
-      "change_24h": -0.23634,
-      "market_cap": 26610658381
+      "change_24h": null,
+      "market_cap": 26608373663
     },
     {
       "symbol": "zec",
-      "price": 1261.27,
-      "change_24h": -1.0981,
-      "market_cap": 21478089276
+      "price": 1285.33,
+      "change_24h": 2.9771,
+      "market_cap": 21868466466
     }
   ],
   "signal": {
-    "score": 0,
+    "score": 20,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -4.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -4.0% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -1.2% در ۲۴ ساعت",
+        "text": "BTC +0.3% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 33",
+        "text": "معتدل: 35",
         "tone": "neutral"
+      },
+      {
+        "text": "سه سرباز سفید (Three White Soldiers) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-10-31 05:48"
+    "confidence": 60,
+    "updated": "2026-10-31 12:37"
   },
   "whales": {
     "unconfirmed": {
@@ -111,179 +115,200 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "همزمان با پیوستن اف‌بی‌آی به عملیات جستجوی هکرهای ۶.۳ میلیارد دلاری بایننس، قیمت بیت‌کوین بالای ۷۷۰۰۰ دلار باقی ماند",
+      "date": "2026-10-31 11:48",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "سهام افت می کند زیرا وال استریت با هوش مصنوعی بیدار می شود: بازارها بسته می شوند",
+      "title": "خطرات سیاست‌های هوش مصنوعی پیش از انتخابات میان‌دوره‌ای، بر سر معامله‌گران سهام و اوراق قرضه سایه افکنده است",
+      "date": "Fri, 30 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سقوط سهام در پی هشدار هوش مصنوعی به وال استریت: خلاصه بازارها",
       "date": "Thu, 29 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هک کریپتو بحث نظارتی را دوباره برانگیخت",
+      "title": "هک ارزهای دیجیتال، بحث‌های نظارتی را دوباره شعله‌ور کرد",
       "date": "Fri, 30 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام افت می کند زیرا وال استریت با هوش مصنوعی بیدار می شود: بازارها بسته می شوند",
+      "title": "همزمان با پیوستن اف‌بی‌آی به عملیات جستجوی هکرهای ۶.۳ میلیارد دلاری بایننس، قیمت بیت‌کوین بالای ۷۷۰۰۰ دلار باقی ماند",
+      "date": "2026-10-31 11:48",
+      "source": "Investing.com"
+    },
+    {
+      "title": "خطرات سیاست‌های هوش مصنوعی پیش از انتخابات میان‌دوره‌ای، بر سر معامله‌گران سهام و اوراق قرضه سایه افکنده است",
+      "date": "Fri, 30 Oct 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سقوط سهام در پی هشدار هوش مصنوعی به وال استریت: خلاصه بازارها",
       "date": "Thu, 29 Oct 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هک کریپتو بحث نظارتی را دوباره برانگیخت",
+      "title": "هک ارزهای دیجیتال، بحث‌های نظارتی را دوباره شعله‌ور کرد",
       "date": "Fri, 30 Oct 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-10-31 05:47",
+    "updated": "2026-10-31 12:37",
     "gainers_24h": [
-      {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.41137,
-        "chg": 4.53
-      },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 130.4,
-        "chg": 2.89
+        "price": 134.66,
+        "chg": 6.69
+      },
+      {
+        "symbol": "ondo",
+        "name": "Ondo",
+        "price": 0.409781,
+        "chg": 4.61
       },
       {
         "symbol": "link",
         "name": "Chainlink",
-        "price": 11.42,
-        "chg": 2.6
+        "price": 11.57,
+        "chg": 4.36
       },
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.97,
-        "chg": 2.19
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 200.22,
+        "chg": 3.29
       },
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 4.33,
-        "chg": 1.85
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 292.24,
+        "chg": 3.24
       }
     ],
     "losers_24h": [
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.948733,
-        "chg": -7.61
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 88.52,
-        "chg": -4.93
-      },
-      {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0062809,
-        "chg": -4.92
+        "price": 0.00613404,
+        "chg": -7.62
+      },
+      {
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 5.01e-06,
+        "chg": -4.67
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.324701,
-        "chg": -4.12
+        "price": 0.317965,
+        "chg": -4.64
       },
       {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 3872.24,
-        "chg": -3.16
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 88.24,
+        "chg": -4.23
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.945357,
+        "chg": -3.75
       }
     ],
     "gainers_7d": [
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 88.52,
-        "chg": 14.65
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1261.27,
-        "chg": 7.21
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 193.76,
-        "chg": 6.2
+        "price": 88.24,
+        "chg": 15.67
       },
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 4.87e-06,
-        "chg": 5.78
+        "price": 5.01e-06,
+        "chg": 15.21
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.46,
-        "chg": 5.2
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1285.33,
+        "chg": 10.94
+      },
+      {
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 200.22,
+        "chg": 10.0
+      },
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 292.24,
+        "chg": 5.02
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0062809,
-        "chg": -23.58
+        "price": 0.00613404,
+        "chg": -24.27
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 130.4,
-        "chg": -10.25
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.945357,
+        "chg": -14.48
       },
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.192871,
-        "chg": -8.77
-      },
-      {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.071567,
-        "chg": -8.06
+        "price": 0.192778,
+        "chg": -7.72
       },
       {
         "symbol": "cro",
         "name": "Cronos",
-        "price": 0.051376,
-        "chg": -7.77
+        "price": 0.051476,
+        "chg": -6.36
+      },
+      {
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.072638,
+        "chg": -5.96
       }
     ],
     "gainers_30d": [
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 4.87e-06,
-        "chg": 10.75
+        "price": 5.01e-06,
+        "chg": 16.66
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 594.78,
-        "chg": 8.02
+        "price": 593.73,
+        "chg": 9.87
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.46,
-        "chg": 6.61
+        "price": 9.37,
+        "chg": 5.93
       },
       {
         "symbol": "usyc",
@@ -295,39 +320,39 @@
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.028,
-        "chg": 0.05
+        "chg": 0.07
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.0062809,
-        "chg": -49.04
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 193.76,
-        "chg": -34.87
+        "price": 0.00613404,
+        "chg": -50.01
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.071567,
-        "chg": -32.04
+        "price": 0.072638,
+        "chg": -30.9
       },
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.191027,
-        "chg": -29.08
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 200.22,
+        "chg": -30.03
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.00409462,
-        "chg": -28.95
+        "price": 0.00415645,
+        "chg": -26.74
+      },
+      {
+        "symbol": "cro",
+        "name": "Cronos",
+        "price": 0.051476,
+        "chg": -26.33
       }
     ]
   }
