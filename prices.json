@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-11-02 23:33",
-  "usd_sell": 271800,
-  "usd_buy": 271600,
-  "gold_18k": 25774504,
-  "btc_usd": 76620.38,
-  "fear_greed": 37,
-  "btc_dominance": 59.2,
-  "market_cap": 2600000000000.0,
+  "timestamp": "2026-11-03 06:51",
+  "usd_sell": 272000,
+  "usd_buy": 271800,
+  "gold_18k": 25601366,
+  "btc_usd": 76413.22,
+  "fear_greed": 26,
+  "btc_dominance": 59.3,
+  "market_cap": 2590000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -2.75,
+  "market_change": -3.64,
   "top10": [
     {
       "symbol": "btc",
-      "price": 76651,
-      "change_24h": -1.82759,
-      "market_cap": 1541111614788
+      "price": 76461,
+      "change_24h": -2.09567,
+      "market_cap": 1537270483138
     },
     {
       "symbol": "eth",
-      "price": 2246.72,
-      "change_24h": -0.87629,
-      "market_cap": 274519091533
+      "price": 2242.78,
+      "change_24h": -1.73762,
+      "market_cap": 274036645404
     },
     {
       "symbol": "usdt",
-      "price": 0.998624,
-      "change_24h": -0.04878,
-      "market_cap": 179872294535
+      "price": 0.998625,
+      "change_24h": -0.0365,
+      "market_cap": 178869386790
     },
     {
       "symbol": "bnb",
-      "price": 697.19,
-      "change_24h": -1.82398,
-      "market_cap": 91693885645
+      "price": 692.61,
+      "change_24h": -2.17554,
+      "market_cap": 91085815963
     },
     {
       "symbol": "xrp",
       "price": 1.25,
-      "change_24h": -0.16658,
-      "market_cap": 79046542273
+      "change_24h": -0.06658,
+      "market_cap": 79047053547
     },
     {
       "symbol": "usdc",
-      "price": 0.999306,
-      "change_24h": -0.0431,
-      "market_cap": 70984886331
+      "price": 0.999276,
+      "change_24h": -0.02653,
+      "market_cap": 71047979682
     },
     {
       "symbol": "sol",
-      "price": 91.63,
-      "change_24h": -2.51629,
-      "market_cap": 54082609533
+      "price": 91.34,
+      "change_24h": -3.1259,
+      "market_cap": 53911540324
     },
     {
       "symbol": "trx",
-      "price": 0.318671,
-      "change_24h": 1.8784,
-      "market_cap": 30278852682
+      "price": 0.320292,
+      "change_24h": 2.14993,
+      "market_cap": 30435337907
     },
     {
       "symbol": "figr_heloc",
       "price": 1.032,
       "change_24h": null,
-      "market_cap": 26857272494
+      "market_cap": 26856792180
     },
     {
       "symbol": "hype",
-      "price": 83.82,
-      "change_24h": -4.18692,
-      "market_cap": 20071910581
+      "price": 83.45,
+      "change_24h": -3.24586,
+      "market_cap": 19979130458
     }
   ],
   "signal": {
-    "score": 0,
+    "score": 15,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
-        "text": "وضعیت: 37/100",
+        "text": "وضعیت: 26/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -4.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -3.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -1.5% در ۲۴ ساعت",
+        "text": "BTC -2.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 31",
-        "tone": "neutral"
+        "text": "اشباع فروش (25) — فرصت خرید",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-11-02 23:33"
+    "confidence": 57,
+    "updated": "2026-11-03 06:52"
   },
   "whales": {
     "unconfirmed": {
@@ -111,263 +111,274 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "کره شمالی ادعای آمریکا درباره سرقت رمزنگاری بایننس را رد کرد",
+      "date": "2026-11-03 06:30",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "Nasdaq Slide Clouds Asian Open, نفت Holds Losses: Markets Wrap",
+      "title": "افزایش مالیات هند، واردات غیرقانونی طلا را به بالاترین حد خود در سه سال اخیر رساند",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "WGC می گوید بانک های مرکزی طلا را با سریع ترین سرعت از سال 2024 می خرند",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آژانس بین‌المللی انرژی درباره تنگنای بازار گاز تا سال 2027 هشدار داد",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "افت سهام آسیایی در تضعیف فناوری ایالات متحده، ضعیف شدن یوان: بسته شدن بازارها",
       "date": "Mon, 02 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "نتایج مطالعه موردی و تجزیه و تحلیل برای SME های آفریقای جنوبی",
-      "date": "Mon, 02 Nov 2026",
+      "title": "ذخایر روغن سویا چین با شکست بیش از تقاضا رکورد زد",
+      "date": "Tue, 03 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "S&P 500 Falls as Chip Rout Offsets آمریکا-ایران Hopes: Markets Wrap",
-      "date": "Sun, 01 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Chilean, Mexican Pesos Lead EM Currencies Higher as نفت Sinks",
-      "date": "Mon, 02 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Hedge Funds Back SEC Push to Ease Rules on EU Bond Futures",
-      "date": "Mon, 02 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "طلا’s Faded Haven Allure Hinges on Deficit, Inflation Fears",
-      "date": "Mon, 02 Nov 2026",
+      "title": "بازارهای نفت خاورمیانه با افزایش جریان، نشانه‌های فراوانی را آشکار می‌کنند",
+      "date": "Tue, 03 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "Nasdaq Slide Clouds Asian Open, نفت Holds Losses: Markets Wrap",
+      "title": "کره شمالی ادعای آمریکا درباره سرقت رمزنگاری بایننس را رد کرد",
+      "date": "2026-11-03 06:30",
+      "source": "Investing.com"
+    },
+    {
+      "title": "افزایش مالیات هند، واردات غیرقانونی طلا را به بالاترین حد خود در سه سال اخیر رساند",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "WGC می گوید بانک های مرکزی طلا را با سریع ترین سرعت از سال 2024 می خرند",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آژانس بین‌المللی انرژی درباره تنگنای بازار گاز تا سال 2027 هشدار داد",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "افت سهام آسیایی در تضعیف فناوری ایالات متحده، ضعیف شدن یوان: بسته شدن بازارها",
       "date": "Mon, 02 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "نتایج مطالعه موردی و تجزیه و تحلیل برای SME های آفریقای جنوبی",
-      "date": "Mon, 02 Nov 2026",
+      "title": "ذخایر روغن سویا چین با شکست بیش از تقاضا رکورد زد",
+      "date": "Tue, 03 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "S&P 500 Falls as Chip Rout Offsets آمریکا-ایران Hopes: Markets Wrap",
-      "date": "Sun, 01 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Chilean, Mexican Pesos Lead EM Currencies Higher as نفت Sinks",
-      "date": "Mon, 02 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "Hedge Funds Back SEC Push to Ease Rules on EU Bond Futures",
-      "date": "Mon, 02 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "طلا’s Faded Haven Allure Hinges on Deficit, Inflation Fears",
-      "date": "Mon, 02 Nov 2026",
+      "title": "بازارهای نفت خاورمیانه با افزایش جریان، نشانه‌های فراوانی را آشکار می‌کنند",
+      "date": "Tue, 03 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-02 23:33",
+    "updated": "2026-11-03 06:51",
     "gainers_24h": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00687229,
-        "chg": 11.6
+        "price": 0.00632956,
+        "chg": 13.89
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.318671,
-        "chg": 1.88
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.845177,
-        "chg": 1.21
+        "price": 0.320292,
+        "chg": 2.15
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 605.86,
-        "chg": 1.16
+        "price": 609.34,
+        "chg": 0.39
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 3929.11,
-        "chg": 1.08
+        "price": 3903.62,
+        "chg": 0.11
+      },
+      {
+        "symbol": "eursafo",
+        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
+        "price": 1.14,
+        "chg": 0.1
       }
     ],
     "losers_24h": [
       {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 3.85,
-        "chg": -9.85
-      },
-      {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1131.4,
-        "chg": -7.99
+        "price": 1127.35,
+        "chg": -10.98
       },
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.170134,
-        "chg": -6.82
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 3.75,
+        "chg": -9.37
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 126.68,
-        "chg": -5.82
+        "price": 125.06,
+        "chg": -6.21
       },
       {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 222.95,
-        "chg": -4.34
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.16793,
+        "chg": -5.69
+      },
+      {
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 107.34,
+        "chg": -4.86
       }
     ],
     "gainers_7d": [
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 4.75e-06,
-        "chg": 11.41
+        "price": 4.67e-06,
+        "chg": 8.73
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 83.82,
-        "chg": 8.54
+        "price": 83.45,
+        "chg": 7.48
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.4,
-        "chg": 3.94
+        "price": 9.33,
+        "chg": 3.27
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 605.86,
-        "chg": 2.18
+        "price": 609.34,
+        "chg": 1.05
       },
       {
         "symbol": "eursafo",
         "name": "Spiko Amundi Overnight Swap Fund (EUR)",
         "price": 1.14,
-        "chg": 0.17
+        "chg": 0.26
       }
     ],
     "losers_7d": [
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.170134,
-        "chg": -17.76
+        "price": 0.16793,
+        "chg": -18.35
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.85,
-        "chg": -13.24
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00687229,
-        "chg": -11.98
+        "price": 3.75,
+        "chg": -14.45
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.845177,
-        "chg": -11.04
+        "price": 0.827546,
+        "chg": -14.33
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00632956,
+        "chg": -13.07
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 222.95,
-        "chg": -10.33
+        "price": 220.86,
+        "chg": -10.6
       }
     ],
     "gainers_30d": [
       {
-        "symbol": "pepe",
-        "name": "Pepe",
-        "price": 4.75e-06,
-        "chg": 10.62
-      },
-      {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 605.86,
-        "chg": 8.35
+        "price": 609.34,
+        "chg": 10.8
+      },
+      {
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 4.67e-06,
+        "chg": 9.61
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.4,
-        "chg": 4.49
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.032,
-        "chg": 1.47
+        "price": 9.33,
+        "chg": 4.34
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.27
+      },
+      {
+        "symbol": "eursafo",
+        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
+        "price": 1.14,
+        "chg": -0.35
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00687229,
-        "chg": -41.27
+        "price": 0.00632956,
+        "chg": -51.2
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.069681,
-        "chg": -31.5
+        "price": 0.06881,
+        "chg": -31.45
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 126.68,
-        "chg": -29.83
+        "price": 125.06,
+        "chg": -31.12
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.170134,
-        "chg": -28.54
+        "price": 0.16793,
+        "chg": -28.72
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 193.95,
-        "chg": -25.97
+        "price": 193.39,
+        "chg": -27.91
       }
     ]
   }
