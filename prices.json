@@ -1,338 +1,344 @@
 {
-  "timestamp": "2026-11-03 21:01",
+  "timestamp": "2026-11-04 01:24",
   "usd_sell": 271400,
   "usd_buy": 271200,
   "gold_18k": 25451313,
-  "btc_usd": 77774.66,
-  "fear_greed": 26,
+  "btc_usd": 76899.43,
+  "fear_greed": 34,
   "btc_dominance": 59.3,
-  "market_cap": 2630000000000.0,
+  "market_cap": 2600000000000.0,
   "market_volume": 60000000000.0,
-  "market_change": -1.21,
+  "market_change": -2.73,
   "top10": [
     {
       "symbol": "btc",
-      "price": 77847,
-      "change_24h": 1.51315,
-      "market_cap": 1565136208839
+      "price": 76894,
+      "change_24h": -0.38402,
+      "market_cap": 1545433621135
     },
     {
       "symbol": "eth",
-      "price": 2290.32,
-      "change_24h": 2.0073,
-      "market_cap": 279845192761
+      "price": 2263.33,
+      "change_24h": 0.15008,
+      "market_cap": 276463594609
     },
     {
       "symbol": "usdt",
-      "price": 0.999113,
-      "change_24h": 0.03919,
-      "market_cap": 178956687762
+      "price": 0.998946,
+      "change_24h": 0.01835,
+      "market_cap": 178185943838
     },
     {
       "symbol": "bnb",
-      "price": 699.3,
-      "change_24h": 0.66342,
-      "market_cap": 91966035920
+      "price": 693.85,
+      "change_24h": -0.78977,
+      "market_cap": 91199334095
     },
     {
       "symbol": "xrp",
-      "price": 1.28,
-      "change_24h": 2.59826,
-      "market_cap": 80979179601
+      "price": 1.25,
+      "change_24h": 0.21728,
+      "market_cap": 79358507462
     },
     {
       "symbol": "usdc",
-      "price": 0.999572,
-      "change_24h": 0.01884,
-      "market_cap": 70700398617
+      "price": 0.999541,
+      "change_24h": 0.0183,
+      "market_cap": 70669479489
     },
     {
       "symbol": "sol",
-      "price": 93.45,
-      "change_24h": 2.2859,
-      "market_cap": 55162314650
+      "price": 91.85,
+      "change_24h": -0.60718,
+      "market_cap": 54184839812
     },
     {
       "symbol": "trx",
-      "price": 0.323467,
-      "change_24h": 1.72525,
-      "market_cap": 30737120687
+      "price": 0.322328,
+      "change_24h": 0.74781,
+      "market_cap": 30626383911
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.038,
-      "change_24h": -1.04262,
-      "market_cap": 27051370667
+      "price": 1.03,
+      "change_24h": -0.21679,
+      "market_cap": 26845661316
     },
     {
       "symbol": "zec",
-      "price": 1223.44,
-      "change_24h": 7.33272,
-      "market_cap": 20824796589
+      "price": 1203.15,
+      "change_24h": 4.036,
+      "market_cap": 20460762154
     }
   ],
   "signal": {
-    "score": 0,
-    "label": "🟡 سیگنال صبر",
+    "score": 35,
+    "label": "🟢 سیگنال خرید",
     "factors": [
       {
-        "text": "وضعیت: 26/100",
+        "text": "وضعیت: 34/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.6% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -4.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +1.5% در ۲۴ ساعت",
+        "text": "BTC -0.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 31",
-        "tone": "neutral"
+        "text": "اشباع فروش (22) — فرصت خرید",
+        "tone": "bearish"
+      },
+      {
+        "text": "چکش (Hammer) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-11-03 21:01"
+    "confidence": 67,
+    "updated": "2026-11-04 01:24"
   },
   "whales": {
     "unconfirmed": {
-      "score": 6,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 112.47,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 112.47,
-          "tier": "متوسط",
-          "fee": 3.79e-06,
-          "inputs": 1,
-          "outputs": 1,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "با توجه به مذاکرات ایران و دورنمای میان دوره ای آمریکا، طلا نزدیک به 3930 دلار باقی می ماند",
+      "date": "2026-11-04 01:02",
+      "source": "Investing.com"
+    },
+    {
+      "title": "شرکت‌های طلا در انتظار کاهش قیمت‌های نفت، نتایج میان‌مدت آمریکا منتظر ماندند",
+      "date": "2026-11-04 01:00",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۳ نوامبر",
+      "title": "ارزش سهام با دلار کاهش می یابد زیرا شمارش به نفع دموکرات هاست: بازارها بسته می شوند",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 4 آبان",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "رشد طلا به عنوان معامله گران چشم انداز مذاکرات ایران، میان دوره های ایالات متحده را دنبال می کند",
+      "date": "Wed, 04 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "دلار بیشترین افزایش را در یک ماه به دلیل بازدهی بالاتر ایالات متحده و داده های قوی داشته است",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام تراشه با کاهش اوراق قرضه در روز انتخابات ایالات متحده افزایش می یابد: بازارها بسته می شوند",
       "date": "Mon, 02 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نفت کانادا با بیشترین تخفیف نسبت به قیمت‌های آمریکا از سال ۲۰۱۸ تاکنون",
-      "date": "Tue, 03 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش ارزش تراشه‌ها، سود سهام را در روز انتخابات ایالات متحده افزایش داد: خلاصه بازارها",
-      "date": "Mon, 02 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کاهش قیمت مس همزمان با ارزیابی تجارت هوش مصنوعی توسط معامله‌گران و امیدهای دیپلماسی ایران و آمریکا",
-      "date": "Tue, 03 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کاهش قیمت طلا در پی نگرانی معامله‌گران از چشم‌انداز دیپلماسی ایران و آمریکا",
-      "date": "Tue, 03 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بانک مرکزی کانادا می‌گوید سیاست‌های مالی هنوز تورم را تشدید نکرده است",
-      "date": "Tue, 03 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای ۳ نوامبر",
+      "title": "با توجه به مذاکرات ایران و دورنمای میان دوره ای آمریکا، طلا نزدیک به 3930 دلار باقی می ماند",
+      "date": "2026-11-04 01:02",
+      "source": "Investing.com"
+    },
+    {
+      "title": "شرکت‌های طلا در انتظار کاهش قیمت‌های نفت، نتایج میان‌مدت آمریکا منتظر ماندند",
+      "date": "2026-11-04 01:00",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ارزش سهام با دلار کاهش می یابد زیرا شمارش به نفع دموکرات هاست: بازارها بسته می شوند",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 4 آبان",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "رشد طلا به عنوان معامله گران چشم انداز مذاکرات ایران، میان دوره های ایالات متحده را دنبال می کند",
+      "date": "Wed, 04 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "دلار بیشترین افزایش را در یک ماه به دلیل بازدهی بالاتر ایالات متحده و داده های قوی داشته است",
+      "date": "Tue, 03 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "سهام تراشه با کاهش اوراق قرضه در روز انتخابات ایالات متحده افزایش می یابد: بازارها بسته می شوند",
       "date": "Mon, 02 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نفت کانادا با بیشترین تخفیف نسبت به قیمت‌های آمریکا از سال ۲۰۱۸ تاکنون",
-      "date": "Tue, 03 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "افزایش ارزش تراشه‌ها، سود سهام را در روز انتخابات ایالات متحده افزایش داد: خلاصه بازارها",
-      "date": "Mon, 02 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کاهش قیمت مس همزمان با ارزیابی تجارت هوش مصنوعی توسط معامله‌گران و امیدهای دیپلماسی ایران و آمریکا",
-      "date": "Tue, 03 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "کاهش قیمت طلا در پی نگرانی معامله‌گران از چشم‌انداز دیپلماسی ایران و آمریکا",
-      "date": "Tue, 03 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "بانک مرکزی کانادا می‌گوید سیاست‌های مالی هنوز تورم را تشدید نکرده است",
-      "date": "Tue, 03 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-03 21:01",
+    "updated": "2026-11-04 01:24",
     "gainers_24h": [
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.0042913,
-        "chg": 9.35
+        "price": 0.00424663,
+        "chg": 6.09
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1223.44,
-        "chg": 7.33
+        "price": 1203.15,
+        "chg": 4.04
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 624.33,
+        "chg": 3.11
       },
       {
         "symbol": "cc",
         "name": "Canton",
-        "price": 0.096231,
-        "chg": 3.87
+        "price": 0.096123,
+        "chg": 2.3
       },
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 7.23,
-        "chg": 3.29
-      },
-      {
-        "symbol": "pepe",
-        "name": "Pepe",
-        "price": 4.84e-06,
-        "chg": 3.13
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.859824,
+        "chg": 1.63
       }
     ],
     "losers_24h": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00620683,
-        "chg": -3.29
+        "price": 0.00649044,
+        "chg": -2.93
       },
       {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.27,
-        "chg": -1.26
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 189.76,
+        "chg": -2.55
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.038,
-        "chg": -1.04
-      },
-      {
-        "symbol": "xlm",
-        "name": "Stellar",
-        "price": 0.162823,
-        "chg": -1.0
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 106.84,
+        "chg": -2.52
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 275.16,
-        "chg": -0.98
+        "price": 270.85,
+        "chg": -2.44
+      },
+      {
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 10.86,
+        "chg": -2.36
       }
     ],
     "gainers_7d": [
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 4.84e-06,
-        "chg": 7.27
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 85.64,
-        "chg": 5.29
+        "price": 4.82e-06,
+        "chg": 6.02
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 630.63,
-        "chg": 4.96
+        "price": 624.33,
+        "chg": 3.38
+      },
+      {
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 83.09,
+        "chg": 3.35
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.27,
-        "chg": 2.59
+        "price": 9.3,
+        "chg": 2.8
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.23,
-        "chg": 2.12
+        "price": 7.1,
+        "chg": 1.27
       }
     ],
     "losers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.861228,
-        "chg": -19.69
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.172851,
-        "chg": -18.07
+        "price": 0.859824,
+        "chg": -19.49
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.84,
-        "chg": -17.22
+        "price": 3.78,
+        "chg": -18.23
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00620683,
-        "chg": -13.76
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.170431,
+        "chg": -17.85
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 226.32,
-        "chg": -10.67
+        "price": 222.39,
+        "chg": -12.41
+      },
+      {
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.068727,
+        "chg": -9.29
       }
     ],
     "gainers_30d": [
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 630.63,
-        "chg": 15.17
+        "price": 624.33,
+        "chg": 14.82
       },
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 4.84e-06,
-        "chg": 12.75
+        "price": 4.82e-06,
+        "chg": 10.7
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.27,
-        "chg": 3.13
+        "price": 9.3,
+        "chg": 3.64
       },
       {
         "symbol": "usyc",
@@ -341,42 +347,42 @@
         "chg": 0.28
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.038,
-        "chg": -2.87
+        "symbol": "eursafo",
+        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
+        "price": 1.14,
+        "chg": -0.11
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00620683,
-        "chg": -45.92
-      },
-      {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.06954,
-        "chg": -33.0
+        "price": 0.00649044,
+        "chg": -41.62
       },
       {
         "symbol": "pump",
         "name": "Pump.fun",
-        "price": 0.0042913,
-        "chg": -32.93
+        "price": 0.00424663,
+        "chg": -34.02
+      },
+      {
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.068727,
+        "chg": -33.71
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 127.35,
-        "chg": -29.28
+        "price": 125.49,
+        "chg": -29.73
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.172851,
-        "chg": -27.86
+        "price": 0.170431,
+        "chg": -29.06
       }
     ]
   }
