@@ -1,90 +1,29 @@
 {
-  "timestamp": "2026-11-05 06:51",
-  "usd_sell": 267700,
-  "usd_buy": 267500,
-  "gold_18k": 26120781,
-  "btc_usd": 80586.34,
+  "timestamp": "2026-11-05 15:29",
+  "usd_sell": 267800,
+  "usd_buy": 267600,
+  "gold_18k": 26097696,
+  "btc_usd": 76133.84,
   "fear_greed": 50,
-  "btc_dominance": 59.6,
-  "market_cap": 2710000000000.0,
-  "market_volume": 90000000000.0,
-  "market_change": 0.56,
-  "top10": [
-    {
-      "symbol": "btc",
-      "price": 80617,
-      "change_24h": 3.48526,
-      "market_cap": 1620831338820
-    },
-    {
-      "symbol": "eth",
-      "price": 2430.25,
-      "change_24h": 5.89148,
-      "market_cap": 296952350160
-    },
-    {
-      "symbol": "usdt",
-      "price": 0.999382,
-      "change_24h": 0.05259,
-      "market_cap": 178263421995
-    },
-    {
-      "symbol": "bnb",
-      "price": 714.27,
-      "change_24h": 2.06584,
-      "market_cap": 93933326431
-    },
-    {
-      "symbol": "xrp",
-      "price": 1.31,
-      "change_24h": 2.82348,
-      "market_cap": 83018657816
-    },
-    {
-      "symbol": "usdc",
-      "price": 0.999781,
-      "change_24h": 0.0327,
-      "market_cap": 70818721106
-    },
-    {
-      "symbol": "sol",
-      "price": 96.25,
-      "change_24h": 3.59249,
-      "market_cap": 56804360668
-    },
-    {
-      "symbol": "trx",
-      "price": 0.31864,
-      "change_24h": -1.005,
-      "market_cap": 30284082165
-    },
-    {
-      "symbol": "figr_heloc",
-      "price": 1.046,
-      "change_24h": 1.52704,
-      "market_cap": 27319419744
-    },
-    {
-      "symbol": "zec",
-      "price": 1332.54,
-      "change_24h": 4.57378,
-      "market_cap": 22679495549
-    }
-  ],
+  "btc_dominance": 0,
+  "market_cap": 0,
+  "market_volume": 0,
+  "market_change": 0,
+  "top10": [],
   "signal": {
-    "score": 35,
-    "label": "🟢 سیگنال خرید",
+    "score": -35,
+    "label": "🔴 سیگنال فروش",
     "factors": [
       {
         "text": "وضعیت: 50/100",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +0.9% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -6.5% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +3.8% در ۲۴ ساعت",
+        "text": "BTC -3.6% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +31,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 47",
+        "text": "معتدل: 35",
         "tone": "neutral"
       },
       {
-        "text": "انگولفینگ صعودی (Bullish Engulfing) — نشانه صعود",
-        "tone": "bullish"
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
     "confidence": 67,
-    "updated": "2026-11-05 06:52"
+    "updated": "2026-11-05 15:30"
   },
   "whales": {
     "unconfirmed": {
@@ -117,283 +56,87 @@
   },
   "news_investing": [
     {
-      "title": "سود اصلی هلوفرش در سه‌ماهه سوم، با کاهش سفارشات بازاریابی، از پیش‌بینی‌ها فراتر رفت",
-      "date": "2026-11-05 06:33",
+      "title": "سهام Ionq به 25.86 دلار به پایین ترین حد 52 هفته اخیر رسید",
+      "date": "2026-11-05 15:15",
       "source": "Investing.com"
     },
     {
-      "title": "با کاهش ارزش دلار در پی انتخابات آمریکا، ارزهای آسیایی افزایش یافتند، کیوی پیشتاز افزایش ارزش بود؛ یوان ثابت ماند",
-      "date": "2026-11-05 06:19",
+      "title": "سهام AMSC به 23.93 دلار به پایین ترین سطح 52 هفته اخیر رسید",
+      "date": "2026-11-05 15:11",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "یاردنی کاهش تورم را پیش‌بینی می‌کند و می‌گوید بازده اوراق قرضه ایالات متحده با نرخ 5 درصد جذاب است",
-      "date": "Thu, 05 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "چرخش پس از میان‌دوره به تراشه‌ها ضربه می‌زند و چین را تقویت می‌کند: بسته بازارها",
+      "title": "نزدک 100 با افت 4 درصدی تراشه‌ساز Selloff",
       "date": "Wed, 04 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چین در حال بررسی فروش اوراق قرضه دولتی فراساحلی دلار و یوان در این ماه است",
+      "title": "میران می گوید که افزایش نرخ بهره فدرال رزرو در سپتامبر یک اشتباه بود",
       "date": "Thu, 05 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "اندونزی از زمان تهدید MSCI با اولین اوراق قرضه دلاری روبرو است",
+      "title": "Hammack فدرال رزرو می گوید برای کاهش تورم به نرخ های محدود کننده نیاز است",
       "date": "Thu, 05 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "افزایش سهام و اوراق قرضه هند در پی کاهش خطرات تورمی به دلیل سقوط قیمت نفت",
-      "date": "Thu, 05 Nov 2026",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 5 آبان",
+      "date": "Wed, 04 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام چیپ آسیا کاهش یافت، نفت پس از انتخابات میان‌دوره‌ای آمریکا سقوط کرد",
+      "title": "Cabana از BofA می گوید که پایان دادن به چرخه پیاده روی فدرال رزرو زود است",
       "date": "Thu, 05 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سود اصلی هلوفرش در سه‌ماهه سوم، با کاهش سفارشات بازاریابی، از پیش‌بینی‌ها فراتر رفت",
-      "date": "2026-11-05 06:33",
+      "title": "سهام Ionq به 25.86 دلار به پایین ترین حد 52 هفته اخیر رسید",
+      "date": "2026-11-05 15:15",
       "source": "Investing.com"
     },
     {
-      "title": "با کاهش ارزش دلار در پی انتخابات آمریکا، ارزهای آسیایی افزایش یافتند، کیوی پیشتاز افزایش ارزش بود؛ یوان ثابت ماند",
-      "date": "2026-11-05 06:19",
+      "title": "سهام AMSC به 23.93 دلار به پایین ترین سطح 52 هفته اخیر رسید",
+      "date": "2026-11-05 15:11",
       "source": "Investing.com"
     },
     {
-      "title": "یاردنی کاهش تورم را پیش‌بینی می‌کند و می‌گوید بازده اوراق قرضه ایالات متحده با نرخ 5 درصد جذاب است",
-      "date": "Thu, 05 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "چرخش پس از میان‌دوره به تراشه‌ها ضربه می‌زند و چین را تقویت می‌کند: بسته بازارها",
+      "title": "نزدک 100 با افت 4 درصدی تراشه‌ساز Selloff",
       "date": "Wed, 04 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چین در حال بررسی فروش اوراق قرضه دولتی فراساحلی دلار و یوان در این ماه است",
+      "title": "میران می گوید که افزایش نرخ بهره فدرال رزرو در سپتامبر یک اشتباه بود",
       "date": "Thu, 05 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "اندونزی از زمان تهدید MSCI با اولین اوراق قرضه دلاری روبرو است",
+      "title": "Hammack فدرال رزرو می گوید برای کاهش تورم به نرخ های محدود کننده نیاز است",
       "date": "Thu, 05 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "افزایش سهام و اوراق قرضه هند در پی کاهش خطرات تورمی به دلیل سقوط قیمت نفت",
-      "date": "Thu, 05 Nov 2026",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 5 آبان",
+      "date": "Wed, 04 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام چیپ آسیا کاهش یافت، نفت پس از انتخابات میان‌دوره‌ای آمریکا سقوط کرد",
+      "title": "Cabana از BofA می گوید که پایان دادن به چرخه پیاده روی فدرال رزرو زود است",
       "date": "Thu, 05 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-05 06:51",
-    "gainers_24h": [
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 206.91,
-        "chg": 6.16
-      },
-      {
-        "symbol": "eth",
-        "name": "Ethereum",
-        "price": 2430.25,
-        "chg": 5.89
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.103548,
-        "chg": 4.99
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 11.57,
-        "chg": 4.69
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1332.54,
-        "chg": 4.57
-      }
-    ],
-    "losers_24h": [
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00584696,
-        "chg": -6.72
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 83.47,
-        "chg": -1.44
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.837304,
-        "chg": -1.41
-      },
-      {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.31864,
-        "chg": -1.0
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.181644,
-        "chg": -0.85
-      }
-    ],
-    "gainers_7d": [
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 636.15,
-        "chg": 8.07
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.103548,
-        "chg": 7.92
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 7.67,
-        "chg": 7.67
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 206.91,
-        "chg": 6.1
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1332.54,
-        "chg": 5.47
-      }
-    ],
-    "losers_7d": [
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.837304,
-        "chg": -20.79
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 4.05,
-        "chg": -9.89
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.181644,
-        "chg": -9.67
-      },
-      {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 235.27,
-        "chg": -6.24
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00584696,
-        "chg": -6.09
-      }
-    ],
-    "gainers_30d": [
-      {
-        "symbol": "pepe",
-        "name": "Pepe",
-        "price": 4.99e-06,
-        "chg": 14.84
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 636.15,
-        "chg": 13.1
-      },
-      {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.35,
-        "chg": 5.09
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.046,
-        "chg": 1.23
-      },
-      {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.28
-      }
-    ],
-    "losers_30d": [
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00584696,
-        "chg": -48.15
-      },
-      {
-        "symbol": "pump",
-        "name": "Pump.fun",
-        "price": 0.00433729,
-        "chg": -31.99
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 132.86,
-        "chg": -28.2
-      },
-      {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.072813,
-        "chg": -27.89
-      },
-      {
-        "symbol": "ada",
-        "name": "Cardano",
-        "price": 0.19776,
-        "chg": -27.11
-      }
-    ]
+    "updated": "2026-11-05 15:29",
+    "gainers_24h": [],
+    "losers_24h": [],
+    "gainers_7d": [],
+    "losers_7d": [],
+    "gainers_30d": [],
+    "losers_30d": []
   }
 }
