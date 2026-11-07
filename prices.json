@@ -1,393 +1,398 @@
 {
-  "timestamp": "2026-11-07 16:31",
-  "usd_sell": 266200,
-  "usd_buy": 266000,
-  "gold_18k": 25589824,
-  "btc_usd": 75690.46,
+  "timestamp": "2026-11-07 20:54",
+  "usd_sell": 266000,
+  "usd_buy": 265800,
+  "gold_18k": 25490558,
+  "btc_usd": 75523.12,
   "fear_greed": 25,
   "btc_dominance": 59.3,
   "market_cap": 2560000000000.0,
-  "market_volume": 40000000000.0,
-  "market_change": -2.85,
+  "market_volume": 30000000000.0,
+  "market_change": -2.94,
   "top10": [
     {
       "symbol": "btc",
-      "price": 75725,
-      "change_24h": 0.05039,
-      "market_cap": 1522762973210
+      "price": 75552,
+      "change_24h": -0.30354,
+      "market_cap": 1519276158739
     },
     {
       "symbol": "eth",
-      "price": 2235.71,
-      "change_24h": 0.3908,
-      "market_cap": 273199133460
+      "price": 2223.95,
+      "change_24h": -0.20426,
+      "market_cap": 271762285873
     },
     {
       "symbol": "usdt",
-      "price": 0.999218,
-      "change_24h": 0.02232,
-      "market_cap": 176889629486
+      "price": 0.999154,
+      "change_24h": 0.02106,
+      "market_cap": 176878229179
     },
     {
       "symbol": "bnb",
-      "price": 693.61,
-      "change_24h": -0.05251,
-      "market_cap": 91217729571
+      "price": 694.26,
+      "change_24h": 0.29219,
+      "market_cap": 91302950596
     },
     {
       "symbol": "xrp",
-      "price": 1.16,
-      "change_24h": -2.96295,
-      "market_cap": 73645102701
+      "price": 1.15,
+      "change_24h": -1.78791,
+      "market_cap": 73171997713
     },
     {
       "symbol": "usdc",
-      "price": 0.999726,
-      "change_24h": 0.01711,
-      "market_cap": 70518608633
+      "price": 0.999655,
+      "change_24h": 0.01618,
+      "market_cap": 70447369817
     },
     {
       "symbol": "sol",
-      "price": 89.54,
-      "change_24h": -0.87537,
-      "market_cap": 52924190919
+      "price": 88.89,
+      "change_24h": -1.02736,
+      "market_cap": 52537385870
     },
     {
       "symbol": "trx",
-      "price": 0.319637,
-      "change_24h": 0.30116,
-      "market_cap": 30374734772
+      "price": 0.319856,
+      "change_24h": 0.43982,
+      "market_cap": 30395616944
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.041,
-      "change_24h": 0.62112,
-      "market_cap": 27440571541
+      "price": 1.032,
+      "change_24h": -0.18075,
+      "market_cap": 27218225044
     },
     {
       "symbol": "zec",
-      "price": 1261.92,
-      "change_24h": -6.6474,
-      "market_cap": 21488737659
+      "price": 1243.45,
+      "change_24h": -6.5107,
+      "market_cap": 21174062138
     }
   ],
   "signal": {
-    "score": 30,
-    "label": "🟢 سیگنال خرید",
+    "score": 10,
+    "label": "🟡 سیگنال صبر",
     "factors": [
       {
         "text": "ترس شدید (25/100)",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -2.4% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -2.5% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.1% در ۲۴ ساعت",
+        "text": "BTC -0.3% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 35",
+        "text": "معتدل: 34",
         "tone": "neutral"
+      },
+      {
+        "text": "سه کلاغ سیاه (Three Black Crows) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 65,
-    "updated": "2026-11-07 16:31"
+    "confidence": 55,
+    "updated": "2026-11-07 20:55"
   },
   "whales": {
     "unconfirmed": {
-      "score": 8,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 332.66,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 332.66,
-          "tier": "متوسط",
-          "fee": 3.38e-06,
-          "inputs": 1,
-          "outputs": 2,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
   "news_investing": [
     {
-      "title": "لاگارد، رئیس بانک مرکزی اروپا، می‌گوید تورم بالا خواهد ماند و دلیل کمی برای تغییر روند نرخ بهره می‌بیند",
-      "date": "2026-11-07 16:13",
+      "title": "ترامپ همزمان با وقوع انفجارهای تازه در جزیره قشم به پیشرفت در مذاکرات ایران اشاره می کند",
+      "date": "2026-11-07 20:33",
+      "source": "Investing.com"
+    },
+    {
+      "title": "چرا طلا درخشش خود را از دست می دهد: گلدمن فروش اخیر را شکست می دهد",
+      "date": "2026-11-07 20:02",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "چگونه جنگ ایران، آلاسکایی‌ها را هم ثروتمندتر و هم فقیرتر می‌کند؟",
+      "title": "فروش اوراق قرضه 25 میلیارد دلاری متا نمایانگر تغییر چشم‌انداز بدهی‌های فناوری است",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "افزایش مشاغل در آمریکا، احتمال افزایش نرخ بهره فدرال رزرو در ماه دسامبر را افزایش می‌دهد",
+      "title": "چگونه جنگ ایران مردم آلاسکا را ثروتمندتر و فقیرتر می کند؟",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "رونق ارزهای دیجیتال در واشنگتن که توسط ترامپ تقویت شده است، به پایان خود می‌رسد",
+      "title": "افزایش مشاغل ایالات متحده احتمال افزایش فدرال رزرو در دسامبر را افزایش می دهد",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چرا بازارهای سهام هند در دیوالی جلسه برگزار می‌کنند؟",
+      "title": "رونق واشنگتن کریپتو که توسط ترامپ تقویت شده بود به پایان خود رسید",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چین با کاهش قیمت‌ها، روند خرید طلا را به دو سال افزایش داد",
+      "title": "چرا بازارهای سهام هند در دیوالی جلسه ای برگزار می کنند: توضیح",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "پکن متعهد شد که به تحریم‌های آمریکا علیه شرکت‌های چینی پاسخ دهد",
+      "title": "چین با کاهش قیمت ها، روند خرید طلا را به دو سال افزایش داد",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "لاگارد، رئیس بانک مرکزی اروپا، می‌گوید تورم بالا خواهد ماند و دلیل کمی برای تغییر روند نرخ بهره می‌بیند",
-      "date": "2026-11-07 16:13",
+      "title": "ترامپ همزمان با وقوع انفجارهای تازه در جزیره قشم به پیشرفت در مذاکرات ایران اشاره می کند",
+      "date": "2026-11-07 20:33",
       "source": "Investing.com"
     },
     {
-      "title": "چگونه جنگ ایران، آلاسکایی‌ها را هم ثروتمندتر و هم فقیرتر می‌کند؟",
+      "title": "چرا طلا درخشش خود را از دست می دهد: گلدمن فروش اخیر را شکست می دهد",
+      "date": "2026-11-07 20:02",
+      "source": "Investing.com"
+    },
+    {
+      "title": "فروش اوراق قرضه 25 میلیارد دلاری متا نمایانگر تغییر چشم‌انداز بدهی‌های فناوری است",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "افزایش مشاغل در آمریکا، احتمال افزایش نرخ بهره فدرال رزرو در ماه دسامبر را افزایش می‌دهد",
+      "title": "چگونه جنگ ایران مردم آلاسکا را ثروتمندتر و فقیرتر می کند؟",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "رونق ارزهای دیجیتال در واشنگتن که توسط ترامپ تقویت شده است، به پایان خود می‌رسد",
+      "title": "افزایش مشاغل ایالات متحده احتمال افزایش فدرال رزرو در دسامبر را افزایش می دهد",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چرا بازارهای سهام هند در دیوالی جلسه برگزار می‌کنند؟",
+      "title": "رونق واشنگتن کریپتو که توسط ترامپ تقویت شده بود به پایان خود رسید",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چین با کاهش قیمت‌ها، روند خرید طلا را به دو سال افزایش داد",
+      "title": "چرا بازارهای سهام هند در دیوالی جلسه ای برگزار می کنند: توضیح",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "پکن متعهد شد که به تحریم‌های آمریکا علیه شرکت‌های چینی پاسخ دهد",
+      "title": "چین با کاهش قیمت ها، روند خرید طلا را به دو سال افزایش داد",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-07 16:31",
+    "updated": "2026-11-07 20:54",
     "gainers_24h": [
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 197.69,
-        "chg": 3.9
+        "price": 196.93,
+        "chg": 3.02
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 7.04,
-        "chg": 1.63
-      },
-      {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 132.75,
-        "chg": 1.11
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.041,
-        "chg": 0.62
+        "price": 7.05,
+        "chg": 2.78
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.825197,
-        "chg": 0.47
-      }
-    ],
-    "losers_24h": [
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1261.92,
-        "chg": -6.65
+        "price": 0.838086,
+        "chg": 1.61
       },
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.158176,
-        "chg": -5.13
-      },
-      {
-        "symbol": "pepe",
-        "name": "Pepe",
-        "price": 4.87e-06,
-        "chg": -4.11
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 257.32,
-        "chg": -3.7
-      },
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00559151,
-        "chg": -3.42
-      }
-    ],
-    "gainers_7d": [
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4056.47,
-        "chg": 4.64
-      },
-      {
-        "symbol": "paxg",
-        "name": "PAX Gold",
-        "price": 4060.57,
-        "chg": 4.26
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 609.03,
-        "chg": 2.11
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.33,
+        "chg": 0.68
       },
       {
         "symbol": "trx",
         "name": "TRON",
-        "price": 0.319637,
-        "chg": 1.28
+        "price": 0.319856,
+        "chg": 0.44
+      }
+    ],
+    "losers_24h": [
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 246.02,
+        "chg": -6.69
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1243.45,
+        "chg": -6.51
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.156358,
+        "chg": -4.65
+      },
+      {
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 4.83e-06,
+        "chg": -4.08
+      },
+      {
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 100.99,
+        "chg": -4.08
+      }
+    ],
+    "gainers_7d": [
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.21,
+        "chg": 10.27
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4060.5,
+        "chg": 4.76
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.319856,
+        "chg": 3.69
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 609.61,
+        "chg": 2.78
       },
       {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.994566,
-        "chg": 0.45
+        "price": 0.994544,
+        "chg": 0.36
       }
     ],
     "losers_7d": [
       {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.158176,
-        "chg": -17.52
-      },
-      {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.66,
-        "chg": -16.95
+        "price": 3.63,
+        "chg": -19.01
       },
       {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 257.32,
-        "chg": -10.92
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.156358,
+        "chg": -17.69
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 77.46,
-        "chg": -10.78
+        "price": 76.83,
+        "chg": -12.01
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00560032,
+        "chg": -11.54
       },
       {
         "symbol": "xlm",
         "name": "Stellar",
-        "price": 0.152017,
-        "chg": -10.71
+        "price": 0.150113,
+        "chg": -10.94
       }
     ],
     "gainers_30d": [
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 4.87e-06,
-        "chg": 21.29
+        "price": 4.83e-06,
+        "chg": 29.43
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 609.03,
-        "chg": 11.83
+        "price": 609.61,
+        "chg": 16.78
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1243.45,
+        "chg": 10.79
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
         "price": 9.33,
-        "chg": 4.77
+        "chg": 4.85
       },
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1261.92,
-        "chg": 4.25
-      },
-      {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.3
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.032,
+        "chg": 0.39
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00559151,
-        "chg": -47.07
+        "price": 0.00560032,
+        "chg": -44.78
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.067387,
-        "chg": -28.25
+        "price": 0.066809,
+        "chg": -26.44
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.158176,
-        "chg": -27.09
+        "price": 0.156358,
+        "chg": -22.47
+      },
+      {
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.068,
+        "chg": -21.29
       },
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.181847,
-        "chg": -26.57
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 3.66,
-        "chg": -26.49
+        "price": 0.179986,
+        "chg": -20.87
       }
     ]
   }
