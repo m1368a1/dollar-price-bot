@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-11-07 02:50",
-  "usd_sell": 267500,
-  "usd_buy": 267300,
-  "gold_18k": 25889930,
-  "btc_usd": 75993.87,
+  "timestamp": "2026-11-07 10:16",
+  "usd_sell": 268000,
+  "usd_buy": 267800,
+  "gold_18k": 25813749,
+  "btc_usd": 75944.05,
   "fear_greed": 25,
   "btc_dominance": 59.3,
   "market_cap": 2570000000000.0,
-  "market_volume": 70000000000.0,
-  "market_change": -2.7,
+  "market_volume": 60000000000.0,
+  "market_change": -2.75,
   "top10": [
     {
       "symbol": "btc",
-      "price": 76018,
-      "change_24h": -0.23104,
-      "market_cap": 1528559417290
+      "price": 75977,
+      "change_24h": -0.17815,
+      "market_cap": 1527834909892
     },
     {
       "symbol": "eth",
-      "price": 2246.54,
-      "change_24h": 0.14722,
-      "market_cap": 274522566983
+      "price": 2245.43,
+      "change_24h": 0.38309,
+      "market_cap": 274386481523
     },
     {
       "symbol": "usdt",
-      "price": 0.99911,
-      "change_24h": 0.01549,
-      "market_cap": 176870525548
+      "price": 0.999218,
+      "change_24h": 0.01803,
+      "market_cap": 176889666126
     },
     {
       "symbol": "bnb",
-      "price": 696.33,
-      "change_24h": 0.16238,
-      "market_cap": 91575399357
+      "price": 694.08,
+      "change_24h": 0.16373,
+      "market_cap": 91278829039
     },
     {
       "symbol": "xrp",
       "price": 1.17,
-      "change_24h": -4.11264,
-      "market_cap": 74184029103
+      "change_24h": -2.40891,
+      "market_cap": 74255813754
     },
     {
       "symbol": "usdc",
-      "price": 0.999701,
-      "change_24h": 0.02149,
-      "market_cap": 70377232420
+      "price": 0.999723,
+      "change_24h": 0.02251,
+      "market_cap": 70422482166
     },
     {
       "symbol": "sol",
-      "price": 90.41,
-      "change_24h": 0.04489,
-      "market_cap": 53429779948
+      "price": 90.0,
+      "change_24h": -0.06993,
+      "market_cap": 53189018997
     },
     {
       "symbol": "trx",
-      "price": 0.31754,
-      "change_24h": -0.26807,
-      "market_cap": 30175083669
+      "price": 0.31925,
+      "change_24h": 0.27715,
+      "market_cap": 30337662681
     },
     {
       "symbol": "figr_heloc",
       "price": 1.022,
-      "change_24h": -1.25683,
-      "market_cap": 26888038469
+      "change_24h": -1.25501,
+      "market_cap": 26885768846
     },
     {
       "symbol": "zec",
-      "price": 1351.8,
-      "change_24h": 2.68787,
-      "market_cap": 23018000488
+      "price": 1314.45,
+      "change_24h": 2.69494,
+      "market_cap": 22382027518
     }
   ],
   "signal": {
-    "score": 50,
+    "score": 30,
     "label": "🟢 سیگنال خرید",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -1.7% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -1.8% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.0% در ۲۴ ساعت",
+        "text": "BTC -0.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -94,14 +94,10 @@
       {
         "text": "معتدل: 36",
         "tone": "neutral"
-      },
-      {
-        "text": "سه سرباز سفید (Three White Soldiers) — نشانه صعود",
-        "tone": "bullish"
       }
     ],
-    "confidence": 75,
-    "updated": "2026-11-07 02:50"
+    "confidence": 65,
+    "updated": "2026-11-07 10:16"
   },
   "whales": {
     "unconfirmed": {
@@ -115,263 +111,274 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "بیت‌کوین به 76000 دلار بازگشت، اما خروج 1.3 میلیارد دلار ETF، بازیابی را آزمایش می‌کند",
+      "date": "2026-11-07 08:12",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "چین با کاهش قیمت ها، روند خرید طلا را به دو سال افزایش داد",
+      "title": "چرا بازارهای سهام هند در دیوالی جلسه برگزار می‌کنند؟",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "پکن متعهد شد که با تحریم های آمریکا علیه شرکت های چینی مقابله کند",
+      "title": "چین با کاهش قیمت‌ها، روند خرید طلا را به دو سال افزایش داد",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "دلار کانادا به بدترین هفته از سپتامبر در مشاغل ضعیف رسیده است",
+      "title": "پکن متعهد شد که به تحریم‌های آمریکا علیه شرکت‌های چینی پاسخ دهد",
+      "date": "Sat, 07 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "دلار کانادا به دلیل ضعف مشاغل، بدترین هفته خود را از سپتامبر تاکنون تجربه کرد",
       "date": "Fri, 06 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "صندوق‌های تامینی از شرط‌بندی‌های نفتی صعودی پیش از کاهش روز انتخابات فرار کردند",
+      "title": "صندوق‌های پوشش ریسک پیش از افت روز انتخابات، از شرط‌بندی‌های صعودی نفتی فرار کردند",
       "date": "Fri, 06 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا در آمارهای قوی تر از حد انتظار اشتغال ایالات متحده کاهش می یابد",
+      "title": "طلا به دلیل داده‌های اشتغال قوی‌تر از حد انتظار ایالات متحده، به کاهش خود ادامه داد",
       "date": "Fri, 06 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام تراشه‌ها پس از شکست بالا می‌روند، اما هوش مصنوعی تردید دارد: بازارها بسته می‌شوند",
-      "date": "Thu, 05 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "چین با کاهش قیمت ها، روند خرید طلا را به دو سال افزایش داد",
+      "title": "بیت‌کوین به 76000 دلار بازگشت، اما خروج 1.3 میلیارد دلار ETF، بازیابی را آزمایش می‌کند",
+      "date": "2026-11-07 08:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "چرا بازارهای سهام هند در دیوالی جلسه برگزار می‌کنند؟",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "پکن متعهد شد که با تحریم های آمریکا علیه شرکت های چینی مقابله کند",
+      "title": "چین با کاهش قیمت‌ها، روند خرید طلا را به دو سال افزایش داد",
       "date": "Sat, 07 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "دلار کانادا به بدترین هفته از سپتامبر در مشاغل ضعیف رسیده است",
+      "title": "پکن متعهد شد که به تحریم‌های آمریکا علیه شرکت‌های چینی پاسخ دهد",
+      "date": "Sat, 07 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "دلار کانادا به دلیل ضعف مشاغل، بدترین هفته خود را از سپتامبر تاکنون تجربه کرد",
       "date": "Fri, 06 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "صندوق‌های تامینی از شرط‌بندی‌های نفتی صعودی پیش از کاهش روز انتخابات فرار کردند",
+      "title": "صندوق‌های پوشش ریسک پیش از افت روز انتخابات، از شرط‌بندی‌های صعودی نفتی فرار کردند",
       "date": "Fri, 06 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا در آمارهای قوی تر از حد انتظار اشتغال ایالات متحده کاهش می یابد",
+      "title": "طلا به دلیل داده‌های اشتغال قوی‌تر از حد انتظار ایالات متحده، به کاهش خود ادامه داد",
       "date": "Fri, 06 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "سهام تراشه‌ها پس از شکست بالا می‌روند، اما هوش مصنوعی تردید دارد: بازارها بسته می‌شوند",
-      "date": "Thu, 05 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-07 02:50",
+    "updated": "2026-11-07 10:16",
     "gainers_24h": [
       {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.26,
-        "chg": 13.17
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 197.53,
+        "chg": 4.28
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1351.8,
+        "price": 1314.45,
         "chg": 2.69
       },
       {
-        "symbol": "pepe",
-        "name": "Pepe",
-        "price": 5e-06,
-        "chg": 1.98
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 131.71,
+        "chg": 1.25
+      },
+      {
+        "symbol": "okb",
+        "name": "OKB",
+        "price": 105.27,
+        "chg": 0.57
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 79.44,
-        "chg": 1.7
-      },
-      {
-        "symbol": "tao",
-        "name": "Bittensor",
-        "price": 224.47,
-        "chg": 1.57
+        "price": 78.32,
+        "chg": 0.39
       }
     ],
     "losers_24h": [
       {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.09401,
+        "chg": -4.59
+      },
+      {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00580122,
-        "chg": -5.68
+        "price": 0.00568753,
+        "chg": -4.23
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 262.84,
-        "chg": -4.87
+        "price": 257.63,
+        "chg": -3.86
       },
       {
-        "symbol": "xrp",
-        "name": "XRP",
-        "price": 1.17,
-        "chg": -4.11
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.803183,
+        "chg": -3.74
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.094617,
-        "chg": -2.81
-      },
-      {
-        "symbol": "shib",
-        "name": "Shiba Inu",
-        "price": 4.53e-06,
-        "chg": -1.96
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 4.93e-06,
+        "chg": -3.2
       }
     ],
     "gainers_7d": [
       {
-        "symbol": "btw",
-        "name": "Bitway",
-        "price": 1.26,
-        "chg": 15.03
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 4057.9,
+        "chg": 4.73
+      },
+      {
+        "symbol": "paxg",
+        "name": "PAX Gold",
+        "price": 4061.11,
+        "chg": 4.28
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1351.8,
-        "chg": 5.49
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 4055.98,
-        "chg": 4.55
+        "price": 1314.45,
+        "chg": 4.21
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 609.52,
-        "chg": 2.29
+        "price": 612.96,
+        "chg": 3.31
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.022,
-        "chg": 0.99
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 197.53,
+        "chg": 1.88
       }
     ],
     "losers_7d": [
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.164139,
-        "chg": -14.07
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 3.75,
-        "chg": -13.72
+        "price": 0.161909,
+        "chg": -15.69
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.821689,
-        "chg": -13.35
+        "price": 0.803183,
+        "chg": -14.71
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 3.7,
+        "chg": -14.48
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 79.44,
-        "chg": -11.58
+        "price": 78.32,
+        "chg": -10.42
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 262.84,
-        "chg": -10.42
+        "price": 257.63,
+        "chg": -10.1
       }
     ],
     "gainers_30d": [
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 5e-06,
-        "chg": 22.25
+        "price": 4.93e-06,
+        "chg": 22.74
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 609.52,
-        "chg": 9.51
+        "price": 612.96,
+        "chg": 10.0
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1314.45,
+        "chg": 6.76
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.34,
-        "chg": 4.96
+        "price": 9.35,
+        "chg": 4.88
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.022,
-        "chg": 1.97
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1351.8,
-        "chg": 1.84
+        "chg": 0.4
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00580122,
-        "chg": -47.32
+        "price": 0.00568753,
+        "chg": -46.91
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.75,
-        "chg": -29.5
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.164139,
-        "chg": -27.87
-      },
-      {
-        "symbol": "ada",
-        "name": "Cardano",
-        "price": 0.184543,
-        "chg": -27.85
+        "price": 3.7,
+        "chg": -28.93
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.067342,
-        "chg": -27.19
+        "price": 0.067594,
+        "chg": -28.27
+      },
+      {
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.182668,
+        "chg": -27.35
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.161909,
+        "chg": -26.11
       }
     ]
   }
