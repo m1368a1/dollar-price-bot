@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-11-10 09:54",
-  "usd_sell": 262500,
-  "usd_buy": 262300,
+  "timestamp": "2026-11-10 17:52",
+  "usd_sell": 258400,
+  "usd_buy": 258200,
   "gold_18k": 25762962,
-  "btc_usd": 74354.92,
+  "btc_usd": 73047.86,
   "fear_greed": 32,
-  "btc_dominance": 60.3,
-  "market_cap": 2480000000000.0,
-  "market_volume": 70000000000.0,
-  "market_change": -2.74,
+  "btc_dominance": 59.7,
+  "market_cap": 2460000000000.0,
+  "market_volume": 80000000000.0,
+  "market_change": -5.39,
   "top10": [
     {
       "symbol": "btc",
-      "price": 74378,
-      "change_24h": 0.21576,
-      "market_cap": 1495891872859
+      "price": 73064,
+      "change_24h": -2.25931,
+      "market_cap": 1469345403455
     },
     {
       "symbol": "eth",
-      "price": 2099.81,
-      "change_24h": -0.33553,
-      "market_cap": 256632320966
+      "price": 2023.92,
+      "change_24h": -4.72009,
+      "market_cap": 247336979511
     },
     {
       "symbol": "usdt",
-      "price": 0.99902,
-      "change_24h": -0.006,
-      "market_cap": 176871164496
+      "price": 0.999327,
+      "change_24h": 0.00691,
+      "market_cap": 176925356606
     },
     {
       "symbol": "bnb",
-      "price": 689.1,
-      "change_24h": 1.1648,
-      "market_cap": 90633031902
+      "price": 672.66,
+      "change_24h": -2.04482,
+      "market_cap": 88462666889
     },
     {
       "symbol": "usdc",
-      "price": 0.999542,
-      "change_24h": 0.01032,
-      "market_cap": 70012947414
+      "price": 0.999632,
+      "change_24h": 0.00531,
+      "market_cap": 69903155453
     },
     {
       "symbol": "xrp",
-      "price": 1.088,
-      "change_24h": -0.19707,
-      "market_cap": 69096778398
+      "price": 1.054,
+      "change_24h": -3.76532,
+      "market_cap": 66924382809
     },
     {
       "symbol": "sol",
-      "price": 85.45,
-      "change_24h": -1.21501,
-      "market_cap": 50524964799
+      "price": 82.21,
+      "change_24h": -5.01611,
+      "market_cap": 48599369221
     },
     {
       "symbol": "trx",
-      "price": 0.319021,
-      "change_24h": 0.42979,
-      "market_cap": 30312075618
+      "price": 0.317452,
+      "change_24h": 0.10341,
+      "market_cap": 30168781547
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.04,
-      "change_24h": null,
-      "market_cap": 27440744575
+      "price": 1.036,
+      "change_24h": -1.66733,
+      "market_cap": 27427381231
     },
     {
       "symbol": "zec",
-      "price": 1139.8,
-      "change_24h": -6.35873,
-      "market_cap": 19420758016
+      "price": 1039.07,
+      "change_24h": -11.06195,
+      "market_cap": 17698731605
     }
   ],
   "signal": {
-    "score": 0,
+    "score": 15,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -3.3% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -5.8% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -0.1% در ۲۴ ساعت",
+        "text": "BTC -2.6% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 32",
-        "tone": "neutral"
+        "text": "اشباع فروش (30) — فرصت خرید",
+        "tone": "bearish"
       }
     ],
-    "confidence": 50,
-    "updated": "2026-11-10 09:54"
+    "confidence": 57,
+    "updated": "2026-11-10 17:53"
   },
   "whales": {
     "unconfirmed": {
@@ -113,282 +113,272 @@
   },
   "news_investing": [
     {
-      "title": "والر از فدرال رزرو قصد دارد از افزایش حداقل یک چهارم واحدی نرخ بهره در ماه دسامبر حمایت کند",
-      "date": "2026-11-10 09:24",
-      "source": "Investing.com"
-    },
-    {
-      "title": "با کاهش قیمت نفت و آرام شدن نگرانی‌های تورمی، بازده یورو در پایین‌ترین سطح یک ماهه خود باقی ماند",
-      "date": "2026-11-10 09:19",
+      "title": "Enova در کنفرانس مالی BMO Capital Markets 2026: رشد تند باقی می ماند",
+      "date": "2026-11-10 17:38",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "طلا پس از حمایت والر از افزایش نرخ بهره در ماه دسامبر، به روند نزولی خود ادامه داد",
+      "title": "دلار برای بهترین روز از سپتامبر به‌عنوان شرط‌های افزایش قیمت شاخص قیمت مصرف‌کننده تعیین شد",
       "date": "Tue, 10 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "توقف روند صعودی سهام ایالات متحده در پی هشدار والر در مورد نرخ بهره: بازارها در هم تنیده شدند",
+      "title": "احتیاط فدرال رزرو: بازارها بسته می شوند",
       "date": "Mon, 09 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای 10 نوامبر",
-      "date": "Mon, 09 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "والر از فدرال رزرو از افزایش نرخ بهره در ماه دسامبر حمایت می‌کند و می‌گوید که آماده اقدام بزرگتری است",
+      "title": "اوراق قرضه سقوط می کند زیرا تورم داغ به شرط بندی برای افزایش بیشتر نرخ بهره فدرال رزرو کمک می کند",
       "date": "Tue, 10 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "عالی برای سرمایه‌گذاران، دشوار برای معامله‌گران: تحلیل بازار",
+      "title": "پلوتن 6.8 میلیارد دلار تقاضا برای فروش اوراق قرضه اولیه را جلب می کند",
       "date": "Tue, 10 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هوش مصنوعی باعث شده سرمایه‌گذاران برای معامله در بازارهای نوظهور جستجو کنند",
+      "title": "مورگان استنلی می گوید قیمت اوراق قرضه آرژانتین بسیار بدبینانه است",
+      "date": "Tue, 10 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "والر فدرال رزرو پیش از انتشار تورم داغ، افزایش نرخ را روی میز قرار می دهد",
       "date": "Tue, 10 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "والر از فدرال رزرو قصد دارد از افزایش حداقل یک چهارم واحدی نرخ بهره در ماه دسامبر حمایت کند",
-      "date": "2026-11-10 09:24",
+      "title": "Enova در کنفرانس مالی BMO Capital Markets 2026: رشد تند باقی می ماند",
+      "date": "2026-11-10 17:38",
       "source": "Investing.com"
     },
     {
-      "title": "با کاهش قیمت نفت و آرام شدن نگرانی‌های تورمی، بازده یورو در پایین‌ترین سطح یک ماهه خود باقی ماند",
-      "date": "2026-11-10 09:19",
-      "source": "Investing.com"
-    },
-    {
-      "title": "طلا پس از حمایت والر از افزایش نرخ بهره در ماه دسامبر، به روند نزولی خود ادامه داد",
+      "title": "دلار برای بهترین روز از سپتامبر به‌عنوان شرط‌های افزایش قیمت شاخص قیمت مصرف‌کننده تعیین شد",
       "date": "Tue, 10 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "توقف روند صعودی سهام ایالات متحده در پی هشدار والر در مورد نرخ بهره: بازارها در هم تنیده شدند",
+      "title": "احتیاط فدرال رزرو: بازارها بسته می شوند",
       "date": "Mon, 09 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل‌های بازار نفت برای 10 نوامبر",
-      "date": "Mon, 09 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "والر از فدرال رزرو از افزایش نرخ بهره در ماه دسامبر حمایت می‌کند و می‌گوید که آماده اقدام بزرگتری است",
+      "title": "اوراق قرضه سقوط می کند زیرا تورم داغ به شرط بندی برای افزایش بیشتر نرخ بهره فدرال رزرو کمک می کند",
       "date": "Tue, 10 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "عالی برای سرمایه‌گذاران، دشوار برای معامله‌گران: تحلیل بازار",
+      "title": "پلوتن 6.8 میلیارد دلار تقاضا برای فروش اوراق قرضه اولیه را جلب می کند",
       "date": "Tue, 10 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "هوش مصنوعی باعث شده سرمایه‌گذاران برای معامله در بازارهای نوظهور جستجو کنند",
+      "title": "مورگان استنلی می گوید قیمت اوراق قرضه آرژانتین بسیار بدبینانه است",
+      "date": "Tue, 10 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "والر فدرال رزرو پیش از انتشار تورم داغ، افزایش نرخ را روی میز قرار می دهد",
       "date": "Tue, 10 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-10 09:54",
+    "updated": "2026-11-10 17:52",
     "gainers_24h": [
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.24,
+        "chg": 17.9
+      },
       {
         "symbol": "gram",
         "name": "Gram (prev. Toncoin)",
-        "price": 1.083,
-        "chg": 6.09
+        "price": 1.11,
+        "chg": 7.74
       },
       {
-        "symbol": "ondo",
-        "name": "Ondo",
-        "price": 0.37262,
-        "chg": 5.78
+        "symbol": "pepe",
+        "name": "Pepe",
+        "price": 5.28e-06,
+        "chg": 0.59
       },
       {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 8.41,
-        "chg": 4.88
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.317452,
+        "chg": 0.1
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.091923,
-        "chg": 3.58
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 6.99,
-        "chg": 3.07
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.02
       }
     ],
     "losers_24h": [
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 549.42,
-        "chg": -8.15
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00389418,
+        "chg": -15.99
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 1139.8,
-        "chg": -6.36
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 188.93,
-        "chg": -5.45
+        "price": 1039.07,
+        "chg": -11.06
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 125.63,
-        "chg": -4.06
+        "price": 122.72,
+        "chg": -7.94
       },
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00447154,
-        "chg": -3.3
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 180.34,
+        "chg": -7.89
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 552.92,
+        "chg": -7.01
       }
     ],
     "gainers_7d": [
       {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.24,
+        "chg": 11.91
+      },
+      {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 5.27e-06,
-        "chg": 14.24
+        "price": 5.28e-06,
+        "chg": 5.9
       },
       {
         "symbol": "xaut",
         "name": "Tether Gold",
-        "price": 4066.64,
-        "chg": 5.16
+        "price": 4007.62,
+        "chg": 2.06
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 4070.54,
-        "chg": 4.9
+        "price": 4012.67,
+        "chg": 1.86
       },
       {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 8.41,
-        "chg": 1.55
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 1139.8,
-        "chg": 0.74
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.994907,
+        "chg": 0.3
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00447154,
-        "chg": -27.67
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 237.23,
-        "chg": -13.37
-      },
-      {
-        "symbol": "xrp",
-        "name": "XRP",
-        "price": 1.088,
-        "chg": -13.26
+        "price": 0.00389418,
+        "chg": -36.97
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 74.33,
-        "chg": -11.04
+        "price": 70.92,
+        "chg": -18.82
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 549.42,
-        "chg": -10.14
+        "symbol": "xrp",
+        "name": "XRP",
+        "price": 1.054,
+        "chg": -18.56
+      },
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 227.91,
+        "chg": -17.8
+      },
+      {
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 1039.07,
+        "chg": -16.0
       }
     ],
     "gainers_30d": [
       {
         "symbol": "pepe",
         "name": "Pepe",
-        "price": 5.27e-06,
-        "chg": 33.31
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 549.42,
-        "chg": 6.17
+        "price": 5.28e-06,
+        "chg": 24.48
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.28,
-        "chg": 4.88
+        "price": 9.29,
+        "chg": 4.22
       },
       {
-        "symbol": "eursafo",
-        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
-        "price": 1.14,
-        "chg": 0.62
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 552.92,
+        "chg": 3.51
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
-        "chg": 0.26
+        "chg": 0.28
+      },
+      {
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.994907,
+        "chg": 0.02
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00447154,
-        "chg": -54.98
-      },
-      {
-        "symbol": "ena",
-        "name": "Ethena",
-        "price": 0.153263,
-        "chg": -30.44
+        "price": 0.00389418,
+        "chg": -62.16
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.61,
-        "chg": -30.39
+        "price": 3.52,
+        "chg": -39.76
+      },
+      {
+        "symbol": "ena",
+        "name": "Ethena",
+        "price": 0.147792,
+        "chg": -36.19
       },
       {
         "symbol": "ada",
         "name": "Cardano",
-        "price": 0.17822,
-        "chg": -27.73
+        "price": 0.172118,
+        "chg": -32.21
       },
       {
-        "symbol": "hbar",
-        "name": "Hedera",
-        "price": 0.066822,
-        "chg": -27.13
+        "symbol": "xlm",
+        "name": "Stellar",
+        "price": 0.14288,
+        "chg": -30.86
       }
     ]
   }
