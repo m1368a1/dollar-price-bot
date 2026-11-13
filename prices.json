@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-11-13 01:06",
+  "timestamp": "2026-11-13 08:01",
   "usd_sell": 269500,
   "usd_buy": 269300,
   "gold_18k": 25762962,
-  "btc_usd": 70834.26,
+  "btc_usd": 68523.98,
   "fear_greed": 20,
-  "btc_dominance": 59.3,
-  "market_cap": 2410000000000.0,
-  "market_volume": 70000000000.0,
-  "market_change": -5.46,
+  "btc_dominance": 58.9,
+  "market_cap": 2330000000000.0,
+  "market_volume": 100000000000.0,
+  "market_change": -7.6,
   "top10": [
     {
       "symbol": "btc",
-      "price": 70793,
-      "change_24h": -4.15544,
-      "market_cap": 1423784386023
+      "price": 68545,
+      "change_24h": -6.82826,
+      "market_cap": 1378517657320
     },
     {
       "symbol": "eth",
-      "price": 2005.52,
-      "change_24h": -2.46892,
-      "market_cap": 245066084634
+      "price": 1933.85,
+      "change_24h": -5.61862,
+      "market_cap": 236347023994
     },
     {
       "symbol": "usdt",
-      "price": 0.999072,
-      "change_24h": -0.00211,
-      "market_cap": 175554106820
+      "price": 0.999176,
+      "change_24h": 0.01489,
+      "market_cap": 175572430573
     },
     {
       "symbol": "bnb",
-      "price": 654.22,
-      "change_24h": -3.82094,
-      "market_cap": 86030138347
+      "price": 629.57,
+      "change_24h": -6.51288,
+      "market_cap": 82795722773
     },
     {
       "symbol": "usdc",
-      "price": 0.999506,
-      "change_24h": -0.00033,
-      "market_cap": 69173160135
+      "price": 0.999526,
+      "change_24h": 0.00622,
+      "market_cap": 69117676868
     },
     {
       "symbol": "xrp",
-      "price": 1.031,
-      "change_24h": -2.15495,
-      "market_cap": 65472312210
+      "price": 1.026,
+      "change_24h": -1.65384,
+      "market_cap": 65152234005
     },
     {
       "symbol": "sol",
-      "price": 81.25,
-      "change_24h": -2.56491,
-      "market_cap": 48061964264
+      "price": 79.72,
+      "change_24h": -3.85828,
+      "market_cap": 47153792719
     },
     {
       "symbol": "trx",
-      "price": 0.315328,
-      "change_24h": -0.52071,
-      "market_cap": 29963366380
+      "price": 0.310885,
+      "change_24h": -1.82506,
+      "market_cap": 29545604246
     },
     {
       "symbol": "figr_heloc",
       "price": 1.001,
-      "change_24h": -6.11889,
-      "market_cap": 26611937387
+      "change_24h": -6.13111,
+      "market_cap": 26609013080
     },
     {
       "symbol": "hype",
-      "price": 72.89,
-      "change_24h": 1.2633,
-      "market_cap": 17433298279
+      "price": 71.23,
+      "change_24h": -0.19962,
+      "market_cap": 17052157149
     }
   ],
   "signal": {
-    "score": 15,
+    "score": 10,
     "label": "🟡 سیگنال صبر",
     "factors": [
       {
@@ -80,11 +80,11 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -7.2% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -9.3% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -4.4% در ۲۴ ساعت",
+        "text": "BTC -6.8% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 31",
-        "tone": "neutral"
+        "text": "اشباع فروش (28) — فرصت خرید",
+        "tone": "bearish"
+      },
+      {
+        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
+        "tone": "bearish"
       }
     ],
-    "confidence": 57,
-    "updated": "2026-11-13 01:07"
+    "confidence": 55,
+    "updated": "2026-11-13 08:01"
   },
   "whales": {
     "unconfirmed": {
@@ -114,28 +118,28 @@
   "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "پس از تحولات انویدیا: بازارها به بازارها بازگشتند",
-      "date": "Thu, 12 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مجموعه ای از بازار نقره برای کسری بودجه حتی زمانی که سازندگان خورشیدی کاهش می دهند",
+      "title": "(USD:ZWG) زیمبابوه برای بازسازی بازار اوراق قرضه محلی پس از آشفتگی ارز حرکت می کند",
       "date": "Fri, 13 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازدهی اوراق قرضه استرالیا به دلیل واگرایی مسیرهای نرخ، کمتر از همتایان ایالات متحده است",
+      "title": "انویدیا پس از خروج هوانگ، مدیرعامل موقت کرس را به عنوان مدیر عامل موقت ترامپ معرفی کرد",
       "date": "Fri, 13 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با افزایش شرط‌بندی‌های افزایش نرخ، طلا به پایین‌ترین سطح یک ساله خود می‌رسد",
+      "title": "سهام با تاخیر انویدیا، سقوط اوراق قرضه: بسته شدن بازارها سقوط می کند",
       "date": "Thu, 12 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "پرو برای اولین بار در نزدیک به چهار سال نرخ بهره را افزایش داد",
-      "date": "Thu, 12 Nov 2026",
+      "title": "افزایش بازدهی خزانه داری امیدها را از بین می برد که بدترین شکست اوراق قرضه به پایان رسیده است",
+      "date": "Fri, 13 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آسیای تشنه نفت با گسترش جریان ها با جدیت به خاورمیانه باز می گردد",
+      "date": "Fri, 13 Nov 2026",
       "source": "Bloomberg"
     },
     {
@@ -146,28 +150,28 @@
   ],
   "news": [
     {
-      "title": "پس از تحولات انویدیا: بازارها به بازارها بازگشتند",
-      "date": "Thu, 12 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "مجموعه ای از بازار نقره برای کسری بودجه حتی زمانی که سازندگان خورشیدی کاهش می دهند",
+      "title": "(USD:ZWG) زیمبابوه برای بازسازی بازار اوراق قرضه محلی پس از آشفتگی ارز حرکت می کند",
       "date": "Fri, 13 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازدهی اوراق قرضه استرالیا به دلیل واگرایی مسیرهای نرخ، کمتر از همتایان ایالات متحده است",
+      "title": "انویدیا پس از خروج هوانگ، مدیرعامل موقت کرس را به عنوان مدیر عامل موقت ترامپ معرفی کرد",
       "date": "Fri, 13 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "با افزایش شرط‌بندی‌های افزایش نرخ، طلا به پایین‌ترین سطح یک ساله خود می‌رسد",
+      "title": "سهام با تاخیر انویدیا، سقوط اوراق قرضه: بسته شدن بازارها سقوط می کند",
       "date": "Thu, 12 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "پرو برای اولین بار در نزدیک به چهار سال نرخ بهره را افزایش داد",
-      "date": "Thu, 12 Nov 2026",
+      "title": "افزایش بازدهی خزانه داری امیدها را از بین می برد که بدترین شکست اوراق قرضه به پایان رسیده است",
+      "date": "Fri, 13 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "آسیای تشنه نفت با گسترش جریان ها با جدیت به خاورمیانه باز می گردد",
+      "date": "Fri, 13 Nov 2026",
       "source": "Bloomberg"
     },
     {
@@ -177,69 +181,69 @@
     }
   ],
   "trends": {
-    "updated": "2026-11-13 01:06",
+    "updated": "2026-11-13 08:01",
     "gainers_24h": [
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.819383,
-        "chg": 4.62
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 72.89,
-        "chg": 1.26
-      },
       {
         "symbol": "pepe",
         "name": "Pepe",
         "price": 4.56e-06,
-        "chg": 0.35
+        "chg": 2.5
       },
       {
-        "symbol": "ada",
-        "name": "Cardano",
-        "price": 0.174699,
-        "chg": 0.35
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.28,
+        "chg": 0.91
       },
       {
-        "symbol": "xlm",
-        "name": "Stellar",
-        "price": 0.148224,
-        "chg": 0.33
-      }
-    ],
-    "losers_24h": [
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.001,
-        "chg": -6.12
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 545.91,
-        "chg": -6.04
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.995025,
+        "chg": 0.06
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.42,
-        "chg": -5.22
+        "price": 3.5,
+        "chg": 0.05
       },
       {
-        "symbol": "aave",
-        "name": "Aave",
-        "price": 114.32,
-        "chg": -4.39
-      },
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.01
+      }
+    ],
+    "losers_24h": [
       {
         "symbol": "btc",
         "name": "Bitcoin",
-        "price": 70793,
-        "chg": -4.16
+        "price": 68545,
+        "chg": -6.83
+      },
+      {
+        "symbol": "bnb",
+        "name": "BNB",
+        "price": 629.57,
+        "chg": -6.51
+      },
+      {
+        "symbol": "wbt",
+        "name": "WhiteBIT Coin",
+        "price": 66.55,
+        "chg": -6.19
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.001,
+        "chg": -6.13
+      },
+      {
+        "symbol": "eth",
+        "name": "Ethereum",
+        "price": 1933.85,
+        "chg": -5.62
       }
     ],
     "gainers_7d": [
@@ -247,24 +251,12 @@
         "symbol": "gram",
         "name": "Gram (prev. Toncoin)",
         "price": 1.15,
-        "chg": 4.44
-      },
-      {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 8.31,
-        "chg": 2.01
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.819383,
-        "chg": 0.51
+        "chg": 5.32
       },
       {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.995103,
+        "price": 0.995025,
         "chg": 0.07
       },
       {
@@ -272,38 +264,50 @@
         "name": "Circle USYC",
         "price": 1.14,
         "chg": 0.06
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 8.28,
+        "chg": -0.06
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.28,
+        "chg": -0.69
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00375232,
-        "chg": -40.19
+        "price": 0.00374419,
+        "chg": -38.12
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 959.88,
-        "chg": -24.83
+        "price": 940.65,
+        "chg": -25.1
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 224.63,
-        "chg": -17.26
-      },
-      {
-        "symbol": "xrp",
-        "name": "XRP",
-        "price": 1.031,
-        "chg": -14.25
+        "price": 218.09,
+        "chg": -18.79
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 161.89,
-        "chg": -13.93
+        "price": 157.7,
+        "chg": -16.64
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 5.82,
+        "chg": -16.43
       }
     ],
     "gainers_30d": [
@@ -311,13 +315,13 @@
         "symbol": "pepe",
         "name": "Pepe",
         "price": 4.56e-06,
-        "chg": 8.75
+        "chg": 9.14
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.17,
-        "chg": 2.94
+        "price": 9.28,
+        "chg": 2.97
       },
       {
         "symbol": "usyc",
@@ -328,46 +332,46 @@
       {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.995103,
-        "chg": 0.02
+        "price": 0.995025,
+        "chg": 0.04
       },
       {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 545.91,
-        "chg": -0.1
+        "symbol": "eursafo",
+        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
+        "price": 1.13,
+        "chg": -1.08
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00375232,
-        "chg": -62.41
+        "price": 0.00374419,
+        "chg": -61.49
       },
       {
         "symbol": "ena",
         "name": "Ethena",
-        "price": 0.140459,
-        "chg": -32.81
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 3.42,
-        "chg": -31.79
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.088544,
-        "chg": -29.22
+        "price": 0.137892,
+        "chg": -33.99
       },
       {
         "symbol": "aave",
         "name": "Aave",
-        "price": 114.32,
-        "chg": -28.47
+        "price": 111.28,
+        "chg": -30.55
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 3.5,
+        "chg": -30.09
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.088245,
+        "chg": -28.14
       }
     ]
   }
