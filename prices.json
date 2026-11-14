@@ -1,90 +1,21 @@
 {
-  "timestamp": "2026-11-14 18:07",
+  "timestamp": "2026-11-14 22:28",
   "usd_sell": 268800,
   "usd_buy": 268600,
   "gold_18k": 24798005,
-  "btc_usd": 65764.91,
+  "btc_usd": 64162.86,
   "fear_greed": 13,
-  "btc_dominance": 58.9,
-  "market_cap": 2240000000000.0,
-  "market_volume": 80000000000.0,
-  "market_change": -6.8,
-  "top10": [
-    {
-      "symbol": "btc",
-      "price": 65829,
-      "change_24h": -4.33319,
-      "market_cap": 1323937127446
-    },
-    {
-      "symbol": "eth",
-      "price": 1838.43,
-      "change_24h": -5.05775,
-      "market_cap": 224689940614
-    },
-    {
-      "symbol": "usdt",
-      "price": 0.99946,
-      "change_24h": 0.01214,
-      "market_cap": 175303375601
-    },
-    {
-      "symbol": "bnb",
-      "price": 589.6,
-      "change_24h": -6.98265,
-      "market_cap": 77538978481
-    },
-    {
-      "symbol": "usdc",
-      "price": 0.999682,
-      "change_24h": 0.01294,
-      "market_cap": 69085691151
-    },
-    {
-      "symbol": "xrp",
-      "price": 0.957072,
-      "change_24h": -6.11024,
-      "market_cap": 60789952385
-    },
-    {
-      "symbol": "sol",
-      "price": 72.6,
-      "change_24h": -9.1899,
-      "market_cap": 42949615861
-    },
-    {
-      "symbol": "trx",
-      "price": 0.306907,
-      "change_24h": -1.86179,
-      "market_cap": 29168591343
-    },
-    {
-      "symbol": "figr_heloc",
-      "price": 1.045,
-      "change_24h": 4.25938,
-      "market_cap": 27881627811
-    },
-    {
-      "symbol": "hype",
-      "price": 65.5,
-      "change_24h": -9.6174,
-      "market_cap": 15570818804
-    }
-  ],
+  "btc_dominance": 0,
+  "market_cap": 0,
+  "market_volume": 0,
+  "market_change": 0,
+  "top10": [],
   "signal": {
-    "score": 5,
-    "label": "🟡 سیگنال صبر",
+    "score": 65,
+    "label": "🟢 سیگنال خرید",
     "factors": [
       {
         "text": "ترس شدید (13/100)",
-        "tone": "neutral"
-      },
-      {
-        "text": "BTC -13.1% در 7 روز",
-        "tone": "neutral"
-      },
-      {
-        "text": "BTC -4.4% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +23,16 @@
         "tone": "neutral"
       },
       {
-        "text": "اشباع فروش (24) — فرصت خرید",
+        "text": "اشباع فروش (22) — فرصت خرید",
         "tone": "bearish"
       },
       {
-        "text": "دوجی (Doji) — تصمیمی",
-        "tone": "neutral"
+        "text": "چکش (Hammer) — نشانه صعود",
+        "tone": "bullish"
       }
     ],
-    "confidence": 52,
-    "updated": "2026-11-14 18:07"
+    "confidence": 82,
+    "updated": "2026-11-14 22:28"
   },
   "whales": {
     "unconfirmed": {
@@ -117,233 +48,47 @@
   },
   "news_investing": [
     {
-      "title": "میان دوره ای ایالات متحده: سیتی پیامدهای آن را برای اقتصاد و بازار تجزیه می کند",
-      "date": "2026-11-14 17:52",
+      "title": "با ادامه یافتن خروج سرمایه از صندوق‌های قابل معامله (ETF) برای هفتمین روز متوالی، قیمت بیت‌کوین به زیر 68,000 دلار کاهش یافت",
+      "date": "2026-11-14 21:00",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "گلدمن ساکس بازده 19 درصدی سهام آسیایی سابق ژاپن را در سال 2027 می بیند",
+      "title": "گلدمن ساکس بازده 19 درصدی سهام کشورهای آسیایی به جز ژاپن را در سال 2027 پیش‌بینی می‌کند",
       "date": "Sat, 14 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازار نفت با وجود حملات نفتکش ها مملو از نفت خام است",
+      "title": "علیرغم حملات به نفتکش‌ها، بازار نفت مملو از نفت خام است",
       "date": "Sat, 14 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "میان دوره ای ایالات متحده: سیتی پیامدهای آن را برای اقتصاد و بازار تجزیه می کند",
-      "date": "2026-11-14 17:52",
+      "title": "با ادامه یافتن خروج سرمایه از صندوق‌های قابل معامله (ETF) برای هفتمین روز متوالی، قیمت بیت‌کوین به زیر 68,000 دلار کاهش یافت",
+      "date": "2026-11-14 21:00",
       "source": "Investing.com"
     },
     {
-      "title": "گلدمن ساکس بازده 19 درصدی سهام آسیایی سابق ژاپن را در سال 2027 می بیند",
+      "title": "گلدمن ساکس بازده 19 درصدی سهام کشورهای آسیایی به جز ژاپن را در سال 2027 پیش‌بینی می‌کند",
       "date": "Sat, 14 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "بازار نفت با وجود حملات نفتکش ها مملو از نفت خام است",
+      "title": "علیرغم حملات به نفتکش‌ها، بازار نفت مملو از نفت خام است",
       "date": "Sat, 14 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-14 18:07",
-    "gainers_24h": [
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.045,
-        "chg": 4.26
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.822892,
-        "chg": 0.31
-      },
-      {
-        "symbol": "u",
-        "name": "United Stables",
-        "price": 0.999565,
-        "chg": 0.01
-      },
-      {
-        "symbol": "eursafo",
-        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
-        "price": 1.12,
-        "chg": -0.04
-      },
-      {
-        "symbol": "usdf",
-        "name": "Falcon USD",
-        "price": 0.994108,
-        "chg": -0.13
-      }
-    ],
-    "losers_24h": [
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 5.01,
-        "chg": -13.02
-      },
-      {
-        "symbol": "pepe",
-        "name": "Pepe",
-        "price": 3.97e-06,
-        "chg": -11.05
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 3.11,
-        "chg": -11.0
-      },
-      {
-        "symbol": "avax",
-        "name": "Avalanche",
-        "price": 7.47,
-        "chg": -10.79
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 65.5,
-        "chg": -9.62
-      }
-    ],
-    "gainers_7d": [
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.045,
-        "chg": 0.46
-      },
-      {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.07
-      },
-      {
-        "symbol": "u",
-        "name": "United Stables",
-        "price": 0.999565,
-        "chg": 0.01
-      },
-      {
-        "symbol": "usdf",
-        "name": "Falcon USD",
-        "price": 0.994108,
-        "chg": -0.06
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.822892,
-        "chg": -0.7
-      }
-    ],
-    "losers_7d": [
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00366878,
-        "chg": -34.42
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 864.03,
-        "chg": -31.5
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 5.01,
-        "chg": -28.61
-      },
-      {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 152.55,
-        "chg": -23.43
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 207.56,
-        "chg": -19.1
-      }
-    ],
-    "gainers_30d": [
-      {
-        "symbol": "leo",
-        "name": "LEO Token",
-        "price": 9.25,
-        "chg": 2.41
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.045,
-        "chg": 1.86
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.822892,
-        "chg": 0.54
-      },
-      {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.3
-      },
-      {
-        "symbol": "u",
-        "name": "United Stables",
-        "price": 0.999565,
-        "chg": 0.04
-      }
-    ],
-    "losers_30d": [
-      {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00366878,
-        "chg": -58.91
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 3.11,
-        "chg": -39.1
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 5.01,
-        "chg": -32.6
-      },
-      {
-        "symbol": "ada",
-        "name": "Cardano",
-        "price": 0.155247,
-        "chg": -32.13
-      },
-      {
-        "symbol": "sol",
-        "name": "Solana",
-        "price": 72.6,
-        "chg": -31.08
-      }
-    ]
+    "updated": "2026-11-14 22:28",
+    "gainers_24h": [],
+    "losers_24h": [],
+    "gainers_7d": [],
+    "losers_7d": [],
+    "gainers_30d": [],
+    "losers_30d": []
   }
 }
