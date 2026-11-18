@@ -1,21 +1,90 @@
 {
-  "timestamp": "2026-11-18 04:25",
-  "usd_sell": 266700,
-  "usd_buy": 266500,
-  "gold_18k": 24751835,
-  "btc_usd": 64485.65,
+  "timestamp": "2026-11-18 14:03",
+  "usd_sell": 266500,
+  "usd_buy": 266300,
+  "gold_18k": 24497899,
+  "btc_usd": 63882.68,
   "fear_greed": 11,
-  "btc_dominance": 0,
-  "market_cap": 0,
-  "market_volume": 0,
-  "market_change": 0,
-  "top10": [],
+  "btc_dominance": 59.0,
+  "market_cap": 2170000000000.0,
+  "market_volume": 70000000000.0,
+  "market_change": -5.08,
+  "top10": [
+    {
+      "symbol": "btc",
+      "price": 63885,
+      "change_24h": -1.734,
+      "market_cap": 1284853240126
+    },
+    {
+      "symbol": "eth",
+      "price": 1788.96,
+      "change_24h": -2.0293,
+      "market_cap": 218644055682
+    },
+    {
+      "symbol": "usdt",
+      "price": 0.999126,
+      "change_24h": -0.01917,
+      "market_cap": 175286277458
+    },
+    {
+      "symbol": "bnb",
+      "price": 588.35,
+      "change_24h": -0.62118,
+      "market_cap": 77370443249
+    },
+    {
+      "symbol": "usdc",
+      "price": 0.999552,
+      "change_24h": -0.00666,
+      "market_cap": 68833366731
+    },
+    {
+      "symbol": "xrp",
+      "price": 0.986886,
+      "change_24h": 1.16886,
+      "market_cap": 62661506603
+    },
+    {
+      "symbol": "sol",
+      "price": 74.15,
+      "change_24h": 0.6575,
+      "market_cap": 43874174372
+    },
+    {
+      "symbol": "trx",
+      "price": 0.309631,
+      "change_24h": 1.06077,
+      "market_cap": 29429470713
+    },
+    {
+      "symbol": "figr_heloc",
+      "price": 1.007,
+      "change_24h": -3.06322,
+      "market_cap": 27005535296
+    },
+    {
+      "symbol": "hype",
+      "price": 67.83,
+      "change_24h": -2.77692,
+      "market_cap": 16118883941
+    }
+  ],
   "signal": {
-    "score": 25,
-    "label": "🟢 سیگنال خرید",
+    "score": 20,
+    "label": "🟡 سیگنال صبر",
     "factors": [
       {
         "text": "ترس شدید (11/100)",
+        "tone": "neutral"
+      },
+      {
+        "text": "BTC -13.3% در 7 روز",
+        "tone": "neutral"
+      },
+      {
+        "text": "BTC -1.8% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -25,30 +94,26 @@
       {
         "text": "اشباع فروش (10) — فرصت خرید",
         "tone": "bearish"
-      },
-      {
-        "text": "ستاره ثاقب (Shooting Star) — نشانه نزول",
-        "tone": "bearish"
       }
     ],
-    "confidence": 62,
-    "updated": "2026-11-18 04:25"
+    "confidence": 60,
+    "updated": "2026-11-18 14:03"
   },
   "whales": {
     "unconfirmed": {
       "score": 6,
       "level": "کم",
       "count": 1,
-      "total_btc": 128.47,
+      "total_btc": 105.09,
       "mega_whales": 0,
       "large_whales": 0,
       "medium_whales": 1,
       "top": [
         {
-          "btc": 128.47,
+          "btc": 105.09,
           "tier": "متوسط",
-          "fee": 4.68e-06,
-          "inputs": 2,
+          "fee": 1.04e-05,
+          "inputs": 3,
           "outputs": 2,
           "direction": "unknown"
         }
@@ -58,75 +123,261 @@
   "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت 28 آبان",
-      "date": "Tue, 17 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "گروه UBS شاهد افزایش یوان تا 6.25 در بازار صعودی است",
+      "title": "والر فکر می کند فدرال رزرو باید افزایش نیم درصدی نرخ بهره را در نظر بگیرد",
       "date": "Wed, 18 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "در میان نوسانات جهانی، فروش اوراق قرضه 20 ساله ژاپن با تقاضای ضعیف مواجه شد",
+      "title": "رنسانس نفت آلاسکا پس از دهه‌ها افول طلوع می‌کند",
       "date": "Wed, 18 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام پس از Nvidia نوسان می کند، خزانه داری افزایش می یابد: بازارها بسته می شوند",
-      "date": "Tue, 17 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "روپیه‌ها بیشتر از پیش‌بینی‌کنندگان ارز صعودی هستند",
+      "title": "سقوط مس و قلع در حالی که تجارت هوش مصنوعی در بازارهای فلزات از هم باز می شود",
       "date": "Wed, 18 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "قیمت طلا به زیر 3800 دلار سقوط کرد زیرا مقامات فدرال رزرو از افزایش بیشتر نرخ بهره خبر دادند",
+      "title": "سهام ایالات متحده افزایش می یابد زیرا چشم انداز انویدیا ترس های هوش مصنوعی را کاهش می دهد: بازارها به هم می ریزند",
       "date": "Tue, 17 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بیت‌کوین با محو شدن اهرم و نقدینگی، رالی Bessent را پاک می کند",
+      "date": "Wed, 18 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "محموله های LNG بیشتر ایالات متحده برای کمک به بازار تنگ به اروپا منحرف می شوند",
+      "date": "Wed, 18 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت 28 آبان",
-      "date": "Tue, 17 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "گروه UBS شاهد افزایش یوان تا 6.25 در بازار صعودی است",
+      "title": "والر فکر می کند فدرال رزرو باید افزایش نیم درصدی نرخ بهره را در نظر بگیرد",
       "date": "Wed, 18 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "در میان نوسانات جهانی، فروش اوراق قرضه 20 ساله ژاپن با تقاضای ضعیف مواجه شد",
+      "title": "رنسانس نفت آلاسکا پس از دهه‌ها افول طلوع می‌کند",
       "date": "Wed, 18 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "سهام پس از Nvidia نوسان می کند، خزانه داری افزایش می یابد: بازارها بسته می شوند",
-      "date": "Tue, 17 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "روپیه‌ها بیشتر از پیش‌بینی‌کنندگان ارز صعودی هستند",
+      "title": "سقوط مس و قلع در حالی که تجارت هوش مصنوعی در بازارهای فلزات از هم باز می شود",
       "date": "Wed, 18 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "قیمت طلا به زیر 3800 دلار سقوط کرد زیرا مقامات فدرال رزرو از افزایش بیشتر نرخ بهره خبر دادند",
+      "title": "سهام ایالات متحده افزایش می یابد زیرا چشم انداز انویدیا ترس های هوش مصنوعی را کاهش می دهد: بازارها به هم می ریزند",
       "date": "Tue, 17 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "بیت‌کوین با محو شدن اهرم و نقدینگی، رالی Bessent را پاک می کند",
+      "date": "Wed, 18 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "محموله های LNG بیشتر ایالات متحده برای کمک به بازار تنگ به اروپا منحرف می شوند",
+      "date": "Wed, 18 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-18 04:25",
-    "gainers_24h": [],
-    "losers_24h": [],
-    "gainers_7d": [],
-    "losers_7d": [],
-    "gainers_30d": [],
-    "losers_30d": []
+    "updated": "2026-11-18 14:03",
+    "gainers_24h": [
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 3.33,
+        "chg": 2.65
+      },
+      {
+        "symbol": "xrp",
+        "name": "XRP",
+        "price": 0.986886,
+        "chg": 1.17
+      },
+      {
+        "symbol": "trx",
+        "name": "TRON",
+        "price": 0.309631,
+        "chg": 1.06
+      },
+      {
+        "symbol": "sol",
+        "name": "Solana",
+        "price": 74.15,
+        "chg": 0.66
+      },
+      {
+        "symbol": "cc",
+        "name": "Canton",
+        "price": 0.083002,
+        "chg": 0.49
+      }
+    ],
+    "losers_24h": [
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00488005,
+        "chg": -13.37
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.880817,
+        "chg": -4.41
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 5.19,
+        "chg": -3.91
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.007,
+        "chg": -3.06
+      },
+      {
+        "symbol": "aave",
+        "name": "Aave",
+        "price": 109.67,
+        "chg": -2.97
+      }
+    ],
+    "gainers_7d": [
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00488005,
+        "chg": 15.16
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.880817,
+        "chg": 10.6
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.29,
+        "chg": 0.97
+      },
+      {
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.995975,
+        "chg": 0.11
+      },
+      {
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.06
+      }
+    ],
+    "losers_7d": [
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 5.19,
+        "chg": -19.43
+      },
+      {
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 1.017,
+        "chg": -18.19
+      },
+      {
+        "symbol": "avax",
+        "name": "Avalanche",
+        "price": 7.1,
+        "chg": -16.81
+      },
+      {
+        "symbol": "shib",
+        "name": "Shiba Inu",
+        "price": 3.83e-06,
+        "chg": -14.02
+      },
+      {
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.05709,
+        "chg": -13.58
+      }
+    ],
+    "gainers_30d": [
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.880817,
+        "chg": 31.57
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.29,
+        "chg": 2.72
+      },
+      {
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.14,
+        "chg": 0.28
+      },
+      {
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.995975,
+        "chg": 0.11
+      },
+      {
+        "symbol": "u",
+        "name": "United Stables",
+        "price": 0.999044,
+        "chg": -0.05
+      }
+    ],
+    "losers_30d": [
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00488005,
+        "chg": -46.75
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 3.33,
+        "chg": -33.23
+      },
+      {
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.05709,
+        "chg": -31.9
+      },
+      {
+        "symbol": "ada",
+        "name": "Cardano",
+        "price": 0.153827,
+        "chg": -29.98
+      },
+      {
+        "symbol": "sol",
+        "name": "Solana",
+        "price": 74.15,
+        "chg": -29.54
+      }
+    ]
   }
 }
