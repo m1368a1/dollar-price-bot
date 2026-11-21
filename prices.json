@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-11-21 11:09",
-  "usd_sell": 270200,
-  "usd_buy": 270000,
-  "gold_18k": 23062006,
-  "btc_usd": 57872.65,
+  "timestamp": "2026-11-21 17:59",
+  "usd_sell": 269700,
+  "usd_buy": 269500,
+  "gold_18k": 23124336,
+  "btc_usd": 59975.5,
   "fear_greed": 12,
-  "btc_dominance": 57.5,
-  "market_cap": 2020000000000.0,
-  "market_volume": 150000000000.0,
-  "market_change": -8.24,
+  "btc_dominance": 57.9,
+  "market_cap": 2080000000000.0,
+  "market_volume": 130000000000.0,
+  "market_change": -1.8,
   "top10": [
     {
       "symbol": "btc",
-      "price": 57878,
-      "change_24h": -6.43173,
-      "market_cap": 1164226021822
+      "price": 60015,
+      "change_24h": 1.65905,
+      "market_cap": 1206924999994
     },
     {
       "symbol": "eth",
-      "price": 1639.35,
-      "change_24h": -6.52615,
-      "market_cap": 200392084937
+      "price": 1680.36,
+      "change_24h": 3.27482,
+      "market_cap": 205402176191
     },
     {
       "symbol": "usdt",
-      "price": 0.998748,
-      "change_24h": -0.04594,
-      "market_cap": 174585055928
+      "price": 0.998542,
+      "change_24h": -0.0429,
+      "market_cap": 174553761810
     },
     {
       "symbol": "bnb",
-      "price": 524.85,
-      "change_24h": -8.3056,
-      "market_cap": 69023364879
+      "price": 547.37,
+      "change_24h": 1.02223,
+      "market_cap": 71985018774
     },
     {
       "symbol": "usdc",
-      "price": 0.999385,
-      "change_24h": -0.02299,
-      "market_cap": 68359717461
+      "price": 0.999207,
+      "change_24h": -0.04084,
+      "market_cap": 68378807125
     },
     {
       "symbol": "xrp",
-      "price": 0.896542,
-      "change_24h": -6.57919,
-      "market_cap": 56945286770
+      "price": 0.933287,
+      "change_24h": 3.08913,
+      "market_cap": 59279743586
     },
     {
       "symbol": "sol",
-      "price": 68.05,
-      "change_24h": -5.7725,
-      "market_cap": 40277535521
+      "price": 70.58,
+      "change_24h": 2.13119,
+      "market_cap": 41783251039
     },
     {
       "symbol": "trx",
-      "price": 0.303017,
-      "change_24h": -1.39435,
-      "market_cap": 28801753796
+      "price": 0.305051,
+      "change_24h": 1.03859,
+      "market_cap": 28996980617
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.033,
-      "change_24h": 1.68633,
-      "market_cap": 27856581273
+      "price": 1.029,
+      "change_24h": 1.00416,
+      "market_cap": 27896724483
     },
     {
       "symbol": "hype",
-      "price": 58.64,
-      "change_24h": -9.34405,
-      "market_cap": 13938049689
+      "price": 60.65,
+      "change_24h": -0.61061,
+      "market_cap": 14417345043
     }
   ],
   "signal": {
-    "score": 5,
-    "label": "🟡 سیگنال صبر",
+    "score": 45,
+    "label": "🟢 سیگنال خرید",
     "factors": [
       {
         "text": "ترس شدید (12/100)",
         "tone": "neutral"
       },
       {
-        "text": "BTC -13.9% در 7 روز",
+        "text": "روند بیتکوین: خنثی؛ -8.9% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -6.6% در ۲۴ ساعت",
+        "text": "BTC +0.9% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "اشباع فروش (9) — فرصت خرید",
+        "text": "اشباع فروش (14) — فرصت خرید",
         "tone": "bearish"
+      },
+      {
+        "text": "دوجی (Doji) — تصمیمی",
+        "tone": "neutral"
       }
     ],
-    "confidence": 52,
-    "updated": "2026-11-21 11:09"
+    "confidence": 72,
+    "updated": "2026-11-21 17:59"
   },
   "whales": {
     "unconfirmed": {
@@ -111,123 +115,144 @@
       "top": []
     }
   },
-  "news_investing": [],
+  "news_investing": [
+    {
+      "title": "بیت‌کوین پس از سقوط به پایین ترین حد در دو سال اخیر افزایش می یابد",
+      "date": "2026-11-21 17:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "گلدمن طلا را به نقره ترجیح می دهد زیرا تقاضای بانک مرکزی از قیمت ها حمایت می کند",
+      "date": "2026-11-21 17:01",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ترامپ به دنبال توافق هسته ای «دائمی» با ایران است. دو نفتکش به عمان برخورد کردند",
+      "date": "2026-11-21 16:05",
+      "source": "Investing.com"
+    }
+  ],
   "news_bloomberg": [
     {
-      "title": "بازار برق اروپا هشداری به اقتصاد آن می دهد",
+      "title": "Goldman’s SpaceX Pitch به حل معمای بدهی هوش مصنوعی کمک می کند: هفتگی اعتبار",
       "date": "Sat, 21 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "Nasdaq 100 بدترین هفته از سال 2020 در درام هوش مصنوعی: بسته بندی بازارها",
-      "date": "Thu, 19 Nov 2026",
+      "title": "Anthropic اولین بازار عمومی خود را آغاز می کند",
+      "date": "Sat, 21 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا بدترین هفته از ماه مارس را در فدرال رزرو Hawkish، AI Selloff ثبت کرد",
-      "date": "Thu, 19 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "انویدیا سقوط می کند زیرا کاوشگر SEC بازار هوش مصنوعی را عمیق تر می کند زنگ بسته شدن",
-      "date": "Fri, 20 Nov 2026",
+      "title": "بازار برق اروپا هشداری به اقتصاد آن می دهد",
+      "date": "Sat, 21 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "بازار برق اروپا هشداری به اقتصاد آن می دهد",
+      "title": "بیت‌کوین پس از سقوط به پایین ترین حد در دو سال اخیر افزایش می یابد",
+      "date": "2026-11-21 17:12",
+      "source": "Investing.com"
+    },
+    {
+      "title": "گلدمن طلا را به نقره ترجیح می دهد زیرا تقاضای بانک مرکزی از قیمت ها حمایت می کند",
+      "date": "2026-11-21 17:01",
+      "source": "Investing.com"
+    },
+    {
+      "title": "ترامپ به دنبال توافق هسته ای «دائمی» با ایران است. دو نفتکش به عمان برخورد کردند",
+      "date": "2026-11-21 16:05",
+      "source": "Investing.com"
+    },
+    {
+      "title": "Goldman’s SpaceX Pitch به حل معمای بدهی هوش مصنوعی کمک می کند: هفتگی اعتبار",
       "date": "Sat, 21 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "Nasdaq 100 بدترین هفته از سال 2020 در درام هوش مصنوعی: بسته بندی بازارها",
-      "date": "Thu, 19 Nov 2026",
+      "title": "Anthropic اولین بازار عمومی خود را آغاز می کند",
+      "date": "Sat, 21 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا بدترین هفته از ماه مارس را در فدرال رزرو Hawkish، AI Selloff ثبت کرد",
-      "date": "Thu, 19 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "انویدیا سقوط می کند زیرا کاوشگر SEC بازار هوش مصنوعی را عمیق تر می کند زنگ بسته شدن",
-      "date": "Fri, 20 Nov 2026",
+      "title": "بازار برق اروپا هشداری به اقتصاد آن می دهد",
+      "date": "Sat, 21 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-21 11:09",
+    "updated": "2026-11-21 17:59",
     "gainers_24h": [
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.033,
-        "chg": 1.69
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00405505,
+        "chg": 9.35
       },
       {
-        "symbol": "eursafo",
-        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
-        "price": 1.12,
-        "chg": 0.09
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 480.61,
+        "chg": 8.16
       },
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.05
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 4.73,
+        "chg": 6.24
       },
       {
-        "symbol": "u",
-        "name": "United Stables",
-        "price": 0.999099,
-        "chg": -0.04
+        "symbol": "tao",
+        "name": "Bittensor",
+        "price": 186.22,
+        "chg": 6.09
       },
       {
-        "symbol": "usdf",
-        "name": "Falcon USD",
-        "price": 0.995762,
-        "chg": -0.05
+        "symbol": "qnt",
+        "name": "Quant",
+        "price": 143.07,
+        "chg": 4.67
       }
     ],
     "losers_24h": [
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 746.27,
-        "chg": -10.45
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.76743,
+        "chg": -10.67
+      },
+      {
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 0.960957,
+        "chg": -3.58
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.6218,
-        "chg": -9.66
+        "price": 0.648111,
+        "chg": -0.64
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 58.64,
-        "chg": -9.34
+        "price": 60.65,
+        "chg": -0.61
       },
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.779758,
-        "chg": -9.25
-      },
-      {
-        "symbol": "near",
-        "name": "NEAR Protocol",
-        "price": 2.75,
-        "chg": -8.65
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 40.01,
+        "chg": -0.59
       }
     ],
     "gainers_7d": [
       {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.995762,
-        "chg": 0.09
+        "price": 0.995514,
+        "chg": 0.17
       },
       {
         "symbol": "usyc",
@@ -238,8 +263,8 @@
       {
         "symbol": "u",
         "name": "United Stables",
-        "price": 0.999099,
-        "chg": -0.03
+        "price": 0.99912,
+        "chg": -0.02
       },
       {
         "symbol": "eursafo",
@@ -250,104 +275,104 @@
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.033,
-        "chg": -1.25
+        "price": 1.029,
+        "chg": -1.26
       }
     ],
     "losers_7d": [
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 6.38,
-        "chg": -20.79
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 4.43,
-        "chg": -20.38
+        "price": 6.62,
+        "chg": -13.84
       },
       {
         "symbol": "ltc",
         "name": "Litecoin",
-        "price": 38.65,
-        "chg": -20.28
+        "price": 40.01,
+        "chg": -13.69
       },
       {
         "symbol": "sui",
         "name": "Sui",
-        "price": 0.6218,
-        "chg": -19.78
+        "price": 0.648111,
+        "chg": -12.9
       },
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 746.27,
-        "chg": -18.36
+        "symbol": "hbar",
+        "name": "Hedera",
+        "price": 0.051483,
+        "chg": -12.67
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 2.84,
+        "chg": -11.41
       }
     ],
     "gainers_30d": [
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.11,
-        "chg": 0.86
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.033,
-        "chg": 0.4
+        "price": 9.13,
+        "chg": 1.16
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.14,
-        "chg": 0.32
+        "chg": 0.31
       },
       {
-        "symbol": "usdf",
-        "name": "Falcon USD",
-        "price": 0.995762,
-        "chg": 0.1
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.029,
+        "chg": 0.27
       },
       {
         "symbol": "u",
         "name": "United Stables",
-        "price": 0.999099,
-        "chg": -0.01
+        "price": 0.99912,
+        "chg": 0.01
+      },
+      {
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.995514,
+        "chg": -0.03
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00359993,
-        "chg": -58.94
+        "price": 0.00405505,
+        "chg": -59.01
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.75,
-        "chg": -44.59
+        "price": 2.84,
+        "chg": -42.33
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 746.27,
-        "chg": -40.52
+        "price": 786.09,
+        "chg": -36.41
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.0497145,
-        "chg": -38.72
+        "price": 0.051483,
+        "chg": -35.95
       },
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 4.43,
-        "chg": -37.52
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.648111,
+        "chg": -34.02
       }
     ]
   }
