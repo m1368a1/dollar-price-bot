@@ -1,74 +1,74 @@
 {
-  "timestamp": "2026-11-20 21:08",
+  "timestamp": "2026-11-21 02:19",
   "usd_sell": 272900,
   "usd_buy": 272700,
   "gold_18k": 23357495,
-  "btc_usd": 58279.9,
+  "btc_usd": 58871.9,
   "fear_greed": 12,
   "btc_dominance": 57.8,
-  "market_cap": 2020000000000.0,
-  "market_volume": 110000000000.0,
-  "market_change": -8.82,
+  "market_cap": 2049999999999.9998,
+  "market_volume": 120000000000.0,
+  "market_change": -6.59,
   "top10": [
     {
       "symbol": "btc",
-      "price": 58293,
-      "change_24h": -5.84306,
-      "market_cap": 1172565421625
+      "price": 58895,
+      "change_24h": -4.4665,
+      "market_cap": 1184664991064
     },
     {
       "symbol": "eth",
-      "price": 1601.83,
-      "change_24h": -8.76435,
-      "market_cap": 195801242240
+      "price": 1622.0,
+      "change_24h": -6.72947,
+      "market_cap": 198267040101
     },
     {
       "symbol": "usdt",
-      "price": 0.998492,
-      "change_24h": -0.06753,
-      "market_cap": 174981726295
+      "price": 0.998698,
+      "change_24h": -0.03442,
+      "market_cap": 174576226953
     },
     {
       "symbol": "bnb",
-      "price": 533.34,
-      "change_24h": -7.85137,
-      "market_cap": 70139250999
+      "price": 537.82,
+      "change_24h": -6.0247,
+      "market_cap": 70728244893
     },
     {
       "symbol": "usdc",
-      "price": 0.999405,
-      "change_24h": -0.01898,
-      "market_cap": 67996070253
+      "price": 0.999422,
+      "change_24h": -0.01666,
+      "market_cap": 68403435057
     },
     {
       "symbol": "xrp",
-      "price": 0.884816,
-      "change_24h": -7.75673,
-      "market_cap": 56200541015
+      "price": 0.909583,
+      "change_24h": -4.74041,
+      "market_cap": 57773622164
     },
     {
       "symbol": "sol",
-      "price": 67.3,
-      "change_24h": -7.5912,
-      "market_cap": 39834575880
+      "price": 68.63,
+      "change_24h": -4.88427,
+      "market_cap": 40624867965
     },
     {
       "symbol": "trx",
-      "price": 0.300863,
-      "change_24h": -2.97886,
-      "market_cap": 28596601982
+      "price": 0.301539,
+      "change_24h": -2.57614,
+      "market_cap": 28660896856
     },
     {
       "symbol": "figr_heloc",
-      "price": 1.016,
-      "change_24h": -2.08354,
-      "market_cap": 27383815882
+      "price": 1.025,
+      "change_24h": 0.86437,
+      "market_cap": 27640609499
     },
     {
       "symbol": "hype",
-      "price": 60.36,
-      "change_24h": -10.38861,
-      "market_cap": 14347559296
+      "price": 60.28,
+      "change_24h": -7.82125,
+      "market_cap": 14328267733
     }
   ],
   "signal": {
@@ -80,164 +80,102 @@
         "tone": "neutral"
       },
       {
-        "text": "BTC -15.3% در 7 روز",
+        "text": "BTC -12.9% در 7 روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -6.0% در ۲۴ ساعت",
+        "text": "BTC -4.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 0 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
-        "text": "اشباع فروش (9) — فرصت خرید",
+        "text": "اشباع فروش (10) — فرصت خرید",
         "tone": "bearish"
-      },
-      {
-        "text": "دوجی (Doji) — تصمیمی",
-        "tone": "neutral"
       }
     ],
     "confidence": 52,
-    "updated": "2026-11-20 21:09"
+    "updated": "2026-11-21 02:19"
   },
   "whales": {
     "unconfirmed": {
-      "score": 6,
+      "score": 0,
       "level": "کم",
-      "count": 1,
-      "total_btc": 144.16,
+      "count": 0,
+      "total_btc": 0,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 1,
-      "top": [
-        {
-          "btc": 144.16,
-          "tier": "متوسط",
-          "fee": 4.98e-06,
-          "inputs": 1,
-          "outputs": 3,
-          "direction": "unknown"
-        }
-      ]
+      "medium_whales": 0,
+      "top": []
     }
   },
-  "news_investing": [
-    {
-      "title": "سهام Flowers Foods به 4.91 دلار به پایین ترین حد در 52 هفته اخیر رسید",
-      "date": "2026-11-20 21:01",
-      "source": "Investing.com"
-    },
-    {
-      "title": "حکم دادگاه ایالات متحده مجوز Sentinel Midstream برای پروژه صادرات نفت در آب های عمیق را به خطر می اندازد",
-      "date": "2026-11-20 21:00",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام Strategic Education Inc به 50.7 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-11-20 20:57",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام Ionis Pharmaceuticals به 26.54 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-11-20 20:57",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام صندوق بسته Liberty All Star Equity به 5.4 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-11-20 20:57",
-      "source": "Investing.com"
-    }
-  ],
+  "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "دلار نیوزلند به پایین ترین حد از زمان بحران مالی جهانی رسید",
-      "date": "Fri, 20 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نزدک 100 با تبدیل شدن تب هوش مصنوعی به ترس: 5 درصد سقوط کرد",
+      "title": "Nasdaq 100 Has Worst Week Since 2020 on AI Drama: Markets Wrap",
       "date": "Thu, 19 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 20 آبان",
+      "title": "طلا Logs Worst Week Since March on Hawkish فدرال رزرو, AI Selloff",
       "date": "Thu, 19 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چگونه توکن‌سازی می‌تواند بازار ETF را تغییر دهد",
+      "title": "Nvidia Plunges as SEC Probe Deepens AI Market Selloff | Closing Bell",
       "date": "Fri, 20 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "رمان Kalshi's Treasury Perps Hit Delays با گسترش سایر شرط ها",
+      "title": "AI Selloff Spurs Haven Demand for Yen, Franc as دلار Slips",
       "date": "Fri, 20 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "سهام Flowers Foods به 4.91 دلار به پایین ترین حد در 52 هفته اخیر رسید",
-      "date": "2026-11-20 21:01",
-      "source": "Investing.com"
-    },
-    {
-      "title": "حکم دادگاه ایالات متحده مجوز Sentinel Midstream برای پروژه صادرات نفت در آب های عمیق را به خطر می اندازد",
-      "date": "2026-11-20 21:00",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام Strategic Education Inc به 50.7 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-11-20 20:57",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام Ionis Pharmaceuticals به 26.54 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-11-20 20:57",
-      "source": "Investing.com"
-    },
-    {
-      "title": "سهام صندوق بسته Liberty All Star Equity به 5.4 دلار به پایین ترین حد در 52 هفته گذشته رسید",
-      "date": "2026-11-20 20:57",
-      "source": "Investing.com"
-    },
-    {
-      "title": "دلار نیوزلند به پایین ترین حد از زمان بحران مالی جهانی رسید",
-      "date": "Fri, 20 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "نزدک 100 با تبدیل شدن تب هوش مصنوعی به ترس: 5 درصد سقوط کرد",
+      "title": "Nasdaq 100 Has Worst Week Since 2020 on AI Drama: Markets Wrap",
       "date": "Thu, 19 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "آخرین اخبار و تحلیل بازار نفت برای 20 آبان",
+      "title": "طلا Logs Worst Week Since March on Hawkish فدرال رزرو, AI Selloff",
       "date": "Thu, 19 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "چگونه توکن‌سازی می‌تواند بازار ETF را تغییر دهد",
+      "title": "Nvidia Plunges as SEC Probe Deepens AI Market Selloff | Closing Bell",
       "date": "Fri, 20 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "رمان Kalshi's Treasury Perps Hit Delays با گسترش سایر شرط ها",
+      "title": "AI Selloff Spurs Haven Demand for Yen, Franc as دلار Slips",
       "date": "Fri, 20 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-20 21:08",
+    "updated": "2026-11-21 02:19",
     "gainers_24h": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.851458,
-        "chg": 2.25
+        "price": 0.847153,
+        "chg": 0.95
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.025,
+        "chg": 0.86
+      },
+      {
+        "symbol": "eursafo",
+        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
+        "price": 1.12,
+        "chg": 0.09
       },
       {
         "symbol": "usyc",
@@ -246,74 +184,62 @@
         "chg": 0.05
       },
       {
-        "symbol": "u",
-        "name": "United Stables",
-        "price": 0.998921,
-        "chg": -0.03
-      },
-      {
-        "symbol": "eursafo",
-        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
-        "price": 1.12,
-        "chg": -0.07
-      },
-      {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.99565,
-        "chg": -0.07
+        "price": 0.995768,
+        "chg": -0.03
       }
     ],
     "losers_24h": [
       {
-        "symbol": "rain",
-        "name": "Rain",
-        "price": 0.00364161,
-        "chg": -19.73
-      },
-      {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 728.38,
-        "chg": -18.05
+        "price": 744.21,
+        "chg": -14.44
+      },
+      {
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00376523,
+        "chg": -13.49
+      },
+      {
+        "symbol": "xmr",
+        "name": "Monero",
+        "price": 450.67,
+        "chg": -9.59
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
         "price": 2.77,
-        "chg": -14.42
+        "chg": -9.25
       },
       {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 4.35,
-        "chg": -12.6
-      },
-      {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 60.36,
-        "chg": -10.39
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.645642,
+        "chg": -8.15
       }
     ],
     "gainers_7d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.851458,
-        "chg": 4.27
+        "price": 0.847153,
+        "chg": 3.54
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.016,
-        "chg": 1.3
+        "symbol": "rain",
+        "name": "Rain",
+        "price": 0.00376523,
+        "chg": 1.67
       },
       {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.99565,
-        "chg": 0.08
+        "price": 0.995768,
+        "chg": 0.07
       },
       {
         "symbol": "usyc",
@@ -324,54 +250,54 @@
       {
         "symbol": "u",
         "name": "United Stables",
-        "price": 0.998921,
-        "chg": -0.05
+        "price": 0.998849,
+        "chg": -0.04
       }
     ],
     "losers_7d": [
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 4.35,
-        "chg": -26.0
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 728.38,
-        "chg": -23.68
+        "price": 4.46,
+        "chg": -21.87
       },
       {
         "symbol": "avax",
         "name": "Avalanche",
-        "price": 6.44,
-        "chg": -23.52
+        "price": 6.49,
+        "chg": -21.09
       },
       {
-        "symbol": "sui",
-        "name": "Sui",
-        "price": 0.633567,
-        "chg": -21.92
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 744.21,
+        "chg": -19.97
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
         "price": 2.77,
-        "chg": -21.74
+        "chg": -18.94
+      },
+      {
+        "symbol": "sui",
+        "name": "Sui",
+        "price": 0.645642,
+        "chg": -18.69
       }
     ],
     "gainers_30d": [
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.851458,
-        "chg": 13.62
+        "price": 0.847153,
+        "chg": 10.98
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.17,
-        "chg": 1.4
+        "price": 9.13,
+        "chg": 1.11
       },
       {
         "symbol": "usyc",
@@ -380,48 +306,48 @@
         "chg": 0.32
       },
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.016,
-        "chg": 0.14
-      },
-      {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.99565,
-        "chg": 0.05
+        "price": 0.995768,
+        "chg": 0.04
+      },
+      {
+        "symbol": "u",
+        "name": "United Stables",
+        "price": 0.998849,
+        "chg": -0.07
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00364161,
-        "chg": -60.21
+        "price": 0.00376523,
+        "chg": -58.49
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
         "price": 2.77,
-        "chg": -47.76
+        "chg": -47.21
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 728.38,
-        "chg": -45.85
+        "price": 744.21,
+        "chg": -43.63
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 4.35,
-        "chg": -42.73
+        "price": 4.46,
+        "chg": -40.46
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.050448,
-        "chg": -41.15
+        "price": 0.051167,
+        "chg": -38.94
       }
     ]
   }
