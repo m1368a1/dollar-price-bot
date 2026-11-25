@@ -1,78 +1,78 @@
 {
-  "timestamp": "2026-11-25 04:17",
-  "usd_sell": 284200,
-  "usd_buy": 284000,
-  "gold_18k": 25532111,
-  "btc_usd": 59239.85,
+  "timestamp": "2026-11-25 15:38",
+  "usd_sell": 292200,
+  "usd_buy": 292000,
+  "gold_18k": 25305877,
+  "btc_usd": 58010.86,
   "fear_greed": 13,
-  "btc_dominance": 57.7,
-  "market_cap": 2060000000000.0,
+  "btc_dominance": 57.6,
+  "market_cap": 2029999999999.9998,
   "market_volume": 70000000000.0,
-  "market_change": -4.23,
+  "market_change": -5.51,
   "top10": [
     {
       "symbol": "btc",
-      "price": 59252,
-      "change_24h": -1.84026,
-      "market_cap": 1191828848870
+      "price": 58162,
+      "change_24h": -3.06609,
+      "market_cap": 1170050154680
     },
     {
       "symbol": "eth",
-      "price": 1661.24,
-      "change_24h": -2.10542,
-      "market_cap": 203105652175
+      "price": 1639.53,
+      "change_24h": -2.64881,
+      "market_cap": 200433182837
     },
     {
       "symbol": "usdt",
-      "price": 0.998943,
-      "change_24h": -0.01115,
-      "market_cap": 174656044132
+      "price": 0.998956,
+      "change_24h": -0.02663,
+      "market_cap": 174655904684
     },
     {
       "symbol": "bnb",
-      "price": 542.8,
-      "change_24h": -1.83512,
-      "market_cap": 71381063056
+      "price": 535.06,
+      "change_24h": -2.37999,
+      "market_cap": 70366203877
     },
     {
       "symbol": "usdc",
-      "price": 0.999529,
-      "change_24h": -0.00607,
-      "market_cap": 69045079653
+      "price": 0.999495,
+      "change_24h": -0.01538,
+      "market_cap": 68947295482
     },
     {
       "symbol": "xrp",
-      "price": 0.920541,
-      "change_24h": -3.14709,
-      "market_cap": 58457791081
+      "price": 0.895779,
+      "change_24h": -2.18893,
+      "market_cap": 56896851975
     },
     {
       "symbol": "sol",
-      "price": 69.21,
-      "change_24h": -3.38997,
-      "market_cap": 40981103048
+      "price": 67.06,
+      "change_24h": -2.88863,
+      "market_cap": 39710811983
     },
     {
       "symbol": "trx",
-      "price": 0.308195,
-      "change_24h": -0.31286,
-      "market_cap": 29290118056
+      "price": 0.303137,
+      "change_24h": -1.48759,
+      "market_cap": 28815411515
     },
     {
       "symbol": "figr_heloc",
       "price": 1.042,
-      "change_24h": 0.0521,
-      "market_cap": 28382320933
+      "change_24h": -0.49255,
+      "market_cap": 28377536981
     },
     {
       "symbol": "hype",
-      "price": 59.14,
-      "change_24h": -7.01183,
-      "market_cap": 14055148241
+      "price": 56.92,
+      "change_24h": -7.59675,
+      "market_cap": 13528726071
     }
   ],
   "signal": {
-    "score": 65,
+    "score": 30,
     "label": "🟢 سیگنال خرید",
     "factors": [
       {
@@ -80,53 +80,41 @@
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ -8.0% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ -7.2% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -1.7% در ۲۴ ساعت",
+        "text": "BTC -3.1% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
-        "text": "فعالیت نهنگ‌ها: آرام؛ 2 تراکنش بزرگ",
+        "text": "فعالیت نهنگ‌ها: آرام؛ 1 تراکنش بزرگ",
         "tone": "neutral"
       },
       {
         "text": "اشباع فروش (16) — فرصت خرید",
         "tone": "bearish"
-      },
-      {
-        "text": "چکش (Hammer) — نشانه صعود",
-        "tone": "bullish"
       }
     ],
-    "confidence": 82,
-    "updated": "2026-11-25 04:17"
+    "confidence": 65,
+    "updated": "2026-11-25 15:38"
   },
   "whales": {
     "unconfirmed": {
-      "score": 12,
+      "score": 7,
       "level": "کم",
-      "count": 2,
-      "total_btc": 245.22,
+      "count": 1,
+      "total_btc": 168.23,
       "mega_whales": 0,
       "large_whales": 0,
-      "medium_whales": 2,
+      "medium_whales": 1,
       "top": [
         {
-          "btc": 122.76,
+          "btc": 168.23,
           "tier": "متوسط",
-          "fee": 1e-05,
-          "inputs": 1,
-          "outputs": 3,
-          "direction": "unknown"
-        },
-        {
-          "btc": 122.46,
-          "tier": "متوسط",
-          "fee": 1e-05,
-          "inputs": 1,
-          "outputs": 3,
+          "fee": 4.02e-05,
+          "inputs": 4,
+          "outputs": 2,
           "direction": "unknown"
         }
       ]
@@ -134,35 +122,25 @@
   },
   "news_investing": [
     {
-      "title": "بلومبرگ - علی بابا فروش اوراق قرضه فراساحلی را در سال آینده برای تامین مالی توسعه هوش مصنوعی بررسی می کند",
-      "date": "2026-11-25 03:51",
-      "source": "Investing.com"
-    },
-    {
-      "title": "استارباکس فروش تجارت ژاپن را به ارزش چند میلیارد دلار وزن می کند - بلومبرگ",
-      "date": "2026-11-25 03:37",
+      "title": "با تعمیق تلفات هوش مصنوعی، Wall St برای باز شدن کمتر تنظیم شد. تورم، تعرفه ها وزن می کنند",
+      "date": "2026-11-25 14:24",
       "source": "Investing.com"
     }
   ],
   "news_bloomberg": [
     {
-      "title": "فروش اوراق قرضه 40 ساله ژاپن، تقاضای ضعیف‌تری را در مورد ریسک کاهش می‌دهد",
+      "title": "Nasdaq 100 برای بازار خرس تنظیم شد، زیرا تجارت هوش مصنوعی در درزها آشکار می شود",
       "date": "Wed, 25 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "فلزات پس از سلوف عمده مخلوط شدند زیرا معامله گران در انتظار تورم ایالات متحده هستند",
+      "title": "انویدیا همچنان با مشکلاتی مواجه است که ارزش بازار آن ۲ تریلیون دلار است",
       "date": "Wed, 25 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "زیان سهام با افت تجارت هوش مصنوعی، سقوط نفت: بازارها افزایش می یابد",
+      "title": "با ترس هوش مصنوعی از هجوم به خزانه‌داری‌ها: بازارها در حال فروپاشی هستند",
       "date": "Tue, 24 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ریسک اعتباری راکوتن پس از لغو پیشنهاد ین اوراق قرضه افزایش یافت",
-      "date": "Wed, 25 Nov 2026",
       "source": "Bloomberg"
     },
     {
@@ -171,40 +149,35 @@
       "source": "Bloomberg"
     },
     {
-      "title": "تورم داغ استرالیا موضع سیاست هاوکیش RBA را تأیید می کند",
+      "title": "سقوط سهام به بازار غیر محتمل سرازیر می شود و تجارت در حال غرق شدن است",
       "date": "Wed, 25 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کاهش قیمت طلا به زیر 3500 دلار در چشم انداز افزایش نرخ بهره، سهام هوش مصنوعی سقوط کرد",
+      "date": "Tue, 24 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "بلومبرگ - علی بابا فروش اوراق قرضه فراساحلی را در سال آینده برای تامین مالی توسعه هوش مصنوعی بررسی می کند",
-      "date": "2026-11-25 03:51",
+      "title": "با تعمیق تلفات هوش مصنوعی، Wall St برای باز شدن کمتر تنظیم شد. تورم، تعرفه ها وزن می کنند",
+      "date": "2026-11-25 14:24",
       "source": "Investing.com"
     },
     {
-      "title": "استارباکس فروش تجارت ژاپن را به ارزش چند میلیارد دلار وزن می کند - بلومبرگ",
-      "date": "2026-11-25 03:37",
-      "source": "Investing.com"
-    },
-    {
-      "title": "فروش اوراق قرضه 40 ساله ژاپن، تقاضای ضعیف‌تری را در مورد ریسک کاهش می‌دهد",
+      "title": "Nasdaq 100 برای بازار خرس تنظیم شد، زیرا تجارت هوش مصنوعی در درزها آشکار می شود",
       "date": "Wed, 25 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "فلزات پس از سلوف عمده مخلوط شدند زیرا معامله گران در انتظار تورم ایالات متحده هستند",
+      "title": "انویدیا همچنان با مشکلاتی مواجه است که ارزش بازار آن ۲ تریلیون دلار است",
       "date": "Wed, 25 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "زیان سهام با افت تجارت هوش مصنوعی، سقوط نفت: بازارها افزایش می یابد",
+      "title": "با ترس هوش مصنوعی از هجوم به خزانه‌داری‌ها: بازارها در حال فروپاشی هستند",
       "date": "Tue, 24 Nov 2026",
-      "source": "Bloomberg"
-    },
-    {
-      "title": "ریسک اعتباری راکوتن پس از لغو پیشنهاد ین اوراق قرضه افزایش یافت",
-      "date": "Wed, 25 Nov 2026",
       "source": "Bloomberg"
     },
     {
@@ -213,75 +186,80 @@
       "source": "Bloomberg"
     },
     {
-      "title": "تورم داغ استرالیا موضع سیاست هاوکیش RBA را تأیید می کند",
+      "title": "سقوط سهام به بازار غیر محتمل سرازیر می شود و تجارت در حال غرق شدن است",
       "date": "Wed, 25 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "کاهش قیمت طلا به زیر 3500 دلار در چشم انداز افزایش نرخ بهره، سهام هوش مصنوعی سقوط کرد",
+      "date": "Tue, 24 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-25 04:17",
+    "updated": "2026-11-25 15:38",
     "gainers_24h": [
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 512.09,
-        "chg": 4.51
+        "price": 498.69,
+        "chg": 1.21
+      },
+      {
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.995067,
+        "chg": 0.12
+      },
+      {
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.15,
+        "chg": 0.02
+      },
+      {
+        "symbol": "u",
+        "name": "United Stables",
+        "price": 0.998832,
+        "chg": -0.12
       },
       {
         "symbol": "eursafo",
         "name": "Spiko Amundi Overnight Swap Fund (EUR)",
         "price": 1.11,
-        "chg": 0.33
-      },
-      {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.042,
-        "chg": 0.05
-      },
-      {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.01
-      },
-      {
-        "symbol": "usdf",
-        "name": "Falcon USD",
-        "price": 0.994671,
-        "chg": -0.04
+        "chg": -0.27
       }
     ],
     "losers_24h": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00283183,
-        "chg": -7.43
+        "price": 0.00272591,
+        "chg": -8.92
       },
       {
         "symbol": "hype",
         "name": "Hyperliquid",
-        "price": 59.14,
-        "chg": -7.01
+        "price": 56.92,
+        "chg": -7.6
       },
       {
         "symbol": "tao",
         "name": "Bittensor",
-        "price": 178.73,
-        "chg": -6.07
+        "price": 171.92,
+        "chg": -5.1
       },
       {
         "symbol": "qnt",
         "name": "Quant",
-        "price": 144.13,
-        "chg": -6.06
+        "price": 138.38,
+        "chg": -4.78
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 0.929919,
-        "chg": -5.8
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 681.81,
+        "chg": -4.74
       }
     ],
     "gainers_7d": [
@@ -289,127 +267,127 @@
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.042,
-        "chg": 3.53
-      },
-      {
-        "symbol": "xmr",
-        "name": "Monero",
-        "price": 512.09,
-        "chg": 1.38
-      },
-      {
-        "symbol": "trx",
-        "name": "TRON",
-        "price": 0.308195,
-        "chg": 0.33
+        "chg": 3.51
       },
       {
         "symbol": "usyc",
         "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.07
+        "price": 1.15,
+        "chg": 0.09
       },
       {
         "symbol": "u",
         "name": "United Stables",
-        "price": 0.999045,
-        "chg": 0.01
+        "price": 0.998832,
+        "chg": -0.04
+      },
+      {
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.995067,
+        "chg": -0.11
+      },
+      {
+        "symbol": "eursafo",
+        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
+        "price": 1.11,
+        "chg": -0.14
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00283183,
-        "chg": -39.93
+        "price": 0.00272591,
+        "chg": -44.02
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 733.36,
-        "chg": -23.07
+        "price": 681.81,
+        "chg": -25.5
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.86,
-        "chg": -14.99
+        "price": 2.73,
+        "chg": -16.75
       },
       {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.762059,
-        "chg": -14.62
+        "symbol": "hype",
+        "name": "Hyperliquid",
+        "price": 56.92,
+        "chg": -15.37
       },
       {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 0.929919,
-        "chg": -14.01
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 4.46,
+        "chg": -14.26
       }
     ],
     "gainers_30d": [
       {
-        "symbol": "usyc",
-        "name": "Circle USYC",
-        "price": 1.14,
-        "chg": 0.29
-      },
-      {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.06,
-        "chg": 0.23
+        "price": 9.01,
+        "chg": 0.4
       },
       {
-        "symbol": "u",
-        "name": "United Stables",
-        "price": 0.999045,
-        "chg": 0.02
+        "symbol": "usyc",
+        "name": "Circle USYC",
+        "price": 1.15,
+        "chg": 0.3
       },
       {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.994671,
-        "chg": -0.03
+        "price": 0.995067,
+        "chg": -0.0
+      },
+      {
+        "symbol": "u",
+        "name": "United Stables",
+        "price": 0.998832,
+        "chg": -0.01
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.042,
-        "chg": -1.98
+        "chg": -0.55
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00283183,
-        "chg": -66.43
+        "price": 0.00272591,
+        "chg": -65.6
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 733.36,
-        "chg": -38.5
+        "price": 681.81,
+        "chg": -43.3
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 2.86,
-        "chg": -35.98
+        "price": 2.73,
+        "chg": -38.68
       },
       {
         "symbol": "hbar",
         "name": "Hedera",
-        "price": 0.05017,
-        "chg": -34.62
+        "price": 0.04921436,
+        "chg": -36.07
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 4.61,
-        "chg": -32.5
+        "price": 4.46,
+        "chg": -36.0
       }
     ]
   }
