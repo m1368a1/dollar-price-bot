@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-11-27 12:27",
-  "usd_sell": 295000,
-  "usd_buy": 294800,
-  "gold_18k": 25993813,
-  "btc_usd": 61529.52,
+  "timestamp": "2026-11-27 21:59",
+  "usd_sell": 293800,
+  "usd_buy": 293600,
+  "gold_18k": 25936100,
+  "btc_usd": 59789.12,
   "fear_greed": 12,
-  "btc_dominance": 58.8,
-  "market_cap": 2100000000000.0,
-  "market_volume": 60000000000.0,
-  "market_change": -2.66,
+  "btc_dominance": 57.7,
+  "market_cap": 2080000000000.0,
+  "market_volume": 70000000000.0,
+  "market_change": -3.89,
   "top10": [
     {
       "symbol": "btc",
-      "price": 61554,
-      "change_24h": 1.63593,
-      "market_cap": 1238340282171
+      "price": 59778,
+      "change_24h": -1.66603,
+      "market_cap": 1202613408901
     },
     {
       "symbol": "eth",
-      "price": 1720.01,
-      "change_24h": 1.22134,
-      "market_cap": 210282456947
+      "price": 1663.48,
+      "change_24h": -2.38995,
+      "market_cap": 203371451025
     },
     {
       "symbol": "usdt",
-      "price": 0.999036,
-      "change_24h": -0.00124,
-      "market_cap": 173848561424
+      "price": 0.999277,
+      "change_24h": 0.02208,
+      "market_cap": 173890503116
     },
     {
       "symbol": "bnb",
-      "price": 563.48,
-      "change_24h": 2.32805,
-      "market_cap": 74102794868
+      "price": 552.74,
+      "change_24h": -0.60955,
+      "market_cap": 72690358302
     },
     {
       "symbol": "usdc",
-      "price": 0.999599,
-      "change_24h": 0.01022,
-      "market_cap": 69150430294
+      "price": 0.999751,
+      "change_24h": 0.01648,
+      "market_cap": 69189579529
     },
     {
       "symbol": "xrp",
-      "price": 0.973999,
-      "change_24h": 2.66759,
-      "market_cap": 61865100282
+      "price": 0.948325,
+      "change_24h": -0.48721,
+      "market_cap": 60234399406
     },
     {
       "symbol": "sol",
-      "price": 73.06,
-      "change_24h": 3.35453,
-      "market_cap": 43268650702
-    },
-    {
-      "symbol": "figr_heloc",
-      "price": 1.065,
-      "change_24h": null,
-      "market_cap": 29216744412
+      "price": 71.93,
+      "change_24h": 0.46856,
+      "market_cap": 42600266879
     },
     {
       "symbol": "trx",
-      "price": 0.304264,
-      "change_24h": 0.35599,
-      "market_cap": 28923013290
+      "price": 0.300859,
+      "change_24h": -1.22767,
+      "market_cap": 28599829316
+    },
+    {
+      "symbol": "figr_heloc",
+      "price": 1.005,
+      "change_24h": -5.45752,
+      "market_cap": 27568561894
     },
     {
       "symbol": "hype",
-      "price": 65.72,
-      "change_24h": 8.43097,
-      "market_cap": 15617755005
+      "price": 63.99,
+      "change_24h": 1.50459,
+      "market_cap": 15207747818
     }
   ],
   "signal": {
-    "score": 10,
-    "label": "🟡 سیگنال صبر",
+    "score": 45,
+    "label": "🟢 سیگنال خرید",
     "factors": [
       {
         "text": "ترس شدید (12/100)",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +0.1% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +1.5% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC +1.5% در ۲۴ ساعت",
+        "text": "BTC -1.5% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,16 +92,12 @@
         "tone": "neutral"
       },
       {
-        "text": "معتدل: 31",
-        "tone": "neutral"
-      },
-      {
-        "text": "ستاره غروب (Evening Star) — نشانه نزول",
+        "text": "اشباع فروش (25) — فرصت خرید",
         "tone": "bearish"
       }
     ],
-    "confidence": 55,
-    "updated": "2026-11-27 12:28"
+    "confidence": 72,
+    "updated": "2026-11-27 21:59"
   },
   "whales": {
     "unconfirmed": {
@@ -115,254 +111,263 @@
       "top": []
     }
   },
-  "news_investing": [
-    {
-      "title": "پیش‌بینی قیمت نفت در سال 2027: BofA فکر می‌کند که برنت در کجا قرار دارد",
-      "date": "2026-11-27 12:17",
-      "source": "Investing.com"
-    },
-    {
-      "title": "محرک‌های پیش از بازار: سهام هوش مصنوعی بازگشته است، Vertex در بررسی FDA اسلاید می‌کند",
-      "date": "2026-11-27 12:07",
-      "source": "Investing.com"
-    }
-  ],
+  "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "ثروتمندترین بدنه مدنی هند فروش اوراق قرضه را به خریداران خرده فروشی باز خواهد کرد",
+      "title": "Emerging-Market Stocks Snag Best Week Since June on Tech Rebound",
       "date": "Fri, 27 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "معاملات آتی ایالات متحده با افزایش شتاب بازگشت فناوری: بازارها افزایش یافت",
+      "title": "S&P 500 Has Best Week Since April 2025 on AI Rally: Markets Wrap",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا با افزایش مجدد سهام فناوری به احیای ریسک پذیری کمک می کند",
+      "title": "Latest نفت Market News and Analysis for Nov. 27",
       "date": "Thu, 26 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "‘دلار Storm:’ Greenback on Track for Longest Winning Run Since 2024",
+      "date": "Thu, 26 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا Rises as Rebound in Tech Stocks Helps Revive Risk Appetite",
+      "date": "Thu, 26 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "Treasuries Drop as Stock Rise Saps Demand for Haven Bonds",
+      "date": "Fri, 27 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "پیش‌بینی قیمت نفت در سال 2027: BofA فکر می‌کند که برنت در کجا قرار دارد",
-      "date": "2026-11-27 12:17",
-      "source": "Investing.com"
-    },
-    {
-      "title": "محرک‌های پیش از بازار: سهام هوش مصنوعی بازگشته است، Vertex در بررسی FDA اسلاید می‌کند",
-      "date": "2026-11-27 12:07",
-      "source": "Investing.com"
-    },
-    {
-      "title": "ثروتمندترین بدنه مدنی هند فروش اوراق قرضه را به خریداران خرده فروشی باز خواهد کرد",
+      "title": "Emerging-Market Stocks Snag Best Week Since June on Tech Rebound",
       "date": "Fri, 27 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "معاملات آتی ایالات متحده با افزایش شتاب بازگشت فناوری: بازارها افزایش یافت",
+      "title": "S&P 500 Has Best Week Since April 2025 on AI Rally: Markets Wrap",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا با افزایش مجدد سهام فناوری به احیای ریسک پذیری کمک می کند",
+      "title": "Latest نفت Market News and Analysis for Nov. 27",
       "date": "Thu, 26 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "‘دلار Storm:’ Greenback on Track for Longest Winning Run Since 2024",
+      "date": "Thu, 26 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "طلا Rises as Rebound in Tech Stocks Helps Revive Risk Appetite",
+      "date": "Thu, 26 Nov 2026",
+      "source": "Bloomberg"
+    },
+    {
+      "title": "Treasuries Drop as Stock Rise Saps Demand for Haven Bonds",
+      "date": "Fri, 27 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-27 12:27",
+    "updated": "2026-11-27 21:59",
     "gainers_24h": [
       {
-        "symbol": "hype",
-        "name": "Hyperliquid",
-        "price": 65.72,
-        "chg": 8.43
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.15,
+        "chg": 15.56
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 758.48,
-        "chg": 4.9
-      },
-      {
-        "symbol": "gram",
-        "name": "Gram (prev. Toncoin)",
-        "price": 0.999614,
-        "chg": 4.58
-      },
-      {
-        "symbol": "doge",
-        "name": "Dogecoin",
-        "price": 0.058762,
-        "chg": 3.69
+        "price": 736.54,
+        "chg": 3.01
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 4.88,
-        "chg": 3.55
+        "price": 4.84,
+        "chg": 2.86
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 3645.78,
+        "chg": 2.23
+      },
+      {
+        "symbol": "paxg",
+        "name": "PAX Gold",
+        "price": 3642.91,
+        "chg": 2.21
       }
     ],
     "losers_24h": [
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 441.1,
-        "chg": -10.31
+        "price": 404.85,
+        "chg": -10.39
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00243526,
-        "chg": -4.68
-      },
-      {
-        "symbol": "m",
-        "name": "MemeCore",
-        "price": 0.830677,
-        "chg": -3.86
-      },
-      {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.076254,
-        "chg": -3.4
-      },
-      {
-        "symbol": "eursafo",
-        "name": "Spiko Amundi Overnight Swap Fund (EUR)",
-        "price": 1.12,
-        "chg": -0.04
-      }
-    ],
-    "gainers_7d": [
-      {
-        "symbol": "ltc",
-        "name": "Litecoin",
-        "price": 44.65,
-        "chg": 7.41
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 9.53,
-        "chg": 7.29
+        "price": 0.00230392,
+        "chg": -9.15
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
-        "price": 1.065,
-        "chg": 4.83
+        "price": 1.005,
+        "chg": -5.46
+      },
+      {
+        "symbol": "eth",
+        "name": "Ethereum",
+        "price": 1663.48,
+        "chg": -2.39
       },
       {
         "symbol": "bch",
         "name": "Bitcoin Cash",
-        "price": 210.58,
-        "chg": 4.39
+        "price": 206.36,
+        "chg": -2.18
+      }
+    ],
+    "gainers_7d": [
+      {
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.15,
+        "chg": 75.98
       },
       {
-        "symbol": "qnt",
-        "name": "Quant",
-        "price": 151.27,
-        "chg": 4.38
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 9.33,
+        "chg": 12.24
+      },
+      {
+        "symbol": "uni",
+        "name": "Uniswap",
+        "price": 4.84,
+        "chg": 11.06
+      },
+      {
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 44.38,
+        "chg": 10.62
+      },
+      {
+        "symbol": "doge",
+        "name": "Dogecoin",
+        "price": 0.057553,
+        "chg": 8.72
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00243526,
-        "chg": -39.56
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 758.48,
-        "chg": -9.54
+        "price": 0.00230392,
+        "chg": -37.57
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 441.1,
-        "chg": -6.57
+        "price": 404.85,
+        "chg": -9.77
       },
       {
-        "symbol": "cc",
-        "name": "Canton",
-        "price": 0.076254,
-        "chg": -4.46
+        "symbol": "zec",
+        "name": "Zcash",
+        "price": 736.54,
+        "chg": -2.98
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.830677,
-        "chg": -2.88
+        "price": 0.83618,
+        "chg": -2.27
+      },
+      {
+        "symbol": "leo",
+        "name": "LEO Token",
+        "price": 9.09,
+        "chg": -1.03
       }
     ],
     "gainers_30d": [
       {
-        "symbol": "figr_heloc",
-        "name": "Figure Heloc",
-        "price": 1.065,
-        "chg": 3.46
-      },
-      {
         "symbol": "usyc",
         "name": "Circle USYC",
         "price": 1.15,
-        "chg": 0.29
+        "chg": 0.31
       },
       {
         "symbol": "usdf",
         "name": "Falcon USD",
-        "price": 0.995683,
-        "chg": 0.09
+        "price": 0.995782,
+        "chg": 0.03
       },
       {
         "symbol": "u",
         "name": "United Stables",
-        "price": 0.999472,
-        "chg": 0.06
+        "price": 0.999624,
+        "chg": 0.02
       },
       {
         "symbol": "eursafo",
         "name": "Spiko Amundi Overnight Swap Fund (EUR)",
-        "price": 1.12,
-        "chg": -1.24
+        "price": 1.11,
+        "chg": -1.74
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.005,
+        "chg": -2.84
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00243526,
-        "chg": -65.46
+        "price": 0.00230392,
+        "chg": -66.54
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 758.48,
-        "chg": -42.47
+        "price": 736.54,
+        "chg": -43.16
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.12,
-        "chg": -33.73
+        "price": 3.04,
+        "chg": -35.61
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 4.88,
-        "chg": -31.72
+        "price": 4.84,
+        "chg": -33.23
       },
       {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 210.58,
-        "chg": -29.53
+        "symbol": "btw",
+        "name": "Bitway",
+        "price": 1.15,
+        "chg": -32.78
       }
     ]
   }
