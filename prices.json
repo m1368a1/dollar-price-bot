@@ -1,90 +1,90 @@
 {
-  "timestamp": "2026-11-27 21:59",
+  "timestamp": "2026-11-28 03:55",
   "usd_sell": 293800,
   "usd_buy": 293600,
   "gold_18k": 25936100,
-  "btc_usd": 59789.12,
-  "fear_greed": 12,
-  "btc_dominance": 57.7,
+  "btc_usd": 59890.1,
+  "fear_greed": 10,
+  "btc_dominance": 57.8,
   "market_cap": 2080000000000.0,
   "market_volume": 70000000000.0,
-  "market_change": -3.89,
+  "market_change": -4.53,
   "top10": [
     {
       "symbol": "btc",
-      "price": 59778,
-      "change_24h": -1.66603,
-      "market_cap": 1202613408901
+      "price": 59896,
+      "change_24h": -2.50455,
+      "market_cap": 1204984620031
     },
     {
       "symbol": "eth",
-      "price": 1663.48,
-      "change_24h": -2.38995,
-      "market_cap": 203371451025
+      "price": 1662.79,
+      "change_24h": -3.76249,
+      "market_cap": 203287316888
     },
     {
       "symbol": "usdt",
-      "price": 0.999277,
-      "change_24h": 0.02208,
-      "market_cap": 173890503116
+      "price": 0.99929,
+      "change_24h": 0.02953,
+      "market_cap": 173574271187
     },
     {
       "symbol": "bnb",
-      "price": 552.74,
-      "change_24h": -0.60955,
-      "market_cap": 72690358302
+      "price": 554.29,
+      "change_24h": -1.41809,
+      "market_cap": 72895059952
     },
     {
       "symbol": "usdc",
-      "price": 0.999751,
-      "change_24h": 0.01648,
-      "market_cap": 69189579529
+      "price": 0.999767,
+      "change_24h": 0.02194,
+      "market_cap": 69424767725
     },
     {
       "symbol": "xrp",
-      "price": 0.948325,
-      "change_24h": -0.48721,
-      "market_cap": 60234399406
+      "price": 0.948455,
+      "change_24h": -1.33637,
+      "market_cap": 60242614022
     },
     {
       "symbol": "sol",
-      "price": 71.93,
-      "change_24h": 0.46856,
-      "market_cap": 42600266879
+      "price": 71.67,
+      "change_24h": -1.39909,
+      "market_cap": 42456614062
     },
     {
       "symbol": "trx",
-      "price": 0.300859,
-      "change_24h": -1.22767,
-      "market_cap": 28599829316
+      "price": 0.300279,
+      "change_24h": -1.56329,
+      "market_cap": 28544650622
     },
     {
       "symbol": "figr_heloc",
       "price": 1.005,
-      "change_24h": -5.45752,
-      "market_cap": 27568561894
+      "change_24h": -5.64561,
+      "market_cap": 27568268997
     },
     {
       "symbol": "hype",
-      "price": 63.99,
-      "change_24h": 1.50459,
-      "market_cap": 15207747818
+      "price": 64.17,
+      "change_24h": -2.44975,
+      "market_cap": 15249724698
     }
   ],
   "signal": {
-    "score": 45,
+    "score": 30,
     "label": "🟢 سیگنال خرید",
     "factors": [
       {
-        "text": "ترس شدید (12/100)",
+        "text": "ترس شدید (10/100)",
         "tone": "neutral"
       },
       {
-        "text": "روند بیتکوین: خنثی؛ +1.5% در ۷ روز",
+        "text": "روند بیتکوین: خنثی؛ +5.7% در ۷ روز",
         "tone": "neutral"
       },
       {
-        "text": "BTC -1.5% در ۲۴ ساعت",
+        "text": "BTC -2.2% در ۲۴ ساعت",
         "tone": "neutral"
       },
       {
@@ -92,12 +92,16 @@
         "tone": "neutral"
       },
       {
-        "text": "اشباع فروش (25) — فرصت خرید",
-        "tone": "bearish"
+        "text": "معتدل: 34",
+        "tone": "neutral"
+      },
+      {
+        "text": "دوجی (Doji) — تصمیمی",
+        "tone": "neutral"
       }
     ],
-    "confidence": 72,
-    "updated": "2026-11-27 21:59"
+    "confidence": 65,
+    "updated": "2026-11-28 03:55"
   },
   "whales": {
     "unconfirmed": {
@@ -114,196 +118,196 @@
   "news_investing": [],
   "news_bloomberg": [
     {
-      "title": "Emerging-Market Stocks Snag Best Week Since June on Tech Rebound",
+      "title": "سهام بازارهای نوظهور در بازگشت فناوری به بهترین هفته از ژوئن رسیده است",
       "date": "Fri, 27 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "S&P 500 Has Best Week Since April 2025 on AI Rally: Markets Wrap",
+      "title": "S&P 500 بهترین هفته را از آوریل 2025 در AI Rally: Markets Wrap داشته است",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "Latest نفت Market News and Analysis for Nov. 27",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 27 آبان",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "‘دلار Storm:’ Greenback on Track for Longest Winning Run Since 2024",
+      "title": "«طوفان دلار:» گرین‌بک در مسیر طولانی‌ترین دوره برد از سال 2024",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا Rises as Rebound in Tech Stocks Helps Revive Risk Appetite",
+      "title": "افزایش قیمت طلا به دلیل بازگشت سهام در فناوری به احیای ریسک پذیری کمک می کند",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "Treasuries Drop as Stock Rise Saps Demand for Haven Bonds",
+      "title": "با افزایش سهام تقاضا برای اوراق قرضه Haven کاهش می یابد",
       "date": "Fri, 27 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "news": [
     {
-      "title": "Emerging-Market Stocks Snag Best Week Since June on Tech Rebound",
+      "title": "سهام بازارهای نوظهور در بازگشت فناوری به بهترین هفته از ژوئن رسیده است",
       "date": "Fri, 27 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "S&P 500 Has Best Week Since April 2025 on AI Rally: Markets Wrap",
+      "title": "S&P 500 بهترین هفته را از آوریل 2025 در AI Rally: Markets Wrap داشته است",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "Latest نفت Market News and Analysis for Nov. 27",
+      "title": "آخرین اخبار و تحلیل بازار نفت برای 27 آبان",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "‘دلار Storm:’ Greenback on Track for Longest Winning Run Since 2024",
+      "title": "«طوفان دلار:» گرین‌بک در مسیر طولانی‌ترین دوره برد از سال 2024",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "طلا Rises as Rebound in Tech Stocks Helps Revive Risk Appetite",
+      "title": "افزایش قیمت طلا به دلیل بازگشت سهام در فناوری به احیای ریسک پذیری کمک می کند",
       "date": "Thu, 26 Nov 2026",
       "source": "Bloomberg"
     },
     {
-      "title": "Treasuries Drop as Stock Rise Saps Demand for Haven Bonds",
+      "title": "با افزایش سهام تقاضا برای اوراق قرضه Haven کاهش می یابد",
       "date": "Fri, 27 Nov 2026",
       "source": "Bloomberg"
     }
   ],
   "trends": {
-    "updated": "2026-11-27 21:59",
+    "updated": "2026-11-28 03:55",
     "gainers_24h": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.15,
-        "chg": 15.56
+        "price": 1.19,
+        "chg": 19.28
       },
       {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 736.54,
-        "chg": 3.01
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 4.84,
-        "chg": 2.86
-      },
-      {
-        "symbol": "xaut",
-        "name": "Tether Gold",
-        "price": 3645.78,
-        "chg": 2.23
+        "symbol": "gram",
+        "name": "Gram (prev. Toncoin)",
+        "price": 0.975506,
+        "chg": 1.1
       },
       {
         "symbol": "paxg",
         "name": "PAX Gold",
-        "price": 3642.91,
-        "chg": 2.21
+        "price": 3649.63,
+        "chg": 0.83
+      },
+      {
+        "symbol": "xaut",
+        "name": "Tether Gold",
+        "price": 3651.3,
+        "chg": 0.78
+      },
+      {
+        "symbol": "ltc",
+        "name": "Litecoin",
+        "price": 44.62,
+        "chg": 0.41
       }
     ],
     "losers_24h": [
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 404.85,
-        "chg": -10.39
+        "price": 422.26,
+        "chg": -8.99
       },
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00230392,
-        "chg": -9.15
+        "price": 0.00230276,
+        "chg": -8.46
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.005,
-        "chg": -5.46
+        "chg": -5.65
+      },
+      {
+        "symbol": "m",
+        "name": "MemeCore",
+        "price": 0.809923,
+        "chg": -3.8
       },
       {
         "symbol": "eth",
         "name": "Ethereum",
-        "price": 1663.48,
-        "chg": -2.39
-      },
-      {
-        "symbol": "bch",
-        "name": "Bitcoin Cash",
-        "price": 206.36,
-        "chg": -2.18
+        "price": 1662.79,
+        "chg": -3.76
       }
     ],
     "gainers_7d": [
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.15,
-        "chg": 75.98
-      },
-      {
-        "symbol": "link",
-        "name": "Chainlink",
-        "price": 9.33,
-        "chg": 12.24
-      },
-      {
-        "symbol": "uni",
-        "name": "Uniswap",
-        "price": 4.84,
-        "chg": 11.06
+        "price": 1.19,
+        "chg": 78.5
       },
       {
         "symbol": "ltc",
         "name": "Litecoin",
-        "price": 44.38,
-        "chg": 10.62
+        "price": 44.62,
+        "chg": 10.44
       },
       {
-        "symbol": "doge",
-        "name": "Dogecoin",
-        "price": 0.057553,
-        "chg": 8.72
+        "symbol": "link",
+        "name": "Chainlink",
+        "price": 9.24,
+        "chg": 8.89
+      },
+      {
+        "symbol": "near",
+        "name": "NEAR Protocol",
+        "price": 3.05,
+        "chg": 8.63
+      },
+      {
+        "symbol": "bch",
+        "name": "Bitcoin Cash",
+        "price": 209.42,
+        "chg": 7.71
       }
     ],
     "losers_7d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00230392,
-        "chg": -37.57
+        "price": 0.00230276,
+        "chg": -38.9
       },
       {
         "symbol": "xmr",
         "name": "Monero",
-        "price": 404.85,
-        "chg": -9.77
-      },
-      {
-        "symbol": "zec",
-        "name": "Zcash",
-        "price": 736.54,
-        "chg": -2.98
+        "price": 422.26,
+        "chg": -8.28
       },
       {
         "symbol": "m",
         "name": "MemeCore",
-        "price": 0.83618,
-        "chg": -2.27
+        "price": 0.809923,
+        "chg": -4.78
+      },
+      {
+        "symbol": "figr_heloc",
+        "name": "Figure Heloc",
+        "price": 1.005,
+        "chg": -1.98
       },
       {
         "symbol": "leo",
         "name": "LEO Token",
-        "price": 9.09,
-        "chg": -1.03
+        "price": 9.05,
+        "chg": -0.93
       }
     ],
     "gainers_30d": [
@@ -314,60 +318,60 @@
         "chg": 0.31
       },
       {
-        "symbol": "usdf",
-        "name": "Falcon USD",
-        "price": 0.995782,
-        "chg": 0.03
-      },
-      {
         "symbol": "u",
         "name": "United Stables",
-        "price": 0.999624,
-        "chg": 0.02
+        "price": 0.999539,
+        "chg": 0.11
+      },
+      {
+        "symbol": "usdf",
+        "name": "Falcon USD",
+        "price": 0.995756,
+        "chg": 0.07
       },
       {
         "symbol": "eursafo",
         "name": "Spiko Amundi Overnight Swap Fund (EUR)",
         "price": 1.11,
-        "chg": -1.74
+        "chg": -1.55
       },
       {
         "symbol": "figr_heloc",
         "name": "Figure Heloc",
         "price": 1.005,
-        "chg": -2.84
+        "chg": -2.45
       }
     ],
     "losers_30d": [
       {
         "symbol": "rain",
         "name": "Rain",
-        "price": 0.00230392,
-        "chg": -66.54
+        "price": 0.00230276,
+        "chg": -65.95
       },
       {
         "symbol": "zec",
         "name": "Zcash",
-        "price": 736.54,
-        "chg": -43.16
+        "price": 750.15,
+        "chg": -40.4
       },
       {
         "symbol": "near",
         "name": "NEAR Protocol",
-        "price": 3.04,
-        "chg": -35.61
+        "price": 3.05,
+        "chg": -32.18
       },
       {
         "symbol": "uni",
         "name": "Uniswap",
-        "price": 4.84,
-        "chg": -33.23
+        "price": 4.75,
+        "chg": -31.97
       },
       {
         "symbol": "btw",
         "name": "Bitway",
-        "price": 1.15,
-        "chg": -32.78
+        "price": 1.19,
+        "chg": -31.71
       }
     ]
   }
